@@ -613,8 +613,8 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
     const items = lista || priorizar(FAC, (x) => `facies:${x.id}`, 8);
     const M = nuevoMarcador(items.length * 2);
     let i = 0, paso = 1, r1 = null;
-    const img = (f) => f.imagen
-      ? `<img decoding="async" class="ent-facies-img" src="${esc(f.imagen)}" alt="Facies a reconocer" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ent-facies-img ent-sin',textContent:'🙂'}))">`
+    const img = (f) => (f.imagen_quiz || f.imagen)
+      ? `<img decoding="async" class="ent-facies-img" src="${esc(f.imagen_quiz || f.imagen)}" alt="Facies a reconocer" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ent-facies-img ent-sin',textContent:'🙂'}))">`
       : '<div class="ent-facies-img ent-sin">🙂</div>';
     const pistaDe = (f) => {
       const m = FACIES[f.id]; const an = anclaDe(m, miaDe(`fac:${f.id}`));

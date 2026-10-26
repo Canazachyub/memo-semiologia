@@ -431,7 +431,7 @@ export function crearVistas({ ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES, sr
         <button type="button" class="btn" data-fac-ronda ${conFoto ? '' : 'disabled'}>🎲 Ronda rápida (${conFoto})</button></div>`
       + ATLAS.facies.filter((f) => !q || norm(JSON.stringify(f)).includes(q)).map((f) => {
         const fm = FACIES[f.id];
-        return `<article class="fac" data-fac="${esc(f.id)}">${f.imagen ? `<img src="${esc(f.imagen)}" alt="${facOcultas ? 'Facies (nombre oculto)' : `Facies ${esc(f.nombre)}`}" loading="lazy" decoding="async" data-zoom>` : ''}
+        return `<article class="fac" data-fac="${esc(f.id)}">${f.imagen ? `<img src="${esc(facOcultas ? (f.imagen_quiz || f.imagen) : f.imagen)}" alt="${facOcultas ? 'Facies (nombre oculto)' : `Facies ${esc(f.nombre)}`}" loading="lazy" decoding="async" data-zoom>` : ''}
        <div class="fac-txt" ${facOcultas ? 'role="button" tabindex="0" aria-label="Revelar nombre de la facies"' : ''}><b class="fn">${esc(f.nombre)}</b><span class="fr">${esc(f.rasgo)}</span><p class="o">→ ${esc(f.orienta)}</p>
        ${fm?.ancla ? `<p class="ancla fac-ancla">⚓ ${esc(fm.ancla)}</p>` : ''}</div>
        ${fm ? `<details class="fmemo"><summary>🧠 Cómo recordarla</summary>${miaBox(claveMia.facies(f.id))}<p class="ancla">⚓ ${esc(fm.ancla)}</p><p class="escena">🎬 ${esc(fm.escena)}</p></details>` : ''}</article>`;
@@ -463,7 +463,7 @@ export function crearVistas({ ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES, sr
     let s = 5;
     el.innerHTML = `<div class="v-rr-caja"><div class="v-rr-top"><span>${rr.i + 1} / ${rr.cola.length}</span><span class="v-rr-cuenta" aria-live="off">${s}</span>
         <button type="button" class="icon-btn" data-rr="cerrar" aria-label="Cerrar ronda">✕</button></div>
-      <img src="${esc(f.imagen)}" alt="Facies por adivinar">
+      <img src="${esc(f.imagen_quiz || f.imagen)}" alt="Facies por adivinar">
       <p class="v-rr-pide">¿Qué facies es? Dilo en voz alta.</p>
       <div class="v-rr-res" hidden></div>
       <div class="btns"><button type="button" class="btn pri" data-rr="ver">Revelar</button></div></div>`;

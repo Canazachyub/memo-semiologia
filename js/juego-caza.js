@@ -65,7 +65,7 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     const ps = (fm?.preguntas || []).filter((p) => p?.q && p?.a);
     if (!ps.length) return;
     const fa = facAtlas[id] || {};
-    agregar({ k: `f:${id}`, clase: 'facies', rareza: 'raro', id, capId: `fac:${id}`, nombre: `Facies ${fa.nombre || id}`, corto: fa.nombre || id, icono: '🙂', color: '#0891b2', fm, fa, imagen: fa.imagen || '', grupo: 'Facies',
+    agregar({ k: `f:${id}`, clase: 'facies', rareza: 'raro', id, capId: `fac:${id}`, nombre: `Facies ${fa.nombre || id}`, corto: fa.nombre || id, icono: '🙂', color: '#0891b2', fm, fa, imagen: fa.imagen_quiz || fa.imagen || '', grupo: 'Facies',
       preguntas: ps.map((p) => ({ q: p.q, a: p.a, tipo: p.tipo || '', card: idCarta(`fac:${id}`, p, fm.preguntas.indexOf(p)) })) });
   });
   Object.entries(CASOS || {}).forEach(([id, c]) => {

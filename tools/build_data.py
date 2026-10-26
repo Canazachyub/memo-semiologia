@@ -112,8 +112,10 @@ def main():
                         img = destino
                         break
                 break
+        quiz = f"img/facies_quiz/{slug(fa['nombre'])}.webp"
         facies.append({"id": slug(fa["nombre"]), "nombre": fa["nombre"], "rasgo": fa["rasgo"],
-                       "orienta": fa["orienta"], "imagen": img})
+                       "orienta": fa["orienta"], "imagen": img,
+                       "imagen_quiz": quiz if os.path.exists(os.path.join(RAIZ, quiz)) else None})
 
     escalas = json.load(open(os.path.join(DATOS, "escalas.json"), encoding="utf-8"))["escalas"]
     for es in escalas:
