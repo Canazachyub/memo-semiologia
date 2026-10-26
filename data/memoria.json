@@ -1872,7 +1872,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/hematocrito.webp",
   "estacion": {
    "seccion": "s3",
    "n": 2,
@@ -2003,7 +2003,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/vcm.webp",
   "estacion": {
    "seccion": "s3",
    "n": 4,
@@ -2246,7 +2246,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/leucocitos-totales.webp",
   "estacion": {
    "seccion": "s3",
    "n": 8,
@@ -2309,7 +2309,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/neutrofilos-segmentados.webp",
   "estacion": {
    "seccion": "s3",
    "n": 9,
@@ -2647,7 +2647,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/plaquetas.webp",
   "estacion": {
    "seccion": "s3",
    "n": 15,
