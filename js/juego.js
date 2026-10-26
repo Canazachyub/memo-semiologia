@@ -220,11 +220,13 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
       <div class="jg-aviso" hidden></div>
       <div class="jg-hud">
         <div class="jg-hud-fila">
+          <button class="jg-salir" data-acc="salir" aria-label="Salir del juego" title="Salir del juego">←</button>
           <div class="jg-nv" title="Nivel"><small>Nv</small><b>1</b></div>
           <div class="jg-xp"><div class="jg-xpbar"><i></i></div><small class="jg-xptxt"></small></div>
           <div class="jg-pill jg-racha" title="Racha diaria">🔥 <b>0</b></div>
           <div class="jg-pill jg-caps" title="Capturas">🧠 <b>0</b><span>/${TOTAL}</span></div>
           <button class="jg-dexbtn" data-acc="dex" aria-label="Abrir Memodex">📖<span> Memodex</span></button>
+          <button class="jg-menu" data-acc="menu" aria-label="Menú de secciones" title="Menú de secciones" aria-haspopup="dialog">☰</button>
         </div>
         <div class="jg-caza" hidden></div>
         <div class="jg-leyenda" aria-hidden="true"><span class="jg-cielo" title="Hora del día en el mapa"></span><span class="nueva">Nueva</span><span class="repaso">Repasar</span><span class="capturada">Capturada</span><span>👑 Conquistado</span></div>
@@ -234,14 +236,38 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
         <button class="jg-fab" data-acc="centrar" aria-label="Centrar en el avatar">🎯</button>
         <button class="jg-fab jg-geo" data-acc="ubicar" aria-label="Usar mi ubicación real">📍<span> Usar mi ubicación real</span></button>
       </div>
+      <section class="jg-dock" data-estado="peek" aria-label="Controles del juego">
+        <div class="jg-dk-asa" data-acc="dock-asa" role="button" tabindex="0" aria-label="Mostrar u ocultar más controles" aria-expanded="false"><i></i></div>
+        <div class="jg-dk-peek">
+          <div class="jg-dk-rutaw"></div>
+          <button class="jg-dk-sig" data-acc="sig" aria-label="Caminar a la siguiente memoparada">▶ Siguiente</button>
+          <button class="jg-dk-ic" data-acc="centrar" aria-label="Centrar en el avatar">🎯</button>
+          <button class="jg-dk-ic jg-dk-mas" data-acc="dock" aria-label="Más controles" aria-expanded="false">▴</button>
+        </div>
+        <div class="jg-dk-cuerpo">
+          <div class="jg-dk-caza"></div>
+          <p class="jg-pt">Mapa</p>
+          <div class="jg-dk-tiles">
+            <button class="jg-dk-t" data-acc="dex"><span aria-hidden="true">📖</span><b>Memodex</b><small class="jg-dk-caps"></small></button>
+            <button class="jg-dk-t jg-geo" data-acc="ubicar"><span aria-hidden="true">📍</span><b>Mi ubicación</b><small>GPS real</small></button>
+            <button class="jg-dk-t" data-acc="centrar"><span aria-hidden="true">🎯</span><b>Centrar</b><small>en tu avatar</small></button>
+            <button class="jg-dk-t" data-acc="menu"><span aria-hidden="true">☰</span><b>Secciones</b><small>Hoy, Valores…</small></button>
+          </div>
+          <div class="jg-leyenda jg-dk-ley" aria-hidden="true"><span class="jg-cielo"></span><span class="nueva">Nueva</span><span class="repaso">Repasar</span><span class="capturada">Capturada</span><span>👑 Conquistado</span></div>
+        </div>
+      </section>
       <section class="jg-hoja" aria-live="polite" aria-label="Detalle" hidden><div class="jg-asa" aria-hidden="true"></div>
         <button class="jg-x" data-acc="cerrar" aria-label="Cerrar panel">✕</button><div class="jg-hoja-in"></div></section>
       <section class="jg-dex" aria-label="Memodex" hidden></section>
       <div class="jg-toasts" aria-live="polite"></div>
     </div>`;
     const q = (s) => raiz.querySelector(s);
-    el = { jg: q('.jg'), mapa: q('.jg-mapa'), aviso: q('.jg-aviso'), hud: q('.jg-hud'), hoja: q('.jg-hoja'), hojaIn: q('.jg-hoja-in'), dex: q('.jg-dex'), toasts: q('.jg-toasts'), fabs: q('.jg-fabs'), cielo: q('.jg-cielo') };
+    el = { jg: q('.jg'), mapa: q('.jg-mapa'), aviso: q('.jg-aviso'), hud: q('.jg-hud'), hoja: q('.jg-hoja'), hojaIn: q('.jg-hoja-in'), dex: q('.jg-dex'), toasts: q('.jg-toasts'), fabs: q('.jg-fabs'), cielo: q('.jg-cielo'), dock: q('.jg-dock') };
     caza.montarBarra(q('.jg-caza'));
+    caza.montarBarra(q('.jg-dk-caza'), 'dock');
+    caza.montarBarra(q('.jg-dk-rutaw'), 'peek');
+    montarDock();
+    vigilarTeclado();
     el.jg.classList.toggle('con-caza', caza.activo);
     seguirSinMov(el.jg);
     vigilarVisibilidad();
@@ -279,6 +305,75 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     const off = (cab ? cab.offsetHeight : Math.max(0, raiz.getBoundingClientRect().top + scrollY)) + 28;
     el.jg.style.setProperty('--jg-off', `${off}px`);
     mapa?.invalidateSize();
+  }
+
+  // ---------- móvil: hoja de controles (peek / media / llena) y teclado virtual ----------
+  function ponerDock(est) {
+    if (!el.dock) return;
+    el.dock.dataset.estado = est;
+    el.dock.style.height = '';
+    const abierto = est !== 'peek';
+    el.dock.querySelectorAll('[aria-expanded]').forEach((b) => b.setAttribute('aria-expanded', String(abierto)));
+    const mas = el.dock.querySelector('.jg-dk-mas');
+    mas.textContent = abierto ? '▾' : '▴';
+    mas.setAttribute('aria-label', abierto ? 'Menos controles' : 'Más controles');
+    el.jg.classList.toggle('dock-abierto', abierto);
+  }
+  function montarDock() {
+    const d = el.dock; if (!d) return;
+    // arrastrar desde el asa o la franja visible: al soltar se queda en el estado más cercano
+    let ini = null;
+    const alto = () => d.getBoundingClientRect().height;
+    const empezar = (e) => {
+      if (e.button > 0 || (e.target.closest('button') && !e.target.closest('.jg-dk-asa'))) return;
+      if (e.target.closest('.jg-dk-cuerpo') && d.dataset.estado !== 'peek' && d.querySelector('.jg-dk-cuerpo').scrollTop > 0) return; // deja hacer scroll
+      ini = { y: e.clientY, h: alto(), movio: false, id: e.pointerId };
+    };
+    const mover = (e) => {
+      if (!ini || e.pointerId !== ini.id) return;
+      const dy = ini.y - e.clientY;
+      if (!ini.movio && Math.abs(dy) < 8) return;
+      if (!ini.movio) { ini.movio = true; d.classList.add('arrastra'); try { d.setPointerCapture(e.pointerId); } catch { /* opcional */ } }
+      d.style.height = `${Math.max(56, Math.min(el.jg.clientHeight * 0.9, ini.h + dy))}px`;
+    };
+    const soltar = (e) => {
+      if (!ini || e.pointerId !== ini.id) return;
+      const fue = ini; ini = null; d.classList.remove('arrastra');
+      if (!fue.movio) return;
+      ultimoArrastre = Date.now();
+      const h = alto(), H = el.jg.clientHeight, sube = h > fue.h;
+      // umbrales con sesgo hacia la dirección del gesto
+      let est = h < H * (sube ? 0.18 : 0.32) ? 'peek' : h < H * (sube ? 0.6 : 0.74) ? 'media' : 'llena';
+      if (Math.abs(h - fue.h) < 30) est = d.dataset.estado;
+      ponerDock(est);
+    };
+    d.addEventListener('pointerdown', empezar);
+    d.addEventListener('pointermove', mover);
+    d.addEventListener('pointerup', soltar);
+    d.addEventListener('pointercancel', soltar);
+    d.addEventListener('keydown', (e) => { if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('.jg-dk-asa')) { e.preventDefault(); alternarDock(); } });
+    // tocar el mapa recoge la hoja
+    el.mapa.addEventListener('pointerdown', () => { if (d.dataset.estado !== 'peek') ponerDock('peek'); });
+  }
+  let ultimoArrastre = 0;
+  function alternarDock() {
+    if (Date.now() - ultimoArrastre < 400) return; // el clic que sigue a un arrastre no cuenta
+    ponerDock(el.dock?.dataset.estado === 'peek' ? 'media' : 'peek');
+  }
+  function vigilarTeclado() {
+    // teclado virtual: visualViewport dice cuánto tapa; la hoja sube (--kb) para que el campo no quede oculto
+    const vv = window.visualViewport; if (!vv) return;
+    const medir = () => {
+      if (!el.jg) return;
+      const k = Math.max(0, Math.round(innerHeight - vv.height - vv.offsetTop));
+      const hay = k > 60;
+      el.jg.style.setProperty('--kb', `${hay ? k : 0}px`);
+      el.jg.classList.toggle('teclado', hay);
+      const a = document.activeElement;
+      if (hay && a && el.hoja?.contains(a)) requestAnimationFrame(() => a.scrollIntoView({ block: 'nearest' }));
+    };
+    vv.addEventListener('resize', medir);
+    vv.addEventListener('scroll', medir);
   }
 
   // ---------- mapa ----------
@@ -369,7 +464,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     el.jg.classList.toggle('oscuro', esOscuro());
     el.jg.classList.toggle('mapa-oscuro', mapaOscuro);
     Object.keys(CIELO).forEach((k) => el.jg.classList.toggle(`h-${k}`, k === f));
-    if (el.cielo) el.cielo.textContent = `${CIELO[f][0]} ${CIELO[f][1]}`;
+    raiz.querySelectorAll('.jg-cielo').forEach((c) => { c.textContent = `${CIELO[f][0]} ${CIELO[f][1]}`; });
     if (!mapa) return;
     const t = mapaOscuro ? 'oscuro' : 'claro';
     const clave = `${usarCarto ? 'carto' : 'osm'}-${usarCarto ? t : ''}`;
@@ -503,7 +598,9 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
   function ubicar() {
     if (!('geolocation' in navigator)) return toast('📍 Este navegador no permite usar la ubicación.', 'aviso');
     if (!mapa) return toast('📍 Primero hace falta el mapa.', 'aviso');
-    const b = raiz.querySelector('.jg-geo'); b.classList.add('cargando');
+    const geos = (si) => raiz.querySelectorAll('.jg-geo').forEach((x) => x.classList.toggle('cargando', si));
+    const b = { classList: { add: () => geos(true), remove: () => geos(false) } };
+    b.classList.add('cargando');
     navigator.geolocation.getCurrentPosition(async (pos) => {
       b.classList.remove('cargando');
       const ll = [pos.coords.latitude, pos.coords.longitude];
@@ -817,7 +914,9 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     const r = E.racha();
     q('.jg-racha b').textContent = r;
     q('.jg-racha').classList.toggle('viva', r > 0);
-    q('.jg-caps b').textContent = DATOS.filter((d) => E.capturado(d.id)).length;
+    const nCaps = DATOS.filter((d) => E.capturado(d.id)).length;
+    q('.jg-caps b').textContent = nCaps;
+    const dc = el.dock?.querySelector('.jg-dk-caps'); if (dc) dc.textContent = `${nCaps}/${TOTAL} capturas`;
     if (nivelPrevio != null && nv.n > nivelPrevio) { q('.jg-nv').classList.remove('sube'); void q('.jg-nv').offsetWidth; q('.jg-nv').classList.add('sube'); }
     nivelPrevio = nv.n;
   }
@@ -898,7 +997,12 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     const b = ev.target.closest('[data-acc]'); if (!b || !raiz.contains(b)) return;
     const a = b.dataset.acc;
     if (a === 'ficha-fondo' && ev.target !== b) return;
+    // una acción tomada desde la hoja de controles la recoge, para ver el mapa
+    if (el.dock?.contains(b) && !['dock', 'dock-asa', 'cebo', 'ruta-sig'].includes(a)) ponerDock('peek');
     switch (a) {
+      case 'salir': dispatchEvent(new CustomEvent('memo:atras')); break;
+      case 'menu': dispatchEvent(new CustomEvent('memo:menu')); break;
+      case 'dock': case 'dock-asa': alternarDock(); break;
       case 'cerrar': cerrarHoja(); break;
       case 'aviso-x': el.aviso.hidden = true; break;
       case 'dex': abrirDex(); break;

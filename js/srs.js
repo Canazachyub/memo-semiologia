@@ -60,6 +60,7 @@ function cargar() {
 }
 function guardar() {
   try { localStorage.setItem(CLAVE, JSON.stringify(estado)); } catch { /* modo privado: solo en memoria */ }
+  try { window.dispatchEvent(new CustomEvent('memo:srs')); } catch { /* fuera del navegador */ }
 }
 const res = (id) => ALIAS[id] || id;
 // otra pestaña guardó: recargar para no pisar su progreso con un estado viejo

@@ -212,3 +212,53 @@ img { max-width: 100%; }
   .barra > .chips .chip { flex: none; white-space: nowrap; }
   .tarjeta { padding: 16px; } .tarjeta .q { font-size: 1.25rem; }
 }
+
+/* ---------- pulido móvil (≤ 760 px): cabecera compacta que se esconde al bajar, toques ≥ 44 px, letra legible ---------- */
+@media (max-width: 760px) {
+  /* fila 1: marca + 🌓 ⚙️ · fila 2: buscador a todo el ancho. app.js pone body.top-oculta al bajar y la quita al subir */
+  .top { position: sticky; top: 0; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 8px 6px;
+    padding: max(8px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) 10px max(12px, env(safe-area-inset-left));
+    transition: transform .28s cubic-bezier(.2, .8, .3, 1); }
+  body.top-oculta .top { transform: translateY(-105%); }
+  .tools { display: contents; }
+  .brand { min-width: 0; }
+  .brand h1 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #tema { grid-column: 2; grid-row: 1; } #ajustes { grid-column: 3; grid-row: 1; }
+  .icon-btn { min-width: 44px; min-height: 44px; border-radius: 12px; font-size: 1.05rem; }
+  #buscar { grid-column: 1 / -1; grid-row: 2; width: 100%; min-height: 44px; border-radius: 12px; padding: 10px 14px 10px 38px;
+    background: var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238a94a8' stroke-width='2.4' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.6-3.6'/%3E%3C/svg%3E") no-repeat 12px 50% / 17px; }
+  /* ≥ 16 px en campos: iOS no hace zoom al enfocarlos */
+  #buscar, main input[type="text"], main input[type="search"], main input[type="number"], main input[type="date"], main textarea, main select { font-size: max(16px, 1rem) !important; }
+  main select { min-height: 44px; border-radius: 10px; }
+
+  main { padding: 12px max(12px, env(safe-area-inset-right)) 18px max(12px, env(safe-area-inset-left)); }
+  /* cambio de pestaña suave (el Juego no: su mapa es fixed y una transformación lo movería) */
+  .vista.on:not(#v-juego) { animation: vista-entra .24s ease-out; }
+
+  /* toques cómodos */
+  .btn { min-height: 44px; }
+  button.chip { min-height: 40px; padding: 8px 14px; display: inline-flex; align-items: center; gap: 4px; }
+  .memo-btn { min-height: 40px; padding: 8px 14px; }
+  .toggle { min-height: 44px; font-size: 0.85rem; }
+  .barra { gap: 6px 10px; }
+  .toggle input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--accent); }
+  main summary { padding-block: 10px; }
+
+  /* tarjetas: un poco más de aire y bordes más suaves */
+  .fila, .esc, .fac, .met, .kpi, .pbar, .parada { border-radius: 16px; }
+  .fila-cab > div { padding: 11px 14px; }
+  .clave { padding: 10px 14px; }
+  .sec > h2 { border-radius: 14px; padding: 10px 14px; }
+  .memo { padding: 14px 12px; }
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tarjeta textarea { min-height: 72px; }
+  /* tablas anchas: scroll propio, nunca de la página */
+  .esc table { display: block; overflow-x: auto; }
+  .esc table tbody { display: table; width: 100%; }
+  .estaciones li { grid-template-columns: 72px 1fr; }
+  .estaciones img, .estaciones .ph { width: 72px; height: 72px; }
+  .visor img { max-width: 100%; max-height: 74dvh; }
+  .pie { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); line-height: 1.7; }
+}
+@keyframes vista-entra { from { opacity: 0; transform: translateY(6px); } }
+@media (prefers-reduced-motion: reduce) { .vista.on { animation: none !important; } .top { transition: none !important; } }

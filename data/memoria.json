@@ -571,7 +571,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/talla.webp",
   "estacion": {
    "seccion": "s1",
    "n": 6,
@@ -642,7 +642,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/perimetro-abdominal-cintura.webp",
   "estacion": {
    "seccion": "s1",
    "n": 7,
@@ -726,7 +726,7 @@
    "#143"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/escala-de-glasgow.webp",
   "estacion": {
    "seccion": "s1",
    "n": 8,
@@ -787,7 +787,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/llenado-capilar.webp",
   "estacion": {
    "seccion": "s1",
    "n": 9,
@@ -7810,7 +7810,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo, unidos como pulmones, remando en una balsa de totora por un canal entre juncos dorados de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: soplan burbujas de aire brillante que llenan un vaso de vidrio y una pila de tazas sobre la balsa. Elementos secundarios: en la orilla, una choza de totora con una losa de piedra plana en la entrada. Composición: globos centrados, agua azul con reflejos. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/gases-pao2.webp",
   "preguntas": [
    {
     "q": "¿PaO2 normal a nivel del mar?",
@@ -8021,7 +8021,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una balanza de dos platos con cara y ojos dentro de una casa de totora de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado, mirando hacia arriba con sorpresa. Acción: burbujas de jabón brillantes suben y atraviesan un anillo dorado colgado del techo, mientras otro anillo dorado igual brilla en el piso de juncos. Composición: balanza centrada entre los dos anillos, paredes doradas y luz cálida por la puerta. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/gases-exceso-de-base.webp",
   "preguntas": [
    {
     "q": "¿Exceso de base normal?",
@@ -8165,7 +8165,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un salero gigante con cara orgullosa, sentado en la proa de una balsa de totora en forma de caballito sobre el lago de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: dos compañeros pequeños, una burbuja blanca y una gota verde, se sientan a su lado dejando un asiento vacío en el centro, donde hay una tina de metal. Elementos secundarios: una uva morada y una teja de barro flotando junto a la balsa; una neblina espesa se acerca desde el fondo. Composición: salero centrado, lago azul. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/gases-anion-gap.webp",
   "preguntas": [
    {
     "q": "¿Fórmula y valor normal del anión gap?",
@@ -8245,7 +8245,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo, unidos como pulmones, lanzando besos enormes y rápidos con labios rojos y nubes de aliento verde manzana, en un puesto de artesanías de totora de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: a su lado, una balanza de dos platos con cara preocupada se hunde con un frasco de miel en el plato bajo. Elementos secundarios: un muñeco de nieve mirando un televisor pequeño donde rebota una uva morada. Composición: Pulmi centrado, tejidos de colores al fondo. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/gases-acidosis-metabolica.webp",
   "preguntas": [
    {
     "q": "¿Qué gasometría define la acidosis metabólica?",
@@ -10001,7 +10001,7 @@
   "acronimo": "Secuencia previa (acróstico): Lucho Obstinado Come Sopa Durante El Coma = Lúcido, Obnubilación, Confusión, Somnolencia, Delirio, Estupor, Coma.",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete y puntero vestido de cobrador de combi, gritando con la boca enorme. Acción: señala a cuatro pasajeros sentados en fila en la banca de un paradero: el primero levanta el brazo despierto, el segundo hace una mueca porque le pisan el pie, el tercero cuelga flácido como un trapo, el cuarto está conectado a un fuelle gigante que le sopla aire junto a un monitor con una línea totalmente plana. Escenario: paradero junto a una universidad andina. Composición: fila de izquierda a derecha, cada pasajero más apagado y gris. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/grados-de-coma.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -10058,7 +10058,7 @@
   "acronimo": "Grado II = alas: el aleteo (flapping/asterixis) aparece claro en el II.",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hígado granate con gorro de chef, con ojos desorientados y espirales de mareo sobre la cabeza. Acción: tiene los brazos extendidos y las manos aleteando como alas de pájaro, con líneas de temblor, mientras sostiene una copa que se le cae. Elementos secundarios: una luna y un sol intercambiados de lugar en el cielo; una nube verdosa de aliento que flota a su alrededor. Escenario: explanada de césped de una universidad andina, de noche con guirnaldas. Composición: hígado centrado y grande. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/encefalopatia-hepatica-west-haven.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -10172,7 +10172,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete que golpea con un martillo de reflejos de goma la rodilla de un estudiante sentado a la mesa. Acción: la pierna del estudiante patea sin parar como un resorte, con múltiples líneas de movimiento, y salpica sopa de una bandeja de comedor con compartimentos. Elementos secundarios: otra bandeja quieta al lado; gotas de sopa volando. Escenario: comedor universitario con mesas largas. Composición: martillo y rodilla al centro, colores cálidos. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/reflejos-osteotendinosos.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -10263,7 +10263,7 @@
    }
   ],
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un abuelo andino sonriente con chullo, sentado ante una mesa de inscripción enorme. Acción: muestra en una mano un calendario y en la otra un mapa, mientras dibuja dos pentágonos entrelazados en una hoja. Elementos secundarios: detrás gira una noria de feria colorida; sobre la mesa, un plato de tofu y una taza pequeña. Escenario: entrada de una facultad de medicina de ladrillo. Composición: abuelo centrado, noria al fondo. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/mini-mental-mmse-folstein.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -10601,7 +10601,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo, nerviosos, sentados en una balanza de laboratorio de tres platos. Acción: sobre los platos caen una pierna hinchada, un pequeño televisor, un corazón corriendo que rompe tazas, un pañuelo con una mancha roja y un cangrejo; la aguja de la balanza se dispara. Elementos secundarios: al fondo, un tomógrafo circular con luz azul; un nacho en la mesa. Escenario: laboratorio de fisiología con frascos. Composición: balanza centrada. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/score-de-wells-para-tep.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -10674,7 +10674,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo tosiendo con fuerza, con ojos de susto. Acción: de su boca salen largas cintas rojas de tela, como serpentinas, que llenan un tazón de nueces y siguen hasta cubrir el techo de unas chozas de totora en miniatura. Elementos secundarios: una mesa de simulación con un maniquí médico pálido; una luz de alarma girando. Escenario: sala de simulación clínica. Composición: globos centrados, cintas en espiral. Formato cuadrado 1:1. Sin gore, sin sangre realista. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/hemoptisis-por-volumen.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -10899,7 +10899,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una gota de agua azul con cantimplora vacía y ojos hundidos, sudando y jadeando. Acción: sube una escalera universitaria y en cada escalón se le escapan gotitas que caen en una taza. Elementos secundarios: en lo alto de la escalera, un tamal envuelto en hoja junto a la puerta de un corral de toros de madera; un salero gigante. Escenario: escaleras de concreto de una facultad con luz de mediodía andino. Composición: gota centrada en diagonal ascendente. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/deshidratacion.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -10972,7 +10972,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una goma de borrar gigante rosada con brazos y cara traviesa. Acción: borra con trazos enérgicos el contorno de un niño delgado parado sobre una balanza de consultorio, dejando migas de goma volando. Elementos secundarios: una taza, un anillo que cae rodando y una rosa marchita en el piso, en ese orden de izquierda a derecha; el cabello fino del niño se vuela como pelusa. Escenario: aula universitaria con pizarra. Composición: goma y niño al centro. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/desnutricion-criterios-de-gomez.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -11045,7 +11045,7 @@
   "acronimo": "ALICIA (guion del dolor) = Antigüedad · Localización/Irradiación · Carácter · Intensidad · Agravantes/Atenuantes.",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete que sostiene una regla larguísima de colores, del verde al rojo, sin marcas escritas. Acción: frente a la regla, una dama elegante se abanica tranquila, un hombre rojo como tomate aprieta los dientes y un tercero grita mientras varios gatos furiosos le arañan la espalda. Elementos secundarios: una niña rubia de vestido azul con libreta y estetoscopio anotando. Escenario: aula universitaria. Composición: los tres pacientes de izquierda a derecha, intensidad creciente. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/escala-visual-analogica-del-dolor-eva.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -11113,7 +11113,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hígado granate con gorro de chef y una barriga enorme transparente llena de agua, preocupado. Acción: una mano golpea un costado de la barriga y una ola azul recorre el agua de lado a lado, dentro flota un pequeño televisor. Elementos secundarios: unas losas de piedra apiladas a sus pies; el piso de baldosas blancas y negras como tablero de ajedrez. Escenario: baño universitario con azulejos. Composición: barriga al centro, ola con líneas de movimiento. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/ascitis-por-volumen-percusion.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -11200,7 +11200,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un riñón café con casco de bombero y manguera, sentado en la barra de un cafetín. Acción: vierte miel en una taza de café que se desborda en espuma blanca abundante, mientras sus mejillas y tobillos se hinchan como globos. Elementos secundarios: un tamal abriéndose en hojas sobre el plato; tunas verdes envueltas en telas en la vitrina; un rayo de sol entrando por la ventana. Escenario: cafetín universitario. Composición: riñón centrado. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/proteinuria-en-cruces-tira-reactiva.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -11287,7 +11287,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un riñón café con casco de bombero que sostiene un colador gigante en medio de una avenida. Acción: filtra una fila de autitos que pasan por el colador; los que salen llevan tazas envueltas en telas, mientras detrás el tráfico se atasca. Elementos secundarios: un vaso, una losa de piedra y una taza pequeña en la vereda, de mayor a menor. Escenario: salida de una universidad andina hacia una avenida con cerros al fondo. Composición: riñón centrado, líneas de movimiento en los autos. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/funcion-renal-por-tfg.webp",
   "imagen_clave": false,
   "preguntas": [
    {

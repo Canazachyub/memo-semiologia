@@ -285,20 +285,47 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
   }
 
   // ---------- HUD de caza ----------
-  let barra = null;
-  function montarBarra(nodo) { barra = nodo; pintarBarra(); }
-  function pintarBarra(soloTiempo = false) {
-    if (!barra) return;
+  // la misma información se pinta en varios sitios: 'hud' (barra flotante de escritorio), 'dock' (hoja de controles
+  // del celular) y 'peek' (chip de ruta en la franja visible de esa hoja)
+  const barras = [];
+  function montarBarra(nodo, modo = 'hud') { if (!nodo) return; nodo.dataset.modo = modo; barras.push(nodo); pintarBarra(); }
+  function pintarBarra(soloTiempo = false) { barras.forEach((b) => pintarBarraEn(b, soloTiempo)); }
+  function pintarBarraEn(barra, soloTiempo) {
     if (!activo) { barra.hidden = true; return; }
     barra.hidden = false;
     const resta = (ventana() + 1) * VENTANA_MS - Date.now();
     const cebo = E.ceboRestante();
     const ms = misiones(); const hechas = ms.filter((m) => m.hecha).length;
-    if (soloTiempo && barra.firstElementChild) {
+    if (soloTiempo && barra.firstElementChild && barra.dataset.modo === 'hud') {
       const t = barra.querySelector('.jg-rot b'); if (t) t.textContent = mmss(resta);
       const cb = barra.querySelector('.jg-cebo');
       if (cb) { cb.classList.toggle('on', cebo > 0); cb.querySelector('span').textContent = cebo > 0 ? mmss(cebo) : 'Cebo'; cb.setAttribute('aria-label', cebo > 0 ? `Cebo activo, quedan ${mmss(cebo)}` : 'Activar cebo de estudio 15 minutos'); }
       const mb = barra.querySelector('.jg-mis b'); if (mb) mb.textContent = `${hechas}/${ms.length}`;
+      return;
+    }
+    const modo = barra.dataset.modo;
+    if (modo === 'peek') {
+      if (soloTiempo && barra.firstElementChild) return;
+      barra.innerHTML = rutaSel ? `<button class="jg-dk-ruta" data-acc="ruta-sig" aria-label="Ruta ${esc(rutaSel.id)}: ${esc(rutaSel.nombre)}. Toca para cambiar de ruta" title="${esc(rutaSel.nombre)}">
+        <span aria-hidden="true">🛣️</span><b>${esc(rutaSel.id)}</b>${RUTAS.length > 1 ? '<i aria-hidden="true">⇄</i>' : ''}</button>` : '';
+      return;
+    }
+    if (modo === 'dock') {
+      if (soloTiempo && barra.firstElementChild) {
+        const t = barra.querySelector('.jg-rot b'); if (t) t.textContent = mmss(resta);
+        const cb = barra.querySelector('.jg-cebo');
+        if (cb) { cb.classList.toggle('on', cebo > 0); cb.querySelector('small').textContent = cebo > 0 ? `activo ${mmss(cebo)}` : '15 min, x2 criaturas'; }
+        const mb = barra.querySelector('.jg-mis small'); if (mb) mb.textContent = `${hechas}/${ms.length} hechas hoy`;
+        return;
+      }
+      barra.innerHTML = `${RUTAS.length > 1 ? `<p class="jg-pt">Ruta de hoy</p><div class="jg-dk-rutas" role="radiogroup" aria-label="Ruta diaria">${RUTAS.map((r) =>
+        `<button role="radio" aria-checked="${rutaSel === r}" class="${rutaSel === r ? 'on' : ''}" data-acc="ruta" data-ruta="${esc(r.id)}"><b>${esc(r.id)}</b><span>${esc(corto(r.nombre))}</span></button>`).join('')}</div>` : ''}
+        <p class="jg-pt">Caza</p>
+        <div class="jg-dk-tiles">
+          <button class="jg-dk-t jg-mis" data-acc="misiones"><span aria-hidden="true">📜</span><b>Misiones</b><small>${hechas}/${ms.length} hechas hoy</small></button>
+          <button class="jg-dk-t jg-cebo ${cebo > 0 ? 'on' : ''}" data-acc="cebo"><span aria-hidden="true">🧲</span><b>Cebo</b><small>${cebo > 0 ? `activo ${mmss(cebo)}` : '15 min, x2 criaturas'}</small></button>
+          <div class="jg-dk-t jg-rot" role="timer" aria-label="Próxima rotación de criaturas"><span aria-hidden="true">🌀</span><b>${mmss(resta)}</b><small>nuevas criaturas</small></div>
+        </div>`;
       return;
     }
     barra.innerHTML = `${RUTAS.length > 1 ? `<div class="jg-rutas" role="radiogroup" aria-label="Ruta diaria">${RUTAS.map((r) =>
@@ -419,7 +446,21 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
       eraVencida: !!(S.info(p.card) && S.vence(p.card)), eraCapturada: E.capturado(c.capId), estado: estadoSRS(c), x2: !!(spawn && aqui(spawn.ll)), foco: document.activeElement };
     montarEncuentro();
   }
-  let capa = null, quitarTilt = null;
+  let capa = null, quitarTilt = null, quitarTeclado = null;
+  // teclado virtual del celular: visualViewport dice cuánto tapa; la capa reserva ese alto (--kb) y el campo queda a la vista
+  function vigilarTeclado(nodo) {
+    const vv = window.visualViewport; if (!vv) return () => {};
+    const medir = () => {
+      const k = Math.max(0, Math.round(innerHeight - vv.height - vv.offsetTop));
+      const hay = k > 60;
+      nodo.style.setProperty('--kb', `${hay ? k : 0}px`);
+      nodo.classList.toggle('teclado', hay);
+      const a = document.activeElement;
+      if (hay && a?.matches?.('textarea, input') && nodo.contains(a)) requestAnimationFrame(() => a.scrollIntoView({ block: 'center' }));
+    };
+    vv.addEventListener('resize', medir); vv.addEventListener('scroll', medir);
+    return () => { vv.removeEventListener('resize', medir); vv.removeEventListener('scroll', medir); };
+  }
   function montarEncuentro() {
     const { c, p } = enc; const R = RAREZA[c.rareza];
     capa = document.createElement('div');
@@ -452,6 +493,7 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
       if (e.key === 'Tab') atraparFoco(e);
     });
     quitarTilt = activarTilt(capa.querySelector('.jg-holo'));
+    quitarTeclado = vigilarTeclado(capa);
     requestAnimationFrame(() => capa?.classList.add('on'));
     pintarPanel();
   }
@@ -486,6 +528,7 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     if (!capa) return;
     const vieja = capa, foco = enc?.foco;
     quitarTilt?.(); quitarTilt = null;
+    quitarTeclado?.(); quitarTeclado = null;
     capa = null; enc = null;
     vieja.classList.remove('on'); vieja.classList.add('fuera');
     document.documentElement.classList.remove('jg-enc-abierto');
@@ -705,6 +748,7 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
   function alClic(a, b) {
     switch (a) {
       case 'ruta': elegirRuta(b.dataset.ruta); return true;
+      case 'ruta-sig': { const i = RUTAS.indexOf(rutaSel); if (RUTAS.length > 1) elegirRuta(RUTAS[(i + 1) % RUTAS.length].id); return true; }
       case 'cebo': activarCebo(); if (h.hoja()?.tipo === 'misiones') h.pintarHoja(); return true;
       case 'misiones': h.abrirHoja({ tipo: 'misiones' }); return true;
       case 'cazar-retar': encontrar(b.dataset.k); return true;

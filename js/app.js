@@ -11,6 +11,7 @@ import { crearHoy } from './hoy.js';
 import { crearCiudad } from './ciudad.js';
 import { crearEntrenar } from './entrenar.js';
 import { crearJuego } from './juego.js';
+import * as notificaciones from './notificaciones.js';
 
 // ---------- paquete C: ajustes y PWA (antes de cargar datos, para que valgan desde el primer pintado) ----------
 ajustes.aplicar();
@@ -27,6 +28,7 @@ const CTX = { ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES, MAPA, RUTA, CASOS:
 // ---------- módulos ----------
 const VISTAS = crearVistas(CTX);
 const REPASO = crearRepaso({ ...CTX, raiz: $('#repaso'), alPendientes: (n) => { $('#pend').textContent = n || ''; } });
+notificaciones.iniciar({ ...CTX, tarjetas: REPASO.tarjetas }); // recordatorios de repaso + insignia del ícono
 const PROGRESO = crearProgreso({ ...CTX, tarjetas: REPASO.tarjetas, raiz: $('#progreso') });
 const HOY = crearHoy({ ...CTX, tarjetas: REPASO.tarjetas, raiz: $('#hoy') });
 const CIUDAD = crearCiudad({ ...CTX, raiz: $('#ciudad') });
@@ -42,10 +44,14 @@ const PINTAR = {
 };
 
 // ---------- navegación ----------
-let vista = 'tabla';
+let vista = null, vistaPrevia = 'hoy';
 function ir(v) {
   if (!PINTAR[v]) v = 'tabla';
+  if (vista && v !== vista && vista !== 'juego') vistaPrevia = vista;
   vista = v;
+  // modo inmersivo: en el celular (≤760 px, ver css/juego.css) el Juego ocupa toda la pantalla sin cabecera ni barra inferior
+  document.body.classList.toggle('inmersivo', v === 'juego');
+  document.body.classList.remove('top-oculta');
   $$('.tabs button').forEach((b) => b.classList.toggle('on', b.dataset.vista === v));
   $$('.vista').forEach((s) => s.classList.toggle('on', s.id === `v-${v}`));
   marcarNav(v);
@@ -59,6 +65,9 @@ function irAFicha(id) {
   const el = document.getElementById(`p-${id}`); el?.scrollIntoView({ block: 'center' }); el?.querySelector('.memo')?.classList.add('on');
 }
 window.addEventListener('memo:ir', (e) => irAFicha(e.detail?.id));
+// desde el Juego inmersivo: "←" vuelve a la pestaña anterior y "☰" abre la hoja "Más"
+window.addEventListener('memo:atras', () => cambiarVista(vistaPrevia && vistaPrevia !== 'juego' ? vistaPrevia : 'hoy'));
+window.addEventListener('memo:menu', () => { const h = $('#hoja-mas'); if (h && !h.open) { h.showModal(); $('#mas')?.setAttribute('aria-expanded', 'true'); } });
 window.addEventListener('memo:vista', (e) => {
   ir(e.detail?.vista);
   if (e.detail?.tec && VISTAS.filtrarTecnica) VISTAS.filtrarTecnica(e.detail.tec); // desde Métodos: "ver los datos que usan esta técnica"
@@ -200,6 +209,21 @@ function iniciarC() {
   const pend = $('#pend'), pendM = $('#pend-m');
   const copiar = () => { pendM.textContent = pend.textContent; };
   new MutationObserver(copiar).observe(pend, { childList: true, characterData: true, subtree: true }); copiar();
+
+  // cabecera compacta en el celular: se esconde al bajar y reaparece al subir
+  let yPrev = scrollY, pendiente = false;
+  addEventListener('scroll', () => {
+    if (pendiente) return; pendiente = true;
+    requestAnimationFrame(() => {
+      pendiente = false;
+      const y = scrollY, dy = y - yPrev;
+      if (innerWidth > 760 || vista === 'juego' || document.activeElement === $('#buscar')) { document.body.classList.remove('top-oculta'); yPrev = y; return; }
+      if (y < 80 || dy < -6) document.body.classList.remove('top-oculta');
+      else if (dy > 6) document.body.classList.add('top-oculta');
+      if (Math.abs(dy) > 6) yPrev = y;
+    });
+  }, { passive: true });
+  $('#buscar').addEventListener('focus', () => document.body.classList.remove('top-oculta'));
 
   // ⚙️
   $('#ajustes').addEventListener('click', () => ajustes.abrir());

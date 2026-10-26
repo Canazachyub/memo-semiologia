@@ -635,3 +635,142 @@ html.jg-enc-abierto { overflow: hidden; }
 .jg-enc.sin-mov .jg-enc-fondo { display: none; }
 .jg-pista .jg-escena { margin: 4px 0 8px; }
 .jg-palacio { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; margin: 10px 0; padding: 8px 10px; border-radius: 12px; background: var(--memo-bg); font-size: 0.8125rem; }
+
+/* =====================================================================
+   MÓVIL INMERSIVO (≤ 760 px) · el Juego ocupa toda la pantalla
+   app.js pone body.inmersivo al abrir el Juego; aquí se esconden la cabecera y la barra inferior,
+   el HUD queda en una sola franja arriba y los demás controles van a la hoja .jg-dock (peek / media / llena).
+   ===================================================================== */
+.jg-salir, .jg-menu, .jg-dock { display: none; }
+/* el botón principal del juego lleva degradado morado: texto blanco también en modo oscuro (app.css lo oscurece) */
+.jg .btn.pri, .jg-enc .btn.pri { color: #fff !important; }
+/* clip (no hidden): que el foco de un campo en la hoja no desplace el mapa y esconda el HUD */
+.jg { overflow: clip; }
+/* la fila de rutas larga no debe ensanchar el HUD (dejaba el botón Memodex fuera del mapa en escritorio) */
+.jg-hud { grid-template-columns: minmax(0, 1fr); }
+.jg-caza .jg-rutas { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+
+@media (max-width: 760px) {
+  body.inmersivo { --barra-movil: 0px; overflow: hidden; overscroll-behavior: none; padding-bottom: 0; }
+  body.inmersivo .top, body.inmersivo .barra-movil, body.inmersivo .pie { display: none; }
+  body.inmersivo main { padding: 0; max-width: none; }
+  body.inmersivo .jg { position: fixed; inset: 0; z-index: 30; height: auto; min-height: 0; border: 0; border-radius: 0; box-shadow: none; }
+  .jg { --dk-peek: 64px; --dk-asa: 16px; --safe-t: env(safe-area-inset-top, 0px); --safe-b: env(safe-area-inset-bottom, 0px);
+    --dk-alto: calc(var(--dk-peek) + var(--dk-asa) + var(--safe-b)); }
+
+  /* ---------- HUD: una franja mínima y translúcida ---------- */
+  .jg-hud { top: 0; left: 0; right: 0; gap: 0;
+    padding: calc(var(--safe-t) + 6px) max(8px, env(safe-area-inset-right)) 0 max(8px, env(safe-area-inset-left)); }
+  .jg-hud-fila { gap: 4px; padding: 4px; min-height: 48px; border-radius: 16px;
+    background: color-mix(in srgb, var(--card) 74%, transparent); box-shadow: 0 4px 16px rgba(20,20,60,.16); }
+  .jg-salir, .jg-menu { display: grid; place-items: center; flex: none; width: 40px; height: 40px; border: 0; border-radius: 12px;
+    background: transparent; font-size: 1.25rem; font-weight: 800; line-height: 1; transition: background .15s; }
+  .jg-salir:active, .jg-menu:active { background: color-mix(in srgb, var(--line) 80%, transparent); }
+  .jg-nv { width: 36px; height: 36px; border-radius: 11px; }
+  .jg-nv small { font-size: 0.5rem; }
+  .jg-nv b { font-size: 1rem; }
+  .jg-xp { margin: 0 2px; }
+  .jg-xpbar { height: 6px; }
+  .jg-xptxt { font-size: 0.625rem; margin-top: 3px; }
+  .jg-pill { padding: 4px 5px; background: transparent; border: 0; font-size: 0.75rem; }
+  .jg-pill b { font-size: 0.875rem; }
+  .jg-dexbtn, .jg-caza, .jg-hud > .jg-leyenda, .jg-fabs { display: none !important; }
+
+  /* avisos y toasts debajo de la franja */
+  .jg-toasts, .con-caza .jg-toasts { top: calc(var(--safe-t) + 64px); }
+  .jg-aviso:not(.grande), .con-caza .jg-aviso:not(.grande) { top: calc(var(--safe-t) + 64px); left: 8px; right: 8px; }
+  .jg-aviso.grande { padding-top: calc(var(--safe-t) + 80px); }
+
+  /* Leaflet: sin botones de zoom (se usa el pellizco) y la atribución sobre la hoja */
+  .jg .leaflet-control-zoom { display: none; }
+  .jg .leaflet-bottom { bottom: var(--dk-alto); transition: bottom .3s; }
+  .jg.con-hoja .leaflet-bottom { bottom: 0; }
+
+  /* ---------- hoja de controles ---------- */
+  .jg-dock { display: flex; flex-direction: column; position: absolute; z-index: 15; left: 0; right: 0; bottom: 0; height: var(--dk-alto);
+    padding: 0 max(10px, env(safe-area-inset-right)) var(--safe-b) max(10px, env(safe-area-inset-left));
+    background: color-mix(in srgb, var(--card) 88%, transparent); backdrop-filter: blur(16px) saturate(1.4); -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    border-radius: 22px 22px 0 0; border-top: 1px solid color-mix(in srgb, var(--line) 70%, transparent); box-shadow: 0 -8px 28px rgba(10,10,40,.2);
+    transition: height .34s cubic-bezier(.2,.9,.3,1), transform .3s ease, opacity .3s; }
+  .jg-dock[data-estado="media"] { height: min(58%, calc(430px + var(--safe-b))); }
+  .jg-dock[data-estado="llena"] { height: 88%; }
+  .jg-dock.arrastra { transition: none; }
+  .jg.con-hoja .jg-dock { transform: translateY(105%); opacity: 0; pointer-events: none; }
+  .jg-dk-asa { flex: none; height: var(--dk-asa); display: grid; place-items: center; cursor: grab; touch-action: none; }
+  .jg-dk-asa i { width: 40px; height: 5px; border-radius: 99px; background: color-mix(in srgb, var(--muted) 45%, transparent); }
+  .jg-dk-peek { flex: none; height: var(--dk-peek); display: flex; align-items: center; gap: 8px; padding-bottom: 10px; touch-action: none; }
+  .jg-dk-rutaw[hidden], .jg-dk-rutaw:empty { display: none !important; }
+  .jg-dk-ruta { height: 48px; display: flex; align-items: center; gap: 5px; padding: 0 12px; border-radius: 14px; border: 1px solid var(--line);
+    background: var(--bg); font-weight: 800; white-space: nowrap; }
+  .jg-dk-ruta b { font-size: 1.0625rem; font-weight: 900; color: #ea580c; }
+  .jg.oscuro .jg-dk-ruta b { color: #fbbf24; }
+  .jg-dk-ruta i { font-style: normal; font-size: 0.8125rem; color: var(--muted); }
+  .jg-dk-sig { flex: 1; min-width: 0; height: 48px; border: 0; border-radius: 14px; font-weight: 800; font-size: 0.9375rem; white-space: nowrap;
+    color: #fff !important; background: linear-gradient(135deg, #8b5cf6, #6d28d9); box-shadow: 0 4px 12px rgba(109,40,217,.35); transition: transform .15s; }
+  .jg-dk-ic { flex: none; width: 48px; height: 48px; display: grid; place-items: center; border-radius: 14px; border: 1px solid var(--line);
+    background: var(--bg); font-size: 1.1875rem; transition: transform .15s; }
+  .jg-dk-mas { font-size: 1.25rem; color: var(--muted) !important; }
+  .jg-dk-sig:active, .jg-dk-ic:active, .jg-dk-ruta:active, .jg-dk-t:active, .jg-dk-rutas button:active { transform: scale(.95); }
+  .jg-dk-cuerpo { flex: 1; min-height: 0; overflow-y: auto; scrollbar-width: none; overscroll-behavior: contain; padding: 0 2px 16px; visibility: hidden; opacity: 0; transition: opacity .25s, visibility .25s; }
+  .jg-dock:not([data-estado="peek"]) .jg-dk-cuerpo, .jg-dock.arrastra .jg-dk-cuerpo { visibility: visible; opacity: 1; }
+  .jg-dk-cuerpo .jg-pt { margin: 10px 2px 6px; }
+  .jg-dk-caza[hidden] { display: none; }
+  .jg-dk-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(74px, 1fr)); gap: 8px; }
+  .jg-dk-t { display: grid; justify-items: center; align-content: center; gap: 2px; min-height: 78px; padding: 8px 4px; border-radius: 16px;
+    border: 1px solid var(--line); background: var(--bg); text-align: center; transition: transform .15s, background .2s; }
+  .jg-dk-t > span { font-size: 1.375rem; line-height: 1.15; }
+  .jg-dk-t b { font-size: 0.78rem; font-weight: 800; }
+  .jg-dk-t small { font-size: 0.66rem; line-height: 1.2; color: var(--muted); font-weight: 600; }
+  .jg-dk-t.jg-rot b { font-size: 0.9375rem; font-variant-numeric: tabular-nums; }
+  .jg-dk-t.jg-mis { background: color-mix(in srgb, #f59e0b 14%, var(--bg)); }
+  .jg-dk-t.jg-cebo.on { background: linear-gradient(135deg, #ec4899, #8b5cf6); border-color: transparent; color: #fff !important; }
+  .jg-dk-t.jg-cebo.on small { color: #fff; opacity: .92; }
+  .jg-dk-t.jg-cebo > span { display: block !important; } /* la regla ≤370 px del HUD de escritorio lo escondía */
+  .jg-dk-t.jg-geo.cargando { animation: jgGira 1s linear infinite; }
+  .jg-dk-rutas { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 6px; }
+  .jg-dk-rutas button { display: flex; align-items: center; gap: 8px; min-height: 48px; padding: 6px 10px; border-radius: 14px; border: 1px solid var(--line);
+    background: var(--bg); text-align: left; font-size: 0.75rem; font-weight: 600; transition: transform .15s; }
+  .jg-dk-rutas b { flex: none; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: var(--line); font-weight: 900; font-size: 0.8125rem; }
+  .jg-dk-rutas span { min-width: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.25; }
+  .jg-dk-rutas button.on { border-color: #ea580c; background: color-mix(in srgb, #f59e0b 14%, var(--card)); }
+  .jg-dk-rutas button.on b { background: linear-gradient(135deg, #fbbf24, #ea580c); color: #fff; }
+  .jg-dk-ley { display: flex !important; flex-wrap: wrap; margin-top: 14px; box-shadow: none; background: var(--bg); }
+
+  /* ---------- hoja de detalle (parada, gimnasio, misiones) ---------- */
+  .jg-hoja { max-height: 84%; bottom: var(--kb, 0px); padding: 6px 16px calc(20px + var(--safe-b)); border-radius: 24px 24px 0 0;
+    transition: transform .38s cubic-bezier(.2,1.2,.4,1), bottom .2s ease-out; }
+  .jg.teclado .jg-hoja { max-height: calc(100% - var(--kb, 0px) - var(--safe-t) - 8px); padding-bottom: 12px; }
+  .jg-x { width: 40px; height: 40px; }
+  .jg .btn { min-height: 46px; }
+  .jg-btns .btn { flex: 1 1 140px; }
+  .jg-op { min-height: 52px; padding: 12px 14px; font-size: 0.9375rem; }
+  .jg-op .l { width: 30px; height: 30px; }
+  .jg-escribir textarea { font-size: max(16px, 1rem); } /* ≥16 px: iOS no hace zoom al enfocar */
+  .jg-link { min-height: 44px; }
+
+  /* ---------- Memodex a pantalla completa ---------- */
+  .jg-dex-in { padding: calc(var(--safe-t) + 12px) max(14px, env(safe-area-inset-right)) calc(28px + var(--safe-b)) max(14px, env(safe-area-inset-left)); }
+  .jg-dex-cab .jg-x { width: 44px; height: 44px; }
+  .jg-modal { padding: calc(var(--safe-t) + 12px) 12px calc(12px + var(--safe-b)); }
+
+  /* ---------- encuentro: hoja inferior pegada abajo, respeta safe-area y el teclado ---------- */
+  .jg-enc-in { min-height: 100%; grid-template-rows: auto 1fr auto; gap: 8px; padding: max(10px, env(safe-area-inset-top)) 12px var(--kb, 0px); }
+  .jg-holo-w { align-self: center; }
+  .jg-enc-panel { margin: 0 -12px; border-radius: 26px 26px 0 0; border-bottom: 0; padding: 18px 16px calc(18px + env(safe-area-inset-bottom, 0px)); }
+  .jg-enc.teclado .jg-enc-panel { padding-bottom: 12px; }
+  .jg-enc.teclado .jg-holo-w { display: none; }
+  .jg-enc.teclado .jg-enc-in { grid-template-rows: auto 1fr; }
+  .jg-enc.teclado .jg-enc-panel { align-self: end; }
+  .jg-enc .btn { min-height: 50px; font-size: 1rem; }
+  .jg-enc-huir { min-height: 44px; padding: 8px 16px; }
+}
+@media (max-width: 760px) and (max-height: 640px) {
+  .jg { --dk-peek: 58px; }
+  .jg-holo { width: min(150px, 42vw); }
+}
+@media (max-width: 760px) and (prefers-reduced-motion: reduce) {
+  .jg-dock, .jg-hoja, .jg-dk-cuerpo { transition: none; }
+}
+
+/* el avatar debe llenar su círculo (Leaflet pisa width/height de las img) */
+.leaflet-container .jg-av-cuerpo > img { width: 100% !important; height: 100% !important; max-width: none; object-fit: cover; display: block; }

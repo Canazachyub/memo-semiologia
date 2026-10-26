@@ -54,6 +54,20 @@
   .barra-movil button[aria-current="page"] span, .barra-movil button.on span { filter: none; opacity: 1; }
   .barra-movil button[aria-current="page"]::before, .barra-movil button.on::before { content: ''; position: absolute; top: 2px; width: 26px; height: 3px; border-radius: 99px; background: var(--accent); }
   .barra-movil .badge { position: absolute; top: 2px; left: calc(50% + 6px); font-size: .68rem; padding: 0 5px; line-height: 1.5; }
+  /* estado activo tipo app nativa: píldora detrás del icono en lugar de la rayita */
+  .barra-movil button { gap: 3px; transition: color .2s; }
+  .barra-movil button span { display: grid; place-items: center; width: 56px; height: 30px; border-radius: 99px; font-size: 1.25rem; transition: background .25s, filter .2s, transform .2s; }
+  .barra-movil button[aria-current="page"] span, .barra-movil button.on span { background: var(--memo-bg); }
+  .barra-movil button:active span { transform: scale(.92); }
+  .barra-movil button[aria-current="page"]::before, .barra-movil button.on::before { content: none; }
+  .barra-movil .badge { top: 0; left: calc(50% + 10px); }
+  .hm-grid button { min-height: 76px; border-radius: 16px; }
+  /* ⚙️ y atajos como hoja inferior */
+  .aj-dlg { width: 100%; max-width: 100%; margin: auto 0 0; border-radius: 22px 22px 0 0; max-height: 92dvh; border-bottom: 0; }
+  .aj-dlg[open] { animation: aj-sube .22s ease-out; }
+  .aj-cuerpo { padding-bottom: calc(18px + env(safe-area-inset-bottom, 0px)); }
+  .aj-seg button { min-height: 44px; }
+  .aj-dlg select, .aj-dlg input[type="date"] { min-height: 44px; font-size: max(16px, 1rem); }
   /* el mapa del juego descuenta la barra inferior (pedido a paquete D: sumarlo en su calc) */
   .jg { height: calc(100dvh - var(--jg-off, 150px) - var(--barra-movil)); }
 }
@@ -79,7 +93,10 @@
 .aviso .btn { padding: 6px 12px; font-size: .85rem; background: transparent; color: inherit; border-color: color-mix(in srgb, var(--bg) 40%, transparent); }
 .aviso .btn.pri { background: #6d28d9; border-color: #6d28d9; color: #fff; }
 .aviso-x { border: 0; background: none; color: inherit; opacity: .7; padding: 4px 6px; }
-@media (max-width: 760px) { .avisos { bottom: calc(var(--barra-movil) + 8px); } } /* por encima de la barra inferior */
+@media (max-width: 760px) {
+  .avisos { bottom: calc(var(--barra-movil) + 8px); } /* por encima de la barra inferior */
+  body.inmersivo .avisos { bottom: calc(96px + env(safe-area-inset-bottom, 0px)); } /* Juego: por encima de la hoja de controles */
+}
 .aviso.fuera { opacity: 0; transform: translateY(8px); transition: opacity .25s, transform .25s; }
 
 /* ---------- visor de imágenes ---------- */
@@ -105,3 +122,17 @@
 @media (prefers-reduced-motion: reduce) {
   :root:not(.con-mov) .hoja-mas[open], :root:not(.con-mov) .aviso { animation: none; }
 }
+
+/* ---------- 🔔 Recordatorios (js/notificaciones.js) ---------- */
+.nt input[type="time"] { font: inherit; font-size: .9rem; padding: 7px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); color-scheme: light dark; min-height: 36px; }
+.nt-explica { margin: 4px 0 8px; padding: 10px 12px; border-radius: 12px; background: var(--memo-bg); border: 1px solid var(--line); font-size: .88rem; }
+.nt-explica p { margin: 0 0 6px; }
+.nt-estado { list-style: none; margin: 6px 0 4px; padding: 0; display: grid; gap: 4px; font-size: .86rem; color: var(--muted); }
+.nt-estado li { padding: 6px 10px; border-radius: 10px; background: var(--bg); overflow-wrap: anywhere; }
+.nt-estado b { color: var(--ink); }
+.nt-sub { margin: 14px 0 4px; font-size: .9rem; }
+.nt .aj-btns a.btn { color: var(--ink); text-decoration: none; display: inline-flex; align-items: center; }
+.nt-compat { margin-top: 8px; font-size: .86rem; }
+.nt-compat summary { cursor: pointer; font-weight: 600; color: var(--accent); padding: 4px 0; min-height: 32px; }
+.nt-compat ul { margin: 6px 0; padding-left: 1.1rem; display: grid; gap: 6px; }
+.nt-compat p { margin: 6px 0 0; }

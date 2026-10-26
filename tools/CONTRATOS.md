@@ -91,3 +91,26 @@ Se guarda en localStorage con la clave `memo-semio-juego`, y todo acceso va dent
 - **URL:** `?vista=<id>` abre una pestaña (lo usan los accesos directos del manifest); `?sw=0` desinstala el service worker para desarrollar.
 - **Publicar:** correr `py tools/precache.py` antes de cada commit/push. Actualiza la lista y la versión de `sw.js`.
 - **Ajustes que lee el paquete A:** nuevasDia, nuevasNoEstudiadas, diaSemanal, bloque. `reducirMov` devuelve booleano efectivo.
+
+## Recordatorios de repaso · `js/notificaciones.js` (paquete C, 2026-10-25)
+- **Enganche (coordinador, una línea en `js/app.js`, después de crear `REPASO`):**
+  ```js
+  import * as notificaciones from './notificaciones.js';   // junto a los demás imports
+  notificaciones.iniciar({ ...CTX, tarjetas: REPASO.tarjetas }); // tras const REPASO = crearRepaso(...)
+  ```
+  Es idempotente (llamarla otra vez solo actualiza el contexto). `ajustes.js` ya importa el módulo para la sección ⚙️ "🔔 Recordatorios".
+- **API:** `iniciar({srs, plan, tarjetas?, PALACIOS?, ATLAS?})` · `pedirPermiso()` · `programar()` · `estado()` (Promise) · `cuentas()` · `probar()` · `ics()` · `descargarIcs()` · `urlGoogle()`.
+  Cuenta como "vencidas" las tarjetas con técnica (`t.m`) igual que el badge `#pend`; sin `tarjetas` usa `srs.todas()` (sin `pal:*`). Palacios = tarjetas srs `pal:<sid>`.
+- **Ajustes nuevos** (`memo-semio-ajustes`, entran en el respaldo): `notifActivo` (false) · `notifHora` ('19:00') · `notifPalacio` (true).
+- **Evento recomendado para el paquete A:** `window.dispatchEvent(new CustomEvent('memo:srs'))` en `srs.js` tras cada `guardar()`. Sin él, la insignia y el resumen se recalculan cada 60 s, al cambiar de pestaña (`storage`) y al ocultar/mostrar la app (`visibilitychange`).
+- **IndexedDB `memo-semio-notif` / store `kv`** (lo lee `sw.js`): `resumen` = `{v, generado, activo, hora, palacio, diaSemanal, vencidasPorDia:{fecha:n}, palaciosPorDia:{fecha:[nombres]}, temasPorDia, ultimaActividad}` (14 días); `ultimaNotif` ('AAAA-MM-DD') y `posponer` (ms) son claves aparte, compartidas por la app y el SW (así nunca avisan dos veces el mismo día).
+- **Regla de aviso (app y SW, iguales):** activo · ya pasó `notifHora` · hay vencidas (o palacio/semanal con `notifPalacio`) · no se avisó hoy (o venció "En 1 h") · sin calificar nada en los últimos 45 min. Con la app visible → `memo:aviso` interno; oculta y con permiso → notificación del sistema (`tag:'repasos'`, acciones `repasar` / `luego`).
+- **SW:** `periodicsync` tag `memo-repasos` (lo registra la app con `minInterval` 12 h si el permiso `periodic-background-sync` está concedido); `notificationclick` enfoca una ventana y le manda `{tipo:'NOTIF_IR', vista}` (el módulo lo convierte en `memo:vista`) o abre `./?vista=hoy|repaso`. Los textos están duplicados en `texto()` (módulo) y `textoRepasos()` (sw.js): mantenerlos iguales.
+
+## Pulido móvil (2026-10-25)
+- **Modo inmersivo:** `app.js` pone `body.inmersivo` mientras la vista es `juego`. Solo con ≤ 760 px (`css/juego.css`) esconde `.top`, `.barra-movil` y `.pie`, y `.jg` pasa a `position: fixed; inset: 0`. En escritorio no cambia nada.
+- **Eventos nuevos:** `memo:atras` vuelve a la pestaña anterior al Juego (o a Hoy). `memo:menu` abre la hoja "Más" (`#hoja-mas`).
+- **Cabecera móvil:** `body.top-oculta` la esconde al bajar y la muestra al subir. Lo maneja `app.js`, y no se activa en el Juego ni con el buscador enfocado.
+- **Juego en el celular:** el HUD queda en una sola franja (`.jg-salir ← · nivel/XP · racha · capturas · .jg-menu ☰`). El resto va en `.jg-dock` (`data-estado` = `peek` | `media` | `llena`, arrastrable). `juego-caza.montarBarra(nodo, modo)` acepta los modos `'hud'` (por defecto), `'dock'` y `'peek'`, y `pintarBarra()` repinta todos. La acción `ruta-sig` pasa a la ruta siguiente.
+- **Teclado virtual:** `visualViewport` → `--kb` y la clase `.teclado` en `.jg` (hoja de reto) y en `.jg-enc` (encuentro).
+- **Prueba:** `movil-test.html?vista=<id>&escala=0.75[&solo=0|1|2]` muestra marcos de 360×740, 390×844 y 412×915.

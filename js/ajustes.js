@@ -7,14 +7,17 @@
 // Extras: DEFECTOS, aplicar(), abrir(), cerrar(), mostrarAtajos().
 // Claves: fs ('s'|'m'|'l'|'xl') · lectura (bool) · reducirMov ('auto'|'si'|'no') · nuevasDia (10|15|20|30)
 //         diaSemanal (0=domingo … 6=sábado) · bloque ('25/5'|'50/10'|'60/10') · nuevasNoEstudiadas (bool)
-//         recordarRespaldo (bool). La fecha de examen vive en el plan (js/plan.js → memo-semio-plan.examen).
+//         recordarRespaldo (bool) · notifActivo (bool) · notifHora ('HH:MM') · notifPalacio (bool) (ver js/notificaciones.js).
+//         La fecha de examen vive en el plan (js/plan.js → memo-semio-plan.examen).
 import * as respaldo from './respaldo.js';
 import * as plan from './plan.js';
+import * as notif from './notificaciones.js';
 
 const CLAVE = 'memo-semio-ajustes';
 export const DEFECTOS = {
   fs: 'm', lectura: false, reducirMov: 'auto', nuevasDia: 15, diaSemanal: 0, bloque: '25/5',
   nuevasNoEstudiadas: false, recordarRespaldo: true,
+  notifActivo: false, notifHora: '19:00', notifPalacio: true,
 };
 export const TAM_LETRA = { s: 14, m: 15, l: 17, xl: 19 };
 const fns = new Set();
@@ -85,6 +88,7 @@ function htmlPanel() {
       <div class="aj-fila"><span>Bloques de estudio<small>Trabajo / descanso, en minutos.</small></span>${opciones('bloque', [['25/5', '25/5'], ['50/10', '50/10'], ['60/10', '60/10']], get('bloque'), 'Bloques de estudio')}</div>
       <label class="aj-fila aj-sw"><span>Permitir nuevas de temas no estudiados<small>Por defecto, primero se comprende el tema y luego entran sus tarjetas.</small></span><input type="checkbox" data-aj="nuevasNoEstudiadas" ${get('nuevasNoEstudiadas') ? 'checked' : ''}></label>
     </section>
+    ${notif.htmlAjustes()}
     <section aria-labelledby="aj-r"><h3 id="aj-r">💾 Respaldo</h3>
       <p class="aj-nota">${u ? `Último respaldo: <b>${fecha(u)}</b>${d >= 7 ? ` · hace ${d} días` : ''}` : 'Aún no has respaldado tu progreso.'} Tu progreso vive solo en este navegador: respáldalo para no perderlo al cambiar de celular o borrar datos.</p>
       <div class="aj-btns">
@@ -175,6 +179,7 @@ function refrescar() {
   const y = dlg.querySelector('.aj-cuerpo')?.scrollTop || 0;
   dlg.innerHTML = htmlPanel();
   dlg.querySelector('.aj-cuerpo').scrollTop = y;
+  notif.montarAjustes(dlg.querySelector('#nt'));
   estadoSW();
 }
 
@@ -231,6 +236,7 @@ export function abrir() {
   volverFoco = document.activeElement;
   dlg.innerHTML = htmlPanel();
   if (!dlg.open) dlg.showModal();
+  notif.montarAjustes(dlg.querySelector('#nt'));
   estadoSW();
 }
 export function cerrar() { if (dlg?.open) dlg.close(); }

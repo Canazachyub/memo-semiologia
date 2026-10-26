@@ -7,10 +7,10 @@
 // La lista y la versión las regenera `py tools/precache.py`.
 
 // <precache> (generado por tools/precache.py; no editar a mano)
-const VERSION = 'f43e4800f7';
-const PRECACHE = ["./", "index.html", "manifest.webmanifest", "js/ajustes.js", "js/app.js", "js/ciudad.js", "js/entrenar.js", "js/hoy.js", "js/juego-caza.js", "js/juego-estado.js", "js/juego-util.js", "js/juego.js", "js/metodos.js", "js/mias.js", "js/plan.js", "js/progreso.js", "js/repaso.js", "js/respaldo.js", "js/srs.js", "js/util.js", "js/vistas.js", "css/ajustes.css", "css/app.css", "css/ciudad.css", "css/entrenar.css", "css/juego.css", "css/metodos.css", "css/repaso.css", "css/vistas.css", "data/atlas.json", "data/casos.json", "data/mapa.json", "data/memoria.json", "data/memoria_facies.json", "data/memoria_siglas.json", "data/metodos.json", "data/palacios.json", "data/ruta_diaria.json", "data/tabla00_99.json", "img/icon-192.png", "img/icon-512.png", "img/icon-maskable-512.png", "img/avatar.webp", "img/avatar_cara.webp"];
-const IMAGENES = ["img/facies/acromegalica.webp", "img/facies/adenoidea.webp", "img/facies/aortica.webp", "img/facies/basedowiana-hipertiroidea.webp", "img/facies/caquectica.webp", "img/facies/cianotica.webp", "img/facies/cushing-luna-llena.webp", "img/facies/de-ayerza.webp", "img/facies/de-claude-bernard-horner.webp", "img/facies/de-depresion.webp", "img/facies/esclerodermica-o-de-momia.webp", "img/facies/etilica.webp", "img/facies/febril.webp", "img/facies/hipocratica-o-peritoneal.webp", "img/facies/icterica.webp", "img/facies/leonina.webp", "img/facies/lupica.webp", "img/facies/miastenica.webp", "img/facies/mitral.webp", "img/facies/mixedematosa.webp", "img/facies/nefritica-o-renal.webp", "img/facies/neumonica.webp", "img/facies/palida.webp", "img/facies/paralisis-facial-periferica.webp", "img/facies/parkinsoniana.webp", "img/lugares/escalas.webp", "img/lugares/s1.webp", "img/lugares/s10.webp", "img/lugares/s11.webp", "img/lugares/s12.webp", "img/lugares/s2.webp", "img/lugares/s3.webp", "img/lugares/s4.webp", "img/lugares/s5.webp", "img/lugares/s6.webp", "img/lugares/s7.webp", "img/lugares/s8.webp", "img/lugares/s9.webp", "img/memo/amilasa-serica.webp", "img/memo/ascitis-gasa.webp", "img/memo/ascitis-pmn-pbe.webp", "img/memo/aspecto-y-color-de-orina.webp", "img/memo/bilirrubina-directa-conjugada.webp", "img/memo/calcio-serico.webp", "img/memo/cilindros-urinarios.webp", "img/memo/clase-funcional-nyha.webp", "img/memo/cloro-serico.webp", "img/memo/coledoco-ecografia.webp", "img/memo/criterios-de-centor.webp", "img/memo/ecg-complejo-qrs.webp", "img/memo/ecg-frecuencia-cardiaca.webp", "img/memo/ecg-intervalo-pr.webp", "img/memo/ecg-segmento-st.webp", "img/memo/edema-signo-de-godet-fovea.webp", "img/memo/eritrocitosis-de-altura-hb.webp", "img/memo/escala-de-coma-de-glasgow.webp", "img/memo/fosfatasa-alcalina-fa.webp", "img/memo/frecuencia-cardiaca-pulso.webp", "img/memo/frecuencia-de-deposiciones.webp", "img/memo/frecuencia-respiratoria.webp", "img/memo/fuerza-muscular-mrc-daniels.webp", "img/memo/gases-hco3.webp", "img/memo/gases-paco2.webp", "img/memo/gases-ph-arterial.webp", "img/memo/gases-sato2-arterial.webp", "img/memo/ggt-gt.webp", "img/memo/glucosa-en-ayunas.webp", "img/memo/hematocrito.webp", "img/memo/hemoglobina.webp", "img/memo/ictericia.webp", "img/memo/lcr-glucosa.webp", "img/memo/lcr-patron-bacteriano-piogeno.webp", "img/memo/leucocitos-totales.webp", "img/memo/neutrofilos-segmentados.webp", "img/memo/peso-talla-imc.webp", "img/memo/plaquetas.webp", "img/memo/pleural-celulas.webp", "img/memo/pleural-criterios-de-light.webp", "img/memo/pleural-glucosa-ph-y-ldh.webp", "img/memo/potasio-serico.webp", "img/memo/presion-arterial.webp", "img/memo/qsofa.webp", "img/memo/rx-torax-condensacion.webp", "img/memo/rx-torax-derrame-pleural.webp", "img/memo/rx-torax-indice-cardiotoracico.webp", "img/memo/rx-torax-neumotorax.webp", "img/memo/saturacion-de-oxigeno.webp", "img/memo/score-de-wells-para-tvp.webp", "img/memo/sodio-serico.webp", "img/memo/soplos-freeman-levine.webp", "img/memo/talla.png", "img/memo/temperatura.webp", "img/memo/tgo-ast.webp", "img/memo/tgp-alt.webp", "img/memo/tp-inr.webp", "img/memo/vcm.webp", "img/memo/vesicula-pared-calculos.webp", "img/memo/volumen-urinario.webp"];
-const PESO_IMAGENES = 15367201;
+const VERSION = 'e89239339f';
+const PRECACHE = ["./", "index.html", "manifest.webmanifest", "js/ajustes.js", "js/app.js", "js/ciudad.js", "js/entrenar.js", "js/hoy.js", "js/juego-caza.js", "js/juego-estado.js", "js/juego-util.js", "js/juego.js", "js/metodos.js", "js/mias.js", "js/notificaciones.js", "js/plan.js", "js/progreso.js", "js/repaso.js", "js/respaldo.js", "js/srs.js", "js/util.js", "js/vistas.js", "css/ajustes.css", "css/app.css", "css/ciudad.css", "css/entrenar.css", "css/juego.css", "css/metodos.css", "css/repaso.css", "css/vistas.css", "data/atlas.json", "data/casos.json", "data/mapa.json", "data/memoria.json", "data/memoria_facies.json", "data/memoria_siglas.json", "data/metodos.json", "data/palacios.json", "data/ruta_diaria.json", "data/tabla00_99.json", "img/icon-192.png", "img/icon-512.png", "img/icon-maskable-512.png", "img/avatar.webp", "img/avatar_cara.webp"];
+const IMAGENES = ["img/facies/acromegalica.webp", "img/facies/adenoidea.webp", "img/facies/aortica.webp", "img/facies/basedowiana-hipertiroidea.webp", "img/facies/caquectica.webp", "img/facies/cianotica.webp", "img/facies/cushing-luna-llena.webp", "img/facies/de-ayerza.webp", "img/facies/de-claude-bernard-horner.webp", "img/facies/de-depresion.webp", "img/facies/esclerodermica-o-de-momia.webp", "img/facies/etilica.webp", "img/facies/febril.webp", "img/facies/hipocratica-o-peritoneal.webp", "img/facies/icterica.webp", "img/facies/leonina.webp", "img/facies/lupica.webp", "img/facies/miastenica.webp", "img/facies/mitral.webp", "img/facies/mixedematosa.webp", "img/facies/nefritica-o-renal.webp", "img/facies/neumonica.webp", "img/facies/palida.webp", "img/facies/paralisis-facial-periferica.webp", "img/facies/parkinsoniana.webp", "img/lugares/escalas.webp", "img/lugares/s1.webp", "img/lugares/s10.webp", "img/lugares/s11.webp", "img/lugares/s12.webp", "img/lugares/s2.webp", "img/lugares/s3.webp", "img/lugares/s4.webp", "img/lugares/s5.webp", "img/lugares/s6.webp", "img/lugares/s7.webp", "img/lugares/s8.webp", "img/lugares/s9.webp", "img/memo/amilasa-serica.webp", "img/memo/ascitis-gasa.webp", "img/memo/ascitis-pmn-pbe.webp", "img/memo/ascitis-por-volumen-percusion.webp", "img/memo/aspecto-y-color-de-orina.webp", "img/memo/bilirrubina-directa-conjugada.webp", "img/memo/calcio-serico.webp", "img/memo/cilindros-urinarios.webp", "img/memo/clase-funcional-nyha.webp", "img/memo/cloro-serico.webp", "img/memo/coledoco-ecografia.webp", "img/memo/criterios-de-centor.webp", "img/memo/deshidratacion.webp", "img/memo/desnutricion-criterios-de-gomez.webp", "img/memo/ecg-complejo-qrs.webp", "img/memo/ecg-frecuencia-cardiaca.webp", "img/memo/ecg-intervalo-pr.webp", "img/memo/ecg-segmento-st.webp", "img/memo/edema-signo-de-godet-fovea.webp", "img/memo/encefalopatia-hepatica-west-haven.webp", "img/memo/eritrocitosis-de-altura-hb.webp", "img/memo/escala-de-coma-de-glasgow.webp", "img/memo/escala-de-glasgow.webp", "img/memo/escala-visual-analogica-del-dolor-eva.webp", "img/memo/fosfatasa-alcalina-fa.webp", "img/memo/frecuencia-cardiaca-pulso.webp", "img/memo/frecuencia-de-deposiciones.webp", "img/memo/frecuencia-respiratoria.webp", "img/memo/fuerza-muscular-mrc-daniels.webp", "img/memo/funcion-renal-por-tfg.webp", "img/memo/gases-acidosis-metabolica.webp", "img/memo/gases-anion-gap.webp", "img/memo/gases-exceso-de-base.webp", "img/memo/gases-hco3.webp", "img/memo/gases-paco2.webp", "img/memo/gases-pao2.webp", "img/memo/gases-ph-arterial.webp", "img/memo/gases-sato2-arterial.webp", "img/memo/ggt-gt.webp", "img/memo/glucosa-en-ayunas.webp", "img/memo/grados-de-coma.webp", "img/memo/hematocrito.webp", "img/memo/hemoglobina.webp", "img/memo/hemoptisis-por-volumen.webp", "img/memo/ictericia.webp", "img/memo/lcr-glucosa.webp", "img/memo/lcr-patron-bacteriano-piogeno.webp", "img/memo/leucocitos-totales.webp", "img/memo/llenado-capilar.webp", "img/memo/mini-mental-mmse-folstein.webp", "img/memo/neutrofilos-segmentados.webp", "img/memo/perimetro-abdominal-cintura.webp", "img/memo/peso-talla-imc.webp", "img/memo/plaquetas.webp", "img/memo/pleural-celulas.webp", "img/memo/pleural-criterios-de-light.webp", "img/memo/pleural-glucosa-ph-y-ldh.webp", "img/memo/potasio-serico.webp", "img/memo/presion-arterial.webp", "img/memo/proteinuria-en-cruces-tira-reactiva.webp", "img/memo/qsofa.webp", "img/memo/reflejos-osteotendinosos.webp", "img/memo/rx-torax-condensacion.webp", "img/memo/rx-torax-derrame-pleural.webp", "img/memo/rx-torax-indice-cardiotoracico.webp", "img/memo/rx-torax-neumotorax.webp", "img/memo/saturacion-de-oxigeno.webp", "img/memo/score-de-wells-para-tep.webp", "img/memo/score-de-wells-para-tvp.webp", "img/memo/sodio-serico.webp", "img/memo/soplos-freeman-levine.webp", "img/memo/talla.webp", "img/memo/temperatura.webp", "img/memo/tgo-ast.webp", "img/memo/tgp-alt.webp", "img/memo/tp-inr.webp", "img/memo/vcm.webp", "img/memo/vesicula-pared-calculos.webp", "img/memo/volumen-urinario.webp"];
+const PESO_IMAGENES = 15931930;
 // </precache>
 
 const SHELL = `memo-shell-${VERSION}`;
@@ -140,3 +140,88 @@ function recortar(nombre) {
     } finally { recortando[nombre] = 0; }
   }, 3000);
 }
+
+// ---------------------------------------------------------------- recordatorios de repaso (js/notificaciones.js)
+// El SW no puede leer localStorage: la app deja en IndexedDB 'memo-semio-notif'/'kv' el 'resumen'
+// { activo, hora, palacio, diaSemanal, vencidasPorDia:{fecha:n}, palaciosPorDia:{fecha:[nombres]}, temasPorDia, ultimaActividad },
+// y ambos comparten 'ultimaNotif' ('AAAA-MM-DD') y 'posponer' (ms) para no avisar dos veces.
+// Periodic Background Sync ('memo-repasos', ≥ 12 h) solo existe en Chromium con la PWA instalada; la app lo registra.
+const NOTIF_DB = 'memo-semio-notif';
+function notifKV(modo, k, v) {
+  return new Promise((ok, no) => {
+    const r = indexedDB.open(NOTIF_DB, 1);
+    r.onupgradeneeded = () => r.result.createObjectStore('kv');
+    r.onerror = () => no(r.error);
+    r.onsuccess = () => {
+      const db = r.result, tx = db.transaction('kv', modo === 'get' ? 'readonly' : 'readwrite'), s = tx.objectStore('kv');
+      const q = modo === 'get' ? s.get(k) : v == null ? s.delete(k) : s.put(v, k);
+      tx.oncomplete = () => { db.close(); ok(q.result); };
+      tx.onerror = () => { db.close(); no(tx.error); };
+    };
+  }).catch(() => undefined);
+}
+const fechaLocal = (ms = Date.now()) => { const d = new Date(ms); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
+const plural = (n, s, p = `${s}s`) => `${n} ${n === 1 ? s : p}`;
+// MANTENER IGUAL que texto() en js/notificaciones.js
+function textoRepasos(n, pal, semanal, temas, conPalacio) {
+  const extra = [];
+  if (n) extra.push(`${plural(n, 'tarjeta vencida', 'tarjetas vencidas')} (≈ ${Math.max(1, Math.ceil(n / 4))} min)`);
+  if (temas) extra.push(plural(temas, 'tema nuevo', 'temas nuevos'));
+  if (conPalacio && pal?.length) extra.push(`🏛️ palacio: ${pal.slice(0, 3).join(', ')}${pal.length > 3 ? '…' : ''}`);
+  if (conPalacio && semanal) extra.push('📅 hoy toca repaso semanal');
+  const titulo = n ? `🧠 Tienes ${plural(n, 'repaso')}` : conPalacio && pal?.length ? '🏛️ Hoy toca pasear tu palacio' : '📅 Hoy es tu repaso semanal';
+  return { titulo, cuerpo: `Tu sesión de hoy: ${extra.join(' · ') || 'nada pendiente'}` };
+}
+/** Valor del día; si el resumen es viejo (la app no se abrió en 2 semanas) usa el último día conocido (cota inferior). */
+function delDia(mapa, f, vacio) {
+  if (!mapa) return vacio;
+  if (f in mapa) return mapa[f];
+  const ks = Object.keys(mapa).sort();
+  return ks.length && f > ks[ks.length - 1] ? mapa[ks[ks.length - 1]] : vacio;
+}
+
+async function revisarRepasos() {
+  const r = await notifKV('get', 'resumen');
+  if (!r) return;
+  const ahora = Date.now(), d = new Date(ahora), hoy = fechaLocal(ahora);
+  const n = delDia(r.vencidasPorDia, hoy, 0) || 0;
+  try { if (self.navigator.setAppBadge) { if (n) await self.navigator.setAppBadge(n); else await self.navigator.clearAppBadge(); } } catch { /* */ }
+  if (!r.activo || self.Notification?.permission !== 'granted') return;
+  const [h, m] = String(r.hora || '19:00').split(':').map(Number);
+  if (d.getHours() * 60 + d.getMinutes() < (h || 0) * 60 + (m || 0)) return;
+  const [ultima, posponer] = await Promise.all([notifKV('get', 'ultimaNotif'), notifKV('get', 'posponer')]);
+  if (posponer && ahora < posponer) return;
+  if (ultima === hoy && !(posponer && ahora >= posponer)) return;
+  if (ahora - (r.ultimaActividad || 0) < 45 * 60000) return; // está repasando
+  const pal = delDia(r.palaciosPorDia, hoy, []) || [], semanal = d.getDay() === +r.diaSemanal;
+  if (!n && !(r.palacio && (pal.length || semanal))) return;
+  // con la app a la vista, ella muestra su aviso interno
+  const vent = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
+  if (vent.some((c) => c.visibilityState === 'visible')) return;
+  const { titulo, cuerpo } = textoRepasos(n, pal, semanal, r.temasPorDia?.[hoy] || 0, r.palacio);
+  await self.registration.showNotification(titulo, {
+    body: cuerpo, icon: 'img/icon-192.png', badge: 'img/icon-192.png', tag: 'repasos', renotify: true, lang: 'es',
+    data: { url: './?vista=hoy' }, actions: [{ action: 'repasar', title: 'Repasar ahora' }, { action: 'luego', title: 'En 1 h' }],
+  });
+  await Promise.all([notifKV('put', 'ultimaNotif', hoy), notifKV('put', 'posponer', null)]);
+}
+
+self.addEventListener('periodicsync', (e) => { if (e.tag === 'memo-repasos') e.waitUntil(revisarRepasos()); });
+
+self.addEventListener('notificationclick', (e) => {
+  const n = e.notification;
+  n.close();
+  if (e.action === 'luego') {
+    // sin servidor no hay alarma exacta: se reintenta en el próximo periodicsync o mientras la app siga abierta
+    e.waitUntil(notifKV('put', 'posponer', Date.now() + 3600e3));
+    return;
+  }
+  const vista = e.action === 'repasar' ? 'repaso' : (new URL(n.data?.url || './?vista=hoy', self.registration.scope).searchParams.get('vista') || 'hoy');
+  const url = new URL(`./?vista=${vista}`, self.registration.scope).href;
+  e.waitUntil((async () => {
+    const vent = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
+    const c = vent.find((x) => x.url.startsWith(self.registration.scope)) || vent[0];
+    if (c) { await c.focus().catch(() => {}); c.postMessage({ tipo: 'NOTIF_IR', vista }); return; }
+    await self.clients.openWindow(url);
+  })());
+});
