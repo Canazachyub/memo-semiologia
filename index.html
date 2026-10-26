@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Memo Semiología · Valores</title>
+<meta name="description" content="Valores de la historia clínica con técnicas de memorización, escenas e imágenes, y repaso espaciado.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo">🧠</span>
+    <div><h1>Memo Semiología</h1><p class="sub">Valores de la historia clínica · recordar, no solo leer</p></div>
+  </div>
+  <div class="tools">
+    <input id="buscar" type="search" placeholder="Buscar parámetro, signo, sigla…" autocomplete="off">
+    <button id="tema" class="icon-btn" title="Cambiar tema" aria-label="Cambiar tema">🌓</button>
+  </div>
+  <nav class="tabs" role="tablist">
+    <button data-vista="tabla" class="on">📋 Valores</button>
+    <button data-vista="ciudad">🏙️ Ciudad</button>
+    <button data-vista="escalas">📏 Escalas</button>
+    <button data-vista="facies">🙂 Facies</button>
+    <button data-vista="repaso">🔁 Repaso <span id="pend" class="badge"></span></button>
+    <button data-vista="progreso">📊 Progreso</button>
+    <button data-vista="metodos">🧩 Métodos</button>
+    <button data-vista="siglas">🔤 Siglas</button>
+  </nav>
+</header>
+
+<main id="app">
+  <section id="v-tabla" class="vista on">
+    <div class="barra">
+      <div class="chips" id="filtro-sec"></div>
+      <label class="toggle"><input type="checkbox" id="ocultar"> <span>🙈 Ocultar valores (autoexamen)</span></label>
+      <label class="toggle"><input type="checkbox" id="solo-memo"> <span>🧠 Solo con técnica</span></label>
+    </div>
+    <div id="tabla"></div>
+  </section>
+  <section id="v-ciudad" class="vista"><div id="ciudad"></div></section>
+  <section id="v-escalas" class="vista"><div id="escalas" class="grid-escalas"></div></section>
+  <section id="v-facies" class="vista"><div id="facies" class="grid-facies"></div></section>
+  <section id="v-repaso" class="vista"><div id="repaso"></div></section>
+  <section id="v-progreso" class="vista"><div id="progreso"></div></section>
+  <section id="v-metodos" class="vista"><div id="metodos"></div></section>
+  <section id="v-siglas" class="vista"><div id="siglas"></div></section>
+</main>
+
+<div id="visor" class="visor" hidden><img alt=""><p></p></div>
+
+<footer class="pie">
+  Datos: tu vault de Semiología (texto <span class="lit">así<sup>lit.</sup></span> = completado con literatura estándar).
+  Técnicas: destiladas del canal de Pablo Lomelí. Tu progreso se guarda solo en este navegador.
+  <button id="exportar" class="link">Exportar progreso</button> · <label class="link">Importar<input id="importar" type="file" accept=".json" hidden></label>
+</footer>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

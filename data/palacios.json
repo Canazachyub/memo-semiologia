@@ -1,0 +1,33 @@
+{
+  "_nota": "Ciudad-palacio de Puno. Cada sección del atlas vive en un lugar real; dentro, una ruta ordenada de micro-ubicaciones (una por dato, en el orden de la sección). Las micro-ubicaciones son genéricas: ajústalas a como TÚ recuerdas cada lugar (#129: el palacio debe ser conocido).",
+  "ciudad": "Puno",
+  "orden_paseo": ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11", "s12", "escalas"],
+  "lugares": {
+    "s1": { "lugar": "Hospital Regional Manuel Núñez Butrón (Emergencia)", "icono": "🏥", "porque": "Aquí se toman los signos vitales en el triaje.",
+      "ruta": ["Puerta de emergencia", "Ventanilla de admisión", "Sillas de espera", "Camilla de triaje", "Tensiómetro de pared", "Balanza y tallímetro", "Monitor del tópico", "Coche de paro", "Lavadero", "Puerta del shock trauma", "Pasillo a hospitalización", "Ascensor"] },
+    "s2": { "lugar": "Plaza de Armas", "icono": "⛲", "porque": "Ves a la gente: estado general, nutrición, color de la piel.",
+      "ruta": ["Esquina con el Jr. Lima", "Pileta central", "Bancas del lado de la Catedral", "Jardines", "Postes de luz", "Escaleras de la Catedral", "Portales", "Esquina del Jr. Deustua", "Puesto de periódicos", "Palomas de la plaza"] },
+    "s3": { "lugar": "Jirón Lima (peatonal)", "icono": "🚶", "porque": "Una corriente de gente que fluye como la sangre por un vaso.",
+      "ruta": ["Arco de entrada desde la Plaza", "Primera banca", "Farmacia", "Restaurante con trucha en la vitrina", "Agencia de turismo", "Tienda de chompas de alpaca", "Músico callejero", "Heladería", "Cajero automático", "Pizzería", "Tienda de artesanía", "Cabina telefónica", "Macetas con flores", "Banco del Jr. Lima", "Cruce con el Jr. Libertad", "Hotel", "Panadería", "Puesto de jugos", "Llegada al Parque Pino", "Fuente del final"] },
+    "s4": { "lugar": "Arco Deustua", "icono": "🏛️", "porque": "Un arco que 'cierra el paso': la coagulación.",
+      "ruta": ["Escalinata de subida", "Columna izquierda", "Columna derecha", "Parte alta del arco", "Placa conmemorativa", "Mirador detrás del arco", "Banca del costado", "Bajada hacia la ciudad", "Faroles", "Jardinera"] },
+    "s5": { "lugar": "Mercado Central de Puno", "icono": "🛒", "porque": "Azúcar, sal, frutas: glucosa y electrolitos.",
+      "ruta": ["Puerta principal", "Puesto de azúcar y harina", "Puesto de sal", "Puesto de plátanos", "Puesto de quesos", "Puesto de leche", "Juguería", "Puesto de carnes", "Puesto de hierbas", "Puesto de papas y chuño", "Balanza del mercado", "Puesto de pescado", "Escalera al segundo piso", "Comedores", "Salida lateral", "Baños"] },
+    "s6": { "lugar": "Malecón Bahía de los Incas", "icono": "🐟", "porque": "Trucha frita y comida grasosa: hígado, páncreas y lípidos.",
+      "ruta": ["Entrada del malecón", "Primer restaurante de trucha frita", "Parrilla humeante", "Juegos infantiles", "Glorieta", "Bancas frente al lago", "Totorales", "Puesto de anticuchos", "Muelle de pedalones", "Estatua", "Ciclovía", "Mirador del malecón", "Puesto de helados", "Faroles", "Caseta de vigilancia", "Escaleras al lago", "Tachos de basura", "Final del malecón", "Parqueo", "Paradero"] },
+    "s7": { "lugar": "Parque Pino", "icono": "🌲", "porque": "La pileta y el agua: orina y deposiciones.",
+      "ruta": ["Entrada desde el Jr. Lima", "Pileta central", "Pino más alto", "Bancas del lado de la iglesia", "Iglesia San Juan", "Lustrabotas", "Puesto de golosinas", "Glorieta", "Jardinera central", "Postes de luz", "Paradero de mototaxis", "Esquina del Jr. Arequipa", "Teléfono público", "Baño público", "Kiosko", "Salida al Jr. Lambayeque"] },
+    "s8": { "lugar": "Catedral de Puno", "icono": "⛪", "porque": "El ECO de la catedral: ecografía (y datos de la historia).",
+      "ruta": ["Portada", "Puerta principal", "Pila de agua bendita", "Bancas de la nave", "Púlpito", "Altar mayor", "Campanario", "Confesionario", "Salida lateral", "Atrio"] },
+    "s9": { "lugar": "Estadio Enrique Torres Belón", "icono": "🏟️", "porque": "Ritmo, carreras, latidos: el electrocardiograma.",
+      "ruta": ["Boletería", "Puerta de ingreso", "Tribuna de occidente", "Pista atlética", "Arco norte", "Círculo central", "Arco sur", "Banca de suplentes", "Marcador", "Camerinos", "Tribuna de oriente", "Salida"] },
+    "s10": { "lugar": "Mirador Kuntur Wasi", "icono": "🦅", "porque": "La vista panorámica de la ciudad, como una radiografía.",
+      "ruta": ["Inicio de las escaleras", "Primer descanso", "Mitad de la subida", "Pie del cóndor", "Ala izquierda del cóndor", "Ala derecha del cóndor", "Pico del cóndor", "Vista al lago", "Vista a la ciudad", "Bajada"] },
+    "s11": { "lugar": "Islas flotantes de los Uros", "icono": "🛶", "porque": "Equilibrio sobre la totora y aire de altura: gases y ácido-base.",
+      "ruta": ["Lancha en el muelle", "Canal de totora", "Llegada a la isla", "Piso de totora", "Casa de totora", "Torre de vigía", "Balsa de totora (caballito)", "Puesto de artesanías", "Cocina de la isla", "Escuela flotante", "Orilla de la isla", "Regreso en lancha", "Muelle de vuelta"] },
+    "s12": { "lugar": "Muelle del lago Titicaca", "icono": "⚓", "porque": "El agua del lago: líquidos pleural, ascítico y cefalorraquídeo.",
+      "ruta": ["Entrada al muelle", "Boletería de lanchas", "Primera lancha", "Bote a pedal", "Barandas", "Totora en el agua", "Aves del lago", "Faro del muelle", "Puesto de chicharrón", "Bancas", "Capitanía", "Lancha grande", "Plataforma del fondo", "Agua profunda", "Reflejo del cerro", "Gaviotas", "Muelle secundario", "Escalera de bajada", "Agua de la orilla", "Salida del puerto"] },
+    "escalas": { "lugar": "Ciudad Universitaria UNA Puno · Facultad de Medicina Humana", "icono": "🎓", "porque": "Cada escala clínica es un aula o un rincón de tu facultad.",
+      "ruta": ["Puerta principal de la UNA", "Paradero de la universidad", "Explanada", "Biblioteca", "Comedor universitario", "Ingreso a Medicina", "Aula 1", "Aula 2", "Laboratorio de Anatomía", "Anfiteatro", "Laboratorio de Fisiología", "Sala de simulación", "Auditorio", "Decanato", "Escaleras al segundo piso", "Aula 3", "Aula 4", "Baños", "Cafetín", "Salida a la avenida"] }
+  }
+}

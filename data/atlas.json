@@ -1,0 +1,5570 @@
+{
+ "titulo": "Valores de la historia clínica",
+ "subtitulo": "Semiología UNA Puno 2026 · extraído de tu vault",
+ "secciones": [
+  {
+   "id": "s1",
+   "titulo": "1 · Signos vitales y antropometría",
+   "color": "#c62828",
+   "icono": "🩺",
+   "filas": [
+    {
+     "id": "frecuencia-cardiaca-pulso",
+     "parametro": "Frecuencia cardiaca / pulso",
+     "nombre": "Frecuencia cardiaca / pulso",
+     "icono": "❤️",
+     "normal": {
+      "t": "Adulto 60-100 lpm (media 70); recién nacido ~145/min",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": ">100 taquisfigmia: fiebre, IC, hipertiroidismo, miocarditis, hipovolemia, shock",
+      "lit": false
+     },
+     "baja": {
+      "t": "<60 bradisfigmia: hipotermia, hipotiroidismo, β-bloq/digital, tifoidea, bloqueo AV",
+      "lit": false
+     },
+     "perla": "Fiebre: +12-15 lpm por cada °C sobre 37; bloqueo AV total: pulso 30-40/min",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Déficit de pulso: latidos auscultados > pulsos radiales (fibrilación auricular, extrasístoles) · contar 1 min",
+      "lit": false,
+      "icono": "⭐"
+     },
+     "nota": "RN: 145/min (2020) vs 145-160/min (2018); por °C: 12-15 (2020) vs 10-15 (2018)",
+     "fuente": "wiki/SEMIOLOGIA/clases/05d_Pulso_arterial_y_presion_arterial.md §2-3; 05e §1"
+    },
+    {
+     "id": "presion-arterial",
+     "parametro": "Presión arterial",
+     "nombre": "Presión arterial",
+     "icono": "🩺",
+     "normal": {
+      "t": "<130/85 normal; ideal <120/80; limítrofe 130-139/85-89",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "HTA ≥140/90 en ≥2 tomas: I 140-159/90-99; II 160-179/100-109; III >180/>110",
+      "lit": false
+     },
+     "baja": {
+      "t": "Hipotensión: PAS sostenida <90; postural: cae 20 PAS o 10 PAD al ponerse de pie",
+      "lit": false
+     },
+     "perla": "Diferencial normal 40 (30-50): >40 divergente (IAo, fiebre); <30 convergente (IC, EAo)",
+     "clave": {
+      "tipo": "formula",
+      "texto": "PAM = (PAS + 2 × PAD) / 3 · normal 60-100 mmHg · <60 isquemia cerebral",
+      "lit": false,
+      "icono": "🧮"
+     },
+     "nota": "HTA sistólica aislada >140/<90; bata blanca: >20 PAS o >10 PAD consulta vs casa",
+     "fuente": "wiki/SEMIOLOGIA/clases/05h_Presion_arterial_valores_hipertension_e_hipotension.md §1,4,5; 05d §PA"
+    },
+    {
+     "id": "frecuencia-respiratoria",
+     "parametro": "Frecuencia respiratoria",
+     "nombre": "Frecuencia respiratoria",
+     "icono": "🫁",
+     "normal": {
+      "t": "Adulto en reposo 16-20 rpm; relación inspiración:espiración 2:3",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": ">20 taquipnea (superficial): fiebre, neumonía, EPOC, EAP, acidosis metabólica, uremia",
+      "lit": false
+     },
+     "baja": {
+      "t": "<16 bradipnea: sueño/atleta; barbitúricos, opiáceos, alcalosis metabólica, coma",
+      "lit": false
+     },
+     "perla": "Kussmaul (acidosis), Cheyne-Stokes, Biot: desarrollo en 07b",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Kussmaul: acidosis · Cheyne-Stokes: crece-decrece-apnea (insuf. cardiaca) · Biot: anárquica, daño cerebral",
+      "lit": false,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/05e_Frecuencia_respiratoria_cardiaca_y_temperatura.md §1"
+    },
+    {
+     "id": "temperatura",
+     "parametro": "Temperatura",
+     "nombre": "Temperatura",
+     "icono": "🌡️",
+     "normal": {
+      "t": "Axilar 36.5 °C; oral 37 °C; rectal 37.5 °C (general 35-37; tarde hasta 37.2)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Febrícula 37.5; fiebre moderada 37.6-38.5; elevada >38.6 °C (axilar)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Hipotermia <35 °C: ligera 28-34, profunda 17-28, muy profunda <17 °C",
+      "lit": false
+     },
+     "perla": "Axilo-rectal en abdomen agudo: diferencia >0.8 °C orienta a apendicitis",
+     "clave": {
+      "tipo": "clasificacion",
+      "texto": "Fiebre continua: oscila <1 °C · remitente: >1 °C sin normalizar · intermitente: vuelve a normal (malaria)",
+      "lit": true,
+      "icono": "🗂️"
+     },
+     "nota": "Axilo-rectal 0.8 °C (2020) vs 1 °C (2018); anciano: 37.5 °C ya puede ser anormal",
+     "fuente": "wiki/SEMIOLOGIA/clases/05e_Frecuencia_respiratoria_cardiaca_y_temperatura.md §3,5,6"
+    },
+    {
+     "id": "saturacion-de-oxigeno",
+     "parametro": "Saturación de oxígeno",
+     "nombre": "Saturación de oxígeno",
+     "icono": "🫧",
+     "normal": {
+      "t": "Nivel del mar 95-98% (SaO2)",
+      "lit": false
+     },
+     "altura": {
+      "t": "'En nuestro medio' (Puno) 90%; nota wiki: 88-92% en adaptados a altura",
+      "lit": false
+     },
+     "sube": null,
+     "baja": {
+      "t": "<90% = hipoxemia: dar O2, posición sentada, buscar causa",
+      "lit": false
+     },
+     "perla": "SEMIOLOGIA solo la nombra como signo vital, sin cifra; cifras vienen de FISIOPATOLOGIA",
+     "clave": {
+      "tipo": "altura",
+      "texto": "Puno 3800 m: SatO2 del residente sano ≈ 85-92% · no aplicar el corte 95% del nivel del mar",
+      "lit": true,
+      "icono": "🏔"
+     },
+     "nota": "Clase_08 docente: 90% altura; Saturacion-Oxigeno.md: 88-92%, 90-94% = límite",
+     "fuente": "wiki/FISIOPATOLOGIA 2026/clases/Clase_08_ALTERACIONES_DEL_EQUILIBRIO_ACIDO-_BASE..md; Clase_01_DISNEA.md"
+    },
+    {
+     "id": "peso-talla-imc",
+     "parametro": "Peso, talla, IMC",
+     "nombre": "Peso, talla, IMC",
+     "icono": "⚖️",
+     "normal": {
+      "t": "IMC 19-23; peso ideal (Broca) = talla cm − 100 (mujer −5%) ±10%",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Sobrepeso 24-25; obesidad >26; obesidad mórbida >40 kg/m²",
+      "lit": false
+     },
+     "baja": {
+      "t": "Bajo peso <18; caquexia; desnutrición Gómez: >10%, >25%, >40% de déficit",
+      "lit": false
+     },
+     "perla": "1.60 m y 78 kg: IMC ≈30.5 = obesidad; + somnolencia y apnea → Pickwick",
+     "clave": {
+      "tipo": "formula",
+      "texto": "IMC = peso (kg) ÷ talla² (m) · ej.: 78 kg ÷ 1.60² = 30.5",
+      "lit": false,
+      "icono": "🧮"
+     },
+     "nota": "Docente (INAM 1991) ≠ FISIOLOGÍA/PATOL.: normal 18.5-25, sobrepeso 25-29.9, obesidad ≥30",
+     "fuente": "wiki/SEMIOLOGIA/clases/05c_Peso_talla_e_indice_de_masa_corporal.md §2-4,6"
+    },
+    {
+     "id": "talla",
+     "parametro": "Talla",
+     "nombre": "Talla",
+     "icono": "📏",
+     "normal": {
+      "t": "Relación pubis-vértice / pubis-planta 0.98-1.0",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Gigantismo: >1.90 m varón, >1.80 m mujer (patológico: acromegálico)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Enanismo: <1.50 m ambos sexos (carencial, endocrino, genético)",
+      "lit": false
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "regla",
+      "texto": "Envergadura (brazos en cruz) ≈ talla · envergadura > talla + segmento inferior largo = eunucoide/Marfan",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Obesidad por % peso ideal: >20% (2020) vs >10%, algunos 15% (2018)",
+     "fuente": "wiki/SEMIOLOGIA/clases/05c_Peso_talla_e_indice_de_masa_corporal.md §4-5"
+    },
+    {
+     "id": "perimetro-abdominal-cintura",
+     "parametro": "Perímetro abdominal / cintura",
+     "nombre": "Perímetro abdominal / cintura",
+     "icono": "📐",
+     "normal": {
+      "t": "Mujer <88 cm · varón <102 cm (ATP III); riesgo desde 80/94 cm (IDF)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Obesidad abdominal: >102 cm varón, >88 cm mujer (cintura/cadera >0.9 y >0.85)",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Obesidad central/androide → DM, HTA, infarto (SEMIOLOGIA 05c, sin cifra)",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Medir en punto medio costilla-cresta ilíaca, al final de la espiración · IDF: riesgo desde 94 V / 80 M",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Cifras solo en FISIOLOGIA (Guyton), no del docente de Semiología",
+     "fuente": "wiki/FISIOLOGIA 2026/clases/09_UNIDAD_IX_METABOLISMO_ENERGIA_Y_TEMPERATURA/05_Capitulo_72.md"
+    },
+    {
+     "id": "escala-de-glasgow",
+     "parametro": "Escala de Glasgow",
+     "nombre": "Escala de Glasgow",
+     "icono": "🧠",
+     "normal": {
+      "t": "15 (O4 + M6 + V5); rango 3-15",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": {
+      "t": "Moderado 9-12; ≤8 grave → proteger vía aérea/intubar; leve 13-15: SIN DATO EN VAULT",
+      "lit": false
+     },
+     "perla": "Docente gradúa coma I-IV (I atiende órdenes; IV apnea, silencio eléctrico)",
+     "clave": {
+      "tipo": "escala",
+      "texto": "Ocular 1-4 · verbal 1-5 · motora 1-6 · mínimo 3 (no existe 0) · ≤8 = coma → proteger vía aérea",
+      "lit": false,
+      "icono": "📏"
+     },
+     "nota": "Cortes 9-12 y ≤8 vienen de FISIOPATOLOGIA/FISIOLOGIA, no de SEMIOLOGIA",
+     "fuente": "wiki/SEMIOLOGIA/clases/05a §1; 11e §Coma; FISIOPATOLOGIA 2026/entities/signos/Confusion.md; FISIOLOGIA 2026/conceptos/Coma.md"
+    },
+    {
+     "id": "llenado-capilar",
+     "parametro": "Llenado capilar",
+     "nombre": "Llenado capilar",
+     "icono": "💅",
+     "normal": {
+      "t": "<2 s (lecho ungueal)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": ">2 s: deshidratación, shock, enfermedad vascular periférica, hipotermia",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Lactante con diarrea, fontanela deprimida y relleno 4 s = deshidratación grave",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Presionar la uña 5 s y soltar: debe recolorear antes de decir «llenado capilar» (≈2 s)",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "No está en wiki SEMIOLOGIA, sí en raw; FISIOPATOLOGIA usa >3 s en sepsis/bajo gasto",
+     "fuente": "raw/SEMIOLOGIA/SEMIOLOGIA CLINICA.md §J; FISIOPATOLOGIA 2026/entities/enfermedades/Hipovolemia.md"
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "titulo": "2 · Examen general y piel",
+   "color": "#6a1b9a",
+   "icono": "👁️",
+   "filas": [
+    {
+     "id": "estado-general",
+     "parametro": "Estado general",
+     "nombre": "Estado general",
+     "icono": "🧍",
+     "normal": {
+      "t": "BEG (buen estado general)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": {
+      "t": "REG / MEG; escribir completo en la HC (implicancia médico-legal)",
+      "lit": false
+     },
+     "perla": "Evaluación subjetiva en segundos; alerta si hay pocos signos y MEG",
+     "clave": null,
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/05a_Estado_general_nivel_de_conciencia_lenguaje_y_decubito.md §1"
+    },
+    {
+     "id": "estado-de-nutricion",
+     "parametro": "Estado de nutrición",
+     "nombre": "Estado de nutrición",
+     "icono": "🍽️",
+     "normal": {
+      "t": "Peso, musculatura, panículo, desarrollo, estado general, piel, pelo, ojos normales",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Obesidad: exceso adiposo (central/androide o periférica/ginecoide)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Desnutrición: peso bajo mínimo, músculo hipotrófico, piel seca 'papel de lija'",
+      "lit": false
+     },
+     "perla": "Desnutrición proteica: cabello fino que se arranca fácil, xerosis conjuntival",
+     "clave": {
+      "tipo": "clasificacion",
+      "texto": "Marasmo: déficit calórico, piel y hueso, sin edema · kwashiorkor: déficit proteico, edema, cabello en bandera",
+      "lit": true,
+      "icono": "🗂️"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/05c_Peso_talla_e_indice_de_masa_corporal.md §6"
+    },
+    {
+     "id": "estado-de-hidratacion",
+     "parametro": "Estado de hidratación",
+     "nombre": "Estado de hidratación",
+     "icono": "💧",
+     "normal": {
+      "t": "Piel rosada, elástica y húmeda; mucosas húmedas; sin caída brusca de peso",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": {
+      "t": "Deshidratación: sed, pliegue +, mucosas secas, ojos hundidos, fontanela deprimida",
+      "lit": false
+     },
+     "perla": "Leve <5%, moderada 5-10%, grave >10% del peso; pliegue en anciano: frente o esternón",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Pérdida aguda de peso = agua perdida: 1 kg ≈ 1 litro · pliegue que tarda >2 s en volver",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Hipotónica: Na <130 (2020) vs <135 mEq/L (2018); taquicardia + hipotensión postural",
+     "fuente": "wiki/SEMIOLOGIA/clases/05b_Biotipo_hidratacion_y_movimientos_involuntarios.md §2"
+    },
+    {
+     "id": "palidez",
+     "parametro": "Palidez",
+     "nombre": "Palidez",
+     "icono": "🤍",
+     "normal": {
+      "t": "Piel levemente rosada (blanca) u oscura (morena)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": {
+      "t": "Generalizada: vasoconstricción (susto, dolor, shock) o anemia Hb <7 g/dl",
+      "lit": false
+     },
+     "perla": "Palidez localizada de un miembro = isquemia (ateroesclerosis, embolia)",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Anemia se juzga en conjuntiva palpebral, lecho ungueal, palmas y mucosas, no en la piel del rostro",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/05f_Piel_secrecion_hidrica_y_mucosas.md §2"
+    },
+    {
+     "id": "ictericia",
+     "parametro": "Ictericia",
+     "nombre": "Ictericia",
+     "icono": "💛",
+     "normal": {
+      "t": "Bilirrubina plasmática normal 1.2 mg%",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Visible con bilirrubina >2.5 mg%; mejor vista en esclerótica",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Prehepática (hemólisis), hepática (hepatitis, cirrosis), poshepática (obstrucción)",
+     "clave": {
+      "tipo": "clasificacion",
+      "texto": "Prehepática: BI ↑ sin coluria · hepática: mixta · poshepática: BD ↑ + coluria + acolia + prurito",
+      "lit": false,
+      "icono": "🗂️"
+     },
+     "nota": "Mismo corte en 09a (1,2 normal; visible >2,5 mg/dL)",
+     "fuente": "wiki/SEMIOLOGIA/clases/05f_Piel_secrecion_hidrica_y_mucosas.md §2; 09a"
+    },
+    {
+     "id": "cianosis",
+     "parametro": "Cianosis",
+     "nombre": "Cianosis",
+     "icono": "💙",
+     "normal": null,
+     "altura": {
+      "t": "Enf. de Monge: aspecto pletórico, cianosis rojo-violácea; revierte a nivel del mar",
+      "lit": false
+     },
+     "sube": {
+      "t": "Hb reducida >5 g/dl; buscar en labios, nariz, lóbulos y pulpejos",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Central respiratoria: hipoventilación, cortocircuito, PO2 baja de la gran altura",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Central: labios y lengua, tibia · periférica: dedos fríos, mejora al calentar · anemia grave: sin cianosis",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/05f §2; 07a_Anamnesis_sintomas_respiratorios.md §5,7"
+    },
+    {
+     "id": "edema",
+     "parametro": "Edema",
+     "nombre": "Edema",
+     "icono": "🦶",
+     "normal": {
+      "t": "Sin fóvea; pre-edema (<5 L) solo se detecta por el peso",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Godet sobre tibia/sacro; 1 cruz leve a 4 cruces (anasarca)",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Mixedema: sin fóvea, piel fría y áspera; postural hasta 2 cruces; carencial alb <2.5",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Cardiaco: vespertino, piernas, ascendente · nefrótico: matutino, párpados · hepático: ascitis + piernas",
+      "lit": false,
+      "icono": "⭐"
+     },
+     "nota": "Pre-edema solo en 2018; 2020 no lo menciona",
+     "fuente": "wiki/SEMIOLOGIA/clases/05g_Edema.md §signos, intensidad, tipos"
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "titulo": "3 · Hemograma",
+   "color": "#ad1457",
+   "icono": "🩸",
+   "filas": [
+    {
+     "id": "hemoglobina",
+     "parametro": "Hemoglobina",
+     "nombre": "Hemoglobina",
+     "icono": "🩸",
+     "normal": {
+      "t": "V ~15 g/dL, M ~14 g/dL (Guyton); anemia OMS: <13 V, <12 M",
+      "lit": false
+     },
+     "altura": {
+      "t": "Aclimatado 15 -> ~20 g/dL; Monge: Hb >=21 V / >=19 M (Qinghai); revierte en >1 mes",
+      "lit": false
+     },
+     "sube": {
+      "t": "Poliglobulia: altura, EPOC/hipoxemia, policitemia vera; cianosis y trombosis",
+      "lit": false
+     },
+     "baja": {
+      "t": "Anemia: pérdida, hemólisis o baja producción; palidez clínica si Hb <7 g/dL",
+      "lit": false
+     },
+     "perla": "Profesor: costa hasta 16 g/dL; en Puno 24-26 g/dL por poliglobulia -> Ayerza/CPC",
+     "clave": {
+      "tipo": "altura",
+      "texto": "Anemia en altura (OMS 2011): sumar al corte 2.7 g/dL entre 3500-3999 m · Puno: mujer <14.7, varón <15.7",
+      "lit": true,
+      "icono": "🏔"
+     },
+     "nota": "OMS <13/<12 (Anemia.md) vs SEMIOLOGIA: palidez anémica con Hb <7 g/dL",
+     "fuente": "FISIOLOGIA Cap33, Cap44; SEMIOLOGIA 05k_Facies, 05f; FISIOPATO Eritrosis-Patologica"
+    },
+    {
+     "id": "eritrocitosis-de-altura-hb",
+     "parametro": "Eritrocitosis de altura (Hb)",
+     "nombre": "Eritrocitosis de altura (Hb)",
+     "icono": "🏔️",
+     "normal": {
+      "t": "Hb en la costa hasta 16 g/dL",
+      "lit": false
+     },
+     "altura": {
+      "t": "Sangría si Hto >60% o Hb >20 g% antes del diurético (cor pulmonale)",
+      "lit": false
+     },
+     "sube": {
+      "t": "Puno (3820 msnm): común 24-26 g/dL → HTP → cor pulmonale crónico",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "SaO2 baja → eritropoyetina → poliglobulia; desproporcionada favorece trombosis",
+     "clave": {
+      "tipo": "altura",
+      "texto": "Monge (mal de montaña crónico): Hb ≥21 varón / ≥19 mujer (Qinghai) · Hto >60-65%",
+      "lit": false,
+      "icono": "🏔"
+     },
+     "nota": "Cifras Hb/Hto de sangría vienen de FISIOPATOLOGIA (Esquema_33_Cor-Pulmonale)",
+     "fuente": "wiki/SEMIOLOGIA/clases/05k_Facies.md (clase); 07a §7; FISIOPATOLOGIA 2026/esquemas/Esquema_33"
+    },
+    {
+     "id": "hematocrito",
+     "parametro": "Hematocrito",
+     "nombre": "Hematocrito",
+     "icono": "🧫",
+     "normal": {
+      "t": "40-45% en ambos sexos (Guyton Cap 33)",
+      "lit": false
+     },
+     "altura": {
+      "t": "Aclimatado 40-45% -> ~60%; andino adaptado 50-55%; Monge >60-65%",
+      "lit": false
+     },
+     "sube": {
+      "t": "Policitemia (>52% V, >48% M) o hemoconcentración (deshidratación, 3er espacio)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Anemia o hemodilución; en hemorragia aguda cae recién a los 2-3 días",
+      "lit": false
+     },
+     "perla": "CPC con Hto >60% y Hb >20 g%: sangría roja ANTES de diuréticos (Sotito, Clase 33)",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Regla de 3: Hto ≈ Hb × 3 · si no se cumple, sospechar error o hipocromía",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "concepts/Hematocrito: V 40-54%, M 36-46%; conceptos/Hematocrito: V 42-52%, M 37-47%",
+     "fuente": "FISIOLOGIA Cap33, Cap44; conceptos/Policitemia; FISIOPATO Clase_33 y Poliglobulia"
+    },
+    {
+     "id": "globulos-rojos-hematies",
+     "parametro": "Glóbulos rojos (hematíes)",
+     "nombre": "Glóbulos rojos (hematíes)",
+     "icono": "🔴",
+     "normal": {
+      "t": "V 5,2 millones/mm³, M 4,7 millones/mm³ (±300.000)",
+      "lit": false
+     },
+     "altura": {
+      "t": "14.000-17.000 pies: 6-7 millones/mm³ = policitemia fisiológica",
+      "lit": false
+     },
+     "sube": {
+      "t": "Policitemia secundaria (hipoxia -> EPO); vera 7-8 millones/mm³ con leuco y plaq altos",
+      "lit": false
+     },
+     "baja": {
+      "t": "Anemia: hemorragia, hemólisis, aplasia medular (pancitopenia), déficit B12/folato",
+      "lit": false
+     },
+     "perla": "Vida media 120 días; GR viejos se destruyen en el bazo (espacios de 3 µm)",
+     "clave": {
+      "tipo": "formula",
+      "texto": "Índice de Mentzer = VCM ÷ GR (millones): <13 talasemia · >13 ferropenia",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": null,
+     "fuente": "FISIOLOGIA 2026/clases/06_UNIDAD_VI/01_Capitulo_33.md (Valores normales, Policitemia)"
+    },
+    {
+     "id": "vcm",
+     "parametro": "VCM",
+     "nombre": "VCM",
+     "icono": "🔴",
+     "normal": {
+      "t": "80-100 fL = normocítica (volumen del GR 90-95 µm³ en Guyton)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": ">100 fL macrocítica: déficit B12/folato, alcoholismo, mielodisplasia (hasta 110-130)",
+      "lit": false
+     },
+     "baja": {
+      "t": "<80 fL microcítica: ferropenia por pérdida crónica, talasemia",
+      "lit": false
+     },
+     "perla": "Vegana con VCM 123 fL y B12 baja: medir ambas vitaminas; B12 parenteral",
+     "clave": {
+      "tipo": "formula",
+      "texto": "VCM = Hto × 10 ÷ GR (millones) · microcítica: hierro, talasemia, plomo, sideroblástica, enf. crónica",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": "Normocítica: enf. crónica, IRC, hemólisis, sangrado agudo",
+     "fuente": "FISIOLOGIA conceptos/Anemia.md; FISIOPATO Anemia-megaloblástica; FARMACO 33a"
+    },
+    {
+     "id": "hcm",
+     "parametro": "HCM",
+     "nombre": "HCM",
+     "icono": "🔴",
+     "normal": {
+      "t": "27-33 pg",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Macrocitosis: déficit de B12 o folato, alcohol, hepatopatía",
+      "lit": true
+     },
+     "baja": {
+      "t": "<27 pg hipocromía: anemia microcítica hipocrómica (ferropenia)",
+      "lit": false
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "formula",
+      "texto": "HCM = Hb × 10 ÷ GR (millones), en pg · <27 hipocrómica = casi siempre ferropenia",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": null,
+     "fuente": "FISIOLOGIA conceptos/Anemia-Microcitica-Hipocromica.md; PATOLOGIA 11a (índices)"
+    },
+    {
+     "id": "chcm",
+     "parametro": "CHCM",
+     "nombre": "CHCM",
+     "icono": "🔴",
+     "normal": {
+      "t": "32-36 g/dL",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Esferocitos hipercrómicos sin palidez central (esferocitosis hereditaria)",
+      "lit": false
+     },
+     "baja": {
+      "t": "<32 g/dL hipocromía: ferropenia (GR pálidos, palidez central aumentada)",
+      "lit": false
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "formula",
+      "texto": "CHCM = Hb × 100 ÷ Hto · >36 casi solo en esferocitosis (único GR hipercrómico real)",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": "FARMACO 33a da MCHC <30% en ferropenia; FISIOLOGIA da <32 g/dL",
+     "fuente": "FISIOLOGIA Anemia-Microcitica-Hipocromica; PATOLOGIA 11b Esferocitosis; FARMACO 33a"
+    },
+    {
+     "id": "reticulocitos",
+     "parametro": "Reticulocitos",
+     "nombre": "Reticulocitos",
+     "icono": "🔴",
+     "normal": {
+      "t": "0,5-1,5% de los GR (concepto); Guyton: <1% de GR circulantes",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Reticulocitosis: hemólisis o hemorragia (médula compensa; a los 5-7 días)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Reticulocitopenia: anemia arregenerativa (ferropenia, aplasia, talasemia)",
+      "lit": false
+     },
+     "perla": "Es el indicador más sensible de actividad eritropoyética; sube tras tratar carencias",
+     "clave": {
+      "tipo": "formula",
+      "texto": "Índice reticulocitario = % retic × (Hto/45) ÷ 2 · >2 regenerativa (hemólisis, sangrado) · <2 arregenerativa",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": "Discrepancia leve: 0,5-1,5% (Reticulocito.md) vs <1% (Cap 33)",
+     "fuente": "FISIOLOGIA conceptos/Reticulocito.md, Cap33; PATOLOGIA 11a (secciones 1 y 4)"
+    },
+    {
+     "id": "leucocitos-totales",
+     "parametro": "Leucocitos totales",
+     "nombre": "Leucocitos totales",
+     "icono": "⚪",
+     "normal": {
+      "t": "Adulto 4.000-10.000/µL (según laboratorio hasta 11.000)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Inflamación/infección 15-20.000/µL; reacción leucemoide 40-100.000/µL",
+      "lit": false
+     },
+     "baja": {
+      "t": "Leucopenia <4.000/µL: aplasia, virus, fármacos mielotóxicos, tifoidea, autoinmunes",
+      "lit": false
+     },
+     "perla": "Apendicitis 10-15.000 + neutrofilia >75%; >15.000 + >80% sugiere perforación",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Fórmula normal en orden N > L > M > E > B ≈ 60-30-6-3-1% («Nunca Los Maltrates, Eres Bueno»)",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Úlcera perforada: >12.000 (Sotomayor 2020) vs >15.000 en 3ª fase (Sotito 2018)",
+     "fuente": "PATOLOGIA 02f (sección 5); FISIOLOGIA Leucopenia.md; SEMIOLOGIA 09f_Abdomen_agudo"
+    },
+    {
+     "id": "neutrofilos-segmentados",
+     "parametro": "Neutrófilos segmentados",
+     "nombre": "Neutrófilos segmentados",
+     "icono": "🦠",
+     "normal": {
+      "t": "55-70% de leucocitos (2.500-7.500/µL)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Neutrofilia: infección bacteriana, inflamación, estrés físico/emocional, epinefrina",
+      "lit": false
+     },
+     "baja": {
+      "t": "Neutropenia <1.500-2.000/µL: quimioterapia, aplasia, fármacos; AR (Felty)",
+      "lit": false
+     },
+     "perla": "Colecistitis: leucocitosis 10-15.000 con neutrofilia (SEMIOLOGIA 09d)",
+     "clave": {
+      "tipo": "formula",
+      "texto": "Neutrófilos absolutos = leucocitos × (% segmentados + % abastonados) ÷ 100 · <500 grave, riesgo de sepsis",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": null,
+     "fuente": "FISIOLOGIA conceptos/Neutrofilos.md; INMUNOLOGIA 29 y 40; SEMIOLOGIA 09d"
+    },
+    {
+     "id": "abastonados-cayados",
+     "parametro": "Abastonados (cayados)",
+     "nombre": "Abastonados (cayados)",
+     "icono": "🦠",
+     "normal": {
+      "t": "0-5 % (hasta ~500/µL)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Desviación a la izquierda: infección bacteriana aguda; >5% en peritonitis (Sotito)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Sin significado clínico",
+      "lit": true
+     },
+     "perla": "Ancianos, pacientes con corticoides o leucopénicos pueden no hacer leucocitosis",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Desviación izquierda con leucopenia = sepsis grave, peor pronóstico que con leucocitosis",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "raw/SEMIOLOGIA/SOTITO-2018-UNIDAD-II-1 (peritonitis, hemograma); MICROBIOLOGIA 07"
+    },
+    {
+     "id": "linfocitos",
+     "parametro": "Linfocitos",
+     "nombre": "Linfocitos",
+     "icono": "🛡️",
+     "normal": {
+      "t": "20-40 % (1.000-4.000/µL)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Linfocitosis >4.000 adulto: virus (mononucleosis, parotiditis, rubéola)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Linfopenia <1.000/mm³: deficiencia de inmunidad celular",
+      "lit": false
+     },
+     "perla": "Tos ferina: hasta 60.000 linfocitos (bloquea integrinas endoteliales)",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Linfocitos atípicos >10% + faringitis + adenopatías cervicales posteriores + esplenomegalia = mononucleosis",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "Umbrales por edad: >9.000 (<3 m), >7.000 (3-10 a); el vault escribe '/mL'",
+     "fuente": "INMUNOLOGIA 29 (Proliferaciones benignas) y 18 (sección 2); PATOLOGIA 02f"
+    },
+    {
+     "id": "monocitos",
+     "parametro": "Monocitos",
+     "nombre": "Monocitos",
+     "icono": "⚪",
+     "normal": {
+      "t": "2-8 % (200-800/µL)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": ">500 adulto, >750 niño: TBC, endocarditis subaguda, Hodgkin, AR, LES, CU",
+      "lit": false
+     },
+     "baja": {
+      "t": "Raro: aplasia medular, corticoides",
+      "lit": true
+     },
+     "perla": "En endocarditis bacteriana subaguda pueden ser el 15-20% de los leucocitos",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Monocitosis = inflamación o infección crónica · pensar TBC y endocarditis subaguda antes que leucemia",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "El vault expresa el umbral en '/mL'",
+     "fuente": "INMUNOLOGIA 2026/clases/29_Enfermedades_proliferativas (Granulocitosis, monocitosis)"
+    },
+    {
+     "id": "eosinofilos",
+     "parametro": "Eosinófilos",
+     "nombre": "Eosinófilos",
+     "icono": "🪱",
+     "normal": {
+      "t": "1-4 % (hasta 500/µL)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Eosinofilia: parásitos tisulares (triquinosis), alergia, asma, fiebre del heno",
+      "lit": false
+     },
+     "baja": {
+      "t": "Eosinopenia: estrés agudo, corticoides, Cushing, infección aguda",
+      "lit": true
+     },
+     "perla": "Eosinofilia pulmonar tropical (filarias): >3.000/µL; NTI: fiebre+rash+eosinofilia",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Causas de eosinofilia (NAACP): neoplasia, alergia-asma, Addison, colagenosis, parásitos tisulares",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "FISIOLOGIA Cap34; PATOLOGIA 02f; MICROBIOLOGIA 74d; FISIOPATO Nefritis-Tubulointersticial"
+    },
+    {
+     "id": "basofilos",
+     "parametro": "Basófilos",
+     "nombre": "Basófilos",
+     "icono": "🤧",
+     "normal": {
+      "t": "<1% de los leucocitos",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Basofilia: rara, ligada a reacciones de hipersensibilidad",
+      "lit": false
+     },
+     "baja": {
+      "t": "Sin significado clínico habitual",
+      "lit": true
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "signo",
+      "texto": "Basofilia persistente = pensar en leucemia mieloide crónica (síndrome mieloproliferativo)",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "FISIOLOGIA conceptos/Basofilos.md; INMUNOLOGIA 29 (Proliferaciones benignas)"
+    },
+    {
+     "id": "plaquetas",
+     "parametro": "Plaquetas",
+     "nombre": "Plaquetas",
+     "icono": "🩹",
+     "normal": {
+      "t": "150.000-450.000/µL (Guyton Cap 37)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Trombocitosis: SIN DATO EN VAULT (solo: aumentan en policitemia vera)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Trombocitopenia <150.000: menor producción, PTI, secuestro esplénico, CID, dilución",
+      "lit": false
+     },
+     "perla": "<30.000/µL riesgo de sangrado quirúrgico/espontáneo; <10.000 potencialmente letal",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Plaquetas bajas: petequias y sangrado de mucosas · déficit de factores: hematomas y hemartrosis",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "Plaquetas.md: 150.000-400.000/µL; Trombocitopenia.md: sangrado espontáneo <20.000",
+     "fuente": "FISIOLOGIA 06_UNIDAD_VI/05_Capitulo_37.md (Trombocitopenia); conceptos/Plaquetas"
+    },
+    {
+     "id": "ade-rdw",
+     "parametro": "ADE / RDW",
+     "nombre": "ADE / RDW",
+     "icono": "🔴",
+     "normal": {
+      "t": "11,5-14,5 %",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Anisocitosis: ferropenia temprana, déficit B12/folato, anemia mixta",
+      "lit": true
+     },
+     "baja": {
+      "t": "Sin significado clínico",
+      "lit": true
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "regla",
+      "texto": "Microcitosis + RDW alto = ferropenia · microcitosis + RDW normal = talasemia",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "PATOLOGIA 2026/clases/11a_Clasificacion_de_las_anemias (sección 2, índices)"
+    },
+    {
+     "id": "vpm-volumen-plaquetario-medio",
+     "parametro": "VPM (volumen plaquetario medio)",
+     "nombre": "VPM (volumen plaquetario medio)",
+     "icono": "🩹",
+     "normal": {
+      "t": "7,5-11,5 fL",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Plaquetas jóvenes: destrucción periférica (PTI), recuperación medular",
+      "lit": true
+     },
+     "baja": {
+      "t": "Hipoproducción medular, aplasia, hiperesplenismo",
+      "lit": true
+     },
+     "perla": null,
+     "clave": null,
+     "nota": null,
+     "fuente": "INMUNOLOGIA 30a_Inmunodeficiencias_primarias_combinadas (Wiskott-Aldrich)"
+    },
+    {
+     "id": "plaquetocrito",
+     "parametro": "Plaquetocrito",
+     "nombre": "Plaquetocrito",
+     "icono": "🩹",
+     "normal": {
+      "t": "0,15-0,40 %",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Trombocitosis",
+      "lit": true
+     },
+     "baja": {
+      "t": "Trombocitopenia (va paralelo al recuento)",
+      "lit": true
+     },
+     "perla": null,
+     "clave": null,
+     "nota": null,
+     "fuente": "Sin menciones en wiki/ ni raw/"
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "titulo": "4 · Inflamación y coagulación",
+   "color": "#4527a0",
+   "icono": "🔥",
+   "filas": [
+    {
+     "id": "vsg",
+     "parametro": "VSG",
+     "nombre": "VSG",
+     "icono": "⏳",
+     "normal": {
+      "t": "Varón <15 mm/h · mujer <20 mm/h (aprox. edad/2; mujer (edad+10)/2)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Inespecífica: fibrinógeno apila los GR; FR (Jones), AR, vasculitis, LES, polimialgia",
+      "lit": false
+     },
+     "baja": {
+      "t": "Policitemia, hiperviscosidad, anemia falciforme, esferocitosis",
+      "lit": true
+     },
+     "perla": "LES: VSG sube en brote y en infección; PCR alta orienta a infección",
+     "clave": {
+      "tipo": "signo",
+      "texto": "VSG >100 mm/h: mieloma, arteritis de células gigantes, TBC, endocarditis, metástasis",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "Rojas (INMUNO 18): eritrosedimentación normal descarta infección bacteriana",
+     "fuente": "PATOLOGIA 02f (sección 5); INMUNOLOGIA 42_LES, 18; FISIOPATO Clase_12_FIEBRE_REUMATICA"
+    },
+    {
+     "id": "pcr-proteina-c-reactiva",
+     "parametro": "PCR (proteína C reactiva)",
+     "nombre": "PCR (proteína C reactiva)",
+     "icono": "🔥",
+     "normal": {
+      "t": "<5 mg/L (<0,5 mg/dL); >100 mg/L orienta a infección bacteriana",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Fase aguda (hígado vía IL-6), sube rápido: infección, FR, AR; marcador de riesgo IAM",
+      "lit": false
+     },
+     "baja": {
+      "t": "Sin significado clínico",
+      "lit": true
+     },
+     "perla": "Caso AR: VSG 60 mm/h, PCR 45 mg/L, FR positivo (FISIOPATO Artritis.md)",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Sube a las 6-8 h y cae rápido (vida media ~19 h): sigue mejor la respuesta al tratamiento que la VSG",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "En brote lúpico la respuesta de PCR es defectuosa",
+     "fuente": "PATOLOGIA 02f (sección 5); INMUNOLOGIA 18 y 42; FISIOPATO entities/Artritis.md"
+    },
+    {
+     "id": "factor-reumatoide",
+     "parametro": "Factor reumatoide",
+     "nombre": "Factor reumatoide",
+     "icono": "🦴",
+     "normal": {
+      "t": "Negativo: <14-20 UI/mL (según técnica)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "IgM anti-Fc de IgG: AR (S 66%, E 87%); títulos altos en Felty",
+      "lit": false
+     },
+     "baja": {
+      "t": "Negativo: artritis psoriásica (criterio CASPAR)",
+      "lit": false
+     },
+     "perla": "Anti-CCP superan al FR: E 95%, aparecen en fase prearticular",
+     "clave": {
+      "tipo": "regla",
+      "texto": "FR positivo no es igual a AR: también Sjögren, hepatitis C, endocarditis, ancianos sanos",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "INMUNOLOGIA 2026/clases/40_Artritis_reumatoide.md; entities/Artritis-Psoriasica.md"
+    },
+    {
+     "id": "tp-inr",
+     "parametro": "TP / INR",
+     "nombre": "TP / INR",
+     "icono": "⏱️",
+     "normal": {
+      "t": "TP ~12 s; INR 0,9-1,3",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Vía extrínseca: warfarina, hepatopatía, CID; INR >4-5 alto riesgo de hemorragia",
+      "lit": false
+     },
+     "baja": {
+      "t": "Sin significado clínico",
+      "lit": true
+     },
+     "perla": "Meta con warfarina: INR 2,0-3,0",
+     "clave": {
+      "tipo": "formula",
+      "texto": "INR = (TP paciente ÷ TP control)^ISI · vía extrínseca (factor VII) · antídoto de warfarina: vitamina K",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": null,
+     "fuente": "FISIOLOGIA 06_UNIDAD_VI/05_Capitulo_37.md (Cumarínicos; Pruebas de coagulación)"
+    },
+    {
+     "id": "ttpa",
+     "parametro": "TTPa",
+     "nombre": "TTPa",
+     "icono": "⏱️",
+     "normal": {
+      "t": "25-35 s (según laboratorio)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Heparina NF (meta 1,5-2,5 veces el basal); CID prolonga TP y TTPa",
+      "lit": false
+     },
+     "baja": {
+      "t": "Sin significado clínico habitual",
+      "lit": true
+     },
+     "perla": "TTPa >2,5: hemorragia; antídoto sulfato de protamina (TVP-TEP)",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Vía intrínseca (XII, XI, IX, VIII) · TTPa largo con TP normal = hemofilia A (VIII) o B (IX)",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "FISIOPATOLOGIA 2026/Heparina.md; esquemas/Esquema_32_TVP-TEP; FISIOLOGIA conceptos/CID"
+    },
+    {
+     "id": "fibrinogeno",
+     "parametro": "Fibrinógeno",
+     "nombre": "Fibrinógeno",
+     "icono": "🧵",
+     "normal": {
+      "t": "200-400 mg/dL (concepto); Guyton Cap 37: 100-700 mg/dL",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Reactante de fase aguda (IL-6); hace que los GR sedimenten rápido (VSG alta)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Hipofibrinogenemia: CID (consumo)",
+      "lit": false
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "regla",
+      "texto": "CID: TP y TTPa largos + plaquetas ↓ + fibrinógeno ↓ + dímero D ↑",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Discrepancia de rango entre concepto (200-400) y Cap 37 (100-700)",
+     "fuente": "FISIOLOGIA conceptos/Fibrinogeno.md, Cap37; PATOLOGIA 02f; conceptos/CID"
+    },
+    {
+     "id": "tiempo-de-sangria-coagulacion",
+     "parametro": "Tiempo de sangría / coagulación",
+     "nombre": "Tiempo de sangría / coagulación",
+     "icono": "⏱️",
+     "normal": {
+      "t": "Sangría 1-6 min; coagulación 6-10 min",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Sangría: trombocitopenia o déficit de factores; coagulación: heparina (6 -> >=30 min)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Sin significado clínico",
+      "lit": true
+     },
+     "perla": "Epistaxis recurrente sin causa local: pedir plaquetas, tiempo de coagulación y sangría",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Sangría = plaquetas y vaso (hemostasia primaria) · coagulación = factores (hemostasia secundaria)",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "FISIOLOGIA Cap37 (Pruebas de coagulación); SEMIOLOGIA 06b_Oidos_nariz_cavidad_oral"
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "titulo": "5 · Glucosa, riñón y electrolitos",
+   "color": "#1565c0",
+   "icono": "🍬",
+   "filas": [
+    {
+     "id": "glucosa-en-ayunas",
+     "parametro": "Glucosa en ayunas",
+     "nombre": "Glucosa en ayunas",
+     "icono": "🍬",
+     "normal": {
+      "t": "<100 mg/dL (70-100 mg/dL)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "100-125 = prediabetes (glucosa alterada en ayunas); ≥126 = diabetes (repetir)",
+      "lit": false
+     },
+     "baja": {
+      "t": "<70 mg/dL = hipoglucemia (neuroglucopenia + síntomas adrenérgicos)",
+      "lit": false
+     },
+     "perla": "Pancreatitis aguda: glicemia sube (↑glucagón, ↓insulina). Al azar >200 + síntomas = DM",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Tríada de Whipple: síntomas + glucosa <70 + alivio al dar glucosa = hipoglucemia verdadera",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "FISIOLOGIA (Guyton) da 80-90 mg/100 mL en ayunas",
+     "fuente": "wiki/FARMACOLOGIA 2026/clases/41a_Insulina_glucagon_diabetes_mellitus.md (Cuadro 41-4)"
+    },
+    {
+     "id": "glucosa-2-h-ptog-75-g-y-hba1c",
+     "parametro": "Glucosa 2 h (PTOG 75 g) y HbA1c",
+     "nombre": "Glucosa 2 h (PTOG 75 g) y HbA1c",
+     "icono": "🍬",
+     "normal": {
+      "t": "PTOG <140 mg/dL; HbA1c <5.7%",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "PTOG 140-199 / HbA1c 5.7-6.4 = prediabetes; PTOG ≥200 / HbA1c ≥6.5 = DM",
+      "lit": false
+     },
+     "baja": {
+      "t": "HbA1c baja falsa: hemólisis, anemia, transfusión reciente",
+      "lit": true
+     },
+     "perla": "HbA1c refleja control glucémico de las 8-12 semanas previas",
+     "clave": {
+      "tipo": "formula",
+      "texto": "Glucosa promedio ≈ 28.7 × HbA1c − 46.7 · HbA1c 6% ≈ 126 · cada +1% ≈ +29 mg/dL",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": null,
+     "fuente": "wiki/FARMACOLOGIA 2026/clases/41a_Insulina_glucagon_diabetes_mellitus.md (Cuadro 41-4)"
+    },
+    {
+     "id": "urea-sanguinea",
+     "parametro": "Urea sanguínea",
+     "nombre": "Urea sanguínea",
+     "icono": "🫘",
+     "normal": {
+      "t": "15-45 mg/dL",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Caída de TFG (IRA, IRC), deshidratación/prerrenal, catabolismo, sangrado digestivo",
+      "lit": false
+     },
+     "baja": {
+      "t": "Hepatopatía grave, dieta pobre en proteínas/desnutrición, embarazo, sobrehidratación",
+      "lit": true
+     },
+     "perla": ">400 mg/dL = uremia franca; urea alta = diurético osmótico (poliuria/nicturia IRC)",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Síndrome urémico: aliento urinoso, escarcha urémica, frote pericárdico, asterixis, prurito",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/10b_Exploracion_genitourinaria… §7; FISIOPATO concepts/Urea.md"
+    },
+    {
+     "id": "bun",
+     "parametro": "BUN",
+     "nombre": "BUN",
+     "icono": "🫘",
+     "normal": {
+      "t": "7-20 mg/dL (Urea = BUN × 2.14)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Igual que urea; BUN/Cr >20:1 sugiere origen prerrenal",
+      "lit": false
+     },
+     "baja": {
+      "t": "Igual que la urea: hepatopatía grave, desnutrición, embarazo",
+      "lit": true
+     },
+     "perla": "En Perú se reporta como urea total, no como BUN",
+     "clave": null,
+     "nota": null,
+     "fuente": "wiki/FISIOPATOLOGIA 2026/concepts/Urea.md (Valores normales)"
+    },
+    {
+     "id": "relacion-urea-creatinina",
+     "parametro": "Relación urea/creatinina",
+     "nombre": "Relación urea/creatinina",
+     "icono": "🫘",
+     "normal": {
+      "t": "10-20",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": ">20 = IRA prerrenal (deshidratación, sangrado, bajo gasto); también HDA, corticoides",
+      "lit": false
+     },
+     "baja": {
+      "t": "<15 = IRA parenquimatosa/postrenal; <10 = hepatopatía severa o desnutrición",
+      "lit": false
+     },
+     "perla": "Caso: urea 180/Cr 5 = 36 prerrenal, pero Cr no mejoró con volumen → NTA",
+     "clave": {
+      "tipo": "regla",
+      "texto": "El corte 20 es para BUN/Cr · con urea total el equivalente prerrenal es ≈40 (urea = BUN × 2.14)",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "wiki/FISIOPATOLOGIA 2026/concepts/Urea.md (Relación U/Cr)"
+    },
+    {
+     "id": "creatinina-serica",
+     "parametro": "Creatinina sérica",
+     "nombre": "Creatinina sérica",
+     "icono": "🫘",
+     "normal": {
+      "t": "0.6-1.4 mg%",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Caída de TFG: IRA, IRC; marcador tardío (TFG cae ~50% antes de subir)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Poca masa muscular (anciano, desnutrición), embarazo",
+      "lit": true
+     },
+     "perla": "Prerrenal: Cr mejora con volumen en 24-48 h; en NTA no mejora",
+     "clave": {
+      "tipo": "clasificacion",
+      "texto": "IRA (KDIGO): Cr ↑ ≥0.3 mg/dL en 48 h, o ≥1.5 × basal en 7 días, o diuresis <0.5 mL/kg/h por 6 h",
+      "lit": true,
+      "icono": "🗂️"
+     },
+     "nota": "FISIOPATO: varón 0.7-1.2, mujer 0.5-1.1 mg/dL; SEMIOLOGIA 0.6-1.4 mg%",
+     "fuente": "wiki/SEMIOLOGIA/clases/10b_Exploracion_genitourinaria_y_examenes_complementarios.md §7"
+    },
+    {
+     "id": "clearance-de-creatinina-tfg",
+     "parametro": "Clearance de creatinina / TFG",
+     "nombre": "Clearance de creatinina / TFG",
+     "icono": "🫘",
+     "normal": {
+      "t": "Varón 97-137, mujer 88-128 mL/min (prom. 120)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Hiperfiltración: embarazo, diabetes inicial",
+      "lit": true
+     },
+     "baja": {
+      "t": "<60 = IRC; 50-80 leve; 10-50 moderada; <10 grave (diálisis)",
+      "lit": false
+     },
+     "perla": "Cockcroft-Gault: [(140−edad)×kg]/(Cr×72), ×0.85 mujer. 60 a, 62 kg, Cr 3 → 22.9",
+     "clave": {
+      "tipo": "clasificacion",
+      "texto": "ERC (KDIGO): G1 ≥90 · G2 60-89 · G3a 45-59 · G3b 30-44 · G4 15-29 · G5 <15 (diálisis)",
+      "lit": true,
+      "icono": "🗂️"
+     },
+     "nota": "Reserva disminuida: <80-120 (2020) vs 80-<100 (2018). FISIOPATO mujer 85-125",
+     "fuente": "wiki/SEMIOLOGIA/clases/10b… §7 y 10c_Sindromes_clinicos_renales.md (IRC)"
+    },
+    {
+     "id": "sodio-serico",
+     "parametro": "Sodio sérico",
+     "nombre": "Sodio sérico",
+     "icono": "🧂",
+     "normal": {
+      "t": "135-145 mEq/L",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": ">145 hipernatremia; deshidratación hipertónica; >170 convulsiones, coma",
+      "lit": false
+     },
+     "baja": {
+      "t": "<135 hiponatremia; síntomas <130; <120 convulsiones, coma, muerte",
+      "lit": false
+     },
+     "perla": "Hiperglucemia baja el Na 1.6 mEq/L por cada 100 mg/dL de glucosa",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Corregir lento: ≤8-10 mEq/L en 24 h · rápido en hiponatremia → mielinólisis; en hiper → edema cerebral",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Deshidratación hipotónica: Na <130 (2020) vs <135 (2018)",
+     "fuente": "wiki/SEMIOLOGIA/clases/05b_Biotipo_hidratacion….md; FISIOPATO Clase_06"
+    },
+    {
+     "id": "potasio-serico",
+     "parametro": "Potasio sérico",
+     "nombre": "Potasio sérico",
+     "icono": "🍌",
+     "normal": {
+      "t": "3.5-5.0 mEq/L",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": ">5 hiperpotasemia: IRA/IRC, acidosis; arritmias, FV (>9); grave >8",
+      "lit": false
+     },
+     "baja": {
+      "t": "<3.5 hipopotasemia: vómitos, diarrea, diuréticos; síntomas <2.5; poliuria",
+      "lit": false
+     },
+     "perla": "Diuresis excesiva en ascitis → hipopotasemia que agrava encefalopatía",
+     "clave": {
+      "tipo": "signo",
+      "texto": "HiperK: T alta picuda → P plana y QRS ancho → arritmia · hipoK: T aplanada + onda U",
+      "lit": false,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "wiki/FISIOPATOLOGIA 2026/clases/Clase_07_METABOLISMO_DEL_POTASIO.md"
+    },
+    {
+     "id": "cloro-serico",
+     "parametro": "Cloro sérico",
+     "nombre": "Cloro sérico",
+     "icono": "🧂",
+     "normal": {
+      "t": "97-105 mEq/L",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Hipercloremia: acidosis hiperclorémica (diarrea, acidosis tubular), deshidratación, exceso de SF 0,9 %",
+      "lit": true
+     },
+     "baja": {
+      "t": "Vómitos profusos (pérdida de HCl) → alcalosis hipoclorémica",
+      "lit": false
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "regla",
+      "texto": "Cl y HCO3 van al revés: vómitos Cl ↓ HCO3 ↑ · diarrea Cl ↑ HCO3 ↓ (acidosis hiperclorémica)",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "wiki/FISIOPATOLOGIA 2026/clases/Clase_04_ALTERACIONES…HIDROELECTROLITICO….md §3"
+    },
+    {
+     "id": "calcio-serico",
+     "parametro": "Calcio sérico",
+     "nombre": "Calcio sérico",
+     "icono": "🦴",
+     "normal": {
+      "t": "9-11 mg/dL",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Poliuria (hipercalcemia)",
+      "lit": false
+     },
+     "baja": {
+      "t": "<8 = tetania (Trousseau); <7 en pancreatitis = mal pronóstico; IRA/IRC",
+      "lit": false
+     },
+     "perla": "Pancreatitis alcohólica con Cullen y Grey Turner: Ca 6.2 mg/dL → mal pronóstico",
+     "clave": {
+      "tipo": "formula",
+      "texto": "Ca corregido = Ca + 0.8 × (4 − albúmina) · hipocalcemia: Chvostek (cara) y Trousseau (mano de partero)",
+      "lit": false,
+      "icono": "🧮"
+     },
+     "nota": "09d: 6-11 (2020) vs 9-11 (2018); FISIOPATO <8.5; FISIOLOGIA 8.5-10.5",
+     "fuente": "wiki/SEMIOLOGIA/clases/05b_Biotipo… (tetania) y 09d… (Pancreatitis)"
+    },
+    {
+     "id": "magnesio-serico",
+     "parametro": "Magnesio sérico",
+     "nombre": "Magnesio sérico",
+     "icono": "⚡",
+     "normal": {
+      "t": "1.8-2.3 mEq/L",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Hipermagnesemia en IRA/IRC (riñón no excreta); al inicio asintomática",
+      "lit": false
+     },
+     "baja": {
+      "t": "Hipomagnesemia: diuréticos de asa; aumenta toxicidad digitálica",
+      "lit": false
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "regla",
+      "texto": "HipoK o hipoCa que no corrigen = buscar hipoMg · hipoMg predispone a torsades de pointes",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Entidad Hipermagnesemia fija el corte en >2.1 mEq/L",
+     "fuente": "wiki/FISIOPATOLOGIA 2026/clases/Clase_04… §3; entities/enfermedades/Hipermagnesemia.md"
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "titulo": "6 · Hígado, páncreas y lípidos",
+   "color": "#2e7d32",
+   "icono": "🟤",
+   "filas": [
+    {
+     "id": "tgo-ast",
+     "parametro": "TGO / AST",
+     "nombre": "TGO / AST",
+     "icono": "🟤",
+     "normal": {
+      "t": "<40 UI/L",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Necrosis hepatocelular, hepatitis alcohólica (TGO/TGP >2), IAM, rabdomiólisis, hemólisis",
+      "lit": false
+     },
+     "baja": {
+      "t": "Sin significado clínico",
+      "lit": true
+     },
+     "perla": "Hepatitis: transaminasas muy elevadas; coledocolitiasis: normales o poco elevadas",
+     "clave": {
+      "tipo": "regla",
+      "texto": "TGO/TGP >2 = alcohol · TGO también sale del músculo y del corazón (no es solo hepática)",
+      "lit": false,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "wiki/FISIOPATOLOGIA 2026/concepts/TGO.md; SEMIOLOGIA 09e §3"
+    },
+    {
+     "id": "tgp-alt",
+     "parametro": "TGP / ALT",
+     "nombre": "TGP / ALT",
+     "icono": "🟤",
+     "normal": {
+      "t": "<40 UI/L",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Hepatitis viral aguda (>10× LSN, TGP>TGO), tóxica (>1000), EHNA 2-5×",
+      "lit": false
+     },
+     "baja": {
+      "t": "Sin significado clínico",
+      "lit": true
+     },
+     "perla": "Más específica de hígado que TGO. Obstrucción biliar: elevación leve (<5×)",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Ley de Hy: fármaco + TGP >3 × límite normal + bilirrubina >2 × límite = lesión hepática grave",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "wiki/FISIOPATOLOGIA 2026/concepts/TGP.md"
+    },
+    {
+     "id": "fosfatasa-alcalina-fa",
+     "parametro": "Fosfatasa alcalina (FA)",
+     "nombre": "Fosfatasa alcalina (FA)",
+     "icono": "🟤",
+     "normal": {
+      "t": "30-120 UI/L (embarazo hasta 300; niños hasta 400)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Colestasis/obstrucción biliar (>3× LSN); origen óseo si GGT normal (Paget, metástasis)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Raro: hipotiroidismo severo, desnutrición, anemia perniciosa",
+      "lit": false
+     },
+     "perla": "FA baja más lento que TGO/TGP tras resolver la obstrucción (vida media 7 días)",
+     "clave": null,
+     "nota": null,
+     "fuente": "wiki/FISIOPATOLOGIA 2026/concepts/Fosfatasa-Alcalina.md"
+    },
+    {
+     "id": "ggt-gt",
+     "parametro": "GGT (γ-GT)",
+     "nombre": "GGT (γ-GT)",
+     "icono": "🟤",
+     "normal": {
+      "t": "Mujer <40 U/L · varón <60 U/L",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Origen hepatobiliar: GGT↑ + FA↑ confirma colestasis (no está en hueso)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Sin significado clínico",
+      "lit": true
+     },
+     "perla": "FA alta con GGT normal → pensar en origen óseo",
+     "clave": {
+      "tipo": "signo",
+      "texto": "GGT aislada alta = marcador de consumo de alcohol y de fármacos inductores",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "Casos clínicos del vault: GGT 280-445 U/L en coledocolitiasis",
+     "fuente": "wiki/FISIOPATOLOGIA 2026/concepts/Fosfatasa-Alcalina.md; entities/…/Colestasis.md"
+    },
+    {
+     "id": "bilirrubina-total",
+     "parametro": "Bilirrubina total",
+     "nombre": "Bilirrubina total",
+     "icono": "💛",
+     "normal": {
+      "t": "1.2 mg/dL",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Ictericia visible >2.5 mg/dL; 1.2-2.5 = hiperbilirrubinemia subclínica",
+      "lit": false
+     },
+     "baja": {
+      "t": "Sin significado clínico",
+      "lit": true
+     },
+     "perla": "Revisar escleróticas: hipercarotinemia tiñe piel pero escleras blancas",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Ictericia aparece primero en escleróticas y frenillo lingual, y desaparece al último de ellas",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "Esquema 36 FISIOPATO da normal hasta 1.5 mg%; SEMIOLOGIA y FISIOPATO entidad 1.2",
+     "fuente": "wiki/SEMIOLOGIA/clases/09a_Anamnesis_y_sintomas_del_aparato_digestivo.md §6"
+    },
+    {
+     "id": "bilirrubina-directa-conjugada",
+     "parametro": "Bilirrubina directa (conjugada)",
+     "nombre": "Bilirrubina directa (conjugada)",
+     "icono": "💛",
+     "normal": {
+      "t": "<0.3 mg/dL",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Poshepática/obstructiva (coluria intensa + acolia); hepatocelular (sube con BI)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Sin significado clínico",
+      "lit": true
+     },
+     "perla": "Hidrosoluble → filtra por riñón → coluria. Coledocolitiasis: BT 20, BD 15",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Colestasis: coluria (BD hidrosoluble) + acolia (no llega bilis al intestino) + prurito (sales biliares)",
+      "lit": false,
+      "icono": "⭐"
+     },
+     "nota": "Valor normal solo en caso clínico de entidad Colestasis (FISIOPATO)",
+     "fuente": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Colestasis.md; SEMIOLOGIA 09a §6"
+    },
+    {
+     "id": "bilirrubina-indirecta-no-conjugada",
+     "parametro": "Bilirrubina indirecta (no conjugada)",
+     "nombre": "Bilirrubina indirecta (no conjugada)",
+     "icono": "💛",
+     "normal": {
+      "t": "0,2-0,8 mg/dL (= BT − BD)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Prehepática/hemolítica: sin coluria, heces muy coloreadas; Gilbert, Crigler-Najjar",
+      "lit": false
+     },
+     "baja": {
+      "t": "Sin significado clínico",
+      "lit": true
+     },
+     "perla": "Unida a albúmina, no filtra (sin coluria); liposoluble → kernícterus en RN",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Gilbert: BI leve que sube con ayuno o estrés, sin hemólisis · RN: kernícterus si BI >20 mg/dL",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/09a_Anamnesis_y_sintomas_del_aparato_digestivo.md §6"
+    },
+    {
+     "id": "patron-hepatocelular-vs-colestasico",
+     "parametro": "Patrón hepatocelular vs colestásico",
+     "nombre": "Patrón hepatocelular vs colestásico",
+     "icono": "🧭",
+     "normal": {
+      "t": "Transaminasas y FA normales",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Hepatocelular: TGO/TGP muy altas, FA normal/poco alta. Colestásico: FA↑, transaminasas N",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Hepatitis BT15/BD10/BI5; coledocolitiasis BT20/BD15/BI5; hidatídico BT8/BD5/BI2",
+     "clave": {
+      "tipo": "formula",
+      "texto": "Factor R = (TGP ÷ su límite) ÷ (FA ÷ su límite): ≥5 hepatocelular · 2-5 mixto · ≤2 colestásico",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": null,
+     "fuente": "wiki/FISIOPATOLOGIA 2026/esquemas/Esquema_36_Sindrome-Icterico.md (Laboratorio comparado)"
+    },
+    {
+     "id": "proteinas-totales",
+     "parametro": "Proteínas totales",
+     "nombre": "Proteínas totales",
+     "icono": "🥚",
+     "normal": {
+      "t": "6.0-8.0 g/dL",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Deshidratación (hemoconcentración) o globulinas altas: infección crónica, mieloma, hepatopatía crónica",
+      "lit": true
+     },
+     "baja": {
+      "t": "Hipoproteinemia: insuficiencia hepática, desnutrición, pérdida renal/digestiva",
+      "lit": false
+     },
+     "perla": "Cirrosis descompensada: PT 4.2 g/dL, albúmina 1.8 → edema y ascitis",
+     "clave": {
+      "tipo": "formula",
+      "texto": "Brecha proteica = proteínas totales − albúmina · >4 g/dL: pensar en mieloma",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": "Valor normal tomado de caso clínico (VN entre paréntesis)",
+     "fuente": "wiki/FISIOPATOLOGIA 2026/entities/signos/Hipoproteinemia.md (ejemplo)"
+    },
+    {
+     "id": "albumina",
+     "parametro": "Albúmina",
+     "nombre": "Albúmina",
+     "icono": "🥚",
+     "normal": {
+      "t": "4-5 g/dL",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Hiperalbuminemia por deshidratación",
+      "lit": false
+     },
+     "baja": {
+      "t": "<2.5 g/dL → edema (↓presión oncótica): cirrosis, nefrótico, desnutrición",
+      "lit": false
+     },
+     "perla": "Nefrótico: proteinuria ≥3.5 g/24h → hipoalbuminemia → edema hasta anasarca",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Vida media ~20 días: mide falla hepática crónica · en daño agudo mirar TP/INR",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Hipoalbuminemia <3.5 (FISIOPATO); nefrótico <3 (PATOLOGIA); docente 'menor de 2 g'",
+     "fuente": "wiki/SEMIOLOGIA/clases/05g_Edema.md (tabla mecanismos)"
+    },
+    {
+     "id": "globulinas",
+     "parametro": "Globulinas",
+     "nombre": "Globulinas",
+     "icono": "🥚",
+     "normal": {
+      "t": "2.3-3.5 g/dL (~35% de proteínas totales)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Insuficiencia hepática (globulina aumentada con albúmina baja)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Hipogammaglobulinemia: inmunodeficiencia, síndrome nefrótico, desnutrición",
+      "lit": true
+     },
+     "perla": "Lab insuficiencia hepática: transaminasas ↑, albúmina ↓, globulina ↑",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Electroforesis: pico monoclonal gamma = mieloma · aumento policlonal = cirrosis o inflamación crónica",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "wiki/FISIOLOGIA 2026/conceptos/Globulinas.md; SEMIOLOGIA 09e §4"
+    },
+    {
+     "id": "relacion-albumina-globulina-a-g",
+     "parametro": "Relación albúmina/globulina (A/G)",
+     "nombre": "Relación albúmina/globulina (A/G)",
+     "icono": "🥚",
+     "normal": {
+      "t": "1,1-2,2 (≈1,5)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Poco frecuente: hipogammaglobulinemia",
+      "lit": true
+     },
+     "baja": {
+      "t": "Relación baja sugiere inflamación crónica o cirrosis",
+      "lit": false
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "regla",
+      "texto": "Normal A/G 1.2-2 (albúmina ≈ doble de globulinas) · <1 = inversión: cirrosis, mieloma",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "wiki/FISIOPATOLOGIA 2026/Albumina.md (Diagnóstico)"
+    },
+    {
+     "id": "amilasa-serica",
+     "parametro": "Amilasa sérica",
+     "nombre": "Amilasa sérica",
+     "icono": "🥞",
+     "normal": {
+      "t": "0-120 UA/dL",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Pancreatitis: ≥3× VN (>360); también úlcera perforada, colecistitis, obstrucción",
+      "lit": false
+     },
+     "baja": {
+      "t": "Destrucción pancreática crónica extensa (poco valor)",
+      "lit": true
+     },
+     "perla": "Vuelve a lo normal en 36-72 h; no exclusiva de pancreatitis; no mide gravedad",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Pancreatitis = 2 de 3 (Atlanta): dolor típico · amilasa o lipasa ≥3 × normal · imagen compatible",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/09d_Higado_vias_biliares… (Pancreatitis); FISIOPATO Amilasa.md"
+    },
+    {
+     "id": "lipasa-serica",
+     "parametro": "Lipasa sérica",
+     "nombre": "Lipasa sérica",
+     "icono": "🥞",
+     "normal": {
+      "t": "<60 U/L (según laboratorio)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Pancreatitis aguda (>3× VN); más específica y dura más que la amilasa",
+      "lit": false
+     },
+     "baja": {
+      "t": "Sin significado clínico",
+      "lit": true
+     },
+     "perla": "Útil si consulta tarde (>48-72 h); normal en parotiditis",
+     "clave": {
+      "tipo": "escala",
+      "texto": "Ranson al ingreso: edad >55 · leucocitos >16.000 · glucosa >200 · LDH >350 · TGO >250",
+      "lit": true,
+      "icono": "📏"
+     },
+     "nota": "PATOLOGIA: amilasa sube en 24 h; lipasa entre 72-96 h",
+     "fuente": "wiki/SEMIOLOGIA/clases/09d… (Pancreatitis); PATOLOGIA 16b §3"
+    },
+    {
+     "id": "colesterol-total",
+     "parametro": "Colesterol total",
+     "nombre": "Colesterol total",
+     "icono": "🍔",
+     "normal": {
+      "t": "<200 deseable · 200-239 límite · ≥240 alto (mg/dL)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Hipercolesterolemia: xantelasma, arco senil; nefrótico, hipotiroidismo",
+      "lit": false
+     },
+     "baja": {
+      "t": "Hipertiroidismo, desnutrición, hepatopatía grave, malabsorción",
+      "lit": true
+     },
+     "perla": "HF heterocigota: 260-500 mg/dL; homocigota >1000 mg/dL",
+     "clave": {
+      "tipo": "clasificacion",
+      "texto": "Deseable <200 · límite 200-239 · alto ≥240 mg/dL (ATP III)",
+      "lit": true,
+      "icono": "🗂️"
+     },
+     "nota": "El '<200 mg' de Katzung es colesterol de la dieta (mg/día), no sérico",
+     "fuente": "wiki/SEMIOLOGIA/clases/06a_Cabeza_cara_ojos.md; FARMACOLOGIA 35a"
+    },
+    {
+     "id": "hdl",
+     "parametro": "HDL",
+     "nombre": "HDL",
+     "icono": "🍔",
+     "normal": {
+      "t": "Varón ≥40 · mujer ≥50 mg/dL; ≥60 protector",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Protector cardiovascular (ejercicio, estrógenos)",
+      "lit": true
+     },
+     "baja": {
+      "t": "<40 mg/dL varón, <50 mujer = criterio de síndrome metabólico",
+      "lit": false
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "regla",
+      "texto": "HDL ≥60 mg/dL es protector (resta un factor de riesgo cardiovascular) · el ejercicio lo sube",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Síndrome-metabólico.md"
+    },
+    {
+     "id": "ldl",
+     "parametro": "LDL",
+     "nombre": "LDL",
+     "icono": "🍔",
+     "normal": {
+      "t": "Óptimo <100 mg/dL; normal <130 mg/dL",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Principal factor causal de aterosclerosis; HF (defecto del receptor LDL)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Hipertiroidismo, desnutrición, malabsorción",
+      "lit": true
+     },
+     "perla": "Friedewald: LDL = CT − HDL − TG/5 (válida si TG <400)",
+     "clave": {
+      "tipo": "clasificacion",
+      "texto": "<100 óptimo · 100-129 casi óptimo · 130-159 límite · 160-189 alto · ≥190 muy alto (¿familiar?)",
+      "lit": true,
+      "icono": "🗂️"
+     },
+     "nota": "FARMACOLOGIA: LDL 50-60 óptimo en prevención coronaria",
+     "fuente": "wiki/BIOQUIMICA 2026/concepts/Colesterol-LDL.md"
+    },
+    {
+     "id": "trigliceridos",
+     "parametro": "Triglicéridos",
+     "nombre": "Triglicéridos",
+     "icono": "🍔",
+     "normal": {
+      "t": "<150 mg/dL (≥150 = elevados)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "≥150 criterio síndrome metabólico; >700 satura LPL → riesgo de pancreatitis",
+      "lit": false
+     },
+     "baja": {
+      "t": "Desnutrición, hipertiroidismo, malabsorción",
+      "lit": true
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "regla",
+      "texto": "Síndrome metabólico = 3 de 5: cintura ↑, TG ≥150, HDL bajo, PA ≥130/85, glucosa ≥100",
+      "lit": false,
+      "icono": "🧠"
+     },
+     "nota": "FARMACOLOGIA: deberían mantenerse bajo 120 mg/dL",
+     "fuente": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Síndrome-metabólico.md; FARMACOLOGIA 35a"
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "titulo": "7 · Orina y deposiciones",
+   "color": "#00838f",
+   "icono": "🧪",
+   "filas": [
+    {
+     "id": "volumen-urinario",
+     "parametro": "Volumen urinario",
+     "nombre": "Volumen urinario",
+     "icono": "🚽",
+     "normal": {
+      "t": "800-1800 mL/24h (media 1400)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Poliuria >2000 mL/24h: DM descompensada, diabetes insípida, hipercalcemia, diuréticos",
+      "lit": false
+     },
+     "baja": {
+      "t": "Oliguria <400 mL/24h (≈20 mL/h); anuria <100 mL/24h (obstrucción bilateral)",
+      "lit": false
+     },
+     "perla": "Oliguria: hipovolemia/deshidratación o lesión renal. IRA: oliguria y luego poliuria",
+     "clave": {
+      "tipo": "formula",
+      "texto": "Diuresis normal ≥0.5-1 mL/kg/h · oliguria adulto <0.5 mL/kg/h · niño <1 mL/kg/h",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/10a_Anamnesis_y_sintomas_del_aparato_genitourinario.md (tabla)"
+    },
+    {
+     "id": "densidad-urinaria",
+     "parametro": "Densidad urinaria",
+     "nombre": "Densidad urinaria",
+     "icono": "🧪",
+     "normal": {
+      "t": "1.015-1.025",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": ">1.020 en IRA prerrenal (riñón concentra)",
+      "lit": false
+     },
+     "baja": {
+      "t": "<1.010 (isostenuria) en NTA / IRA parenquimatosa",
+      "lit": false
+     },
+     "perla": "Refleja la osmolaridad urinaria",
+     "clave": {
+      "tipo": "formula",
+      "texto": "FENa = (NaO × CrP) ÷ (NaP × CrO) × 100 · <1% prerrenal · >2% necrosis tubular aguda",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": "SEMIOLOGIA escribe la unidad como 'mg/ml'",
+     "fuente": "wiki/SEMIOLOGIA/clases/10b… §6; FISIOPATO concepts/Creatinina.md"
+    },
+    {
+     "id": "ph-urinario",
+     "parametro": "pH urinario",
+     "nombre": "pH urinario",
+     "icono": "🧪",
+     "normal": {
+      "t": "Ácido, 4.5-7",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Alcalino: dieta o gérmenes productores de ureasa (urea → amoníaco)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Orina más ácida (<5): acidosis metabólica, dieta proteica, cetoacidosis; cálculos de ácido úrico",
+      "lit": true
+     },
+     "perla": "Orina ácida precipita ácido úrico y oxalato; alcalina, fosfatos",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Proteus (ureasa) → orina alcalina → cálculos coraliformes de estruvita",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/10b_Exploracion… §6; 10a (Orina turbia)"
+    },
+    {
+     "id": "aspecto-y-color-de-orina",
+     "parametro": "Aspecto y color de orina",
+     "nombre": "Aspecto y color de orina",
+     "icono": "🧪",
+     "normal": {
+      "t": "Amarillo pálido a ámbar; límpida",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Turbia: pus/ITU o cristales; roja: hematuria; castaña: coluria; espumosa: nefrótico",
+      "lit": false
+     },
+     "baja": {
+      "t": "Incolora en hiperhidratación",
+      "lit": false
+     },
+     "perla": "Orina 'coca-cola' = hematuria del síndrome nefrítico",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Orina roja con hematíes = hematuria · tira + sin hematíes = hemoglobinuria o mioglobinuria",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/10a_Anamnesis… (Color) y 10b §6"
+    },
+    {
+     "id": "leucocitos-sedimento",
+     "parametro": "Leucocitos (sedimento)",
+     "nombre": "Leucocitos (sedimento)",
+     "icono": "🔬",
+     "normal": {
+      "t": "Hasta 3 por campo",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": ">10/campo = sospecha de ITU (piuria)",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Con cilindros leucocitarios → pielonefritis",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Piuria estéril (cultivo negativo): TBC renal, nefritis intersticial, litiasis",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "FISIOPATO Sedimento: normal 0-5/campo; >5-10 piuria",
+     "fuente": "wiki/SEMIOLOGIA/clases/10b_Exploracion… §6 (Sedimento)"
+    },
+    {
+     "id": "hematies-sedimento",
+     "parametro": "Hematíes (sedimento)",
+     "nombre": "Hematíes (sedimento)",
+     "icono": "🔬",
+     "normal": {
+      "t": "Hasta 2 por campo",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Hematuria: glomerular (dismórficos), ITU, litiasis; fiebre/ejercicio sin lesión",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Hematuria nunca debe ignorarse: obliga a estudio urológico completo",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Prueba de 3 vasos: inicial = uretra · terminal = cuello vesical/trígono · total = riñón, uréter o vejiga",
+      "lit": false,
+      "icono": "⭐"
+     },
+     "nota": "FISIOPATO Sedimento: normal 0-3/campo",
+     "fuente": "wiki/SEMIOLOGIA/clases/10b_Exploracion… §6 (Sedimento)"
+    },
+    {
+     "id": "celulas-epiteliales-orina",
+     "parametro": "Células epiteliales (orina)",
+     "nombre": "Células epiteliales (orina)",
+     "icono": "🔬",
+     "normal": {
+      "t": "Escasas (descamación normal)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Abundantes: contaminación o infección; tubulares en NTA",
+      "lit": false
+     },
+     "baja": null,
+     "perla": null,
+     "clave": {
+      "tipo": "regla",
+      "texto": "Tomar chorro medio tras aseo genital · muchas células escamosas = muestra contaminada, repetir",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "No figura en SEMIOLOGIA; solo en FISIOPATOLOGIA",
+     "fuente": "wiki/FISIOPATOLOGIA 2026/concepts/Sedimento-Urinario.md"
+    },
+    {
+     "id": "proteinas-en-orina",
+     "parametro": "Proteínas en orina",
+     "nombre": "Proteínas en orina",
+     "icono": "🧪",
+     "normal": {
+      "t": "≤120-150 mg/24h",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Glomerulopatía; nefrótico ≥3.5 g/24h; nefrítico leve-moderada",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Cruces: (+) 1 g/L, (++) 3, (+++) 5-10, (++++) >10. Microalbuminuria: nefropatía DM",
+     "clave": {
+      "tipo": "formula",
+      "texto": "Proteína/creatinina en orina aislada (g/g) ≈ g/24 h · >3.5 nefrótico · albúmina 30-300 mg/g = microalbuminuria",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/10b_Exploracion… §6; 10c_Sindromes_clinicos_renales.md"
+    },
+    {
+     "id": "glucosa-en-orina",
+     "parametro": "Glucosa en orina",
+     "nombre": "Glucosa en orina",
+     "icono": "🧪",
+     "normal": {
+      "t": "Ausente",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Poca: IR avanzada o Fanconi; mucha: DM descompensada",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Umbral renal de glucosa ≈180 mg/dL (FISIOPATO)",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Glucosuria con glucemia normal: tubulopatía (Fanconi), embarazo o gliflozinas",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/10b_Exploracion… §6 (químicas)"
+    },
+    {
+     "id": "cetonas-y-urobilinogeno-orina",
+     "parametro": "Cetonas y urobilinógeno (orina)",
+     "nombre": "Cetonas y urobilinógeno (orina)",
+     "icono": "🧪",
+     "normal": {
+      "t": "Ausentes",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Cetonas: DM descompensada grave o ayuno; urobilinógeno: ictericia hepatocelular",
+      "lit": false
+     },
+     "baja": {
+      "t": "Obstructiva: coluria con bilirrubina pero sin urobilina",
+      "lit": false
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "clasificacion",
+      "texto": "Cetoacidosis diabética: cetonas + glucosa >250 + pH <7.30 + HCO3 <18",
+      "lit": true,
+      "icono": "🗂️"
+     },
+     "nota": "10b dice que urobilinógeno sube en obstructivas; 09a dice que falta en obstructiva",
+     "fuente": "wiki/SEMIOLOGIA/clases/10b… §6 y 09a… §6 (tabla ictericias)"
+    },
+    {
+     "id": "cilindros-urinarios",
+     "parametro": "Cilindros urinarios",
+     "nombre": "Cilindros urinarios",
+     "icono": "🔬",
+     "normal": {
+      "t": "Hialinos sin valor patológico aislado",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Hemáticos: glomerular/nefrítico; leucocitarios: pielonefritis; céreos: GN crónica",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Granulosos: lesión renal inespecífica (NTA). Grasos: nefrótico (FISIOPATO)",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Cilindro = molde del túbulo: prueba origen renal · hemático = glomerulonefritis hasta demostrar lo contrario",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "FISIOPATO: céreos en IRC avanzada",
+     "fuente": "wiki/SEMIOLOGIA/clases/10b_Exploracion… §6 (Sedimento)"
+    },
+    {
+     "id": "nitritos-orina",
+     "parametro": "Nitritos (orina)",
+     "nombre": "Nitritos (orina)",
+     "icono": "🦠",
+     "normal": {
+      "t": "Negativo",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Positivo: ITU por enterobacterias (E. coli); falso negativo si la orina estuvo <4 h en vejiga",
+      "lit": true
+     },
+     "baja": {
+      "t": "No aplica (negativo es lo normal)",
+      "lit": true
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "signo",
+      "texto": "Nitritos + = enterobacterias (E. coli) · falso negativo: Enterococo o orina <4 h en vejiga",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "—"
+    },
+    {
+     "id": "frecuencia-de-deposiciones",
+     "parametro": "Frecuencia de deposiciones",
+     "nombre": "Frecuencia de deposiciones",
+     "icono": "💩",
+     "normal": {
+      "t": "De 3 al día a 1 cada 3 días, sin esfuerzo y consistencia normal",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Diarrea: alta hasta 10/día voluminosas; baja >10/día, poco volumen, moco/sangre",
+      "lit": false
+     },
+     "baja": {
+      "t": "Constipación: <3 por semana o cada 3 días o más, con dificultad",
+      "lit": false
+     },
+     "perla": "Pseudodiarrea: fecaloma que deja escapar líquido fecaloideo",
+     "clave": {
+      "tipo": "escala",
+      "texto": "Bristol 1-7: tipos 1-2 estreñimiento · 3-4 normal · 5-7 diarrea",
+      "lit": true,
+      "icono": "📏"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/09a_Anamnesis… §5; 09e_Grandes_cuadros… §2"
+    },
+    {
+     "id": "diarrea-duracion",
+     "parametro": "Diarrea (duración)",
+     "nombre": "Diarrea (duración)",
+     "icono": "💩",
+     "normal": null,
+     "altura": null,
+     "sube": {
+      "t": "Aguda <2-3 semanas (infecciosa); crónica >4 semanas (no infecciosa)",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Complica con hipopotasemia, alcalosis/acidosis, IRA, desnutrición",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Disentería = sangre + moco + pujo + tenesmo → diarrea invasiva (Shigella, ameba)",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md §2"
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "titulo": "8 · Ecografía y otros datos de la HC",
+   "color": "#5d4037",
+   "icono": "🖥️",
+   "filas": [
+    {
+     "id": "higado-examen-clinico-ecografia",
+     "parametro": "Hígado (examen clínico; ecografía)",
+     "nombre": "Hígado (examen clínico; ecografía)",
+     "icono": "🖥️",
+     "normal": {
+      "t": "Borde no palpable; submatidez superior desde 5º EIC derecho",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Hepatomegalia: pequeña hasta 2 traveses, mediana hasta 4, grande >4",
+      "lit": false
+     },
+     "baja": {
+      "t": "Hígado pequeño: cirrosis avanzada, hepatitis fulminante",
+      "lit": true
+     },
+     "perla": "Medida ecográfica del lóbulo hepático derecho: SIN DATO EN VAULT",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Hepatometría por percusión en línea medioclavicular derecha: 10-12 cm · lóbulo derecho en eco <15 cm",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/09b_Exploracion_del_abdomen… (Palpación y percusión)"
+    },
+    {
+     "id": "coledoco-ecografia",
+     "parametro": "Colédoco (ecografía)",
+     "nombre": "Colédoco (ecografía)",
+     "icono": "🖥️",
+     "normal": {
+      "t": "≤6 mm (<60 años); ≤8 mm (>60 años o poscolecistectomía)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Dilatado: coledocolitiasis / obstrucción extrahepática",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Casos del vault: colédoco 11-15 mm con cálculo; ecografía es el primer estudio",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Charcot: fiebre + ictericia + dolor = colangitis · Reynolds: + shock + confusión",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "Solo en FISIOPATOLOGIA (literatura), no en clases de SEMIOLOGIA",
+     "fuente": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Coledocolitiasis.md"
+    },
+    {
+     "id": "vena-porta-ecografia",
+     "parametro": "Vena porta (ecografía)",
+     "nombre": "Vena porta (ecografía)",
+     "icono": "🖥️",
+     "normal": {
+      "t": "Diámetro ≤13 mm",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": ">13 mm: hipertensión portal",
+      "lit": true
+     },
+     "baja": {
+      "t": "Porta fina o no visible: trombosis portal (buscar con Doppler)",
+      "lit": true
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "regla",
+      "texto": "Porta >13 mm en eco + esplenomegalia + ascitis = hipertensión portal",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "ANATOMIA: tronco portal 8-10 cm de largo y 8-10 mm de diámetro",
+     "fuente": "wiki/ANATOMIA 2026/clases/ABDOMEN/04_ORGANOS_DEL_PLANO_INFERIOR_v2.md"
+    },
+    {
+     "id": "bazo-ecografia-examen",
+     "parametro": "Bazo (ecografía / examen)",
+     "nombre": "Bazo (ecografía / examen)",
+     "icono": "🖥️",
+     "normal": {
+      "t": "No palpable; SIN DATO EN VAULT de medida ecográfica",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Esplenomegalia: HT portal, infecciones, leucemias, cirrosis, hemólisis",
+      "lit": false
+     },
+     "baja": {
+      "t": "Asplenia o autoesplenectomía (anemia falciforme)",
+      "lit": true
+     },
+     "perla": "Se palpa al duplicar su volumen (2020) vs 2-3 veces (2018)",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Eco: eje largo >12-13 cm = esplenomegalia · palpar con maniobra de Schuster (decúbito lateral derecho)",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "ANATOMIA: 13 × 8 × 3-3.5 cm, 180-200 g",
+     "fuente": "wiki/SEMIOLOGIA/clases/09b_Exploracion_del_abdomen… (Palpación del bazo)"
+    },
+    {
+     "id": "pancreas-ecografia",
+     "parametro": "Páncreas (ecografía)",
+     "nombre": "Páncreas (ecografía)",
+     "icono": "🖥️",
+     "normal": {
+      "t": "Cabeza ≤3 cm, cuerpo y cola ≤2,5 cm; Wirsung ≤3 mm",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Aumentado e hipoecoico: pancreatitis aguda; Wirsung dilatado: obstrucción",
+      "lit": true
+     },
+     "baja": {
+      "t": "Atrofia con calcificaciones: pancreatitis crónica",
+      "lit": true
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "regla",
+      "texto": "Wirsung >3 mm = dilatado: obstrucción (cálculo, neoplasia) o pancreatitis crónica",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "—"
+    },
+    {
+     "id": "vesicula-pared-calculos",
+     "parametro": "Vesícula (pared, cálculos)",
+     "nombre": "Vesícula (pared, cálculos)",
+     "icono": "🖥️",
+     "normal": {
+      "t": "Pared <3 mm",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Pared >3-4 mm = colecistitis; cálculos hiperecoicos; distendida = hidrops",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Courvoisier-Terrier: vesícula distendida indolora + ictericia → neo cabeza páncreas",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Murphy: palpar punto cístico en inspiración → dolor que corta la respiración = colecistitis aguda",
+      "lit": false,
+      "icono": "⭐"
+     },
+     "nota": "Pared: FISIOPATO. Cálculos hiperecoicos: SEMIOLOGIA 09c",
+     "fuente": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Hidrops-Vesicular.md; SEMIOLOGIA 09c §3"
+    },
+    {
+     "id": "menarquia",
+     "parametro": "Menarquia",
+     "nombre": "Menarquia",
+     "icono": "🌸",
+     "normal": {
+      "t": "10-14 años (promedio 12)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Tardía (>15-16 años): hipogonadismo, desnutrición, deporte intenso",
+      "lit": true
+     },
+     "baja": {
+      "t": "Precoz (<8-9 años): pubertad precoz",
+      "lit": true
+     },
+     "perla": "HC: menarquia, régimen catamenial, FUR, embarazos/partos/abortos, dismenorrea",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Menarquia <9 años = precoz · sin menarquia a los 15 años = amenorrea primaria",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Edad solo en FISIOLOGIA; SEMIOLOGIA solo lista el dato a preguntar",
+     "fuente": "wiki/FISIOLOGIA 2026/…/08_Capitulo_82.md; SEMIOLOGIA 02b_Antecedentes_del_paciente.md"
+    },
+    {
+     "id": "formula-obstetrica-g-p",
+     "parametro": "Fórmula obstétrica (G P)",
+     "nombre": "Fórmula obstétrica (G P)",
+     "icono": "🤰",
+     "normal": {
+      "t": "G = gestaciones, P = partos; ampliada: P a-b-c-d = a término, prematuros, abortos, hijos vivos",
+      "lit": true
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "SEMIOLOGIA pide número de embarazos, partos y abortos",
+     "clave": {
+      "tipo": "regla",
+      "texto": "G P ABCD: G gestas · A a término · B prematuros · C abortos · D hijos vivos (ej. G3 P2012)",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Solo aparece 'G2P1' en un caso de HELLP, sin explicación",
+     "fuente": "wiki/SEMIOLOGIA/clases/02b_Antecedentes_del_paciente.md"
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "titulo": "9 · Electrocardiograma (ECG)",
+   "color": "#b71c1c",
+   "icono": "📈",
+   "filas": [
+    {
+     "id": "ecg-papel-y-cuadritos",
+     "parametro": "ECG · Papel y cuadritos",
+     "nombre": "Papel y cuadritos",
+     "icono": "📄",
+     "normal": {
+      "t": "25 mm/s; cuadradito = 0.04 s o 1 mm; cuadrado grande (5) = 0.20 s o 5 mm",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "Horizontal mide tiempo; vertical mide amplitud",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Calibración 10 mm = 1 mV (1 mm = 0.1 mV) · 5 cuadrados grandes = 1 segundo",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/08j_Bases_del_electrocardiograma.md · §2 El papel del ECG"
+    },
+    {
+     "id": "ecg-frecuencia-cardiaca",
+     "parametro": "ECG · Frecuencia cardíaca",
+     "nombre": "Frecuencia cardíaca",
+     "icono": "❤️",
+     "normal": {
+      "t": "60-100 lpm; 1500/cuadraditos entre 2 R o 300/cuadrados grandes entre 2 R",
+      "lit": false
+     },
+     "altura": {
+      "t": "Llegada a altura: taquicardia inicial; aclimatado vuelve a FC casi normal",
+      "lit": true
+     },
+     "sube": {
+      "t": ">100 lpm: taquicardia sinusal (fiebre, hipoxia, anemia, hipertiroidismo, shock)",
+      "lit": false
+     },
+     "baja": {
+      "t": "<60 lpm: bradicardia sinusal (atletas, ancianos, betabloq., IAM inferior, HTE)",
+      "lit": false
+     },
+     "perla": "Usar 1500 (más preciso); ambas fórmulas solo valen con ritmo regular",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Cuadrados grandes entre R: 300-150-100-75-60-50 · ritmo irregular: QRS en 6 s × 10",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Escape: nódulo AV 40-60 lpm; Purkinje 30-40 lpm",
+     "fuente": "08j §6 paso 2 y callout de clase; 08l §2-3 Taquicardia y bradicardia sinusal"
+    },
+    {
+     "id": "ecg-ritmo-sinusal",
+     "parametro": "ECG · Ritmo sinusal",
+     "nombre": "Ritmo sinusal",
+     "icono": "🎵",
+     "normal": {
+      "t": "P + en DI, DII, aVF, − en aVR; toda P precede al QRS; PR 0.12-0.20 s",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": {
+      "t": "Sin P, ondas f, RR irregular: fibrilación auricular (aurícula 400-600 lpm)",
+      "lit": false
+     },
+     "perla": "Arritmia sinusal: FC sube en inspiración y baja en espiración; no se trata",
+     "clave": {
+      "tipo": "signo",
+      "texto": "FA: ritmo «irregularmente irregular», sin P, con ondas f · clínica: déficit de pulso",
+      "lit": false,
+      "icono": "⭐"
+     },
+     "nota": "FA: otros autores citan 350-450 lpm auriculares",
+     "fuente": "08j §6 paso 1; 08l §4 Arritmia sinusal y §5 Fibrilación auricular"
+    },
+    {
+     "id": "ecg-eje-electrico",
+     "parametro": "ECG · Eje eléctrico",
+     "nombre": "Eje eléctrico",
+     "icono": "🧭",
+     "normal": {
+      "t": "0° a +90° (otros: −30° a +110°); DI y aVF positivos",
+      "lit": false
+     },
+     "altura": {
+      "t": "En residentes de altura el eje tiende a la derecha (+90° a +120°) por hipertrofia VD",
+      "lit": true
+     },
+     "sube": {
+      "t": "Derecha (+90 a +180): HVD, BCRD, longilíneo, enfisema, inspiración",
+      "lit": false
+     },
+     "baja": {
+      "t": "Izquierda (0 a −90): HVI, BCRI, obesidad, ascitis, embarazo, espiración",
+      "lit": false
+     },
+     "perla": "Eje ⊥ a la derivación con QRS más isodifásico; en altura eje a la derecha",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Mirar DI y aVF: ambos + normal · DI + aVF − izquierda · DI − aVF + derecha · ambos − extremo",
+      "lit": false,
+      "icono": "🧠"
+     },
+     "nota": "Clase: en poblador de altura desviación derecha en ~70-75% (HTP → HVD)",
+     "fuente": "08j §5 Eje eléctrico del corazón + callout de clase"
+    },
+    {
+     "id": "ecg-onda-p",
+     "parametro": "ECG · Onda P",
+     "nombre": "Onda P",
+     "icono": "〰️",
+     "normal": {
+      "t": "0.07-0.11 s; <2.5 mm en DII; redondeada, simétrica",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": ">2.5 mm alta y picuda: HAD (P pulmonar); >0.12 s bimodal: HAI (P mitrale)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Ausente, sustituida por ondas f: fibrilación auricular",
+      "lit": false
+     },
+     "perla": "HAD: cor pulmonar crónico; HAI: estenosis/insuficiencia mitral",
+     "clave": {
+      "tipo": "regla",
+      "texto": "P pulmonale = picuda en DII (aurícula derecha) · P mitrale = en «M», ancha (aurícula izquierda)",
+      "lit": false,
+      "icono": "🧠"
+     },
+     "nota": "2018 da onda P 0.06-0.11 s; se prefiere 2020",
+     "fuente": "08j §2 y §6 paso 3; 08k §1 Hipertrofias de cámaras"
+    },
+    {
+     "id": "ecg-intervalo-pr",
+     "parametro": "ECG · Intervalo PR",
+     "nombre": "Intervalo PR",
+     "icono": "↔️",
+     "normal": {
+      "t": "0.12-0.20 s (variable con edad y FC); segmento PR isoeléctrico (±0.5 mm)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": ">0.20 s fijo: BAV 1.er grado; alargamiento progresivo: Mobitz I (Wenckebach)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Acortado en taquicardia sinusal",
+      "lit": false
+     },
+     "perla": "BAV 3.er grado: sin relación P-QRS, más P que QRS; Stokes-Adams",
+     "clave": {
+      "tipo": "signo",
+      "texto": "PR corto <0.12 s + onda delta + QRS ancho = Wolff-Parkinson-White (vía accesoria)",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "2018 da PR 0.11 s (valor único); 08l dice PR alargado en bradicardia sinusal",
+     "fuente": "08j §2 y §6 pasos 4-5; 08l §1 BAV y §2 Taquicardia sinusal"
+    },
+    {
+     "id": "ecg-complejo-qrs",
+     "parametro": "ECG · Complejo QRS",
+     "nombre": "Complejo QRS",
+     "icono": "⚡",
+     "normal": {
+      "t": "<0.12 s; R ≤15 mm estándar y ≤25 mm precordiales; S ≤17 mm en V1-V2",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": ">0.12 s con M (RSR') en V1-V2: bloqueo de rama; Sokolow ≥35 mm: HVI",
+      "lit": false
+     },
+     "baja": {
+      "t": "Bajo voltaje (QRS <5 mm en frontales): derrame pericárdico, obesidad, EPOC, hipotiroidismo",
+      "lit": true
+     },
+     "perla": "BCRD: Chagas (rama derecha delgada y larga); BCRI: cardiopatía isquémica",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Sokolow S V1 + R V5-V6 ≥35 mm = hipertrofia VI · bloqueo rama derecha: M en V1 · izquierda: M en V6",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Errata del libro: da QRS <0.12 s en BCRI; incoherente con bloqueo completo",
+     "fuente": "08j §6 paso 6; 08k §1 HVI y §2 Bloqueo de rama"
+    },
+    {
+     "id": "ecg-onda-q-patologica",
+     "parametro": "ECG · Onda Q patológica",
+     "nombre": "Onda Q patológica",
+     "icono": "⚠️",
+     "normal": {
+      "t": "Q ≤3 mm de profundidad y ≤0.04 s de ancho (salvo DIII)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Q profunda/ancha: necrosis (infarto transmural)",
+      "lit": false
+     },
+     "baja": {
+      "t": "No aplica (lo normal es Q pequeña o ausente)",
+      "lit": true
+     },
+     "perla": "La Q, una vez aparecida, persiste de por vida; infarto subendocárdico sin Q",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Localiza el infarto: DII-DIII-aVF inferior · V1-V4 anteroseptal · DI-aVL-V5-V6 lateral",
+      "lit": false,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "08j §6 paso 6; 08k §3c Necrosis y §5 Infarto subendocárdico"
+    },
+    {
+     "id": "ecg-segmento-st",
+     "parametro": "ECG · Segmento ST",
+     "nombre": "Segmento ST",
+     "icono": "📉",
+     "normal": {
+      "t": "Isoeléctrico entre punto J e inicio de T; desnivel >0.5 mm es patológico",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Supradesnivel: lesión subepicárdica (fase aguda del IAM, hasta 10 mm)",
+      "lit": false
+     },
+     "baja": {
+      "t": "Infradesnivel: lesión subendocárdica; imagen en espejo de IAM dorsal en V1-V3",
+      "lit": false
+     },
+     "perla": "Isquemia → T; lesión → ST; necrosis → Q (reversibles solo T y ST)",
+     "clave": {
+      "tipo": "regla",
+      "texto": "IAM con ST elevado: ≥1 mm en 2 derivaciones contiguas (≥2 mm en V2-V3) → reperfundir ya",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "08j §6 paso 7; 08k §3b Lesión, §4 y §5"
+    },
+    {
+     "id": "ecg-onda-t",
+     "parametro": "ECG · Onda T",
+     "nombre": "Onda T",
+     "icono": "〰️",
+     "normal": {
+      "t": "5-10 mm, asimétrica; + en DI, DII, aVF, V3-V6; − en aVR",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Positiva, alta y simétrica: isquemia subendocárdica",
+      "lit": false
+     },
+     "baja": {
+      "t": "Negativa, simétrica, puntiaguda: isquemia subepicárdica; T invertida en HVI/BCR",
+      "lit": false
+     },
+     "perla": "Tras el infarto la T invertida puede durar meses o años y normalizarse",
+     "clave": {
+      "tipo": "regla",
+      "texto": "T sigue la dirección del QRS · T negativa aislada en aVR, V1 o DIII puede ser normal",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "FISIOLOGIA: T picuda = hiperpotasemia; T invertida también por hipopotasemia",
+     "fuente": "08j §6 paso 8; 08k §3a Isquemia; FISIOLOGIA 2026/conceptos/Onda-T.md"
+    },
+    {
+     "id": "ecg-intervalo-qt",
+     "parametro": "ECG · Intervalo QT",
+     "nombre": "Intervalo QT",
+     "icono": "⏱️",
+     "normal": {
+      "t": "0.34-0.44 s (inicio QRS a fin de T); inverso a la FC",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "SIN DATO EN SEMIOLOGIA; FISIOLOGIA: hipoK, hipoMg, hipoCa, fármacos → torsades",
+      "lit": false
+     },
+     "baja": {
+      "t": "SIN DATO EN SEMIOLOGIA; FISIOLOGIA: hipercalcemia",
+      "lit": false
+     },
+     "perla": "A mayor FC, menor QT",
+     "clave": {
+      "tipo": "formula",
+      "texto": "QTc (Bazett) = QT ÷ √RR · largo >440 ms varón, >460 ms mujer · riesgo de torsades",
+      "lit": false,
+      "icono": "🧮"
+     },
+     "nota": "2018: QT 0.25-0.40 s. FISIOLOGIA: QTc (Bazett) <440 ms hombre, <460 ms mujer",
+     "fuente": "08j §2 y §6 paso 9; FISIOLOGIA 2026/conceptos/Intervalo-QT.md"
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "titulo": "10 · Radiografía de tórax",
+   "color": "#37474f",
+   "icono": "🩻",
+   "filas": [
+    {
+     "id": "rx-torax-indice-cardiotoracico",
+     "parametro": "Rx tórax · Índice cardiotorácico",
+     "nombre": "Índice cardiotorácico",
+     "icono": "📐",
+     "normal": {
+      "t": "ICT = (A+B)/C; normal hasta 0.50 (límite superior)",
+      "lit": false
+     },
+     "altura": {
+      "t": "Residentes de altura: arco medio (AP) prominente por hipertensión pulmonar",
+      "lit": true
+     },
+     "sube": {
+      "t": ">0.50: cardiomegalia (p. ej. valvulopatía evolucionada, ICC)",
+      "lit": false
+     },
+     "baja": {
+      "t": "ICT pequeño («corazón en gota»): EPOC con hiperinsuflación, delgadez extrema",
+      "lit": true
+     },
+     "perla": "Cardiomegalia ≠ cardiopatía: atleta con corazón grande sano",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Válido solo en PA de pie e inspiración profunda · en AP o decúbito el corazón se magnifica",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Ejemplo del vault: 12/25 = 0.48 normal; enfisema: silueta alargada y estrecha",
+     "fuente": "wiki/SEMIOLOGIA/clases/08f_Examenes_complementarios_del_aparato_cardiovascular.md · §2"
+    },
+    {
+     "id": "rx-torax-silueta-cardiaca",
+     "parametro": "Rx tórax · Silueta cardíaca",
+     "nombre": "Silueta cardíaca",
+     "icono": "🫀",
+     "normal": {
+      "t": "Borde der.: VCS y AD. Izq.: botón aórtico, arco medio (AP + orejuela AI), VI",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Abombamiento del arco medio (orejuela AI): primer signo de patología mitral",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Proyección de rutina: postero-anterior",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Estenosis mitral: 4 arcos a la izquierda + doble contorno derecho (aurícula izquierda) + carina abierta",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "08f §1 Silueta cardíaca normal en PA"
+    },
+    {
+     "id": "rx-torax-senos-costofrenicos",
+     "parametro": "Rx tórax · Senos costofrénicos",
+     "nombre": "Senos costofrénicos",
+     "icono": "📐",
+     "normal": {
+      "t": "Costodiafragmático: ángulo agudo; cardiofrénico agudo der., obtuso izq.",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": {
+      "t": "Seno borrado: derrame pleural",
+      "lit": false
+     },
+     "perla": "Hemidiafragma derecho 2-3 cm más alto por el hígado",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Seno borrado + menisco ascendente = derrame · seno romo sin menisco = engrosamiento pleural antiguo",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/07g_Examenes_complementarios_del_aparato_respiratorio.md · §1"
+    },
+    {
+     "id": "rx-torax-hilios",
+     "parametro": "Rx tórax · Hilios",
+     "nombre": "Hilios",
+     "icono": "🌳",
+     "normal": {
+      "t": "Imagen vascular (arterias pulmonares); hilio izquierdo más alto que el derecho",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Micronódulos perihiliares y basales: bronconeumonía",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Trama vascular se afina a la periferia; tercio externo casi sin trama en joven",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Hilios grandes bilaterales = hipertensión pulmonar o linfoma/sarcoidosis · unilateral = neoplasia o TBC",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "07g §1 Campos pulmonares; 07f Bronconeumonía"
+    },
+    {
+     "id": "rx-torax-condensacion",
+     "parametro": "Rx tórax · Condensación",
+     "nombre": "Condensación",
+     "icono": "☁️",
+     "normal": {
+      "t": "Normal: campos pulmonares radiotransparentes, sin opacidades",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Opacidad homogénea con broncograma aéreo: neumonía",
+      "lit": false
+     },
+     "baja": {
+      "t": "—",
+      "lit": true
+     },
+     "perla": "Atelectasia: opacidad con mediastino desviado HACIA la lesión",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Signo de la silueta: borra borde cardíaco = lóbulo medio o língula · borra hemidiafragma = lóbulo inferior",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "wiki/SEMIOLOGIA/clases/07e_Sindromes_pulmonares_y_pleurales.md · §4 y §6"
+    },
+    {
+     "id": "rx-torax-derrame-pleural",
+     "parametro": "Rx tórax · Derrame pleural",
+     "nombre": "Derrame pleural",
+     "icono": "💧",
+     "normal": {
+      "t": "Normal: senos costofrénicos agudos y libres; derrame visible desde ~200 ml en PA (~50 ml en lateral)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Borra seno costodiafragmático y cúpula; si grande, mediastino al lado sano",
+      "lit": false
+     },
+     "baja": {
+      "t": "<300 ml puede no verse de pie; se evidencia en decúbito lateral",
+      "lit": false
+     },
+     "perla": "En ICC predomina el derrame derecho",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Signo del menisco: línea cóncava que sube hacia la axila (en la percusión: curva de Damoiseau)",
+      "lit": false,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "07e §3 Derrame pleural + callout de clase"
+    },
+    {
+     "id": "rx-torax-neumotorax",
+     "parametro": "Rx tórax · Neumotórax",
+     "nombre": "Neumotórax",
+     "icono": "💨",
+     "normal": {
+      "t": "Normal: trama vascular llega hasta la pared costal",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Borde pulmonar colapsado separado de la pared por claridad sin trama (aire)",
+      "lit": false
+     },
+     "baja": {
+      "t": "—",
+      "lit": true
+     },
+     "perla": "Hipertensivo: mediastino desviado, diafragma aplanado, EIC ensanchados",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Timpanismo + vibraciones y murmullo abolidos · hipertensivo: descomprimir sin esperar la Rx",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "Pectoral mayor puede simular un neumotórax enquistado (07g)",
+     "fuente": "07e §5 Neumotórax; 07g §1 Partes blandas"
+    },
+    {
+     "id": "rx-torax-hiperinsuflacion",
+     "parametro": "Rx tórax · Hiperinsuflación",
+     "nombre": "Hiperinsuflación",
+     "icono": "🎈",
+     "normal": {
+      "t": "Normal: diafragma a nivel del 6.º arco costal anterior (9-10 posterior), cúpulas convexas",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Hiperclaridad, costillas horizontales, EIC anchos, diafragma bajo: enfisema/asma",
+      "lit": false
+     },
+     "baja": {
+      "t": "—",
+      "lit": true
+     },
+     "perla": "Enfisema: silueta cardíaca alargada y estrecha",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Más de 10 arcos costales posteriores por encima del diafragma = hiperinsuflación",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "07e §8 Enfisema; 07f Asma bronquial"
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "titulo": "11 · Gases arteriales y ácido-base",
+   "color": "#0277bd",
+   "icono": "🫧",
+   "filas": [
+    {
+     "id": "gases-ph-arterial",
+     "parametro": "Gases · pH arterial",
+     "nombre": "pH arterial",
+     "icono": "⚖️",
+     "normal": {
+      "t": "7.35 - 7.45",
+      "lit": false
+     },
+     "altura": {
+      "t": "Aclimatado: pH normal o levemente alcalino (7.40-7.46)",
+      "lit": true
+     },
+     "sube": {
+      "t": ">7.45 = alcalosis",
+      "lit": false
+     },
+     "baja": {
+      "t": "<7.35 = acidosis; acidosis metabólica grave <7.22",
+      "lit": false
+     },
+     "perla": "Bicarbonato IV solo si pH <7.20 y HCO3 <10",
+     "clave": {
+      "tipo": "regla",
+      "texto": "ROME: respiratorio opuesto (pH y PaCO2 en sentido contrario) · metabólico igual (pH y HCO3 mismo sentido)",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Acidosis respiratoria: el docente la define con pH <7.32 (Clase 09)",
+     "fuente": "wiki/FISIOPATOLOGIA 2026/clases/Clase_08_* § Valores normales; Clase_09 § I"
+    },
+    {
+     "id": "gases-pao2",
+     "parametro": "Gases · PaO2",
+     "nombre": "PaO2",
+     "icono": "🫁",
+     "normal": {
+      "t": "80 - 100 mmHg",
+      "lit": false
+     },
+     "altura": {
+      "t": "Guyton: PO2 alveolar 67 mmHg a 3048 m (aclimatado 77); a 3800 m SIN DATO",
+      "lit": false
+     },
+     "sube": {
+      "t": "Hiperoxemia: oxígeno suplementario, hiperventilación",
+      "lit": true
+     },
+     "baja": {
+      "t": "<60 mmHg = hipoxemia (EAP de altura: PO2 <60 mmHg)",
+      "lit": false
+     },
+     "perla": "Gasometría de rutina en insuficiencia respiratoria, enfisema y EPOC (Semiología)",
+     "clave": {
+      "tipo": "altura",
+      "texto": "Puno (barómetro ≈480 mmHg): PaO2 normal ≈50-60 · alveolar = 0.21 × (480 − 47) − PaCO2 ÷ 0.8",
+      "lit": true,
+      "icono": "🏔"
+     },
+     "nota": "Clase 08 escribe '80-100 mEq': unidad errónea, es mmHg",
+     "fuente": "Clase_08 § Valores normales; Clase_30 § Gases; FISIOLOGIA Capitulo_44 § tabla"
+    },
+    {
+     "id": "gases-paco2",
+     "parametro": "Gases · PaCO2",
+     "nombre": "PaCO2",
+     "icono": "💨",
+     "normal": {
+      "t": "40 mmHg (36-44)",
+      "lit": false
+     },
+     "altura": {
+      "t": "Hiperventilación baja PCO2 (EAP altura <30); valor del residente: SIN DATO",
+      "lit": false
+     },
+     "sube": {
+      "t": ">45 mmHg = acidosis respiratoria (hipoventilación)",
+      "lit": false
+     },
+     "baja": {
+      "t": "<35 mmHg = alcalosis respiratoria; <20 baja flujo cerebral hasta 1/3",
+      "lit": false
+     },
+     "perla": "Ventilador en alcalosis resp grave: mantener PaCO2 ~30 mmHg",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Cada 10 mmHg de cambio agudo en PaCO2 mueve el pH ≈0.08 (crónico ≈0.03)",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Clase 08 la anota en 'mEq'; página auto de Fisiología da 35-45 mmHg",
+     "fuente": "Clase_08 § Valores normales; Clase_09 § I y III; Clase_30 § Gases"
+    },
+    {
+     "id": "gases-hco3",
+     "parametro": "Gases · HCO3−",
+     "nombre": "HCO3−",
+     "icono": "🧂",
+     "normal": {
+      "t": "22 - 26 mEq/L (media 24)",
+      "lit": false
+     },
+     "altura": {
+      "t": "Puno: HCO3 aprox. 19-22 mEq/L (compensación renal de la alcalosis respiratoria)",
+      "lit": true
+     },
+     "sube": {
+      "t": ">26 = alcalosis metabólica; ↑ en acidosis respiratoria crónica",
+      "lit": false
+     },
+     "baja": {
+      "t": "<24 = acidosis metabólica; grave <9-10",
+      "lit": false
+     },
+     "perla": "Déficit = 0.5 × peso (kg) × (24 − HCO3 actual); pasar en 3-4 h",
+     "clave": {
+      "tipo": "altura",
+      "texto": "Residente de altura: PaCO2 ≈30 por hiperventilación y HCO3 compensador más bajo (≈20-22)",
+      "lit": true,
+      "icono": "🏔"
+     },
+     "nota": "Clase 04 (tabla electrolitos) da 24-26 mEq/L",
+     "fuente": "Clase_08 § Valores normales y Tratamiento; Clase_04 § 3"
+    },
+    {
+     "id": "gases-exceso-de-base",
+     "parametro": "Gases · Exceso de base",
+     "nombre": "Exceso de base",
+     "icono": "➕",
+     "normal": {
+      "t": "+2.5 a −2.5",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": ">+2.5: alcalosis metabólica (vómitos, diuréticos, bicarbonato)",
+      "lit": true
+     },
+     "baja": {
+      "t": "<−2.5: acidosis metabólica (cetoacidosis, láctica, diarrea, IRC)",
+      "lit": true
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "formula",
+      "texto": "EB < −2.5 = acidosis metabólica · > +2.5 = alcalosis · déficit de HCO3 ≈ 0.3 × kg × EB",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": "Página auto-desarrollada de Fisiología (no docente) da −2 a +2 mEq/L",
+     "fuente": "Clase_08 § Valores normales; FISIOLOGIA concepts/Gasometria-Arterial"
+    },
+    {
+     "id": "gases-sato2-arterial",
+     "parametro": "Gases · SatO2 arterial",
+     "nombre": "SatO2 arterial",
+     "icono": "🫧",
+     "normal": {
+      "t": "95 - 98% a nivel del mar",
+      "lit": false
+     },
+     "altura": {
+      "t": "Docente: 90% 'en nuestro medio'; Guyton 3048 m: 90% (aclimatado 92%)",
+      "lit": false
+     },
+     "sube": null,
+     "baja": {
+      "t": "Cor pulmonale crónico en altura: <80% hasta 55%",
+      "lit": false
+     },
+     "perla": "SatO2 baja → EPO → eritrocitosis; si es desproporcionada, trombosis",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Regla 40-50-60 → 70-80-90: PaO2 40 ≈ Sat 70% · 50 ≈ 80% · 60 ≈ 90%",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Página auto Saturacion-Oxigeno da 88-92% en altura (no docente)",
+     "fuente": "Clase_08 § Valores normales; Clase_33 § clínica; SEMIOLOGIA 07a"
+    },
+    {
+     "id": "gases-anion-gap",
+     "parametro": "Gases · Anión gap",
+     "nombre": "Anión gap",
+     "icono": "🧮",
+     "normal": {
+      "t": "8 - 16 mEq/L; Na − (HCO3 + Cl) = 144 − 24 − 108 = 12",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Cetoacidosis, láctica, IRC, AAS, metanol/etilenglicol, ayuno",
+      "lit": false
+     },
+     "baja": {
+      "t": "AG bajo: hipoalbuminemia (cada 1 g/dL de albúmina baja ~2.5 el AG), mieloma",
+      "lit": true
+     },
+     "perla": "AG normal (hiperclorémica): diarrea, ATR, acetazolamida, Addison",
+     "clave": {
+      "tipo": "formula",
+      "texto": "AG corregido = AG + 2.5 × (4 − albúmina) · la hipoalbuminemia esconde un anión gap alto",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": "Solo en Guyton (Fisiología); el docente de Fisiopatología no lo da",
+     "fuente": "FISIOLOGIA clases/05_UNIDAD_V/07_Capitulo_31 § Brecha aniónica"
+    },
+    {
+     "id": "gases-acidosis-metabolica",
+     "parametro": "Gases · Acidosis metabólica",
+     "nombre": "Acidosis metabólica",
+     "icono": "🔴",
+     "normal": {
+      "t": "pH <7.35 + HCO3 <24; PaCO2 baja por compensación",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "Kussmaul. Cetoacidosis, láctica, alcohol, shock, diarrea, IRC, ATR, fármacos",
+     "clave": {
+      "tipo": "formula",
+      "texto": "Winter: PaCO2 esperada = 1.5 × HCO3 + 8 ± 2 · si es mayor, hay acidosis respiratoria asociada",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": "Puede dar hiperpotasemia y desmineralización ósea",
+     "fuente": "Clase_08 § I. Acidosis metabólica"
+    },
+    {
+     "id": "gases-acidosis-respiratoria",
+     "parametro": "Gases · Acidosis respiratoria",
+     "nombre": "Acidosis respiratoria",
+     "icono": "🔴",
+     "normal": {
+      "t": "pH <7.32 + PaCO2 >45; HCO3 normal (aguda) o ↑ (crónica)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "EPOC, obstrucción, neumotórax, EAP, neumonía, depresión SNC, obesidad",
+     "clave": {
+      "tipo": "formula",
+      "texto": "Por cada 10 mmHg que sube la PaCO2: HCO3 +1 (aguda) o +3.5 (crónica, EPOC)",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": "Bicarbonato no indicado; solo si pH <7.10 refractario a ventilación",
+     "fuente": "Clase_09 § I. Acidosis respiratoria"
+    },
+    {
+     "id": "gases-alcalosis-metabolica",
+     "parametro": "Gases · Alcalosis metabólica",
+     "nombre": "Alcalosis metabólica",
+     "icono": "🔵",
+     "normal": {
+      "t": "pH >7.45 + HCO3 >26; PaCO2 normal o levemente ↑",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "Vómitos (hipoclorémica), diuréticos, hiperaldosteronismo, hipoK, bicarbonato",
+     "clave": {
+      "tipo": "formula",
+      "texto": "PaCO2 esperada = 0.7 × HCO3 + 21 ± 2 · cloro urinario <20 = responde a suero salino (vómitos)",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": "Clínica: hipoventilación, arritmias, tetania (↓Ca ionizado)",
+     "fuente": "Clase_09 § II. Alcalosis metabólica"
+    },
+    {
+     "id": "gases-alcalosis-respiratoria",
+     "parametro": "Gases · Alcalosis respiratoria",
+     "nombre": "Alcalosis respiratoria",
+     "icono": "🔵",
+     "normal": {
+      "t": "pH >7.45 + PaCO2 <35; HCO3 normal o levemente ↓",
+      "lit": false
+     },
+     "altura": {
+      "t": "EAP de altura inicial: PO2 <60, PCO2 <30, alcalosis resp; tardía: acidosis mixta",
+      "lit": false
+     },
+     "sube": null,
+     "baja": null,
+     "perla": "Ansiedad (la más frecuente), hipoxemia/altura, fiebre, sepsis, SNC, salicilatos",
+     "clave": {
+      "tipo": "formula",
+      "texto": "Por cada 10 mmHg que baja la PaCO2: HCO3 −2 (aguda) o −5 (crónica, residente de altura)",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": "Chvostek, Trousseau; tratamiento leve: respirar en bolsa de papel",
+     "fuente": "Clase_09 § III; Clase_30 § Gases en sangre arterial"
+    },
+    {
+     "id": "gases-compensacion-esperada",
+     "parametro": "Gases · Compensación esperada",
+     "nombre": "Compensación esperada",
+     "icono": "🔄",
+     "normal": {
+      "t": "Solo cualitativa: el sistema contrario corrige (tabla ↑/↓ de Guyton)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "Respiratoria completa en 6-12 h; renal en 3-5 días",
+     "clave": {
+      "tipo": "regla",
+      "texto": "La compensación nunca normaliza ni sobrepasa el pH · pH normal con PaCO2 y HCO3 alterados = mixto",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Fórmulas cuantitativas (Winter, etc.) SIN DATO EN VAULT; fuera de rango = mixto",
+     "fuente": "FISIOLOGIA 07_Capitulo_31 § Tabla resumen y § Diagnóstico"
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "titulo": "12 · Líquidos: pleural, ascítico y LCR",
+   "color": "#00695c",
+   "icono": "💧",
+   "filas": [
+    {
+     "id": "pleural-volumen-normal",
+     "parametro": "Pleural · Volumen normal",
+     "nombre": "Pleural · Volumen normal",
+     "icono": "🫁",
+     "normal": {
+      "t": "3 - 5 ml; por encima hay derrame (libre o tabicado)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Derrame; <300 ml puede no verse en placa de pie (sí en decúbito lateral)",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Toracocentesis: 8.º-9.º EIC tras línea axilar posterior, borde superior costal",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Derrame al examen: matidez + vibraciones ↓ + murmullo abolido · curva de Damoiseau, Garland y Grocco",
+      "lit": false,
+      "icono": "⭐"
+     },
+     "nota": "Página auto Efusion-Pleural da 5-15 ml (no docente)",
+     "fuente": "wiki/SEMIOLOGIA/clases/07e § 3 Derrame pleural; 07g § 6"
+    },
+    {
+     "id": "pleural-trasudado",
+     "parametro": "Pleural · Trasudado",
+     "nombre": "Pleural · Trasudado",
+     "icono": "🫁",
+     "normal": {
+      "t": "Claro, amarillo pálido, sin coágulos",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "IC derecha/congestiva, cirrosis, nefrótico, hipoproteinemia, mixedema, Meigs",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Trasudado = pleura sana, falla de presiones (hidrostática ↑ u oncótica ↓) · no cumple ningún criterio de Light",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "07e también lista compresión de cava superior y LES",
+     "fuente": "SEMIOLOGIA 07g § 6; 07e § 3 (tabla)"
+    },
+    {
+     "id": "pleural-exudado",
+     "parametro": "Pleural · Exudado",
+     "nombre": "Pleural · Exudado",
+     "icono": "🫁",
+     "normal": {
+      "t": "Opaco, color variable, forma coágulos",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "Lesión pleural directa: TBC, neumonía mal tratada, neoplasia, embolia pulmonar",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Exudado = pleura enferma (inflamación, tumor, TBC) · basta 1 criterio de Light",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": null,
+     "fuente": "SEMIOLOGIA 07g § 6; 07e § 3 (tabla)"
+    },
+    {
+     "id": "pleural-criterios-de-light",
+     "parametro": "Pleural · Criterios de Light",
+     "nombre": "Pleural · Criterios de Light",
+     "icono": "🫁",
+     "normal": {
+      "t": "Exudado si cumple ≥1: proteína pleura/suero >0.5; LDH pleura/suero >0.6; LDH pleural >2/3 del LSN sérico",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Cumple ≥1 criterio: exudado (neumonía, TBC, cáncer, TEP)",
+      "lit": true
+     },
+     "baja": {
+      "t": "No cumple ninguno: trasudado (IC, cirrosis, nefrótico)",
+      "lit": true
+     },
+     "perla": null,
+     "clave": {
+      "tipo": "clasificacion",
+      "texto": "Exudado si ≥1: proteína pleura/suero >0.5 · LDH pleura/suero >0.6 · LDH pleural >2/3 del límite sérico",
+      "lit": true,
+      "icono": "🗂️"
+     },
+     "nota": "Ejemplo auto (no docente): trasudado con proteínas <2.5 g/dL y LDH <200 U/L",
+     "fuente": "FISIOLOGIA conceptos/Efusion-Pleural; FISIOPATOLOGIA concepts/Toracocentesis"
+    },
+    {
+     "id": "pleural-aspecto",
+     "parametro": "Pleural · Aspecto",
+     "nombre": "Pleural · Aspecto",
+     "icono": "🫁",
+     "normal": {
+      "t": "Citrino: IC, cirrosis o síndrome nefrótico",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "Sanguinolento >60 años: neoplasia; achocolatado: amebiano; purulento: empiema",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Quilotórax: lechoso, TG >110 mg/dL · hemotórax: Hto pleural >50% del sanguíneo",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "SEMIOLOGIA 07g § 6 Punción pleural"
+    },
+    {
+     "id": "pleural-glucosa-ph-y-ldh",
+     "parametro": "Pleural · Glucosa, pH y LDH",
+     "nombre": "Pleural · Glucosa, pH y LDH",
+     "icono": "🫁",
+     "normal": {
+      "t": "Glucosa ≈ sérica (>60 mg/dL); pH 7.60-7.64; LDH <50 % de la sérica",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "LDH alta en empiema",
+      "lit": false
+     },
+     "baja": {
+      "t": "Glucosa y pH bajos en empiema",
+      "lit": false
+     },
+     "perla": "Empiema requiere drenaje quirúrgico (docente, Clase 42)",
+     "clave": {
+      "tipo": "regla",
+      "texto": "pH <7.2 o glucosa <60 o LDH >1000 = paraneumónico complicado/empiema → tubo de drenaje",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Dato de página auto-expand, no del docente; allí dice 'LCR purulento' por error",
+     "fuente": "FISIOPATOLOGIA entities/enfermedades/Empiema-Pleural § Diagnóstico"
+    },
+    {
+     "id": "pleural-celulas",
+     "parametro": "Pleural · Células",
+     "nombre": "Pleural · Células",
+     "icono": "🫁",
+     "normal": {
+      "t": "<1000 células/µL, predominio mononuclear (macrófagos, linfocitos)",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "Neutrófilos: exudado inflamatorio; linfocitos: TBC o neoplasia",
+      "lit": false
+     },
+     "baja": {
+      "t": "—",
+      "lit": true
+     },
+     "perla": "Repartir: 10 ml parasitológico, 10 bacteriológico, 10 bioquímico, 20 reserva",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Linfocitos >50% = TBC o neoplasia · ADA >40 U/L = TBC pleural (dato de oro en Perú)",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "Predominio celular solo en página auto (no docente)",
+     "fuente": "FISIOPATOLOGIA concepts/Toracocentesis; SEMIOLOGIA 07g § 6"
+    },
+    {
+     "id": "ascitis-gasa",
+     "parametro": "Ascitis · GASA",
+     "nombre": "Ascitis · GASA",
+     "icono": "🫃",
+     "normal": {
+      "t": ">1.1 g/dL = origen portal (hipertensión portal)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": {
+      "t": "GASA <1.1 no descrito",
+      "lit": false
+     },
+     "perla": "Ascitis portal: serosa, proteínas hasta 3 g/dL",
+     "clave": {
+      "tipo": "formula",
+      "texto": "GASA = albúmina sérica − albúmina ascítica · ≥1.1 portal (cirrosis, IC) · <1.1 peritoneal (TBC, cáncer)",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": "No figura en Semiología; viene de Robbins (Patología)",
+     "fuente": "wiki/PATOLOGIA 2026/clases/15a § 5.1; FISIOLOGIA conceptos/Ascitis"
+    },
+    {
+     "id": "ascitis-pmn-pbe",
+     "parametro": "Ascitis · PMN / PBE",
+     "nombre": "Ascitis · PMN / PBE",
+     "icono": "🫃",
+     "normal": {
+      "t": "PMN <250/mm³",
+      "lit": true
+     },
+     "altura": null,
+     "sube": {
+      "t": "PMN ≥250/mm³ = peritonitis bacteriana espontánea (tratar sin esperar cultivo)",
+      "lit": true
+     },
+     "baja": {
+      "t": "—",
+      "lit": true
+     },
+     "perla": "PBE = cirrótico ascítico con fiebre; docente añade cultivo (bacterias, hongos, BK)",
+     "clave": {
+      "tipo": "signo",
+      "texto": "PBE = neutrófilos ≥250/mm³ en líquido ascítico → antibiótico (cefotaxima) sin esperar cultivo",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "SEMIOLOGIA 09e § 1 y insuficiencia hepática; 09c § 5 callout clase"
+    },
+    {
+     "id": "ascitis-aspecto-y-estudio",
+     "parametro": "Ascitis · Aspecto y estudio",
+     "nombre": "Ascitis · Aspecto y estudio",
+     "icono": "🫃",
+     "normal": {
+      "t": "Seroso, quiloso o hemorrágico; en paracentesis cetrino o hemorrágico",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "~100 ml: físico, fisicoquímico (proteínas, densidad), citológico, bacteriológico",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Quiloso: TG >200 mg/dL · turbio: infección · hemorrágico: neoplasia o trauma · ADA alto: TBC",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "Células carcinomatosas si hay neoplasia",
+     "fuente": "SEMIOLOGIA 09c § 5 y tabla; 09e § 1 Síndrome ascítico"
+    },
+    {
+     "id": "ascitis-deteccion-y-puncion",
+     "parametro": "Ascitis · Detección y punción",
+     "nombre": "Ascitis · Detección y punción",
+     "icono": "🫃",
+     "normal": {
+      "t": "Clínica si >500 ml; matidez desplazable (moderada), oleada (a tensión)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "Punción: tercio externo línea ombligo-EIAS izquierda, sobre zona mate",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Signo del charco ≈120 mL · matidez desplazable ≈500 mL · oleada >1 litro (ascitis a tensión)",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "El umbral de 500 ml es de Robbins (Patología 15a)",
+     "fuente": "SEMIOLOGIA 09c § 5; 09e § 1; PATOLOGIA 15a § 5.1"
+    },
+    {
+     "id": "lcr-presion",
+     "parametro": "LCR · Presión",
+     "nombre": "LCR · Presión",
+     "icono": "🧠",
+     "normal": {
+      "t": "<180 mmH2O (docente: hasta 20 cm de agua)",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Meningitis bacteriana: presión aumentada",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Papiledema: precaución antes de punción lumbar por herniación",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Medir en decúbito lateral relajado · TAC antes de punzar si hay papiledema, focalidad o coma",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Guyton: ~130 mmH2O (10 mmHg), rango 65-195",
+     "fuente": "SEMIOLOGIA 11j § 6; 11e; FISIOLOGIA 07_Capitulo_62 § Presión"
+    },
+    {
+     "id": "lcr-aspecto",
+     "parametro": "LCR · Aspecto",
+     "nombre": "LCR · Aspecto",
+     "icono": "🧠",
+     "normal": {
+      "t": "Transparente",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "Meningococo: LCR purulento + púrpura + diplococos gramnegativos",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Xantocrómico = hemorragia subaracnoidea (>12 h) · punción traumática aclara del 1.º al 3.er tubo",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "Turbio/xantocrómico: SIN DATO EN VAULT",
+     "fuente": "SEMIOLOGIA 11j § 6; MICROBIOLOGIA 23b § caso clínico"
+    },
+    {
+     "id": "lcr-celulas",
+     "parametro": "LCR · Células",
+     "nombre": "LCR · Células",
+     "icono": "🧠",
+     "normal": {
+      "t": "<5 linfocitos/ml; ningún eritrocito",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Bacteriana: neutrófilos; viral: linfocitos; TBC: mononucleares o mixtas",
+      "lit": false
+     },
+     "baja": null,
+     "perla": "Bacterias en frotis/cultivo a veces antes de que aparezcan neutrófilos",
+     "clave": {
+      "tipo": "formula",
+      "texto": "Punción traumática: restar 1 leucocito por cada 500-1000 eritrocitos del LCR",
+      "lit": true,
+      "icono": "🧮"
+     },
+     "nota": null,
+     "fuente": "SEMIOLOGIA 11j § 6; PATOLOGIA 22d"
+    },
+    {
+     "id": "lcr-proteinas",
+     "parametro": "LCR · Proteínas",
+     "nombre": "LCR · Proteínas",
+     "icono": "🧠",
+     "normal": {
+      "t": "20-40 mg/100 ml; albúmina > globulina; gammaglobulina <10%",
+      "lit": false
+     },
+     "altura": null,
+     "sube": {
+      "t": "Bacteriana ↑; viral moderadamente ↑; TBC ↑ llamativo",
+      "lit": false
+     },
+     "baja": null,
+     "perla": null,
+     "clave": {
+      "tipo": "signo",
+      "texto": "Disociación albúmino-citológica (proteínas ↑ con células normales) = Guillain-Barré",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": null,
+     "fuente": "SEMIOLOGIA 11j § 6; PATOLOGIA 22d"
+    },
+    {
+     "id": "lcr-glucosa",
+     "parametro": "LCR · Glucosa",
+     "nombre": "LCR · Glucosa",
+     "icono": "🧠",
+     "normal": {
+      "t": "50-60% de la glucemia",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": {
+      "t": "Bacteriana ↓; TBC ↓ o normal (viral: normal)",
+      "lit": false
+     },
+     "perla": "Glucosa baja + neutrófilos separa piógena de aséptica",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Relación glucosa LCR/sangre <0.4 = bacteriana · pedir glucemia simultánea siempre",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Guyton: glucosa del LCR ~30% menor que la plasmática",
+     "fuente": "SEMIOLOGIA 11j § 6; PATOLOGIA 22d; FISIOLOGIA 07_Capitulo_62"
+    },
+    {
+     "id": "lcr-patron-bacteriano-piogeno",
+     "parametro": "LCR · Patrón bacteriano (piógeno)",
+     "nombre": "LCR · Patrón bacteriano (piógeno)",
+     "icono": "🧠",
+     "normal": {
+      "t": "Presión ↑, neutrófilos abundantes, proteínas ↑, glucosa ↓",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "Caso meningococo: 380 cél/mm3 (93% PMN), prot 220 mg/dl, glucosa 32 mg/dl",
+     "clave": {
+      "tipo": "signo",
+      "texto": "Clínica meníngea: fiebre + rigidez de nuca + alteración de conciencia · Kernig y Brudzinski positivos",
+      "lit": false,
+      "icono": "⭐"
+     },
+     "nota": "Sin tratamiento suele ser mortal",
+     "fuente": "PATOLOGIA 22d § meningitis aguda piógena; MICROBIOLOGIA 23b"
+    },
+    {
+     "id": "lcr-patron-viral-aseptico",
+     "parametro": "LCR · Patrón viral (aséptico)",
+     "nombre": "LCR · Patrón viral (aséptico)",
+     "icono": "🧠",
+     "normal": {
+      "t": "Linfocitosis, proteínas moderadamente ↑, glucosa normal",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "Evolución menos fulminante; agente a menudo no identificado",
+     "clave": {
+      "tipo": "regla",
+      "texto": "Linfocitos + glucosa normal = viral · linfocitos + glucosa baja = TBC u hongos",
+      "lit": true,
+      "icono": "🧠"
+     },
+     "nota": "Arbovirus: pleocitosis neutrófila precoz que pasa a linfocitosis",
+     "fuente": "PATOLOGIA 22d § meningitis aséptica"
+    },
+    {
+     "id": "lcr-patron-tuberculoso",
+     "parametro": "LCR · Patrón tuberculoso",
+     "nombre": "LCR · Patrón tuberculoso",
+     "icono": "🧠",
+     "normal": {
+      "t": "Celularidad moderada mononuclear o mixta, proteínas muy ↑, glucosa ↓ o normal",
+      "lit": false
+     },
+     "altura": null,
+     "sube": null,
+     "baja": null,
+     "perla": "Exudado gelatinoso basal que atrapa pares craneales",
+     "clave": {
+      "tipo": "signo",
+      "texto": "ADA en LCR >10 U/L apoya TBC · afecta pares craneales (VI) y causa hidrocefalia",
+      "lit": true,
+      "icono": "⭐"
+     },
+     "nota": "Criptococo: pocas células, proteínas ↑, levaduras encapsuladas",
+     "fuente": "PATOLOGIA 22d § meningitis crónica"
+    }
+   ]
+  }
+ ],
+ "escalas": [
+  {
+   "nombre": "Escala de coma de Glasgow",
+   "icono": "🧠",
+   "mide": "Nivel de conciencia (coma, TEC)",
+   "grupo": "Neuro",
+   "items": [
+    [
+     "Apertura ocular (O)",
+     "4 espontánea · 3 al sonido/a la orden · 2 al dolor · 1 ninguna"
+    ],
+    [
+     "Verbal (V)",
+     "5 orientado · 4 confuso · 3 palabras inapropiadas · 2 sonidos incomprensibles · 1 ninguna"
+    ],
+    [
+     "Motora (M)",
+     "6 obedece · 5 localiza dolor · 4 retira · 3 flexión anormal (decorticación) · 2 extensión (decerebración) · 1 nula"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "15",
+     "lúcido, normal",
+     "N"
+    ],
+    [
+     "13-14",
+     "TEC/compromiso leve",
+     "L"
+    ],
+    [
+     "9-12",
+     "moderado",
+     "M"
+    ],
+    [
+     "3-8",
+     "grave → asegurar vía aérea (intubar)",
+     "G"
+    ]
+   ],
+   "perla": "Rango 3 a 15 (4+5+6). Registrar por componentes (ej. O2 V3 M5 = 10), no solo el total.",
+   "fuente": "wiki/SEMIOLOGIA/clases/05a_Estado_general_nivel_de_conciencia_lenguaje_y_decubito.md; wiki/SEMIOLOGIA/clases/11e_Sindromes_neurologicos.md",
+   "lit": "Cortes de interpretación (13-14 / 9-12 / ≤8) e indicación de intubar: literatura (Teasdale-Jennett). Ítems y rango: vault.",
+   "id": "escala-de-coma-de-glasgow"
+  },
+  {
+   "nombre": "Grados de coma",
+   "icono": "😶",
+   "mide": "Profundidad del coma (más allá del estupor)",
+   "grupo": "Neuro",
+   "items": [
+    [
+     "Grado I · leve",
+     "Atiende órdenes simples: abre/cierra ojos, levanta brazos, responde preguntas"
+    ],
+    [
+     "Grado II · moderado",
+     "Responde apenas al dolor enérgico · deglución difícil · reflejos tendinosos, cutáneos y pupilares conservados"
+    ],
+    [
+     "Grado III · profundo",
+     "Sin respuesta a estímulos · no deglute · arreflexia total · relajación muscular · incontinencia"
+    ],
+    [
+     "Grado IV",
+     "Paro respiratorio/apnea, ventilación con respirador · EEG con silencio eléctrico · casi siempre irreversible"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "I",
+     "coma leve",
+     "L"
+    ],
+    [
+     "II",
+     "coma moderado",
+     "M"
+    ],
+    [
+     "III",
+     "coma profundo",
+     "G"
+    ],
+    [
+     "IV",
+     "irreversible (muerte encefálica)",
+     "G"
+    ]
+   ],
+   "perla": "Secuencia previa: lúcido → obnubilación → confusión → somnolencia → delirio → estupor → coma.",
+   "fuente": "wiki/SEMIOLOGIA/clases/05a_Estado_general_nivel_de_conciencia_lenguaje_y_decubito.md",
+   "lit": "",
+   "id": "grados-de-coma"
+  },
+  {
+   "nombre": "Encefalopatía hepática (West Haven)",
+   "icono": "🍺",
+   "mide": "Grado de encefalopatía en el cirrótico",
+   "grupo": "Abdomen",
+   "items": [
+    [
+     "Grado I",
+     "Confusión leve, atención ↓, inversión del ritmo sueño-vigilia · reversible si deja de beber"
+    ],
+    [
+     "Grado II",
+     "Letargia, desorientación en tiempo, conducta inapropiada · asterixis (flapping) evidente"
+    ],
+    [
+     "Grado III",
+     "Somnolencia-estupor, responde a estímulos · desorientación marcada · habla incoherente"
+    ],
+    [
+     "Grado IV",
+     "Coma, sin respuesta al dolor · el docente: si sigue bebiendo progresa hasta IV y fallece"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "I",
+     "leve, reversible",
+     "L"
+    ],
+    [
+     "II",
+     "moderada",
+     "M"
+    ],
+    [
+     "III",
+     "grave",
+     "G"
+    ],
+    [
+     "IV",
+     "coma hepático",
+     "G"
+    ]
+   ],
+   "perla": "Asterixis/temblor en actitud y fetor hepático = pródromo; HDA es desencadenante clásico.",
+   "fuente": "wiki/SEMIOLOGIA/clases/05a_Estado_general_nivel_de_conciencia_lenguaje_y_decubito.md; wiki/SEMIOLOGIA/clases/05b_Biotipo_hidratacion_y_movimientos_involuntarios.md; wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md",
+   "lit": "El vault solo da grados I a IV y describe I (confusión reversible) y IV (muerte); la descripción de II y III y el nombre West Haven son de literatura.",
+   "id": "encefalopatia-hepatica-west-haven"
+  },
+  {
+   "nombre": "Fuerza muscular (MRC / Daniels)",
+   "icono": "💪",
+   "mide": "Fuerza por grupo muscular, contra gravedad y resistencia",
+   "grupo": "Neuro",
+   "items": [
+    [
+     "0 · 1",
+     "0 sin contracción · 1 contracción visible o palpable sin movimiento"
+    ],
+    [
+     "2 · 3",
+     "2 mueve eliminando la gravedad · 3 vence la gravedad, no la resistencia"
+    ],
+    [
+     "4 · 5",
+     "4 vence resistencia parcial · 5 fuerza normal contra resistencia plena"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "5/5",
+     "normal",
+     "N"
+    ],
+    [
+     "4/5",
+     "paresia leve",
+     "L"
+    ],
+    [
+     "2-3/5",
+     "paresia moderada",
+     "M"
+    ],
+    [
+     "0-1/5",
+     "plejía / paresia grave",
+     "G"
+    ]
+   ],
+   "perla": "Comparar lados y proximal vs distal. Pérdida completa = plejía; incompleta = paresia.",
+   "fuente": "wiki/SEMIOLOGIA/clases/11b_Motilidad_tono_fuerza_y_reflejos.md",
+   "lit": "El vault solo dice 'escala de 0 a 5'; la descripción de cada grado y la interpretación son de literatura (Medical Research Council).",
+   "id": "fuerza-muscular-mrc-daniels"
+  },
+  {
+   "nombre": "Reflejos osteotendinosos",
+   "icono": "🔨",
+   "mide": "Intensidad del reflejo miotático",
+   "grupo": "Neuro",
+   "items": [
+    [
+     "Escala 2020 (0-4+)",
+     "0 ausente · 1+ disminuido · 2+ normal · 3+ vivo/aumentado · 4+ exaltado con clonus"
+    ],
+    [
+     "Escala 2018 (0-5)",
+     "0 ausente · 1 muy débil · 2 ligeramente débil · 3 normal · 4 exaltado · 5 exaltado con clonus"
+    ],
+    [
+     "Qué se califica",
+     "Velocidad · duración de la contracción · rango del movimiento · latencia de inicio"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "2+",
+     "normal",
+     "N"
+    ],
+    [
+     "1+ / 3+",
+     "hipo- o hiperreflexia leve (valorar simetría)",
+     "L"
+    ],
+    [
+     "0",
+     "arreflexia (NMI, nervio, raíz)",
+     "M"
+    ],
+    [
+     "4+ con clonus",
+     "piramidal (NMS)",
+     "G"
+    ]
+   ],
+   "perla": "3-10% de sanos carece de algún reflejo: la asimetría vale más que el número. Clonus aquiliano/rotuliano = vía piramidal.",
+   "fuente": "wiki/SEMIOLOGIA/clases/11b_Motilidad_tono_fuerza_y_reflejos.md",
+   "lit": "El vault fija la escala 0-4 cruces (2020) y la 0-5 (2018); el significado de cada cruz de la escala 0-4 es de literatura (NINDS).",
+   "id": "reflejos-osteotendinosos"
+  },
+  {
+   "nombre": "Mini-Mental (MMSE, Folstein)",
+   "icono": "🧩",
+   "mide": "Cribado cognitivo de cabecera (30 puntos)",
+   "grupo": "Neuro",
+   "items": [
+    [
+     "Orientación (10)",
+     "5 temporal (año, estación, mes, fecha, día) · 5 espacial (país, ciudad, lugar, piso...)"
+    ],
+    [
+     "Memoria y atención (11)",
+     "Fijación 3 palabras (3) · cálculo 100-7 o deletreo inverso (5) · recuerdo diferido (3)"
+    ],
+    [
+     "Lenguaje y praxis (9)",
+     "Nombrar 2 · repetir frase 1 · orden 3 pasos 3 · leer y obedecer 1 · escribir frase 1 · copiar pentágonos 1"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "24-30",
+     "normal",
+     "N"
+    ],
+    [
+     "18-23",
+     "deterioro leve",
+     "L"
+    ],
+    [
+     "10-17",
+     "deterioro moderado",
+     "M"
+    ],
+    [
+     "<10",
+     "deterioro grave",
+     "G"
+    ]
+   ],
+   "perla": "El docente: validado en población urbana y escolarizada; ajustar a la escolaridad del paciente rural antes de rotular demencia.",
+   "fuente": "wiki/SEMIOLOGIA/clases/11i_Funciones_cognitivas_y_examen_mental.md",
+   "lit": "El vault describe qué funciones resume y su limitación; ítems, puntajes y cortes son de literatura (Folstein 1975).",
+   "id": "mini-mental-mmse-folstein"
+  },
+  {
+   "nombre": "Soplos: Freeman-Levine",
+   "icono": "🫀",
+   "mide": "Intensidad de un soplo cardíaco",
+   "grupo": "Cardio",
+   "items": [
+    [
+     "I · II",
+     "I muy débil, solo con atención en silencio · II débil, se oye enseguida"
+    ],
+    [
+     "III · IV",
+     "III moderado, sin frémito · IV fuerte, con frémito palpable"
+    ],
+    [
+     "V · VI",
+     "V fortísimo, con el borde del estetoscopio · VI se oye sin que el diafragma toque la piel"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "I-II",
+     "leve (a menudo funcional)",
+     "L"
+    ],
+    [
+     "III",
+     "moderado",
+     "M"
+    ],
+    [
+     "IV-VI",
+     "intenso, con frémito → orgánico",
+     "G"
+    ]
+   ],
+   "perla": "Frémito (thrill) se gradúa 1 a 4 cruces con igual lectura. Algunos autores usan 4 grados en vez de 6.",
+   "fuente": "wiki/SEMIOLOGIA/clases/08d_Soplos_cardiacos_y_frote_pericardico.md; wiki/SEMIOLOGIA/clases/08b_Inspeccion_y_palpacion_del_precordio.md",
+   "lit": "Grados y frémito desde IV: vault. 'V se oye con el borde del estetoscopio', 'II se oye enseguida' e interpretación funcional/orgánico: literatura.",
+   "id": "soplos-freeman-levine"
+  },
+  {
+   "nombre": "Clase funcional NYHA",
+   "icono": "🏃",
+   "mide": "Limitación funcional en insuficiencia cardíaca",
+   "grupo": "Cardio",
+   "items": [
+    [
+     "Clase I",
+     "Sin limitación de la actividad habitual (solo hallazgo, p. ej. soplo)"
+    ],
+    [
+     "Clase II",
+     "Limitación discreta: asintomático en reposo, síntomas con actividad habitual"
+    ],
+    [
+     "Clase III",
+     "Limitación acentuada: disnea/edema con actividad menor a la habitual"
+    ],
+    [
+     "Clase IV",
+     "Incapaz de cualquier actividad: síntomas en reposo, ortopnea permanente"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "I",
+     "sin limitación",
+     "N"
+    ],
+    [
+     "II",
+     "leve",
+     "L"
+    ],
+    [
+     "III",
+     "moderada-acentuada",
+     "M"
+    ],
+    [
+     "IV",
+     "grave, en reposo",
+     "G"
+    ]
+   ],
+   "perla": "Anamnesis de disnea de esfuerzo: grandes (≈II) · medianos (≈III) · pequeños esfuerzos/reposo (≈IV).",
+   "fuente": "wiki/FISIOPATOLOGIA 2026/clases/Clase_16_INSUFICIENCIA_CARDIACA.md; wiki/SEMIOLOGIA/clases/08a_Anamnesis_y_sintomas_cardiovasculares.md",
+   "lit": "Escala del vault (FISIOPATOLOGIA). La equivalencia aproximada disnea de grandes/medianos/pequeños esfuerzos ↔ clase NYHA es orientativa (inferencia, no la da el docente).",
+   "id": "clase-funcional-nyha"
+  },
+  {
+   "nombre": "Edema: signo de Godet (fóvea)",
+   "icono": "🦵",
+   "mide": "Intensidad del edema con fóvea",
+   "grupo": "Cardio",
+   "items": [
+    [
+     "Técnica",
+     "Presión firme y sostenida con el índice sobre tibia, maléolo o sacro (nunca pantorrilla)"
+    ],
+    [
+     "1+ · 2+",
+     "1+ fóvea ~2 mm, desaparece rápido · 2+ ~4 mm, 10-15 s"
+    ],
+    [
+     "3+ · 4+",
+     "3+ ~6 mm, ~1 min, pierna engrosada · 4+ ~8 mm, 2-5 min, anasarca"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "0",
+     "sin fóvea",
+     "N"
+    ],
+    [
+     "1+",
+     "leve",
+     "L"
+    ],
+    [
+     "2+ - 3+",
+     "moderado",
+     "M"
+    ],
+    [
+     "4+",
+     "anasarca",
+     "G"
+    ]
+   ],
+   "perla": "Postural hasta 2+ y cede en decúbito; carencial (albúmina <2,5 g%) 2-3+. Frío en el resto, caliente en celulitis.",
+   "fuente": "wiki/SEMIOLOGIA/clases/05g_Edema.md; wiki/SEMIOLOGIA/clases/08a_Anamnesis_y_sintomas_cardiovasculares.md",
+   "lit": "Escala de 1 a 4 cruces (4 = anasarca) y técnica: vault. Profundidad en mm y tiempo de recuperación de cada cruz: literatura.",
+   "id": "edema-signo-de-godet-fovea"
+  },
+  {
+   "nombre": "Score de Wells para TVP",
+   "icono": "🩸",
+   "mide": "Probabilidad clínica pretest de trombosis venosa profunda",
+   "grupo": "Cardio",
+   "items": [
+    [
+     "+1 c/u (riesgo)",
+     "Cáncer activo · parálisis/paresia o yeso en MMII · encamado >3 d o cirugía <12 sem · TVP previa"
+    ],
+    [
+     "+1 c/u (examen)",
+     "Dolor en trayecto venoso profundo · edema de toda la pierna · pantorrilla >3 cm vs contralateral"
+    ],
+    [
+     "+1 c/u (examen)",
+     "Edema con fóvea en la pierna sintomática · venas colaterales superficiales no varicosas"
+    ],
+    [
+     "−2",
+     "Diagnóstico alternativo igual o más probable que TVP"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "≤0",
+     "probabilidad baja → dímero D",
+     "L"
+    ],
+    [
+     "1-2",
+     "probabilidad moderada",
+     "M"
+    ],
+    [
+     "≥3",
+     "probabilidad alta → eco Doppler",
+     "G"
+    ]
+   ],
+   "perla": "Edema de TVP casi siempre unilateral; el cardíaco es bilateral y simétrico.",
+   "fuente": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Tromboembolismo-Venoso.md; wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Trombosis-Venosa-Profunda.md",
+   "lit": "El vault lista los criterios y los cortes ≥3 alto / ≤0 bajo; el puntaje de cada criterio (+1, −2), el rango 1-2 moderado y el corte de 12 semanas son de literatura.",
+   "id": "score-de-wells-para-tvp"
+  },
+  {
+   "nombre": "Score de Wells para TEP",
+   "icono": "🫁",
+   "mide": "Probabilidad clínica pretest de tromboembolia pulmonar",
+   "grupo": "Respiratorio",
+   "items": [
+    [
+     "3 puntos c/u",
+     "Signos clínicos de TVP · TEP más probable que diagnóstico alternativo"
+    ],
+    [
+     "1,5 puntos c/u",
+     "FC >100 lpm · inmovilización >3 d o cirugía <4 sem · TVP o TEP previo"
+    ],
+    [
+     "1 punto c/u",
+     "Hemoptisis · cáncer activo"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "<2",
+     "probabilidad baja → dímero D",
+     "L"
+    ],
+    [
+     "2-6",
+     "probabilidad moderada",
+     "M"
+    ],
+    [
+     ">6",
+     "probabilidad alta → angiotomografía",
+     "G"
+    ]
+   ],
+   "perla": "Dímero D solo sirve para descartar (alto VPN) si la probabilidad es baja.",
+   "fuente": "wiki/FISIOPATOLOGIA 2026/entities/examenes/Score-de-Wells.md; wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Tromboembolismo-Venoso.md",
+   "lit": "Puntajes: vault. Cortes <2 / 2-6 / >6 de Tromboembolismo-Venoso.md (coinciden con literatura); Score-de-Wells.md trae otros cortes (≤4 / 5-6 / ≥7), no estándar. Versión dicotómica de literatura: ≤4 improbable, >4 probable.",
+   "id": "score-de-wells-para-tep"
+  },
+  {
+   "nombre": "Hemoptisis por volumen",
+   "icono": "🩸",
+   "mide": "Gravedad de la hemoptisis (ml en 24 h)",
+   "grupo": "Respiratorio",
+   "items": [
+    [
+     "Pequeña",
+     "Menor de 30 ml/24 h"
+    ],
+    [
+     "Moderada",
+     "30 a 200 ml/24 h"
+    ],
+    [
+     "Masiva",
+     "Mayor de 600 ml/24 h · riesgo de shock hipovolémico o asfixia por coágulos"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "<30 ml",
+     "pequeña",
+     "L"
+    ],
+    [
+     "30-200 ml",
+     "moderada",
+     "M"
+    ],
+    [
+     ">600 ml",
+     "masiva → urgencia",
+     "G"
+    ]
+   ],
+   "perla": "En la altura (Puno) la TBC pulmonar es la causa más frecuente de hemoptisis.",
+   "fuente": "wiki/SEMIOLOGIA/clases/07a_Anamnesis_sintomas_respiratorios.md",
+   "lit": "Todo del vault (nótese que el apunte deja sin clasificar 200-600 ml).",
+   "id": "hemoptisis-por-volumen"
+  },
+  {
+   "nombre": "qSOFA",
+   "icono": "🦠",
+   "mide": "Sospecha de sepsis a la cabecera",
+   "grupo": "General",
+   "items": [
+    [
+     "1 punto c/u",
+     "FR ≥22/min · alteración del estado mental (Glasgow <15) · PAS ≤100 mmHg"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "0-1",
+     "baja sospecha",
+     "N"
+    ],
+    [
+     "≥2",
+     "alta sospecha de sepsis → hemocultivos, lactato",
+     "G"
+    ]
+   ],
+   "perla": "Lactato >2 mmol/L indica hipoperfusión tisular.",
+   "fuente": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Sepsis.md",
+   "lit": "Precisión 'Glasgow <15' para la alteración mental: literatura (Sepsis-3).",
+   "id": "qsofa"
+  },
+  {
+   "nombre": "Criterios de Centor",
+   "icono": "🗣️",
+   "mide": "Probabilidad de faringoamigdalitis estreptocócica",
+   "grupo": "Otros",
+   "items": [
+    [
+     "1 punto c/u",
+     "Fiebre >38 °C · exudado amigdalino · adenopatía cervical anterior dolorosa · ausencia de tos"
+    ],
+    [
+     "McIsaac (edad)",
+     "+1 si 3-14 años · 0 si 15-44 · −1 si ≥45"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "0-1",
+     "probable viral, sin antibiótico",
+     "N"
+    ],
+    [
+     "2",
+     "baja-intermedia → test rápido",
+     "L"
+    ],
+    [
+     "3",
+     "sugiere estreptococo",
+     "M"
+    ],
+    [
+     "4",
+     "alta probabilidad → test/tratar",
+     "G"
+    ]
+   ],
+   "perla": "Tratar el estreptococo previene fiebre reumática (y así la valvulopatía).",
+   "fuente": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Faringitis.md; wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Amigdalitis.md",
+   "lit": "Criterios y '≥3 sugiere estreptococo': vault. Punto por criterio, ajuste por edad de McIsaac y conducta por rango: literatura.",
+   "id": "criterios-de-centor"
+  },
+  {
+   "nombre": "Deshidratación",
+   "icono": "💧",
+   "mide": "Intensidad (peso perdido) y tipo osmolar (Na sérico)",
+   "grupo": "General",
+   "items": [
+    [
+     "Signos",
+     "Sed · pliegue cutáneo + · mucosas secas · ojos hundidos · fontanela deprimida · taquicardia · hipotensión postural"
+    ],
+    [
+     "Por intensidad",
+     "Leve (1.er grado) ~5% · moderada (2.º) 5-10% · grave (3.er) >10% del peso"
+    ],
+    [
+     "Por osmolaridad",
+     "Isotónica Na 135-145 · hipotónica Na <130 (2018: <135) · hipertónica Na >145 mEq/L"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "≤5%",
+     "leve",
+     "L"
+    ],
+    [
+     "5-10%",
+     "moderada",
+     "M"
+    ],
+    [
+     ">10%",
+     "grave",
+     "G"
+    ]
+   ],
+   "perla": "En el anciano tomar el pliegue en región frontal o esternal: en el dorso de la mano da falso positivo.",
+   "fuente": "wiki/SEMIOLOGIA/clases/05b_Biotipo_hidratacion_y_movimientos_involuntarios.md",
+   "lit": "",
+   "id": "deshidratacion"
+  },
+  {
+   "nombre": "Desnutrición: criterios de Gómez",
+   "icono": "⚖️",
+   "mide": "Grado de desnutrición por déficit de peso",
+   "grupo": "General",
+   "items": [
+    [
+     "Cálculo",
+     "% déficit = (peso ideal para edad y sexo − peso real) / peso ideal × 100"
+    ],
+    [
+     "Grados",
+     "I: >10% · II: >25% · III: >40% de déficit"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "<10%",
+     "normal",
+     "N"
+    ],
+    [
+     "10-24%",
+     "1.er grado (leve)",
+     "L"
+    ],
+    [
+     "25-40%",
+     "2.º grado (moderada)",
+     "M"
+    ],
+    [
+     ">40%",
+     "3.er grado (grave)",
+     "G"
+    ]
+   ],
+   "perla": "Desnutrición proteica: cabello fino, seco, que se arranca fácil; sequedad conjuntival.",
+   "fuente": "wiki/SEMIOLOGIA/clases/05c_Peso_talla_e_indice_de_masa_corporal.md",
+   "lit": "Fórmula del % de déficit y rotulado leve/moderada/grave: literatura. Cortes >10 / >25 / >40%: vault.",
+   "id": "desnutricion-criterios-de-gomez"
+  },
+  {
+   "nombre": "Escala visual analógica del dolor (EVA)",
+   "icono": "😣",
+   "mide": "Intensidad del dolor (0 a 10)",
+   "grupo": "Dolor",
+   "items": [
+    [
+     "Escala numérica/visual",
+     "0 sin dolor ... 10 el peor dolor imaginable; el paciente marca o dice un número"
+    ],
+    [
+     "Escala nominal",
+     "Leve · moderado · severo"
+    ],
+    [
+     "Guion del dolor (ALICIA)",
+     "Antigüedad · localización/irradiación · carácter · intensidad · agravantes/atenuantes"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "0",
+     "sin dolor",
+     "N"
+    ],
+    [
+     "1-3",
+     "leve",
+     "L"
+    ],
+    [
+     "4-6",
+     "moderado",
+     "M"
+    ],
+    [
+     "7-10",
+     "severo",
+     "G"
+    ]
+   ],
+   "perla": "Cefalea: quien consulta suele tener EVA >4; con 1-3 en general no acude al médico.",
+   "fuente": "wiki/SEMIOLOGIA/clases/03b_Percusion_auscultacion_instrumentos_y_semiologia_del_dolor.md; wiki/SEMIOLOGIA/clases/11g_Cefalea_y_vertigo_como_sintomas_neurologicos.md",
+   "lit": "Cortes 1-3 / 4-6 / 7-10 y la sigla ALICIA: literatura. EVA 0-10, escala nominal y guion: vault.",
+   "id": "escala-visual-analogica-del-dolor-eva"
+  },
+  {
+   "nombre": "Ascitis por volumen (percusión)",
+   "icono": "🫃",
+   "mide": "Cuantía de líquido libre peritoneal",
+   "grupo": "Abdomen",
+   "items": [
+    [
+     "Pequeño volumen",
+     "<500 ml · percusión insuficiente → ecografía"
+    ],
+    [
+     "Mediano volumen",
+     "500-1500 ml · oleada negativa · matidez desplazable positiva"
+    ],
+    [
+     "Gran volumen",
+     ">1500 ml · oleada positiva · matidez en flancos de concavidad superior · a tensión"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "<500 ml",
+     "pequeña (solo eco)",
+     "L"
+    ],
+    [
+     "500-1500 ml",
+     "moderada",
+     "M"
+    ],
+    [
+     ">1500 ml",
+     "grande / a tensión → paracentesis",
+     "G"
+    ]
+   ],
+   "perla": "Tablero de ajedrez (matidez alternando con timpanismo) sugiere TBC peritoneal.",
+   "fuente": "wiki/SEMIOLOGIA/clases/09b_Exploracion_del_abdomen_inspeccion_palpacion_percusion_y_auscultacion.md; wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md",
+   "lit": "",
+   "id": "ascitis-por-volumen-percusion"
+  },
+  {
+   "nombre": "Proteinuria en cruces (tira reactiva)",
+   "icono": "🧪",
+   "mide": "Semicuantificación de proteínas en orina",
+   "grupo": "Otros",
+   "items": [
+    [
+     "Normal",
+     "≤120-150 mg/24 h; por encima siempre es patológico renal"
+    ],
+    [
+     "Cruces",
+     "Trazas <0,5 g/L · + 1 g/L · ++ 3 g/L · +++ 5-10 g/L · ++++ >10 g/L"
+    ],
+    [
+     "Preferir",
+     "Proteinuria de 24 h (intensidad real) · microalbuminuria para nefropatía diabética precoz"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "Negativa",
+     "normal",
+     "N"
+    ],
+    [
+     "Trazas - +",
+     "leve",
+     "L"
+    ],
+    [
+     "++",
+     "moderada",
+     "M"
+    ],
+    [
+     "+++ - ++++",
+     "intensa (rango nefrótico >3,5 g/24 h)",
+     "G"
+    ]
+   ],
+   "perla": "Orina espumosa + edema hasta anasarca = síndrome nefrótico.",
+   "fuente": "wiki/SEMIOLOGIA/clases/10b_Exploracion_genitourinaria_y_examenes_complementarios.md; wiki/FISIOPATOLOGIA 2026/Albumina.md",
+   "lit": "",
+   "id": "proteinuria-en-cruces-tira-reactiva"
+  },
+  {
+   "nombre": "Función renal por TFG",
+   "icono": "🫘",
+   "mide": "Estadio funcional renal por filtración glomerular",
+   "grupo": "Otros",
+   "items": [
+    [
+     "Normal",
+     "TFG ≥100-150 ml/min"
+    ],
+    [
+     "Reserva disminuida",
+     "TFG <80-120 ml/min (2020) · 80-<100 ml/min (2018)"
+    ],
+    [
+     "IRC",
+     "Leve 50-80 · moderada 10-50 · grave <10 ml/min"
+    ]
+   ],
+   "interpretacion": [
+    [
+     "≥100",
+     "normal",
+     "N"
+    ],
+    [
+     "50-80",
+     "IRC leve",
+     "L"
+    ],
+    [
+     "10-50",
+     "IRC moderada",
+     "M"
+    ],
+    [
+     "<10",
+     "IRC grave (terminal)",
+     "G"
+    ]
+   ],
+   "perla": "Discrepancia docente 2020 vs 2018 en la reserva disminuida: contrastar en clase.",
+   "fuente": "wiki/SEMIOLOGIA/clases/10c_Sindromes_clinicos_renales.md",
+   "lit": "Todo del vault. Ojo: no coincide con los estadios KDIGO G1-G5 de la literatura actual.",
+   "id": "funcion-renal-por-tfg"
+  }
+ ],
+ "facies": [
+  {
+   "id": "mitral",
+   "nombre": "Mitral",
+   "rasgo": "Cianosis en pómulos, nariz, labios que contrasta con palidez",
+   "orienta": "Estenosis mitral / doble lesión mitral",
+   "imagen": "img/facies/mitral.webp"
+  },
+  {
+   "id": "aortica",
+   "nombre": "Aórtica",
+   "rasgo": "Palidez peribucal, signo de Musset, latido carotídeo visible",
+   "orienta": "Insuficiencia aórtica",
+   "imagen": "img/facies/aortica.webp"
+  },
+  {
+   "id": "de-ayerza",
+   "nombre": "De Ayerza",
+   "rasgo": "Cianosis intensa con poliglobulia ('cardíacos negros')",
+   "orienta": "Cor pulmonale crónico; frecuente en Puno por altura",
+   "imagen": "img/facies/de-ayerza.webp"
+  },
+  {
+   "id": "hipocratica-o-peritoneal",
+   "nombre": "Hipocrática o peritoneal",
+   "rasgo": "Ojos hundidos, nariz afilada, sudor, palidez, aleteo nasal",
+   "orienta": "Peritonitis generalizada, shock inminente",
+   "imagen": "img/facies/hipocratica-o-peritoneal.webp"
+  },
+  {
+   "id": "febril",
+   "nombre": "Febril",
+   "rasgo": "Pómulos rojos, resto pálido, ojos brillantes",
+   "orienta": "Síndrome febril",
+   "imagen": "img/facies/febril.webp"
+  },
+  {
+   "id": "neumonica",
+   "nombre": "Neumónica",
+   "rasgo": "Mejillas rojas, aleteo nasal, herpes labial",
+   "orienta": "Neumonía",
+   "imagen": "img/facies/neumonica.webp"
+  },
+  {
+   "id": "nefritica-o-renal",
+   "nombre": "Nefrítica o renal",
+   "rasgo": "Edema periorbitario y cara pálida",
+   "orienta": "IRC, síndrome nefrótico",
+   "imagen": "img/facies/nefritica-o-renal.webp"
+  },
+  {
+   "id": "mixedematosa",
+   "nombre": "Mixedematosa",
+   "rasgo": "Cara redonda, párpados edematosos, cejas ralas, apatía",
+   "orienta": "Hipotiroidismo avanzado",
+   "imagen": "img/facies/mixedematosa.webp"
+  },
+  {
+   "id": "basedowiana-hipertiroidea",
+   "nombre": "Basedowiana (hipertiroidea)",
+   "rasgo": "Exoftalmos, mirada brillante, bocio, ansiedad",
+   "orienta": "Enfermedad de Graves / hipertiroidismo",
+   "imagen": "img/facies/basedowiana-hipertiroidea.webp"
+  },
+  {
+   "id": "cushing-luna-llena",
+   "nombre": "Cushing (luna llena)",
+   "rasgo": "Cara redonda, roja y tensa, acné, hipertricosis",
+   "orienta": "Exceso de glucocorticoides",
+   "imagen": "img/facies/cushing-luna-llena.webp"
+  },
+  {
+   "id": "acromegalica",
+   "nombre": "Acromegálica",
+   "rasgo": "Arcos supraorbitarios y mandíbula prominentes, nariz y labios grandes",
+   "orienta": "Exceso de GH (hipófisis)",
+   "imagen": "img/facies/acromegalica.webp"
+  },
+  {
+   "id": "parkinsoniana",
+   "nombre": "Parkinsoniana",
+   "rasgo": "Inmóvil, mirada fija, hipomimia ('expresión de espanto')",
+   "orienta": "Enfermedad de Parkinson",
+   "imagen": "img/facies/parkinsoniana.webp"
+  },
+  {
+   "id": "lupica",
+   "nombre": "Lúpica",
+   "rasgo": "Eritema en alas de mariposa en mejillas y nariz",
+   "orienta": "Lupus eritematoso sistémico",
+   "imagen": "img/facies/lupica.webp"
+  },
+  {
+   "id": "leonina",
+   "nombre": "Leonina",
+   "rasgo": "Lepromas confluentes en frente y mejillas, nariz espesa",
+   "orienta": "Lepra lepromatosa",
+   "imagen": "img/facies/leonina.webp"
+  },
+  {
+   "id": "adenoidea",
+   "nombre": "Adenoidea",
+   "rasgo": "Nariz pequeña y afilada, boca entreabierta permanente",
+   "orienta": "Hipertrofia de adenoides en niños",
+   "imagen": "img/facies/adenoidea.webp"
+  },
+  {
+   "id": "caquectica",
+   "nombre": "Caquéctica",
+   "rasgo": "Desnutrido, flaco, pérdida del panículo adiposo y de la bola de Bichat",
+   "orienta": "Consunción: cáncer avanzado, tuberculosis",
+   "imagen": "img/facies/caquectica.webp"
+  },
+  {
+   "id": "cianotica",
+   "nombre": "Cianótica",
+   "rasgo": "Cianosis labial intensa y congestión conjuntival",
+   "orienta": "Eritrocitosis de altura, cor pulmonar crónico",
+   "imagen": "img/facies/cianotica.webp"
+  },
+  {
+   "id": "de-claude-bernard-horner",
+   "nombre": "De Claude-Bernard-Horner",
+   "rasgo": "Ptosis palpebral, enoftalmos y miosis unilateral",
+   "orienta": "Lesión simpático cervical: tumor del vértice pulmonar",
+   "imagen": "img/facies/de-claude-bernard-horner.webp"
+  },
+  {
+   "id": "de-depresion",
+   "nombre": "De depresión",
+   "rasgo": "Cabizbajo, mirada fija y brillante, expresión de tristeza",
+   "orienta": "Síndrome depresivo",
+   "imagen": "img/facies/de-depresion.webp"
+  },
+  {
+   "id": "etilica",
+   "nombre": "Etílica",
+   "rasgo": "Rubor facial, ojos rojos",
+   "orienta": "Alcoholismo crónico",
+   "imagen": "img/facies/etilica.webp"
+  },
+  {
+   "id": "icterica",
+   "nombre": "Ictérica",
+   "rasgo": "Coloración amarillenta de piel, conjuntivas y escleróticas",
+   "orienta": "Hiperbilirrubinemia: hemólisis, hepatitis/cirrosis, obstrucción",
+   "imagen": "img/facies/icterica.webp"
+  },
+  {
+   "id": "miastenica",
+   "nombre": "Miasténica",
+   "rasgo": "Caída de párpados superiores y de la mandíbula",
+   "orienta": "Miastenia gravis",
+   "imagen": "img/facies/miastenica.webp"
+  },
+  {
+   "id": "palida",
+   "nombre": "Pálida",
+   "rasgo": "Palidez facial marcada, sin los demás rasgos de la hipocrática",
+   "orienta": "Anemia, endocarditis bacteriana subaguda",
+   "imagen": "img/facies/palida.webp"
+  },
+  {
+   "id": "paralisis-facial-periferica",
+   "nombre": "Parálisis facial periférica",
+   "rasgo": "Asimetría facial, no cierra el párpado, surco nasolabial borrado",
+   "orienta": "Lesión del nervio facial (\"mal viento\")",
+   "imagen": "img/facies/paralisis-facial-periferica.webp"
+  },
+  {
+   "id": "esclerodermica-o-de-momia",
+   "nombre": "Esclerodérmica (o de momia)",
+   "rasgo": "Cara inmóvil, piel dura, pómulos salientes, nariz afilada, boca pequeña",
+   "orienta": "Esclerodermia",
+   "imagen": "img/facies/esclerodermica-o-de-momia.webp"
+  }
+ ],
+ "glosario": [
+  {
+   "titulo": "Signos y examen",
+   "items": [
+    {
+     "sigla": "PA",
+     "significado": "presión arterial"
+    },
+    {
+     "sigla": "PAS",
+     "significado": "presión arterial sistólica"
+    },
+    {
+     "sigla": "PAD",
+     "significado": "presión arterial diastólica"
+    },
+    {
+     "sigla": "FC",
+     "significado": "frecuencia cardiaca"
+    },
+    {
+     "sigla": "FR",
+     "significado": "frecuencia respiratoria · fiebre reumática · factor reumatoide (según contexto)"
+    },
+    {
+     "sigla": "SatO₂",
+     "significado": "saturación de oxígeno (pulsioxímetro)"
+    },
+    {
+     "sigla": "SaO2",
+     "significado": "saturación arterial de oxígeno"
+    },
+    {
+     "sigla": "PO2",
+     "significado": "presión parcial de oxígeno"
+    },
+    {
+     "sigla": "IMC",
+     "significado": "índice de masa corporal"
+    },
+    {
+     "sigla": "BEG",
+     "significado": "buen estado general"
+    },
+    {
+     "sigla": "REG",
+     "significado": "regular estado general"
+    },
+    {
+     "sigla": "MEG",
+     "significado": "mal estado general"
+    },
+    {
+     "sigla": "EIC",
+     "significado": "espacio intercostal"
+    },
+    {
+     "sigla": "HC",
+     "significado": "historia clínica"
+    },
+    {
+     "sigla": "RN",
+     "significado": "recién nacido"
+    },
+    {
+     "sigla": "O4",
+     "significado": "Glasgow: apertura ocular 4"
+    },
+    {
+     "sigla": "M6",
+     "significado": "Glasgow: respuesta motora 6"
+    },
+    {
+     "sigla": "V5",
+     "significado": "Glasgow: respuesta verbal 5"
+    },
+    {
+     "sigla": "FUR",
+     "significado": "fecha de última regla"
+    },
+    {
+     "sigla": "G2P1",
+     "significado": "fórmula obstétrica: 2 gestas, 1 parto"
+    }
+   ]
+  },
+  {
+   "titulo": "Laboratorio",
+   "items": [
+    {
+     "sigla": "Hb",
+     "significado": "hemoglobina"
+    },
+    {
+     "sigla": "Hto",
+     "significado": "hematocrito"
+    },
+    {
+     "sigla": "GR",
+     "significado": "glóbulos rojos"
+    },
+    {
+     "sigla": "VCM",
+     "significado": "volumen corpuscular medio"
+    },
+    {
+     "sigla": "HCM",
+     "significado": "hemoglobina corpuscular media"
+    },
+    {
+     "sigla": "CHCM",
+     "significado": "concentración de hemoglobina corpuscular media"
+    },
+    {
+     "sigla": "MCHC",
+     "significado": "= CHCM (sigla en inglés)"
+    },
+    {
+     "sigla": "ADE",
+     "significado": "ancho de distribución eritrocitaria"
+    },
+    {
+     "sigla": "RDW",
+     "significado": "= ADE (en inglés)"
+    },
+    {
+     "sigla": "VPM",
+     "significado": "volumen plaquetario medio"
+    },
+    {
+     "sigla": "VSG",
+     "significado": "velocidad de sedimentación globular"
+    },
+    {
+     "sigla": "PCR",
+     "significado": "proteína C reactiva"
+    },
+    {
+     "sigla": "TP",
+     "significado": "tiempo de protrombina"
+    },
+    {
+     "sigla": "INR",
+     "significado": "razón normalizada internacional (del TP)"
+    },
+    {
+     "sigla": "TTPa",
+     "significado": "tiempo de tromboplastina parcial activado"
+    },
+    {
+     "sigla": "TGO",
+     "significado": "transaminasa glutámico oxalacética (= AST)"
+    },
+    {
+     "sigla": "TGP",
+     "significado": "transaminasa glutámico pirúvica (= ALT)"
+    },
+    {
+     "sigla": "AST",
+     "significado": "aspartato aminotransferasa"
+    },
+    {
+     "sigla": "ALT",
+     "significado": "alanina aminotransferasa"
+    },
+    {
+     "sigla": "FA",
+     "significado": "fosfatasa alcalina"
+    },
+    {
+     "sigla": "GGT",
+     "significado": "gamma-glutamil transferasa"
+    },
+    {
+     "sigla": "BT",
+     "significado": "bilirrubina total"
+    },
+    {
+     "sigla": "BD",
+     "significado": "bilirrubina directa"
+    },
+    {
+     "sigla": "BI",
+     "significado": "bilirrubina indirecta"
+    },
+    {
+     "sigla": "PT",
+     "significado": "proteínas totales"
+    },
+    {
+     "sigla": "CT",
+     "significado": "colesterol total"
+    },
+    {
+     "sigla": "HDL",
+     "significado": "colesterol de lipoproteínas de alta densidad («bueno»)"
+    },
+    {
+     "sigla": "LDL",
+     "significado": "colesterol de lipoproteínas de baja densidad («malo»)"
+    },
+    {
+     "sigla": "TG",
+     "significado": "triglicéridos"
+    },
+    {
+     "sigla": "BUN",
+     "significado": "nitrógeno ureico en sangre"
+    },
+    {
+     "sigla": "Cr",
+     "significado": "creatinina"
+    },
+    {
+     "sigla": "TFG",
+     "significado": "tasa de filtración glomerular"
+    },
+    {
+     "sigla": "PTOG",
+     "significado": "prueba de tolerancia oral a la glucosa"
+    },
+    {
+     "sigla": "HbA1c",
+     "significado": "hemoglobina glicosilada"
+    },
+    {
+     "sigla": "EPO",
+     "significado": "eritropoyetina"
+    },
+    {
+     "sigla": "IL",
+     "significado": "interleucina"
+    },
+    {
+     "sigla": "IgG",
+     "significado": "inmunoglobulina G"
+    },
+    {
+     "sigla": "IgM",
+     "significado": "inmunoglobulina M"
+    },
+    {
+     "sigla": "CD3",
+     "significado": "marcador de linfocitos T"
+    },
+    {
+     "sigla": "CCP",
+     "significado": "péptido cíclico citrulinado (anti-CCP)"
+    },
+    {
+     "sigla": "LPL",
+     "significado": "lipoproteína lipasa"
+    },
+    {
+     "sigla": "B12",
+     "significado": "vitamina B12 (cobalamina)"
+    },
+    {
+     "sigla": "HCl",
+     "significado": "ácido clorhídrico"
+    },
+    {
+     "sigla": "LSN",
+     "significado": "límite superior de lo normal"
+    },
+    {
+     "sigla": "VN",
+     "significado": "valor normal"
+    },
+    {
+     "sigla": "UI",
+     "significado": "unidades internacionales"
+    },
+    {
+     "sigla": "UA",
+     "significado": "unidades de amilasa"
+    },
+    {
+     "sigla": "mEq",
+     "significado": "miliequivalentes"
+    },
+    {
+     "sigla": "pH",
+     "significado": "grado de acidez"
+    }
+   ]
+  },
+  {
+   "titulo": "ECG, imagen, gases y líquidos",
+   "items": [
+    {
+     "sigla": "ECG",
+     "significado": "electrocardiograma"
+    },
+    {
+     "sigla": "Rx",
+     "significado": "radiografía"
+    },
+    {
+     "sigla": "ICT",
+     "significado": "índice cardiotorácico"
+    },
+    {
+     "sigla": "VD",
+     "significado": "ventrículo derecho"
+    },
+    {
+     "sigla": "VI",
+     "significado": "ventrículo izquierdo"
+    },
+    {
+     "sigla": "AD",
+     "significado": "aurícula derecha"
+    },
+    {
+     "sigla": "AP",
+     "significado": "arteria pulmonar"
+    },
+    {
+     "sigla": "VCS",
+     "significado": "vena cava superior"
+    },
+    {
+     "sigla": "PaO2",
+     "significado": "presión arterial de oxígeno"
+    },
+    {
+     "sigla": "PaCO2",
+     "significado": "presión arterial de CO2"
+    },
+    {
+     "sigla": "HCO3",
+     "significado": "bicarbonato"
+    },
+    {
+     "sigla": "AG",
+     "significado": "anión gap (brecha aniónica)"
+    },
+    {
+     "sigla": "LDH",
+     "significado": "lactato deshidrogenasa"
+    },
+    {
+     "sigla": "LCR",
+     "significado": "líquido cefalorraquídeo"
+    },
+    {
+     "sigla": "GASA",
+     "significado": "gradiente de albúmina suero-ascitis"
+    },
+    {
+     "sigla": "PMN",
+     "significado": "polimorfonucleares (neutrófilos)"
+    },
+    {
+     "sigla": "PBE",
+     "significado": "peritonitis bacteriana espontánea"
+    },
+    {
+     "sigla": "PA",
+     "significado": "posteroanterior (proyección de Rx) · presión arterial"
+    }
+   ]
+  },
+  {
+   "titulo": "Enfermedades y cuadros",
+   "items": [
+    {
+     "sigla": "HTA",
+     "significado": "hipertensión arterial"
+    },
+    {
+     "sigla": "HTP",
+     "significado": "hipertensión pulmonar"
+    },
+    {
+     "sigla": "HT",
+     "significado": "hipertensión (HT portal)"
+    },
+    {
+     "sigla": "IC",
+     "significado": "insuficiencia cardiaca"
+    },
+    {
+     "sigla": "IAM",
+     "significado": "infarto agudo de miocardio"
+    },
+    {
+     "sigla": "IAo",
+     "significado": "insuficiencia aórtica"
+    },
+    {
+     "sigla": "EAo",
+     "significado": "estenosis aórtica"
+    },
+    {
+     "sigla": "AV",
+     "significado": "auriculoventricular (bloqueo AV)"
+    },
+    {
+     "sigla": "FV",
+     "significado": "fibrilación ventricular"
+    },
+    {
+     "sigla": "CPC",
+     "significado": "cor pulmonale crónico"
+    },
+    {
+     "sigla": "EAP",
+     "significado": "edema agudo de pulmón"
+    },
+    {
+     "sigla": "TVP",
+     "significado": "trombosis venosa profunda"
+    },
+    {
+     "sigla": "TEP",
+     "significado": "tromboembolia pulmonar"
+    },
+    {
+     "sigla": "EPOC",
+     "significado": "enfermedad pulmonar obstructiva crónica"
+    },
+    {
+     "sigla": "TBC",
+     "significado": "tuberculosis"
+    },
+    {
+     "sigla": "DM",
+     "significado": "diabetes mellitus"
+    },
+    {
+     "sigla": "IRA",
+     "significado": "insuficiencia renal aguda"
+    },
+    {
+     "sigla": "IRC",
+     "significado": "insuficiencia renal crónica"
+    },
+    {
+     "sigla": "IR",
+     "significado": "insuficiencia renal"
+    },
+    {
+     "sigla": "NTA",
+     "significado": "necrosis tubular aguda"
+    },
+    {
+     "sigla": "NTI",
+     "significado": "nefritis tubulointersticial"
+    },
+    {
+     "sigla": "GN",
+     "significado": "glomerulonefritis"
+    },
+    {
+     "sigla": "ITU",
+     "significado": "infección del tracto urinario"
+    },
+    {
+     "sigla": "HDA",
+     "significado": "hemorragia digestiva alta"
+    },
+    {
+     "sigla": "EHNA",
+     "significado": "esteatohepatitis no alcohólica"
+    },
+    {
+     "sigla": "CU",
+     "significado": "colitis ulcerosa"
+    },
+    {
+     "sigla": "AR",
+     "significado": "artritis reumatoide"
+    },
+    {
+     "sigla": "LES",
+     "significado": "lupus eritematoso sistémico"
+    },
+    {
+     "sigla": "CID",
+     "significado": "coagulación intravascular diseminada"
+    },
+    {
+     "sigla": "PTI",
+     "significado": "púrpura trombocitopénica inmune"
+    },
+    {
+     "sigla": "HF",
+     "significado": "hipercolesterolemia familiar"
+    },
+    {
+     "sigla": "GH",
+     "significado": "hormona del crecimiento"
+    },
+    {
+     "sigla": "HELLP",
+     "significado": "hemólisis, enzimas hepáticas elevadas y plaquetas bajas (del embarazo)"
+    },
+    {
+     "sigla": "CASPAR",
+     "significado": "criterios de clasificación de la artritis psoriásica"
+    },
+    {
+     "sigla": "NF",
+     "significado": "no fraccionada (heparina NF)"
+    }
+   ]
+  },
+  {
+   "titulo": "Marcas",
+   "items": [
+    {
+     "sigla": "lit.",
+     "significado": "texto gris azulado en cursiva: no está en tu teoría, completado con literatura médica estándar"
+    },
+    {
+     "sigla": "OMS",
+     "significado": "Organización Mundial de la Salud"
+    },
+    {
+     "sigla": "msnm",
+     "significado": "metros sobre el nivel del mar"
+    }
+   ]
+  }
+ ]
+}
