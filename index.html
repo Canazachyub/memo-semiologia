@@ -26,13 +26,16 @@
   } catch (e) {}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/entrenar.css" data-entrenar>
 <link rel="stylesheet" href="css/juego.css">
 <link rel="stylesheet" href="css/repaso.css">
 <link rel="stylesheet" href="css/vistas.css">
 <link rel="stylesheet" href="css/ajustes.css">
+<link rel="stylesheet" href="css/hoy.css">
+<link rel="stylesheet" href="css/atlas.css">
+<link rel="stylesheet" href="css/diseno.css">
 </head>
 <body>
 <a class="saltar" href="#app">Saltar al contenido</a>
@@ -47,18 +50,23 @@
     <button id="ajustes" class="icon-btn" title="Ajustes (,)" aria-label="Ajustes" aria-haspopup="dialog">⚙️</button>
   </div>
   <nav class="tabs" role="tablist" aria-label="Secciones">
-    <button data-vista="hoy">🏠 Hoy</button>
-    <button data-vista="tabla" class="on">📋 Valores</button>
-    <button data-vista="juego">🎮 Juego</button>
-    <button data-vista="ciudad">🏙️ Ciudad</button>
-    <button data-vista="escalas">📏 Escalas</button>
-    <button data-vista="facies">🙂 Facies</button>
-    <button data-vista="entrenar">🏋️ Entrenar</button>
-    <button data-vista="repaso">🔁 Repaso <span id="pend" class="badge"></span></button>
-    <button data-vista="progreso">📊 Progreso</button>
-    <button data-vista="metodos">🧩 Métodos</button>
-    <button data-vista="siglas">🔤 Siglas</button>
+    <p class="tab-grupo" aria-hidden="true">Estudiar</p>
+    <button data-vista="hoy"><i aria-hidden="true">🏠</i> Hoy</button>
+    <button data-vista="tabla" class="on"><i aria-hidden="true">📋</i> Valores</button>
+    <button data-vista="repaso"><i aria-hidden="true">🔁</i> Repaso <span id="pend" class="badge"></span></button>
+    <button data-vista="progreso"><i aria-hidden="true">📊</i> Progreso</button>
+    <p class="tab-grupo" aria-hidden="true">Memorizar</p>
+    <button data-vista="ciudad"><i aria-hidden="true">🏙️</i> Ciudad</button>
+    <button data-vista="metodos"><i aria-hidden="true">🧩</i> Métodos</button>
+    <button data-vista="entrenar"><i aria-hidden="true">🏋️</i> Entrenar</button>
+    <p class="tab-grupo" aria-hidden="true">Atlas</p>
+    <button data-vista="escalas"><i aria-hidden="true">📏</i> Escalas</button>
+    <button data-vista="facies"><i aria-hidden="true">🙂</i> Facies</button>
+    <button data-vista="siglas"><i aria-hidden="true">🔤</i> Siglas</button>
+    <p class="tab-grupo" aria-hidden="true">Jugar</p>
+    <button data-vista="juego"><i aria-hidden="true">🎮</i> Juego</button>
   </nav>
+  <div class="side-pie" id="side-pie" aria-live="polite"></div>
 </header>
 
 <main id="app" tabindex="-1">

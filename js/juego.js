@@ -310,7 +310,8 @@ export function crearJuego({ EXPLICA = {}, ATLAS = {}, MEMO = {}, PALACIOS = {},
   function ajustarAlto() {
     if (!el.jg) return;
     const cab = document.querySelector('header.top');
-    const off = (cab ? cab.offsetHeight : Math.max(0, raiz.getBoundingClientRect().top + scrollY)) + 28;
+    const lateral = cab && getComputedStyle(cab).position === 'fixed';   // escritorio: la cabecera es la barra lateral
+    const off = (cab && !lateral ? cab.offsetHeight : Math.max(0, raiz.getBoundingClientRect().top + scrollY)) + 28;
     el.jg.style.setProperty('--jg-off', `${off}px`);
     mapa?.invalidateSize();
   }

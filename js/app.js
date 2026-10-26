@@ -12,6 +12,7 @@ import { crearCiudad } from './ciudad.js';
 import { crearEntrenar } from './entrenar.js';
 import { crearJuego } from './juego.js';
 import * as notificaciones from './notificaciones.js';
+import * as E from './juego-estado.js';
 
 // ---------- paquete C: ajustes y PWA (antes de cargar datos, para que valgan desde el primer pintado) ----------
 ajustes.aplicar();
@@ -46,6 +47,7 @@ const PINTAR = {
 
 // ---------- navegación ----------
 let vista = null, vistaPrevia = 'hoy';
+let previa = null;
 function ir(v) {
   if (!PINTAR[v]) v = 'tabla';
   if (vista && v !== vista && vista !== 'juego') vistaPrevia = vista;
@@ -53,10 +55,16 @@ function ir(v) {
   // modo inmersivo: en el celular (≤760 px, ver css/juego.css) el Juego ocupa toda la pantalla sin cabecera ni barra inferior
   document.body.classList.toggle('inmersivo', v === 'juego');
   document.body.classList.remove('top-oculta');
-  $$('.tabs button').forEach((b) => b.classList.toggle('on', b.dataset.vista === v));
-  $$('.vista').forEach((s) => s.classList.toggle('on', s.id === `v-${v}`));
-  marcarNav(v);
-  PINTAR[v]();
+  const cambiar = () => {
+    $$('.tabs button').forEach((b) => b.classList.toggle('on', b.dataset.vista === v));
+    $$('.vista').forEach((s) => s.classList.toggle('on', s.id === `v-${v}`));
+    marcarNav(v);
+    PINTAR[v]();
+  };
+  // transición suave entre vistas (View Transitions API); el Juego no, porque su mapa es fijo
+  const animar = document.startViewTransition && !ajustes.get('reducirMov') && v !== 'juego' && previa !== 'juego' && previa !== v && !document.hidden;
+  previa = v;
+  if (animar) document.startViewTransition(cambiar); else cambiar();
   try { localStorage.setItem('memo-semio-vista', v); } catch {}
 }
 // ir a la ficha de un dato desde cualquier módulo: dispatchEvent(new CustomEvent('memo:ir', { detail: { id } }))
@@ -166,7 +174,15 @@ function registrarSW() {
   if (document.readyState === 'complete') registrar(); else addEventListener('load', registrar, { once: true });
 }
 
+// ---------- pie de la barra lateral (escritorio): nivel, racha y repasos de hoy ----------
+function pintarSidePie() {
+  const n = E.nivel(), r = E.racha(), p = $('#pend')?.textContent || '0';
+  $('#side-pie').innerHTML = `<div class="sp-fila"><b class="sp-nv">Nv ${n.n}</b><span class="sp-xp"><i style="width:${(n.progreso * 100).toFixed(0)}%"></i></span></div>
+    <div class="sp-fila sp-mini"><span title="Racha de días">🔥 ${r} ${r === 1 ? 'día' : 'días'}</span><button class="link" data-ir-vista="repaso">🔁 ${+p || 0} por repasar</button></div>`;
+}
+
 // ---------- navegación: pestañas accesibles + barra móvil ----------
+E.suscribir(() => pintarSidePie());
 function marcarNav(v) {
   $$('.tabs [role="tab"]').forEach((b) => { const on = b.dataset.vista === v; b.setAttribute('aria-selected', String(on)); b.tabIndex = on ? 0 : -1; });
   $$('[data-ir-vista]').forEach((b) => { if (b.dataset.irVista === v) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
@@ -208,7 +224,7 @@ function iniciarC() {
   hoja.addEventListener('click', (e) => { if (e.target === hoja) hoja.close(); }); // toque en el fondo
   // el badge de pendientes de Repaso se copia a la barra móvil
   const pend = $('#pend'), pendM = $('#pend-m');
-  const copiar = () => { pendM.textContent = pend.textContent; };
+  const copiar = () => { pendM.textContent = pend.textContent; pintarSidePie(); };
   new MutationObserver(copiar).observe(pend, { childList: true, characterData: true, subtree: true }); copiar();
 
   // cabecera compacta en el celular: se esconde al bajar y reaparece al subir
