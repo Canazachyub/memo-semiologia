@@ -5,6 +5,7 @@
 import { ESCALERA, DOMINADA, REGLA } from './srs.js';
 import { decodificar } from './entrenar.js';
 import * as mias from './mias.js';
+import { haptico } from './util.js';
 
 const esc = (t) => String(t ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const norm = (t) => String(t ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
@@ -69,6 +70,7 @@ export function crearMetodos({ METODOS = {}, MEMO = {}, ATLAS = {}, raiz }) {
   }
   const chip = (k) => (METODOS[k] ? `<button type="button" class="met-chip" data-met="${esc(k)}">${esc(METODOS[k].icono)} ${esc(METODOS[k].nombre)}</button>` : '');
   const lista = (arr, cls = '') => `<ul class="met-lista ${cls}">${(arr || []).map((x) => `<li>${fmt(x)}</li>`).join('')}</ul>`;
+  const recorta = (t, max = 120) => { let x = String(t ?? '').replace(/\s*\[[^\]]*\]/g, '').trim(); if (x.length > max) x = x.slice(0, max).replace(/\s+\S*$/, '') + '…'; return x; };
   const txtUso = (k) => { const u = usoDe(k); return u.capa ? `capa de repaso · ${u.n} fichas` : `usado en ${u.n} dato${u.n === 1 ? '' : 's'}`; };
 
   // ---------- índice ----------
@@ -76,21 +78,28 @@ export function crearMetodos({ METODOS = {}, MEMO = {}, ATLAS = {}, raiz }) {
     const tipos = {};
     Object.values(MEMO).forEach((m) => { if (m.tipo_info) tipos[m.tipo_info] = (tipos[m.tipo_info] || 0) + 1; });
     raiz.innerHTML = `<div class="met-vista">
-      <p class="met-intro">Cada dato del atlas usa la técnica que mejor encaja con su <b>tipo de información</b>. Todas salen de los videos de Pablo Lomelí
-        (los números <span class="met-ref">#NNN</span> son los videos) y lo que agrega el skill va marcado <span class="met-comp">complemento</span>. Abre un método para ver sus pasos, un ejemplo real de tu atlas y probarlo.</p>
-      ${cicloHTML()}
-      <details class="met-sec" data-sec="mitabla-indice"><summary>🔢 Mi tabla 00–99 <span class="met-n">tu lista fija de palabras-imagen</span></summary><div class="met-cuerpo"><div data-mitabla></div></div></details>
-      <h3 class="met-h">Los ${CLAVES.length} métodos</h3>
-      <div class="met-grid">${CLAVES.map((k) => { const m = METODOS[k]; const u = usoDe(k); return `
-        <div class="met-card-w"><button type="button" class="met-card" data-met="${esc(k)}" aria-label="Abrir ${esc(m.nombre)}">
-          <span class="met-ic" aria-hidden="true">${esc(m.icono)}</span>
-          <span><span class="met-t">${esc(m.nombre)}</span><span class="met-d">${esc(m.resumen || m.que)}</span><span class="met-uso ${u.n ? '' : 'cero'}">${esc(txtUso(k))}</span></span>
-        </button>${u.n && !u.capa ? `<button type="button" class="met-ver" data-vista="tabla" data-tec="${esc(k)}">Ver los ${u.n} datos que la usan →</button>` : u.capa ? '<button type="button" class="met-ver" data-vista="repaso">Ir a Repaso →</button>' : ''}</div>`; }).join('')}</div>
-      <section class="met-tipos" aria-labelledby="met-tipos-t" style="margin-top:16px">
+      <header class="met-cab ds-entra"><h2 class="ds-titulo">Métodos</h2>
+        <p class="ds-sub">Cada dato usa la técnica que encaja con su <b>tipo de información</b>. Elige una, mira cuándo usarla y pruébala en 1 minuto.</p></header>
+      <div class="met-grid">${CLAVES.map((k, i) => { const m = METODOS[k]; const u = usoDe(k); const cuando = (m.cuando || [])[0]; return `
+        <article class="met-card-w ds-entra" style="--i:${i + 1}">
+          <button type="button" class="met-card" data-met="${esc(k)}" aria-label="Abrir ${esc(m.nombre)}">
+            <span class="met-ic" aria-hidden="true">${esc(m.icono)}</span>
+            <span class="met-card-tx"><span class="met-t">${esc(m.nombre)}</span><span class="met-d">${esc(m.resumen || m.que)}</span></span>
+          </button>
+          ${cuando ? `<p class="met-cuando"><b>Úsala cuando</b> ${esc(recorta(cuando))}</p>` : ''}
+          <div class="met-card-pie"><span class="met-uso ${u.n ? '' : 'cero'}">${esc(txtUso(k))}</span>
+            ${DEMOS[k] ? `<button type="button" class="met-probar" data-probar="${esc(k)}">▶ Probar</button>` : ''}</div>
+          ${u.n && !u.capa ? `<button type="button" class="met-ver" data-vista="tabla" data-tec="${esc(k)}">Ver los ${u.n} datos que la usan →</button>` : u.capa ? '<button type="button" class="met-ver" data-vista="repaso">Ir a Repaso →</button>' : ''}
+        </article>`; }).join('')}</div>
+      <section class="met-tipos" aria-labelledby="met-tipos-t">
         <h3 id="met-tipos-t">¿Qué técnica uso? · según el tipo de dato</h3>
         ${POR_TIPO.map(([t, nom, ks]) => `<div class="met-fila"><span>${esc(nom)}${tipos[t] ? ` <small>(${tipos[t]})</small>` : ''}</span>${ks.map(chip).join('')}</div>`).join('')}
         <div class="met-fila"><span>Para repasar todo</span>${CAPA.map(chip).join('')}</div>
-      </section></div>`;
+      </section>
+      <details class="met-sec met-sec-tabla" data-sec="mitabla-indice"><summary>🔢 Mi tabla 00–99 <span class="met-n">tu lista fija de palabras-imagen</span></summary><div class="met-cuerpo"><div data-mitabla></div></div></details>
+      ${cicloHTML()}
+      <p class="met-intro">Todo sale de los videos de Pablo Lomelí (los números <span class="met-ref">#NNN</span> son los videos); lo que agrega el skill va marcado <span class="met-comp">complemento</span>.</p>
+    </div>`;
     const mt = raiz.querySelector('[data-mitabla]'); if (mt) miTabla(mt);
   }
 
@@ -112,40 +121,72 @@ export function crearMetodos({ METODOS = {}, MEMO = {}, ATLAS = {}, raiz }) {
 
   // ---------- M2 · Mi tabla 00–99 (palabras propias en mias.js con clave num:NN) ----------
   const propia = (nn) => { try { return mias.get(`num:${nn}`)?.palabra || ''; } catch { return ''; } };
+  let decTabla = 0;          // decena visible (0-9) o 'todo'
   function miTabla(cont) {
     let sel = null;
     cont.innerHTML = '<p class="met-ayuda">Cargando tabla…</p>';
     cargarTabla().then((T) => {
       if (!T?.tabla) { cont.innerHTML = '<p class="revisar">No se pudo cargar data/tabla00_99.json.</p>'; return; }
+      const nums = Array.from({ length: 100 }, (_, i) => String(i).padStart(2, '0'));
+      const celda = (n, grande) => { const p = propia(n); const w = p || T.tabla[n]?.palabra || '';
+        return `<button type="button" data-nn="${n}" class="${n === sel ? 'on' : ''} ${p ? 'mia' : ''}" aria-pressed="${n === sel}" aria-label="${n}: ${esc(w)}${p ? ' (tuya)' : ''}">
+          <b>${n}</b><small>${esc(w)}</small>${grande ? `<i>${esc(T.tabla[n]?.letras || '')}</i>` : ''}</button>`; };
       const render = () => {
-        const nums = Array.from({ length: 100 }, (_, i) => String(i).padStart(2, '0'));
         const t = sel ? T.tabla[sel] : null; const mia = sel ? propia(sel) : '';
         const alts = t ? (t.alt || []).filter((a) => a !== t.palabra) : [];
-        cont.innerHTML = `<p class="met-ayuda">Meta: tu lista fija del 00 al 99, "para no inventar la imagen cada vez" (#189, #139). Que sean <b>tuyas</b> y, una vez fijadas, no las cambies. ★ = palabra propia.</p>
-          <div class="met-cien" role="group" aria-label="Números del 00 al 99">${nums.map((n) => { const p = propia(n); return `<button type="button" data-nn="${n}" class="${n === sel ? 'on' : ''} ${p ? 'mia' : ''}" aria-pressed="${n === sel}" aria-label="${n}: ${esc(p || T.tabla[n]?.palabra || '')}"><b>${n}</b><small>${esc(p || T.tabla[n]?.palabra || '')}</small></button>`; }).join('')}</div>
+        const nMias = nums.filter((n) => propia(n)).length;
+        const todo = decTabla === 'todo';
+        const vis = todo ? nums : nums.filter((n) => +n[0] === decTabla);
+        cont.innerHTML = `<div class="met-tabla-cab"><p class="met-ayuda">Tu lista fija del 00 al 99, "para no inventar la imagen cada vez" (#189, #139). Que sean <b>tuyas</b> y, una vez fijadas, no las cambies.</p>
+            <div class="met-tabla-prog" title="${nMias} de 100 palabras propias"><span><b>★ ${nMias}</b>/100 propias</span><span class="met-barra"><i style="width:${nMias}%"></i></span></div></div>
+          <div class="met-decenas" role="tablist" aria-label="Decenas">${Array.from({ length: 10 }, (_, d) => `<button type="button" role="tab" data-dec="${d}" aria-selected="${decTabla === d}" class="${decTabla === d ? 'on' : ''}">${d}0<small>–${d}9</small></button>`).join('')}
+            <button type="button" role="tab" data-dec="todo" aria-selected="${todo}" class="${todo ? 'on' : ''}">10×10</button></div>
+          <div class="met-cien ${todo ? 'compacta' : 'decena'}" role="group" aria-label="${todo ? 'Números del 00 al 99' : `Números del ${decTabla}0 al ${decTabla}9`}" data-desliza>${vis.map((n) => celda(n, !todo)).join('')}</div>
+          ${todo ? '' : `<div class="met-dec-nav"><button type="button" class="btn" data-dmov="-1" ${decTabla > 0 ? '' : 'disabled'} aria-label="Decena anterior">←</button><span class="met-ayuda">Desliza o usa las flechas</span><button type="button" class="btn" data-dmov="1" ${decTabla < 9 ? '' : 'disabled'} aria-label="Decena siguiente">→</button></div>`}
           ${t ? `<div class="met-caja met-nn" aria-live="polite"><div class="met-grupos"><div class="met-grupo"><div class="num">${sel}</div><div class="let">${esc(t.letras)}</div>
             <div class="pal">${esc(mia || t.palabra)}${mia ? ' ★' : ''}</div>${mia ? `<p class="alt">De la tabla: ${esc(t.palabra)}</p>` : ''}
             ${alts.length ? `<p class="alt">También: ${esc(alts.join(', '))}</p>` : ''}
             ${t.nota ? `<p class="nota">${fmt(t.nota)}</p>` : ''}<p class="nota">${t.fuente === 'video' ? 'Palabra de los videos' : fmt('Propuesta del skill [complemento]')}</p></div></div>
             <label class="met-etq" for="met-mia">✏️ Mi palabra para ${sel}</label>
-            <div class="met-fila-btn"><input id="met-mia" class="met-in" style="max-width:220px" value="${esc(mia)}" placeholder="${esc(t.palabra)}" autocomplete="off">
+            <div class="met-fila-btn"><input id="met-mia" class="met-in" style="max-width:220px" value="${esc(mia)}" placeholder="${esc(t.palabra)}" autocomplete="off" autocapitalize="off">
               <button type="button" class="btn pri" data-guardar>Guardar</button>${mia ? '<button type="button" class="btn" data-quitar>Quitar</button>' : ''}</div>
             <p class="met-ayuda" data-val aria-live="polite">Cuentan todas las consonantes, también la S de un plural: usa singulares.</p></div>`
-          : '<p class="met-ayuda">Toca un número para ver sus letras y su palabra.</p>'}`;
+          : '<p class="met-ayuda met-tabla-vacia">👆 Toca un número para ver sus letras, su palabra y poner la tuya.</p>'}`;
       };
+      const irDec = (d) => { decTabla = d; render(); cont.querySelector('.met-decenas .on')?.scrollIntoView?.({ block: 'nearest', inline: 'center', behavior: 'smooth' }); };
       cont.addEventListener('click', (e) => {
-        const b = e.target.closest('[data-nn]'); if (b) { sel = b.dataset.nn; render(); cont.querySelector('#met-mia')?.focus({ preventScroll: true }); return; }
+        const dd = e.target.closest('[data-dec]'); if (dd) { haptico('toque'); irDec(dd.dataset.dec === 'todo' ? 'todo' : +dd.dataset.dec); return; }
+        const dm = e.target.closest('[data-dmov]'); if (dm && decTabla !== 'todo') { irDec(Math.max(0, Math.min(9, decTabla + +dm.dataset.dmov))); return; }
+        const b = e.target.closest('[data-nn]'); if (b) { haptico('toque'); sel = b.dataset.nn === sel ? null : b.dataset.nn; render(); if (sel) cont.querySelector('.met-nn')?.scrollIntoView?.({ block: 'nearest', behavior: 'smooth' }); return; }
         if (e.target.closest('[data-quitar]') && sel) { mias.set(`num:${sel}`, null); render(); return; }
         if (e.target.closest('[data-guardar]') && sel) {
           const w = cont.querySelector('#met-mia').value.trim();
           if (!w) { mias.set(`num:${sel}`, null); render(); return; }
           const d = decodificar(w);
-          if (d !== sel) { cont.querySelector('[data-val]').innerHTML = `<span class="met-mal">✗</span> "${esc(w)}" decodifica <b>${esc(d || 'nada')}</b>, no ${sel}. Sus consonantes deben ser exactamente ${esc(T.tabla[sel].letras)}.`; return; }
-          mias.set(`num:${sel}`, { palabra: w }); render();
+          if (d !== sel) { haptico('mal'); const v = cont.querySelector('[data-val]'); v.innerHTML = `<span class="met-mal">✗</span> "${esc(w)}" decodifica <b>${esc(d || 'nada')}</b>, no ${sel}. Sus consonantes deben ser exactamente ${esc(T.tabla[sel].letras)}.`; v.classList.remove('met-sacude'); void v.offsetWidth; v.classList.add('met-sacude'); return; }
+          mias.set(`num:${sel}`, { palabra: w }); haptico('bien'); render();
           cont.querySelector('[data-val]').innerHTML = `<span class="met-ok">✓</span> Guardada: ${esc(w)} = ${sel}. Úsala siempre igual.`;
         }
       });
-      cont.addEventListener('keydown', (e) => { if (e.key === 'Enter' && e.target.id === 'met-mia') cont.querySelector('[data-guardar]')?.click(); });
+      cont.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && e.target.id === 'met-mia') { cont.querySelector('[data-guardar]')?.click(); return; }
+        if (decTabla === 'todo' || e.target.matches('input, textarea')) return;
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          const d = Math.max(0, Math.min(9, decTabla + (e.key === 'ArrowRight' ? 1 : -1)));
+          if (d !== decTabla) { e.preventDefault(); irDec(d); cont.querySelector(`.met-decenas [data-dec="${d}"]`)?.focus({ preventScroll: true }); }
+        }
+      });
+      // gesto: deslizar a los lados sobre la cuadrícula cambia de decena
+      let x0 = null, y0 = 0;
+      cont.addEventListener('touchstart', (e) => { if (!e.target.closest('[data-desliza]')) { x0 = null; return; } x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
+      cont.addEventListener('touchend', (e) => {
+        if (x0 == null || decTabla === 'todo') return;
+        const dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0; x0 = null;
+        if (Math.abs(dx) < 50 || Math.abs(dy) > Math.abs(dx) * 0.7) return;
+        const d = Math.max(0, Math.min(9, decTabla + (dx < 0 ? 1 : -1)));
+        if (d !== decTabla) { haptico('toque'); irDec(d); }
+      }, { passive: true });
+      if (sel == null && decTabla !== 'todo') decTabla = +decTabla || 0;
       render();
     });
   }
@@ -168,19 +209,22 @@ export function crearMetodos({ METODOS = {}, MEMO = {}, ATLAS = {}, raiz }) {
           <button type="button" class="btn met-btn-ir" data-ir-ficha="${esc(ea.id)}">Ver ficha →</button></div>`
       : `<p class="met-cita">${fmt(ea.texto || 'Todavía no hay un dato del atlas con esta técnica.')}</p>`;
     const demo = DEMOS[k];
+    const cuandoTop = (m.cuando || []).slice(0, 2);
     raiz.innerHTML = `<div class="met-vista">
       <button type="button" class="met-volver" data-volver>← Todos los métodos</button>
-      <header class="met-hero"><span class="met-ic" aria-hidden="true">${esc(m.icono)}</span>
-        <div><h2 tabindex="-1">${esc(m.nombre)}</h2><p>${fmt(m.resumen || '')}</p>
-        <div class="met-meta"><span class="met-uso ${u.n ? '' : 'cero'}">${esc(txtUso(k))}</span>${m.version_skill ? `<span>skill v${esc(m.version_skill)}</span>` : ''}</div></div></header>
-      ${seccion('que', '📖 Qué es', `<p>${fmt(m.que)}</p>`, { abierta: true })}
+      <header class="met-hero ds-entra"><span class="met-ic" aria-hidden="true">${esc(m.icono)}</span>
+        <div class="met-hero-tx"><h2 tabindex="-1">${esc(m.nombre)}</h2><p>${fmt(m.resumen || '')}</p>
+        <div class="met-meta"><span class="met-uso">${esc(txtUso(k))}</span>${m.version_skill ? `<span>skill v${esc(m.version_skill)}</span>` : ''}</div></div>
+        ${cuandoTop.length ? `<div class="met-hero-cuando"><b>✓ Úsala cuando</b><ul>${cuandoTop.map((c) => `<li>${esc(recorta(c, 140))}</li>`).join('')}</ul></div>` : ''}
+        ${demo ? '<button type="button" class="met-hero-play" data-ir-demo>▶ Probar la demo</button>' : ''}</header>
+      ${demo ? seccion('demo', `🎮 Pruébalo · ${esc(demo.titulo)}`, '<div class="met-demo" data-demo></div>', { abierta: true, cls: 'met-demo-sec ds-entra' }) : ''}
+      ${seccion('cuando', '🚦 Cuándo y cuándo no', `<div class="met-dos"><div class="met-col si"><h4>✓ Úsalo cuando</h4>${lista(m.cuando)}</div><div class="met-col no"><h4>✗ No lo uses</h4>${lista(m.cuando_no)}</div></div>`, { abierta: !demo })}
+      ${seccion('pasos', '🪜 Pasos', `<div class="met-progreso" data-prog></div><ol class="met-pasos">${pasos}</ol>`, { abierta: true, extra: `${(m.pasos || []).length}` })}
+      ${seccion('que', '📖 Qué es', `<p>${fmt(m.que)}</p>`)}
       ${seccion('como', '⚙️ Cómo funciona', `<p>${fmt(m.como_funciona || '')}</p>`)}
-      ${seccion('pasos', '🪜 Pasos', `<p class="met-progreso" data-prog></p><ol class="met-pasos">${pasos}</ol>`, { abierta: true, extra: `${(m.pasos || []).length}` })}
-      ${seccion('cuando', '🚦 Cuándo y cuándo no', `<div class="met-dos"><div class="met-col si"><h4>✓ Úsalo cuando</h4>${lista(m.cuando)}</div><div class="met-col no"><h4>✗ No lo uses</h4>${lista(m.cuando_no)}</div></div>`)}
-      ${k === 'memorizar-numeros' ? seccion('mitabla', '🔢 Mi tabla 00–99', '<div data-mitabla></div>', { extra: 'cuadrícula 10 × 10' }) : ''}
-      ${demo ? seccion('demo', `🎮 Pruébalo · ${esc(demo.titulo)}`, '<div class="met-demo" data-demo></div>', { abierta: true, cls: 'met-demo-sec' }) : ''}
-      ${seccion('video', '🎬 Ejemplo del video', `<p class="met-cita">${fmt(m.ejemplo_video || '')}</p>`)}
+      ${k === 'memorizar-numeros' ? seccion('mitabla', '🔢 Mi tabla 00–99', '<div data-mitabla></div>', { extra: 'por decenas' }) : ''}
       ${seccion('atlas', '🗺️ Ejemplo en tu atlas', ejAtlas, { abierta: true })}
+      ${seccion('video', '🎬 Ejemplo del video', `<p class="met-cita">${fmt(m.ejemplo_video || '')}</p>`)}
       ${u.ids.length ? seccion('usan', u.capa ? '🗂️ Fichas que se repasan' : '🗂️ Datos que la usan', `<div class="met-usan">${u.ids.map((id) => `<button type="button" data-ir-ficha="${esc(id)}">${esc(iconoDato(id))} ${esc(nombreDato(id))}</button>`).join('')}</div>`, { extra: `${u.n}` }) : ''}
       ${seccion('errores', '⚠️ Errores comunes', lista(m.errores, 'err'), { extra: `${(m.errores || []).length}` })}
       ${seccion('consejos', '💬 Consejos', lista(m.consejos, 'tip'), { extra: `${(m.consejos || []).length}` })}
@@ -196,12 +240,15 @@ export function crearMetodos({ METODOS = {}, MEMO = {}, ATLAS = {}, raiz }) {
   function progresoPasos(k) {
     const el = raiz.querySelector('[data-prog]'); if (!el) return;
     const n = (METODOS[k].pasos || []).length; const h = (hechos[k] || []).length;
-    el.textContent = h ? `${h} de ${n} pasos marcados como hechos.` : 'Marca cada paso cuando lo apliques a un tema.';
+    const pct = n ? Math.round(100 * h / n) : 0;
+    el.innerHTML = `<span>${h ? `${h} de ${n} pasos aplicados${h === n ? ' · ¡completo! 🎉' : ''}` : 'Marca cada paso cuando lo apliques a un tema.'}</span><span class="met-barra"><i style="width:${pct}%"></i></span>`;
   }
 
   // ---------- eventos (delegados en raiz) ----------
   raiz.addEventListener('click', (e) => {
     const f = e.target.closest('[data-ir-ficha]'); if (f) { irFicha(f.dataset.irFicha); return; }
+    const pr = e.target.closest('[data-probar]'); if (pr) { haptico('toque'); abrir(pr.dataset.probar); irDemo(); return; }
+    if (e.target.closest('[data-ir-demo]')) { irDemo(); return; }
     const v = e.target.closest('[data-vista]');
     if (v) { const detail = { vista: v.dataset.vista }; if (v.dataset.tec) detail.tec = v.dataset.tec; window.dispatchEvent(new CustomEvent('memo:vista', { detail })); return; }
     const b = e.target.closest('[data-met]'); if (b && !b.closest('[data-demo]')) { abrir(b.dataset.met); return; }
@@ -211,11 +258,19 @@ export function crearMetodos({ METODOS = {}, MEMO = {}, ATLAS = {}, raiz }) {
     const c = e.target.closest('[data-paso]'); if (!c || !abierto) return;
     const n = Number(c.dataset.paso); const s = new Set(hechos[abierto] || []);
     c.checked ? s.add(n) : s.delete(n);
+    haptico(c.checked ? (s.size === (METODOS[abierto].pasos || []).length ? 'logro' : 'bien') : 'toque');
     hechos[abierto] = [...s]; grabar('memo-semio-met-pasos', hechos);
     c.closest('li')?.classList.toggle('hecho', c.checked);
     progresoPasos(abierto);
   });
 
+  function irDemo() {
+    const d = raiz.querySelector('[data-sec="demo"]'); if (!d) return;
+    d.open = true;
+    d.scrollIntoView?.({ block: 'start', behavior: document.documentElement.classList.contains('sin-mov') ? 'auto' : 'smooth' });
+    d.classList.remove('met-resalta'); void d.offsetWidth; d.classList.add('met-resalta');
+    setTimeout(() => d.querySelector('input, textarea, button:not([disabled])')?.focus({ preventScroll: true }), 350);
+  }
   function pintar(clave) {
     if (typeof clave === 'string' && METODOS[clave]) { abierto = clave; grabar('memo-semio-metodo', abierto); }
     if (abierto && METODOS[abierto]) pintarDetalle(abierto); else pintarIndice();
@@ -303,6 +358,7 @@ export function crearMetodos({ METODOS = {}, MEMO = {}, ATLAS = {}, raiz }) {
     cont.querySelector('[data-otra]').addEventListener('click', nuevaPregunta);
     const comprobar = () => {
       const r = cont.querySelector('[data-r]').value.trim(); const fb = cont.querySelector('[data-fb]'); if (!qPar) return;
+      haptico(r.padStart(2, '0') === qPar ? 'bien' : 'mal');
       fb.innerHTML = r.padStart(2, '0') === qPar ? `<span class="met-ok">✓ ${qPar}</span> = ${esc(T.tabla[qPar].letras)}` : `<span class="met-mal">✗</span> Era <b>${qPar}</b> (${esc(T.tabla[qPar].letras)}). Lee las consonantes, no las vocales.`;
     };
     cont.querySelector('[data-ok]').addEventListener('click', comprobar);
@@ -349,7 +405,7 @@ export function crearMetodos({ METODOS = {}, MEMO = {}, ATLAS = {}, raiz }) {
       else if (t.dataset.pos) pos = Number(t.dataset.pos);
       else if (t.dataset.mov) pos = Math.max(0, Math.min(est.length - 1, pos + Number(t.dataset.mov)));
       else if ('mostrar' in t.dataset) est[secuencia()[pos]].visto = true;
-      else if (t.dataset.res) { res[secuencia()[pos]] = t.dataset.res === '1'; pos += 1; }
+      else if (t.dataset.res) { haptico(t.dataset.res === '1' ? 'bien' : 'mal'); res[secuencia()[pos]] = t.dataset.res === '1'; pos += 1; }
       else if ('reinicio' in t.dataset) { pos = 0; orden = orden === 'adelante' ? 'atras' : 'adelante'; est.forEach((e) => { e.visto = false; }); Object.keys(res).forEach((k) => delete res[k]); }
       else return;
       render();
@@ -555,7 +611,7 @@ export function crearMetodos({ METODOS = {}, MEMO = {}, ATLAS = {}, raiz }) {
       const t = e.target.closest('button'); if (!t) return;
       if ('nueva' in t.dataset) { iniciar(); return; }
       if ('ver' in t.dataset) { viendo = true; render(); cont.querySelector('[data-c]')?.focus(); return; }
-      if (t.dataset.c) { const p = cola.shift(); const k = `${p.id}#${p.i}`; if (!(k in primera)) primera[k] = t.dataset.c; if (t.dataset.c !== 'v') fallos.push(p); viendo = false; render(); }
+      if (t.dataset.c) { haptico({ v: 'bien', a: 'toque', r: 'mal' }[t.dataset.c]); const p = cola.shift(); const k = `${p.id}#${p.i}`; if (!(k in primera)) primera[k] = t.dataset.c; if (t.dataset.c !== 'v') fallos.push(p); viendo = false; render(); }
     });
     iniciar();
   }
@@ -597,7 +653,7 @@ export function crearMetodos({ METODOS = {}, MEMO = {}, ATLAS = {}, raiz }) {
         <div class="met-montones"><span>🔴 ${mont.r}</span><span>🟡 ${mont.a}</span><span>🟢 ${mont.v}</span><button type="button" class="link" data-otra>Otra tarjeta</button></div>`;
     }
     cont.addEventListener('click', (e) => {
-      if (e.target.closest('[data-flip]')) { volteada = !volteada; render(); cont.querySelector('[data-flip]')?.focus(); return; }
+      if (e.target.closest('[data-flip]')) { haptico('toque'); volteada = !volteada; render(); cont.querySelector('[data-flip]')?.focus(); return; }
       const m = e.target.closest('[data-m]'); if (m) { mont[m.dataset.m] += 1; nueva(); return; }
       if (e.target.closest('[data-otra]')) nueva();
     });

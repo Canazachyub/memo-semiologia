@@ -161,3 +161,8 @@ mark { background: color-mix(in srgb, #facc15 55%, transparent); }
   .btn, .chip, .esc, .fac, .met, .parada { transition: none; }
 }
 :root.sin-mov .ds-entra, :root.sin-mov .aviso { animation: none; }
+
+/* ajustes ⚙️ */
+.aj-dlg { box-shadow: var(--shadow-lg); }
+@media (min-width: 761px) { .aj-dlg { border-radius: var(--r-lg); } }
+.aj-seg [aria-checked="true"] { background: var(--grad) !important; color: #fff !important; border-color: transparent !important; }

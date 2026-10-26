@@ -7,13 +7,14 @@
 //   window.dispatchEvent(new CustomEvent('memo:repaso', { detail: { modo, sec, refs, ids } }));
 //   window.dispatchEvent(new CustomEvent('memo:vista', { detail: { vista: 'repaso' } }));
 //   modo: 'normal' | 'semanal' | 'autoexamen' | 'emergencia' | 'bloque' | 'seccion' | 'simulacro' | 'editar'
-import { $, $$, esc, resaltar, norm } from './util.js';
+import { $, $$, esc, resaltar, norm, haptico } from './util.js';
 import { numeros, barajar } from './juego-util.js';
 import { tarjetasExtra } from './vistas.js';
 import * as plan from './plan.js';
 import * as ajustes from './ajustes.js';
 import * as mias from './mias.js';
 import { registrarVista } from './hoy.js';
+import { racha } from './juego-estado.js';
 
 const ORDEN_TIPO = { directa: 0, cloze: 1, umbral: 2, inversa: 3, explica: 4, lista: 5, componente: 5, caso: 6, trampa: 7 };
 const ETIQUETA_TIPO = { directa: 'directa', umbral: 'umbral', inversa: 'inversa', lista: 'lista', caso: '🩺 caso', trampa: '⚠️ trampa', cloze: 'hueco', explica: 'explica', componente: 'componente' };
@@ -36,6 +37,8 @@ const SUG_GENERAL = 'Sintetízala si es larga, explícala mejor si es rebuscada 
 
 const leerJSON = (k, v) => { try { return JSON.parse(localStorage.getItem(k)) ?? v; } catch { return v; } };
 const guardarJSON = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* sin almacenamiento */ } };
+/** sin animaciones: ajuste del usuario (html.sin-mov) o del sistema */
+const sinMov = () => document.documentElement.classList.contains('sin-mov') || !!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 const mmss = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
 
 /** R8: frente con [ … ] o reverso con <mark> */
@@ -204,7 +207,7 @@ export function crearRepaso({ ATLAS, MEMO, METODOS = {}, SIGLAS = {}, FACIES = {
     else if (op.ids?.length) cola = op.ids.map((id) => POR_ID.get(id)).filter(Boolean);
     else cola = colaNormal();
     ses = { modo, ...cfg, ronda: 1, cola, total: cola.length, hechas: 0, falladas: [], actual: null, r1: { 1: 0, 2: 0, 3: 0, 4: 0 },
-      inicio: Date.now(), pistas: new Set(), editadas: new Set(), sinSalir: [], fase: 'tarjeta', sec: op.sec || '' };
+      inicio: Date.now(), pistas: new Set(), editadas: new Set(), sinSalir: [], fase: 'tarjeta', sec: op.sec || '', cuenta: { ok: 0, mal: 0 } };
     siguiente();
   }
   function siguiente() {
@@ -216,7 +219,7 @@ export function crearRepaso({ ATLAS, MEMO, METODOS = {}, SIGLAS = {}, FACIES = {
   function empezarRonda() {
     ses.ronda += 1;
     ses.cola = separarHermanas(barajar(ses.falladas));
-    ses.total = ses.cola.length; ses.hechas = 0; ses.falladas = [];
+    ses.total = ses.cola.length; ses.hechas = 0; ses.falladas = []; ses.cuenta = { ok: 0, mal: 0 }; ses.pctPrev = undefined;
     siguiente();
   }
 
@@ -247,8 +250,20 @@ export function crearRepaso({ ATLAS, MEMO, METODOS = {}, SIGLAS = {}, FACIES = {
   function cabecera() {
     const i = Math.min(ses.total, ses.hechas + 1);
     const pct = ses.total ? (100 * ses.hechas) / ses.total : 0;
-    return `<div class="rp-cab" aria-live="polite"><span>Ronda <b>${ses.ronda}</b>${ses.rondas > 1 ? `/${ses.rondas}` : ''} · ${i}/${ses.total}</span>
-      <div class="rp-barra"><i style="width:${pct}%"></i></div></div>`;
+    const desde = ses.pctPrev ?? pct; ses.pctPrev = pct;
+    const c = ses.cuenta || { ok: 0, mal: 0 };
+    return `<div class="rp-cab rp-prog" aria-live="polite">
+      <div class="rp-prog-fila">
+        <span class="rp-ronda">Ronda ${ses.ronda}${ses.rondas > 1 ? `/${ses.rondas}` : ''}</span>
+        <span class="rp-cuenta" aria-label="Tarjeta ${i} de ${ses.total}"><b>${i}</b>/${ses.total}</span>
+        <span class="rp-marcador"><span class="ok" title="Bien o Fácil">✓ ${c.ok}</span><span class="no" title="Otra vez o Difícil">✗ ${c.mal}</span></span>
+      </div>
+      <div class="rp-prog-barra" role="progressbar" aria-label="Progreso de la ronda" aria-valuemin="0" aria-valuemax="${ses.total}" aria-valuenow="${ses.hechas}"><i data-a="${pct}" style="width:${desde}%"></i></div></div>`;
+  }
+  /** la barra parte del valor anterior y crece hasta el nuevo (transición CSS) */
+  function animarBarra() {
+    const i = $('.rp-prog-barra i[data-a]', raiz); if (!i) return;
+    void i.offsetWidth; i.style.width = `${i.dataset.a}%`;
   }
   function pintar() {
     if (pestana === 'editar') return pintarEditar();
@@ -257,32 +272,68 @@ export function crearRepaso({ ATLAS, MEMO, METODOS = {}, SIGLAS = {}, FACIES = {
     const top = pestanas() + barraModo();
     if (ses.fase === 'vacio') return pintarVacio(top);
     if (ses.fase === 'entre') {
-      raiz.innerHTML = top + `<div class="tarjeta rp-entre"><p class="rp-big">🔁 Ronda ${ses.ronda + 1}: solo tus errores (${ses.falladas.length})</p>
+      const c = ses.cuenta || { ok: 0, mal: 0 };
+      raiz.innerHTML = top + `<div class="tarjeta rp-entre ds-entra">
+        <div class="rp-entre-ico" aria-hidden="true">🔁</div>
+        <p class="rp-big">Ronda ${ses.ronda + 1}: solo tus errores</p>
+        <p class="rp-entre-kpis"><span class="ok">✓ ${c.ok} bien</span><span class="no">✗ ${ses.falladas.length} por repetir</span></p>
         <p class="vacio">Lo correcto no se repite en esta sesión. Desde esta ronda puedes pedir la pista ⚓ antes de rendirte. El calendario ya se movió con tu primera respuesta.</p>
-        <div class="btns"><button class="btn pri" data-ronda>Empezar ronda ${ses.ronda + 1} (espacio)</button><button class="btn" data-terminar>Terminar y ver resumen</button></div></div>`;
+        <div class="btns rp-centro"><button class="btn pri" data-ronda>Empezar ronda ${ses.ronda + 1} <kbd class="rp-kbd">espacio</kbd></button><button class="btn" data-terminar>Terminar y ver resumen</button></div></div>`;
       return enlazar();
     }
     if (ses.fase === 'resumen') return pintarResumen(top);
     pintarTarjeta(top);
+  }
+  /** cuándo vence la próxima tarjeta con técnica (texto) */
+  function proxima() {
+    const ahora = Date.now();
+    let min = Infinity;
+    for (const t of TARJETAS) { if (!t.m) continue; const d = srs.info(t.id)?.due; if (d > ahora && d < min) min = d; }
+    if (!Number.isFinite(min)) return '';
+    const h0 = srs.inicioDia ? srs.inicioDia() : new Date().setHours(0, 0, 0, 0);
+    const dias = Math.round((min - h0) / 864e5);
+    return dias <= 0 ? 'más tarde hoy' : srs.textoIntervalo(dias);
   }
   function pintarVacio(top) {
     const esp = esperando();
     const usadas = nuevasHoy(), cupo = nuevasDia();
     const sim = plan.faseSimulacro();
     const msgs = [];
+    let titulo = 'Nada por aquí', ico = '🗂️';
     if (ses.modo === 'semanal') msgs.push('No repasaste nada en los últimos 7 días.');
     else if (ses.modo === 'autoexamen') msgs.push('Hoy aún no calificaste ninguna tarjeta: haz primero tu repaso.');
     else if (ses.modo === 'bloque') msgs.push('No abriste fichas con preguntas en este bloque.');
     else {
-      msgs.push('No hay tarjetas pendientes ahora.');
+      const algunaVez = TARJETAS.some((t) => srs.info(t.id));
+      titulo = algunaVez ? '¡Estás al día!' : 'Tu mazo está listo para empezar';
+      ico = algunaVez ? '🎉' : '🌱';
+      msgs.push(algunaVez ? 'No hay tarjetas pendientes ahora. Tu memoria está descansando: así se consolida.' : 'No hay tarjetas pendientes ahora.');
       if (sim) msgs.push('Estás en la fase de simulacro: ya no entran tarjetas nuevas.');
       else if (usadas >= cupo) msgs.push(`Ya metiste tus ${cupo} nuevas de hoy.`);
     }
-    const lista = esp.length && ses.modo === 'normal' && !sim ? `<div class="rp-esperan"><p><b>📖 Primero estudia:</b></p>${esp.map(([sid, n]) =>
-      `<button class="btn rp-chico" data-estudiar="${sid}">${esc(nombreGrupo(sid))} · ${n} tarjetas esperando</button>`).join('')}
-      <p class="vacio">Comprende el tema en 📋 Valores y márcalo como estudiado (también desde 🏠 Hoy). "No puedes hacer preguntas sin antes haber entendido el tema."</p></div>` : '';
-    raiz.innerHTML = top + `<div class="fin"><b>🎉</b>${msgs.map(esc).join('<br>')}</div>${lista}
-      <div class="btns rp-centro"><button class="btn" data-ir-vista="hoy">🏠 Hoy</button>${ses.modo !== 'normal' ? '<button class="btn" data-salir>🔁 Repaso normal</button>' : ''}</div>`;
+    const prox = ses.modo === 'normal' ? proxima() : '';
+    const tema = ([sid, n], k) => {
+      const [ico2, ...resto] = nombreGrupo(sid).split(' ');
+      const base = baseFiltro(sid);
+      const vistas = base.filter((t) => srs.info(t.id)).length;
+      const pct = base.length ? Math.round((100 * vistas) / base.length) : 0;
+      return `<button class="rp-tema ds-entra" style="--i:${k + 2}" data-estudiar="${sid}">
+        <span class="rp-tema-ico" aria-hidden="true">${esc(ico2)}</span>
+        <span class="rp-tema-txt"><b>${esc(resto.join(' ') || ico2)}</b><small>${n} tarjeta${n > 1 ? 's' : ''} esperando · ${pct} % del tema visto</small>
+          <span class="rp-tema-barra" aria-hidden="true"><i style="width:${pct}%"></i></span></span>
+        <span class="rp-tema-ir">Estudiar <span aria-hidden="true">→</span></span></button>`;
+    };
+    const lista = esp.length && ses.modo === 'normal' && !sim ? `<section class="rp-esperan" aria-label="Temas por estudiar">
+      <h3 class="rp-esperan-t">📖 Primero estudia</h3>
+      <p class="vacio">Comprende el tema en 📋 Valores y márcalo como estudiado (también desde 🏠 Hoy). "No puedes hacer preguntas sin antes haber entendido el tema."</p>
+      <div class="rp-temas">${esp.map(tema).join('')}</div></section>` : '';
+    raiz.innerHTML = top + `<div class="rp-vacio ds-entra">
+        <div class="rp-vacio-ico" aria-hidden="true">${ico}</div>
+        <h2 class="rp-vacio-t">${esc(titulo)}</h2>
+        <p>${msgs.map(esc).join('<br>')}</p>
+        ${prox ? `<p class="rp-prox">⏭ La próxima tarjeta vence <b>${esc(prox)}</b></p>` : ''}
+        <div class="btns rp-centro"><button class="btn pri" data-ir-vista="hoy">🏠 Ir a Hoy</button>${ses.modo !== 'normal' ? '<button class="btn" data-salir>🔁 Repaso normal</button>' : ''}</div>
+      </div>${lista}`;
     enlazar();
   }
   function bloqueTecnica(t) {
@@ -305,27 +356,33 @@ export function crearRepaso({ ATLAS, MEMO, METODOS = {}, SIGLAS = {}, FACIES = {
     const ancla = ses.ronda >= 2 ? anclaDe(t) : '';
     const tipo = ETIQUETA_TIPO[t.tipo];
     const qHTML = esCloze(t.q) ? clozeHTML(t.q, false) : esc(t.q);
-    raiz.innerHTML = top + cabecera() + `<div class="tarjeta" id="tarjeta">
+    const quedan = Math.min(2, ses.cola.length);
+    raiz.innerHTML = top + cabecera() + `<div class="rp-pila" data-pila="${quedan}"><div class="tarjeta rp-card" id="tarjeta">
+      <div class="rp-swipe si" aria-hidden="true"><b>✓ Bien</b></div><div class="rp-swipe no" aria-hidden="true"><b>↺ Otra vez</b></div>
       <div class="meta"><span>${esc(t.nombre)}${tipo ? ` <span class="rp-tipo">${esc(tipo)}</span>` : ''}</span><span>${srs.semaforo ? srs.semaforo(t.id) : ''} ${srs.nivel(t.id)}</span></div>
       <div class="q" id="rp-q">${qHTML}</div>
       ${nota ? `<p class="rp-notaq">📝 ${esc(nota)}</p>` : ''}
       <label class="rp-sr" for="resp">Tu respuesta</label>
       <textarea id="resp" placeholder="Escribe tu respuesta de memoria (recuerdo activo)… Ctrl+Enter revela"></textarea>
-      <div class="btns" id="b-ver"><button class="btn pri" id="ver">Mostrar respuesta (espacio)</button>
-        ${ancla ? `<button class="btn" id="rp-pista" aria-label="Ver pista: el ancla">💡 Pista (P)</button>` : ''}</div>
+      <div class="btns" id="b-ver"><button class="btn pri rp-ver" id="ver">Mostrar respuesta <kbd class="rp-kbd">espacio</kbd></button>
+        ${ancla ? `<button class="btn" id="rp-pista" aria-label="Ver pista: el ancla">💡 Pista <kbd class="rp-kbd">P</kbd></button>` : ''}</div>
       <p class="rp-ancla" id="rp-ancla" hidden>⚓ ${esc(ancla)}</p>
       <div class="a"><div id="rp-compara"></div>${esCloze(t.q) ? `<div class="rp-clz">${clozeHTML(t.q, true)}</div>` : ''}<div class="resp">${resaltar(t.a)}</div>${bloqueTecnica(t)}
         ${t.m?.imagen ? `<img class="rp-img" src="${esc(t.m.imagen)}" alt="${esc(t.m.ancla || t.nombre)}" loading="lazy" data-zoom>` : ''}
+        <p class="rp-califica-t">¿Qué tal te fue?</p>
         <div class="btns rp-notas" role="group" aria-label="Califícate con el semáforo">
-          ${[1, 2, 3, 4].map((n) => `<button class="btn r${n}" data-nota="${n}">${srs.REGLA[n].color || ''} ${srs.REGLA[n].nombre}<small>${prev(n)}</small></button>`).join('')}
+          ${[1, 2, 3, 4].map((n) => `<button class="btn r${n}" data-nota="${n}"><span class="rp-nb">${srs.REGLA[n].color || ''} ${srs.REGLA[n].nombre}</span><small>${prev(n)}</small><kbd class="rp-kbd">${n}</kbd></button>`).join('')}
         </div>
+        <p class="rp-gesto" aria-hidden="true"><span>← Otra vez</span> desliza la tarjeta <span>Bien →</span></p>
         ${mueve === false ? '<p class="rp-nota">Ya la calificaste hoy: esta respuesta no mueve el calendario (R1), solo sirve para llegar a cero errores.</p>' : ''}
-        <p class="rp-atajos">Teclas: 1 🔴 · 2 🟡 · 3 🟢 · 4 🔵 · E mi versión</p></div></div>`;
+        <p class="rp-atajos">Teclas: <kbd class="rp-kbd">1</kbd> 🔴 · <kbd class="rp-kbd">2</kbd> 🟡 · <kbd class="rp-kbd">3</kbd> 🟢 · <kbd class="rp-kbd">4</kbd> 🔵 · <kbd class="rp-kbd">E</kbd> mi versión</p></div></div></div>`;
     enlazar();
+    animarBarra();
+    activarGesto($('#tarjeta', raiz));
     $('#resp', raiz)?.focus({ preventScroll: true });
   }
   function revelar() {
-    const tj = $('#tarjeta', raiz); if (!tj || tj.classList.contains('revelada')) return;
+    const tj = $('#tarjeta', raiz); if (!tj || tj.classList.contains('revelada') || tj.dataset.gira) return;
     const t = ses.actual;
     const escrito = $('#resp', raiz)?.value.trim() || '';
     if (escrito) {
@@ -338,21 +395,93 @@ export function crearRepaso({ ATLAS, MEMO, METODOS = {}, SIGLAS = {}, FACIES = {
       if (c.sugerida) $('.btn.r3', raiz)?.classList.add('sugerida');
       $('.resp', raiz)?.classList.add('rp-oculta-dup');
     }
-    tj.classList.add('revelada'); $('#b-ver', raiz)?.remove();
-    $('.rp-notas .btn.sugerida, .rp-notas .btn', raiz)?.focus({ preventScroll: true });
+    haptico('toque');
+    const listo = () => {
+      tj.classList.add('revelada'); $('#b-ver', raiz)?.remove();
+      $('.rp-notas .btn.sugerida, .rp-notas .btn', raiz)?.focus({ preventScroll: true });
+    };
+    if (sinMov()) return listo();
+    // giro 3D en dos mitades: la cara cambia cuando la tarjeta está de canto
+    tj.dataset.gira = '1'; tj.classList.add('rp-gira-a');
+    setTimeout(() => {
+      tj.classList.remove('rp-gira-a'); listo(); tj.classList.add('rp-gira-b');
+      setTimeout(() => { tj.classList.remove('rp-gira-b'); delete tj.dataset.gira; }, 300);
+    }, 170);
   }
   function pista() {
     const a = $('#rp-ancla', raiz); if (!a) return;
     a.hidden = false; ses.pistas.add(ses.actual.id); $('#rp-pista', raiz)?.setAttribute('disabled', '');
   }
-  function calificar(n) {
-    const t = ses.actual; if (!t) return;
+  let animando = false;
+  function calificar(n, op = {}) {
+    const t = ses.actual; if (!t || animando) return;
     const r = srs.calificar(t.id, n, { fuente: ses.fuente });
     if (ses.ronda === 1) ses.r1[n]++;
     if (n <= 2) ses.falladas.push(t);
     if (r?.editar) ses.editadas.add(t.id);
+    (ses.cuenta ||= { ok: 0, mal: 0 })[n <= 2 ? 'mal' : 'ok']++;
     ses.hechas++;
-    siguiente(); pendientes(); pintar();
+    haptico(n <= 2 ? 'mal' : 'bien');
+    siguiente(); pendientes();
+    const tj = $('#tarjeta', raiz);
+    if (!tj || sinMov()) return pintar();
+    // la tarjeta sale hacia el lado de la nota y entra la siguiente de la pila
+    animando = true;
+    tj.classList.remove('rp-gira-a', 'rp-gira-b');
+    if (!op.ya) tj.classList.add('rp-sale', n <= 2 ? 'rp-sale-izq' : 'rp-sale-der');
+    setTimeout(() => { animando = false; pintar(); }, 230);
+  }
+  /** gestos táctiles sobre la tarjeta revelada: → Bien (3), ← Otra vez (1). Los botones siguen disponibles. */
+  function activarGesto(tj) {
+    if (!tj) return;
+    let id = null, x0 = 0, y0 = 0, dx = 0, arrastra = false, zona = 0;
+    const umbral = () => Math.max(70, Math.min(120, tj.offsetWidth * 0.28));
+    const pintarArrastre = () => {
+      const u = umbral(), p = Math.max(-1, Math.min(1, dx / u));
+      tj.style.transform = `translateX(${dx}px)${sinMov() ? '' : ` rotate(${dx / 22}deg)`}`;
+      tj.style.setProperty('--si', Math.max(0, p).toFixed(3));
+      tj.style.setProperty('--no', Math.max(0, -p).toFixed(3));
+      tj.classList.toggle('rp-listo-si', dx >= u); tj.classList.toggle('rp-listo-no', dx <= -u);
+    };
+    const soltar = (e) => {
+      if (id !== e.pointerId) return;
+      id = null; if (!arrastra) return;
+      arrastra = false; tj.classList.remove('rp-arrastra');
+      if (e.type === 'pointerup' && Math.abs(dx) >= umbral() && !animando) {
+        const der = dx > 0;
+        if (!sinMov()) {
+          tj.style.transition = 'transform .23s ease-in, opacity .23s ease-in';
+          tj.style.transform = `translateX(${der ? '' : '-'}115%) rotate(${der ? 18 : -18}deg)`;
+          tj.style.opacity = '0';
+        }
+        return calificar(der ? 3 : 1, { ya: true });
+      }
+      dx = 0; zona = 0;
+      tj.style.transition = 'transform .3s var(--ease)';
+      tj.style.transform = ''; tj.style.setProperty('--si', 0); tj.style.setProperty('--no', 0);
+      tj.classList.remove('rp-listo-si', 'rp-listo-no');
+      setTimeout(() => { tj.style.transition = ''; }, 320);
+    };
+    tj.addEventListener('pointerdown', (e) => {
+      if (e.pointerType === 'mouse' || animando || !tj.classList.contains('revelada') || tj.dataset.gira) return;
+      if (e.target.closest('button, a, textarea, input, select, summary, label')) return;
+      id = e.pointerId; x0 = e.clientX; y0 = e.clientY; dx = 0; arrastra = false; zona = 0;
+    });
+    tj.addEventListener('pointermove', (e) => {
+      if (id !== e.pointerId) return;
+      const mx = e.clientX - x0, my = e.clientY - y0;
+      if (!arrastra) {
+        if (Math.abs(mx) > 12 && Math.abs(mx) > Math.abs(my) * 1.4) {
+          arrastra = true; tj.classList.add('rp-arrastra'); tj.style.transition = '';
+          try { tj.setPointerCapture(id); } catch { /* sin captura */ }
+        } else if (Math.abs(my) > 12) { id = null; return; } else return;
+      }
+      dx = mx; pintarArrastre();
+      const z = Math.abs(dx) >= umbral() ? Math.sign(dx) : 0;
+      if (z !== zona) { zona = z; if (z) haptico('toque'); }
+    });
+    tj.addEventListener('pointerup', soltar);
+    tj.addEventListener('pointercancel', soltar);
   }
   function pintarResumen(top) {
     const r = ses.r1, tot = r[1] + r[2] + r[3] + r[4];
@@ -362,12 +491,26 @@ export function crearRepaso({ ATLAS, MEMO, METODOS = {}, SIGLAS = {}, FACIES = {
     const sem = ret >= 90 ? '🟢' : ret >= 60 ? '🟡' : '🔴';
     const meta = ses.meta ? `<p class="rp-meta ${ret >= ses.meta ? 'ok' : ''}">Meta ${ses.meta} %: ${ret >= ses.meta ? '✔ lograda' : '✘ aún no — repite el bloque tras un descanso'}</p>` : '';
     const item = (t) => `<li><a href="#p-${esc(t.ref)}" data-ir="${esc(t.ref)}">${esc(t.nombre)}</a> — ${esCloze(t.q) ? clozeHTML(t.q, false) : esc(t.q)}</li>`;
-    raiz.innerHTML = top + `<div class="tarjeta rp-resumen" aria-live="polite">
-      <p class="rp-big">${sem} ${ret} % de retención</p>
-      <div class="rp-kpis"><span>🟢🔵 <b>${r[3] + r[4]}</b></span><span>🟡 <b>${r[2]}</b></span><span>🔴 <b>${r[1]}</b></span></div>
+    const cero = tot > 0 && !ses.sinSalir.length;
+    const celebra = tot > 0 && (ret >= 80 || cero);
+    let dias = 0; try { dias = racha() || 0; } catch { dias = 0; }
+    const titulo = !tot ? 'Sesión terminada' : ret >= 90 ? '¡Sesión excelente!' : ret >= 60 ? '¡Buen trabajo!' : 'Sesión dura: así se aprende';
+    const primera = celebra && !ses.celebrada;
+    if (primera) { ses.celebrada = true; haptico('logro'); }
+    const confeti = primera && !sinMov() ? `<div class="rp-confeti" aria-hidden="true">${Array.from({ length: 30 }, (_, k) =>
+      `<i class="c${k % 4}" style="--x:${(k * 37) % 100}%;--d:${((k * 53) % 40) / 100}s;--g:${(k * 71) % 360}deg;--s:${0.8 + ((k * 13) % 5) / 10}"></i>`).join('')}</div>` : '';
+    const kpi = (ico, n, t, cls, k) => `<div class="rp-kpi ${cls} ds-entra" style="--i:${k}"><span aria-hidden="true">${ico}</span><b>${n}</b><small>${t}</small></div>`;
+    raiz.innerHTML = top + `<div class="tarjeta rp-resumen ${celebra ? 'rp-festeja' : ''}" aria-live="polite">${confeti}
+      <div class="rp-res-cab">
+        <div class="rp-anillo" style="--p:${ret}" role="img" aria-label="${ret} % de retención"><div><b>${ret}%</b><small>retención</small></div></div>
+        <div><p class="rp-big">${esc(titulo)}</p><p class="rp-res-sem">${sem} ${ret} % de retención en la ronda 1</p>${meta}</div>
+      </div>
+      <div class="rp-kpis">
+        ${kpi('✅', r[3] + r[4], 'aciertos', 'ok', 1)}${kpi('🟡', r[2], 'difíciles', 'med', 2)}${kpi('🔴', r[1], 'fallos', 'no', 3)}
+        ${kpi('⏱', mmss(seg), 'min', '', 4)}${kpi('🔥', dias, dias === 1 ? 'día de racha' : 'días de racha', 'racha', 5)}
+      </div>
       <p class="vacio">Ronda 1 · ${tot} tarjetas · ${ses.ronda} ronda${ses.ronda > 1 ? 's' : ''} · ${mmss(seg)} min${ses.pistas.size ? ` · ${ses.pistas.size} pista${ses.pistas.size > 1 ? 's' : ''}` : ''}</p>
-      ${meta}
-      ${ses.sinSalir.length ? `<h3>⏭ Vuelven mañana (${ses.sinSalir.length})</h3><ul class="rp-lista">${ses.sinSalir.map(item).join('')}</ul>` : (tot ? '<p>✅ Llegaste a cero errores.</p>' : '')}
+      ${ses.sinSalir.length ? `<h3>⏭ Vuelven mañana (${ses.sinSalir.length})</h3><ul class="rp-lista">${ses.sinSalir.map(item).join('')}</ul>` : (tot ? '<p class="rp-cero">✅ Llegaste a cero errores.</p>' : '')}
       ${editSes.length ? `<h3>✏️ Para editar (${editSes.length})</h3><p class="vacio">Fallaron 3 días seguidos: espaciarlas no las arregla, hay que reescribirlas o recodificarlas.</p><ul class="rp-lista">${editSes.map(item).join('')}</ul>
         <button class="btn" data-pest="editar">Abrir bandeja "Para editar"</button>` : ''}
       <div class="btns"><button class="btn pri" data-otra>🔁 Otra sesión</button><button class="btn" data-ir-vista="hoy">🏠 Volver a Hoy</button><button class="btn" data-ir-vista="progreso">📊 Progreso</button></div></div>`;
@@ -403,7 +546,7 @@ export function crearRepaso({ ATLAS, MEMO, METODOS = {}, SIGLAS = {}, FACIES = {
           <button class="btn r3" data-arreglada="${esc(t.id)}">✅ Ya la arreglé</button></div>${ed}</li>`;
     };
     raiz.innerHTML = pestanas() + `<p class="rp-nota">Si una pregunta falla 3 días seguidos, la pregunta está mal diseñada o el dato necesita otra técnica: espaciarla no la arregla (#040, #038). Arréglala y márcala: vuelve al escalón 0.</p>
-      ${lista.length ? `<ul class="rp-edlista">${lista.map(tarjetaEd).join('')}</ul>` : '<div class="fin"><b>✨</b>No tienes tarjetas para editar.</div>'}`;
+      ${lista.length ? `<ul class="rp-edlista">${lista.map((t, k) => tarjetaEd(t).replace('<li class="rp-ed">', `<li class="rp-ed ds-entra" style="--i:${Math.min(k, 8)}">`)).join('')}</ul>` : '<div class="rp-vacio ds-entra"><div class="rp-vacio-ico" aria-hidden="true">✨</div><h2 class="rp-vacio-t">Bandeja limpia</h2><p>No tienes tarjetas para editar. Cuando una falle 3 días seguidos aparecerá aquí para que la recodifiques.</p></div>'}`;
     enlazar();
   }
 
@@ -459,9 +602,9 @@ export function crearRepaso({ ATLAS, MEMO, METODOS = {}, SIGLAS = {}, FACIES = {
   function simRun() {
     const it = sim.items[sim.i];
     const r = Math.max(0, Math.round((sim.fin - Date.now()) / 1000));
-    raiz.innerHTML = pestanas() + `<div class="rp-cab"><span>🎯 Pregunta ${sim.i + 1}/${sim.items.length}</span><b id="sim-reloj" class="rp-reloj">⏱ ${mmss(r)}</b>
-      <div class="rp-barra"><i style="width:${(100 * sim.i) / sim.items.length}%"></i></div></div>
-      <div class="tarjeta"><div class="meta"><span>${esc(nombreGrupo(it.t.sec))}</span><span>sin pistas</span></div>
+    raiz.innerHTML = pestanas() + `<div class="rp-cab rp-prog rp-prog-sim"><span>🎯 Pregunta <b>${sim.i + 1}</b>/${sim.items.length}</span><b id="sim-reloj" class="rp-reloj">⏱ ${mmss(r)}</b>
+      <div class="rp-prog-barra" role="progressbar" aria-label="Progreso del simulacro" aria-valuemin="0" aria-valuemax="${sim.items.length}" aria-valuenow="${sim.i}"><i style="width:${(100 * sim.i) / sim.items.length}%"></i></div></div>
+      <div class="tarjeta rp-card-sim"><div class="meta"><span>${esc(nombreGrupo(it.t.sec))}</span><span>sin pistas</span></div>
       <div class="q">${esCloze(it.t.q) ? clozeHTML(it.t.q, false) : esc(it.t.q)}</div>
       <label class="rp-sr" for="sim-resp">Tu respuesta</label><textarea id="sim-resp" placeholder="Responde como en el examen… (Ctrl+Enter: siguiente)">${esc(it.resp)}</textarea>
       <div class="btns">${sim.i > 0 ? '<button class="btn" data-sim-prev>← Anterior</button>' : ''}
@@ -473,12 +616,12 @@ export function crearRepaso({ ATLAS, MEMO, METODOS = {}, SIGLAS = {}, FACIES = {
     const it = sim.items[sim.i];
     if (!it) { simGuardar(); sim.fase = 'res'; return pintar(); }
     const c = it.resp.trim() ? comparar(it.resp, it.t.a) : null;
-    raiz.innerHTML = pestanas() + `<div class="rp-cab"><span>✍️ Corrección ${sim.i + 1}/${sim.items.length}</span><div class="rp-barra"><i style="width:${(100 * sim.i) / sim.items.length}%"></i></div></div>
+    raiz.innerHTML = pestanas() + `<div class="rp-cab rp-prog rp-prog-sim"><span>✍️ Corrección <b>${sim.i + 1}</b>/${sim.items.length}</span><div class="rp-prog-barra" aria-hidden="true"><i style="width:${(100 * sim.i) / sim.items.length}%"></i></div></div>
       <div class="tarjeta revelada"><div class="meta"><span>${esc(nombreGrupo(it.t.sec))} · ${esc(it.t.nombre)}</span></div>
       <div class="q">${esCloze(it.t.q) ? clozeHTML(it.t.q, true) : esc(it.t.q)}</div>
       <div class="rp-compara"><div><span class="h">Tú escribiste</span><p>${it.resp.trim() ? esc(it.resp) : '<i class="vacio">(en blanco)</i>'}</p></div><div><span class="h">Respuesta</span><p>${resaltar(it.t.a)}</p></div></div>
       ${c?.cifras.length ? `<p class="rp-cifras">Cifras: ${c.cifras.map((x) => `<span class="${x.ok ? 'ok' : 'no'}">${esc(x.n)} ${x.ok ? '✓' : '✗'}</span>`).join(' ')}</p>` : ''}
-      <div class="btns"><button class="btn r1" data-sim-ok="0">✗ Incorrecta (1)</button><button class="btn r3 ${c?.sugerida ? 'sugerida' : ''}" data-sim-ok="1">✓ Correcta (3)</button></div></div>`;
+      <div class="btns"><button class="btn r1" data-sim-ok="0">✗ Incorrecta <kbd class="rp-kbd">1</kbd></button><button class="btn r3 ${c?.sugerida ? 'sugerida' : ''}" data-sim-ok="1">✓ Correcta <kbd class="rp-kbd">3</kbd></button></div></div>`;
     enlazar();
   }
   function simCalificar(ok) {
@@ -561,7 +704,7 @@ export function crearRepaso({ ATLAS, MEMO, METODOS = {}, SIGLAS = {}, FACIES = {
       else if (sim?.fase === 'rev' && !enTexto && (e.key === '1' || e.key === '3')) simCalificar(e.key === '3');
       return;
     }
-    if (pestana !== 'repasar' || !ses) return;
+    if (pestana !== 'repasar' || !ses || animando) return;
     if (ses.fase === 'entre' && !enTexto && e.key === ' ') { e.preventDefault(); empezarRonda(); return pintar(); }
     if (ses.fase !== 'tarjeta') return;
     const rev = $('#tarjeta', raiz)?.classList.contains('revelada');

@@ -4,6 +4,7 @@
 // rondas solo con los errores hasta cero errores (#031, #040), feedback inmediato.
 import { levenshtein, cobertura, sinMov, seguirSinMov, idCarta } from './juego-util.js';
 import * as mias from './mias.js';
+import { haptico } from './util.js';
 
 const esc = (t) => String(t ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const norm = (t) => String(t ?? '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ ]/g, '').trim();
@@ -238,12 +239,15 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
   function confeti() {
     if (sinMov()) return;
     const c = document.createElement('div'); c.className = 'ent-confeti'; c.setAttribute('aria-hidden', 'true');
-    const col = ['#f43f5e', '#f59e0b', '#10b981', '#3b82f6', '#a855f7', '#ec4899'];
+    const col = ['#7c3aed', '#a21caf', '#db2777', '#f472b6', '#a78bfa', '#facc15'];
     c.innerHTML = Array.from({ length: 36 }, (_, i) => `<i style="left:${(Math.random() * 100).toFixed(1)}%;background:${col[i % col.length]};animation-delay:${(Math.random() * 0.5).toFixed(2)}s"></i>`).join('');
     raiz.appendChild(c); setTimeout(() => c.remove(), 2600);
   }
+  let ultHap = 0;
+  const vibra = (tipo) => { const t = Date.now(); if (t - ultHap < 160) return; ultHap = t; haptico(tipo); };
   function flash(el, ok) {
     if (!el) return;
+    vibra(ok ? 'bien' : 'mal');
     el.classList.remove('ent-ok', 'ent-mal'); void el.offsetWidth;
     el.classList.add(ok ? 'ent-ok' : 'ent-mal');
   }
@@ -269,23 +273,30 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
     if (r) { r.textContent = M.racha; r.parentElement.classList.remove('ent-bump'); void r.offsetWidth; if (ok) r.parentElement.classList.add('ent-bump'); }
     const a = $('#ent-ac'); if (a) a.textContent = M.ok;
     const b = $('#ent-barra'); if (b && M.total) b.style.width = `${(100 * M.n / M.total).toFixed(1)}%`;
-    if (ok && M.racha % 5 === 0) { brindis(`🔥 ¡Racha de ${M.racha}!`, 'racha'); xp(5, `racha ${M.racha}`); }
+    if (ok && M.racha % 5 === 0) { brindis(`🔥 ¡Racha de ${M.racha}!`, 'racha'); xp(5, `racha ${M.racha}`); ultHap = 0; vibra('logro'); }
   }
   // pantalla final con ronda de errores (recuerdo activo: solo se repite lo fallado)
   function fin(j, M, { otra, errores, resumen = '' }) {
     limpiar();
     const pct = M.total ? Math.round(100 * M.ok / M.total) : 0;
-    const sem = pct >= 90 ? ['🟢', '¡Dominado!'] : pct >= 60 ? ['🟡', 'Vas bien: repasa los errores'] : ['🔴', 'Toca repetir los errores'];
+    const sem = pct >= 90 ? ['🟢', '¡Dominado!', 'si'] : pct >= 60 ? ['🟡', 'Vas bien: repasa los errores', 'medio'] : ['🔴', 'Toca repetir los errores', 'no'];
     const r = record(`racha:${j.id}`, M.mejor);
-    if (pct === 100 && M.total) confeti();
+    const prevPct = rec(`pct:${j.id}`);
+    const rp = M.total ? record(`pct:${j.id}`, pct) : { mejor: false };
+    const nuevoRec = (r.mejor && M.mejor > 0) || (rp.mejor && pct > 0);
+    if ((pct === 100 && M.total) || nuevoRec) confeti();
+    ultHap = 0; vibra(pct === 100 || nuevoRec ? 'logro' : pct >= 60 ? 'bien' : 'toque');
     xp(10 + Math.round(pct / 10), `ronda ${j.id}`);
     contarJugada(j.id);
     if (M.total) guardarHist(j.id, pct, M.total);
     acc = { menu, otra, errores: () => errores(M.errores.map((e) => e.item)) };
-    raiz.innerHTML = `<div class="ent-juego"><div class="ent-fin ent-pop">
-      <div class="ent-medalla">${sem[0]}</div><h3>${sem[1]}</h3>
-      <div class="ent-kpis"><div><b>${M.ok}/${M.total}</b><span>aciertos</span></div><div><b>${pct}%</b><span>efectividad</span></div>
-        <div><b>${mmss(Date.now() - M.t0)}</b><span>tiempo</span></div><div><b>🔥 ${M.mejor}</b><span>mejor racha${r.mejor ? ' · ¡récord!' : ''}</span></div></div>
+    raiz.innerHTML = `<div class="ent-juego"><div class="ent-fin ent-pop ${j.c}">
+      <p class="ent-fin-juego"><span aria-hidden="true">${j.ic}</span> ${esc(j.t)}</p>
+      <div class="ent-anillo ${sem[2]}" style="--p:${pct}" role="img" aria-label="${pct} % de aciertos"><b>${pct}<small>%</small></b><span aria-hidden="true">${sem[0]}</span></div>
+      <h3>${sem[1]}</h3>
+      ${nuevoRec ? '<p class="ent-nuevo-rec">🏆 ¡Nuevo récord personal!</p>' : prevPct != null && M.total ? `<p class="ent-sub">Tu mejor ronda: <b>${Math.max(prevPct, pct)} %</b></p>` : ''}
+      <div class="ent-kpis"><div><b>${M.ok}/${M.total}</b><span>aciertos</span></div><div><b>${mmss(Date.now() - M.t0)}</b><span>tiempo</span></div>
+        <div><b>🔥 ${M.mejor}</b><span>mejor racha${r.mejor ? ' · ¡récord!' : ''}</span></div><div><b>${rec(`racha:${j.id}`) ?? M.mejor}</b><span>récord de racha</span></div></div>
       ${resumen}
       ${M.errores.length ? `<details class="ent-errores" open><summary>❌ Errores (${M.errores.length})</summary><ul>${M.errores.map((e) => `<li>${e.html}</li>`).join('')}</ul></details>` : ''}
       <div class="ent-btns">
@@ -293,6 +304,7 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
         <button class="ent-b ${M.errores.length && errores ? '' : 'pri'}" data-acc="otra">▶ Otra ronda</button>
         <button class="ent-b" data-acc="menu">🏠 Juegos</button>
       </div></div></div>`;
+    setTimeout(() => raiz.querySelector('.ent-fin .ent-b.pri')?.focus({ preventScroll: true }), 60);
   }
   // botones de opción múltiple
   const opciones = (ops, attr = 'op') => `<div class="ent-ops">${ops.map((o, i) =>
@@ -315,27 +327,81 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
   const juego = (id) => JUEGOS.find((j) => j.id === id);
 
   // ---------- menú ----------
+  const hoyF = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
+  // estadística del menú: últimas rondas por juego, sugerencia y resumen
+  function estadistica() {
+    const e = leer(); const hist = e.hist || [];
+    const por = {}; for (const h of hist) (por[h.juego] ||= []).push(h);
+    const hoy = hoyF(); const semana = Date.now() - 7 * 86400000;
+    const hoyN = hist.filter((h) => h.fecha === hoy).length;
+    const sem = hist.filter((h) => (h.t || 0) >= semana);
+    const nSem = sem.reduce((a, h) => a + (h.n || 0), 0);
+    const ret = nSem ? Math.round(sem.reduce((a, h) => a + h.pct * (h.n || 0), 0) / nSem) : null;
+    const rachas = Object.entries(e.rec || {}).filter(([k]) => k.startsWith('racha:')).map(([, v]) => +v || 0);
+    // sugerencia: lo que nunca jugaste → lo que más tiempo llevas sin jugar → tu retención más baja
+    let sug = JUEGOS.find((j) => !por[j.id] && !e.jug?.[j.id]);
+    let porque = 'Aún no lo has probado';
+    if (!sug) {
+      const ult = (j) => por[j.id]?.at(-1)?.t || 0;
+      const viejo = [...JUEGOS].sort((x, y) => ult(x) - ult(y))[0];
+      const dias = Math.floor((Date.now() - ult(viejo)) / 86400000);
+      if (dias >= 1) { sug = viejo; porque = ult(viejo) ? `Hace ${dias} día${dias === 1 ? '' : 's'} que no lo practicas` : 'Sin rondas registradas'; }
+      else {
+        sug = [...JUEGOS].filter((j) => por[j.id]).sort((x, y) => por[x.id].at(-1).pct - por[y.id].at(-1).pct)[0] || JUEGOS[0];
+        porque = por[sug.id] ? `Tu última ronda fue de ${por[sug.id].at(-1).pct} %: súbela` : 'Para empezar';
+      }
+    }
+    return { por, hoyN, ret, mejorRacha: rachas.length ? Math.max(...rachas) : 0, sug, porque, jug: e.jug || {} };
+  }
+  const chispa = (lista = []) => {
+    const u = lista.slice(-6);
+    if (!u.length) return '<span class="ent-spark vacia" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>';
+    return `<span class="ent-spark" role="img" aria-label="Últimas rondas: ${u.map((h) => `${h.pct} %`).join(', ')}">${u.map((h) =>
+      `<i class="${h.pct >= 90 ? 'v' : h.pct >= 60 ? 'a' : 'r'}" style="height:${Math.max(14, h.pct)}%"></i>`).join('')}</span>`;
+  };
+
   function menu() {
-    limpiar(); activo = null; acc = { jugar: (b) => JUEGOS_FN[b.dataset.j](), test: () => { const e = leer(); e.test = !e.test; guardar(e); menu(); } };
+    limpiar(); activo = null; acc = { jugar: (b) => { haptico('toque'); JUEGOS_FN[b.dataset.j](); }, test: () => { const e = leer(); e.test = !e.test; guardar(e); menu(); } };
     let nivel = '';
     try {
       const n = JE?.nivel?.();
-      if (n) nivel = `<div class="ent-nivel">⭐ Nivel <b>${esc(n.n)}</b> · ${esc(n.xp)} XP${n.siguiente ? ` <small>(siguiente: ${esc(n.siguiente)})</small>` : ''}${JE.racha ? ` · 🔥 ${esc(JE.racha())} días` : ''}</div>`;
+      if (n) {
+        const sigN = Number(n.siguiente); const xpN = Number(n.xp);
+        const pctN = Number.isFinite(n.progreso) ? Math.round(100 * Math.min(1, Math.max(0, n.progreso)))
+          : Number.isFinite(sigN) && sigN > 0 && Number.isFinite(xpN) ? Math.min(100, Math.round(100 * xpN / sigN)) : null;
+        nivel = `<div class="ent-nivel" title="${esc(n.xp)} XP${n.siguiente ? ` · siguiente nivel: ${esc(n.siguiente)}` : ''}"><span class="ent-nv">Nv ${esc(n.n)}</span>
+          <span class="ent-nv-tx"><b>${esc(n.xp)} XP</b>${JE.racha ? `<small>🔥 ${esc(JE.racha())} días</small>` : ''}</span>
+          ${pctN != null ? `<span class="ent-nv-barra" aria-hidden="true"><i style="width:${pctN}%"></i></span>` : ''}</div>`;
+      }
     } catch { /* opcional */ }
+    const E = estadistica();
     const info = {
-      mayor: () => (rec('racha:mayor') ? `🔥 mejor racha ${rec('racha:mayor')}` : '100 imágenes fijas'),
-      siglas: () => `${GLOS.length} siglas${rec('racha:siglas') ? ` · 🔥 ${rec('racha:siglas')}` : ''}`,
-      reloj: () => (rec('reloj:todas') != null ? `🏆 récord ${rec('reloj:todas')} pts` : 'sin récord aún'),
+      mayor: () => (rec('racha:mayor') ? `🔥 racha ${rec('racha:mayor')}` : '100 imágenes fijas'),
+      siglas: () => (rec('racha:siglas') ? `🔥 racha ${rec('racha:siglas')}` : `${GLOS.length} siglas`),
+      reloj: () => (rec('reloj:todas') != null ? `🏆 ${rec('reloj:todas')} pts` : 'sin récord aún'),
       match: () => (rec('match:valores') != null ? `🏆 ${mmss(rec('match:valores'))}` : '3 modos'),
-      caso: () => `${PARAMS_CASO.length} parámetros con rango`,
-      facies: () => `${FAC.length} facies`,
-      orden: () => `${LISTAS.length} listas y tramos`,
+      caso: () => (rec('pct:caso') != null ? `🏆 ${rec('pct:caso')} %` : `${PARAMS_CASO.length} parámetros`),
+      facies: () => (rec('pct:facies') != null ? `🏆 ${rec('pct:facies')} %` : `${FAC.length} facies`),
+      orden: () => (rec('pct:orden') != null ? `🏆 ${rec('pct:orden')} %` : `${LISTAS.length} listas`),
     };
-    raiz.innerHTML = `<div class="ent-menu ent-in">
-      <div class="ent-hero"><div><h2>🏋️ Entrenar</h2><p>Recuerdo activo en modo juego: responde de memoria, mira el feedback y repite solo lo que fallaste.</p></div>${nivel}</div>
-      <div class="ent-grid">${JUEGOS.map((j, i) => `<button class="ent-card ${j.c}" data-acc="jugar" data-j="${j.id}" style="animation-delay:${i * 60}ms">
-        <span class="ent-ic" aria-hidden="true">${j.ic}</span><b>${esc(j.t)}</b><span class="ent-d">${esc(j.d)}</span><span class="ent-rec">${esc(info[j.id]())}</span>
-        ${FORMATO.has(j.id) ? '<span class="ent-formato">🎮 práctica de formato (no mueve tu calendario)</span>' : ''}</button>`).join('')}</div>
+    const s = E.sug;
+    raiz.innerHTML = `<div class="ent-menu">
+      <header class="ent-hero ds-entra"><div><h2 class="ds-titulo">Entrenar</h2><p class="ds-sub">Responde de memoria, mira el feedback y repite solo lo que fallaste.</p></div>${nivel}</header>
+      <div class="ent-resumen ds-entra" style="--i:1">
+        <div><b>${E.hoyN}</b><span>rondas hoy</span></div>
+        <div><b>${E.ret != null ? `${E.ret}<small>%</small>` : '—'}</b><span>retención 7 días</span></div>
+        <div><b>🔥 ${E.mejorRacha}</b><span>mejor racha</span></div>
+      </div>
+      <button class="ent-sugerido ds-entra" style="--i:2" data-acc="jugar" data-j="${s.id}">
+        <span class="ent-sug-ic" aria-hidden="true">${s.ic}</span>
+        <span class="ent-sug-tx"><small>Sugerido ahora</small><b>${esc(s.t)}</b><span>${esc(E.porque)}</span></span>
+        <span class="ent-sug-play" aria-hidden="true">▶</span></button>
+      <h3 class="ent-h">Los ${JUEGOS.length} minijuegos</h3>
+      <div class="ent-grid">${JUEGOS.map((j, i) => `<button class="ent-card ${j.c} ds-entra" data-acc="jugar" data-j="${j.id}" style="--i:${i + 3}">
+        <span class="ent-ic" aria-hidden="true">${j.ic}</span>
+        <span class="ent-card-tx"><b>${esc(j.t)}</b><span class="ent-d">${esc(j.d)}</span></span>
+        <span class="ent-card-pie"><span class="ent-rec">${esc(info[j.id]())}</span>${E.jug[j.id] ? `<span class="ent-jug">${E.jug[j.id]} ronda${E.jug[j.id] === 1 ? '' : 's'}</span>` : '<span class="ent-jug nuevo">nuevo</span>'}${chispa(E.por[j.id])}</span>
+        ${FORMATO.has(j.id) ? '<span class="ent-formato">🎮 práctica de formato · no mueve tu calendario</span>' : ''}</button>`).join('')}</div>
       <label class="ent-test"><input type="checkbox" data-acc="test" ${modoTest() ? 'checked' : ''}> <span><b>Modo examen tipo test</b><small>Siglas y Facies empiezan con 4 opciones. Apagado, primero respondes escribiendo: ver opciones te hace reconocer, no recordar.</small></span></label>
       <p class="ent-nota">Teclado: 1-4 eligen opción · Enter sigue · Esc vuelve al menú.</p>
     </div>`;
@@ -852,6 +918,7 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
       const clave = `reloj:${relojSec || 'todas'}`;
       const r = record(clave, pts);
       if (r.mejor || (r.prev == null && pts > 0)) confeti();
+      ultHap = 0; vibra(r.mejor ? 'logro' : 'toque');
       xp(Math.round(pts / 10), 'contrarreloj');
       contarJugada('reloj');
       if (M.n) guardarHist('reloj', Math.round(100 * M.ok / M.n), M.n);
@@ -1005,6 +1072,7 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
       corregir: () => {
         raiz.querySelectorAll('[data-acc="marca"]').forEach((x) => { x.disabled = true; });
         $('#ent-corregir').remove();
+        ultHap = Date.now();   // una sola vibración para todo el caso, no una por fila
         filas.forEach((x, k) => {
           const ok = marcas[k] === x.estado;
           const el = $(`#ent-hc-${k}`);
@@ -1016,6 +1084,7 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
           el.querySelector('.ent-hc-fb').innerHTML = `${ok ? '✅' : `❌ Era <b>${ESTADOS[x.estado][1].toLowerCase()}</b>.`} Normal: ${esc(corto(x.f.normal.t, 110))}
             ${valido(extra) ? `<br>${x.estado === 'alto' ? '🔺' : '🔻'} ${esc(corto(extra, 140))}` : ''}${pistaMemo(MEMO[x.f.id]) ? `<br><span class="ent-memo">${pistaMemo(MEMO[x.f.id])}</span>` : ''}`;
         });
+        ultHap = 0; if (M.ok !== M.total) vibra(M.ok * 2 >= M.total ? 'bien' : 'mal');
         if (M.ok) xp(M.ok * 2, 'caso clínico');
         const errores = filas.filter((x, k) => marcas[k] !== x.estado);
         raiz.querySelector('.ent-hc').insertAdjacentHTML('beforeend', `<div class="ent-feedback ${M.ok === M.total ? 'si' : 'no'} ent-pop">
@@ -1025,7 +1094,8 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
         limpiar();
         record('racha:caso', M.mejor); contarJugada('caso');
         guardarHist('caso', Math.round(100 * M.ok / M.total), M.total);
-        if (M.ok === M.total) { confeti(); xp(10, 'caso perfecto'); }
+        record('pct:caso', Math.round(100 * M.ok / M.total));
+        if (M.ok === M.total) { confeti(); xp(10, 'caso perfecto'); ultHap = 0; vibra('logro'); }
         acc.errores = () => caso(errores.map((x) => PARAMS_CASO.find((p) => p.f.id === x.f.id)));
         acc.sig = () => caso();
       },

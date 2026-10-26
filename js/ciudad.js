@@ -4,7 +4,7 @@
 // espaciado al día, a la semana y al mes (#190, #148): cada lugar es la tarjeta srs `pal:${sid}`.
 // Eventos: window.dispatchEvent(new CustomEvent('memo:palacio', { detail: { sid, modo } })) abre un lugar
 // (modo opcional: 'adelante' | 'reves' | 'azar' | 'vacio' arranca el paseo).
-import { esc } from './util.js';
+import { esc, haptico } from './util.js';
 import * as mias from './mias.js';
 
 const CLAVE = 'memo-semio-ciudad';
@@ -62,17 +62,45 @@ export function crearCiudad({ ATLAS, MEMO, PALACIOS, srs, raiz }) {
   let abierto = null; // lugar abierto
   let paseo = null;   // { sid, modo, orden, i, revelado, ronda, notas, t0, pista, resumen }
 
+  // foto del lugar (img/lugares/<sid>.webp); si no existe, queda el emoji de debajo
+  const foto = (sid, cls = 'cd-foto', carga = 'lazy') => `<span class="${cls}" aria-hidden="true"><span class="cd-foto-ic">${PALACIOS.lugares[sid]?.icono || '📍'}</span>
+    <img src="img/lugares/${esc(sid)}.webp" alt="" loading="${carga}" decoding="async" onerror="this.remove()"></span>`;
+  // estado de cada parada: 'toca' (vence hoy) · 'ok' (al día) · 'nuevo' (sin pasear)
+  const estadoPal = (sid) => (!infoPal(sid) ? 'nuevo' : vencePal(sid) ? 'toca' : 'ok');
+
   function mapa() {
     const orden = PALACIOS.orden_paseo;
+    const st = leer();
     const tocan = orden.filter(vencePal);
-    raiz.innerHTML = `<p class="porque">🗺️ Tu atlas es un paseo por <b>${esc(PALACIOS.ciudad)}</b>. Cada sección vive en un lugar real y cada dato en una estación del recorrido
-      (${TOTAL} estaciones numeradas de corrido). Recorre el paseo con los ojos cerrados: en cada parada, ¿qué dato está y cuál es su valor? <i>${esc(PALACIOS._nota || '')}</i></p>
-      ${tocan.length ? `<div class="cd-hoy"><b>🏛️ Hoy toca pasear (${tocan.length}):</b> ${tocan.map((sid) => `<button class="chip" data-lugar="${sid}">${PALACIOS.lugares[sid].icono} ${esc(PALACIOS.lugares[sid].lugar)}</button>`).join(' ')}</div>` : ''}
-      <div class="paseo">${orden.map((sid, i) => {
+    const paseados = orden.filter((sid) => infoPal(sid) || st.ultimo?.[sid]).length;
+    const pcts = orden.map((sid) => st.ultimo?.[sid]?.pct).filter((x) => x != null);
+    const media = pcts.length ? Math.round(pcts.reduce((x, y) => x + y, 0) / pcts.length) : null;
+    const sig = tocan[0] || orden.find((sid) => estadoPal(sid) === 'nuevo' && !st.ultimo?.[sid]) || null;
+    const porque = !sig ? '' : tocan.includes(sig) ? 'Toca repasarlo hoy' : st.vacio?.[sig] ? 'Ya recorriste el lugar vacío: carga los datos' : 'Aún no lo paseas: empieza por el recorrido vacío';
+    const pctRuta = Math.round(100 * paseados / Math.max(1, orden.length));
+    raiz.innerHTML = `<header class="cd-cab ds-entra"><h2 class="ds-titulo">Ciudad-palacio</h2>
+        <p class="ds-sub">Tu atlas es un paseo por <b>${esc(PALACIOS.ciudad)}</b>: ${orden.length} lugares y ${TOTAL} estaciones numeradas de corrido. En cada parada, ¿qué dato está y cuál es su valor?</p></header>
+      <div class="cd-resumen ds-entra" style="--i:1">
+        <div class="cd-anillo" style="--p:${pctRuta}" role="img" aria-label="${paseados} de ${orden.length} lugares paseados"><b>${paseados}<small>/${orden.length}</small></b></div>
+        <div class="cd-res-tx"><b>${paseados ? `${paseados} lugar${paseados === 1 ? '' : 'es'} paseado${paseados === 1 ? '' : 's'}` : 'Empieza tu primer paseo'}</b>
+          <span>${tocan.length ? `🏛️ ${tocan.length} para repasar hoy` : paseados ? '✅ Nada vence hoy' : 'Cada lugar se programa al terminarlo'}${media != null ? ` · ${media}% 🟢 de media` : ''}</span></div>
+      </div>
+      ${sig ? `<button class="cd-siguiente ds-entra" style="--i:2" data-lugar="${sig}">${foto(sig, 'cd-sig-foto', 'eager')}
+        <span class="cd-sig-tx"><small>${tocan.includes(sig) ? 'Hoy toca' : 'Siguiente parada'} · ${orden.indexOf(sig) + 1} de ${orden.length}</small>
+          <b>${PALACIOS.lugares[sig].icono} ${esc(PALACIOS.lugares[sig].lugar)}</b><span>${esc(porque)}</span></span><span class="cd-sig-play" aria-hidden="true">▶</span></button>` : ''}
+      ${tocan.length > 1 ? `<div class="cd-hoy"><b>🏛️ Hoy toca pasear (${tocan.length}):</b> ${tocan.map((sid) => `<button class="chip" data-lugar="${sid}">${PALACIOS.lugares[sid].icono} ${esc(PALACIOS.lugares[sid].lugar)}</button>`).join(' ')}</div>` : ''}
+      <h3 class="cd-h">La ruta</h3>
+      <ol class="cd-ruta" aria-label="Paradas del paseo, en orden">${orden.map((sid, i) => {
         const L = PALACIOS.lugares[sid]; const est = estaciones(sid); const con = est.filter((e) => e.m).length;
-        return `<button class="parada" data-lugar="${sid}"><span class="pn">${i + 1}</span><span class="pi">${L.icono}</span>
-          <span class="pt"><b>${esc(L.lugar)}</b><small>${esc(titulo(sid))} · estaciones #${glob(sid, 0)}–#${glob(sid, est.length - 1)} · 🧠 ${con}</small>${chipPal(sid)}</span></button>`;
-      }).join('<div class="tramo"></div>')}</div>`;
+        const e = estadoPal(sid); const ult = st.ultimo?.[sid]; const hecho = e !== 'nuevo' || !!ult;
+        return `<li class="cd-stop ${hecho ? 'hecho' : ''} ${e} ds-entra" style="--i:${Math.min(i + 3, 14)}">
+          <span class="cd-nodo" aria-hidden="true">${hecho && e !== 'toca' ? '✓' : i + 1}</span>
+          <button class="cd-parada" data-lugar="${sid}" aria-label="Parada ${i + 1}: ${esc(L.lugar)}">${foto(sid)}
+            <span class="cd-pt"><b>${esc(L.lugar)}</b><small>${esc(titulo(sid))} · #${glob(sid, 0)}–#${glob(sid, est.length - 1)} · 🧠 ${con}</small>
+              <span class="cd-prog" aria-hidden="true"><i style="width:${ult ? ult.pct : 0}%"></i></span>
+              <span class="cd-pie">${chipPal(sid)}${ult ? `<span class="cd-pct">${ult.pct}% 🟢</span>` : ''}</span></span></button></li>`;
+      }).join('')}</ol>
+      ${PALACIOS._nota ? `<p class="porque cd-nota"><i>${esc(PALACIOS._nota)}</i></p>` : ''}`;
   }
 
   function lugar(sid) {
@@ -80,8 +108,14 @@ export function crearCiudad({ ATLAS, MEMO, PALACIOS, srs, raiz }) {
     const vacio = st.vacio?.[sid]; const ult = st.ultimo?.[sid];
     const tramos = [];
     for (let t = 0; t * TRAMO < est.length; t++) tramos.push(est.slice(t * TRAMO, t * TRAMO + TRAMO));
-    raiz.innerHTML = `<div class="rep-top"><button class="btn" data-volver>← Mapa del paseo</button></div>
-      <h2 class="lugar-t">${L.icono} ${esc(L.lugar)}</h2><p class="porque">${esc(titulo(sid))} — ${esc(L.porque)}</p>
+    const orden = PALACIOS.orden_paseo; const iL = orden.indexOf(sid);
+    const ant = orden[iL - 1], sigL = orden[iL + 1];
+    raiz.innerHTML = `<div class="rep-top cd-top"><button class="btn" data-volver>← La ruta</button>
+        <span class="cd-flechas">${ant ? `<button class="btn" data-lugar="${ant}" aria-label="Parada anterior: ${esc(PALACIOS.lugares[ant].lugar)}">‹</button>` : ''}${sigL ? `<button class="btn" data-lugar="${sigL}" aria-label="Parada siguiente: ${esc(PALACIOS.lugares[sigL].lugar)}">›</button>` : ''}</span></div>
+      <header class="cd-hero ds-entra">${foto(sid, 'cd-hero-foto', 'eager')}
+        <div class="cd-hero-tx"><span class="cd-hero-n">Parada ${iL + 1} de ${orden.length} · ${est.length} estaciones</span>
+          <h2 class="lugar-t">${L.icono} ${esc(L.lugar)}</h2><p>${esc(titulo(sid))}</p></div></header>
+      <p class="porque">${esc(L.porque)}</p>
       <div class="cd-estado">${chipPal(sid)}
         ${ult ? `<span class="cd-chip">último paseo ${fechaCorta(ult.fecha)} · ${ult.pct}% 🟢</span>` : ''}
         ${vacio ? `<span class="cd-chip">🧭 recorrido vacío ${fechaCorta(vacio)}</span>` : ''}
@@ -132,8 +166,8 @@ export function crearCiudad({ ATLAS, MEMO, PALACIOS, srs, raiz }) {
       : `<div class="cd-sem" role="group" aria-label="Califícate"><button class="btn cd-r" data-nota="r">🔴 No la recordé <kbd>1</kbd></button>
           <button class="btn cd-a" data-nota="a">🟡 Con dudas <kbd>2</kbd></button><button class="btn cd-v" data-nota="v">🟢 La tenía <kbd>3</kbd></button></div>`;
     const pct = (100 * paseo.i / paseo.orden.length).toFixed(1);
-    raiz.innerHTML = `<div class="cd-barra" aria-hidden="true"><i style="width:${pct}%"></i></div>
-      <div class="tarjeta ${paseo.revelado ? 'revelada' : ''}">
+    raiz.innerHTML = `<div class="cd-barra" role="progressbar" aria-label="Avance del paseo" aria-valuemin="0" aria-valuemax="${paseo.orden.length}" aria-valuenow="${paseo.i}"><i style="width:${pct}%"></i></div>
+      <div class="tarjeta cd-tarjeta ${paseo.revelado ? 'revelada' : 'ds-entra'}">
       <div class="meta"><span>${L.icono} ${esc(L.lugar)} · ${MODOS[paseo.modo].ic} ${MODOS[paseo.modo].t}${paseo.ronda > 1 ? ` · 🔁 ronda ${paseo.ronda}` : ''}</span><span>${paseo.i + 1} / ${paseo.orden.length}</span></div>
       <p class="cd-num">Tramo ${tramo} · estación ${local} · <b>#${glob(paseo.sid, e.n)} del paseo</b></p>
       <div class="q">${q}</div>
@@ -153,6 +187,7 @@ export function crearCiudad({ ATLAS, MEMO, PALACIOS, srs, raiz }) {
   function calificarEstacion(nota) {
     if (!paseo || !paseo.revelado || paseo.resumen) return;
     paseo.notas[paseo.orden[paseo.i]] = nota;
+    haptico(nota === 'v' ? 'bien' : nota === 'r' ? 'mal' : 'toque');
     paseo.i += 1; paseo.revelado = false; paseo.pista = false;
     pasoPaseo();
   }
@@ -166,6 +201,7 @@ export function crearCiudad({ ATLAS, MEMO, PALACIOS, srs, raiz }) {
     const pct = n ? Math.round(100 * v / n) : 0;
     const fallidas = paseo.orden.filter((k) => paseo.notas[k] !== 'v').sort((x, y) => x - y);
     const vacio = modo === 'vacio';
+    haptico(pct >= 90 ? 'logro' : 'bien');
     const st = leer();
     let srsTxt = '';
     if (vacio) {
@@ -183,7 +219,7 @@ export function crearCiudad({ ATLAS, MEMO, PALACIOS, srs, raiz }) {
     }
     const sig = PALACIOS.orden_paseo[PALACIOS.orden_paseo.indexOf(sid) + 1];
     const lista = fallidas.map((k) => est[k]);
-    paseo.resumen = `<div class="fin cd-fin"><b>${pct >= 90 ? '🏆' : pct >= 60 ? '🙂' : '💪'}</b>
+    paseo.resumen = `<div class="fin cd-fin ds-entra">${foto(sid, 'cd-fin-foto', 'eager')}<b>${pct >= 90 ? '🏆' : pct >= 60 ? '🙂' : '💪'}</b>
       <h3>${vacio ? 'Recorriste' : 'Terminaste'} ${L.icono} ${esc(L.lugar)} · ${MODOS[modo].ic} ${MODOS[modo].t}${ronda > 1 ? ` · ronda ${ronda}` : ''}</h3>
       <div class="cd-kpis"><span>🟢 <b>${v}</b></span>${vacio ? '' : `<span>🟡 <b>${a}</b></span>`}<span>🔴 <b>${r}</b></span>
         <span><b>${pct}%</b> ${ronda > 1 ? 'en esta ronda' : 'retención'}</span><span>⏱ ${mmss(Date.now() - paseo.t0)}</span></div>
@@ -196,7 +232,7 @@ export function crearCiudad({ ATLAS, MEMO, PALACIOS, srs, raiz }) {
         ${lista.length ? `<button class="btn pri" data-repetir>🔁 Repetir solo las fallidas (${lista.length})</button>` : ''}
         ${!lista.length && modo === 'adelante' ? `<button class="btn pri" data-paseo="${sid}" data-modo="reves">🔙 Ahora al revés</button>` : ''}
         ${!lista.length && vacio ? `<button class="btn pri" data-paseo="${sid}" data-modo="adelante">🚶 Cargar los datos: adelante</button>` : ''}
-        <button class="btn" data-lugar="${sid}">Ver el lugar</button><button class="btn" data-volver>Mapa</button>
+        <button class="btn" data-lugar="${sid}">Ver el lugar</button><button class="btn" data-volver>La ruta</button>
         ${sig ? `<button class="btn" data-lugar="${sig}">Seguir a ${PALACIOS.lugares[sig].icono} ${esc(PALACIOS.lugares[sig].lugar)} →</button>` : ''}</div></div>`;
     paseo.fallidas = fallidas;
     raiz.innerHTML = paseo.resumen;
@@ -204,10 +240,10 @@ export function crearCiudad({ ATLAS, MEMO, PALACIOS, srs, raiz }) {
 
   raiz.addEventListener('click', (ev) => {
     const t = ev.target.closest('button, a'); if (!t || !raiz.contains(t)) return;
-    if (t.dataset.lugar) { abierto = t.dataset.lugar; paseo = null; lugar(abierto); }
+    if (t.dataset.lugar) { abierto = t.dataset.lugar; paseo = null; lugar(abierto); raiz.scrollIntoView?.({ block: 'start' }); }
     else if (t.hasAttribute('data-volver')) { abierto = null; paseo = null; mapa(); }
     else if (t.dataset.paseo) { abierto = t.dataset.paseo; empezar(t.dataset.paseo, t.dataset.modo || 'adelante'); }
-    else if (t.hasAttribute('data-revelar')) { paseo.revelado = true; pasoPaseo(); }
+    else if (t.hasAttribute('data-revelar')) { haptico('toque'); paseo.revelado = true; pasoPaseo(); }
     else if (t.hasAttribute('data-pista')) { paseo.pista = true; pasoPaseo(); }
     else if (t.dataset.nota) calificarEstacion(t.dataset.nota);
     else if (t.hasAttribute('data-repetir') && paseo?.fallidas?.length) empezar(paseo.sid, paseo.modo, paseo.fallidas, paseo.ronda + 1);
