@@ -839,7 +839,7 @@
    "#043"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/estado-general.webp",
   "estacion": {
    "seccion": "s2",
    "n": 0,
@@ -891,7 +891,7 @@
    "#124"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/estado-de-nutricion.webp",
   "estacion": {
    "seccion": "s2",
    "n": 1,
@@ -958,7 +958,7 @@
    "#137"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/estado-de-hidratacion.webp",
   "estacion": {
    "seccion": "s2",
    "n": 2,
@@ -1015,7 +1015,7 @@
    "#189"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/palidez.webp",
   "estacion": {
    "seccion": "s2",
    "n": 3,
@@ -1149,7 +1149,7 @@
    "#124"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/cianosis.webp",
   "estacion": {
    "seccion": "s2",
    "n": 5,
@@ -1219,7 +1219,7 @@
    "#189"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/edema.webp",
   "estacion": {
    "seccion": "s2",
    "n": 6,
@@ -1286,7 +1286,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/vsg.webp",
   "estacion": {
    "seccion": "s4",
    "n": 0,
@@ -1362,7 +1362,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/pcr-proteina-c-reactiva.webp",
   "estacion": {
    "seccion": "s4",
    "n": 1,
@@ -1430,7 +1430,7 @@
    "#043"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/factor-reumatoide.webp",
   "estacion": {
    "seccion": "s4",
    "n": 2,
@@ -1600,7 +1600,7 @@
    "#043"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/ttpa.webp",
   "estacion": {
    "seccion": "s4",
    "n": 4,
@@ -1662,7 +1662,7 @@
    "#043"
   ],
   "revisar": true,
-  "imagen": null,
+  "imagen": "img/memo/fibrinogeno.webp",
   "estacion": {
    "seccion": "s4",
    "n": 5,
@@ -1734,7 +1734,7 @@
    "#043"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/tiempo-de-sangria-coagulacion.webp",
   "estacion": {
    "seccion": "s4",
    "n": 6,
@@ -2041,7 +2041,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/globulos-rojos-hematies.webp",
   "estacion": {
    "seccion": "s3",
    "n": 3,
@@ -2169,7 +2169,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/hcm.webp",
   "estacion": {
    "seccion": "s3",
    "n": 5,
@@ -2230,7 +2230,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/chcm.webp",
   "estacion": {
    "seccion": "s3",
    "n": 6,
@@ -2297,7 +2297,7 @@
    "#139"
   ],
   "revisar": true,
-  "imagen": null,
+  "imagen": "img/memo/reticulocitos.webp",
   "estacion": {
    "seccion": "s3",
    "n": 7,
@@ -2487,7 +2487,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/abastonados-cayados.webp",
   "estacion": {
    "seccion": "s3",
    "n": 10,
@@ -2548,7 +2548,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/linfocitos.webp",
   "estacion": {
    "seccion": "s3",
    "n": 11,
@@ -2604,7 +2604,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/monocitos.webp",
   "estacion": {
    "seccion": "s3",
    "n": 12,
@@ -2661,7 +2661,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/eosinofilos.webp",
   "estacion": {
    "seccion": "s3",
    "n": 13,
@@ -2711,7 +2711,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/basofilos.webp",
   "estacion": {
    "seccion": "s3",
    "n": 14,
@@ -2849,7 +2849,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/ade-rdw.webp",
   "estacion": {
    "seccion": "s3",
    "n": 16,
@@ -2910,7 +2910,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/vpm-volumen-plaquetario-medio.webp",
   "estacion": {
    "seccion": "s3",
    "n": 17,
@@ -2965,7 +2965,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/plaquetocrito.webp",
   "estacion": {
    "seccion": "s3",
    "n": 18,
@@ -3031,7 +3031,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/higado-examen-clinico-ecografia.webp",
   "estacion": {
    "seccion": "s8",
    "n": 0,
@@ -3154,7 +3154,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/vena-porta-ecografia.webp",
   "estacion": {
    "seccion": "s8",
    "n": 2,
@@ -3216,7 +3216,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/bazo-ecografia-examen.webp",
   "estacion": {
    "seccion": "s8",
    "n": 3,
@@ -3272,7 +3272,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/pancreas-ecografia.webp",
   "estacion": {
    "seccion": "s8",
    "n": 4,
@@ -3406,7 +3406,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/menarquia.webp",
   "estacion": {
    "seccion": "s8",
    "n": 6,
@@ -3457,7 +3457,7 @@
    "#189"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/formula-obstetrica-g-p.webp",
   "estacion": {
    "seccion": "s8",
    "n": 7,
@@ -3581,7 +3581,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cubo de azúcar con sombrero de copa bebiendo de un vaso gigante de jarabe, con dos torres de terrones a sus lados de las que le brotan nueces que caen. Elementos secundarios: a su lado, un glóbulo rojo cubierto de azúcar atrapado dentro de una jaula de caramelo dorado, sobre un pequeño lago de almíbar. Escenario: puesto de mercado andino con sacos de azúcar y harina. Composición: cubo centrado, colores blanco, dorado y rojo, líneas de movimiento de las nueces cayendo. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/glucosa-2-h-ptog-75-g-y-hba1c.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -3654,7 +3654,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un riñón café con forma de frijol y casco de bombero con manguera, tapado y sudando, sentado frente a un televisor antiguo. Acción: a su lado una señora con rulos enormes sopla un aliento amarillento visible, tiene la piel cubierta de escarcha blanca como sal y se rasca, mientras sus manos aletean. Elementos secundarios: un ramo gigantesco de rosas amarillas que crece y llena el puesto. Escenario: puesto de sal de un mercado andino con sacos blancos. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/urea-sanguinea.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -3721,7 +3721,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un riñón café con forma de frijol y casco de bombero lanzando un pequeño saco de tela hacia el cielo, donde lo atrapa un astronauta con traje blanco junto a un cohete. Elementos secundarios: dos toros negros pisando otro saco que se infla al doble de tamaño. Escenario: puesto de plátanos de un mercado andino con racimos amarillos. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/bun.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -3788,7 +3788,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un riñón café con forma de frijol y casco de bombero, reseco y agrietado, viendo cómo una taza humeante sale disparada como cohete hacia el cielo. Elementos secundarios: una rosa roja gigante clavada en lo alto como meta; un trozo de queso en el otro plato de una balanza. Escenario: puesto de quesos de un mercado andino. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/relacion-urea-creatinina.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -3855,7 +3855,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un toro musculoso enorme sudando gotas blancas que caen en un balde de leche. Acción: un riñón café con forma de frijol y casco de bombero bebe del balde y lo filtra a través de una ceja gigante y peluda que usa como colador. Elementos secundarios: un anciano muy delgado que apenas suda a un lado. Escenario: puesto de leche de un mercado andino con porongos metálicos. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/creatinina-serica.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -3927,7 +3927,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un riñón café con forma de frijol y casco de bombero que usa una penca gigante de tunas como colador, filtrando un chorro de jugo rojo de tuna hacia una jarra. Elementos secundarios: al fondo, una choza de paja y una pequeña taza goteando conectada a una máquina con tubos. Escenario: juguería de mercado andino con frutas de colores. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/clearance-de-creatinina-tfg.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -4292,7 +4292,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un mago con capa morada y sombrero de copa sacando de su sombrero un cubo blanco de tofu y un pez payaso naranja. Acción: con su varita mantiene levitando a un plátano amarillo con cara y a un pequeño esqueleto sonriente. Elementos secundarios: un corazón rojo con guantes de box girando como trompo con líneas de giro. Escenario: puesto de pescado de un mercado andino con truchas sobre hielo. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/magnesio-serico.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -4616,7 +4616,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un canario amarillo brillante bañándose en una tina antigua que desborda agua amarilla, lanzando un anillo dorado al aire. Acción: un paseante a su lado tiene la parte blanca de los ojos teñida de amarillo intenso. Elementos secundarios: un señor de piel naranja comiendo zanahorias con los ojos completamente blancos. Escenario: glorieta de un malecón junto a un lago andino. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/bilirrubina-total.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -4754,7 +4754,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un canario amarillo con salvavidas, asustado porque no sabe nadar, navegando en un bote blanco con forma de clara de huevo entre totoras. Acción: a su alrededor estallan glóbulos rojos como globos y lo llenan de pluma amarilla. Elementos secundarios: una pequeña sauna de madera en una orilla y un sofá en la otra; al fondo un cohete despegando. Escenario: totorales de un lago andino azul. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/bilirrubina-indirecta-no-conjugada.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -4812,7 +4812,7 @@
   "acronimo": "R = TGP/FA (cada una entre su límite)",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hígado granate con gorro de chef haciendo un pulso de fuerza contra un fontanero de overol azul sobre una parrilla de anticuchos humeante. Acción: el chef levanta su otra mano con los cinco dedos abiertos en señal de victoria mientras el fontanero suda. Elementos secundarios: un árbitro con silbato mirando de cerca. Escenario: puesto de anticuchos en un malecón andino al atardecer. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/patron-hepatocelular-vs-colestasico.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -4879,7 +4879,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un pedalón con forma de choza de paja flotando en un lago andino, repleto de huevos blancos apilados, con un vaso gigante de leche en el techo. Acción: los huevos se tambalean mientras el pedalón avanza salpicando. Elementos secundarios: unas yemas raras y moradas en el fondo del pedalón. Escenario: muelle de pedalones en un lago azul de altura. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/proteinas-totales.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -4946,7 +4946,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una estatua de piedra con forma de señora con rulos de esponjas blancas, hinchándose como globo mientras chorros de agua le salen por la piel. Acción: sus esponjas se encogen hasta el tamaño de anillos dorados y el agua se escapa. Elementos secundarios: un cohete pequeño despegando al fondo. Escenario: plaza de un malecón junto a un lago andino azul. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/albumina.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -5014,7 +5014,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un pelotón de ciclistas idénticos con la misma cara y escudos, apilados en una torre altísima y estrecha sobre sus bicicletas. Elementos secundarios: al frente del pelotón, un pez payaso naranja en bicicleta; al final, un oso cubierto de miel pedaleando. Escenario: ciclovía de un malecón junto a un lago andino. Composición: la torre de clones al centro, colores vivos. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/globulinas.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -5075,7 +5075,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una balanza de dos platos gigante volteándose de golpe en un mirador. Acción: en el plato que sube, una señora delgada con rulos empujada por un dedo gigante; en el plato que baja, un montón de ciclistas apilados; un niño sale volando por el aire hacia el lago. Escenario: mirador sobre un lago andino azul con islas de totora. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/relacion-albumina-globulina-a-g.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -5224,7 +5224,7 @@
   "acronimo": "El Loco Glotón Lame Trucha = Edad >55 · Leucocitos >16.000 · Glucosa >200 · LDH >350 · TGO >250",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una maratonista de fondo musculosa corriendo incansable bajo faroles encendidos, saliendo de una pequeña choza. Elementos secundarios: a su lado un hombre glotón y alocado sostiene en orden un ramo de flores lila, una teja de barro, un saco de nueces y dos mulas atadas, con anillos dorados en los dedos. Escenario: malecón de noche junto a un lago andino. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/lipasa-serica.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -5292,7 +5292,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo con guantes de box y cinturón de campeón, dentro de una caseta de vigilancia, comiendo nueces de un tarro gigante. Acción: la grasa amarilla le sube hasta una nariz enorme y le aparecen bolitas amarillas en los párpados y un anillo blanco en el ojo. Escenario: caseta de vigilancia en un malecón junto a un lago andino. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/colesterol-total.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -5357,7 +5357,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un barrendero sonriente y deportista subiendo escaleras de piedra con una escoba, cargando bolas de grasa amarilla. Elementos secundarios: en un escalón, un hombre le da una rosa roja; en otro, una mujer le da una losa de piedra; en lo alto, una choza donde se refugia un corazón rojo con guantes de box. Escenario: escaleras que bajan a un lago andino. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/hdl.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -5423,7 +5423,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un camión de basura grasiento atascado dentro de una tubería roja que representa una arteria, con un corazón rojo con guantes de box empujándolo. Elementos secundarios: tazas sucias cayendo del camión, un hombre furioso con una escoba (Tomás) y una torre de tachos de basura apilados hasta el cielo de los que asoman topos. Escenario: tachos de basura en un malecón andino. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/ldl.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -5490,7 +5490,7 @@
   "acronimo": "Síndrome metabólico, 3 de 5: Cintura · TG · HDL · PA · Glucosa",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un vendedor de trucha frita escurriendo un aceite dorado sobre telas blancas que chorrean. Acción: el aceite desborda y avanza como río hacia un cubo de azúcar con sombrero de copa que se pone rojo e inflamado. Elementos secundarios: un señor panzón con el cinturón reventando, contando con los dedos; varias casitas al fondo inundadas de aceite. Escenario: final de un malecón junto a un lago andino. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/trigliceridos.webp",
   "imagen_clave": false,
   "preguntas": [
    {
@@ -5669,7 +5669,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/densidad-urinaria.webp",
   "estacion": {
    "seccion": "s7",
    "n": 1,
@@ -5731,7 +5731,7 @@
    "#124"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/ph-urinario.webp",
   "estacion": {
    "seccion": "s7",
    "n": 2,
@@ -5849,7 +5849,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/leucocitos-sedimento.webp",
   "estacion": {
    "seccion": "s7",
    "n": 4,
@@ -5905,7 +5905,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/hematies-sedimento.webp",
   "estacion": {
    "seccion": "s7",
    "n": 5,
@@ -5955,7 +5955,7 @@
    "#043"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/celulas-epiteliales-orina.webp",
   "estacion": {
    "seccion": "s7",
    "n": 6,
@@ -6027,7 +6027,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/proteinas-en-orina.webp",
   "estacion": {
    "seccion": "s7",
    "n": 7,
@@ -6084,7 +6084,7 @@
    "#124"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/glucosa-en-orina.webp",
   "estacion": {
    "seccion": "s7",
    "n": 8,
@@ -6156,7 +6156,7 @@
    "#139"
   ],
   "revisar": true,
-  "imagen": null,
+  "imagen": "img/memo/cetonas-y-urobilinogeno-orina.webp",
   "estacion": {
    "seccion": "s7",
    "n": 9,
@@ -6271,7 +6271,7 @@
    "#189"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/nitritos-orina.webp",
   "estacion": {
    "seccion": "s7",
    "n": 11,
@@ -6421,7 +6421,7 @@
    "#143"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/diarrea-duracion.webp",
   "estacion": {
    "seccion": "s7",
    "n": 13,
@@ -6534,7 +6534,7 @@
    "#137"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/rx-torax-silueta-cardiaca.webp",
   "estacion": {
    "seccion": "s10",
    "n": 1,
@@ -6592,7 +6592,7 @@
    "#189"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/rx-torax-senos-costofrenicos.webp",
   "estacion": {
    "seccion": "s10",
    "n": 2,
@@ -6642,7 +6642,7 @@
    "#043"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/rx-torax-hilios.webp",
   "estacion": {
    "seccion": "s10",
    "n": 3,
@@ -6895,7 +6895,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/rx-torax-hiperinsuflacion.webp",
   "estacion": {
    "seccion": "s10",
    "n": 7,
@@ -6941,7 +6941,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo boxeador con guantes de box y cinturón de campeón, detrás de la ventanilla de una boletería de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo, tirando de un rollo enorme de papel cuadriculado rosado que sale volando. Acción: un anillo dorado gigante rueda empujando el papel; zorros diminutos corren en fila de izquierda a derecha sobre los cuadraditos; en un cuadrado grande despega un pequeño cohete blanco con estela de fuego hacia arriba. Composición: corazón centrado, papel en diagonal con líneas de velocidad. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/ecg-papel-y-cuadritos.webp",
   "preguntas": [
    {
     "q": "¿Cuánto vale en tiempo un cuadradito y un cuadrado grande del ECG a 25 mm/s?",
@@ -7091,7 +7091,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hincha gordito y alegre con camiseta roja, de pie en la tribuna de cemento de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo, levantando los brazos antes que nadie. Acción: detrás de él empieza una ola gigante del público levantándose en orden. Elementos secundarios: una tina de metal rodando por el pasillo hacia un cohete blanco pequeño. Composición: el hincha centrado en primer plano, público multicolor detrás con líneas de movimiento ondulantes. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/ecg-ritmo-sinusal.webp",
   "preguntas": [
    {
     "q": "¿Qué criterios de onda P definen el ritmo sinusal?",
@@ -7160,7 +7160,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un atleta caricaturesco con brazo derecho enorme y musculoso girando para lanzar una bola de metal pesada sobre la pista roja de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo. Acción: la bola vuela en arco hacia abajo y a la derecha y aterriza sobre un montón de tunas verdes que revientan salpicando jugo rojo. Elementos secundarios: dos jueces con el pulgar levantado a un lado de la pista. Composición: el atleta centrado, estela de movimiento circular. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/ecg-eje-electrico.webp",
   "preguntas": [
    {
     "q": "¿Cuál es el eje eléctrico normal?",
@@ -7239,7 +7239,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo, unidos como un par de pulmones, soplando con mejillas infladas sobre una pequeña loma de césped frente al arco de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo. Acción: la loma se estira en un pico puntiagudo que sube y atraviesa un anillo dorado colgado del travesaño. Elementos secundarios: un saco de pelotas a un lado y un dedo gigante de goma clavado al otro lado de la loma. Composición: globos centrados, césped verde brillante. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/ecg-onda-p.webp",
   "preguntas": [
    {
     "q": "¿Duración y amplitud normales de la onda P?",
@@ -7447,7 +7447,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un zorro naranja con casco de minero junto a la banca de suplentes de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo, mirando con ojos enormes de susto un pozo profundo y ancho recién abierto en el césped. Acción: del pozo sale una columna de humo gris y una pequeña excavadora amarilla sigue cavando. Elementos secundarios: una lápida de piedra gris clavada al borde del pozo. Composición: zorro centrado en primer plano, banca azul detrás. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/ecg-onda-q-patologica.webp",
   "preguntas": [
    {
     "q": "¿Hasta qué profundidad y ancho se considera normal la onda Q?",
@@ -7581,7 +7581,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo boxeador con guantes de box y cinturón de campeón en el camerino de un estadio, colgando una toalla roja en un tendedero. Acción: la toalla cuelga torcida, subiendo suave por un lado y cayendo de golpe por el otro, mientras salpica agua de una ducha que forma una ola. Elementos secundarios: una taza humeante sobre una repisa a la altura de la toalla. Composición: corazón centrado, azulejos blancos y bancas de madera. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/ecg-onda-t.webp",
   "preguntas": [
    {
     "q": "¿Amplitud y forma normales de la onda T?",
@@ -7654,7 +7654,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una bailarina de ballet caricaturesca girando sobre la punta de un pie en lo alto de la tribuna de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo, envuelta en una bandera larguísima que se retuerce en espiral. Acción: la bandera se estira desde un muro de piedra gris hasta un cielo nocturno con una aurora de luces verdes y violetas. Elementos secundarios: unas rejas de hierro detrás de la bailarina. Composición: bailarina centrada con espirales de movimiento. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/ecg-intervalo-qt.webp",
   "preguntas": [
    {
     "q": "¿Valor normal del intervalo QT?",
@@ -8330,7 +8330,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un mono caricaturesco tosiendo con ojos llorosos dentro de una cocina de totora llena de humo gris en isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: un frijol café con manguera de bombero sirve apurado un té humeante y un frasco de miel dorada mientras el humo sale por el techo. Elementos secundarios: dos globos rosados con lentes de buceo, desinflados y cansados en un rincón, y unas tazas apiladas. Composición: mono centrado, fogón encendido al fondo. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/gases-acidosis-respiratoria.webp",
   "preguntas": [
    {
     "q": "¿Qué gasometría define la acidosis respiratoria según el docente?",
@@ -8409,7 +8409,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una balanza de dos platos con cara y ojos, flotando eufórica por encima de una pizarra en una escuela de totora sobre el lago de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado, rodeada de espuma de jabón. Acción: junto a la ventana, un alumno caricaturesco con la cara verde se asoma al agua con un plato de nachos a medio comer. Elementos secundarios: dos globos rosados con lentes de buceo respirando despacio y guardando aire en un saco que cuelga de un nido de paja en el techo. Composición: balanza centrada. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/gases-alcalosis-metabolica.webp",
   "preguntas": [
    {
     "q": "¿Qué gasometría define la alcalosis metabólica?",
@@ -8493,7 +8493,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un turista caricaturesco con mochila y ojos de pánico respirando agitado dentro de una bolsa de papel café en la orilla de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado, con la mano en forma de garra. Acción: dos globos rosados con lentes de buceo soplan a su lado un viento fuerte que despeina los juncos. Elementos secundarios: una uña gigante rascando una carga blanca y una ola azul que arrastra más carga blanca hacia el lago. Composición: turista centrado, cielo andino intenso. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/gases-alcalosis-respiratoria.webp",
   "preguntas": [
    {
     "q": "¿Qué gasometría define la alcalosis respiratoria?",
@@ -8572,7 +8572,7 @@
   },
   "imagen_clave": false,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una balanza de dos platos con cara y ojos, inclinada, sentada en el centro de una lancha de madera que vuelve de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: a un lado, dos globos rosados con lentes de buceo y una ristra de ajos al cuello reman muy rápido sentados en una tina; al otro, un frijol café con manguera rema despacio entre humo gris del motor mientras una ola lo salpica. Composición: balanza centrada, lago azul y estela blanca. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/gases-compensacion-esperada.webp",
   "preguntas": [
    {
     "q": "¿Cuánto tarda la compensación respiratoria y la renal?",
@@ -8676,7 +8676,7 @@
   "imagen_clave": false,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/pleural-volumen-normal.webp",
   "estacion": {
    "seccion": "s12",
    "n": 0,
@@ -8734,7 +8734,7 @@
   "imagen_clave": false,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/pleural-trasudado.webp",
   "estacion": {
    "seccion": "s12",
    "n": 1,
@@ -8792,7 +8792,7 @@
   "imagen_clave": false,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/pleural-exudado.webp",
   "estacion": {
    "seccion": "s12",
    "n": 2,
@@ -8941,7 +8941,7 @@
   "imagen_clave": false,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/pleural-aspecto.webp",
   "estacion": {
    "seccion": "s12",
    "n": 4,
@@ -9284,7 +9284,7 @@
   "imagen_clave": false,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/ascitis-aspecto-y-estudio.webp",
   "estacion": {
    "seccion": "s12",
    "n": 9,
@@ -9352,7 +9352,7 @@
   "imagen_clave": false,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/ascitis-deteccion-y-puncion.webp",
   "estacion": {
    "seccion": "s12",
    "n": 10,
@@ -9420,7 +9420,7 @@
   "imagen_clave": false,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/lcr-presion.webp",
   "estacion": {
    "seccion": "s12",
    "n": 11,
@@ -9485,7 +9485,7 @@
   "imagen_clave": false,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/lcr-aspecto.webp",
   "estacion": {
    "seccion": "s12",
    "n": 12,
@@ -9553,7 +9553,7 @@
   "imagen_clave": false,
   "revisar": true,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/lcr-celulas.webp",
   "estacion": {
    "seccion": "s12",
    "n": 13,
@@ -9627,7 +9627,7 @@
   "imagen_clave": false,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/lcr-proteinas.webp",
   "estacion": {
    "seccion": "s12",
    "n": 14,
@@ -9808,7 +9808,7 @@
   "imagen_clave": false,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/lcr-patron-viral-aseptico.webp",
   "estacion": {
    "seccion": "s12",
    "n": 17,
@@ -9877,7 +9877,7 @@
   "imagen_clave": false,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/lcr-patron-tuberculoso.webp",
   "estacion": {
    "seccion": "s12",
    "n": 18,

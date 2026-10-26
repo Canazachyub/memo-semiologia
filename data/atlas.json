@@ -4869,175 +4869,200 @@
    "nombre": "Mitral",
    "rasgo": "Cianosis en pómulos, nariz, labios que contrasta con palidez",
    "orienta": "Estenosis mitral / doble lesión mitral",
-   "imagen": "img/facies/mitral.webp"
+   "imagen": "img/facies/mitral.webp",
+   "imagen_quiz": "img/facies_quiz/mitral.webp"
   },
   {
    "id": "aortica",
    "nombre": "Aórtica",
    "rasgo": "Palidez peribucal, signo de Musset, latido carotídeo visible",
    "orienta": "Insuficiencia aórtica",
-   "imagen": "img/facies/aortica.webp"
+   "imagen": "img/facies/aortica.webp",
+   "imagen_quiz": "img/facies_quiz/aortica.webp"
   },
   {
    "id": "de-ayerza",
    "nombre": "De Ayerza",
    "rasgo": "Cianosis intensa con poliglobulia ('cardíacos negros')",
    "orienta": "Cor pulmonale crónico; frecuente en Puno por altura",
-   "imagen": "img/facies/de-ayerza.webp"
+   "imagen": "img/facies/de-ayerza.webp",
+   "imagen_quiz": "img/facies_quiz/de-ayerza.webp"
   },
   {
    "id": "hipocratica-o-peritoneal",
    "nombre": "Hipocrática o peritoneal",
    "rasgo": "Ojos hundidos, nariz afilada, sudor, palidez, aleteo nasal",
    "orienta": "Peritonitis generalizada, shock inminente",
-   "imagen": "img/facies/hipocratica-o-peritoneal.webp"
+   "imagen": "img/facies/hipocratica-o-peritoneal.webp",
+   "imagen_quiz": "img/facies_quiz/hipocratica-o-peritoneal.webp"
   },
   {
    "id": "febril",
    "nombre": "Febril",
    "rasgo": "Pómulos rojos, resto pálido, ojos brillantes",
    "orienta": "Síndrome febril",
-   "imagen": "img/facies/febril.webp"
+   "imagen": "img/facies/febril.webp",
+   "imagen_quiz": "img/facies_quiz/febril.webp"
   },
   {
    "id": "neumonica",
    "nombre": "Neumónica",
    "rasgo": "Mejillas rojas, aleteo nasal, herpes labial",
    "orienta": "Neumonía",
-   "imagen": "img/facies/neumonica.webp"
+   "imagen": "img/facies/neumonica.webp",
+   "imagen_quiz": "img/facies_quiz/neumonica.webp"
   },
   {
    "id": "nefritica-o-renal",
    "nombre": "Nefrítica o renal",
    "rasgo": "Edema periorbitario y cara pálida",
    "orienta": "IRC, síndrome nefrótico",
-   "imagen": "img/facies/nefritica-o-renal.webp"
+   "imagen": "img/facies/nefritica-o-renal.webp",
+   "imagen_quiz": "img/facies_quiz/nefritica-o-renal.webp"
   },
   {
    "id": "mixedematosa",
    "nombre": "Mixedematosa",
    "rasgo": "Cara redonda, párpados edematosos, cejas ralas, apatía",
    "orienta": "Hipotiroidismo avanzado",
-   "imagen": "img/facies/mixedematosa.webp"
+   "imagen": "img/facies/mixedematosa.webp",
+   "imagen_quiz": "img/facies_quiz/mixedematosa.webp"
   },
   {
    "id": "basedowiana-hipertiroidea",
    "nombre": "Basedowiana (hipertiroidea)",
    "rasgo": "Exoftalmos, mirada brillante, bocio, ansiedad",
    "orienta": "Enfermedad de Graves / hipertiroidismo",
-   "imagen": "img/facies/basedowiana-hipertiroidea.webp"
+   "imagen": "img/facies/basedowiana-hipertiroidea.webp",
+   "imagen_quiz": "img/facies_quiz/basedowiana-hipertiroidea.webp"
   },
   {
    "id": "cushing-luna-llena",
    "nombre": "Cushing (luna llena)",
    "rasgo": "Cara redonda, roja y tensa, acné, hipertricosis",
    "orienta": "Exceso de glucocorticoides",
-   "imagen": "img/facies/cushing-luna-llena.webp"
+   "imagen": "img/facies/cushing-luna-llena.webp",
+   "imagen_quiz": "img/facies_quiz/cushing-luna-llena.webp"
   },
   {
    "id": "acromegalica",
    "nombre": "Acromegálica",
    "rasgo": "Arcos supraorbitarios y mandíbula prominentes, nariz y labios grandes",
    "orienta": "Exceso de GH (hipófisis)",
-   "imagen": "img/facies/acromegalica.webp"
+   "imagen": "img/facies/acromegalica.webp",
+   "imagen_quiz": "img/facies_quiz/acromegalica.webp"
   },
   {
    "id": "parkinsoniana",
    "nombre": "Parkinsoniana",
    "rasgo": "Inmóvil, mirada fija, hipomimia ('expresión de espanto')",
    "orienta": "Enfermedad de Parkinson",
-   "imagen": "img/facies/parkinsoniana.webp"
+   "imagen": "img/facies/parkinsoniana.webp",
+   "imagen_quiz": "img/facies_quiz/parkinsoniana.webp"
   },
   {
    "id": "lupica",
    "nombre": "Lúpica",
    "rasgo": "Eritema en alas de mariposa en mejillas y nariz",
    "orienta": "Lupus eritematoso sistémico",
-   "imagen": "img/facies/lupica.webp"
+   "imagen": "img/facies/lupica.webp",
+   "imagen_quiz": "img/facies_quiz/lupica.webp"
   },
   {
    "id": "leonina",
    "nombre": "Leonina",
    "rasgo": "Lepromas confluentes en frente y mejillas, nariz espesa",
    "orienta": "Lepra lepromatosa",
-   "imagen": "img/facies/leonina.webp"
+   "imagen": "img/facies/leonina.webp",
+   "imagen_quiz": "img/facies_quiz/leonina.webp"
   },
   {
    "id": "adenoidea",
    "nombre": "Adenoidea",
    "rasgo": "Nariz pequeña y afilada, boca entreabierta permanente",
    "orienta": "Hipertrofia de adenoides en niños",
-   "imagen": "img/facies/adenoidea.webp"
+   "imagen": "img/facies/adenoidea.webp",
+   "imagen_quiz": "img/facies_quiz/adenoidea.webp"
   },
   {
    "id": "caquectica",
    "nombre": "Caquéctica",
    "rasgo": "Desnutrido, flaco, pérdida del panículo adiposo y de la bola de Bichat",
    "orienta": "Consunción: cáncer avanzado, tuberculosis",
-   "imagen": "img/facies/caquectica.webp"
+   "imagen": "img/facies/caquectica.webp",
+   "imagen_quiz": "img/facies_quiz/caquectica.webp"
   },
   {
    "id": "cianotica",
    "nombre": "Cianótica",
    "rasgo": "Cianosis labial intensa y congestión conjuntival",
    "orienta": "Eritrocitosis de altura, cor pulmonar crónico",
-   "imagen": "img/facies/cianotica.webp"
+   "imagen": "img/facies/cianotica.webp",
+   "imagen_quiz": "img/facies_quiz/cianotica.webp"
   },
   {
    "id": "de-claude-bernard-horner",
    "nombre": "De Claude-Bernard-Horner",
    "rasgo": "Ptosis palpebral, enoftalmos y miosis unilateral",
    "orienta": "Lesión simpático cervical: tumor del vértice pulmonar",
-   "imagen": "img/facies/de-claude-bernard-horner.webp"
+   "imagen": "img/facies/de-claude-bernard-horner.webp",
+   "imagen_quiz": "img/facies_quiz/de-claude-bernard-horner.webp"
   },
   {
    "id": "de-depresion",
    "nombre": "De depresión",
    "rasgo": "Cabizbajo, mirada fija y brillante, expresión de tristeza",
    "orienta": "Síndrome depresivo",
-   "imagen": "img/facies/de-depresion.webp"
+   "imagen": "img/facies/de-depresion.webp",
+   "imagen_quiz": "img/facies_quiz/de-depresion.webp"
   },
   {
    "id": "etilica",
    "nombre": "Etílica",
    "rasgo": "Rubor facial, ojos rojos",
    "orienta": "Alcoholismo crónico",
-   "imagen": "img/facies/etilica.webp"
+   "imagen": "img/facies/etilica.webp",
+   "imagen_quiz": "img/facies_quiz/etilica.webp"
   },
   {
    "id": "icterica",
    "nombre": "Ictérica",
    "rasgo": "Coloración amarillenta de piel, conjuntivas y escleróticas",
    "orienta": "Hiperbilirrubinemia: hemólisis, hepatitis/cirrosis, obstrucción",
-   "imagen": "img/facies/icterica.webp"
+   "imagen": "img/facies/icterica.webp",
+   "imagen_quiz": "img/facies_quiz/icterica.webp"
   },
   {
    "id": "miastenica",
    "nombre": "Miasténica",
    "rasgo": "Caída de párpados superiores y de la mandíbula",
    "orienta": "Miastenia gravis",
-   "imagen": "img/facies/miastenica.webp"
+   "imagen": "img/facies/miastenica.webp",
+   "imagen_quiz": "img/facies_quiz/miastenica.webp"
   },
   {
    "id": "palida",
    "nombre": "Pálida",
    "rasgo": "Palidez facial marcada, sin los demás rasgos de la hipocrática",
    "orienta": "Anemia, endocarditis bacteriana subaguda",
-   "imagen": "img/facies/palida.webp"
+   "imagen": "img/facies/palida.webp",
+   "imagen_quiz": "img/facies_quiz/palida.webp"
   },
   {
    "id": "paralisis-facial-periferica",
    "nombre": "Parálisis facial periférica",
    "rasgo": "Asimetría facial, no cierra el párpado, surco nasolabial borrado",
    "orienta": "Lesión del nervio facial (\"mal viento\")",
-   "imagen": "img/facies/paralisis-facial-periferica.webp"
+   "imagen": "img/facies/paralisis-facial-periferica.webp",
+   "imagen_quiz": "img/facies_quiz/paralisis-facial-periferica.webp"
   },
   {
    "id": "esclerodermica-o-de-momia",
    "nombre": "Esclerodérmica (o de momia)",
    "rasgo": "Cara inmóvil, piel dura, pómulos salientes, nariz afilada, boca pequeña",
    "orienta": "Esclerodermia",
-   "imagen": "img/facies/esclerodermica-o-de-momia.webp"
+   "imagen": "img/facies/esclerodermica-o-de-momia.webp",
+   "imagen_quiz": "img/facies_quiz/esclerodermica-o-de-momia.webp"
   }
  ],
  "glosario": [
