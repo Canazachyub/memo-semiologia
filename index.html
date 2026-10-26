@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/entrenar.css" data-entrenar>
+<link rel="stylesheet" href="css/juego.css">
 </head>
 <body>
 <header class="top">
@@ -22,9 +24,11 @@
   </div>
   <nav class="tabs" role="tablist">
     <button data-vista="tabla" class="on">📋 Valores</button>
+    <button data-vista="juego">🎮 Juego</button>
     <button data-vista="ciudad">🏙️ Ciudad</button>
     <button data-vista="escalas">📏 Escalas</button>
     <button data-vista="facies">🙂 Facies</button>
+    <button data-vista="entrenar">🏋️ Entrenar</button>
     <button data-vista="repaso">🔁 Repaso <span id="pend" class="badge"></span></button>
     <button data-vista="progreso">📊 Progreso</button>
     <button data-vista="metodos">🧩 Métodos</button>
@@ -41,9 +45,11 @@
     </div>
     <div id="tabla"></div>
   </section>
+  <section id="v-juego" class="vista"><div id="juego"></div></section>
   <section id="v-ciudad" class="vista"><div id="ciudad"></div></section>
   <section id="v-escalas" class="vista"><div id="escalas" class="grid-escalas"></div></section>
   <section id="v-facies" class="vista"><div id="facies" class="grid-facies"></div></section>
+  <section id="v-entrenar" class="vista"><div id="entrenar"></div></section>
   <section id="v-repaso" class="vista"><div id="repaso"></div></section>
   <section id="v-progreso" class="vista"><div id="progreso"></div></section>
   <section id="v-metodos" class="vista"><div id="metodos"></div></section>

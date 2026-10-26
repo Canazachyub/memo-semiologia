@@ -1,5 +1,7 @@
 import * as srs from './srs.js';
 import { crearCiudad } from './ciudad.js';
+import { crearEntrenar } from './entrenar.js';
+import { crearJuego } from './juego.js';
 
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -9,6 +11,7 @@ const norm = (t) => String(t ?? '').toLowerCase().normalize('NFD').replace(/[̀-
 const [ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES] = await Promise.all(
   ['data/atlas.json', 'data/memoria.json', 'data/metodos.json', 'data/palacios.json', 'data/memoria_siglas.json', 'data/memoria_facies.json'].map((u) => fetch(u, { cache: 'no-cache' }).then((r) => r.json()).catch(() => ({}))),
 );
+const MAPA = await fetch('data/mapa.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
 const FILAS = ATLAS.secciones.flatMap((s) => s.filas.map((f) => ({ ...f, sec: s })));
 const nombreMetodo = (k) => METODOS[k]?.nombre || k;
 
@@ -238,7 +241,9 @@ function siglaMemo(sigla, grupo) {
 
 // ---------- navegación y eventos ----------
 const CIUDAD = crearCiudad({ ATLAS, MEMO, PALACIOS, raiz: $('#ciudad') });
-const PINTAR = { tabla: pintarTabla, ciudad: CIUDAD.pintar, escalas: pintarEscalas, facies: pintarFacies, repaso: pintarRepaso, progreso: pintarProgreso, metodos: pintarMetodos, siglas: pintarSiglas };
+const ENTRENAR = crearEntrenar({ ATLAS, MEMO, SIGLAS, FACIES, srs, raiz: $('#entrenar') });
+const JUEGO = crearJuego({ ATLAS, MEMO, PALACIOS, MAPA, srs, raiz: $('#juego') });
+const PINTAR = { juego: JUEGO.pintar, tabla: pintarTabla, ciudad: CIUDAD.pintar, entrenar: ENTRENAR.pintar, escalas: pintarEscalas, facies: pintarFacies, repaso: pintarRepaso, progreso: pintarProgreso, metodos: pintarMetodos, siglas: pintarSiglas };
 let vista = 'tabla';
 function ir(v) {
   vista = v;

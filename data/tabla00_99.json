@@ -1,0 +1,729 @@
+{
+ "sistema": "mayor",
+ "digitos": {
+  "0": "S Z C suave",
+  "1": "T D",
+  "2": "N Ñ",
+  "3": "M",
+  "4": "R",
+  "5": "L",
+  "6": "J CH G suave",
+  "7": "G C dura K Q",
+  "8": "F V",
+  "9": "P B"
+ },
+ "fuente": "estudio-memorizar-numeros/tabla-00-99.md (palabra de video si existe; si no, la propuesta)",
+ "tabla": {
+  "00": {
+   "palabra": "seso",
+   "letras": "S-S",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "01": {
+   "palabra": "seta",
+   "letras": "S-T",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "02": {
+   "palabra": "sauna",
+   "letras": "S-N",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "03": {
+   "palabra": "sumo",
+   "letras": "S-M",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": "luchador"
+  },
+  "04": {
+   "palabra": "zorro",
+   "letras": "S-R",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "05": {
+   "palabra": "sol",
+   "letras": "S-L",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "06": {
+   "palabra": "ceja",
+   "letras": "S-J",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "07": {
+   "palabra": "saco",
+   "letras": "S-C",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": "007 = James Bond, número conocido, #189 y #139"
+  },
+  "08": {
+   "palabra": "sofá",
+   "letras": "S-F",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "09": {
+   "palabra": "sopa",
+   "letras": "S-P",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "10": {
+   "palabra": "taza",
+   "letras": "T-S",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "11": {
+   "palabra": "dedo",
+   "letras": "T-T",
+   "alt": [
+    "dado"
+   ],
+   "fuente": "propuesta",
+   "nota": "usar esta; familia de *dados* = 110 · #67; decodifica 114 en estricto"
+  },
+  "12": {
+   "palabra": "tina",
+   "letras": "T-N",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#189, #139"
+  },
+  "13": {
+   "palabra": "dama",
+   "letras": "T-M",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "14": {
+   "palabra": "toro",
+   "letras": "T-R",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#189, #139"
+  },
+  "15": {
+   "palabra": "tele",
+   "letras": "T-L",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#189"
+  },
+  "16": {
+   "palabra": "teja",
+   "letras": "T-J",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "17": {
+   "palabra": "taco",
+   "letras": "T-C",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "18": {
+   "palabra": "tofu",
+   "letras": "T-F",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "19": {
+   "palabra": "topo",
+   "letras": "T-P",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#139"
+  },
+  "20": {
+   "palabra": "Nasa",
+   "letras": "N-S",
+   "alt": [
+    "NASA"
+   ],
+   "fuente": "video",
+   "nota": "#139; escribir con una S: NASA doble S = 200"
+  },
+  "21": {
+   "palabra": "nido",
+   "letras": "N-T",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "22": {
+   "palabra": "niño",
+   "letras": "N-Ñ",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "23": {
+   "palabra": "Nemo",
+   "letras": "N-M",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": "Michael Jordan, número conocido, #189"
+  },
+  "24": {
+   "palabra": "noria",
+   "letras": "N-R",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "25": {
+   "palabra": "anillo",
+   "letras": "N-L",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "26": {
+   "palabra": "nacho",
+   "letras": "N-CH",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#143 dice *nachos*; en singular, porque la S final sumaría un 0"
+  },
+  "27": {
+   "palabra": "nuca",
+   "letras": "N-C",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "28": {
+   "palabra": "nave",
+   "letras": "N-V",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#139"
+  },
+  "29": {
+   "palabra": "nube",
+   "letras": "N-B",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "30": {
+   "palabra": "mesa",
+   "letras": "M-S",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "31": {
+   "palabra": "moto",
+   "letras": "M-T",
+   "alt": [
+    "meta"
+   ],
+   "fuente": "video",
+   "nota": "#189"
+  },
+  "32": {
+   "palabra": "mono",
+   "letras": "M-N",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#189, #139"
+  },
+  "33": {
+   "palabra": "momia",
+   "letras": "M-M",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "34": {
+   "palabra": "muro",
+   "letras": "M-R",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "35": {
+   "palabra": "miel",
+   "letras": "M-L",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#189"
+  },
+  "36": {
+   "palabra": "mecha",
+   "letras": "M-CH",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "37": {
+   "palabra": "mago",
+   "letras": "M-G",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "38": {
+   "palabra": "mafia",
+   "letras": "M-F",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#189"
+  },
+  "39": {
+   "palabra": "mapa",
+   "letras": "M-P",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#139"
+  },
+  "40": {
+   "palabra": "rosa",
+   "letras": "R-S",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "41": {
+   "palabra": "rata",
+   "letras": "R-T",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "42": {
+   "palabra": "rana",
+   "letras": "R-N",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#189"
+  },
+  "43": {
+   "palabra": "remo",
+   "letras": "R-M",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "44": {
+   "palabra": "aurora",
+   "letras": "R-R",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "45": {
+   "palabra": "rulo",
+   "letras": "R-L",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "46": {
+   "palabra": "rojo",
+   "letras": "R-J",
+   "alt": [],
+   "fuente": "video",
+   "nota": "pintura roja, #189"
+  },
+  "47": {
+   "palabra": "roca",
+   "letras": "R-C",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "48": {
+   "palabra": "rifa",
+   "letras": "R-F",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "49": {
+   "palabra": "ropa",
+   "letras": "R-P",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#139"
+  },
+  "50": {
+   "palabra": "losa",
+   "letras": "L-S",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": "50 = billete de 50 dólares, número conocido, #189"
+  },
+  "51": {
+   "palabra": "lata",
+   "letras": "L-T",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "52": {
+   "palabra": "luna",
+   "letras": "L-N",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "53": {
+   "palabra": "lima",
+   "letras": "L-M",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "54": {
+   "palabra": "loro",
+   "letras": "L-R",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "55": {
+   "palabra": "lila",
+   "letras": "L-L",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "56": {
+   "palabra": "leche",
+   "letras": "L-CH",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "57": {
+   "palabra": "lago",
+   "letras": "L-G",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "58": {
+   "palabra": "lava",
+   "letras": "L-V",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "59": {
+   "palabra": "lupa",
+   "letras": "L-P",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#189"
+  },
+  "60": {
+   "palabra": "choza",
+   "letras": "CH-Z",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "61": {
+   "palabra": "chita",
+   "letras": "CH-T",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": "guepardo"
+  },
+  "62": {
+   "palabra": "chuño",
+   "letras": "CH-Ñ",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "63": {
+   "palabra": "gema",
+   "letras": "G-M",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "64": {
+   "palabra": "jarra",
+   "letras": "J-R",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "65": {
+   "palabra": "jaula",
+   "letras": "J-L",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#189"
+  },
+  "66": {
+   "palabra": "chicha",
+   "letras": "CH-CH",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "67": {
+   "palabra": "jaque",
+   "letras": "J-Q",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": "ajedrez"
+  },
+  "68": {
+   "palabra": "jefe",
+   "letras": "J-F",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "69": {
+   "palabra": "jeep",
+   "letras": "J-P",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "70": {
+   "palabra": "casa",
+   "letras": "C-S",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "71": {
+   "palabra": "gato",
+   "letras": "G-T",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "72": {
+   "palabra": "cuna",
+   "letras": "C-N",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "73": {
+   "palabra": "cama",
+   "letras": "C-M",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "74": {
+   "palabra": "carro",
+   "letras": "C-R",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "75": {
+   "palabra": "gallo",
+   "letras": "G-LL",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "76": {
+   "palabra": "caja",
+   "letras": "C-J",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "77": {
+   "palabra": "coco",
+   "letras": "C-C",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "78": {
+   "palabra": "café",
+   "letras": "C-F",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "79": {
+   "palabra": "copa",
+   "letras": "C-P",
+   "alt": [],
+   "fuente": "video",
+   "nota": "de vino, #189"
+  },
+  "80": {
+   "palabra": "vaso",
+   "letras": "V-S",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "81": {
+   "palabra": "foto",
+   "letras": "F-T",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#189"
+  },
+  "82": {
+   "palabra": "vino",
+   "letras": "F-N",
+   "alt": [
+    "teléfono",
+    "vino"
+   ],
+   "fuente": "video",
+   "nota": "por *phone*, #67"
+  },
+  "83": {
+   "palabra": "fama",
+   "letras": "F-M",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": "estatuilla"
+  },
+  "84": {
+   "palabra": "faro",
+   "letras": "F-R",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "85": {
+   "palabra": "vela",
+   "letras": "V-L",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "86": {
+   "palabra": "faja",
+   "letras": "F-J",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "87": {
+   "palabra": "vaca",
+   "letras": "V-C",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "88": {
+   "palabra": "FIFA",
+   "letras": "F-F",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": "balón"
+  },
+  "89": {
+   "palabra": "FBI",
+   "letras": "F-B",
+   "alt": [
+    "agente del FBI"
+   ],
+   "fuente": "video",
+   "nota": "#189, #143"
+  },
+  "90": {
+   "palabra": "peso",
+   "letras": "P-S",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#139"
+  },
+  "91": {
+   "palabra": "pato",
+   "letras": "P-T",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "92": {
+   "palabra": "pino",
+   "letras": "P-N",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#189"
+  },
+  "93": {
+   "palabra": "puma",
+   "letras": "P-M",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "94": {
+   "palabra": "pera",
+   "letras": "P-R",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "95": {
+   "palabra": "pala",
+   "letras": "P-L",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "96": {
+   "palabra": "paja",
+   "letras": "P-J",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "97": {
+   "palabra": "pico",
+   "letras": "P-C",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  },
+  "98": {
+   "palabra": "pavo",
+   "letras": "P-V",
+   "alt": [],
+   "fuente": "video",
+   "nota": "#139; ver nota"
+  },
+  "99": {
+   "palabra": "papa",
+   "letras": "P-P",
+   "alt": [],
+   "fuente": "propuesta",
+   "nota": ""
+  }
+ }
+}
