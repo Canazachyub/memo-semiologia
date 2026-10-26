@@ -1,0 +1,119 @@
+/* Vistas de contenido (paquete B): Valores, Escalas, Facies, Siglas. Usa las variables de css/app.css. */
+
+/* ---------- V5: render ligero ---------- */
+.sec > .fila { content-visibility: auto; contain-intrinsic-size: auto 160px; }
+
+/* ---------- V1: sección estudiada ---------- */
+.sec > h2 { flex-wrap: wrap; }
+.v-est { border: 1px solid rgba(255,255,255,.7); background: rgba(255,255,255,.18); color: #fff; border-radius: 99px; padding: 3px 10px; font-size: 12px; font-weight: 700; white-space: nowrap; }
+.v-est:hover { background: rgba(255,255,255,.3); }
+.v-est.on { background: #fff; color: #1b5e20; border-color: #fff; }
+.v-barra .v-est, .v-barra .v-est.on { border-color: var(--line); background: var(--card); color: var(--ink); }
+.v-barra .v-est.on { border-color: var(--ok); color: var(--ok); background: var(--ok-bg); }
+.v-barra { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin-bottom: 4px; }
+.v-ancho { grid-column: 1 / -1; }
+.v-ayuda { font-size: 12.5px; margin: 6px 0 0; }
+
+/* ---------- panel de memoria (orden V1) ---------- */
+.memo .v-img img { width: 100%; }
+.v-memo { min-width: 0; }
+.v-paso { margin-bottom: 12px; }
+.v-paso > .h, .v-mia > .h, .v-ed .h, .v-prueba .h { color: var(--memo); font-weight: 800; margin: 0 0 4px; }
+.v-dato { font-size: 15px; margin: 0; line-height: 1.5; }
+.v-pq { font-size: 13px; margin: 4px 0; color: var(--ink); }
+.v-mia { background: var(--card); border: 2px solid var(--memo); border-radius: 12px; padding: 10px 12px; margin-bottom: 10px; }
+.v-mia .ancla { background: var(--memo-bg); }
+.v-ch { font-weight: 500; color: var(--muted); text-transform: none; letter-spacing: 0; }
+.v-nota { font-size: 13px; color: var(--muted); margin: 4px 0 0; }
+.v-oficial { margin-bottom: 10px; }
+.v-oficial > summary { color: var(--memo); font-weight: 700; font-size: 13px; margin-bottom: 8px; }
+.v-acc { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.v-acc .btn { padding: 6px 12px; font-size: 13px; }
+.v-zona:empty { display: none; }
+.v-zona { margin-top: 10px; }
+
+/* V3: mientras se prueba, solo la imagen de la prueba, el ancla y la respuesta */
+.memo.probando { grid-template-columns: 1fr; }
+.memo.probando .v-img, .memo.probando .v-paso, .memo.probando .v-mia, .memo.probando .v-oficial, .memo.probando .v-acc { display: none; }
+.v-prueba { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+.v-prueba p { margin: 4px 0 8px; }
+.v-pr-img { max-width: min(320px, 100%); border-radius: 12px; display: block; margin: 6px 0 10px; }
+.v-prueba textarea, .v-ed input, .v-ed textarea { width: 100%; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); padding: 8px 10px; font: inherit; }
+.v-compara { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+.v-compara > div { background: var(--bg); border-radius: 10px; padding: 8px 10px; min-width: 0; overflow-wrap: anywhere; }
+.v-compara .h { color: var(--muted); }
+.v-okn { color: var(--ok); }
+.v-ae-ok { color: var(--ok); font-weight: 700; }
+
+/* V4: editor */
+.v-ed { background: var(--card); border: 1px solid var(--memo); border-radius: 12px; padding: 12px; display: grid; gap: 8px; }
+.v-ed label { display: grid; gap: 4px; font-size: 13px; font-weight: 600; }
+.v-check { border: 1px dashed var(--line); border-radius: 10px; padding: 6px 10px; margin: 0; display: grid; gap: 4px; }
+.v-check legend { font-size: 12px; color: var(--muted); padding: 0 4px; }
+.v-check label { display: flex; gap: 6px; align-items: center; font-weight: 500; }
+.v-check input { width: auto; }
+.v-aviso { color: var(--up); font-size: 13px; margin: 0; }
+.v-ed .btns { margin-top: 4px; }
+
+/* ---------- V2 · ES1: autoexamen con semáforo ---------- */
+.v-sel select, #v-sig-modo { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; padding: 4px 6px; font: inherit; }
+body.ocultar-n .c-n .val, body.ocultar-ub .c-u .val, body.ocultar-ub .c-d .val { filter: blur(6px); cursor: pointer; user-select: none; transition: filter .2s; }
+body.ocultar-n .val.ver, body.ocultar-ub .val.ver { filter: none; }
+.ae { display: none; gap: 4px; }
+body.ocultar .ae, body.ocultar-n .ae, body.ocultar-ub .ae, .esc-ocultas .ae { display: flex; }
+.ae button { border: 1px solid var(--line); background: var(--card); border-radius: 8px; padding: 2px 7px; font-size: 14px; line-height: 1.4; opacity: .55; min-width: 34px; min-height: 30px; }
+.ae button.on { opacity: 1; border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 30%, transparent); }
+.v-ae { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; margin-bottom: 12px; }
+.v-ae .btn { padding: 6px 10px; font-size: 13px; }
+.v-ae .btn[disabled] { opacity: .5; cursor: default; }
+.v-ae-txt { font-weight: 700; }
+.v-ronda-aviso { margin: 0 0 12px; font-size: 13px; color: var(--muted); }
+.v-tec-chip { font-weight: 700; }
+
+/* Escalas */
+.v-esc-cab { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; }
+.esc-ocultas .esc td:last-child, .esc-ocultas .sem i { filter: blur(5px); cursor: pointer; user-select: none; transition: filter .2s; }
+.esc-ocultas .esc td.ver, .esc-ocultas .sem i.ver { filter: none; }
+
+/* ---------- F1: facies ---------- */
+.fac .fac-txt b.fn { font-size: 15px; display: block; }
+.fac .fr { display: block; }
+.fac .mia-box, .fac .v-zona, .fac .v-mia { padding: 0; }
+.fac .v-mia { padding: 8px 10px; }
+.fac details.fmemo { padding: 0 12px 10px; }
+.fac .v-ed { padding: 10px; }
+.fac-ancla { display: none; font-size: 13px; margin-top: 8px; }
+.fac-ocultas .fac-txt { cursor: pointer; }
+.fac-ocultas .fac:not(.ver) .fn, .fac-ocultas .fac:not(.ver) .fr, .fac-ocultas .fac:not(.ver) .o { filter: blur(6px); user-select: none; }
+.fac-ocultas .fac:not(.ver) details.fmemo { display: none; }
+.fac-ocultas .fac.ver .fac-ancla { display: block; }
+
+/* Ronda rápida */
+.v-rr { position: fixed; inset: 0; z-index: 60; background: rgba(0,0,0,.88); display: grid; place-items: center; padding: 16px; }
+.v-rr-caja { background: var(--card); color: var(--ink); border-radius: 18px; padding: 16px; width: min(440px, 100%); max-height: 100%; overflow: auto; text-align: center; }
+.v-rr-caja img { width: 100%; max-height: 52vh; object-fit: contain; border-radius: 12px; background: var(--bg); }
+.v-rr-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; color: var(--muted); font-weight: 700; }
+.v-rr-cuenta { font-size: 26px; color: var(--accent); min-width: 2ch; }
+.v-rr-nom { font-size: 22px; font-weight: 800; margin: 8px 0 2px; }
+.v-rr-n { font-size: 34px; font-weight: 800; margin: 4px 0; }
+.v-rr .btns { justify-content: center; }
+.v-rr .ancla { text-align: left; }
+
+/* ---------- SG1 · SG2: siglas ---------- */
+.sig .sg-srs { margin-right: 4px; font-size: 13px; }
+.sig.m-sig .sigm:not([open]) .sg-t, .sig.m-inv .sigm:not([open]) .sg-s { filter: blur(5px); user-select: none; }
+.sig-dom { margin-top: 16px; break-inside: avoid; }
+.sig-dom > summary { color: var(--accent); font-weight: 700; }
+.sg-par { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 8px; margin-top: 8px; }
+.sg-yo { background: var(--card); border: 2px solid var(--ok); border-radius: 10px; padding: 6px 8px; font-size: 13px; }
+.sg-vs { background: var(--card); border: 2px solid #d97706; border-radius: 10px; padding: 6px 8px; font-size: 12.5px; }
+.sg-vs .h { color: #d97706; margin: 0 0 2px; }
+.sg-vs ul { margin: 0; padding-left: 16px; }
+.sg-vs li { margin: 2px 0; }
+.sg-otra { display: block; font-weight: 600; }
+.sig .mia-box .v-acc .btn { padding: 4px 10px; font-size: 12.5px; }
+
+@media (max-width: 760px) {
+  .v-compara, .sg-par { grid-template-columns: 1fr; }
+  .sec > h2 .n { margin-left: 0; width: 100%; }
+}

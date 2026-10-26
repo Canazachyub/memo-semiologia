@@ -1,7 +1,12 @@
 # -*- coding: utf-8 -*-
 """Valida data/memoria.json: ids existentes, campos mínimos y que cada palabra del código
 decodifique su número con el sistema mayor (versión en español usada en el skill).
+También valida los `pid` de pregunta (R6) en memoria.json, memoria_siglas.json y
+memoria_facies.json: toda pregunta debe tener pid y no puede repetirse dentro de la ficha
+(el id de tarjeta es `<ref>#<pid>`). Avisa si a una facies le falta la pregunta inversa (F2).
 Uso: py tools/validar_memoria.py [archivo.json]
+     (con un archivo distinto de memoria.json, por ejemplo un lote de memoria_parts, la falta de
+     pid es solo aviso: se asigna con py tools/ids_preguntas.py)
 """
 import json
 import os
@@ -85,6 +90,49 @@ for k, m in memo.items():
     img = m.get("imagen")
     if img and not os.path.exists(os.path.join(RAIZ, img)):
         errores.append(f"{k}: imagen no encontrada {img}")
+
+
+# ---------- R6: pid estables ----------
+ES_FINAL = os.path.abspath(RUTA) == os.path.abspath(os.path.join(RAIZ, "data", "memoria.json"))
+PID_OK = re.compile(r"^[A-Za-z0-9_-]{2,24}$")
+
+
+def validar_pids(nombre, entradas, falta_es_error=True):
+    vistos = {}
+    for ref, e in entradas.items():
+        if not isinstance(e, dict):
+            continue
+        locales = set()
+        for i, p in enumerate(e.get("preguntas") or []):
+            pid = p.get("pid") if isinstance(p, dict) else None
+            if not pid:
+                (errores if falta_es_error else avisos).append(
+                    f"{nombre} · {ref}: la pregunta {i} no tiene pid (corre py tools/ids_preguntas.py)")
+                continue
+            if not PID_OK.match(str(pid)):
+                errores.append(f"{nombre} · {ref}: pid inválido '{pid}' (solo letras, números, _ y -)")
+            if pid in ("n", "cz", "inv", "tr"):
+                errores.append(f"{nombre} · {ref}: pid '{pid}' está reservado para tarjetas generadas")
+            if pid in locales:
+                errores.append(f"{nombre} · {ref}: pid repetido '{pid}'")
+            locales.add(pid)
+            if pid in vistos and vistos[pid] != ref:
+                avisos.append(f"{nombre}: pid '{pid}' se usa en {vistos[pid]} y en {ref}")
+            vistos.setdefault(pid, ref)
+
+
+validar_pids(os.path.basename(RUTA), memo, falta_es_error=ES_FINAL)
+if ES_FINAL:
+    for nombre in ("memoria_siglas.json", "memoria_facies.json"):
+        ruta = os.path.join(RAIZ, "data", nombre)
+        if os.path.exists(ruta):
+            validar_pids(nombre, json.load(open(ruta, encoding="utf-8")))
+    # F2: preguntas en los dos sentidos para facies (rasgo → nombre)
+    ruta = os.path.join(RAIZ, "data", "memoria_facies.json")
+    if os.path.exists(ruta):
+        for k, f in json.load(open(ruta, encoding="utf-8")).items():
+            if not any((p.get("tipo") == "inversa") for p in f.get("preguntas") or []):
+                avisos.append(f"memoria_facies.json · {k}: falta la pregunta inversa (rasgo → nombre); la app genera fac:{k}#inv")
 
 print(f"{len(memo)} entradas · {len(errores)} errores · {len(avisos)} avisos")
 for e in errores:

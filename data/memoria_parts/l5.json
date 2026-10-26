@@ -43,22 +43,26 @@
       {
         "q": "¿Cuánto vale en tiempo un cuadradito y un cuadrado grande del ECG a 25 mm/s?",
         "a": "Cuadradito 0.04 s (1 mm); cuadrado grande 0.20 s (5 mm)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qd65a41f"
       },
       {
         "q": "¿Qué mide el eje horizontal del papel y qué mide el vertical?",
         "a": "Horizontal: tiempo; vertical: amplitud (voltaje)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q455a349"
       },
       {
         "q": "¿Cuántos cuadrados grandes hacen 1 segundo?",
         "a": "5 cuadrados grandes",
-        "tipo": "cloze"
+        "tipo": "cloze",
+        "pid": "q72edd48"
       },
       {
         "q": "0.04 s y 1 mm corresponden a…",
         "a": "Un cuadradito del papel de ECG",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q59b04e4"
       }
     ],
     "fuentes_tecnica": [
@@ -111,22 +115,26 @@
       {
         "q": "¿Rango normal de FC en el ECG?",
         "a": "60-100 lpm",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q8cdb274"
       },
       {
         "q": "¿Cómo calculas la FC con ritmo regular?",
         "a": "1500 ÷ cuadraditos entre 2 R (más preciso) o 300 ÷ cuadrados grandes entre 2 R",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q2adb1eb"
       },
       {
         "q": "Hay 3 cuadrados grandes entre dos R: ¿FC?",
         "a": "100 lpm (secuencia 300-150-100-75-60-50)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q6fdbf88"
       },
       {
         "q": "¿Cómo estimas la FC si el ritmo es irregular?",
         "a": "QRS en 6 s × 10",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qcb0f4ce"
       }
     ],
     "fuentes_tecnica": [
@@ -185,22 +193,26 @@
       {
         "q": "¿Qué criterios de onda P definen el ritmo sinusal?",
         "a": "P positiva en DI, DII y aVF, negativa en aVR, y toda P precede al QRS con PR 0.12-0.20 s",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qa7609ad"
       },
       {
         "q": "ECG sin ondas P, con ondas f y RR irregular: ¿diagnóstico?",
         "a": "Fibrilación auricular",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qbf7f8d2"
       },
       {
         "q": "¿Qué frecuencia auricular se describe en la fibrilación auricular?",
         "a": "400-600 lpm",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q3e3e917"
       },
       {
         "q": "¿Qué hallazgo clínico del pulso acompaña a la FA?",
         "a": "Déficit de pulso (ritmo irregularmente irregular)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qeb16dd9"
       }
     ],
     "fuentes_tecnica": [
@@ -250,22 +262,26 @@
       {
         "q": "¿Cuál es el eje eléctrico normal?",
         "a": "0° a +90° (otros autores: −30° a +110°)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q7c530a0"
       },
       {
         "q": "DI positivo y aVF negativo: ¿hacia dónde está el eje?",
         "a": "Desviado a la izquierda",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qfa20b6b"
       },
       {
         "q": "¿Hacia dónde tiende el eje en el residente de altura y por qué?",
         "a": "A la derecha (+90° a +120°) por hipertrofia del VD",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q9a29a08"
       },
       {
         "q": "Nombra dos causas de eje desviado a la derecha",
         "a": "HVD, BCRD, longilíneo, enfisema o inspiración",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qbbfd1bd"
       }
     ],
     "fuentes_tecnica": [
@@ -325,17 +341,20 @@
       {
         "q": "¿Duración y amplitud normales de la onda P?",
         "a": "0.07-0.11 s y <2.5 mm en DII",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q996e96b"
       },
       {
         "q": "P >2.5 mm, alta y picuda en DII: ¿qué indica?",
         "a": "Hipertrofia auricular derecha (P pulmonale), p. ej. cor pulmonar crónico",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q1711e92"
       },
       {
         "q": "P >0.12 s bimodal en «M»: ¿nombre y cámara?",
         "a": "P mitrale: hipertrofia auricular izquierda (estenosis/insuficiencia mitral)",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qeec08f7"
       }
     ],
     "fuentes_tecnica": [
@@ -385,22 +404,26 @@
       {
         "q": "¿Valor normal del intervalo PR?",
         "a": "0.12-0.20 s (3 a 5 cuadraditos)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q0c68a98"
       },
       {
         "q": "PR >0.20 s fijo en todos los latidos: ¿diagnóstico?",
         "a": "BAV de 1.er grado",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qb54a303"
       },
       {
         "q": "PR que se alarga progresivamente hasta que una P no conduce: ¿nombre?",
         "a": "Mobitz I (Wenckebach)",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qac3bd2a"
       },
       {
         "q": "PR <0.12 s con onda delta y QRS ancho: ¿qué sospechas?",
         "a": "Wolff-Parkinson-White (vía accesoria)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q8731018"
       }
     ],
     "fuentes_tecnica": [
@@ -459,22 +482,26 @@
       {
         "q": "¿Duración normal del QRS?",
         "a": "<0.12 s",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q36888c4"
       },
       {
         "q": "QRS >0.12 s con M (RSR') en V1: ¿diagnóstico?",
         "a": "Bloqueo de rama derecha",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qa925983"
       },
       {
         "q": "¿Qué es el índice de Sokolow y qué indica si es ≥35 mm?",
         "a": "S de V1 + R de V5-V6; ≥35 mm = hipertrofia del VI",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qd557919"
       },
       {
         "q": "QRS <5 mm en derivaciones frontales: ¿cómo se llama y una causa?",
         "a": "Bajo voltaje: derrame pericárdico, obesidad, EPOC o hipotiroidismo",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q08e8029"
       }
     ],
     "fuentes_tecnica": [
@@ -522,22 +549,26 @@
       {
         "q": "¿Hasta qué profundidad y ancho se considera normal la onda Q?",
         "a": "≤3 mm de profundidad y ≤0.04 s de ancho (salvo DIII)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q656b40a"
       },
       {
         "q": "Q profunda y ancha en DII, DIII y aVF: ¿qué indica y dónde?",
         "a": "Necrosis (infarto transmural) de cara inferior",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q3f48c6a"
       },
       {
         "q": "¿Desaparece la Q patológica con el tiempo?",
         "a": "No, persiste de por vida",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qf6fbe83"
       },
       {
         "q": "¿Qué derivaciones muestran el infarto anteroseptal?",
         "a": "V1-V4",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qaac2d4f"
       }
     ],
     "fuentes_tecnica": [
@@ -582,22 +613,26 @@
       {
         "q": "¿Desde cuántos mm de desnivel del ST es patológico?",
         "a": ">0.5 mm",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q7b7aac6"
       },
       {
         "q": "Supradesnivel del ST: ¿qué capa está lesionada y en qué fase del IAM?",
         "a": "Lesión subepicárdica, fase aguda del IAM",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q96a6f79"
       },
       {
         "q": "¿Qué onda corresponde a isquemia, lesión y necrosis?",
         "a": "Isquemia → T; lesión → ST; necrosis → Q",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "qc084d40"
       },
       {
         "q": "¿Criterio de IAM con ST elevado?",
         "a": "≥1 mm en 2 derivaciones contiguas (≥2 mm en V2-V3) → reperfundir",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qeefafdb"
       }
     ],
     "fuentes_tecnica": [
@@ -648,22 +683,26 @@
       {
         "q": "¿Amplitud y forma normales de la onda T?",
         "a": "5-10 mm, asimétrica",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q5082097"
       },
       {
         "q": "T positiva, alta y simétrica: ¿qué indica?",
         "a": "Isquemia subendocárdica",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q4ee0c73"
       },
       {
         "q": "T negativa, simétrica y puntiaguda: ¿qué indica?",
         "a": "Isquemia subepicárdica",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qe837ecf"
       },
       {
         "q": "¿En qué derivaciones una T negativa aislada puede ser normal?",
         "a": "aVR, V1 o DIII",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q7e73b56"
       }
     ],
     "fuentes_tecnica": [
@@ -717,22 +756,26 @@
       {
         "q": "¿Valor normal del intervalo QT?",
         "a": "0.34-0.44 s",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qf0bbdd9"
       },
       {
         "q": "¿Qué pasa con el QT cuando sube la FC?",
         "a": "Se acorta (relación inversa)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q8668807"
       },
       {
         "q": "¿Desde qué QTc se considera largo en varón y en mujer?",
         "a": ">440 ms varón; >460 ms mujer",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qa52a984"
       },
       {
         "q": "¿Qué arritmia amenaza en el QT largo?",
         "a": "Torsades de pointes",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q4af98f7"
       }
     ],
     "fuentes_tecnica": [
@@ -791,22 +834,26 @@
       {
         "q": "¿pH arterial normal?",
         "a": "7.35-7.45",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qf000074"
       },
       {
         "q": "pH 7.30: ¿acidosis o alcalosis?",
         "a": "Acidosis (<7.35)",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q6a1acdd"
       },
       {
         "q": "¿Qué pH tiene el residente aclimatado a la altura?",
         "a": "Normal o levemente alcalino (7.40-7.46)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q5145f3c"
       },
       {
         "q": "¿Qué significa ROME?",
         "a": "Respiratorio opuesto (pH y PaCO2 contrarios), metabólico igual (pH y HCO3 en el mismo sentido)",
-        "tipo": "explica"
+        "tipo": "explica",
+        "pid": "q132fb35"
       }
     ],
     "fuentes_tecnica": [
@@ -865,22 +912,26 @@
       {
         "q": "¿PaO2 normal a nivel del mar?",
         "a": "80-100 mmHg",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qf0bedc0"
       },
       {
         "q": "¿Desde qué PaO2 se habla de hipoxemia?",
         "a": "<60 mmHg",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q3713c4d"
       },
       {
         "q": "¿PaO2 normal aproximada en Puno (barómetro ≈480 mmHg)?",
         "a": "≈50-60 mmHg",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q74dc7fa"
       },
       {
         "q": "¿Cómo se calcula la PO2 alveolar en Puno?",
         "a": "0.21 × (480 − 47) − PaCO2 ÷ 0.8",
-        "tipo": "explica"
+        "tipo": "explica",
+        "pid": "q3fd3ecb"
       }
     ],
     "fuentes_tecnica": [
@@ -933,22 +984,26 @@
       {
         "q": "¿PaCO2 normal?",
         "a": "40 mmHg (36-44)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qcfa7c05"
       },
       {
         "q": "PaCO2 >45 mmHg: ¿qué trastorno y por qué mecanismo?",
         "a": "Acidosis respiratoria por hipoventilación",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q4aa5975"
       },
       {
         "q": "PaCO2 <35 mmHg: ¿qué trastorno?",
         "a": "Alcalosis respiratoria",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qe6d3c26"
       },
       {
         "q": "¿Cuánto mueve el pH un cambio agudo de 10 mmHg de PaCO2?",
         "a": "≈0.08 (crónico ≈0.03)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q0bcd4ee"
       }
     ],
     "fuentes_tecnica": [
@@ -1006,22 +1061,26 @@
       {
         "q": "¿HCO3− normal?",
         "a": "22-26 mEq/L (media 24)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q970379b"
       },
       {
         "q": "HCO3 >26 mEq/L: ¿qué trastorno?",
         "a": "Alcalosis metabólica (también sube en acidosis respiratoria crónica)",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q79ab52f"
       },
       {
         "q": "¿HCO3 aproximado del residente de Puno y por qué?",
         "a": "≈19-22 mEq/L: compensación renal de la alcalosis respiratoria por hiperventilación",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q06ce7f4"
       },
       {
         "q": "¿Fórmula del déficit de bicarbonato?",
         "a": "0.5 × peso (kg) × (24 − HCO3 actual); pasar en 3-4 h",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qbb04b95"
       }
     ],
     "fuentes_tecnica": [
@@ -1064,17 +1123,20 @@
       {
         "q": "¿Exceso de base normal?",
         "a": "+2.5 a −2.5",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qf128acf"
       },
       {
         "q": "EB de −6: ¿qué trastorno sugiere?",
         "a": "Acidosis metabólica (<−2.5)",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qf225c88"
       },
       {
         "q": "EB >+2.5: nombra dos causas",
         "a": "Vómitos, diuréticos o bicarbonato (alcalosis metabólica)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qffdb620"
       }
     ],
     "fuentes_tecnica": [
@@ -1132,22 +1194,26 @@
       {
         "q": "¿SatO2 arterial normal a nivel del mar?",
         "a": "95-98%",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q7d985fb"
       },
       {
         "q": "¿SatO2 esperada 'en nuestro medio' (Puno) según el docente?",
         "a": "90%",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q1526aaf"
       },
       {
         "q": "Residente de altura con SatO2 de 70%: ¿qué cuadro sospechas?",
         "a": "Cor pulmonale crónico de altura (<80%, hasta 55%)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q01bc3ce"
       },
       {
         "q": "Según la regla 40-50-60, ¿qué SatO2 corresponde a una PaO2 de 60?",
         "a": "≈90% (40 → 70, 50 → 80, 60 → 90)",
-        "tipo": "cloze"
+        "tipo": "cloze",
+        "pid": "q08d66ec"
       }
     ],
     "fuentes_tecnica": [
@@ -1201,22 +1267,26 @@
       {
         "q": "¿Fórmula y valor normal del anión gap?",
         "a": "Na − (HCO3 + Cl); normal 8-16 mEq/L (típico 144 − 24 − 108 = 12)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q284b9b9"
       },
       {
         "q": "¿Causas de acidosis con anión gap alto?",
         "a": "CALIMA: cetoacidosis, AAS, láctica, IRC, metanol/etilenglicol, ayuno",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q0edeaaa"
       },
       {
         "q": "Acidosis metabólica por diarrea: ¿cómo está el anión gap?",
         "a": "Normal (acidosis hiperclorémica)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qd22e257"
       },
       {
         "q": "¿Cómo afecta la hipoalbuminemia al anión gap?",
         "a": "Lo baja ~2.5 por cada 1 g/dL de albúmina; corregido = AG + 2.5 × (4 − albúmina)",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qa9c5d8c"
       }
     ],
     "fuentes_tecnica": [
@@ -1277,22 +1347,26 @@
       {
         "q": "¿Qué gasometría define la acidosis metabólica?",
         "a": "pH <7.35 + HCO3 <24, con PaCO2 baja por compensación",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qb6b51ce"
       },
       {
         "q": "¿Qué patrón respiratorio aparece y por qué?",
         "a": "Kussmaul: respiración profunda y rápida para eliminar CO2",
-        "tipo": "explica"
+        "tipo": "explica",
+        "pid": "q02b4d28"
       },
       {
         "q": "¿Fórmula de Winter?",
         "a": "PaCO2 esperada = 1.5 × HCO3 + 8 ± 2",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qde1b587"
       },
       {
         "q": "HCO3 10 y PaCO2 medida 30: ¿compensación adecuada?",
         "a": "No: esperada 1.5 × 10 + 8 = 23 ± 2; 30 es mayor → acidosis respiratoria asociada",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q1986dfe"
       }
     ],
     "fuentes_tecnica": [
@@ -1358,22 +1432,26 @@
       {
         "q": "¿Qué gasometría define la acidosis respiratoria según el docente?",
         "a": "pH <7.32 + PaCO2 >45; HCO3 normal (aguda) o ↑ (crónica)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q28379dd"
       },
       {
         "q": "¿Cuánto sube el HCO3 por cada 10 mmHg de PaCO2 en la forma aguda y en la crónica?",
         "a": "+1 aguda; +3.5 crónica (EPOC)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qba2c42b"
       },
       {
         "q": "Paciente con EPOC, PaCO2 60 y HCO3 31: ¿aguda o crónica?",
         "a": "Crónica: subió 20 mmHg → esperado +7 (24 + 7 = 31)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qd9bec26"
       },
       {
         "q": "¿Se da bicarbonato en la acidosis respiratoria?",
         "a": "No, solo si pH <7.10 refractario a ventilación",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q09ff0ce"
       }
     ],
     "fuentes_tecnica": [
@@ -1433,22 +1511,26 @@
       {
         "q": "¿Qué gasometría define la alcalosis metabólica?",
         "a": "pH >7.45 + HCO3 >26; PaCO2 normal o levemente ↑",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q532ffbd"
       },
       {
         "q": "¿PaCO2 esperada en la alcalosis metabólica?",
         "a": "0.7 × HCO3 + 21 ± 2",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q3824c76"
       },
       {
         "q": "Paciente con vómitos y cloro urinario <20: ¿cómo responde?",
         "a": "Alcalosis que responde a suero salino",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q77b6739"
       },
       {
         "q": "¿Por qué da tetania?",
         "a": "Porque baja el calcio ionizado",
-        "tipo": "explica"
+        "tipo": "explica",
+        "pid": "qf80dd5d"
       }
     ],
     "fuentes_tecnica": [
@@ -1513,22 +1595,26 @@
       {
         "q": "¿Qué gasometría define la alcalosis respiratoria?",
         "a": "pH >7.45 + PaCO2 <35; HCO3 normal o levemente ↓",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qe08baaa"
       },
       {
         "q": "¿Causa más frecuente de alcalosis respiratoria?",
         "a": "La ansiedad",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qfa1302f"
       },
       {
         "q": "¿Cuánto baja el HCO3 por cada 10 mmHg que baja la PaCO2?",
         "a": "−2 aguda; −5 crónica (residente de altura)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qeeee2cc"
       },
       {
         "q": "Turista recién llegado a Puno con parestesias y mano en garra: ¿trastorno y manejo leve?",
         "a": "Alcalosis respiratoria por hiperventilación; respirar en bolsa de papel",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qfc9a1f4"
       }
     ],
     "fuentes_tecnica": [
@@ -1588,17 +1674,20 @@
       {
         "q": "¿Cuánto tarda la compensación respiratoria y la renal?",
         "a": "Respiratoria 6-12 h; renal 3-5 días",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q844369f"
       },
       {
         "q": "¿Puede la compensación normalizar el pH?",
         "a": "No, nunca lo normaliza ni lo sobrepasa",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qcff08dd"
       },
       {
         "q": "pH 7.40 con PaCO2 y HCO3 alterados: ¿qué piensas?",
         "a": "Trastorno mixto",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q91e7dea"
       }
     ],
     "fuentes_tecnica": [

@@ -44,22 +44,26 @@
    {
     "q": "¿Glucosa en ayunas normal?",
     "a": "<100 mg/dL (70-100)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q7b6d06f"
    },
    {
     "q": "Glucosa en ayunas de 112 mg/dL se clasifica como…",
     "a": "Prediabetes (glucosa alterada en ayunas, 100-125)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q798693d"
    },
    {
     "q": "¿Desde qué glucosa en ayunas se diagnostica diabetes?",
     "a": "≥126 mg/dL (repetir para confirmar)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q7a932f0"
    },
    {
     "q": "¿Qué es la tríada de Whipple?",
     "a": "Síntomas + glucosa <70 + alivio al dar glucosa = hipoglucemia verdadera",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q05d9b2d"
    }
   ],
   "fuentes_tecnica": [
@@ -118,22 +122,26 @@
    {
     "q": "¿Valor normal de glucosa a las 2 h en la PTOG de 75 g?",
     "a": "<140 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q98e520b"
    },
    {
     "q": "PTOG a las 2 h de 210 mg/dL indica…",
     "a": "Diabetes (≥200)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q02b45da"
    },
    {
     "q": "¿Cortes de HbA1c para prediabetes y diabetes?",
     "a": "5.7-6.4% prediabetes; ≥6.5% diabetes",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q9756cb0"
    },
    {
     "q": "¿Qué periodo refleja la HbA1c?",
     "a": "El control glucémico de las 8-12 semanas previas",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q99c3a9c"
    }
   ],
   "fuentes_tecnica": [
@@ -187,22 +195,26 @@
    {
     "q": "¿Valor normal de la urea sanguínea?",
     "a": "15-45 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q4864498"
    },
    {
     "q": "¿Qué valor de urea se considera uremia franca?",
     "a": ">400 mg/dL",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qe5bead6"
    },
    {
     "q": "Nombra 3 signos del síndrome urémico",
     "a": "Aliento urinoso, escarcha urémica, frote pericárdico, asterixis, prurito",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q9b516d1"
    },
    {
     "q": "Además de la caída de TFG, ¿qué causas no renales suben la urea?",
     "a": "Deshidratación/prerrenal, catabolismo, sangrado digestivo",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q2b2ef14"
    }
   ],
   "fuentes_tecnica": [
@@ -250,17 +262,20 @@
    {
     "q": "¿Valor normal del BUN?",
     "a": "7-20 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q7c2e394"
    },
    {
     "q": "¿Cómo se convierte el BUN en urea?",
     "a": "Urea = BUN × 2.14",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qe6dfd93"
    },
    {
     "q": "BUN/Cr mayor de 20:1 sugiere…",
     "a": "Origen prerrenal",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q9b8b7f3"
    }
   ],
   "fuentes_tecnica": [
@@ -314,22 +329,26 @@
    {
     "q": "¿Relación urea/creatinina normal?",
     "a": "10-20",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q226fb0f"
    },
    {
     "q": "Relación >20 sugiere IRA…",
     "a": "Prerrenal (deshidratación, sangrado, bajo gasto)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q1d4d54d"
    },
    {
     "q": "Si el laboratorio reporta urea total (no BUN), ¿cuál es el corte prerrenal aproximado?",
     "a": "≈40 (urea = BUN × 2.14)",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qc58e1c9"
    },
    {
     "q": "Urea 180 / Cr 5 = 36, pero la Cr no mejora con volumen: ¿diagnóstico?",
     "a": "NTA (necrosis tubular aguda)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q69bdfef"
    }
   ],
   "fuentes_tecnica": [
@@ -377,22 +396,26 @@
    {
     "q": "¿Creatinina sérica normal (Semiología)?",
     "a": "0.6-1.4 mg%",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qe7cec28"
    },
    {
     "q": "¿Por qué la creatinina es un marcador tardío?",
     "a": "La TFG cae ~50% antes de que suba",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qe1dabbe"
    },
    {
     "q": "Criterios KDIGO de IRA por creatinina",
     "a": "↑ ≥0.3 mg/dL en 48 h o ≥1.5 × basal en 7 días (o diuresis <0.5 mL/kg/h por 6 h)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q32e8d8c"
    },
    {
     "q": "Anciano desnutrido con Cr 0.5: ¿por qué tan baja?",
     "a": "Poca masa muscular",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q21abacf"
    }
   ],
   "fuentes_tecnica": [
@@ -445,22 +468,26 @@
    {
     "q": "¿Clearance de creatinina normal promedio y por sexo?",
     "a": "Prom. 120 mL/min; varón 97-137, mujer 88-128",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qe59f0c1"
    },
    {
     "q": "TFG por debajo de qué valor define IRC?",
     "a": "<60 mL/min",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q8e7d147"
    },
    {
     "q": "TFG <10 mL/min indica…",
     "a": "Insuficiencia grave: diálisis",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q19e88e7"
    },
    {
     "q": "¿En qué situaciones hay hiperfiltración?",
     "a": "Embarazo, diabetes inicial",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qb94df46"
    }
   ],
   "fuentes_tecnica": [
@@ -518,22 +545,26 @@
    {
     "q": "¿Sodio sérico normal?",
     "a": "135-145 mEq/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q339ef38"
    },
    {
     "q": "135-145 mEq/L es el rango normal de… (electrolito sérico)",
     "a": "Sodio",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qacafb5e"
    },
    {
     "q": "¿Desde qué Na aparecen síntomas y desde cuál convulsiones en la hiponatremia?",
     "a": "Síntomas <130; convulsiones, coma y muerte <120",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q7ab29b5"
    },
    {
     "q": "¿Cuánto se corrige el Na por día y qué pasa si se corrige rápido una hiponatremia?",
     "a": "≤8-10 mEq/L en 24 h; mielinólisis",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q0b3abd1"
    }
   ],
   "fuentes_tecnica": [
@@ -587,22 +618,26 @@
    {
     "q": "¿Potasio sérico normal?",
     "a": "3.5-5.0 mEq/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qb2b87e6"
    },
    {
     "q": "3.5-5.0 mEq/L es el rango normal de… (electrolito)",
     "a": "Potasio",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qe09fb1f"
    },
    {
     "q": "Cambios ECG de hiperpotasemia y de hipopotasemia",
     "a": "Hiper: T alta picuda → P plana y QRS ancho → arritmia. Hipo: T aplanada + onda U",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q2ffd832"
    },
    {
     "q": "Paciente con IRC y K de 8.5: ¿qué riesgo tiene?",
     "a": "Hiperpotasemia grave (>8): arritmias, FV (>9)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q6e6e053"
    }
   ],
   "fuentes_tecnica": [
@@ -651,22 +686,26 @@
    {
     "q": "¿Cloro sérico normal?",
     "a": "97-105 mEq/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qb202a8b"
    },
    {
     "q": "Vómitos profusos producen ¿qué alteración del Cl y del equilibrio ácido-base?",
     "a": "Hipocloremia con HCO3↑: alcalosis hipoclorémica",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qb6c54b9"
    },
    {
     "q": "Diarrea con Cl alto y HCO3 bajo se llama…",
     "a": "Acidosis hiperclorémica",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q56c6ed5"
    },
    {
     "q": "¿Cómo se mueven el Cl y el HCO3 entre sí?",
     "a": "Al revés (si uno sube, el otro baja)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q809e904"
    }
   ],
   "fuentes_tecnica": [
@@ -726,22 +765,26 @@
    {
     "q": "¿Calcio sérico normal (fila del atlas)?",
     "a": "9-11 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q0f54474"
    },
    {
     "q": "¿Bajo qué calcio aparece tetania?",
     "a": "<8 mg/dL",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q7149ddc"
    },
    {
     "q": "Diferencia entre Chvostek y Trousseau",
     "a": "Chvostek: contracción facial al percutir la cara. Trousseau: mano de partero al inflar el manguito",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q83f6759"
    },
    {
     "q": "Ca 7.2 con albúmina 2: ¿Ca corregido?",
     "a": "7.2 + 0.8 × (4 − 2) = 8.8 mg/dL",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q968040a"
    }
   ],
   "fuentes_tecnica": [
@@ -790,22 +833,26 @@
    {
     "q": "¿Magnesio sérico normal?",
     "a": "1.8-2.3 mEq/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qf8d64f9"
    },
    {
     "q": "HipoK que no corrige pese a reponer potasio: ¿qué buscas?",
     "a": "Hipomagnesemia",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qce9ab88"
    },
    {
     "q": "¿Qué arritmia favorece la hipomagnesemia y qué fármaco hace más tóxico?",
     "a": "Torsades de pointes; digital (toxicidad digitálica)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qaa69a36"
    },
    {
     "q": "¿Qué fármacos bajan el Mg y en qué cuadro sube?",
     "a": "Diuréticos de asa; sube en IRA/IRC",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qc9854e0"
    }
   ],
   "fuentes_tecnica": [
@@ -849,22 +896,26 @@
    {
     "q": "¿TGO (AST) normal?",
     "a": "<40 UI/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q4f079b9"
    },
    {
     "q": "TGO/TGP >2 sugiere…",
     "a": "Hepatitis alcohólica",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q388e760"
    },
    {
     "q": "¿Por qué la TGO no es específica del hígado?",
     "a": "También sale del músculo y del corazón (IAM, rabdomiólisis) y en hemólisis",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qbf715e0"
    },
    {
     "q": "¿Cómo están las transaminasas en hepatitis vs coledocolitiasis?",
     "a": "Hepatitis muy elevadas; coledocolitiasis normales o poco elevadas",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qfe616f6"
    }
   ],
   "fuentes_tecnica": [
@@ -909,22 +960,26 @@
    {
     "q": "¿TGP (ALT) normal?",
     "a": "<40 UI/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q24a5d2a"
    },
    {
     "q": "¿Cuál transaminasa es más específica del hígado y cuál predomina en la hepatitis viral aguda?",
     "a": "La TGP en ambos casos (viral >10× LSN, TGP > TGO)",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q4b43be2"
    },
    {
     "q": "¿Qué dice la ley de Hy?",
     "a": "Fármaco + TGP >3 × LSN + bilirrubina >2 × LSN = lesión hepática grave",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q830b9ab"
    },
    {
     "q": "TGP de 1500 UI/L tras ingerir un fármaco sugiere hepatitis…",
     "a": "Tóxica (>1000)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qed3464a"
    }
   ],
   "fuentes_tecnica": [
@@ -973,22 +1028,26 @@
    {
     "q": "¿FA normal en el adulto?",
     "a": "30-120 UI/L (embarazo hasta 300; niños hasta 400)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q03b935a"
    },
    {
     "q": "FA >3× LSN con GGT alta sugiere…",
     "a": "Colestasis / obstrucción biliar",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q6cc9319"
    },
    {
     "q": "FA alta con GGT normal: ¿origen?",
     "a": "Óseo (Paget, metástasis)",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q3180b08"
    },
    {
     "q": "¿Por qué la FA tarda en normalizarse tras resolver la obstrucción?",
     "a": "Vida media de 7 días (baja más lento que TGO/TGP)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q30f01b6"
    }
   ],
   "fuentes_tecnica": [
@@ -1037,17 +1096,20 @@
    {
     "q": "¿GGT normal en mujer y en varón?",
     "a": "Mujer <40 U/L; varón <60 U/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q870eab1"
    },
    {
     "q": "FA y GGT altas juntas indican…",
     "a": "Colestasis (origen hepatobiliar)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qb6bd621"
    },
    {
     "q": "GGT elevada aislada, con resto normal, sugiere…",
     "a": "Consumo de alcohol o fármacos inductores",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q4cd976b"
    }
   ],
   "fuentes_tecnica": [
@@ -1095,22 +1157,26 @@
    {
     "q": "¿Bilirrubina total normal?",
     "a": "1.2 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qea01164"
    },
    {
     "q": "¿Desde qué bilirrubina total se ve la ictericia?",
     "a": ">2.5 mg/dL (1.2-2.5 = subclínica)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qb40dec4"
    },
    {
     "q": "¿Dónde aparece primero la ictericia?",
     "a": "Escleróticas y frenillo lingual (y desaparece al último de ellas)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qf1bf754"
    },
    {
     "q": "Piel amarilla-naranja con escleras blancas: ¿qué piensas?",
     "a": "Hipercarotinemia, no ictericia",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qace4e7a"
    }
   ],
   "fuentes_tecnica": [
@@ -1154,22 +1220,26 @@
    {
     "q": "¿Bilirrubina directa normal?",
     "a": "<0.3 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q30289a6"
    },
    {
     "q": "¿Por qué la bilirrubina directa produce coluria?",
     "a": "Es hidrosoluble y filtra por el riñón",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qc385f28"
    },
    {
     "q": "Tríada clínica de la colestasis",
     "a": "Coluria + acolia + prurito",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qe5fa55a"
    },
    {
     "q": "BT 20, BD 15 con coluria y acolia: ¿tipo de ictericia?",
     "a": "Poshepática/obstructiva (coledocolitiasis)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q51c1563"
    }
   ],
   "fuentes_tecnica": [
@@ -1225,22 +1295,26 @@
    {
     "q": "¿Bilirrubina indirecta normal y cómo se calcula?",
     "a": "0,2-0,8 mg/dL; BT − BD",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qea10f53"
    },
    {
     "q": "¿Por qué la ictericia hemolítica no tiene coluria?",
     "a": "La BI va unida a albúmina y no filtra por el riñón",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q5041f04"
    },
    {
     "q": "¿Sobre qué BI hay riesgo de kernícterus en el RN?",
     "a": ">20 mg/dL",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q25cafc9"
    },
    {
     "q": "Joven con BI leve que sube en ayuno o estrés, sin hemólisis: ¿diagnóstico?",
     "a": "Síndrome de Gilbert",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q295f5f2"
    }
   ],
   "fuentes_tecnica": [
@@ -1279,22 +1353,26 @@
    {
     "q": "¿Qué caracteriza al patrón hepatocelular y al colestásico?",
     "a": "Hepatocelular: transaminasas muy altas, FA normal/poco alta. Colestásico: FA alta, transaminasas normales",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qededa51"
    },
    {
     "q": "¿Cómo se calcula el Factor R?",
     "a": "(TGP ÷ su límite normal) ÷ (FA ÷ su límite normal)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qdb4b08d"
    },
    {
     "q": "Factor R de 6: ¿patrón?",
     "a": "Hepatocelular (≥5)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qcef93b7"
    },
    {
     "q": "Factor R de 1.5: ¿patrón?",
     "a": "Colestásico (≤2)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q22b0cb2"
    }
   ],
   "fuentes_tecnica": [
@@ -1342,17 +1420,20 @@
    {
     "q": "¿Proteínas totales normales?",
     "a": "6.0-8.0 g/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qee49a1c"
    },
    {
     "q": "¿Qué es la brecha proteica y qué sugiere si es >4 g/dL?",
     "a": "PT − albúmina; mieloma",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qb70c8eb"
    },
    {
     "q": "Cirrótico descompensado con PT 4.2 y albúmina 1.8: ¿qué esperas clínicamente?",
     "a": "Edema y ascitis (hipoproteinemia)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q5dd2abc"
    }
   ],
   "fuentes_tecnica": [
@@ -1406,22 +1487,26 @@
    {
     "q": "¿Albúmina sérica normal?",
     "a": "4-5 g/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q53882f9"
    },
    {
     "q": "¿Bajo qué albúmina aparece edema (fila del atlas) y por qué?",
     "a": "<2.5 g/dL; por ↓ presión oncótica",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q2db4cdb"
    },
    {
     "q": "¿Por qué la albúmina no sirve para evaluar daño hepático agudo?",
     "a": "Vida media ~20 días; en lo agudo se mira el TP/INR",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qebb6b68"
    },
    {
     "q": "Proteinuria ≥3.5 g/24 h con edema y albúmina baja: ¿síndrome?",
     "a": "Síndrome nefrótico",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q3dd9585"
    }
   ],
   "fuentes_tecnica": [
@@ -1470,17 +1555,20 @@
    {
     "q": "¿Globulinas séricas normales?",
     "a": "2.3-3.5 g/dL (~35% de las proteínas totales)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qe95602e"
    },
    {
     "q": "En la electroforesis, pico monoclonal gamma vs aumento policlonal",
     "a": "Monoclonal = mieloma; policlonal = cirrosis o inflamación crónica",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q8ce6533"
    },
    {
     "q": "Laboratorio típico de insuficiencia hepática (proteínas)",
     "a": "Albúmina ↓ y globulina ↑ (transaminasas ↑)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q1c11dca"
    }
   ],
   "fuentes_tecnica": [
@@ -1528,17 +1616,20 @@
    {
     "q": "¿Relación A/G normal?",
     "a": "1,1-2,2 (≈1,5): la albúmina es ≈ el doble de las globulinas",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qd9b36ba"
    },
    {
     "q": "A/G <1 se llama… y sugiere…",
     "a": "Inversión; cirrosis o mieloma",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qc6759d6"
    },
    {
     "q": "¿Qué causa una A/G alta (poco frecuente)?",
     "a": "Hipogammaglobulinemia",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q77406c6"
    }
   ],
   "fuentes_tecnica": [
@@ -1586,22 +1677,26 @@
    {
     "q": "¿Amilasa sérica normal?",
     "a": "0-120 UA/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q0f4b272"
    },
    {
     "q": "¿Qué valor de amilasa apoya pancreatitis?",
     "a": "≥3× VN (>360)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q48ee35a"
    },
    {
     "q": "Criterios de Atlanta para pancreatitis aguda",
     "a": "2 de 3: dolor típico, amilasa o lipasa ≥3× normal, imagen compatible",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qb4970c2"
    },
    {
     "q": "¿La amilasa elevada mide la gravedad de la pancreatitis?",
     "a": "No; además no es exclusiva (úlcera perforada, colecistitis, obstrucción)",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qb784506"
    }
   ],
   "fuentes_tecnica": [
@@ -1670,22 +1765,26 @@
    {
     "q": "¿Lipasa sérica normal y valor en pancreatitis?",
     "a": "<60 U/L (según laboratorio); pancreatitis >3× VN",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q5876357"
    },
    {
     "q": "¿Por qué la lipasa es mejor que la amilasa si el paciente consulta a las 72 h?",
     "a": "Es más específica y dura más elevada",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q8f7b0a5"
    },
    {
     "q": "Criterios de Ranson al ingreso",
     "a": "Edad >55, leucocitos >16.000, glucosa >200, LDH >350, TGO >250",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q868ed9c"
    },
    {
     "q": "Parotiditis con amilasa alta: ¿cómo está la lipasa?",
     "a": "Normal",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q78ab8fc"
    }
   ],
   "fuentes_tecnica": [
@@ -1734,17 +1833,20 @@
    {
     "q": "Clasificación ATP III del colesterol total",
     "a": "<200 deseable · 200-239 límite · ≥240 alto (mg/dL)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qb44a0a6"
    },
    {
     "q": "Colesterol total de 225 mg/dL es…",
     "a": "Límite (200-239)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q9ee85a3"
    },
    {
     "q": "Signos físicos de hipercolesterolemia",
     "a": "Xantelasma, arco senil",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q333ffd3"
    }
   ],
   "fuentes_tecnica": [
@@ -1796,17 +1898,20 @@
    {
     "q": "¿HDL mínimo deseable en varón y en mujer?",
     "a": "Varón ≥40; mujer ≥50 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qc51d7c7"
    },
    {
     "q": "¿Desde qué HDL es protector?",
     "a": "≥60 mg/dL (resta un factor de riesgo)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qe4c2549"
    },
    {
     "q": "Mujer con HDL 45: ¿cuenta para síndrome metabólico?",
     "a": "Sí (<50 en mujer)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q463cee0"
    }
   ],
   "fuentes_tecnica": [
@@ -1859,22 +1964,26 @@
    {
     "q": "¿LDL óptimo y LDL normal?",
     "a": "Óptimo <100; normal <130 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q7617ced"
    },
    {
     "q": "LDL ≥190 mg/dL: ¿clasificación y qué sospechas?",
     "a": "Muy alto; hipercolesterolemia familiar",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q25fb518"
    },
    {
     "q": "Fórmula de Friedewald y su límite",
     "a": "LDL = CT − HDL − TG/5; válida si TG <400",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qa9feb2f"
    },
    {
     "q": "LDL de 145 mg/dL se clasifica como…",
     "a": "Límite (130-159)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q58ce2bc"
    }
   ],
   "fuentes_tecnica": [
@@ -1922,17 +2031,20 @@
    {
     "q": "¿Triglicéridos normales?",
     "a": "<150 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qca9bcf5"
    },
    {
     "q": "¿Desde qué nivel de TG hay riesgo de pancreatitis y por qué?",
     "a": ">700 mg/dL; satura la lipoproteinlipasa",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q294c1d4"
    },
    {
     "q": "Criterios del síndrome metabólico",
     "a": "3 de 5: cintura ↑, TG ≥150, HDL bajo, PA ≥130/85, glucosa ≥100",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qd4764b3"
    }
   ],
   "fuentes_tecnica": [

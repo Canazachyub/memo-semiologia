@@ -2,27 +2,52 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Memo Semiología · Valores</title>
 <meta name="description" content="Valores de la historia clínica con técnicas de memorización, escenas e imágenes, y repaso espaciado.">
+<meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1320" media="(prefers-color-scheme: dark)">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Memo Semio">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+<link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<script>
+  // Antes de pintar: tema, tamaño de letra, modo lectura y movimiento (evita el parpadeo). Ver js/ajustes.js.
+  try {
+    var r = document.documentElement, t = localStorage.getItem('memo-semio-tema'), a = JSON.parse(localStorage.getItem('memo-semio-ajustes') || '{}');
+    if (t) r.dataset.theme = t;
+    var fs = { s: 14, m: 15, l: 17, xl: 19 }[a.fs]; if (fs) r.style.setProperty('--fs', fs + 'px');
+    if (a.lectura) r.classList.add('lectura');
+    if (a.reducirMov === 'si' || a.reducirMov === true) r.classList.add('sin-mov');
+  } catch (e) {}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/entrenar.css" data-entrenar>
 <link rel="stylesheet" href="css/juego.css">
+<link rel="stylesheet" href="css/repaso.css">
+<link rel="stylesheet" href="css/vistas.css">
+<link rel="stylesheet" href="css/ajustes.css">
 </head>
 <body>
+<a class="saltar" href="#app">Saltar al contenido</a>
 <header class="top">
   <div class="brand">
-    <span class="logo">🧠</span>
+    <span class="logo" aria-hidden="true">🧠</span>
     <div><h1>Memo Semiología</h1><p class="sub">Valores de la historia clínica · recordar, no solo leer</p></div>
   </div>
   <div class="tools">
-    <input id="buscar" type="search" placeholder="Buscar parámetro, signo, sigla…" autocomplete="off">
-    <button id="tema" class="icon-btn" title="Cambiar tema" aria-label="Cambiar tema">🌓</button>
+    <input id="buscar" type="search" placeholder="Buscar parámetro, signo, sigla…" autocomplete="off" aria-label="Buscar parámetro, signo o sigla (atajo /)">
+    <button id="tema" class="icon-btn" title="Cambiar tema (t)" aria-label="Cambiar tema claro u oscuro">🌓</button>
+    <button id="ajustes" class="icon-btn" title="Ajustes (,)" aria-label="Ajustes" aria-haspopup="dialog">⚙️</button>
   </div>
-  <nav class="tabs" role="tablist">
+  <nav class="tabs" role="tablist" aria-label="Secciones">
+    <button data-vista="hoy">🏠 Hoy</button>
     <button data-vista="tabla" class="on">📋 Valores</button>
     <button data-vista="juego">🎮 Juego</button>
     <button data-vista="ciudad">🏙️ Ciudad</button>
@@ -36,11 +61,11 @@
   </nav>
 </header>
 
-<main id="app">
+<main id="app" tabindex="-1">
+  <section id="v-hoy" class="vista"><div id="hoy"></div></section>
   <section id="v-tabla" class="vista on">
     <div class="barra">
       <div class="chips" id="filtro-sec"></div>
-      <label class="toggle"><input type="checkbox" id="ocultar"> <span>🙈 Ocultar valores (autoexamen)</span></label>
       <label class="toggle"><input type="checkbox" id="solo-memo"> <span>🧠 Solo con técnica</span></label>
     </div>
     <div id="tabla"></div>
@@ -56,12 +81,41 @@
   <section id="v-siglas" class="vista"><div id="siglas"></div></section>
 </main>
 
-<div id="visor" class="visor" hidden><img alt=""><p></p></div>
+<!-- navegación móvil (≤ 760 px): 4 accesos + "Más" -->
+<nav class="barra-movil" aria-label="Navegación principal">
+  <button data-ir-vista="hoy"><span aria-hidden="true">🏠</span>Hoy</button>
+  <button data-ir-vista="tabla"><span aria-hidden="true">📋</span>Valores</button>
+  <button data-ir-vista="repaso"><span aria-hidden="true">🔁</span>Repaso<b id="pend-m" class="badge"></b></button>
+  <button data-ir-vista="juego"><span aria-hidden="true">🎮</span>Juego</button>
+  <button id="mas" aria-haspopup="dialog" aria-controls="hoja-mas"><span aria-hidden="true">☰</span>Más</button>
+</nav>
+<dialog id="hoja-mas" class="hoja-mas" aria-labelledby="hoja-mas-t">
+  <div class="hm-asa" aria-hidden="true"></div>
+  <h2 id="hoja-mas-t">Más secciones</h2>
+  <div class="hm-grid">
+    <button data-ir-vista="ciudad"><span aria-hidden="true">🏙️</span>Ciudad</button>
+    <button data-ir-vista="escalas"><span aria-hidden="true">📏</span>Escalas</button>
+    <button data-ir-vista="facies"><span aria-hidden="true">🙂</span>Facies</button>
+    <button data-ir-vista="entrenar"><span aria-hidden="true">🏋️</span>Entrenar</button>
+    <button data-ir-vista="progreso"><span aria-hidden="true">📊</span>Progreso</button>
+    <button data-ir-vista="metodos"><span aria-hidden="true">🧩</span>Métodos</button>
+    <button data-ir-vista="siglas"><span aria-hidden="true">🔤</span>Siglas</button>
+    <button data-hm="ajustes"><span aria-hidden="true">⚙️</span>Ajustes</button>
+  </div>
+  <form method="dialog"><button class="btn hm-cerrar">Cerrar</button></form>
+</dialog>
+
+<div id="visor" class="visor" hidden role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+  <button class="visor-x" type="button" aria-label="Cerrar imagen">✕</button>
+  <img alt=""><p></p>
+</div>
+<div id="avisos" class="avisos" role="status" aria-live="polite"></div>
 
 <footer class="pie">
   Datos: tu vault de Semiología (texto <span class="lit">así<sup>lit.</sup></span> = completado con literatura estándar).
   Técnicas: destiladas del canal de Pablo Lomelí. Tu progreso se guarda solo en este navegador.
   <button id="exportar" class="link">Exportar progreso</button> · <label class="link">Importar<input id="importar" type="file" accept=".json" hidden></label>
+  · <button class="link" data-hm="ajustes">⚙️ Ajustes</button> · <button class="link" data-hm="atajos">⌨️ Atajos</button>
 </footer>
 <script type="module" src="js/app.js"></script>
 </body>

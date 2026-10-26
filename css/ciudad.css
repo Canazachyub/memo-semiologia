@@ -1,0 +1,54 @@
+/* Ciudad-palacio (paquete D): paseo con semáforo, tramos de 5 y estado del palacio. Usa las variables de app.css. */
+.cd-chip { display: inline-block; margin: 4px 6px 0 0; padding: 2px 9px; border-radius: 99px; font-size: 0.75rem; font-weight: 600;
+  background: var(--card); border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.cd-chip.toca { background: color-mix(in srgb, var(--up) 12%, var(--card)); border-color: var(--up); color: var(--up); }
+.cd-chip.ok { background: color-mix(in srgb, var(--ok) 12%, var(--card)); border-color: var(--ok); color: var(--ok); }
+.cd-chip.nuevo { border-style: dashed; }
+.parada .pt { min-width: 0; }
+.parada .pt .cd-chip { margin-top: 6px; }
+.cd-hoy { max-width: 640px; margin: 10px auto; padding: 10px 12px; border-radius: 14px; background: color-mix(in srgb, var(--up) 8%, var(--card)); border: 1px solid var(--up); }
+.cd-hoy .chip { margin: 4px 4px 0 0; }
+.cd-estado { margin: 4px 0 10px; }
+.cd-reco { padding: 12px 14px; border-radius: 14px; background: var(--memo-bg); border: 1px dashed var(--memo); margin: 10px 0; }
+.cd-reco .btn { margin-top: 8px; }
+.cd-modos { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 6px; }
+.cd-ayuda { color: var(--muted); font-size: 0.8125rem; margin: 6px 0 14px; }
+.cd-tramo { font-size: 0.875rem; margin: 18px 0 8px; padding-bottom: 4px; border-bottom: 2px solid var(--line); color: var(--ink); }
+.cd-tramo small { color: var(--muted); font-weight: 500; }
+.cd-glob { color: var(--muted); font-weight: 600; font-size: 0.7188rem; }
+.estaciones li > div { min-width: 0; overflow-wrap: anywhere; }
+
+/* paseo */
+.cd-barra { height: 6px; border-radius: 99px; background: var(--line); overflow: hidden; max-width: 720px; margin: 0 auto 10px; }
+.cd-barra i { display: block; height: 100%; background: var(--memo); border-radius: 99px; transition: width .3s ease; }
+.cd-num { margin: 2px 0 6px; font-size: 0.7812rem; color: var(--muted); }
+.cd-num b { color: var(--memo); }
+.cd-img { max-width: min(260px, 100%); border-radius: 12px; display: block; margin: 0 auto 8px; cursor: zoom-in; }
+.cd-mute { color: var(--muted); font-size: 0.8125rem; margin: 8px 0 4px; }
+.cd-sem { display: grid; grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 8px; margin-top: 8px; }
+.cd-sem .btn { min-height: 48px; font-weight: 700; }
+.cd-sem kbd { font: 600 0.6875rem Inter, sans-serif; opacity: .6; margin-left: 4px; }
+.cd-sem .cd-r { border-color: var(--up); color: var(--up); }
+.cd-sem .cd-a { border-color: #d97706; color: #b45309; }
+.cd-sem .cd-v { border-color: var(--ok); color: var(--ok); }
+.cd-sem .btn:hover { filter: brightness(1.05); }
+:root[data-theme="dark"] .cd-sem .cd-a { color: #fbbf24; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .cd-sem .cd-a { color: #fbbf24; } }
+
+/* resumen */
+.cd-fin h3 { margin: 4px 0 10px; }
+.cd-kpis { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 8px 0; }
+.cd-kpis span { background: var(--card); border: 1px solid var(--line); border-radius: 99px; padding: 4px 12px; font-size: 0.875rem; }
+.cd-srs { margin: 8px 0; }
+.cd-fallidas { text-align: left; max-width: 560px; margin: 10px auto; }
+.cd-fallidas summary { cursor: pointer; font-weight: 700; }
+.cd-fallidas ul { list-style: none; padding: 0; margin: 8px 0; display: grid; gap: 6px; }
+.cd-fallidas li { display: flex; flex-wrap: wrap; gap: 4px 10px; justify-content: space-between; align-items: center; padding: 8px 10px; border-radius: 10px; background: var(--card); border: 1px solid var(--line); overflow-wrap: anywhere; }
+.cd-fallidas li span { min-width: 0; }
+
+@media (prefers-reduced-motion: reduce) { .cd-barra i { transition: none; } }
+.cd-fin b { display: inline; font-size: inherit; }
+.cd-fin > b:first-child { display: block; font-size: 2.667rem; }
+.cd-fin { color: var(--ink); }
+#ciudad .tarjeta .meta { flex-wrap: wrap; gap: 4px 10px; }
+#ciudad .tarjeta { padding: 18px 16px; }

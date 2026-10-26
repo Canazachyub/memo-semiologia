@@ -42,22 +42,26 @@
       {
         "tipo": "directa",
         "q": "¿Hb normal en varón y en mujer (Guyton)?",
-        "a": "Varón ~15 g/dL, mujer ~14 g/dL"
+        "a": "Varón ~15 g/dL, mujer ~14 g/dL",
+        "pid": "qe8199b1"
       },
       {
         "tipo": "umbral",
         "q": "¿Bajo qué Hb hay anemia según la OMS?",
-        "a": "<13 g/dL en varón y <12 g/dL en mujer"
+        "a": "<13 g/dL en varón y <12 g/dL en mujer",
+        "pid": "q7d443c0"
       },
       {
         "tipo": "caso",
         "q": "Mujer puneña con Hb 14 g/dL: ¿anemia según el corte de altura (OMS 2011)?",
-        "a": "Sí: en Puno la mujer tiene anemia con Hb <14.7 g/dL"
+        "a": "Sí: en Puno la mujer tiene anemia con Hb <14.7 g/dL",
+        "pid": "q06d16ea"
       },
       {
         "tipo": "umbral",
         "q": "¿Desde qué Hb se ve palidez clínica?",
-        "a": "Hb <7 g/dL"
+        "a": "Hb <7 g/dL",
+        "pid": "qfaab1e1"
       }
     ],
     "fuentes_tecnica": [
@@ -120,22 +124,26 @@
       {
         "tipo": "directa",
         "q": "¿Hb que define mal de montaña crónico (Monge, Qinghai)?",
-        "a": "≥21 g/dL varón y ≥19 g/dL mujer"
+        "a": "≥21 g/dL varón y ≥19 g/dL mujer",
+        "pid": "qa948860"
       },
       {
         "tipo": "directa",
         "q": "¿Hb habitual en Puno según el profesor y su consecuencia?",
-        "a": "24-26 g/dL → hipertensión pulmonar → cor pulmonale crónico"
+        "a": "24-26 g/dL → hipertensión pulmonar → cor pulmonale crónico",
+        "pid": "qa3d1ffd"
       },
       {
         "tipo": "inversa",
         "q": "Hb de hasta 16 g/dL es lo normal de…",
-        "a": "La costa (nivel del mar)"
+        "a": "La costa (nivel del mar)",
+        "pid": "q9b1d89c"
       },
       {
         "tipo": "explica",
         "q": "¿Por qué la altura sube la Hb?",
-        "a": "SaO2 baja → eritropoyetina → poliglobulia; si es desproporcionada favorece trombosis"
+        "a": "SaO2 baja → eritropoyetina → poliglobulia; si es desproporcionada favorece trombosis",
+        "pid": "q9980ffd"
       }
     ],
     "fuentes_tecnica": [
@@ -193,22 +201,26 @@
       {
         "tipo": "directa",
         "q": "¿Hematocrito normal (Guyton)?",
-        "a": "40-45% en ambos sexos"
+        "a": "40-45% en ambos sexos",
+        "pid": "qf6f5135"
       },
       {
         "tipo": "umbral",
         "q": "¿Cuándo se hace sangría en el cor pulmonale crónico?",
-        "a": "Hto >60% o Hb >20 g%, antes del diurético"
+        "a": "Hto >60% o Hb >20 g%, antes del diurético",
+        "pid": "q6fd7df4"
       },
       {
         "tipo": "trampa",
         "q": "Hb 13 g/dL y Hto 52%: ¿qué sospechas?",
-        "a": "No cumple Hto ≈ Hb × 3 (≈39%): error o hipocromía"
+        "a": "No cumple Hto ≈ Hb × 3 (≈39%): error o hipocromía",
+        "pid": "qa5d8e39"
       },
       {
         "tipo": "umbral",
         "q": "¿Hto que define policitemia por sexo?",
-        "a": ">52% varón, >48% mujer"
+        "a": ">52% varón, >48% mujer",
+        "pid": "q5c64051"
       }
     ],
     "fuentes_tecnica": [
@@ -266,17 +278,20 @@
       {
         "tipo": "directa",
         "q": "¿Recuento normal de GR en varón y mujer?",
-        "a": "5,2 y 4,7 millones/mm³ (±300.000)"
+        "a": "5,2 y 4,7 millones/mm³ (±300.000)",
+        "pid": "q1feb589"
       },
       {
         "tipo": "directa",
         "q": "¿Vida media del glóbulo rojo y dónde se destruye?",
-        "a": "120 días; en el bazo"
+        "a": "120 días; en el bazo",
+        "pid": "qed33493"
       },
       {
         "tipo": "caso",
         "q": "VCM 65 fL y GR 6 millones: Mentzer ≈ 11. ¿Qué sugiere?",
-        "a": "<13: talasemia"
+        "a": "<13: talasemia",
+        "pid": "q6e72c85"
       }
     ],
     "fuentes_tecnica": [
@@ -324,22 +339,26 @@
       {
         "tipo": "directa",
         "q": "¿VCM normal?",
-        "a": "80-100 fL (normocítica)"
+        "a": "80-100 fL (normocítica)",
+        "pid": "qb51a19d"
       },
       {
         "tipo": "umbral",
         "q": "VCM 123 fL se llama… y ¿qué buscas?",
-        "a": "Macrocitosis (>100): déficit de B12/folato, alcohol, mielodisplasia"
+        "a": "Macrocitosis (>100): déficit de B12/folato, alcohol, mielodisplasia",
+        "pid": "q3ae29df"
       },
       {
         "tipo": "trampa",
         "q": "¿Qué índice mide el TAMAÑO del GR: VCM, HCM o CHCM?",
-        "a": "El VCM (volumen, en fL)"
+        "a": "El VCM (volumen, en fL)",
+        "pid": "qa3159b8"
       },
       {
         "tipo": "umbral",
         "q": "VCM <80 fL: ¿causas principales?",
-        "a": "Ferropenia por pérdida crónica y talasemia"
+        "a": "Ferropenia por pérdida crónica y talasemia",
+        "pid": "q8b7600e"
       }
     ],
     "fuentes_tecnica": [
@@ -387,17 +406,20 @@
       {
         "tipo": "directa",
         "q": "¿HCM normal?",
-        "a": "27-33 pg"
+        "a": "27-33 pg",
+        "pid": "q5a666a8"
       },
       {
         "tipo": "umbral",
         "q": "HCM <27 pg indica…",
-        "a": "Hipocromía: anemia microcítica hipocrómica, casi siempre ferropenia"
+        "a": "Hipocromía: anemia microcítica hipocrómica, casi siempre ferropenia",
+        "pid": "q15c4643"
       },
       {
         "tipo": "trampa",
         "q": "¿Cuál se mide en picogramos y cuál en g/dL: HCM o CHCM?",
-        "a": "HCM en pg (Hb por célula); CHCM en g/dL (concentración)"
+        "a": "HCM en pg (Hb por célula); CHCM en g/dL (concentración)",
+        "pid": "qf5f3fea"
       }
     ],
     "fuentes_tecnica": [
@@ -445,17 +467,20 @@
       {
         "tipo": "directa",
         "q": "¿CHCM normal?",
-        "a": "32-36 g/dL"
+        "a": "32-36 g/dL",
+        "pid": "qb13daea"
       },
       {
         "tipo": "umbral",
         "q": "CHCM >36 g/dL casi solo se ve en…",
-        "a": "Esferocitosis hereditaria (esferocitos hipercrómicos sin palidez central)"
+        "a": "Esferocitosis hereditaria (esferocitos hipercrómicos sin palidez central)",
+        "pid": "q9d56ffb"
       },
       {
         "tipo": "trampa",
         "q": "HCM 30 pg y CHCM 30 g/dL: ¿cuál está bajo?",
-        "a": "Solo el CHCM (<32); el HCM 30 está dentro de 27-33"
+        "a": "Solo el CHCM (<32); el HCM 30 está dentro de 27-33",
+        "pid": "qa2699ef"
       }
     ],
     "fuentes_tecnica": [
@@ -503,22 +528,26 @@
       {
         "tipo": "directa",
         "q": "¿Reticulocitos normales?",
-        "a": "0,5-1,5% de los GR (Guyton: <1%)"
+        "a": "0,5-1,5% de los GR (Guyton: <1%)",
+        "pid": "qd67de7e"
       },
       {
         "tipo": "caso",
         "q": "Anemia con reticulocitos altos: ¿qué piensas?",
-        "a": "Regenerativa: hemólisis o hemorragia"
+        "a": "Regenerativa: hemólisis o hemorragia",
+        "pid": "q201e37d"
       },
       {
         "tipo": "inversa",
         "q": "¿Cuál es el indicador más sensible de actividad eritropoyética?",
-        "a": "Los reticulocitos"
+        "a": "Los reticulocitos",
+        "pid": "q352c007"
       },
       {
         "tipo": "umbral",
         "q": "Índice reticulocitario <2 significa…",
-        "a": "Anemia arregenerativa (ferropenia, aplasia, talasemia)"
+        "a": "Anemia arregenerativa (ferropenia, aplasia, talasemia)",
+        "pid": "q176fb5b"
       }
     ],
     "fuentes_tecnica": [
@@ -567,22 +596,26 @@
       {
         "tipo": "directa",
         "q": "¿Leucocitos normales en el adulto?",
-        "a": "4.000-10.000/µL (según laboratorio hasta 11.000)"
+        "a": "4.000-10.000/µL (según laboratorio hasta 11.000)",
+        "pid": "qfc908ca"
       },
       {
         "tipo": "umbral",
         "q": "¿Leucopenia es menos de…?",
-        "a": "<4.000/µL"
+        "a": "<4.000/µL",
+        "pid": "qced6518"
       },
       {
         "tipo": "lista",
         "q": "¿Orden de la fórmula leucocitaria de mayor a menor?",
-        "a": "N > L > M > E > B ≈ 60-30-6-3-1%"
+        "a": "N > L > M > E > B ≈ 60-30-6-3-1%",
+        "pid": "qfaffbd1"
       },
       {
         "tipo": "caso",
         "q": "Abdomen agudo con 17.000 leucocitos y >80% neutrófilos: ¿qué temes?",
-        "a": "Perforación (apendicitis: >15.000 + >80%)"
+        "a": "Perforación (apendicitis: >15.000 + >80%)",
+        "pid": "qcec9de9"
       }
     ],
     "fuentes_tecnica": [
@@ -635,17 +668,20 @@
       {
         "tipo": "directa",
         "q": "¿Neutrófilos segmentados normales?",
-        "a": "55-70% (2.500-7.500/µL)"
+        "a": "55-70% (2.500-7.500/µL)",
+        "pid": "qfff4c1d"
       },
       {
         "tipo": "umbral",
         "q": "¿Neutropenia es menos de…?",
-        "a": "<1.500-2.000/µL; <500 absolutos = grave, riesgo de sepsis"
+        "a": "<1.500-2.000/µL; <500 absolutos = grave, riesgo de sepsis",
+        "pid": "q46c1b30"
       },
       {
         "tipo": "caso",
         "q": "Fiebre, leucocitosis y neutrofilia: ¿qué tipo de infección sugiere?",
-        "a": "Bacteriana"
+        "a": "Bacteriana",
+        "pid": "qaa0e968"
       }
     ],
     "fuentes_tecnica": [
@@ -688,17 +724,20 @@
       {
         "tipo": "directa",
         "q": "¿Abastonados normales?",
-        "a": "0-5% (hasta ~500/µL)"
+        "a": "0-5% (hasta ~500/µL)",
+        "pid": "q8640041"
       },
       {
         "tipo": "umbral",
         "q": "Abastonados >5% se llama…",
-        "a": "Desviación a la izquierda: infección bacteriana aguda"
+        "a": "Desviación a la izquierda: infección bacteriana aguda",
+        "pid": "qd7374f2"
       },
       {
         "tipo": "caso",
         "q": "Desviación izquierda con leucopenia: ¿qué significa?",
-        "a": "Sepsis grave, peor pronóstico que con leucocitosis"
+        "a": "Sepsis grave, peor pronóstico que con leucocitosis",
+        "pid": "q1b3cecc"
       }
     ],
     "fuentes_tecnica": [
@@ -746,17 +785,20 @@
       {
         "tipo": "directa",
         "q": "¿Linfocitos normales?",
-        "a": "20-40% (1.000-4.000/µL)"
+        "a": "20-40% (1.000-4.000/µL)",
+        "pid": "qb2526ed"
       },
       {
         "tipo": "caso",
         "q": "Joven con faringitis, adenopatías cervicales posteriores, esplenomegalia y linfocitos atípicos >10%: ¿diagnóstico?",
-        "a": "Mononucleosis"
+        "a": "Mononucleosis",
+        "pid": "q9ea389a"
       },
       {
         "tipo": "umbral",
         "q": "Linfopenia <1.000/mm³ indica…",
-        "a": "Deficiencia de la inmunidad celular"
+        "a": "Deficiencia de la inmunidad celular",
+        "pid": "qb24328c"
       }
     ],
     "fuentes_tecnica": [
@@ -799,17 +841,20 @@
       {
         "tipo": "directa",
         "q": "¿Monocitos normales?",
-        "a": "2-8% (200-800/µL)"
+        "a": "2-8% (200-800/µL)",
+        "pid": "q4ba6536"
       },
       {
         "tipo": "caso",
         "q": "Monocitosis en un adulto: ¿qué dos causas piensas primero?",
-        "a": "TBC y endocarditis bacteriana subaguda (infección/inflamación crónica)"
+        "a": "TBC y endocarditis bacteriana subaguda (infección/inflamación crónica)",
+        "pid": "q76653c3"
       },
       {
         "tipo": "umbral",
         "q": "¿Monocitosis en el adulto es más de…?",
-        "a": ">500/µL (>750 en el niño)"
+        "a": ">500/µL (>750 en el niño)",
+        "pid": "q23618ac"
       }
     ],
     "fuentes_tecnica": [
@@ -853,17 +898,20 @@
       {
         "tipo": "directa",
         "q": "¿Eosinófilos normales?",
-        "a": "1-4% (hasta 500/µL)"
+        "a": "1-4% (hasta 500/µL)",
+        "pid": "q2cab583"
       },
       {
         "tipo": "lista",
         "q": "¿Causas de eosinofilia (NAACP)?",
-        "a": "Neoplasia, alergia-asma, Addison, colagenosis, parásitos tisulares"
+        "a": "Neoplasia, alergia-asma, Addison, colagenosis, parásitos tisulares",
+        "pid": "q2a54a04"
       },
       {
         "tipo": "trampa",
         "q": "¿Corticoides y Cushing suben o bajan los eosinófilos?",
-        "a": "Los bajan (eosinopenia)"
+        "a": "Los bajan (eosinopenia)",
+        "pid": "q3877cf4"
       }
     ],
     "fuentes_tecnica": [
@@ -900,17 +948,20 @@
       {
         "tipo": "directa",
         "q": "¿Basófilos normales?",
-        "a": "<1% de los leucocitos"
+        "a": "<1% de los leucocitos",
+        "pid": "q1054bab"
       },
       {
         "tipo": "caso",
         "q": "Basofilia persistente: ¿qué enfermedad sospechas?",
-        "a": "Leucemia mieloide crónica (síndrome mieloproliferativo)"
+        "a": "Leucemia mieloide crónica (síndrome mieloproliferativo)",
+        "pid": "q495ba57"
       },
       {
         "tipo": "inversa",
         "q": "El leucocito más escaso de la fórmula es…",
-        "a": "El basófilo"
+        "a": "El basófilo",
+        "pid": "q2e8df33"
       }
     ],
     "fuentes_tecnica": [
@@ -968,22 +1019,26 @@
       {
         "tipo": "directa",
         "q": "¿Plaquetas normales (Guyton)?",
-        "a": "150.000-450.000/µL"
+        "a": "150.000-450.000/µL",
+        "pid": "q376e507"
       },
       {
         "tipo": "umbral",
         "q": "¿Bajo qué recuento hay riesgo de sangrado espontáneo/quirúrgico y bajo cuál es potencialmente letal?",
-        "a": "<30.000/µL y <10.000/µL"
+        "a": "<30.000/µL y <10.000/µL",
+        "pid": "qc1d0fef"
       },
       {
         "tipo": "trampa",
         "q": "Petequias y sangrado de mucosas vs hematomas y hemartrosis: ¿cuál es de plaquetas?",
-        "a": "Petequias y mucosas = plaquetas; hematomas y hemartrosis = factores"
+        "a": "Petequias y mucosas = plaquetas; hematomas y hemartrosis = factores",
+        "pid": "q25cd74f"
       },
       {
         "tipo": "inversa",
         "q": "Recuento <150.000/µL se llama…",
-        "a": "Trombocitopenia"
+        "a": "Trombocitopenia",
+        "pid": "q8bc5d5d"
       }
     ],
     "fuentes_tecnica": [
@@ -1031,17 +1086,20 @@
       {
         "tipo": "directa",
         "q": "¿ADE/RDW normal?",
-        "a": "11,5-14,5%"
+        "a": "11,5-14,5%",
+        "pid": "qedc4ff1"
       },
       {
         "tipo": "caso",
         "q": "Anemia microcítica con RDW alto vs con RDW normal: ¿qué sugiere cada una?",
-        "a": "RDW alto = ferropenia; RDW normal = talasemia"
+        "a": "RDW alto = ferropenia; RDW normal = talasemia",
+        "pid": "qb175438"
       },
       {
         "tipo": "inversa",
         "q": "La variación del tamaño de los GR (anisocitosis) se mide con…",
-        "a": "El ADE/RDW"
+        "a": "El ADE/RDW",
+        "pid": "q1a03860"
       }
     ],
     "fuentes_tecnica": [
@@ -1089,17 +1147,20 @@
       {
         "tipo": "directa",
         "q": "¿VPM normal?",
-        "a": "7,5-11,5 fL"
+        "a": "7,5-11,5 fL",
+        "pid": "qe741f7d"
       },
       {
         "tipo": "caso",
         "q": "Trombocitopenia con VPM alto: ¿qué mecanismo sugiere?",
-        "a": "Destrucción periférica (PTI): la médula libera plaquetas jóvenes grandes"
+        "a": "Destrucción periférica (PTI): la médula libera plaquetas jóvenes grandes",
+        "pid": "q8a1b6ed"
       },
       {
         "tipo": "trampa",
         "q": "¿Qué dos índices terminan en 11,5 y en qué unidades?",
-        "a": "RDW 11,5-14,5% y VPM 7,5-11,5 fL"
+        "a": "RDW 11,5-14,5% y VPM 7,5-11,5 fL",
+        "pid": "q58ae7f4"
       }
     ],
     "fuentes_tecnica": [
@@ -1147,12 +1208,14 @@
       {
         "tipo": "directa",
         "q": "¿Plaquetocrito normal?",
-        "a": "0,15-0,40%"
+        "a": "0,15-0,40%",
+        "pid": "q1a61f23"
       },
       {
         "tipo": "inversa",
         "q": "¿Qué parámetro va paralelo al recuento de plaquetas y expresa el % de volumen que ocupan?",
-        "a": "El plaquetocrito"
+        "a": "El plaquetocrito",
+        "pid": "qd1d4820"
       }
     ],
     "fuentes_tecnica": [
@@ -1205,17 +1268,20 @@
       {
         "tipo": "directa",
         "q": "¿Hepatometría normal por percusión en LMC derecha?",
-        "a": "10-12 cm"
+        "a": "10-12 cm",
+        "pid": "qae7c3d9"
       },
       {
         "tipo": "lista",
         "q": "¿Cómo se gradúa la hepatomegalia por traveses de dedo?",
-        "a": "Pequeña hasta 2, mediana hasta 4, grande >4"
+        "a": "Pequeña hasta 2, mediana hasta 4, grande >4",
+        "pid": "qec9c131"
       },
       {
         "tipo": "directa",
         "q": "¿Desde dónde empieza la submatidez hepática superior?",
-        "a": "Desde el 5º EIC derecho"
+        "a": "Desde el 5º EIC derecho",
+        "pid": "qcd51743"
       }
     ],
     "fuentes_tecnica": [
@@ -1263,22 +1329,26 @@
       {
         "tipo": "directa",
         "q": "¿Colédoco normal en ecografía?",
-        "a": "≤6 mm (<60 años); ≤8 mm (>60 años o poscolecistectomía)"
+        "a": "≤6 mm (<60 años); ≤8 mm (>60 años o poscolecistectomía)",
+        "pid": "qa6ea092"
       },
       {
         "tipo": "caso",
         "q": "Fiebre, ictericia y dolor en hipocondrio derecho: ¿tríada y diagnóstico?",
-        "a": "Tríada de Charcot: colangitis"
+        "a": "Tríada de Charcot: colangitis",
+        "pid": "qe3efb23"
       },
       {
         "tipo": "lista",
         "q": "¿Qué agrega la péntada de Reynolds a Charcot?",
-        "a": "Shock y confusión"
+        "a": "Shock y confusión",
+        "pid": "qbaf4986"
       },
       {
         "tipo": "inversa",
         "q": "Colédoco de 12 mm con cálculo indica…",
-        "a": "Coledocolitiasis / obstrucción extrahepática"
+        "a": "Coledocolitiasis / obstrucción extrahepática",
+        "pid": "qbe09870"
       }
     ],
     "fuentes_tecnica": [
@@ -1321,17 +1391,20 @@
       {
         "tipo": "directa",
         "q": "¿Diámetro normal de la vena porta en eco?",
-        "a": "≤13 mm"
+        "a": "≤13 mm",
+        "pid": "qef258f1"
       },
       {
         "tipo": "caso",
         "q": "Porta de 16 mm, esplenomegalia y ascitis: ¿diagnóstico?",
-        "a": "Hipertensión portal"
+        "a": "Hipertensión portal",
+        "pid": "qf8cc6a6"
       },
       {
         "tipo": "umbral",
         "q": "Porta fina o no visible sugiere… y ¿con qué la buscas?",
-        "a": "Trombosis portal; con Doppler"
+        "a": "Trombosis portal; con Doppler",
+        "pid": "qbe10be1"
       }
     ],
     "fuentes_tecnica": [
@@ -1380,17 +1453,20 @@
       {
         "tipo": "umbral",
         "q": "¿Eje largo del bazo en eco que define esplenomegalia?",
-        "a": ">12-13 cm"
+        "a": ">12-13 cm",
+        "pid": "qb9fdb24"
       },
       {
         "tipo": "directa",
         "q": "¿En qué posición se palpa el bazo con la maniobra de Schuster?",
-        "a": "Decúbito lateral derecho"
+        "a": "Decúbito lateral derecho",
+        "pid": "q241c087"
       },
       {
         "tipo": "lista",
         "q": "Causas de esplenomegalia del atlas",
-        "a": "HT portal, infecciones, leucemias, cirrosis, hemólisis"
+        "a": "HT portal, infecciones, leucemias, cirrosis, hemólisis",
+        "pid": "qe4ccc23"
       }
     ],
     "fuentes_tecnica": [
@@ -1433,17 +1509,20 @@
       {
         "tipo": "directa",
         "q": "¿Medidas ecográficas normales del páncreas?",
-        "a": "Cabeza ≤3 cm, cuerpo y cola ≤2,5 cm"
+        "a": "Cabeza ≤3 cm, cuerpo y cola ≤2,5 cm",
+        "pid": "q29894f3"
       },
       {
         "tipo": "umbral",
         "q": "Wirsung >3 mm indica…",
-        "a": "Dilatado: obstrucción (cálculo, neoplasia) o pancreatitis crónica"
+        "a": "Dilatado: obstrucción (cálculo, neoplasia) o pancreatitis crónica",
+        "pid": "qd575af5"
       },
       {
         "tipo": "caso",
         "q": "Páncreas aumentado e hipoecoico en eco: ¿qué sugiere?",
-        "a": "Pancreatitis aguda"
+        "a": "Pancreatitis aguda",
+        "pid": "qad45545"
       }
     ],
     "fuentes_tecnica": [
@@ -1487,22 +1566,26 @@
       {
         "tipo": "directa",
         "q": "¿Grosor normal de la pared vesicular?",
-        "a": "<3 mm"
+        "a": "<3 mm",
+        "pid": "qb99caa7"
       },
       {
         "tipo": "umbral",
         "q": "Pared vesicular >3-4 mm sugiere…",
-        "a": "Colecistitis"
+        "a": "Colecistitis",
+        "pid": "q61b750e"
       },
       {
         "tipo": "directa",
         "q": "¿Cómo se busca el signo de Murphy y qué indica?",
-        "a": "Palpar el punto cístico en inspiración: dolor que corta la respiración = colecistitis aguda"
+        "a": "Palpar el punto cístico en inspiración: dolor que corta la respiración = colecistitis aguda",
+        "pid": "q04a3154"
       },
       {
         "tipo": "caso",
         "q": "Vesícula distendida indolora con ictericia: ¿signo y sospecha?",
-        "a": "Courvoisier-Terrier: neoplasia de cabeza de páncreas"
+        "a": "Courvoisier-Terrier: neoplasia de cabeza de páncreas",
+        "pid": "q22940f6"
       }
     ],
     "fuentes_tecnica": [
@@ -1560,17 +1643,20 @@
       {
         "tipo": "directa",
         "q": "¿Edad normal de la menarquia y su promedio?",
-        "a": "10-14 años, promedio 12"
+        "a": "10-14 años, promedio 12",
+        "pid": "qafb1e7b"
       },
       {
         "tipo": "umbral",
         "q": "¿A qué edad la ausencia de menarquia es amenorrea primaria?",
-        "a": "A los 15 años"
+        "a": "A los 15 años",
+        "pid": "qac5a9e2"
       },
       {
         "tipo": "umbral",
         "q": "Menarquia antes de los 9 años se considera…",
-        "a": "Precoz (pubertad precoz)"
+        "a": "Precoz (pubertad precoz)",
+        "pid": "qf465d8f"
       }
     ],
     "fuentes_tecnica": [
@@ -1608,17 +1694,20 @@
       {
         "tipo": "lista",
         "q": "¿Qué significan las cuatro cifras de P en la fórmula ampliada, en orden?",
-        "a": "A término, prematuros, abortos, hijos vivos"
+        "a": "A término, prematuros, abortos, hijos vivos",
+        "pid": "q05da28a"
       },
       {
         "tipo": "caso",
         "q": "G3 P2012: ¿cuántos abortos y cuántos hijos vivos?",
-        "a": "1 aborto y 2 hijos vivos"
+        "a": "1 aborto y 2 hijos vivos",
+        "pid": "qb9b3eb2"
       },
       {
         "tipo": "directa",
         "q": "¿Qué indican G y P?",
-        "a": "G = gestaciones, P = partos"
+        "a": "G = gestaciones, P = partos",
+        "pid": "q46df9df"
       }
     ],
     "fuentes_tecnica": [

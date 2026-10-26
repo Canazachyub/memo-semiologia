@@ -33,22 +33,26 @@
    {
     "q": "¿Rango normal de FC en el adulto en reposo?",
     "a": "60-100 lpm (media 70)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q6260ef4"
    },
    {
     "q": "Pulso de 112 lpm en un adulto se llama… y nombra 2 causas",
     "a": "Taquisfigmia (>100): fiebre, IC, hipertiroidismo, hipovolemia, shock",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q55fd9bf"
    },
    {
     "q": "Paciente con 39 °C y pulso de 60 lpm: ¿qué esperabas y qué enfermedad sospechas?",
     "a": "Esperabas que suba +12-15 lpm por cada °C sobre 37 (≈+24-30 lpm); un pulso que no acompaña la fiebre orienta a tifoidea (está entre las causas de bradisfigmia)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q667ca56"
    },
    {
     "q": "¿Qué es el déficit de pulso?",
     "a": "Latidos auscultados > pulsos radiales (FA, extrasístoles); contar 1 minuto",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q8d0ee02"
    }
   ],
   "fuentes_tecnica": [
@@ -128,22 +132,26 @@
    {
     "q": "¿PA ideal y PA normal según el docente?",
     "a": "Ideal <120/80; normal <130/85 (limítrofe 130-139/85-89)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q77ddf85"
    },
    {
     "q": "¿Desde qué cifra se diagnostica HTA y con cuántas tomas?",
     "a": "≥140/90 en ≥2 tomas",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q16963ff"
    },
    {
     "q": "PA 165/95: ¿qué grado de HTA?",
     "a": "Grado II (160-179 / 100-109): decide la cifra más alta, la sistólica",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qd562f25"
    },
    {
     "q": "¿Cómo se calcula la PAM y cuál es su normal?",
     "a": "(PAS + 2 × PAD)/3; normal 60-100 mmHg; <60 = isquemia cerebral",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q82b42d7"
    }
   ],
   "fuentes_tecnica": [
@@ -199,22 +207,26 @@
    {
     "q": "¿FR normal del adulto en reposo según el docente?",
     "a": "16-20 rpm; relación I:E 2:3",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q22ee8e9"
    },
    {
     "q": "FR de 26 rpm se llama… y da 2 causas",
     "a": "Taquipnea (>20): fiebre, neumonía, EPOC, EAP, acidosis metabólica, uremia",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qcc7fb32"
    },
    {
     "q": "Paciente con sobredosis de opiáceos y FR 10: ¿cómo se llama?",
     "a": "Bradipnea (<16)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q209ce58"
    },
    {
     "q": "Respiración crece-decrece seguida de apnea en un paciente con IC: ¿nombre?",
     "a": "Cheyne-Stokes",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q477b999"
    }
   ],
   "fuentes_tecnica": [
@@ -279,22 +291,26 @@
    {
     "q": "¿Temperatura normal axilar, oral y rectal?",
     "a": "36.5 / 37 / 37.5 °C (cada sitio +0.5)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qbce622b"
    },
    {
     "q": "Axilar de 38 °C: ¿febrícula, fiebre moderada o elevada?",
     "a": "Fiebre moderada (37.6-38.5); febrícula 37.5; elevada >38.6",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q239eb75"
    },
    {
     "q": "Abdomen agudo con diferencia axilo-rectal de 1 °C: ¿qué sospechas?",
     "a": "Apendicitis (diferencia >0.8 °C)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q4a78e3d"
    },
    {
     "q": "Fiebre que baja a la normalidad cada día (malaria): ¿qué curva? (literatura)",
     "a": "Intermitente; continua oscila <1 °C; remitente >1 °C sin normalizar",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qe47d21b"
    }
   ],
   "fuentes_tecnica": [
@@ -358,22 +374,26 @@
    {
     "q": "¿SatO2 normal a nivel del mar?",
     "a": "95-98%",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q78e28c3"
    },
    {
     "q": "¿SatO2 normal en Puno según el docente?",
     "a": "90% (wiki: 88-92% en adaptados a la altura)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q92a0fd4"
    },
    {
     "q": "Residente de Puno sano con SatO2 91%: ¿le das oxígeno?",
     "a": "No: es normal en la altura; no aplicar el corte 95% del nivel del mar",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qf9a63f4"
    },
    {
     "q": "SatO2 de 85% en un paciente con neumonía en Puno: ¿qué es y qué haces?",
     "a": "Hipoxemia (<90%): dar O2, posición sentada, buscar la causa",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qfbeaf8e"
    }
   ],
   "fuentes_tecnica": [
@@ -442,22 +462,26 @@
    {
     "q": "¿Fórmula del IMC?",
     "a": "Peso (kg) ÷ talla² (m)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q442a037"
    },
    {
     "q": "¿IMC normal según el docente y desde cuánto es obesidad?",
     "a": "Normal 19-23; sobrepeso 24-25; obesidad >26; mórbida >40",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qd8f172c"
    },
    {
     "q": "Mujer de 1.60 m y 78 kg con somnolencia y apnea: ¿IMC y síndrome?",
     "a": "IMC ≈30.5 = obesidad; síndrome de Pickwick",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q23c1b71"
    },
    {
     "q": "¿Peso ideal de Broca para un varón de 170 cm?",
     "a": "70 kg (talla cm − 100) ±10%; en la mujer −5%",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q31a4276"
    }
   ],
   "fuentes_tecnica": [
@@ -520,22 +544,26 @@
    {
     "q": "¿Desde qué talla se habla de gigantismo en varón y en mujer?",
     "a": ">1.90 m varón; >1.80 m mujer",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q71a7dda"
    },
    {
     "q": "¿Talla que define enanismo?",
     "a": "<1.50 m en ambos sexos",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q53146b0"
    },
    {
     "q": "¿Relación normal pubis-vértice / pubis-planta?",
     "a": "0.98-1.0",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q5860151"
    },
    {
     "q": "Envergadura mayor que la talla con segmento inferior largo sugiere… (literatura)",
     "a": "Hábito eunucoide o Marfan",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qcf908e6"
    }
   ],
   "fuentes_tecnica": [
@@ -593,17 +621,20 @@
    {
     "q": "¿Perímetro abdominal que define obesidad abdominal en mujer y en varón (ATP III)?",
     "a": ">88 cm mujer; >102 cm varón",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qf2fb2bd"
    },
    {
     "q": "¿Desde qué cintura marca riesgo la IDF?",
     "a": "Desde 80 cm mujer y 94 cm varón",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q219978c"
    },
    {
     "q": "¿Dónde y cuándo se mide la cintura?",
     "a": "Punto medio entre costilla y cresta ilíaca, al final de la espiración",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q165ae86"
    }
   ],
   "fuentes_tecnica": [
@@ -667,22 +698,26 @@
    {
     "q": "¿Máximo de cada componente de Glasgow y rango total?",
     "a": "Ocular 4, verbal 5, motora 6; total 3-15 (no existe 0)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qd01e1c1"
    },
    {
     "q": "¿Glasgow que obliga a proteger la vía aérea?",
     "a": "≤8 (coma grave) → intubar",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qca2d2ba"
    },
    {
     "q": "Abre ojos al dolor (2), sonidos incomprensibles (2), retira al dolor (4): ¿Glasgow y gravedad?",
     "a": "8 = grave → proteger vía aérea",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qf239d2b"
    },
    {
     "q": "¿Qué rango es TCE/coma moderado?",
     "a": "9-12",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q2f22fad"
    }
   ],
   "fuentes_tecnica": [
@@ -731,17 +766,20 @@
    {
     "q": "¿Llenado capilar normal?",
     "a": "<2 s en el lecho ungueal",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q0c78b86"
    },
    {
     "q": "Lactante con diarrea, fontanela deprimida y relleno de 4 s: ¿qué tiene?",
     "a": "Deshidratación grave",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qb2b4c76"
    },
    {
     "q": "Nombra 3 causas de llenado capilar >2 s",
     "a": "Deshidratación, shock, enfermedad vascular periférica, hipotermia",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q60173b0"
    }
   ],
   "fuentes_tecnica": [
@@ -779,17 +817,20 @@
    {
     "q": "¿Cuáles son las 3 categorías del estado general, en orden?",
     "a": "BEG, REG, MEG (bueno, regular, malo)",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q1eceb0f"
    },
    {
     "q": "¿Por qué se escribe completo y no la sigla en la HC?",
     "a": "Por su implicancia médico-legal",
-    "tipo": "explica"
+    "tipo": "explica",
+    "pid": "qf57e489"
    },
    {
     "q": "Paciente con pocos signos pero en MEG: ¿qué te debe hacer pensar?",
     "a": "Es una alerta: puede estar más grave de lo que muestran los signos",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q6617f65"
    }
   ],
   "fuentes_tecnica": [
@@ -828,17 +869,20 @@
    {
     "q": "¿Qué diferencia el marasmo del kwashiorkor? (literatura)",
     "a": "Marasmo: déficit calórico, piel y hueso, sin edema · kwashiorkor: déficit proteico, edema, cabello en bandera",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qb7411e4"
    },
    {
     "q": "¿Cómo se describe la piel del desnutrido?",
     "a": "Seca, «papel de lija»",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q0810e51"
    },
    {
     "q": "Niño con edema, cabello fino que se arranca fácil y xerosis conjuntival: ¿qué déficit?",
     "a": "Desnutrición proteica (kwashiorkor)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qa020a78"
    }
   ],
   "fuentes_tecnica": [
@@ -893,17 +937,20 @@
    {
     "q": "¿Grados de deshidratación según % de peso perdido?",
     "a": "Leve <5%, moderada 5-10%, grave >10%",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q9b6bb0a"
    },
    {
     "q": "Paciente que bajó 3 kg en un día por diarrea: ¿cuánta agua perdió?",
     "a": "≈3 litros (1 kg ≈ 1 L)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qcefdcb1"
    },
    {
     "q": "¿Dónde se busca el pliegue en el anciano y cuándo es positivo?",
     "a": "En la frente o el esternón; si tarda >2 s en volver",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q0792ceb"
    }
   ],
   "fuentes_tecnica": [
@@ -947,17 +994,20 @@
    {
     "q": "¿Con qué Hb se hace visible la palidez por anemia?",
     "a": "Hb <7 g/dl",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q0e27c35"
    },
    {
     "q": "¿Dónde se juzga la anemia? (literatura)",
     "a": "Conjuntiva palpebral, lecho ungueal, palmas y mucosas, no la piel del rostro",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q24e7163"
    },
    {
     "q": "Pierna derecha pálida y fría, la izquierda normal: ¿qué piensas?",
     "a": "Isquemia (ateroesclerosis, embolia)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q95cc1f8"
    }
   ],
   "fuentes_tecnica": [
@@ -1006,22 +1056,26 @@
    {
     "q": "¿Bilirrubina normal y desde cuánto se ve la ictericia?",
     "a": "Normal 1.2 mg%; visible con >2.5 mg%",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q8a7c194"
    },
    {
     "q": "¿Dónde se ve mejor la ictericia?",
     "a": "En la esclerótica",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qea3f9de"
    },
    {
     "q": "Ictericia con coluria, acolia y prurito: ¿qué tipo y qué bilirrubina sube?",
     "a": "Poshepática (obstructiva): sube la BD",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q7e585c0"
    },
    {
     "q": "Ictericia con BI elevada sin coluria: ¿tipo?",
     "a": "Prehepática (hemólisis)",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q1a916c3"
    }
   ],
   "fuentes_tecnica": [
@@ -1030,7 +1084,7 @@
    "#137"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/ictericia.webp",
   "estacion": {
    "seccion": "s2",
    "n": 4,
@@ -1067,22 +1121,26 @@
    {
     "q": "¿Con cuánta Hb reducida aparece la cianosis?",
     "a": ">5 g/dl",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qcc8fac2"
    },
    {
     "q": "¿Cómo diferencias cianosis central de periférica? (literatura)",
     "a": "Central: labios y lengua, tibia · periférica: dedos fríos, mejora al calentar",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q7b98865"
    },
    {
     "q": "¿Por qué un anémico grave no presenta cianosis?",
     "a": "No alcanza a tener >5 g/dl de Hb reducida",
-    "tipo": "explica"
+    "tipo": "explica",
+    "pid": "q36dd861"
    },
    {
     "q": "Minero de altura, pletórico, con cianosis rojo-violácea que revierte al bajar al mar: ¿qué tiene?",
     "a": "Enfermedad de Monge (mal de montaña crónico)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qf947e13"
    }
   ],
   "fuentes_tecnica": [
@@ -1133,22 +1191,26 @@
    {
     "q": "¿Qué es el signo de Godet y dónde se busca?",
     "a": "Fóvea que deja la presión del dedo; sobre la tibia o el sacro",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q4a551eb"
    },
    {
     "q": "¿Cómo se gradúa la intensidad del edema?",
     "a": "De 1 cruz (leve) a 4 cruces (anasarca)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q05eb2c8"
    },
    {
     "q": "Edema de párpados que aparece por la mañana: ¿origen?",
     "a": "Nefrótico (renal)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q42d1a5f"
    },
    {
     "q": "Edema sin fóvea, piel fría y áspera: ¿cómo se llama?",
     "a": "Mixedema (piel fría y áspera, sin fóvea)",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q1a6af80"
    }
   ],
   "fuentes_tecnica": [
@@ -1203,17 +1265,20 @@
    {
     "q": "¿VSG normal en varón y en mujer? (literatura)",
     "a": "Varón <15 mm/h; mujer <20 mm/h",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q544c48f"
    },
    {
     "q": "¿Por qué sube la VSG en la inflamación?",
     "a": "El fibrinógeno apila los GR y sedimentan más rápido",
-    "tipo": "explica"
+    "tipo": "explica",
+    "pid": "q9217648"
    },
    {
     "q": "Anciano con VSG de 110 mm/h: ¿qué causas buscas? (literatura)",
     "a": "Mieloma, arteritis de células gigantes, TBC, endocarditis, metástasis",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qd5ace62"
    }
   ],
   "fuentes_tecnica": [
@@ -1276,17 +1341,20 @@
    {
     "q": "¿PCR normal y qué valor orienta a infección bacteriana? (literatura)",
     "a": "<5 mg/L (<0,5 mg/dL); >100 mg/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q0203a5b"
    },
    {
     "q": "¿Dónde se produce la PCR y qué la estimula?",
     "a": "En el hígado, vía IL-6 (reactante de fase aguda)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q03b80c9"
    },
    {
     "q": "¿Por qué la PCR sigue mejor la respuesta al tratamiento que la VSG?",
     "a": "Sube a las 6-8 h y cae rápido (vida media ~19 h)",
-    "tipo": "explica"
+    "tipo": "explica",
+    "pid": "q2c771b5"
    }
   ],
   "fuentes_tecnica": [
@@ -1335,22 +1403,26 @@
    {
     "q": "¿Valor de FR negativo? (literatura)",
     "a": "<14-20 UI/mL según técnica",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qff61906"
    },
    {
     "q": "¿Qué es el factor reumatoide?",
     "a": "IgM anti-Fc de IgG",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qa4ec721"
    },
    {
     "q": "Anciano sano con FR positivo: ¿tiene AR?",
     "a": "No necesariamente: también en Sjögren, hepatitis C, endocarditis y ancianos sanos",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qb696329"
    },
    {
     "q": "¿Qué prueba es más específica que el FR para AR?",
     "a": "Anti-CCP (E 95%, aparecen en fase prearticular)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q6c268bd"
    }
   ],
   "fuentes_tecnica": [
@@ -1422,22 +1494,26 @@
    {
     "q": "¿TP e INR normales?",
     "a": "TP ~12 s; INR 0,9-1,3",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q3527011"
    },
    {
     "q": "¿INR meta con warfarina?",
     "a": "2,0-3,0",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q2c0491b"
    },
    {
     "q": "Paciente con warfarina e INR de 5 que sangra por las encías: ¿riesgo y antídoto?",
     "a": "Alto riesgo de hemorragia (INR >4-5); antídoto: vitamina K",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q64b206d"
    },
    {
     "q": "¿Qué vía y qué factor evalúa el TP?",
     "a": "Vía extrínseca, factor VII",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q262325c"
    }
   ],
   "fuentes_tecnica": [
@@ -1446,7 +1522,7 @@
    "#132"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/tp-inr.webp",
   "estacion": {
    "seccion": "s4",
    "n": 3,
@@ -1497,22 +1573,26 @@
    {
     "q": "¿TTPa normal? (según laboratorio)",
     "a": "25-35 s",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qfd72fb3"
    },
    {
     "q": "¿Meta del TTPa con heparina no fraccionada?",
     "a": "1,5-2,5 veces el basal; >2,5 riesgo de hemorragia",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qdb8f699"
    },
    {
     "q": "Niño varón con TTPa largo y TP normal: ¿qué sospechas?",
     "a": "Hemofilia A (VIII) o B (IX)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q62b5680"
    },
    {
     "q": "¿Antídoto de la heparina?",
     "a": "Sulfato de protamina",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qc8fbf08"
    }
   ],
   "fuentes_tecnica": [
@@ -1561,17 +1641,20 @@
    {
     "q": "¿Fibrinógeno normal?",
     "a": "200-400 mg/dL (Guyton Cap 37: 100-700 mg/dL)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qd737b66"
    },
    {
     "q": "¿Por qué el fibrinógeno alto sube la VSG?",
     "a": "Hace que los GR sedimenten rápido (reactante de fase aguda)",
-    "tipo": "explica"
+    "tipo": "explica",
+    "pid": "qb77b140"
    },
    {
     "q": "TP y TTPa largos, plaquetas bajas, fibrinógeno bajo y dímero D alto: ¿diagnóstico?",
     "a": "CID (hipofibrinogenemia por consumo)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qc5e1e3f"
    }
   ],
   "fuentes_tecnica": [
@@ -1630,17 +1713,20 @@
    {
     "q": "¿Tiempo de sangría y de coagulación normales?",
     "a": "Sangría 1-6 min; coagulación 6-10 min",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qedebf23"
    },
    {
     "q": "¿Qué evalúa el tiempo de sangría y qué el de coagulación? (literatura)",
     "a": "Sangría: plaquetas y vaso (hemostasia primaria) · coagulación: factores (secundaria)",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qd28ffb9"
    },
    {
     "q": "Epistaxis recurrente sin causa local: ¿qué pides?",
     "a": "Plaquetas, tiempo de coagulación y de sangría",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q4e32a9c"
    }
   ],
   "fuentes_tecnica": [
@@ -1698,22 +1784,26 @@
    {
     "tipo": "directa",
     "q": "¿Hb normal en varón y en mujer (Guyton)?",
-    "a": "Varón ~15 g/dL, mujer ~14 g/dL"
+    "a": "Varón ~15 g/dL, mujer ~14 g/dL",
+    "pid": "qe8199b1"
    },
    {
     "tipo": "umbral",
     "q": "¿Bajo qué Hb hay anemia según la OMS?",
-    "a": "<13 g/dL en varón y <12 g/dL en mujer"
+    "a": "<13 g/dL en varón y <12 g/dL en mujer",
+    "pid": "q7d443c0"
    },
    {
     "tipo": "caso",
     "q": "Mujer puneña con Hb 14 g/dL: ¿anemia según el corte de altura (OMS 2011)?",
-    "a": "Sí: en Puno la mujer tiene anemia con Hb <14.7 g/dL"
+    "a": "Sí: en Puno la mujer tiene anemia con Hb <14.7 g/dL",
+    "pid": "q06d16ea"
    },
    {
     "tipo": "umbral",
     "q": "¿Desde qué Hb se ve palidez clínica?",
-    "a": "Hb <7 g/dL"
+    "a": "Hb <7 g/dL",
+    "pid": "qfaab1e1"
    }
   ],
   "fuentes_tecnica": [
@@ -1776,22 +1866,26 @@
    {
     "tipo": "directa",
     "q": "¿Hb que define mal de montaña crónico (Monge, Qinghai)?",
-    "a": "≥21 g/dL varón y ≥19 g/dL mujer"
+    "a": "≥21 g/dL varón y ≥19 g/dL mujer",
+    "pid": "qa948860"
    },
    {
     "tipo": "directa",
     "q": "¿Hb habitual en Puno según el profesor y su consecuencia?",
-    "a": "24-26 g/dL → hipertensión pulmonar → cor pulmonale crónico"
+    "a": "24-26 g/dL → hipertensión pulmonar → cor pulmonale crónico",
+    "pid": "qa3d1ffd"
    },
    {
     "tipo": "inversa",
     "q": "Hb de hasta 16 g/dL es lo normal de…",
-    "a": "La costa (nivel del mar)"
+    "a": "La costa (nivel del mar)",
+    "pid": "q9b1d89c"
    },
    {
     "tipo": "explica",
     "q": "¿Por qué la altura sube la Hb?",
-    "a": "SaO2 baja → eritropoyetina → poliglobulia; si es desproporcionada favorece trombosis"
+    "a": "SaO2 baja → eritropoyetina → poliglobulia; si es desproporcionada favorece trombosis",
+    "pid": "q9980ffd"
    }
   ],
   "fuentes_tecnica": [
@@ -1849,22 +1943,26 @@
    {
     "tipo": "directa",
     "q": "¿Hematocrito normal (Guyton)?",
-    "a": "40-45% en ambos sexos"
+    "a": "40-45% en ambos sexos",
+    "pid": "qf6f5135"
    },
    {
     "tipo": "umbral",
     "q": "¿Cuándo se hace sangría en el cor pulmonale crónico?",
-    "a": "Hto >60% o Hb >20 g%, antes del diurético"
+    "a": "Hto >60% o Hb >20 g%, antes del diurético",
+    "pid": "q6fd7df4"
    },
    {
     "tipo": "trampa",
     "q": "Hb 13 g/dL y Hto 52%: ¿qué sospechas?",
-    "a": "No cumple Hto ≈ Hb × 3 (≈39%): error o hipocromía"
+    "a": "No cumple Hto ≈ Hb × 3 (≈39%): error o hipocromía",
+    "pid": "qa5d8e39"
    },
    {
     "tipo": "umbral",
     "q": "¿Hto que define policitemia por sexo?",
-    "a": ">52% varón, >48% mujer"
+    "a": ">52% varón, >48% mujer",
+    "pid": "q5c64051"
    }
   ],
   "fuentes_tecnica": [
@@ -1922,17 +2020,20 @@
    {
     "tipo": "directa",
     "q": "¿Recuento normal de GR en varón y mujer?",
-    "a": "5,2 y 4,7 millones/mm³ (±300.000)"
+    "a": "5,2 y 4,7 millones/mm³ (±300.000)",
+    "pid": "q1feb589"
    },
    {
     "tipo": "directa",
     "q": "¿Vida media del glóbulo rojo y dónde se destruye?",
-    "a": "120 días; en el bazo"
+    "a": "120 días; en el bazo",
+    "pid": "qed33493"
    },
    {
     "tipo": "caso",
     "q": "VCM 65 fL y GR 6 millones: Mentzer ≈ 11. ¿Qué sugiere?",
-    "a": "<13: talasemia"
+    "a": "<13: talasemia",
+    "pid": "q6e72c85"
    }
   ],
   "fuentes_tecnica": [
@@ -1980,22 +2081,26 @@
    {
     "tipo": "directa",
     "q": "¿VCM normal?",
-    "a": "80-100 fL (normocítica)"
+    "a": "80-100 fL (normocítica)",
+    "pid": "qb51a19d"
    },
    {
     "tipo": "umbral",
     "q": "VCM 123 fL se llama… y ¿qué buscas?",
-    "a": "Macrocitosis (>100): déficit de B12/folato, alcohol, mielodisplasia"
+    "a": "Macrocitosis (>100): déficit de B12/folato, alcohol, mielodisplasia",
+    "pid": "q3ae29df"
    },
    {
     "tipo": "trampa",
     "q": "¿Qué índice mide el TAMAÑO del GR: VCM, HCM o CHCM?",
-    "a": "El VCM (volumen, en fL)"
+    "a": "El VCM (volumen, en fL)",
+    "pid": "qa3159b8"
    },
    {
     "tipo": "umbral",
     "q": "VCM <80 fL: ¿causas principales?",
-    "a": "Ferropenia por pérdida crónica y talasemia"
+    "a": "Ferropenia por pérdida crónica y talasemia",
+    "pid": "q8b7600e"
    }
   ],
   "fuentes_tecnica": [
@@ -2043,17 +2148,20 @@
    {
     "tipo": "directa",
     "q": "¿HCM normal?",
-    "a": "27-33 pg"
+    "a": "27-33 pg",
+    "pid": "q5a666a8"
    },
    {
     "tipo": "umbral",
     "q": "HCM <27 pg indica…",
-    "a": "Hipocromía: anemia microcítica hipocrómica, casi siempre ferropenia"
+    "a": "Hipocromía: anemia microcítica hipocrómica, casi siempre ferropenia",
+    "pid": "q15c4643"
    },
    {
     "tipo": "trampa",
     "q": "¿Cuál se mide en picogramos y cuál en g/dL: HCM o CHCM?",
-    "a": "HCM en pg (Hb por célula); CHCM en g/dL (concentración)"
+    "a": "HCM en pg (Hb por célula); CHCM en g/dL (concentración)",
+    "pid": "qf5f3fea"
    }
   ],
   "fuentes_tecnica": [
@@ -2101,17 +2209,20 @@
    {
     "tipo": "directa",
     "q": "¿CHCM normal?",
-    "a": "32-36 g/dL"
+    "a": "32-36 g/dL",
+    "pid": "qb13daea"
    },
    {
     "tipo": "umbral",
     "q": "CHCM >36 g/dL casi solo se ve en…",
-    "a": "Esferocitosis hereditaria (esferocitos hipercrómicos sin palidez central)"
+    "a": "Esferocitosis hereditaria (esferocitos hipercrómicos sin palidez central)",
+    "pid": "q9d56ffb"
    },
    {
     "tipo": "trampa",
     "q": "HCM 30 pg y CHCM 30 g/dL: ¿cuál está bajo?",
-    "a": "Solo el CHCM (<32); el HCM 30 está dentro de 27-33"
+    "a": "Solo el CHCM (<32); el HCM 30 está dentro de 27-33",
+    "pid": "qa2699ef"
    }
   ],
   "fuentes_tecnica": [
@@ -2159,22 +2270,26 @@
    {
     "tipo": "directa",
     "q": "¿Reticulocitos normales?",
-    "a": "0,5-1,5% de los GR (Guyton: <1%)"
+    "a": "0,5-1,5% de los GR (Guyton: <1%)",
+    "pid": "qd67de7e"
    },
    {
     "tipo": "caso",
     "q": "Anemia con reticulocitos altos: ¿qué piensas?",
-    "a": "Regenerativa: hemólisis o hemorragia"
+    "a": "Regenerativa: hemólisis o hemorragia",
+    "pid": "q201e37d"
    },
    {
     "tipo": "inversa",
     "q": "¿Cuál es el indicador más sensible de actividad eritropoyética?",
-    "a": "Los reticulocitos"
+    "a": "Los reticulocitos",
+    "pid": "q352c007"
    },
    {
     "tipo": "umbral",
     "q": "Índice reticulocitario <2 significa…",
-    "a": "Anemia arregenerativa (ferropenia, aplasia, talasemia)"
+    "a": "Anemia arregenerativa (ferropenia, aplasia, talasemia)",
+    "pid": "q176fb5b"
    }
   ],
   "fuentes_tecnica": [
@@ -2223,22 +2338,26 @@
    {
     "tipo": "directa",
     "q": "¿Leucocitos normales en el adulto?",
-    "a": "4.000-10.000/µL (según laboratorio hasta 11.000)"
+    "a": "4.000-10.000/µL (según laboratorio hasta 11.000)",
+    "pid": "qfc908ca"
    },
    {
     "tipo": "umbral",
     "q": "¿Leucopenia es menos de…?",
-    "a": "<4.000/µL"
+    "a": "<4.000/µL",
+    "pid": "qced6518"
    },
    {
     "tipo": "lista",
     "q": "¿Orden de la fórmula leucocitaria de mayor a menor?",
-    "a": "N > L > M > E > B ≈ 60-30-6-3-1%"
+    "a": "N > L > M > E > B ≈ 60-30-6-3-1%",
+    "pid": "qfaffbd1"
    },
    {
     "tipo": "caso",
     "q": "Abdomen agudo con 17.000 leucocitos y >80% neutrófilos: ¿qué temes?",
-    "a": "Perforación (apendicitis: >15.000 + >80%)"
+    "a": "Perforación (apendicitis: >15.000 + >80%)",
+    "pid": "qcec9de9"
    }
   ],
   "fuentes_tecnica": [
@@ -2291,17 +2410,20 @@
    {
     "tipo": "directa",
     "q": "¿Neutrófilos segmentados normales?",
-    "a": "55-70% (2.500-7.500/µL)"
+    "a": "55-70% (2.500-7.500/µL)",
+    "pid": "qfff4c1d"
    },
    {
     "tipo": "umbral",
     "q": "¿Neutropenia es menos de…?",
-    "a": "<1.500-2.000/µL; <500 absolutos = grave, riesgo de sepsis"
+    "a": "<1.500-2.000/µL; <500 absolutos = grave, riesgo de sepsis",
+    "pid": "q46c1b30"
    },
    {
     "tipo": "caso",
     "q": "Fiebre, leucocitosis y neutrofilia: ¿qué tipo de infección sugiere?",
-    "a": "Bacteriana"
+    "a": "Bacteriana",
+    "pid": "qaa0e968"
    }
   ],
   "fuentes_tecnica": [
@@ -2344,17 +2466,20 @@
    {
     "tipo": "directa",
     "q": "¿Abastonados normales?",
-    "a": "0-5% (hasta ~500/µL)"
+    "a": "0-5% (hasta ~500/µL)",
+    "pid": "q8640041"
    },
    {
     "tipo": "umbral",
     "q": "Abastonados >5% se llama…",
-    "a": "Desviación a la izquierda: infección bacteriana aguda"
+    "a": "Desviación a la izquierda: infección bacteriana aguda",
+    "pid": "qd7374f2"
    },
    {
     "tipo": "caso",
     "q": "Desviación izquierda con leucopenia: ¿qué significa?",
-    "a": "Sepsis grave, peor pronóstico que con leucocitosis"
+    "a": "Sepsis grave, peor pronóstico que con leucocitosis",
+    "pid": "q1b3cecc"
    }
   ],
   "fuentes_tecnica": [
@@ -2402,17 +2527,20 @@
    {
     "tipo": "directa",
     "q": "¿Linfocitos normales?",
-    "a": "20-40% (1.000-4.000/µL)"
+    "a": "20-40% (1.000-4.000/µL)",
+    "pid": "qb2526ed"
    },
    {
     "tipo": "caso",
     "q": "Joven con faringitis, adenopatías cervicales posteriores, esplenomegalia y linfocitos atípicos >10%: ¿diagnóstico?",
-    "a": "Mononucleosis"
+    "a": "Mononucleosis",
+    "pid": "q9ea389a"
    },
    {
     "tipo": "umbral",
     "q": "Linfopenia <1.000/mm³ indica…",
-    "a": "Deficiencia de la inmunidad celular"
+    "a": "Deficiencia de la inmunidad celular",
+    "pid": "qb24328c"
    }
   ],
   "fuentes_tecnica": [
@@ -2455,17 +2583,20 @@
    {
     "tipo": "directa",
     "q": "¿Monocitos normales?",
-    "a": "2-8% (200-800/µL)"
+    "a": "2-8% (200-800/µL)",
+    "pid": "q4ba6536"
    },
    {
     "tipo": "caso",
     "q": "Monocitosis en un adulto: ¿qué dos causas piensas primero?",
-    "a": "TBC y endocarditis bacteriana subaguda (infección/inflamación crónica)"
+    "a": "TBC y endocarditis bacteriana subaguda (infección/inflamación crónica)",
+    "pid": "q76653c3"
    },
    {
     "tipo": "umbral",
     "q": "¿Monocitosis en el adulto es más de…?",
-    "a": ">500/µL (>750 en el niño)"
+    "a": ">500/µL (>750 en el niño)",
+    "pid": "q23618ac"
    }
   ],
   "fuentes_tecnica": [
@@ -2509,17 +2640,20 @@
    {
     "tipo": "directa",
     "q": "¿Eosinófilos normales?",
-    "a": "1-4% (hasta 500/µL)"
+    "a": "1-4% (hasta 500/µL)",
+    "pid": "q2cab583"
    },
    {
     "tipo": "lista",
     "q": "¿Causas de eosinofilia (NAACP)?",
-    "a": "Neoplasia, alergia-asma, Addison, colagenosis, parásitos tisulares"
+    "a": "Neoplasia, alergia-asma, Addison, colagenosis, parásitos tisulares",
+    "pid": "q2a54a04"
    },
    {
     "tipo": "trampa",
     "q": "¿Corticoides y Cushing suben o bajan los eosinófilos?",
-    "a": "Los bajan (eosinopenia)"
+    "a": "Los bajan (eosinopenia)",
+    "pid": "q3877cf4"
    }
   ],
   "fuentes_tecnica": [
@@ -2556,17 +2690,20 @@
    {
     "tipo": "directa",
     "q": "¿Basófilos normales?",
-    "a": "<1% de los leucocitos"
+    "a": "<1% de los leucocitos",
+    "pid": "q1054bab"
    },
    {
     "tipo": "caso",
     "q": "Basofilia persistente: ¿qué enfermedad sospechas?",
-    "a": "Leucemia mieloide crónica (síndrome mieloproliferativo)"
+    "a": "Leucemia mieloide crónica (síndrome mieloproliferativo)",
+    "pid": "q495ba57"
    },
    {
     "tipo": "inversa",
     "q": "El leucocito más escaso de la fórmula es…",
-    "a": "El basófilo"
+    "a": "El basófilo",
+    "pid": "q2e8df33"
    }
   ],
   "fuentes_tecnica": [
@@ -2624,22 +2761,26 @@
    {
     "tipo": "directa",
     "q": "¿Plaquetas normales (Guyton)?",
-    "a": "150.000-450.000/µL"
+    "a": "150.000-450.000/µL",
+    "pid": "q376e507"
    },
    {
     "tipo": "umbral",
     "q": "¿Bajo qué recuento hay riesgo de sangrado espontáneo/quirúrgico y bajo cuál es potencialmente letal?",
-    "a": "<30.000/µL y <10.000/µL"
+    "a": "<30.000/µL y <10.000/µL",
+    "pid": "qc1d0fef"
    },
    {
     "tipo": "trampa",
     "q": "Petequias y sangrado de mucosas vs hematomas y hemartrosis: ¿cuál es de plaquetas?",
-    "a": "Petequias y mucosas = plaquetas; hematomas y hemartrosis = factores"
+    "a": "Petequias y mucosas = plaquetas; hematomas y hemartrosis = factores",
+    "pid": "q25cd74f"
    },
    {
     "tipo": "inversa",
     "q": "Recuento <150.000/µL se llama…",
-    "a": "Trombocitopenia"
+    "a": "Trombocitopenia",
+    "pid": "q8bc5d5d"
    }
   ],
   "fuentes_tecnica": [
@@ -2687,17 +2828,20 @@
    {
     "tipo": "directa",
     "q": "¿ADE/RDW normal?",
-    "a": "11,5-14,5%"
+    "a": "11,5-14,5%",
+    "pid": "qedc4ff1"
    },
    {
     "tipo": "caso",
     "q": "Anemia microcítica con RDW alto vs con RDW normal: ¿qué sugiere cada una?",
-    "a": "RDW alto = ferropenia; RDW normal = talasemia"
+    "a": "RDW alto = ferropenia; RDW normal = talasemia",
+    "pid": "qb175438"
    },
    {
     "tipo": "inversa",
     "q": "La variación del tamaño de los GR (anisocitosis) se mide con…",
-    "a": "El ADE/RDW"
+    "a": "El ADE/RDW",
+    "pid": "q1a03860"
    }
   ],
   "fuentes_tecnica": [
@@ -2745,17 +2889,20 @@
    {
     "tipo": "directa",
     "q": "¿VPM normal?",
-    "a": "7,5-11,5 fL"
+    "a": "7,5-11,5 fL",
+    "pid": "qe741f7d"
    },
    {
     "tipo": "caso",
     "q": "Trombocitopenia con VPM alto: ¿qué mecanismo sugiere?",
-    "a": "Destrucción periférica (PTI): la médula libera plaquetas jóvenes grandes"
+    "a": "Destrucción periférica (PTI): la médula libera plaquetas jóvenes grandes",
+    "pid": "q8a1b6ed"
    },
    {
     "tipo": "trampa",
     "q": "¿Qué dos índices terminan en 11,5 y en qué unidades?",
-    "a": "RDW 11,5-14,5% y VPM 7,5-11,5 fL"
+    "a": "RDW 11,5-14,5% y VPM 7,5-11,5 fL",
+    "pid": "q58ae7f4"
    }
   ],
   "fuentes_tecnica": [
@@ -2803,12 +2950,14 @@
    {
     "tipo": "directa",
     "q": "¿Plaquetocrito normal?",
-    "a": "0,15-0,40%"
+    "a": "0,15-0,40%",
+    "pid": "q1a61f23"
    },
    {
     "tipo": "inversa",
     "q": "¿Qué parámetro va paralelo al recuento de plaquetas y expresa el % de volumen que ocupan?",
-    "a": "El plaquetocrito"
+    "a": "El plaquetocrito",
+    "pid": "qd1d4820"
    }
   ],
   "fuentes_tecnica": [
@@ -2861,17 +3010,20 @@
    {
     "tipo": "directa",
     "q": "¿Hepatometría normal por percusión en LMC derecha?",
-    "a": "10-12 cm"
+    "a": "10-12 cm",
+    "pid": "qae7c3d9"
    },
    {
     "tipo": "lista",
     "q": "¿Cómo se gradúa la hepatomegalia por traveses de dedo?",
-    "a": "Pequeña hasta 2, mediana hasta 4, grande >4"
+    "a": "Pequeña hasta 2, mediana hasta 4, grande >4",
+    "pid": "qec9c131"
    },
    {
     "tipo": "directa",
     "q": "¿Desde dónde empieza la submatidez hepática superior?",
-    "a": "Desde el 5º EIC derecho"
+    "a": "Desde el 5º EIC derecho",
+    "pid": "qcd51743"
    }
   ],
   "fuentes_tecnica": [
@@ -2919,22 +3071,26 @@
    {
     "tipo": "directa",
     "q": "¿Colédoco normal en ecografía?",
-    "a": "≤6 mm (<60 años); ≤8 mm (>60 años o poscolecistectomía)"
+    "a": "≤6 mm (<60 años); ≤8 mm (>60 años o poscolecistectomía)",
+    "pid": "qa6ea092"
    },
    {
     "tipo": "caso",
     "q": "Fiebre, ictericia y dolor en hipocondrio derecho: ¿tríada y diagnóstico?",
-    "a": "Tríada de Charcot: colangitis"
+    "a": "Tríada de Charcot: colangitis",
+    "pid": "qe3efb23"
    },
    {
     "tipo": "lista",
     "q": "¿Qué agrega la péntada de Reynolds a Charcot?",
-    "a": "Shock y confusión"
+    "a": "Shock y confusión",
+    "pid": "qbaf4986"
    },
    {
     "tipo": "inversa",
     "q": "Colédoco de 12 mm con cálculo indica…",
-    "a": "Coledocolitiasis / obstrucción extrahepática"
+    "a": "Coledocolitiasis / obstrucción extrahepática",
+    "pid": "qbe09870"
    }
   ],
   "fuentes_tecnica": [
@@ -2942,7 +3098,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/coledoco-ecografia.webp",
   "estacion": {
    "seccion": "s8",
    "n": 1,
@@ -2977,17 +3133,20 @@
    {
     "tipo": "directa",
     "q": "¿Diámetro normal de la vena porta en eco?",
-    "a": "≤13 mm"
+    "a": "≤13 mm",
+    "pid": "qef258f1"
    },
    {
     "tipo": "caso",
     "q": "Porta de 16 mm, esplenomegalia y ascitis: ¿diagnóstico?",
-    "a": "Hipertensión portal"
+    "a": "Hipertensión portal",
+    "pid": "qf8cc6a6"
    },
    {
     "tipo": "umbral",
     "q": "Porta fina o no visible sugiere… y ¿con qué la buscas?",
-    "a": "Trombosis portal; con Doppler"
+    "a": "Trombosis portal; con Doppler",
+    "pid": "qbe10be1"
    }
   ],
   "fuentes_tecnica": [
@@ -3036,17 +3195,20 @@
    {
     "tipo": "umbral",
     "q": "¿Eje largo del bazo en eco que define esplenomegalia?",
-    "a": ">12-13 cm"
+    "a": ">12-13 cm",
+    "pid": "qb9fdb24"
    },
    {
     "tipo": "directa",
     "q": "¿En qué posición se palpa el bazo con la maniobra de Schuster?",
-    "a": "Decúbito lateral derecho"
+    "a": "Decúbito lateral derecho",
+    "pid": "q241c087"
    },
    {
     "tipo": "lista",
     "q": "Causas de esplenomegalia del atlas",
-    "a": "HT portal, infecciones, leucemias, cirrosis, hemólisis"
+    "a": "HT portal, infecciones, leucemias, cirrosis, hemólisis",
+    "pid": "qe4ccc23"
    }
   ],
   "fuentes_tecnica": [
@@ -3089,17 +3251,20 @@
    {
     "tipo": "directa",
     "q": "¿Medidas ecográficas normales del páncreas?",
-    "a": "Cabeza ≤3 cm, cuerpo y cola ≤2,5 cm"
+    "a": "Cabeza ≤3 cm, cuerpo y cola ≤2,5 cm",
+    "pid": "q29894f3"
    },
    {
     "tipo": "umbral",
     "q": "Wirsung >3 mm indica…",
-    "a": "Dilatado: obstrucción (cálculo, neoplasia) o pancreatitis crónica"
+    "a": "Dilatado: obstrucción (cálculo, neoplasia) o pancreatitis crónica",
+    "pid": "qd575af5"
    },
    {
     "tipo": "caso",
     "q": "Páncreas aumentado e hipoecoico en eco: ¿qué sugiere?",
-    "a": "Pancreatitis aguda"
+    "a": "Pancreatitis aguda",
+    "pid": "qad45545"
    }
   ],
   "fuentes_tecnica": [
@@ -3143,22 +3308,26 @@
    {
     "tipo": "directa",
     "q": "¿Grosor normal de la pared vesicular?",
-    "a": "<3 mm"
+    "a": "<3 mm",
+    "pid": "qb99caa7"
    },
    {
     "tipo": "umbral",
     "q": "Pared vesicular >3-4 mm sugiere…",
-    "a": "Colecistitis"
+    "a": "Colecistitis",
+    "pid": "q61b750e"
    },
    {
     "tipo": "directa",
     "q": "¿Cómo se busca el signo de Murphy y qué indica?",
-    "a": "Palpar el punto cístico en inspiración: dolor que corta la respiración = colecistitis aguda"
+    "a": "Palpar el punto cístico en inspiración: dolor que corta la respiración = colecistitis aguda",
+    "pid": "q04a3154"
    },
    {
     "tipo": "caso",
     "q": "Vesícula distendida indolora con ictericia: ¿signo y sospecha?",
-    "a": "Courvoisier-Terrier: neoplasia de cabeza de páncreas"
+    "a": "Courvoisier-Terrier: neoplasia de cabeza de páncreas",
+    "pid": "q22940f6"
    }
   ],
   "fuentes_tecnica": [
@@ -3166,7 +3335,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/vesicula-pared-calculos.webp",
   "estacion": {
    "seccion": "s8",
    "n": 5,
@@ -3216,17 +3385,20 @@
    {
     "tipo": "directa",
     "q": "¿Edad normal de la menarquia y su promedio?",
-    "a": "10-14 años, promedio 12"
+    "a": "10-14 años, promedio 12",
+    "pid": "qafb1e7b"
    },
    {
     "tipo": "umbral",
     "q": "¿A qué edad la ausencia de menarquia es amenorrea primaria?",
-    "a": "A los 15 años"
+    "a": "A los 15 años",
+    "pid": "qac5a9e2"
    },
    {
     "tipo": "umbral",
     "q": "Menarquia antes de los 9 años se considera…",
-    "a": "Precoz (pubertad precoz)"
+    "a": "Precoz (pubertad precoz)",
+    "pid": "qf465d8f"
    }
   ],
   "fuentes_tecnica": [
@@ -3264,17 +3436,20 @@
    {
     "tipo": "lista",
     "q": "¿Qué significan las cuatro cifras de P en la fórmula ampliada, en orden?",
-    "a": "A término, prematuros, abortos, hijos vivos"
+    "a": "A término, prematuros, abortos, hijos vivos",
+    "pid": "q05da28a"
    },
    {
     "tipo": "caso",
     "q": "G3 P2012: ¿cuántos abortos y cuántos hijos vivos?",
-    "a": "1 aborto y 2 hijos vivos"
+    "a": "1 aborto y 2 hijos vivos",
+    "pid": "qb9b3eb2"
    },
    {
     "tipo": "directa",
     "q": "¿Qué indican G y P?",
-    "a": "G = gestaciones, P = partos"
+    "a": "G = gestaciones, P = partos",
+    "pid": "q46df9df"
    }
   ],
   "fuentes_tecnica": [
@@ -3334,22 +3509,26 @@
    {
     "q": "¿Glucosa en ayunas normal?",
     "a": "<100 mg/dL (70-100)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q7b6d06f"
    },
    {
     "q": "Glucosa en ayunas de 112 mg/dL se clasifica como…",
     "a": "Prediabetes (glucosa alterada en ayunas, 100-125)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q798693d"
    },
    {
     "q": "¿Desde qué glucosa en ayunas se diagnostica diabetes?",
     "a": "≥126 mg/dL (repetir para confirmar)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q7a932f0"
    },
    {
     "q": "¿Qué es la tríada de Whipple?",
     "a": "Síntomas + glucosa <70 + alivio al dar glucosa = hipoglucemia verdadera",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q05d9b2d"
    }
   ],
   "fuentes_tecnica": [
@@ -3408,22 +3587,26 @@
    {
     "q": "¿Valor normal de glucosa a las 2 h en la PTOG de 75 g?",
     "a": "<140 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q98e520b"
    },
    {
     "q": "PTOG a las 2 h de 210 mg/dL indica…",
     "a": "Diabetes (≥200)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q02b45da"
    },
    {
     "q": "¿Cortes de HbA1c para prediabetes y diabetes?",
     "a": "5.7-6.4% prediabetes; ≥6.5% diabetes",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q9756cb0"
    },
    {
     "q": "¿Qué periodo refleja la HbA1c?",
     "a": "El control glucémico de las 8-12 semanas previas",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q99c3a9c"
    }
   ],
   "fuentes_tecnica": [
@@ -3477,22 +3660,26 @@
    {
     "q": "¿Valor normal de la urea sanguínea?",
     "a": "15-45 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q4864498"
    },
    {
     "q": "¿Qué valor de urea se considera uremia franca?",
     "a": ">400 mg/dL",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qe5bead6"
    },
    {
     "q": "Nombra 3 signos del síndrome urémico",
     "a": "Aliento urinoso, escarcha urémica, frote pericárdico, asterixis, prurito",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q9b516d1"
    },
    {
     "q": "Además de la caída de TFG, ¿qué causas no renales suben la urea?",
     "a": "Deshidratación/prerrenal, catabolismo, sangrado digestivo",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q2b2ef14"
    }
   ],
   "fuentes_tecnica": [
@@ -3540,17 +3727,20 @@
    {
     "q": "¿Valor normal del BUN?",
     "a": "7-20 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q7c2e394"
    },
    {
     "q": "¿Cómo se convierte el BUN en urea?",
     "a": "Urea = BUN × 2.14",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qe6dfd93"
    },
    {
     "q": "BUN/Cr mayor de 20:1 sugiere…",
     "a": "Origen prerrenal",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q9b8b7f3"
    }
   ],
   "fuentes_tecnica": [
@@ -3604,22 +3794,26 @@
    {
     "q": "¿Relación urea/creatinina normal?",
     "a": "10-20",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q226fb0f"
    },
    {
     "q": "Relación >20 sugiere IRA…",
     "a": "Prerrenal (deshidratación, sangrado, bajo gasto)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q1d4d54d"
    },
    {
     "q": "Si el laboratorio reporta urea total (no BUN), ¿cuál es el corte prerrenal aproximado?",
     "a": "≈40 (urea = BUN × 2.14)",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qc58e1c9"
    },
    {
     "q": "Urea 180 / Cr 5 = 36, pero la Cr no mejora con volumen: ¿diagnóstico?",
     "a": "NTA (necrosis tubular aguda)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q69bdfef"
    }
   ],
   "fuentes_tecnica": [
@@ -3667,22 +3861,26 @@
    {
     "q": "¿Creatinina sérica normal (Semiología)?",
     "a": "0.6-1.4 mg%",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qe7cec28"
    },
    {
     "q": "¿Por qué la creatinina es un marcador tardío?",
     "a": "La TFG cae ~50% antes de que suba",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qe1dabbe"
    },
    {
     "q": "Criterios KDIGO de IRA por creatinina",
     "a": "↑ ≥0.3 mg/dL en 48 h o ≥1.5 × basal en 7 días (o diuresis <0.5 mL/kg/h por 6 h)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q32e8d8c"
    },
    {
     "q": "Anciano desnutrido con Cr 0.5: ¿por qué tan baja?",
     "a": "Poca masa muscular",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q21abacf"
    }
   ],
   "fuentes_tecnica": [
@@ -3735,22 +3933,26 @@
    {
     "q": "¿Clearance de creatinina normal promedio y por sexo?",
     "a": "Prom. 120 mL/min; varón 97-137, mujer 88-128",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qe59f0c1"
    },
    {
     "q": "TFG por debajo de qué valor define IRC?",
     "a": "<60 mL/min",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q8e7d147"
    },
    {
     "q": "TFG <10 mL/min indica…",
     "a": "Insuficiencia grave: diálisis",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q19e88e7"
    },
    {
     "q": "¿En qué situaciones hay hiperfiltración?",
     "a": "Embarazo, diabetes inicial",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qb94df46"
    }
   ],
   "fuentes_tecnica": [
@@ -3808,22 +4010,26 @@
    {
     "q": "¿Sodio sérico normal?",
     "a": "135-145 mEq/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q339ef38"
    },
    {
     "q": "135-145 mEq/L es el rango normal de… (electrolito sérico)",
     "a": "Sodio",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qacafb5e"
    },
    {
     "q": "¿Desde qué Na aparecen síntomas y desde cuál convulsiones en la hiponatremia?",
     "a": "Síntomas <130; convulsiones, coma y muerte <120",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q7ab29b5"
    },
    {
     "q": "¿Cuánto se corrige el Na por día y qué pasa si se corrige rápido una hiponatremia?",
     "a": "≤8-10 mEq/L en 24 h; mielinólisis",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q0b3abd1"
    }
   ],
   "fuentes_tecnica": [
@@ -3877,22 +4083,26 @@
    {
     "q": "¿Potasio sérico normal?",
     "a": "3.5-5.0 mEq/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qb2b87e6"
    },
    {
     "q": "3.5-5.0 mEq/L es el rango normal de… (electrolito)",
     "a": "Potasio",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qe09fb1f"
    },
    {
     "q": "Cambios ECG de hiperpotasemia y de hipopotasemia",
     "a": "Hiper: T alta picuda → P plana y QRS ancho → arritmia. Hipo: T aplanada + onda U",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q2ffd832"
    },
    {
     "q": "Paciente con IRC y K de 8.5: ¿qué riesgo tiene?",
     "a": "Hiperpotasemia grave (>8): arritmias, FV (>9)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q6e6e053"
    }
   ],
   "fuentes_tecnica": [
@@ -3941,22 +4151,26 @@
    {
     "q": "¿Cloro sérico normal?",
     "a": "97-105 mEq/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qb202a8b"
    },
    {
     "q": "Vómitos profusos producen ¿qué alteración del Cl y del equilibrio ácido-base?",
     "a": "Hipocloremia con HCO3↑: alcalosis hipoclorémica",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qb6c54b9"
    },
    {
     "q": "Diarrea con Cl alto y HCO3 bajo se llama…",
     "a": "Acidosis hiperclorémica",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q56c6ed5"
    },
    {
     "q": "¿Cómo se mueven el Cl y el HCO3 entre sí?",
     "a": "Al revés (si uno sube, el otro baja)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q809e904"
    }
   ],
   "fuentes_tecnica": [
@@ -4016,22 +4230,26 @@
    {
     "q": "¿Calcio sérico normal (fila del atlas)?",
     "a": "9-11 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q0f54474"
    },
    {
     "q": "¿Bajo qué calcio aparece tetania?",
     "a": "<8 mg/dL",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q7149ddc"
    },
    {
     "q": "Diferencia entre Chvostek y Trousseau",
     "a": "Chvostek: contracción facial al percutir la cara. Trousseau: mano de partero al inflar el manguito",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q83f6759"
    },
    {
     "q": "Ca 7.2 con albúmina 2: ¿Ca corregido?",
     "a": "7.2 + 0.8 × (4 − 2) = 8.8 mg/dL",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q968040a"
    }
   ],
   "fuentes_tecnica": [
@@ -4080,22 +4298,26 @@
    {
     "q": "¿Magnesio sérico normal?",
     "a": "1.8-2.3 mEq/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qf8d64f9"
    },
    {
     "q": "HipoK que no corrige pese a reponer potasio: ¿qué buscas?",
     "a": "Hipomagnesemia",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qce9ab88"
    },
    {
     "q": "¿Qué arritmia favorece la hipomagnesemia y qué fármaco hace más tóxico?",
     "a": "Torsades de pointes; digital (toxicidad digitálica)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qaa69a36"
    },
    {
     "q": "¿Qué fármacos bajan el Mg y en qué cuadro sube?",
     "a": "Diuréticos de asa; sube en IRA/IRC",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qc9854e0"
    }
   ],
   "fuentes_tecnica": [
@@ -4133,28 +4355,32 @@
   "acronimo": "TGO = O de Otros órganos; TGP = P de Puro hígado",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hígado granate con gorro de chef, mejillas rojas de borracho y una rosa roja entre los dientes, tambaleándose con dos botellas en una mano y una sola galleta en la otra. Elementos secundarios: a su lado, un corazón rojo con guantes de box y un brazo musculoso gigante, ambos lanzando chorros de líquido verde. Escenario: entrada de un malecón junto a un lago andino azul. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/tgo-ast.webp",
   "imagen_clave": true,
   "preguntas": [
    {
     "q": "¿TGO (AST) normal?",
     "a": "<40 UI/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q4f079b9"
    },
    {
     "q": "TGO/TGP >2 sugiere…",
     "a": "Hepatitis alcohólica",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q388e760"
    },
    {
     "q": "¿Por qué la TGO no es específica del hígado?",
     "a": "También sale del músculo y del corazón (IAM, rabdomiólisis) y en hemólisis",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qbf715e0"
    },
    {
     "q": "¿Cómo están las transaminasas en hepatitis vs coledocolitiasis?",
     "a": "Hepatitis muy elevadas; coledocolitiasis normales o poco elevadas",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qfe616f6"
    }
   ],
   "fuentes_tecnica": [
@@ -4193,28 +4419,32 @@
   "acronimo": "Hy = TGP >3× + bilirrubina >2× (tras un fármaco)",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hígado granate con gorro de chef y una rosa prendida en el delantal, gritando con la boca enorme y las manos en la cabeza. Acción: sobre él estallan tres fuegos artificiales verdes mientras dos canarios amarillos salen volando de su sartén. Elementos secundarios: un virus verde con capa de villano huyendo; una pastilla gigante sobre la mesa. Escenario: restaurante de trucha frita a orillas de un lago andino. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/tgp-alt.webp",
   "imagen_clave": true,
   "preguntas": [
    {
     "q": "¿TGP (ALT) normal?",
     "a": "<40 UI/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q24a5d2a"
    },
    {
     "q": "¿Cuál transaminasa es más específica del hígado y cuál predomina en la hepatitis viral aguda?",
     "a": "La TGP en ambos casos (viral >10× LSN, TGP > TGO)",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q4b43be2"
    },
    {
     "q": "¿Qué dice la ley de Hy?",
     "a": "Fármaco + TGP >3 × LSN + bilirrubina >2 × LSN = lesión hepática grave",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q830b9ab"
    },
    {
     "q": "TGP de 1500 UI/L tras ingerir un fármaco sugiere hepatitis…",
     "a": "Tóxica (>1000)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qed3464a"
    }
   ],
   "fuentes_tecnica": [
@@ -4257,28 +4487,32 @@
   "acronimo": "FA = Fontanero Alcalino (tuberías biliares + hueso)",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un fontanero caricaturesco hinchado y sudoroso, con overol azul, usando un hueso gigante como llave inglesa para destapar una tubería verde que escupe un chorro de bilis. Elementos secundarios: una mesa de madera sobre la que ruedan unas tunas maduras; una piedra atorada en la tubería. Escenario: parrilla humeante junto a un malecón andino. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/fosfatasa-alcalina-fa.webp",
   "imagen_clave": true,
   "preguntas": [
    {
     "q": "¿FA normal en el adulto?",
     "a": "30-120 UI/L (embarazo hasta 300; niños hasta 400)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q03b935a"
    },
    {
     "q": "FA >3× LSN con GGT alta sugiere…",
     "a": "Colestasis / obstrucción biliar",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q6cc9319"
    },
    {
     "q": "FA alta con GGT normal: ¿origen?",
     "a": "Óseo (Paget, metástasis)",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q3180b08"
    },
    {
     "q": "¿Por qué la FA tarda en normalizarse tras resolver la obstrucción?",
     "a": "Vida media de 7 días (baja más lento que TGO/TGP)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q30f01b6"
    }
   ],
   "fuentes_tecnica": [
@@ -4321,23 +4555,26 @@
   "acronimo": "GGT = Gota-Gota-Trago",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una detective caricaturesca con gabardina y lupa gigante olfateando una copa de licor de la que caen gotas. Elementos secundarios: una niña le ofrece una rosa roja y un niño construye una pequeña choza de paja en el arenero; al lado, un fontanero hinchado con una tubería verde. Escenario: juegos infantiles de colores junto a un lago andino. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/ggt-gt.webp",
   "imagen_clave": true,
   "preguntas": [
    {
     "q": "¿GGT normal en mujer y en varón?",
     "a": "Mujer <40 U/L; varón <60 U/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q870eab1"
    },
    {
     "q": "FA y GGT altas juntas indican…",
     "a": "Colestasis (origen hepatobiliar)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qb6bd621"
    },
    {
     "q": "GGT elevada aislada, con resto normal, sugiere…",
     "a": "Consumo de alcohol o fármacos inductores",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q4cd976b"
    }
   ],
   "fuentes_tecnica": [
@@ -4385,22 +4622,26 @@
    {
     "q": "¿Bilirrubina total normal?",
     "a": "1.2 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qea01164"
    },
    {
     "q": "¿Desde qué bilirrubina total se ve la ictericia?",
     "a": ">2.5 mg/dL (1.2-2.5 = subclínica)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qb40dec4"
    },
    {
     "q": "¿Dónde aparece primero la ictericia?",
     "a": "Escleróticas y frenillo lingual (y desaparece al último de ellas)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qf1bf754"
    },
    {
     "q": "Piel amarilla-naranja con escleras blancas: ¿qué piensas?",
     "a": "Hipercarotinemia, no ictericia",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qace4e7a"
    }
   ],
   "fuentes_tecnica": [
@@ -4438,28 +4679,32 @@
   "acronimo": "CAP de la colestasis = Coluria, Acolia, Prurito",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un luchador de sumo enorme rascándose la espalda desesperado, sentado en una banca. Acción: a su lado, una pareja de canarios amarillos con anillos de boda nadando dentro de un frasco de orina color refresco de cola oscuro. Elementos secundarios: una bacinica con heces blancas como masilla; una piedra tapando un tubo verde. Escenario: bancas frente a un lago andino azul. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/bilirrubina-directa-conjugada.webp",
   "imagen_clave": true,
   "preguntas": [
    {
     "q": "¿Bilirrubina directa normal?",
     "a": "<0.3 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q30289a6"
    },
    {
     "q": "¿Por qué la bilirrubina directa produce coluria?",
     "a": "Es hidrosoluble y filtra por el riñón",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qc385f28"
    },
    {
     "q": "Tríada clínica de la colestasis",
     "a": "Coluria + acolia + prurito",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qe5fa55a"
    },
    {
     "q": "BT 20, BD 15 con coluria y acolia: ¿tipo de ictericia?",
     "a": "Poshepática/obstructiva (coledocolitiasis)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q51c1563"
    }
   ],
   "fuentes_tecnica": [
@@ -4515,22 +4760,26 @@
    {
     "q": "¿Bilirrubina indirecta normal y cómo se calcula?",
     "a": "0,2-0,8 mg/dL; BT − BD",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qea10f53"
    },
    {
     "q": "¿Por qué la ictericia hemolítica no tiene coluria?",
     "a": "La BI va unida a albúmina y no filtra por el riñón",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q5041f04"
    },
    {
     "q": "¿Sobre qué BI hay riesgo de kernícterus en el RN?",
     "a": ">20 mg/dL",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q25cafc9"
    },
    {
     "q": "Joven con BI leve que sube en ayuno o estrés, sin hemólisis: ¿diagnóstico?",
     "a": "Síndrome de Gilbert",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q295f5f2"
    }
   ],
   "fuentes_tecnica": [
@@ -4569,22 +4818,26 @@
    {
     "q": "¿Qué caracteriza al patrón hepatocelular y al colestásico?",
     "a": "Hepatocelular: transaminasas muy altas, FA normal/poco alta. Colestásico: FA alta, transaminasas normales",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qededa51"
    },
    {
     "q": "¿Cómo se calcula el Factor R?",
     "a": "(TGP ÷ su límite normal) ÷ (FA ÷ su límite normal)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qdb4b08d"
    },
    {
     "q": "Factor R de 6: ¿patrón?",
     "a": "Hepatocelular (≥5)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qcef93b7"
    },
    {
     "q": "Factor R de 1.5: ¿patrón?",
     "a": "Colestásico (≤2)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q22b0cb2"
    }
   ],
   "fuentes_tecnica": [
@@ -4632,17 +4885,20 @@
    {
     "q": "¿Proteínas totales normales?",
     "a": "6.0-8.0 g/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qee49a1c"
    },
    {
     "q": "¿Qué es la brecha proteica y qué sugiere si es >4 g/dL?",
     "a": "PT − albúmina; mieloma",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qb70c8eb"
    },
    {
     "q": "Cirrótico descompensado con PT 4.2 y albúmina 1.8: ¿qué esperas clínicamente?",
     "a": "Edema y ascitis (hipoproteinemia)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q5dd2abc"
    }
   ],
   "fuentes_tecnica": [
@@ -4696,22 +4952,26 @@
    {
     "q": "¿Albúmina sérica normal?",
     "a": "4-5 g/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q53882f9"
    },
    {
     "q": "¿Bajo qué albúmina aparece edema (fila del atlas) y por qué?",
     "a": "<2.5 g/dL; por ↓ presión oncótica",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q2db4cdb"
    },
    {
     "q": "¿Por qué la albúmina no sirve para evaluar daño hepático agudo?",
     "a": "Vida media ~20 días; en lo agudo se mira el TP/INR",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qebb6b68"
    },
    {
     "q": "Proteinuria ≥3.5 g/24 h con edema y albúmina baja: ¿síndrome?",
     "a": "Síndrome nefrótico",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q3dd9585"
    }
   ],
   "fuentes_tecnica": [
@@ -4760,17 +5020,20 @@
    {
     "q": "¿Globulinas séricas normales?",
     "a": "2.3-3.5 g/dL (~35% de las proteínas totales)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qe95602e"
    },
    {
     "q": "En la electroforesis, pico monoclonal gamma vs aumento policlonal",
     "a": "Monoclonal = mieloma; policlonal = cirrosis o inflamación crónica",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q8ce6533"
    },
    {
     "q": "Laboratorio típico de insuficiencia hepática (proteínas)",
     "a": "Albúmina ↓ y globulina ↑ (transaminasas ↑)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q1c11dca"
    }
   ],
   "fuentes_tecnica": [
@@ -4818,17 +5081,20 @@
    {
     "q": "¿Relación A/G normal?",
     "a": "1,1-2,2 (≈1,5): la albúmina es ≈ el doble de las globulinas",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qd9b36ba"
    },
    {
     "q": "A/G <1 se llama… y sugiere…",
     "a": "Inversión; cirrosis o mieloma",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qc6759d6"
    },
    {
     "q": "¿Qué causa una A/G alta (poco frecuente)?",
     "a": "Hipogammaglobulinemia",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q77406c6"
    }
   ],
   "fuentes_tecnica": [
@@ -4870,28 +5136,32 @@
   "acronimo": "Atlanta 2 de 3 = Dolor · Enzima ≥3× · Imagen",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cubo de azúcar con sombrero de copa, rojo e inflamado, corriendo como velocista con una penca gigante de tunas en llamas por varias mechas encendidas. Elementos secundarios: un heladero le ofrece un cono con tres bolas de helado de colores distintos. Escenario: puesto de helados en un malecón junto a un lago andino. Composición: líneas de velocidad, colores naranja y rojo. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/amilasa-serica.webp",
   "imagen_clave": true,
   "preguntas": [
    {
     "q": "¿Amilasa sérica normal?",
     "a": "0-120 UA/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q0f4b272"
    },
    {
     "q": "¿Qué valor de amilasa apoya pancreatitis?",
     "a": "≥3× VN (>360)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q48ee35a"
    },
    {
     "q": "Criterios de Atlanta para pancreatitis aguda",
     "a": "2 de 3: dolor típico, amilasa o lipasa ≥3× normal, imagen compatible",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qb4970c2"
    },
    {
     "q": "¿La amilasa elevada mide la gravedad de la pancreatitis?",
     "a": "No; además no es exclusiva (úlcera perforada, colecistitis, obstrucción)",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qb784506"
    }
   ],
   "fuentes_tecnica": [
@@ -4960,22 +5230,26 @@
    {
     "q": "¿Lipasa sérica normal y valor en pancreatitis?",
     "a": "<60 U/L (según laboratorio); pancreatitis >3× VN",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q5876357"
    },
    {
     "q": "¿Por qué la lipasa es mejor que la amilasa si el paciente consulta a las 72 h?",
     "a": "Es más específica y dura más elevada",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q8f7b0a5"
    },
    {
     "q": "Criterios de Ranson al ingreso",
     "a": "Edad >55, leucocitos >16.000, glucosa >200, LDH >350, TGO >250",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q868ed9c"
    },
    {
     "q": "Parotiditis con amilasa alta: ¿cómo está la lipasa?",
     "a": "Normal",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q78ab8fc"
    }
   ],
   "fuentes_tecnica": [
@@ -5024,17 +5298,20 @@
    {
     "q": "Clasificación ATP III del colesterol total",
     "a": "<200 deseable · 200-239 límite · ≥240 alto (mg/dL)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qb44a0a6"
    },
    {
     "q": "Colesterol total de 225 mg/dL es…",
     "a": "Límite (200-239)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q9ee85a3"
    },
    {
     "q": "Signos físicos de hipercolesterolemia",
     "a": "Xantelasma, arco senil",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q333ffd3"
    }
   ],
   "fuentes_tecnica": [
@@ -5086,17 +5363,20 @@
    {
     "q": "¿HDL mínimo deseable en varón y en mujer?",
     "a": "Varón ≥40; mujer ≥50 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qc51d7c7"
    },
    {
     "q": "¿Desde qué HDL es protector?",
     "a": "≥60 mg/dL (resta un factor de riesgo)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qe4c2549"
    },
    {
     "q": "Mujer con HDL 45: ¿cuenta para síndrome metabólico?",
     "a": "Sí (<50 en mujer)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q463cee0"
    }
   ],
   "fuentes_tecnica": [
@@ -5149,22 +5429,26 @@
    {
     "q": "¿LDL óptimo y LDL normal?",
     "a": "Óptimo <100; normal <130 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q7617ced"
    },
    {
     "q": "LDL ≥190 mg/dL: ¿clasificación y qué sospechas?",
     "a": "Muy alto; hipercolesterolemia familiar",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q25fb518"
    },
    {
     "q": "Fórmula de Friedewald y su límite",
     "a": "LDL = CT − HDL − TG/5; válida si TG <400",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qa9feb2f"
    },
    {
     "q": "LDL de 145 mg/dL se clasifica como…",
     "a": "Límite (130-159)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q58ce2bc"
    }
   ],
   "fuentes_tecnica": [
@@ -5212,17 +5496,20 @@
    {
     "q": "¿Triglicéridos normales?",
     "a": "<150 mg/dL",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qca9bcf5"
    },
    {
     "q": "¿Desde qué nivel de TG hay riesgo de pancreatitis y por qué?",
     "a": ">700 mg/dL; satura la lipoproteinlipasa",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q294c1d4"
    },
    {
     "q": "Criterios del síndrome metabólico",
     "a": "3 de 5: cintura ↑, TG ≥150, HDL bajo, PA ≥130/85, glucosa ≥100",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qd4764b3"
    }
   ],
   "fuentes_tecnica": [
@@ -5284,22 +5571,26 @@
    {
     "q": "¿Volumen urinario normal en 24 h?",
     "a": "800-1800 mL/24h (media 1400)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qd191a1c"
    },
    {
     "q": "Diuresis <400 mL/24h se llama… ¿y <100 mL/24h?",
     "a": "Oliguria (<400, ≈20 mL/h); anuria (<100)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qf665291"
    },
    {
     "q": "¿Desde qué volumen se habla de poliuria? Nombra 2 causas",
     "a": ">2000 mL/24h: DM descompensada, diabetes insípida (también hipercalcemia, diuréticos)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qfcb6b81"
    },
    {
     "q": "Paciente con 60 mL de orina en 24 h y ecografía con hidronefrosis bilateral: ¿cómo se llama y qué sugiere?",
     "a": "Anuria (<100 mL/24h): obstrucción bilateral",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q7a5a5d2"
    }
   ],
   "fuentes_tecnica": [
@@ -5307,7 +5598,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/volumen-urinario.webp",
   "estacion": {
    "seccion": "s7",
    "n": 0,
@@ -5357,17 +5648,20 @@
    {
     "q": "¿Densidad urinaria normal?",
     "a": "1.015-1.025",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q328a813"
    },
    {
     "q": "Densidad >1.020 con oliguria orienta a…",
     "a": "IRA prerrenal (el riñón concentra)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q6b12877"
    },
    {
     "q": "Densidad fija <1.010 se llama… y orienta a…",
     "a": "Isostenuria: NTA / IRA parenquimatosa",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qeee0053"
    }
   ],
   "fuentes_tecnica": [
@@ -5416,17 +5710,20 @@
    {
     "q": "¿pH urinario normal?",
     "a": "Ácido, 4.5-7",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q2cc2f85"
    },
    {
     "q": "ITU por Proteus: ¿qué pH urinario y qué cálculos produce?",
     "a": "Orina alcalina (ureasa: urea → amoníaco) → cálculos coraliformes de estruvita",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q089d695"
    },
    {
     "q": "Orina muy ácida (<5): una causa y qué cálculo precipita",
     "a": "Acidosis metabólica, dieta proteica o cetoacidosis; ácido úrico",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q2684a1c"
    }
   ],
   "fuentes_tecnica": [
@@ -5463,22 +5760,26 @@
    {
     "q": "¿Aspecto y color normales de la orina?",
     "a": "Amarillo pálido a ámbar; límpida",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q25ff388"
    },
    {
     "q": "¿Qué indica una orina turbia, roja, castaña y espumosa?",
     "a": "Turbia: pus/ITU o cristales · roja: hematuria · castaña: coluria · espumosa: nefrótico",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q396d8ca"
    },
    {
     "q": "Orina color coca-cola con edema y HTA: ¿qué síndrome?",
     "a": "Síndrome nefrítico (hematuria)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qd44a291"
    },
    {
     "q": "Orina roja, tira positiva para sangre, sedimento sin hematíes: ¿qué pensar?",
     "a": "Hemoglobinuria o mioglobinuria (no hematuria)",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q54117b4"
    }
   ],
   "fuentes_tecnica": [
@@ -5486,7 +5787,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/aspecto-y-color-de-orina.webp",
   "estacion": {
    "seccion": "s7",
    "n": 3,
@@ -5521,22 +5822,26 @@
    {
     "q": "¿Cuántos leucocitos por campo son normales en el sedimento?",
     "a": "Hasta 3 por campo",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qca7fae1"
    },
    {
     "q": "¿Desde cuántos leucocitos por campo se sospecha ITU?",
     "a": ">10/campo (piuria)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q7e1d881"
    },
    {
     "q": "Piuria con cilindros leucocitarios y fiebre con dolor lumbar: ¿diagnóstico?",
     "a": "Pielonefritis",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qaeba81f"
    },
    {
     "q": "Piuria con urocultivo negativo: 2 causas",
     "a": "TBC renal, nefritis intersticial, litiasis",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q808229b"
    }
   ],
   "fuentes_tecnica": [
@@ -5573,22 +5878,26 @@
    {
     "q": "¿Cuántos hematíes por campo son normales?",
     "a": "Hasta 2 por campo",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qba17e03"
    },
    {
     "q": "Prueba de los 3 vasos: ¿qué indica hematuria inicial, terminal y total?",
     "a": "Inicial = uretra · terminal = cuello vesical/trígono · total = riñón, uréter o vejiga",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q2b2f9f5"
    },
    {
     "q": "Hematíes dismórficos sugieren origen…",
     "a": "Glomerular",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q16f43e4"
    },
    {
     "q": "¿Se puede ignorar una hematuria aislada en un adulto?",
     "a": "No: obliga a estudio urológico completo",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qb3326d3"
    }
   ],
   "fuentes_tecnica": [
@@ -5625,17 +5934,20 @@
    {
     "q": "¿Qué cantidad de células epiteliales es normal en orina?",
     "a": "Escasas (descamación normal)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q3daf30a"
    },
    {
     "q": "Sedimento con muchas células escamosas: ¿qué significa y qué haces?",
     "a": "Muestra contaminada: repetir, con aseo genital y chorro medio",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q7eb7d8e"
    },
    {
     "q": "Células epiteliales tubulares abundantes orientan a…",
     "a": "NTA",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q582943b"
    }
   ],
   "fuentes_tecnica": [
@@ -5688,22 +6000,26 @@
    {
     "q": "¿Proteinuria normal en 24 h?",
     "a": "≤120-150 mg/24h",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qf2e2776"
    },
    {
     "q": "¿Desde cuántos g/24h la proteinuria es de rango nefrótico?",
     "a": "≥3.5 g/24h",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q69242ce"
    },
    {
     "q": "¿Para qué sirve el índice proteína/creatinina en orina aislada?",
     "a": "Estima la proteinuria de 24 h (g/g ≈ g/24 h); >3.5 = nefrótico",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qa65fe9e"
    },
    {
     "q": "La microalbuminuria es marcador temprano de…",
     "a": "Nefropatía diabética",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qd77c74d"
    }
   ],
   "fuentes_tecnica": [
@@ -5747,17 +6063,20 @@
    {
     "q": "¿Glucosa en orina normal?",
     "a": "Ausente",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qe2af075"
    },
    {
     "q": "¿Umbral renal de glucosa aproximado?",
     "a": "≈180 mg/dL",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q4cfeed3"
    },
    {
     "q": "Glucosuria con glucemia normal: 3 causas",
     "a": "Tubulopatía (Fanconi), embarazo, gliflozinas",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q4584721"
    }
   ],
   "fuentes_tecnica": [
@@ -5810,22 +6129,26 @@
    {
     "q": "¿Cetonas y urobilinógeno en orina normal?",
     "a": "Ausentes",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qb682ad2"
    },
    {
     "q": "¿Criterios de cetoacidosis diabética?",
     "a": "Cetonas + glucosa >250 + pH <7.30 + HCO3 <18",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q0a2371f"
    },
    {
     "q": "Ictericia con coluria y orina sin urobilina: ¿qué tipo de ictericia?",
     "a": "Obstructiva",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qee73cbb"
    },
    {
     "q": "¿Dos causas de cetonuria?",
     "a": "DM descompensada grave y ayuno",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q7758b49"
    }
   ],
   "fuentes_tecnica": [
@@ -5863,22 +6186,26 @@
    {
     "q": "¿Qué es un cilindro urinario y qué prueba?",
     "a": "Un molde del túbulo: prueba que el origen es renal",
-    "tipo": "explica"
+    "tipo": "explica",
+    "pid": "q150b1be"
    },
    {
     "q": "¿Qué indican los cilindros hemáticos, leucocitarios y céreos?",
     "a": "Hemáticos: glomerular/nefrítico · leucocitarios: pielonefritis · céreos: GN crónica",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q9539461"
    },
    {
     "q": "¿Los cilindros hialinos aislados son patológicos?",
     "a": "No, no tienen valor patológico aislado",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q2de56d6"
    },
    {
     "q": "Edema masivo, proteinuria ≥3.5 g/24h y cilindros grasos: ¿síndrome?",
     "a": "Nefrótico",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qcdc181c"
    }
   ],
   "fuentes_tecnica": [
@@ -5887,7 +6214,7 @@
    "#043"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/cilindros-urinarios.webp",
   "estacion": {
    "seccion": "s7",
    "n": 10,
@@ -5923,17 +6250,20 @@
    {
     "q": "¿Qué significa un nitrito positivo en orina?",
     "a": "ITU por enterobacterias (E. coli)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q17e5a24"
    },
    {
     "q": "Dos causas de nitritos falsamente negativos",
     "a": "Enterococo y orina <4 h en vejiga",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q9f3f02d"
    },
    {
     "q": "ITU clínica con nitritos negativos en una muestra tomada 1 h después de orinar: ¿qué pasó?",
     "a": "Falso negativo: la orina estuvo <4 h en la vejiga",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qf779b08"
    }
   ],
   "fuentes_tecnica": [
@@ -5992,22 +6322,26 @@
    {
     "q": "¿Frecuencia normal de deposiciones?",
     "a": "De 3 al día a 1 cada 3 días, sin esfuerzo y consistencia normal",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q16756bb"
    },
    {
     "q": "¿Cuándo se habla de constipación?",
     "a": "<3 por semana (o cada 3 días o más), con dificultad",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qd11feb6"
    },
    {
     "q": "Escala de Bristol: ¿qué tipos son estreñimiento, normal y diarrea?",
     "a": "1-2 estreñimiento · 3-4 normal · 5-7 diarrea",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qb692fe1"
    },
    {
     "q": "Anciano con 'diarrea' líquida escasa y en el tacto un fecaloma: ¿qué es?",
     "a": "Pseudodiarrea",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q2c8ace7"
    }
   ],
   "fuentes_tecnica": [
@@ -6016,7 +6350,7 @@
    "#143"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/frecuencia-de-deposiciones.webp",
   "estacion": {
    "seccion": "s7",
    "n": 12,
@@ -6060,22 +6394,26 @@
    {
     "q": "¿Duración de la diarrea aguda y de la crónica?",
     "a": "Aguda <2-3 semanas (infecciosa); crónica >4 semanas (no infecciosa)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q8f5d38a"
    },
    {
     "q": "¿Qué 4 elementos definen la disentería?",
     "a": "Sangre + moco + pujo + tenesmo (TMPS)",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qc9ba5ca"
    },
    {
     "q": "Diarrea con sangre, moco y tenesmo desde hace 3 días: ¿tipo y 2 agentes?",
     "a": "Disentería, diarrea invasiva: Shigella, ameba",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qa154404"
    },
    {
     "q": "Nombra 2 complicaciones de la diarrea",
     "a": "Hipopotasemia, alcalosis/acidosis, IRA, desnutrición",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q44044c0"
    }
   ],
   "fuentes_tecnica": [
@@ -6119,22 +6457,26 @@
    {
     "q": "¿Cómo se calcula el índice cardiotorácico y cuál es su límite normal?",
     "a": "ICT = (A+B)/C; normal hasta 0.50",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qa93c6b2"
    },
    {
     "q": "ICT de 0.58 indica…",
     "a": "Cardiomegalia (>0.50)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q5688aac"
    },
    {
     "q": "¿Se puede medir el ICT en una Rx AP en decúbito?",
     "a": "No: solo vale en PA de pie e inspiración profunda; en AP o decúbito el corazón se magnifica",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qb24008f"
    },
    {
     "q": "EPOC hiperinsuflado con corazón estrecho y alargado: ¿cómo se describe?",
     "a": "ICT pequeño, «corazón en gota»",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qf7d717c"
    }
   ],
   "fuentes_tecnica": [
@@ -6142,7 +6484,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/rx-torax-indice-cardiotoracico.webp",
   "estacion": {
    "seccion": "s10",
    "n": 0,
@@ -6171,17 +6513,20 @@
    {
     "q": "¿Qué estructuras forman el borde derecho e izquierdo de la silueta cardíaca en PA?",
     "a": "Derecho: VCS y AD · izquierdo: botón aórtico, arco medio (AP + orejuela AI), VI",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q24408f6"
    },
    {
     "q": "¿Cuál es el primer signo radiológico de patología mitral?",
     "a": "Abombamiento del arco medio (orejuela AI)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q81ddaa0"
    },
    {
     "q": "Rx con 4 arcos a la izquierda, doble contorno derecho y carina abierta: ¿qué valvulopatía?",
     "a": "Estenosis mitral",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q93fbd98"
    }
   ],
   "fuentes_tecnica": [
@@ -6225,17 +6570,20 @@
    {
     "q": "¿Cómo es normalmente el seno costodiafragmático en la Rx?",
     "a": "Ángulo agudo (y libre)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q098f5c0"
    },
    {
     "q": "Seno borrado con menisco vs seno romo sin menisco: ¿qué significa cada uno?",
     "a": "Con menisco = derrame · romo sin menisco = engrosamiento pleural antiguo",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qd8ca401"
    },
    {
     "q": "¿Por qué el hemidiafragma derecho está más alto y cuánto?",
     "a": "Por el hígado; 2-3 cm",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qa561348"
    }
   ],
   "fuentes_tecnica": [
@@ -6273,17 +6621,20 @@
    {
     "q": "¿Qué forma la imagen de los hilios y cuál está más alto?",
     "a": "Arterias pulmonares (imagen vascular); el izquierdo es más alto",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q6bffe96"
    },
    {
     "q": "Hilios grandes bilaterales vs unilateral: ¿qué sugiere cada uno?",
     "a": "Bilaterales: hipertensión pulmonar o linfoma/sarcoidosis · unilateral: neoplasia o TBC",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qf7d0c3a"
    },
    {
     "q": "Micronódulos perihiliares y basales en un paciente febril: ¿qué sugiere?",
     "a": "Bronconeumonía",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qcbdfc20"
    }
   ],
   "fuentes_tecnica": [
@@ -6320,22 +6671,26 @@
    {
     "q": "¿Qué imagen radiológica es típica de la neumonía?",
     "a": "Opacidad homogénea con broncograma aéreo",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qa1bb07b"
    },
    {
     "q": "¿En qué consiste el signo de la silueta y para qué sirve?",
     "a": "Una opacidad en contacto con un borde (corazón, diafragma) lo borra; localiza la lesión: borde cardíaco = lóbulo medio o língula; hemidiafragma = lóbulo inferior",
-    "tipo": "explica"
+    "tipo": "explica",
+    "pid": "qc8a3b4f"
    },
    {
     "q": "¿Hacia dónde se desvía el mediastino en la atelectasia?",
     "a": "HACIA la lesión",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q7f1a7cd"
    },
    {
     "q": "Opacidad que borra el borde cardíaco derecho: ¿qué lóbulo?",
     "a": "Lóbulo medio",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q333196d"
    }
   ],
   "fuentes_tecnica": [
@@ -6343,7 +6698,7 @@
    "#043"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/rx-torax-condensacion.webp",
   "estacion": {
    "seccion": "s10",
    "n": 4,
@@ -6390,22 +6745,26 @@
    {
     "q": "¿Qué es el signo del menisco?",
     "a": "Línea cóncava que sube hacia la axila: imagen del derrame pleural",
-    "tipo": "explica"
+    "tipo": "explica",
+    "pid": "q4f2baef"
    },
    {
     "q": "¿Desde qué volumen se ve un derrame en PA y en lateral?",
     "a": "~200 ml en PA; ~50 ml en lateral",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qcb99941"
    },
    {
     "q": "Sospecha de derrame pequeño (<300 ml) con Rx de pie normal: ¿qué proyección pides?",
     "a": "Decúbito lateral",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qe26c692"
    },
    {
     "q": "En la percusión, la curva que corresponde al menisco se llama…",
     "a": "Curva de Damoiseau",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q3d55868"
    }
   ],
   "fuentes_tecnica": [
@@ -6414,7 +6773,7 @@
    "#189"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/rx-torax-derrame-pleural.webp",
   "estacion": {
    "seccion": "s10",
    "n": 5,
@@ -6443,22 +6802,26 @@
    {
     "q": "¿Qué se ve en la Rx de un neumotórax?",
     "a": "Borde pulmonar colapsado separado de la pared por una claridad sin trama (aire)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q433a4ee"
    },
    {
     "q": "¿Qué signos radiológicos sugieren neumotórax hipertensivo?",
     "a": "Mediastino desviado, diafragma aplanado, EIC ensanchados",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q4804f16"
    },
    {
     "q": "Trauma con disnea, hipotensión, timpanismo y murmullo abolido: ¿pides Rx?",
     "a": "No: neumotórax hipertensivo, descomprimir sin esperar la Rx",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q0e662f3"
    },
    {
     "q": "¿Qué estructura de partes blandas puede simular un neumotórax enquistado?",
     "a": "El pectoral mayor",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q8d257dd"
    }
   ],
   "fuentes_tecnica": [
@@ -6466,7 +6829,7 @@
    "#043"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/rx-torax-neumotorax.webp",
   "estacion": {
    "seccion": "s10",
    "n": 6,
@@ -6511,17 +6874,20 @@
    {
     "q": "¿A qué nivel está normalmente el diafragma en la Rx PA?",
     "a": "6.º arco costal anterior (9-10 posterior), cúpulas convexas",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q09d9044"
    },
    {
     "q": "¿Cuántos arcos costales posteriores por encima del diafragma definen hiperinsuflación?",
     "a": "Más de 10",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q1abd1df"
    },
    {
     "q": "Nombra 4 signos radiológicos de hiperinsuflación",
     "a": "Hiperclaridad, costillas horizontales, EIC anchos, diafragma bajo",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qbe2c62f"
    }
   ],
   "fuentes_tecnica": [
@@ -6580,22 +6946,26 @@
    {
     "q": "¿Cuánto vale en tiempo un cuadradito y un cuadrado grande del ECG a 25 mm/s?",
     "a": "Cuadradito 0.04 s (1 mm); cuadrado grande 0.20 s (5 mm)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qd65a41f"
    },
    {
     "q": "¿Qué mide el eje horizontal del papel y qué mide el vertical?",
     "a": "Horizontal: tiempo; vertical: amplitud (voltaje)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q455a349"
    },
    {
     "q": "¿Cuántos cuadrados grandes hacen 1 segundo?",
     "a": "5 cuadrados grandes",
-    "tipo": "cloze"
+    "tipo": "cloze",
+    "pid": "q72edd48"
    },
    {
     "q": "0.04 s y 1 mm corresponden a…",
     "a": "Un cuadradito del papel de ECG",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q59b04e4"
    }
   ],
   "fuentes_tecnica": [
@@ -6643,27 +7013,31 @@
   },
   "imagen_clave": true,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo boxeador con guantes de box y cinturón de campeón saliendo a toda carrera de una choza de adobe con el techo cubierto de tazas de cerámica que se rompen y vuelan en pedazos. Acción: corre con gotas de sudor y líneas de velocidad, mientras un perezoso con lentes deportivos intenta sujetarlo de un pie. Elementos secundarios: una torre de mesas de madera apiladas junto a la puerta. Escenario: puerta de ingreso de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo. Composición: corazón centrado y grande, rojo sobre cielo azul. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/ecg-frecuencia-cardiaca.webp",
   "preguntas": [
    {
     "q": "¿Rango normal de FC en el ECG?",
     "a": "60-100 lpm",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q8cdb274"
    },
    {
     "q": "¿Cómo calculas la FC con ritmo regular?",
     "a": "1500 ÷ cuadraditos entre 2 R (más preciso) o 300 ÷ cuadrados grandes entre 2 R",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q2adb1eb"
    },
    {
     "q": "Hay 3 cuadrados grandes entre dos R: ¿FC?",
     "a": "100 lpm (secuencia 300-150-100-75-60-50)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q6fdbf88"
    },
    {
     "q": "¿Cómo estimas la FC si el ritmo es irregular?",
     "a": "QRS en 6 s × 10",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qcb0f4ce"
    }
   ],
   "fuentes_tecnica": [
@@ -6722,22 +7096,26 @@
    {
     "q": "¿Qué criterios de onda P definen el ritmo sinusal?",
     "a": "P positiva en DI, DII y aVF, negativa en aVR, y toda P precede al QRS con PR 0.12-0.20 s",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qa7609ad"
    },
    {
     "q": "ECG sin ondas P, con ondas f y RR irregular: ¿diagnóstico?",
     "a": "Fibrilación auricular",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qbf7f8d2"
    },
    {
     "q": "¿Qué frecuencia auricular se describe en la fibrilación auricular?",
     "a": "400-600 lpm",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q3e3e917"
    },
    {
     "q": "¿Qué hallazgo clínico del pulso acompaña a la FA?",
     "a": "Déficit de pulso (ritmo irregularmente irregular)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qeb16dd9"
    }
   ],
   "fuentes_tecnica": [
@@ -6787,22 +7165,26 @@
    {
     "q": "¿Cuál es el eje eléctrico normal?",
     "a": "0° a +90° (otros autores: −30° a +110°)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q7c530a0"
    },
    {
     "q": "DI positivo y aVF negativo: ¿hacia dónde está el eje?",
     "a": "Desviado a la izquierda",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qfa20b6b"
    },
    {
     "q": "¿Hacia dónde tiende el eje en el residente de altura y por qué?",
     "a": "A la derecha (+90° a +120°) por hipertrofia del VD",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q9a29a08"
    },
    {
     "q": "Nombra dos causas de eje desviado a la derecha",
     "a": "HVD, BCRD, longilíneo, enfisema o inspiración",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qbbfd1bd"
    }
   ],
   "fuentes_tecnica": [
@@ -6862,17 +7244,20 @@
    {
     "q": "¿Duración y amplitud normales de la onda P?",
     "a": "0.07-0.11 s y <2.5 mm en DII",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q996e96b"
    },
    {
     "q": "P >2.5 mm, alta y picuda en DII: ¿qué indica?",
     "a": "Hipertrofia auricular derecha (P pulmonale), p. ej. cor pulmonar crónico",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q1711e92"
    },
    {
     "q": "P >0.12 s bimodal en «M»: ¿nombre y cámara?",
     "a": "P mitrale: hipertrofia auricular izquierda (estenosis/insuficiencia mitral)",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qeec08f7"
    }
   ],
   "fuentes_tecnica": [
@@ -6917,27 +7302,31 @@
   },
   "imagen_clave": true,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un árbitro caricaturesco sentado dentro de una tina de metal con ruedas, avanzando a toda velocidad por el círculo central de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo hacia un cohete blanco. Acción: la tina derrapa con chispas; al costado, un lobo gris pícaro se adelanta trepando por una rampa triangular de madera como atajo. Elementos secundarios: un bache en el césped por delante. Composición: árbitro centrado, líneas de velocidad, césped verde y cohete al fondo. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/ecg-intervalo-pr.webp",
   "preguntas": [
    {
     "q": "¿Valor normal del intervalo PR?",
     "a": "0.12-0.20 s (3 a 5 cuadraditos)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q0c68a98"
    },
    {
     "q": "PR >0.20 s fijo en todos los latidos: ¿diagnóstico?",
     "a": "BAV de 1.er grado",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qb54a303"
    },
    {
     "q": "PR que se alarga progresivamente hasta que una P no conduce: ¿nombre?",
     "a": "Mobitz I (Wenckebach)",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qac3bd2a"
    },
    {
     "q": "PR <0.12 s con onda delta y QRS ancho: ¿qué sospechas?",
     "a": "Wolff-Parkinson-White (vía accesoria)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q8731018"
    }
   ],
   "fuentes_tecnica": [
@@ -6991,27 +7380,31 @@
   },
   "imagen_clave": true,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo boxeador con guantes de box y cinturón de campeón, con un brazo izquierdo hipermusculoso, pateando un balón que sale como un rayo eléctrico amarillo y angosto hacia el arco de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo. Acción: el rayo pasa justo dentro de una tina de metal colocada frente al arco y salpica un frasco de miel dorada colgado en lo alto. Elementos secundarios: un televisor viejo sobre el césped y un anillo dorado colgado del travesaño. Composición: corazón centrado y grande. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/ecg-complejo-qrs.webp",
   "preguntas": [
    {
     "q": "¿Duración normal del QRS?",
     "a": "<0.12 s",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q36888c4"
    },
    {
     "q": "QRS >0.12 s con M (RSR') en V1: ¿diagnóstico?",
     "a": "Bloqueo de rama derecha",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qa925983"
    },
    {
     "q": "¿Qué es el índice de Sokolow y qué indica si es ≥35 mm?",
     "a": "S de V1 + R de V5-V6; ≥35 mm = hipertrofia del VI",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qd557919"
    },
    {
     "q": "QRS <5 mm en derivaciones frontales: ¿cómo se llama y una causa?",
     "a": "Bajo voltaje: derrame pericárdico, obesidad, EPOC o hipotiroidismo",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q08e8029"
    }
   ],
   "fuentes_tecnica": [
@@ -7059,22 +7452,26 @@
    {
     "q": "¿Hasta qué profundidad y ancho se considera normal la onda Q?",
     "a": "≤3 mm de profundidad y ≤0.04 s de ancho (salvo DIII)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q656b40a"
    },
    {
     "q": "Q profunda y ancha en DII, DIII y aVF: ¿qué indica y dónde?",
     "a": "Necrosis (infarto transmural) de cara inferior",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q3f48c6a"
    },
    {
     "q": "¿Desaparece la Q patológica con el tiempo?",
     "a": "No, persiste de por vida",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qf6fbe83"
    },
    {
     "q": "¿Qué derivaciones muestran el infarto anteroseptal?",
     "a": "V1-V4",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qaac2d4f"
    }
   ],
   "fuentes_tecnica": [
@@ -7114,27 +7511,31 @@
   },
   "imagen_clave": true,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo boxeador con guantes de box y cinturón de campeón, colgado del marcador gigante de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo, con un moretón en la pared externa y cara de alarma. Acción: una barra luminosa verde del marcador salta bruscamente hacia arriba como una bandera, con sirenas rojas girando. Elementos secundarios: un sol naranja intenso detrás del marcador y tres focos redondos en fila debajo. Composición: corazón y barra centrados, cielo de atardecer. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/ecg-segmento-st.webp",
   "preguntas": [
    {
     "q": "¿Desde cuántos mm de desnivel del ST es patológico?",
     "a": ">0.5 mm",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q7b7aac6"
    },
    {
     "q": "Supradesnivel del ST: ¿qué capa está lesionada y en qué fase del IAM?",
     "a": "Lesión subepicárdica, fase aguda del IAM",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q96a6f79"
    },
    {
     "q": "¿Qué onda corresponde a isquemia, lesión y necrosis?",
     "a": "Isquemia → T; lesión → ST; necrosis → Q",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qc084d40"
    },
    {
     "q": "¿Criterio de IAM con ST elevado?",
     "a": "≥1 mm en 2 derivaciones contiguas (≥2 mm en V2-V3) → reperfundir",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qeefafdb"
    }
   ],
   "fuentes_tecnica": [
@@ -7185,22 +7586,26 @@
    {
     "q": "¿Amplitud y forma normales de la onda T?",
     "a": "5-10 mm, asimétrica",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q5082097"
    },
    {
     "q": "T positiva, alta y simétrica: ¿qué indica?",
     "a": "Isquemia subendocárdica",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q4ee0c73"
    },
    {
     "q": "T negativa, simétrica y puntiaguda: ¿qué indica?",
     "a": "Isquemia subepicárdica",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qe837ecf"
    },
    {
     "q": "¿En qué derivaciones una T negativa aislada puede ser normal?",
     "a": "aVR, V1 o DIII",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q7e73b56"
    }
   ],
   "fuentes_tecnica": [
@@ -7254,22 +7659,26 @@
    {
     "q": "¿Valor normal del intervalo QT?",
     "a": "0.34-0.44 s",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qf0bbdd9"
    },
    {
     "q": "¿Qué pasa con el QT cuando sube la FC?",
     "a": "Se acorta (relación inversa)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q8668807"
    },
    {
     "q": "¿Desde qué QTc se considera largo en varón y en mujer?",
     "a": ">440 ms varón; >460 ms mujer",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qa52a984"
    },
    {
     "q": "¿Qué arritmia amenaza en el QT largo?",
     "a": "Torsades de pointes",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q4af98f7"
    }
   ],
   "fuentes_tecnica": [
@@ -7328,22 +7737,26 @@
    {
     "q": "¿pH arterial normal?",
     "a": "7.35-7.45",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qf000074"
    },
    {
     "q": "pH 7.30: ¿acidosis o alcalosis?",
     "a": "Acidosis (<7.35)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q6a1acdd"
    },
    {
     "q": "¿Qué pH tiene el residente aclimatado a la altura?",
     "a": "Normal o levemente alcalino (7.40-7.46)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q5145f3c"
    },
    {
     "q": "¿Qué significa ROME?",
     "a": "Respiratorio opuesto (pH y PaCO2 contrarios), metabólico igual (pH y HCO3 en el mismo sentido)",
-    "tipo": "explica"
+    "tipo": "explica",
+    "pid": "q132fb35"
    }
   ],
   "fuentes_tecnica": [
@@ -7402,22 +7815,26 @@
    {
     "q": "¿PaO2 normal a nivel del mar?",
     "a": "80-100 mmHg",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qf0bedc0"
    },
    {
     "q": "¿Desde qué PaO2 se habla de hipoxemia?",
     "a": "<60 mmHg",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q3713c4d"
    },
    {
     "q": "¿PaO2 normal aproximada en Puno (barómetro ≈480 mmHg)?",
     "a": "≈50-60 mmHg",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q74dc7fa"
    },
    {
     "q": "¿Cómo se calcula la PO2 alveolar en Puno?",
     "a": "0.21 × (480 − 47) − PaCO2 ÷ 0.8",
-    "tipo": "explica"
+    "tipo": "explica",
+    "pid": "q3fd3ecb"
    }
   ],
   "fuentes_tecnica": [
@@ -7470,22 +7887,26 @@
    {
     "q": "¿PaCO2 normal?",
     "a": "40 mmHg (36-44)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qcfa7c05"
    },
    {
     "q": "PaCO2 >45 mmHg: ¿qué trastorno y por qué mecanismo?",
     "a": "Acidosis respiratoria por hipoventilación",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q4aa5975"
    },
    {
     "q": "PaCO2 <35 mmHg: ¿qué trastorno?",
     "a": "Alcalosis respiratoria",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qe6d3c26"
    },
    {
     "q": "¿Cuánto mueve el pH un cambio agudo de 10 mmHg de PaCO2?",
     "a": "≈0.08 (crónico ≈0.03)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q0bcd4ee"
    }
   ],
   "fuentes_tecnica": [
@@ -7543,22 +7964,26 @@
    {
     "q": "¿HCO3− normal?",
     "a": "22-26 mEq/L (media 24)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q970379b"
    },
    {
     "q": "HCO3 >26 mEq/L: ¿qué trastorno?",
     "a": "Alcalosis metabólica (también sube en acidosis respiratoria crónica)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q79ab52f"
    },
    {
     "q": "¿HCO3 aproximado del residente de Puno y por qué?",
     "a": "≈19-22 mEq/L: compensación renal de la alcalosis respiratoria por hiperventilación",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q06ce7f4"
    },
    {
     "q": "¿Fórmula del déficit de bicarbonato?",
     "a": "0.5 × peso (kg) × (24 − HCO3 actual); pasar en 3-4 h",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qbb04b95"
    }
   ],
   "fuentes_tecnica": [
@@ -7601,17 +8026,20 @@
    {
     "q": "¿Exceso de base normal?",
     "a": "+2.5 a −2.5",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qf128acf"
    },
    {
     "q": "EB de −6: ¿qué trastorno sugiere?",
     "a": "Acidosis metabólica (<−2.5)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qf225c88"
    },
    {
     "q": "EB >+2.5: nombra dos causas",
     "a": "Vómitos, diuréticos o bicarbonato (alcalosis metabólica)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qffdb620"
    }
   ],
   "fuentes_tecnica": [
@@ -7669,22 +8097,26 @@
    {
     "q": "¿SatO2 arterial normal a nivel del mar?",
     "a": "95-98%",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q7d985fb"
    },
    {
     "q": "¿SatO2 esperada 'en nuestro medio' (Puno) según el docente?",
     "a": "90%",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q1526aaf"
    },
    {
     "q": "Residente de altura con SatO2 de 70%: ¿qué cuadro sospechas?",
     "a": "Cor pulmonale crónico de altura (<80%, hasta 55%)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q01bc3ce"
    },
    {
     "q": "Según la regla 40-50-60, ¿qué SatO2 corresponde a una PaO2 de 60?",
     "a": "≈90% (40 → 70, 50 → 80, 60 → 90)",
-    "tipo": "cloze"
+    "tipo": "cloze",
+    "pid": "q08d66ec"
    }
   ],
   "fuentes_tecnica": [
@@ -7738,22 +8170,26 @@
    {
     "q": "¿Fórmula y valor normal del anión gap?",
     "a": "Na − (HCO3 + Cl); normal 8-16 mEq/L (típico 144 − 24 − 108 = 12)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q284b9b9"
    },
    {
     "q": "¿Causas de acidosis con anión gap alto?",
     "a": "CALIMA: cetoacidosis, AAS, láctica, IRC, metanol/etilenglicol, ayuno",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q0edeaaa"
    },
    {
     "q": "Acidosis metabólica por diarrea: ¿cómo está el anión gap?",
     "a": "Normal (acidosis hiperclorémica)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qd22e257"
    },
    {
     "q": "¿Cómo afecta la hipoalbuminemia al anión gap?",
     "a": "Lo baja ~2.5 por cada 1 g/dL de albúmina; corregido = AG + 2.5 × (4 − albúmina)",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qa9c5d8c"
    }
   ],
   "fuentes_tecnica": [
@@ -7814,22 +8250,26 @@
    {
     "q": "¿Qué gasometría define la acidosis metabólica?",
     "a": "pH <7.35 + HCO3 <24, con PaCO2 baja por compensación",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qb6b51ce"
    },
    {
     "q": "¿Qué patrón respiratorio aparece y por qué?",
     "a": "Kussmaul: respiración profunda y rápida para eliminar CO2",
-    "tipo": "explica"
+    "tipo": "explica",
+    "pid": "q02b4d28"
    },
    {
     "q": "¿Fórmula de Winter?",
     "a": "PaCO2 esperada = 1.5 × HCO3 + 8 ± 2",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qde1b587"
    },
    {
     "q": "HCO3 10 y PaCO2 medida 30: ¿compensación adecuada?",
     "a": "No: esperada 1.5 × 10 + 8 = 23 ± 2; 30 es mayor → acidosis respiratoria asociada",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q1986dfe"
    }
   ],
   "fuentes_tecnica": [
@@ -7895,22 +8335,26 @@
    {
     "q": "¿Qué gasometría define la acidosis respiratoria según el docente?",
     "a": "pH <7.32 + PaCO2 >45; HCO3 normal (aguda) o ↑ (crónica)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q28379dd"
    },
    {
     "q": "¿Cuánto sube el HCO3 por cada 10 mmHg de PaCO2 en la forma aguda y en la crónica?",
     "a": "+1 aguda; +3.5 crónica (EPOC)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qba2c42b"
    },
    {
     "q": "Paciente con EPOC, PaCO2 60 y HCO3 31: ¿aguda o crónica?",
     "a": "Crónica: subió 20 mmHg → esperado +7 (24 + 7 = 31)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qd9bec26"
    },
    {
     "q": "¿Se da bicarbonato en la acidosis respiratoria?",
     "a": "No, solo si pH <7.10 refractario a ventilación",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q09ff0ce"
    }
   ],
   "fuentes_tecnica": [
@@ -7970,22 +8414,26 @@
    {
     "q": "¿Qué gasometría define la alcalosis metabólica?",
     "a": "pH >7.45 + HCO3 >26; PaCO2 normal o levemente ↑",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q532ffbd"
    },
    {
     "q": "¿PaCO2 esperada en la alcalosis metabólica?",
     "a": "0.7 × HCO3 + 21 ± 2",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q3824c76"
    },
    {
     "q": "Paciente con vómitos y cloro urinario <20: ¿cómo responde?",
     "a": "Alcalosis que responde a suero salino",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q77b6739"
    },
    {
     "q": "¿Por qué da tetania?",
     "a": "Porque baja el calcio ionizado",
-    "tipo": "explica"
+    "tipo": "explica",
+    "pid": "qf80dd5d"
    }
   ],
   "fuentes_tecnica": [
@@ -8050,22 +8498,26 @@
    {
     "q": "¿Qué gasometría define la alcalosis respiratoria?",
     "a": "pH >7.45 + PaCO2 <35; HCO3 normal o levemente ↓",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qe08baaa"
    },
    {
     "q": "¿Causa más frecuente de alcalosis respiratoria?",
     "a": "La ansiedad",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qfa1302f"
    },
    {
     "q": "¿Cuánto baja el HCO3 por cada 10 mmHg que baja la PaCO2?",
     "a": "−2 aguda; −5 crónica (residente de altura)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qeeee2cc"
    },
    {
     "q": "Turista recién llegado a Puno con parestesias y mano en garra: ¿trastorno y manejo leve?",
     "a": "Alcalosis respiratoria por hiperventilación; respirar en bolsa de papel",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qfc9a1f4"
    }
   ],
   "fuentes_tecnica": [
@@ -8125,17 +8577,20 @@
    {
     "q": "¿Cuánto tarda la compensación respiratoria y la renal?",
     "a": "Respiratoria 6-12 h; renal 3-5 días",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q844369f"
    },
    {
     "q": "¿Puede la compensación normalizar el pH?",
     "a": "No, nunca lo normaliza ni lo sobrepasa",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qcff08dd"
    },
    {
     "q": "pH 7.40 con PaCO2 y HCO3 alterados: ¿qué piensas?",
     "a": "Trastorno mixto",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q91e7dea"
    }
   ],
   "fuentes_tecnica": [
@@ -8191,22 +8646,26 @@
    {
     "q": "¿Volumen normal de líquido pleural?",
     "a": "3-5 ml",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q94f0527"
    },
    {
     "q": "¿Bajo qué volumen un derrame puede no verse en la placa de pie y cómo se busca?",
     "a": "<300 ml; en decúbito lateral",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q85e7757"
    },
    {
     "q": "¿Tríada del derrame pleural al examen físico?",
     "a": "Matidez + vibraciones vocales ↓ + murmullo vesicular abolido",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q171908e"
    },
    {
     "q": "Vas a hacer una toracocentesis: ¿dónde punzas?",
     "a": "8.º-9.º EIC por detrás de la línea axilar posterior, por el borde superior de la costilla",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q22be081"
    }
   ],
   "fuentes_tecnica": [
@@ -8245,22 +8704,26 @@
    {
     "q": "¿Aspecto del trasudado pleural?",
     "a": "Claro, amarillo pálido, sin coágulos",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qdf2a91c"
    },
    {
     "q": "¿Por qué se forma un trasudado?",
     "a": "Pleura sana con falla de presiones: hidrostática ↑ u oncótica ↓; no cumple ningún criterio de Light",
-    "tipo": "explica"
+    "tipo": "explica",
+    "pid": "q2687891"
    },
    {
     "q": "Nombra las 6 causas de trasudado del atlas",
     "a": "IC derecha/congestiva, cirrosis, nefrótico, hipoproteinemia, mixedema, Meigs",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qfbac099"
    },
    {
     "q": "Cirrótico con derrame claro y ningún criterio de Light: ¿trasudado o exudado?",
     "a": "Trasudado",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q95129ba"
    }
   ],
   "fuentes_tecnica": [
@@ -8299,22 +8762,26 @@
    {
     "q": "¿Aspecto del exudado pleural?",
     "a": "Opaco, color variable, forma coágulos",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qe23c3ee"
    },
    {
     "q": "¿Cuántos criterios de Light hacen falta para llamarlo exudado?",
     "a": "Basta 1",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q94ae256"
    },
    {
     "q": "Causas de exudado del atlas (4)",
     "a": "TBC, neumonía mal tratada, neoplasia, embolia pulmonar",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q1f4b641"
    },
    {
     "q": "¿Qué diferencia de fondo separa exudado de trasudado?",
     "a": "Exudado: pleura enferma (lesión directa); trasudado: pleura sana con falla de presiones",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qcc50638"
    }
   ],
   "fuentes_tecnica": [
@@ -8369,22 +8836,26 @@
    {
     "q": "¿Cuáles son los 3 criterios de Light y sus cortes?",
     "a": "Proteína pleura/suero >0.5; LDH pleura/suero >0.6; LDH pleural >2/3 del LSN sérico",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qc21c367"
    },
    {
     "q": "¿Cuántos criterios bastan para exudado?",
     "a": "≥1",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q725ac5c"
    },
    {
     "q": ">0.6 es el corte de qué cociente en Light",
     "a": "LDH pleura/suero",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qffe45cd"
    },
    {
     "q": "Proteína pleura/suero 0.55, LDH pleura/suero 0.4, LDH pleural <2/3 del LSN: ¿qué es?",
     "a": "Exudado (cumple el criterio de proteínas)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q9ebb655"
    }
   ],
   "fuentes_tecnica": [
@@ -8396,7 +8867,7 @@
   "imagen_clave": true,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/pleural-criterios-de-light.webp",
   "estacion": {
    "seccion": "s12",
    "n": 3,
@@ -8440,22 +8911,26 @@
    {
     "q": "Líquido pleural sanguinolento en >60 años sugiere…",
     "a": "Neoplasia",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qdbf4d3a"
    },
    {
     "q": "¿Corte de triglicéridos que define quilotórax?",
     "a": "TG >110 mg/dL (aspecto lechoso)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q4ee19c9"
    },
    {
     "q": "¿Cuándo un derrame hemático es hemotórax?",
     "a": "Hto pleural >50% del sanguíneo",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q506bb24"
    },
    {
     "q": "Líquido pleural achocolatado: ¿qué causa?",
     "a": "Amebiana",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qf0b5b9f"
    }
   ],
   "fuentes_tecnica": [
@@ -8514,22 +8989,26 @@
    {
     "q": "¿pH normal del líquido pleural?",
     "a": "7.60-7.64",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q762ac11"
    },
    {
     "q": "¿Qué tres cortes indican paraneumónico complicado/empiema?",
     "a": "pH <7.2, glucosa <60 mg/dL o LDH >1000",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q5239370"
    },
    {
     "q": "Derrame paraneumónico con pH 7.1: ¿conducta?",
     "a": "Tubo de drenaje (paraneumónico complicado/empiema)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q22bd708"
    },
    {
     "q": "Glucosa pleural ≈ sérica (>60) y LDH <50% de la sérica describen…",
     "a": "Líquido pleural normal",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qd62d2cf"
    }
   ],
   "fuentes_tecnica": [
@@ -8540,7 +9019,7 @@
   "imagen_clave": true,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/pleural-glucosa-ph-y-ldh.webp",
   "estacion": {
    "seccion": "s12",
    "n": 5,
@@ -8578,22 +9057,26 @@
    {
     "q": "¿Celularidad normal del líquido pleural?",
     "a": "<1000 células/µL, predominio mononuclear",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q63d3a6e"
    },
    {
     "q": "¿Valor de ADA pleural que apoya TBC?",
     "a": ">40 U/L",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qcc7134e"
    },
    {
     "q": "Derrame exudativo con 70% de linfocitos: ¿qué sospechas?",
     "a": "TBC o neoplasia (linfocitos >50%)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qdb48fcf"
    },
    {
     "q": "Predominio de neutrófilos en líquido pleural indica…",
     "a": "Exudado inflamatorio",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q26900d3"
    }
   ],
   "fuentes_tecnica": [
@@ -8604,7 +9087,7 @@
   "imagen_clave": true,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/pleural-celulas.webp",
   "estacion": {
    "seccion": "s12",
    "n": 6,
@@ -8638,22 +9121,26 @@
    {
     "q": "¿Cómo se calcula el GASA?",
     "a": "Albúmina sérica − albúmina ascítica",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q0c54e5a"
    },
    {
     "q": "GASA ≥1.1 g/dL indica…",
     "a": "Origen portal (hipertensión portal: cirrosis, IC)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qd810176"
    },
    {
     "q": "Albúmina sérica 3.0 y ascítica 2.4 g/dL: ¿GASA y origen?",
     "a": "0.6 → <1.1, origen peritoneal (TBC, cáncer)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q3817db3"
    },
    {
     "q": "Ascitis por TBC peritoneal: ¿GASA alto o bajo?",
     "a": "Bajo (<1.1)",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qc749c3e"
    }
   ],
   "fuentes_tecnica": [
@@ -8664,7 +9151,7 @@
   "imagen_clave": true,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/ascitis-gasa.webp",
   "estacion": {
    "seccion": "s12",
    "n": 7,
@@ -8698,22 +9185,26 @@
    {
     "q": "¿Corte de PMN en líquido ascítico para diagnosticar PBE?",
     "a": "≥250/mm³",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q2b73972"
    },
    {
     "q": "Cirrótico con ascitis y fiebre; PMN 400/mm³ en paracentesis. ¿Diagnóstico y conducta?",
     "a": "PBE; antibiótico (cefotaxima) sin esperar cultivo",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q8c806b2"
    },
    {
     "q": "¿Se espera el cultivo para tratar la PBE?",
     "a": "No",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qd9596ee"
    },
    {
     "q": "PMN <250/mm³ en líquido ascítico es…",
     "a": "Normal",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qdb0bcec"
    }
   ],
   "fuentes_tecnica": [
@@ -8724,7 +9215,7 @@
   "imagen_clave": true,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/ascitis-pmn-pbe.webp",
   "estacion": {
    "seccion": "s12",
    "n": 8,
@@ -8763,22 +9254,26 @@
    {
     "q": "¿Cuánto líquido ascítico se extrae para estudio y qué estudios se piden?",
     "a": "~100 ml: físico, fisicoquímico (proteínas, densidad), citológico, bacteriológico",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q5600d0a"
    },
    {
     "q": "¿Corte de TG para ascitis quilosa?",
     "a": "TG >200 mg/dL",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qa615b15"
    },
    {
     "q": "Quiloso: ¿corte de TG en ascitis vs en pleura?",
     "a": "Ascitis >200 mg/dL; quilotórax >110 mg/dL",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q77f4e1b"
    },
    {
     "q": "Ascitis hemorrágica sugiere…",
     "a": "Neoplasia o trauma",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q467ba88"
    }
   ],
   "fuentes_tecnica": [
@@ -8827,22 +9322,26 @@
    {
     "q": "Ordena signo del charco, matidez desplazable y oleada con su volumen",
     "a": "Charco ≈120 mL; matidez desplazable ≈500 mL; oleada >1 litro",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qf4f3c1a"
    },
    {
     "q": "¿Desde qué volumen la ascitis es clínica?",
     "a": ">500 ml",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qe4c8f28"
    },
    {
     "q": "¿Dónde se punza una paracentesis?",
     "a": "Tercio externo de la línea ombligo-EIAS izquierda, sobre zona mate",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q109390d"
    },
    {
     "q": "Abdomen tenso con oleada positiva: ¿cuánto líquido calculas?",
     "a": ">1 litro (ascitis a tensión)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qe9104a6"
    }
   ],
   "fuentes_tecnica": [
@@ -8891,22 +9390,26 @@
    {
     "q": "¿Presión normal del LCR?",
     "a": "<180 mmH2O (docente: hasta 20 cm de agua)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q1222ec1"
    },
    {
     "q": "Paciente con papiledema y sospecha de meningitis: ¿qué haces antes de la punción lumbar?",
     "a": "TAC (riesgo de herniación)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q5da79c6"
    },
    {
     "q": "¿En qué posición se mide la presión del LCR?",
     "a": "Decúbito lateral relajado",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q5474fb2"
    },
    {
     "q": "Presión de LCR aumentada con neutrófilos sugiere…",
     "a": "Meningitis bacteriana",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q0a77ee2"
    }
   ],
   "fuentes_tecnica": [
@@ -8951,22 +9454,26 @@
    {
     "q": "¿Aspecto normal del LCR?",
     "a": "Transparente",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q9cbeef0"
    },
    {
     "q": "LCR xantocrómico indica…",
     "a": "Hemorragia subaracnoidea (>12 h)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qe6c7576"
    },
    {
     "q": "LCR con sangre que se aclara del 1.º al 3.er tubo: ¿qué es?",
     "a": "Punción traumática",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q96c4981"
    },
    {
     "q": "Fiebre, púrpura y LCR purulento con diplococos gramnegativos: ¿agente?",
     "a": "Meningococo",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q457c803"
    }
   ],
   "fuentes_tecnica": [
@@ -9016,22 +9523,26 @@
    {
     "q": "¿Celularidad normal del LCR?",
     "a": "<5 linfocitos/ml (según la fila) y ningún eritrocito",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q658b09a"
    },
    {
     "q": "Predominio de neutrófilos en el LCR sugiere…",
     "a": "Meningitis bacteriana",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qfd9a709"
    },
    {
     "q": "¿Cómo se corrige el conteo de leucocitos en una punción traumática?",
     "a": "Restar 1 leucocito por cada 500-1000 eritrocitos del LCR",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q2e591d3"
    },
    {
     "q": "LCR con linfocitos y celularidad mixta, proteínas muy altas: ¿qué patrón?",
     "a": "Tuberculoso (mononucleares o mixtas)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q2d69202"
    }
   ],
   "fuentes_tecnica": [
@@ -9086,22 +9597,26 @@
    {
     "q": "¿Proteínas normales en LCR?",
     "a": "20-40 mg/100 ml",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qcb6d7fe"
    },
    {
     "q": "Proteínas ↑ en LCR con células normales: ¿cómo se llama y qué sugiere?",
     "a": "Disociación albúmino-citológica; Guillain-Barré",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qb82162e"
    },
    {
     "q": "¿En qué meningitis el aumento de proteínas es más llamativo: bacteriana, viral o TBC?",
     "a": "TBC (viral solo moderado)",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q662ca67"
    },
    {
     "q": "La gammaglobulina en LCR es {{<10%}} y la albúmina es {{mayor}} que la globulina",
     "a": "<10%; mayor",
-    "tipo": "cloze"
+    "tipo": "cloze",
+    "pid": "qb823c6c"
    }
   ],
   "fuentes_tecnica": [
@@ -9155,22 +9670,26 @@
    {
     "q": "¿Glucosa normal del LCR?",
     "a": "50-60% de la glucemia",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q78197ad"
    },
    {
     "q": "Relación glucosa LCR/sangre <0.4 sugiere…",
     "a": "Meningitis bacteriana",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qf1ab322"
    },
    {
     "q": "¿Cómo está la glucosa del LCR en la meningitis viral?",
     "a": "Normal",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qe9f24e1"
    },
    {
     "q": "Vas a puncionar para estudiar LCR: ¿qué examen de sangre pides a la vez?",
     "a": "Glucemia simultánea",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q4f124c4"
    }
   ],
   "fuentes_tecnica": [
@@ -9181,7 +9700,7 @@
   "imagen_clave": true,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/lcr-glucosa.webp",
   "estacion": {
    "seccion": "s12",
    "n": 15,
@@ -9209,22 +9728,26 @@
    {
     "q": "Patrón de LCR en meningitis bacteriana",
     "a": "Presión ↑, neutrófilos abundantes, proteínas ↑, glucosa ↓",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q96905f4"
    },
    {
     "q": "Tríada clínica meníngea",
     "a": "Fiebre + rigidez de nuca + alteración de conciencia",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q79fdd38"
    },
    {
     "q": "Fiebre, rigidez de nuca, confusión; LCR con 93% PMN y glucosa baja: ¿patrón?",
     "a": "Bacteriano (piógeno)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q9cbee8e"
    },
    {
     "q": "Kernig y Brudzinski positivos indican…",
     "a": "Irritación meníngea (clínica meníngea)",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q30eff70"
    }
   ],
   "fuentes_tecnica": [
@@ -9235,7 +9758,7 @@
   "imagen_clave": true,
   "revisar": false,
   "ruta_palacio": null,
-  "imagen": null,
+  "imagen": "img/memo/lcr-patron-bacteriano-piogeno.webp",
   "estacion": {
    "seccion": "s12",
    "n": 16,
@@ -9262,17 +9785,20 @@
    {
     "q": "Patrón de LCR en meningitis viral (aséptica)",
     "a": "Linfocitosis, proteínas moderadamente ↑, glucosa normal",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qbdae9f0"
    },
    {
     "q": "LCR con linfocitos y glucosa baja: ¿viral?",
     "a": "No: pensar en TBC u hongos",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q926d819"
    },
    {
     "q": "Meningitis de evolución tranquila, LCR linfocitario, glucosa normal: ¿patrón?",
     "a": "Viral (aséptico)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qf9a0a48"
    }
   ],
   "fuentes_tecnica": [
@@ -9321,22 +9847,26 @@
    {
     "q": "Patrón de LCR en meningitis tuberculosa",
     "a": "Celularidad moderada mononuclear o mixta, proteínas muy ↑, glucosa ↓ o normal",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q8ed4beb"
    },
    {
     "q": "¿ADA en LCR que apoya TBC?",
     "a": ">10 U/L",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qf892664"
    },
    {
     "q": "ADA que apoya TBC: ¿en pleura y en LCR?",
     "a": "Pleura >40 U/L; LCR >10 U/L",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qae7c8e7"
    },
    {
     "q": "Meningitis con parálisis del VI par e hidrocefalia: ¿qué etiología piensas?",
     "a": "Tuberculosa (exudado basal)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q291ba86"
    }
   ],
   "fuentes_tecnica": [
@@ -9418,22 +9948,26 @@
    {
     "q": "¿Puntaje máximo de cada componente de Glasgow (O, V, M)?",
     "a": "Ocular 4, verbal 5, motora 6 (total 3-15)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qd2a95d3"
    },
    {
     "q": "Glasgow de 8 o menos indica…",
     "a": "TCE grave → asegurar la vía aérea (intubar)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q69f4a56"
    },
    {
     "q": "Flexión anormal de los brazos (decorticación) vale en la motora…",
     "a": "M3 (la extensión-descerebración vale M2)",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q386f153"
    },
    {
     "q": "Caso: abre los ojos al dolor, dice palabras inapropiadas y localiza el dolor. ¿Puntaje y gravedad?",
     "a": "O2 V3 M5 = 10 → moderado (9-12)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q95bf9ae"
    }
   ],
   "fuentes_tecnica": [
@@ -9473,22 +10007,26 @@
    {
     "q": "¿Cuántos grados de coma hay y qué define el grado I?",
     "a": "Cuatro; el I atiende órdenes simples (abre/cierra ojos, levanta brazos, responde)",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q7d146f4"
    },
    {
     "q": "¿Qué diferencia el grado II del III?",
     "a": "En el II responde apenas al dolor enérgico y conserva reflejos; en el III no responde, no deglute y hay arreflexia total con incontinencia",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qd396ff6"
    },
    {
     "q": "Apnea con respirador y EEG en silencio eléctrico corresponde a…",
     "a": "Coma grado IV, casi siempre irreversible (muerte encefálica)",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q96d680f"
    },
    {
     "q": "Ordena: estupor, obnubilación, delirio, confusión, somnolencia",
     "a": "Obnubilación → confusión → somnolencia → delirio → estupor (antes del coma)",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qaceafcb"
    }
   ],
   "fuentes_tecnica": [
@@ -9526,22 +10064,26 @@
    {
     "q": "¿Qué caracteriza el grado I de encefalopatía hepática?",
     "a": "Confusión leve, atención disminuida, inversión del ritmo sueño-vigilia; reversible",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q27db6bd"
    },
    {
     "q": "¿En qué grado la asterixis (flapping) es evidente?",
     "a": "Grado II (con letargia y desorientación en tiempo)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qef9c8fa"
    },
    {
     "q": "Cirrótico en coma sin respuesta al dolor: grado…",
     "a": "IV (coma hepático)",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qfeb3039"
    },
    {
     "q": "Desencadenante clásico de encefalopatía en el cirrótico",
     "a": "Hemorragia digestiva alta (HDA)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qe9f9fd7"
    }
   ],
   "fuentes_tecnica": [
@@ -9579,22 +10121,26 @@
    {
     "q": "¿Qué define el grado 3 de fuerza muscular?",
     "a": "Vence la gravedad pero no la resistencia",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q3e1fc8a"
    },
    {
     "q": "Contracción palpable sin movimiento del segmento es grado…",
     "a": "1",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q95c447b"
    },
    {
     "q": "¿Diferencia entre grado 2 y grado 3?",
     "a": "2 mueve solo eliminando la gravedad; 3 vence la gravedad",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q939e346"
    },
    {
     "q": "Fuerza 4/5 en el brazo derecho se interpreta como…",
     "a": "Paresia leve (vence resistencia parcial)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q4116042"
    }
   ],
   "fuentes_tecnica": [
@@ -9632,22 +10178,26 @@
    {
     "q": "En la escala 0-4+ (2020), ¿qué valor es normal?",
     "a": "2+",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q6a8c79e"
    },
    {
     "q": "En la escala 0-5 (2018), ¿qué valor es normal y cuál es exaltado con clonus?",
     "a": "3 normal; 5 exaltado con clonus",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q9a4e08b"
    },
    {
     "q": "Reflejo 4+ con clonus orienta a lesión de…",
     "a": "Vía piramidal (neurona motora superior)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q53e5103"
    },
    {
     "q": "Un sano sin reflejo aquiliano bilateral: ¿qué vale más para interpretar?",
     "a": "La asimetría; 3-10% de sanos carece de algún reflejo",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q627c947"
    }
   ],
   "fuentes_tecnica": [
@@ -9719,22 +10269,26 @@
    {
     "q": "¿Puntaje total del MMSE y sus tres bloques?",
     "a": "30: orientación 10, memoria-atención 11, lenguaje-praxis 9",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q842c915"
    },
    {
     "q": "¿Desde qué puntaje el MMSE se considera normal?",
     "a": "24 (24-30)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q0f88063"
    },
    {
     "q": "MMSE de 15 indica…",
     "a": "Deterioro moderado (10-17)",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qe76817b"
    },
    {
     "q": "Comunera rural sin escolaridad saca 21. ¿Qué haces antes de rotular demencia?",
     "a": "Ajustar el resultado a su escolaridad: el MMSE está validado en población urbana escolarizada",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q69ea06e"
    }
   ],
   "fuentes_tecnica": [
@@ -9772,22 +10326,26 @@
    {
     "q": "¿Desde qué grado de Freeman-Levine aparece el frémito?",
     "a": "Grado IV",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qcfffc2b"
    },
    {
     "q": "Soplo que se oye sin que el estetoscopio toque la piel: grado…",
     "a": "VI",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q36f486e"
    },
    {
     "q": "¿Qué diferencia el grado III del IV?",
     "a": "El III es moderado sin frémito; el IV es fuerte con frémito palpable",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q484d0f6"
    },
    {
     "q": "Soplo grado II/VI en un joven asintomático sugiere…",
     "a": "Soplo leve, a menudo funcional",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q85d3d2f"
    }
   ],
   "fuentes_tecnica": [
@@ -9824,22 +10382,26 @@
    {
     "q": "¿Qué define la clase III de la NYHA?",
     "a": "Limitación acentuada: disnea/edema con actividad menor a la habitual",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qc02193e"
    },
    {
     "q": "Síntomas en reposo y ortopnea permanente: clase…",
     "a": "IV",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q14647b0"
    },
    {
     "q": "¿Diferencia entre clase I y II?",
     "a": "I sin limitación; II asintomático en reposo pero con síntomas en la actividad habitual",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "qb58bac1"
    },
    {
     "q": "Paciente con IC que se ahoga al caminar dentro de su casa pero no en reposo: clase aproximada",
     "a": "III (medianos esfuerzos, menos que la actividad habitual)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q359f543"
    }
   ],
   "fuentes_tecnica": [
@@ -9893,22 +10455,26 @@
    {
     "q": "¿Dónde se busca el signo de Godet y dónde no?",
     "a": "Tibia, maléolo o sacro; nunca en la pantorrilla",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qb4d135e"
    },
    {
     "q": "Fóvea de ~4 mm que tarda 10-15 s en desaparecer: ¿cuántas cruces?",
     "a": "2+",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q62e1af7"
    },
    {
     "q": "Edema 4+ equivale a…",
     "a": "~8 mm, 2-5 min: anasarca",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q9cd4130"
    },
    {
     "q": "Edema que llega a 2+ en la tarde y cede al acostarse sugiere…",
     "a": "Edema postural (hasta 2+, cede en decúbito)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qe0ce83e"
    }
   ],
   "fuentes_tecnica": [
@@ -9967,22 +10533,26 @@
    {
     "q": "¿Cuántos criterios suman +1 en Wells TVP y cuál resta 2?",
     "a": "Nueve suman +1; resta 2 el diagnóstico alternativo igual o más probable",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q5a32362"
    },
    {
     "q": "Wells TVP ≥3 significa y obliga a…",
     "a": "Probabilidad alta → eco Doppler",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qc2024ff"
    },
    {
     "q": "Con Wells ≤0, ¿qué examen pides?",
     "a": "Dímero D (probabilidad baja)",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qc88e59b"
    },
    {
     "q": "Paciente con cáncer activo, pierna entera hinchada y pantorrilla 4 cm más gruesa, sin otro diagnóstico mejor. ¿Puntaje?",
     "a": "3 → probabilidad alta → eco Doppler",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qc3d3994"
    }
   ],
   "fuentes_tecnica": [
@@ -10037,22 +10607,26 @@
    {
     "q": "¿Qué dos criterios valen 3 puntos en Wells TEP?",
     "a": "Signos clínicos de TVP y TEP más probable que un diagnóstico alternativo",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q031ff1e"
    },
    {
     "q": "¿Cuánto vale la FC >100 en Wells TEP?",
     "a": "1,5 puntos",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qc951c2c"
    },
    {
     "q": "Wells TEP >6 indica y se pide…",
     "a": "Probabilidad alta → angiotomografía",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qb176cc3"
    },
    {
     "q": "Wells TEP 1,5 y dímero D negativo: ¿conducta?",
     "a": "Probabilidad baja (<2): el dímero D negativo descarta TEP (alto VPN)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q630e272"
    }
   ],
   "fuentes_tecnica": [
@@ -10106,22 +10680,26 @@
    {
     "q": "¿Desde qué volumen la hemoptisis es masiva?",
     "a": ">600 ml en 24 h",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "qd9c6c7f"
    },
    {
     "q": "Hemoptisis de 100 ml/24 h se clasifica como…",
     "a": "Moderada (30-200 ml)",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qa710eaf"
    },
    {
     "q": "¿Por qué la hemoptisis masiva es urgencia?",
     "a": "Riesgo de shock hipovolémico o asfixia por coágulos",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q79e9a5d"
    },
    {
     "q": "Causa más frecuente de hemoptisis en Puno (altura)",
     "a": "TBC pulmonar",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q76bbda7"
    }
   ],
   "fuentes_tecnica": [
@@ -10175,22 +10753,26 @@
    {
     "q": "¿Cuáles son los tres criterios del qSOFA y sus cortes?",
     "a": "FR ≥22/min, alteración mental (Glasgow <15), PAS ≤100 mmHg",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q7a6cfbd"
    },
    {
     "q": "¿Con cuántos puntos de qSOFA hay alta sospecha de sepsis?",
     "a": "≥2 → hemocultivos y lactato",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q47bbf60"
    },
    {
     "q": "Lactato >2 mmol/L indica…",
     "a": "Hipoperfusión tisular",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q75db75a"
    },
    {
     "q": "Paciente con neumonía: FR 24, PA 95/60, Glasgow 15. ¿qSOFA?",
     "a": "2 → alta sospecha de sepsis",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q3cb1a9a"
    }
   ],
   "fuentes_tecnica": [
@@ -10245,22 +10827,26 @@
    {
     "q": "¿Cuáles son los 4 criterios de Centor?",
     "a": "Fiebre >38 °C, exudado amigdalino, adenopatía cervical anterior dolorosa, ausencia de tos",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qf7c143c"
    },
    {
     "q": "¿Qué ajuste por edad agrega McIsaac?",
     "a": "+1 si 3-14 años, 0 si 15-44, −1 si ≥45",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qdc49ba2"
    },
    {
     "q": "Centor 0-1 orienta a…",
     "a": "Probable viral, sin antibiótico",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q3802b1e"
    },
    {
     "q": "Niño de 8 años con fiebre 39 °C, exudado y sin tos. ¿Puntaje Centor-McIsaac?",
     "a": "4 → alta probabilidad → test/tratar",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qdc95fd7"
    }
   ],
   "fuentes_tecnica": [
@@ -10319,22 +10905,26 @@
    {
     "q": "¿Qué porcentaje de peso perdido define la deshidratación grave?",
     "a": ">10% del peso",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q025535f"
    },
    {
     "q": "¿Rango de Na en la deshidratación isotónica?",
     "a": "135-145 mEq/L",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "qb5ed201"
    },
    {
     "q": "Na de 150 mEq/L en un deshidratado: tipo…",
     "a": "Hipertónica (>145)",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q0c679b8"
    },
    {
     "q": "¿Dónde tomas el pliegue cutáneo en un anciano y por qué?",
     "a": "Región frontal o esternal: en el dorso de la mano da falso positivo",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q7ee5788"
    }
   ],
   "fuentes_tecnica": [
@@ -10388,22 +10978,26 @@
    {
     "q": "¿Cómo se calcula el % de déficit de peso de Gómez?",
     "a": "(peso ideal para edad y sexo − peso real) / peso ideal × 100",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q3454722"
    },
    {
     "q": "¿Cortes de los grados I, II y III de Gómez?",
     "a": ">10%, >25% y >40% de déficit",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qa4e827d"
    },
    {
     "q": "Déficit de 30%: grado…",
     "a": "II (moderada, 25-40%)",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qd823346"
    },
    {
     "q": "Niño con peso ideal 20 kg que pesa 14 kg. ¿Grado?",
     "a": "Déficit 30% → grado II (moderada)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qc595314"
    }
   ],
   "fuentes_tecnica": [
@@ -10457,22 +11051,26 @@
    {
     "q": "¿Tramos leve, moderado y severo de la EVA?",
     "a": "1-3 leve, 4-6 moderado, 7-10 severo",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "qfd06e2c"
    },
    {
     "q": "EVA de 5 se interpreta como…",
     "a": "Dolor moderado",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "q046a2a0"
    },
    {
     "q": "¿Qué significa cada letra de ALICIA?",
     "a": "Antigüedad, Localización/Irradiación, Carácter, Intensidad, Agravantes/Atenuantes",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q550b9ad"
    },
    {
     "q": "Paciente con cefalea que consulta: ¿qué EVA suele tener?",
     "a": "Más de 4 (con 1-3 en general no acude)",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "qc276fd7"
    }
   ],
   "fuentes_tecnica": [
@@ -10521,22 +11119,26 @@
    {
     "q": "¿Desde qué volumen de ascitis la oleada es positiva?",
     "a": ">1500 ml (gran volumen)",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q744bb6a"
    },
    {
     "q": "Ascitis <500 ml: ¿cómo se detecta?",
     "a": "Por ecografía; la percusión es insuficiente",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q43237d3"
    },
    {
     "q": "Matidez desplazable positiva con oleada negativa sugiere…",
     "a": "Ascitis de mediano volumen (500-1500 ml)",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qf2cf684"
    },
    {
     "q": "Percusión abdominal en tablero de ajedrez sugiere…",
     "a": "TBC peritoneal",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q3a2c558"
    }
   ],
   "fuentes_tecnica": [
@@ -10604,22 +11206,26 @@
    {
     "q": "¿Proteinuria normal en 24 h?",
     "a": "≤120-150 mg/24 h",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q25a5f0e"
    },
    {
     "q": "¿A cuántos g/L equivalen +, ++ y +++ en la tira?",
     "a": "+ 1 g/L · ++ 3 g/L · +++ 5-10 g/L",
-    "tipo": "lista"
+    "tipo": "lista",
+    "pid": "q236761e"
    },
    {
     "q": "¿Desde qué proteinuria se habla de rango nefrótico?",
     "a": ">3,5 g/24 h",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q4922a70"
    },
    {
     "q": "Orina espumosa y edema hasta anasarca sugieren…",
     "a": "Síndrome nefrótico",
-    "tipo": "caso"
+    "tipo": "caso",
+    "pid": "q1ff00a0"
    }
   ],
   "fuentes_tecnica": [
@@ -10687,22 +11293,26 @@
    {
     "q": "¿TFG normal según el apunte?",
     "a": "≥100-150 ml/min",
-    "tipo": "directa"
+    "tipo": "directa",
+    "pid": "q4c1bc08"
    },
    {
     "q": "TFG de 30 ml/min corresponde a…",
     "a": "IRC moderada (10-50 ml/min)",
-    "tipo": "inversa"
+    "tipo": "inversa",
+    "pid": "qf6235cc"
    },
    {
     "q": "¿Desde qué TFG se habla de IRC grave (terminal)?",
     "a": "<10 ml/min",
-    "tipo": "umbral"
+    "tipo": "umbral",
+    "pid": "q38a5cf2"
    },
    {
     "q": "¿Qué discrepancia hay en la reserva disminuida?",
     "a": "2020: <80-120 ml/min; 2018: 80-<100 ml/min (contrastar en clase; no es KDIGO)",
-    "tipo": "trampa"
+    "tipo": "trampa",
+    "pid": "q1458d1a"
    }
   ],
   "fuentes_tecnica": [

@@ -63,22 +63,26 @@
       {
         "q": "¿Puntaje máximo de cada componente de Glasgow (O, V, M)?",
         "a": "Ocular 4, verbal 5, motora 6 (total 3-15)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qd2a95d3"
       },
       {
         "q": "Glasgow de 8 o menos indica…",
         "a": "TCE grave → asegurar la vía aérea (intubar)",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q69f4a56"
       },
       {
         "q": "Flexión anormal de los brazos (decorticación) vale en la motora…",
         "a": "M3 (la extensión-descerebración vale M2)",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q386f153"
       },
       {
         "q": "Caso: abre los ojos al dolor, dice palabras inapropiadas y localiza el dolor. ¿Puntaje y gravedad?",
         "a": "O2 V3 M5 = 10 → moderado (9-12)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q95bf9ae"
       }
     ],
     "fuentes_tecnica": [
@@ -118,22 +122,26 @@
       {
         "q": "¿Cuántos grados de coma hay y qué define el grado I?",
         "a": "Cuatro; el I atiende órdenes simples (abre/cierra ojos, levanta brazos, responde)",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q7d146f4"
       },
       {
         "q": "¿Qué diferencia el grado II del III?",
         "a": "En el II responde apenas al dolor enérgico y conserva reflejos; en el III no responde, no deglute y hay arreflexia total con incontinencia",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qd396ff6"
       },
       {
         "q": "Apnea con respirador y EEG en silencio eléctrico corresponde a…",
         "a": "Coma grado IV, casi siempre irreversible (muerte encefálica)",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q96d680f"
       },
       {
         "q": "Ordena: estupor, obnubilación, delirio, confusión, somnolencia",
         "a": "Obnubilación → confusión → somnolencia → delirio → estupor (antes del coma)",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "qaceafcb"
       }
     ],
     "fuentes_tecnica": [
@@ -171,22 +179,26 @@
       {
         "q": "¿Qué caracteriza el grado I de encefalopatía hepática?",
         "a": "Confusión leve, atención disminuida, inversión del ritmo sueño-vigilia; reversible",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q27db6bd"
       },
       {
         "q": "¿En qué grado la asterixis (flapping) es evidente?",
         "a": "Grado II (con letargia y desorientación en tiempo)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qef9c8fa"
       },
       {
         "q": "Cirrótico en coma sin respuesta al dolor: grado…",
         "a": "IV (coma hepático)",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qfeb3039"
       },
       {
         "q": "Desencadenante clásico de encefalopatía en el cirrótico",
         "a": "Hemorragia digestiva alta (HDA)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qe9f9fd7"
       }
     ],
     "fuentes_tecnica": [
@@ -224,22 +236,26 @@
       {
         "q": "¿Qué define el grado 3 de fuerza muscular?",
         "a": "Vence la gravedad pero no la resistencia",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q3e1fc8a"
       },
       {
         "q": "Contracción palpable sin movimiento del segmento es grado…",
         "a": "1",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q95c447b"
       },
       {
         "q": "¿Diferencia entre grado 2 y grado 3?",
         "a": "2 mueve solo eliminando la gravedad; 3 vence la gravedad",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q939e346"
       },
       {
         "q": "Fuerza 4/5 en el brazo derecho se interpreta como…",
         "a": "Paresia leve (vence resistencia parcial)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q4116042"
       }
     ],
     "fuentes_tecnica": [
@@ -277,22 +293,26 @@
       {
         "q": "En la escala 0-4+ (2020), ¿qué valor es normal?",
         "a": "2+",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q6a8c79e"
       },
       {
         "q": "En la escala 0-5 (2018), ¿qué valor es normal y cuál es exaltado con clonus?",
         "a": "3 normal; 5 exaltado con clonus",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q9a4e08b"
       },
       {
         "q": "Reflejo 4+ con clonus orienta a lesión de…",
         "a": "Vía piramidal (neurona motora superior)",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q53e5103"
       },
       {
         "q": "Un sano sin reflejo aquiliano bilateral: ¿qué vale más para interpretar?",
         "a": "La asimetría; 3-10% de sanos carece de algún reflejo",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q627c947"
       }
     ],
     "fuentes_tecnica": [
@@ -364,22 +384,26 @@
       {
         "q": "¿Puntaje total del MMSE y sus tres bloques?",
         "a": "30: orientación 10, memoria-atención 11, lenguaje-praxis 9",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q842c915"
       },
       {
         "q": "¿Desde qué puntaje el MMSE se considera normal?",
         "a": "24 (24-30)",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q0f88063"
       },
       {
         "q": "MMSE de 15 indica…",
         "a": "Deterioro moderado (10-17)",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qe76817b"
       },
       {
         "q": "Comunera rural sin escolaridad saca 21. ¿Qué haces antes de rotular demencia?",
         "a": "Ajustar el resultado a su escolaridad: el MMSE está validado en población urbana escolarizada",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q69ea06e"
       }
     ],
     "fuentes_tecnica": [
@@ -417,22 +441,26 @@
       {
         "q": "¿Desde qué grado de Freeman-Levine aparece el frémito?",
         "a": "Grado IV",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qcfffc2b"
       },
       {
         "q": "Soplo que se oye sin que el estetoscopio toque la piel: grado…",
         "a": "VI",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q36f486e"
       },
       {
         "q": "¿Qué diferencia el grado III del IV?",
         "a": "El III es moderado sin frémito; el IV es fuerte con frémito palpable",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q484d0f6"
       },
       {
         "q": "Soplo grado II/VI en un joven asintomático sugiere…",
         "a": "Soplo leve, a menudo funcional",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q85d3d2f"
       }
     ],
     "fuentes_tecnica": [
@@ -469,22 +497,26 @@
       {
         "q": "¿Qué define la clase III de la NYHA?",
         "a": "Limitación acentuada: disnea/edema con actividad menor a la habitual",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qc02193e"
       },
       {
         "q": "Síntomas en reposo y ortopnea permanente: clase…",
         "a": "IV",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q14647b0"
       },
       {
         "q": "¿Diferencia entre clase I y II?",
         "a": "I sin limitación; II asintomático en reposo pero con síntomas en la actividad habitual",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qb58bac1"
       },
       {
         "q": "Paciente con IC que se ahoga al caminar dentro de su casa pero no en reposo: clase aproximada",
         "a": "III (medianos esfuerzos, menos que la actividad habitual)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q359f543"
       }
     ],
     "fuentes_tecnica": [
@@ -538,22 +570,26 @@
       {
         "q": "¿Dónde se busca el signo de Godet y dónde no?",
         "a": "Tibia, maléolo o sacro; nunca en la pantorrilla",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qb4d135e"
       },
       {
         "q": "Fóvea de ~4 mm que tarda 10-15 s en desaparecer: ¿cuántas cruces?",
         "a": "2+",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q62e1af7"
       },
       {
         "q": "Edema 4+ equivale a…",
         "a": "~8 mm, 2-5 min: anasarca",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q9cd4130"
       },
       {
         "q": "Edema que llega a 2+ en la tarde y cede al acostarse sugiere…",
         "a": "Edema postural (hasta 2+, cede en decúbito)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qe0ce83e"
       }
     ],
     "fuentes_tecnica": [
@@ -612,22 +648,26 @@
       {
         "q": "¿Cuántos criterios suman +1 en Wells TVP y cuál resta 2?",
         "a": "Nueve suman +1; resta 2 el diagnóstico alternativo igual o más probable",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q5a32362"
       },
       {
         "q": "Wells TVP ≥3 significa y obliga a…",
         "a": "Probabilidad alta → eco Doppler",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qc2024ff"
       },
       {
         "q": "Con Wells ≤0, ¿qué examen pides?",
         "a": "Dímero D (probabilidad baja)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qc88e59b"
       },
       {
         "q": "Paciente con cáncer activo, pierna entera hinchada y pantorrilla 4 cm más gruesa, sin otro diagnóstico mejor. ¿Puntaje?",
         "a": "3 → probabilidad alta → eco Doppler",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qc3d3994"
       }
     ],
     "fuentes_tecnica": [
@@ -682,22 +722,26 @@
       {
         "q": "¿Qué dos criterios valen 3 puntos en Wells TEP?",
         "a": "Signos clínicos de TVP y TEP más probable que un diagnóstico alternativo",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q031ff1e"
       },
       {
         "q": "¿Cuánto vale la FC >100 en Wells TEP?",
         "a": "1,5 puntos",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qc951c2c"
       },
       {
         "q": "Wells TEP >6 indica y se pide…",
         "a": "Probabilidad alta → angiotomografía",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qb176cc3"
       },
       {
         "q": "Wells TEP 1,5 y dímero D negativo: ¿conducta?",
         "a": "Probabilidad baja (<2): el dímero D negativo descarta TEP (alto VPN)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q630e272"
       }
     ],
     "fuentes_tecnica": [
@@ -751,22 +795,26 @@
       {
         "q": "¿Desde qué volumen la hemoptisis es masiva?",
         "a": ">600 ml en 24 h",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qd9c6c7f"
       },
       {
         "q": "Hemoptisis de 100 ml/24 h se clasifica como…",
         "a": "Moderada (30-200 ml)",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qa710eaf"
       },
       {
         "q": "¿Por qué la hemoptisis masiva es urgencia?",
         "a": "Riesgo de shock hipovolémico o asfixia por coágulos",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q79e9a5d"
       },
       {
         "q": "Causa más frecuente de hemoptisis en Puno (altura)",
         "a": "TBC pulmonar",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q76bbda7"
       }
     ],
     "fuentes_tecnica": [
@@ -820,22 +868,26 @@
       {
         "q": "¿Cuáles son los tres criterios del qSOFA y sus cortes?",
         "a": "FR ≥22/min, alteración mental (Glasgow <15), PAS ≤100 mmHg",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q7a6cfbd"
       },
       {
         "q": "¿Con cuántos puntos de qSOFA hay alta sospecha de sepsis?",
         "a": "≥2 → hemocultivos y lactato",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q47bbf60"
       },
       {
         "q": "Lactato >2 mmol/L indica…",
         "a": "Hipoperfusión tisular",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q75db75a"
       },
       {
         "q": "Paciente con neumonía: FR 24, PA 95/60, Glasgow 15. ¿qSOFA?",
         "a": "2 → alta sospecha de sepsis",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q3cb1a9a"
       }
     ],
     "fuentes_tecnica": [
@@ -890,22 +942,26 @@
       {
         "q": "¿Cuáles son los 4 criterios de Centor?",
         "a": "Fiebre >38 °C, exudado amigdalino, adenopatía cervical anterior dolorosa, ausencia de tos",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "qf7c143c"
       },
       {
         "q": "¿Qué ajuste por edad agrega McIsaac?",
         "a": "+1 si 3-14 años, 0 si 15-44, −1 si ≥45",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qdc49ba2"
       },
       {
         "q": "Centor 0-1 orienta a…",
         "a": "Probable viral, sin antibiótico",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q3802b1e"
       },
       {
         "q": "Niño de 8 años con fiebre 39 °C, exudado y sin tos. ¿Puntaje Centor-McIsaac?",
         "a": "4 → alta probabilidad → test/tratar",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qdc95fd7"
       }
     ],
     "fuentes_tecnica": [
@@ -964,22 +1020,26 @@
       {
         "q": "¿Qué porcentaje de peso perdido define la deshidratación grave?",
         "a": ">10% del peso",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q025535f"
       },
       {
         "q": "¿Rango de Na en la deshidratación isotónica?",
         "a": "135-145 mEq/L",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qb5ed201"
       },
       {
         "q": "Na de 150 mEq/L en un deshidratado: tipo…",
         "a": "Hipertónica (>145)",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q0c679b8"
       },
       {
         "q": "¿Dónde tomas el pliegue cutáneo en un anciano y por qué?",
         "a": "Región frontal o esternal: en el dorso de la mano da falso positivo",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q7ee5788"
       }
     ],
     "fuentes_tecnica": [
@@ -1033,22 +1093,26 @@
       {
         "q": "¿Cómo se calcula el % de déficit de peso de Gómez?",
         "a": "(peso ideal para edad y sexo − peso real) / peso ideal × 100",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q3454722"
       },
       {
         "q": "¿Cortes de los grados I, II y III de Gómez?",
         "a": ">10%, >25% y >40% de déficit",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "qa4e827d"
       },
       {
         "q": "Déficit de 30%: grado…",
         "a": "II (moderada, 25-40%)",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qd823346"
       },
       {
         "q": "Niño con peso ideal 20 kg que pesa 14 kg. ¿Grado?",
         "a": "Déficit 30% → grado II (moderada)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qc595314"
       }
     ],
     "fuentes_tecnica": [
@@ -1102,22 +1166,26 @@
       {
         "q": "¿Tramos leve, moderado y severo de la EVA?",
         "a": "1-3 leve, 4-6 moderado, 7-10 severo",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "qfd06e2c"
       },
       {
         "q": "EVA de 5 se interpreta como…",
         "a": "Dolor moderado",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q046a2a0"
       },
       {
         "q": "¿Qué significa cada letra de ALICIA?",
         "a": "Antigüedad, Localización/Irradiación, Carácter, Intensidad, Agravantes/Atenuantes",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q550b9ad"
       },
       {
         "q": "Paciente con cefalea que consulta: ¿qué EVA suele tener?",
         "a": "Más de 4 (con 1-3 en general no acude)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qc276fd7"
       }
     ],
     "fuentes_tecnica": [
@@ -1166,22 +1234,26 @@
       {
         "q": "¿Desde qué volumen de ascitis la oleada es positiva?",
         "a": ">1500 ml (gran volumen)",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q744bb6a"
       },
       {
         "q": "Ascitis <500 ml: ¿cómo se detecta?",
         "a": "Por ecografía; la percusión es insuficiente",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q43237d3"
       },
       {
         "q": "Matidez desplazable positiva con oleada negativa sugiere…",
         "a": "Ascitis de mediano volumen (500-1500 ml)",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qf2cf684"
       },
       {
         "q": "Percusión abdominal en tablero de ajedrez sugiere…",
         "a": "TBC peritoneal",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q3a2c558"
       }
     ],
     "fuentes_tecnica": [
@@ -1249,22 +1321,26 @@
       {
         "q": "¿Proteinuria normal en 24 h?",
         "a": "≤120-150 mg/24 h",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q25a5f0e"
       },
       {
         "q": "¿A cuántos g/L equivalen +, ++ y +++ en la tira?",
         "a": "+ 1 g/L · ++ 3 g/L · +++ 5-10 g/L",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q236761e"
       },
       {
         "q": "¿Desde qué proteinuria se habla de rango nefrótico?",
         "a": ">3,5 g/24 h",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q4922a70"
       },
       {
         "q": "Orina espumosa y edema hasta anasarca sugieren…",
         "a": "Síndrome nefrótico",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q1ff00a0"
       }
     ],
     "fuentes_tecnica": [
@@ -1332,22 +1408,26 @@
       {
         "q": "¿TFG normal según el apunte?",
         "a": "≥100-150 ml/min",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q4c1bc08"
       },
       {
         "q": "TFG de 30 ml/min corresponde a…",
         "a": "IRC moderada (10-50 ml/min)",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qf6235cc"
       },
       {
         "q": "¿Desde qué TFG se habla de IRC grave (terminal)?",
         "a": "<10 ml/min",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q38a5cf2"
       },
       {
         "q": "¿Qué discrepancia hay en la reserva disminuida?",
         "a": "2020: <80-120 ml/min; 2018: 80-<100 ml/min (contrastar en clase; no es KDIGO)",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q1458d1a"
       }
     ],
     "fuentes_tecnica": [

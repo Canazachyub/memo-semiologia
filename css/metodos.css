@@ -1,0 +1,206 @@
+/* Vista Métodos (js/metodos.js). Usa las variables de tema de app.css. Móvil primero. */
+.met-vista { --met-amb: #b45309; --met-amb-bg: #fff6e5; max-width: 980px; margin: 0 auto; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .met-vista { --met-amb: #fbbf24; --met-amb-bg: #2b2210; } }
+:root[data-theme="dark"] .met-vista { --met-amb: #fbbf24; --met-amb-bg: #2b2210; }
+
+.met-vista :focus-visible { outline: 3px solid var(--memo); outline-offset: 2px; border-radius: 8px; }
+.met-intro { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
+.met-intro b { color: var(--ink); }
+
+/* índice */
+.met-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+@media (min-width: 560px) { .met-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); } }
+.met-card { display: flex; gap: 12px; align-items: flex-start; text-align: left; width: 100%; background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px; transition: transform .15s, border-color .15s; }
+.met-card:hover { border-color: var(--memo); transform: translateY(-2px); }
+.met-card .met-ic { font-size: 30px; line-height: 1; flex: none; width: 46px; height: 46px; display: grid; place-items: center; background: var(--memo-bg); border-radius: 12px; }
+.met-card .met-t { display: block; margin: 0 0 4px; font-size: 15.5px; font-weight: 700; color: var(--ink); }
+.met-card .met-d { display: block; margin: 0 0 8px; font-size: 13px; color: var(--muted); line-height: 1.4; }
+.met-uso { display: inline-block; font-size: 11.5px; font-weight: 700; color: var(--memo); background: var(--memo-bg); border-radius: 99px; padding: 2px 9px; }
+.met-uso.cero { color: var(--muted); background: var(--bg); border: 1px dashed var(--line); }
+
+.met-tipos { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; margin: 0 0 16px; }
+.met-tipos h3 { margin: 0 0 8px; font-size: 14px; }
+.met-tipos .met-fila { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 5px 0; border-top: 1px dashed var(--line); font-size: 13px; }
+.met-tipos .met-fila:first-of-type { border-top: 0; }
+.met-tipos .met-fila > span:first-child { min-width: 140px; color: var(--muted); }
+
+/* chips de método */
+.met-chip { border: 1px solid var(--memo); color: var(--memo); background: var(--memo-bg); border-radius: 99px; padding: 4px 11px; font-size: 13px; font-weight: 600; }
+.met-chip:hover { background: var(--memo); color: var(--bg); }
+
+/* detalle */
+.met-volver { border: 0; background: none; color: var(--accent); font-weight: 700; padding: 6px 0; margin-bottom: 6px; }
+.met-hero { display: flex; gap: 14px; align-items: center; background: linear-gradient(135deg, var(--memo-bg), var(--card)); border: 1px solid var(--line);
+  border-radius: 18px; padding: 16px; margin-bottom: 12px; }
+.met-hero .met-ic { font-size: 40px; flex: none; }
+.met-hero h2 { margin: 0 0 4px; font-size: 21px; outline: none; }
+.met-hero p { margin: 0 0 8px; color: var(--muted); font-size: 14px; }
+.met-meta { display: flex; flex-wrap: wrap; gap: 6px; font-size: 12px; color: var(--muted); }
+
+.met-sec { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); margin-bottom: 10px; box-shadow: var(--shadow); overflow: hidden; }
+.met-sec > summary { list-style: none; cursor: pointer; padding: 13px 14px; font-weight: 700; display: flex; gap: 8px; align-items: center; min-height: 48px; }
+.met-sec > summary::-webkit-details-marker { display: none; }
+.met-sec > summary::after { content: "▾"; margin-left: auto; color: var(--muted); transition: transform .2s; }
+.met-sec[open] > summary::after { transform: rotate(180deg); }
+.met-sec > summary .met-n { font-weight: 500; font-size: 12px; color: var(--muted); }
+.met-cuerpo { padding: 0 14px 14px; font-size: 14.5px; line-height: 1.55; }
+.met-cuerpo p { margin: 0 0 8px; }
+.met-demo-sec { border-color: var(--memo); }
+.met-demo-sec > summary { background: var(--memo-bg); color: var(--memo); }
+
+.met-pasos { list-style: none; counter-reset: paso; margin: 0; padding: 0; }
+.met-pasos li { counter-increment: paso; display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-top: 1px dashed var(--line); }
+.met-pasos li:first-child { border-top: 0; }
+.met-pasos label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; width: 100%; }
+.met-pasos label::before { content: counter(paso); flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--memo); color: var(--bg); font-weight: 800; font-size: 13px; display: grid; place-items: center; }
+.met-pasos input { margin-top: 5px; width: 18px; height: 18px; accent-color: var(--ok); flex: none; order: 3; }
+.met-pasos .hecho span { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--ok); }
+.met-progreso { font-size: 12.5px; color: var(--muted); margin: 0 0 8px; }
+
+.met-dos { display: grid; grid-template-columns: 1fr; gap: 12px; }
+@media (min-width: 640px) { .met-dos { grid-template-columns: 1fr 1fr; } }
+.met-col { border-radius: 12px; padding: 10px 12px; }
+.met-col h4 { margin: 0 0 6px; font-size: 13.5px; }
+.met-col.si { background: var(--ok-bg); } .met-col.si h4 { color: var(--ok); }
+.met-col.no { background: var(--up-bg); } .met-col.no h4 { color: var(--up); }
+.met-lista { margin: 0; padding-left: 18px; }
+.met-lista li { margin: 4px 0; }
+.met-lista.err li::marker { content: "✗  "; color: var(--up); }
+.met-lista.tip li::marker { content: "✓  "; color: var(--ok); }
+
+.met-cita { margin: 0; border-left: 4px solid var(--memo); background: var(--memo-bg); padding: 10px 12px; border-radius: 8px; }
+.met-atlas { display: grid; gap: 8px; }
+.met-atlas .met-nombre { font-weight: 700; }
+.met-btn-ir { justify-self: start; }
+.met-usan { display: flex; flex-wrap: wrap; gap: 6px; max-height: 220px; overflow: auto; padding: 2px; }
+.met-usan button { border: 1px solid var(--line); background: var(--bg); border-radius: 99px; padding: 4px 10px; font-size: 12.5px; }
+.met-usan button:hover { border-color: var(--memo); }
+.met-comp { display: inline-block; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--met-amb); background: var(--met-amb-bg);
+  border: 1px solid currentColor; border-radius: 6px; padding: 0 5px; vertical-align: 1px; }
+.met-ref { font-weight: 700; color: var(--memo); white-space: nowrap; }
+.met-fuentes { font-size: 13px; color: var(--muted); }
+.met-nav { display: flex; justify-content: space-between; gap: 8px; margin: 14px 0 6px; flex-wrap: wrap; }
+
+/* demos: piezas comunes */
+.met-demo { display: grid; gap: 12px; }
+.met-demo .met-ayuda { font-size: 13px; color: var(--muted); margin: 0; }
+.met-in { width: 100%; padding: 11px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); font: inherit; font-size: 16px; }
+textarea.met-in { min-height: 70px; resize: vertical; font-size: 15px; }
+.met-fila-btn { display: flex; flex-wrap: wrap; gap: 8px; }
+.met-fila-btn .btn { min-height: 44px; }
+.met-caja { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+.met-oculto { display: none !important; }
+.met-ok { color: var(--ok); font-weight: 700; } .met-mal { color: var(--up); font-weight: 700; }
+.met-sel { max-width: 100%; padding: 9px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: inherit; }
+
+/* sistema mayor */
+.met-digitos { display: flex; flex-wrap: wrap; gap: 6px; }
+.met-dig { min-width: 44px; text-align: center; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 4px 6px; }
+.met-dig b { display: block; font-size: 20px; color: var(--memo); line-height: 1.1; }
+.met-dig small { font-size: 10.5px; color: var(--muted); letter-spacing: .04em; }
+.met-grupos { display: flex; flex-wrap: wrap; gap: 8px; align-items: stretch; }
+.met-grupo { flex: 1 1 140px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px; }
+.met-grupo .num { font-size: 24px; font-weight: 800; color: var(--memo); }
+.met-grupo .let { font-size: 12px; color: var(--muted); letter-spacing: .08em; }
+.met-grupo .pal { font-size: 18px; font-weight: 800; margin: 2px 0; }
+.met-grupo .alt, .met-grupo .nota, .met-grupo .atl { font-size: 12.5px; color: var(--muted); margin: 3px 0 0; }
+.met-grupo .atl button { font-size: 12.5px; }
+.met-etq { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.met-sep { align-self: center; font-size: 20px; color: var(--muted); }
+
+/* palacio */
+.met-ruta { display: flex; gap: 6px; overflow-x: auto; padding: 4px 2px 8px; list-style: none; margin: 0; scrollbar-width: thin; }
+.met-ruta button { flex: none; display: grid; place-items: center; gap: 2px; width: 74px; padding: 8px 4px; border-radius: 12px; border: 2px solid var(--line); background: var(--card); font-size: 11.5px; line-height: 1.2; }
+.met-ruta button b { font-size: 17px; }
+.met-ruta button.on { border-color: var(--memo); background: var(--memo-bg); }
+.met-ruta button.ok { border-color: var(--ok); } .met-ruta button.mal { border-color: var(--up); }
+.met-estacion { background: var(--card); border: 2px solid var(--memo); border-radius: 14px; padding: 14px; min-height: 140px; }
+.met-estacion .ubi { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--memo); font-weight: 800; }
+.met-estacion h4 { margin: 4px 0 6px; font-size: 17px; }
+
+/* letras del acrónimo */
+.met-letras { display: flex; flex-wrap: wrap; gap: 8px; }
+.met-letra { width: 64px; min-height: 76px; border-radius: 12px; border: 2px solid var(--memo); background: var(--card); display: grid; place-items: center; padding: 6px 2px; text-align: center; }
+.met-letra b { font-size: 26px; color: var(--memo); line-height: 1; }
+.met-letra span { font-size: 11px; font-weight: 600; min-height: 14px; }
+.met-letra[aria-pressed="true"] { background: var(--memo-bg); }
+
+/* checklist de escena */
+.met-check { display: grid; gap: 6px; }
+.met-check label { display: flex; gap: 8px; align-items: flex-start; font-size: 13.5px; cursor: pointer; padding: 6px 8px; border-radius: 8px; background: var(--card); border: 1px solid var(--line); }
+.met-check input { width: 18px; height: 18px; flex: none; margin-top: 1px; accent-color: var(--memo); }
+.met-check h5 { margin: 6px 0 2px; font-size: 12.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.met-veredicto { font-weight: 700; padding: 10px 12px; border-radius: 10px; }
+.met-veredicto.si { background: var(--ok-bg); color: var(--ok); } .met-veredicto.no { background: var(--met-amb-bg); color: var(--met-amb); }
+.met-escena { font-size: 15px; line-height: 1.55; margin: 0; }
+
+/* semáforo */
+.met-sem { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.met-sem button { min-height: 52px; border-radius: 12px; border: 2px solid; background: var(--card); font-weight: 700; font-size: 13.5px; }
+.met-sem .v { border-color: var(--ok); color: var(--ok); } .met-sem .a { border-color: var(--met-amb); color: var(--met-amb); } .met-sem .r { border-color: var(--up); color: var(--up); }
+.met-preg { font-size: 18px; font-weight: 700; margin: 0; }
+.met-resp { border-top: 1px dashed var(--line); padding-top: 10px; }
+.met-resp .r { font-weight: 700; color: var(--ok); font-size: 16px; }
+.met-hueco { display: inline-block; min-width: 54px; border-bottom: 2px solid var(--memo); margin: 0 2px; }
+.met-barra { height: 8px; border-radius: 99px; background: var(--line); overflow: hidden; }
+.met-barra i { display: block; height: 100%; background: var(--ok); transition: width .3s; }
+
+/* escalera de repaso */
+.met-escalera { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; align-items: end; height: 120px; }
+.met-escalera div { background: var(--line); border-radius: 6px 6px 0 0; display: flex; align-items: flex-end; justify-content: center; font-size: 11px; font-weight: 700; color: var(--muted); padding-bottom: 4px; }
+.met-escalera div.on { background: var(--memo); color: var(--bg); }
+.met-escalera div.dom { box-shadow: inset 0 3px 0 var(--ok); }
+.met-4btn { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+@media (min-width: 520px) { .met-4btn { grid-template-columns: repeat(4, 1fr); } }
+.met-4btn .btn { min-height: 52px; }
+.met-hist { margin: 0; padding-left: 18px; font-size: 13px; max-height: 190px; overflow: auto; }
+.met-hist li { margin: 3px 0; }
+.met-estado { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; }
+.met-estado span { background: var(--card); border: 1px solid var(--line); border-radius: 99px; padding: 3px 10px; }
+
+/* flashcard que se voltea */
+.met-flip { perspective: 1000px; }
+.met-tarjeta { position: relative; width: 100%; min-height: 200px; border: 0; padding: 0; background: none; transform-style: preserve-3d; transition: transform .5s; text-align: left; }
+.met-tarjeta.volteada { transform: rotateY(180deg); }
+.met-cara { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+  box-shadow: var(--shadow); padding: 18px; display: flex; flex-direction: column; justify-content: center; gap: 8px; overflow: auto; }
+.met-cara.atras { transform: rotateY(180deg); background: var(--memo-bg); border-color: var(--memo); }
+.met-cara .lado { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.met-cara .q { font-size: 18px; font-weight: 700; }
+.met-montones { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; }
+@media (prefers-reduced-motion: reduce) {
+  .met-tarjeta, .met-card, .met-barra i { transition: none; }
+}
+
+/* textos literales */
+.met-texto { font-size: 16px; line-height: 1.9; margin: 0; }
+.met-pal { border: 0; background: var(--memo-bg); color: var(--memo); font-weight: 800; border-radius: 6px; padding: 0 5px; margin: 0 1px; min-width: 22px; }
+.met-diff .ok { color: var(--ok); } .met-diff .mal { color: var(--up); text-decoration: underline wavy; } .met-diff .falta { color: var(--up); opacity: .7; font-style: italic; }
+
+/* M1 · ciclo de estudio */
+.met-ciclo { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px; margin: 0 0 12px; }
+.met-ciclo h3 { margin: 0 0 8px; font-size: 16px; }
+.met-pasos-ciclo { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+@media (min-width: 900px) { .met-pasos-ciclo { grid-template-columns: repeat(5, 1fr); } }
+.met-pasos-ciclo li { display: flex; gap: 10px; align-items: flex-start; background: var(--memo-bg); border-radius: 12px; padding: 10px; }
+@media (min-width: 900px) { .met-pasos-ciclo li { flex-direction: column; } }
+.met-ciclo-n { font-size: 24px; line-height: 1; flex: none; }
+.met-pasos-ciclo b { font-size: 14px; }
+.met-pasos-ciclo p { margin: 3px 0 8px; font-size: 12.5px; color: var(--muted); line-height: 1.4; }
+.met-pasos-ciclo .btn { min-height: 38px; padding: 6px 10px; font-size: 12.5px; }
+.met-h { font-size: 15px; margin: 18px 0 10px; }
+
+/* tarjeta de método + enlace a los datos */
+.met-card-w { display: flex; flex-direction: column; gap: 6px; }
+.met-card-w .met-card { flex: 1; }
+.met-ver { align-self: flex-start; border: 0; background: none; color: var(--accent); font-weight: 600; font-size: 12.5px; padding: 4px 6px; min-height: 32px; }
+
+/* M2 · Mi tabla 00-99 */
+.met-cien { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 3px; margin-bottom: 10px; }
+.met-cien button { border: 1px solid var(--line); background: var(--card); border-radius: 6px; padding: 5px 0; min-height: 34px; display: grid; place-items: center; line-height: 1.1; overflow: hidden; }
+.met-cien button b { font-size: 12.5px; color: var(--memo); }
+.met-cien button small { display: none; font-size: 9.5px; color: var(--muted); max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 0 2px; }
+@media (min-width: 620px) { .met-cien button small { display: block; } .met-cien { gap: 4px; } }
+.met-cien button.on { background: var(--memo); border-color: var(--memo); } .met-cien button.on b, .met-cien button.on small { color: var(--bg); }
+.met-cien button.mia { box-shadow: inset 0 -3px 0 var(--ok); }

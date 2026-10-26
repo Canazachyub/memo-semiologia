@@ -1,12 +1,600 @@
 {
-  "memorizar-numeros": { "icono": "🔢", "nombre": "Sistema mayor (números)", "que": "Cada dígito es una consonante (1=T, 2=N, 3=M, 4=R, 5=L, 6=J, 7=G/C, 8=F/V, 9=P/B, 0=S); con vocales de relleno cada par de números se vuelve una palabra-imagen.", "cuando": "Cifras exactas: rangos normales, umbrales, puntajes, decimales.", "pasos": "Partir en pares → palabra-imagen → escena que conecte con el significado clínico → repasar decodificando.", "fuentes": "#189, #139, #143, #67, #148" },
-  "palacio-memoria": { "icono": "🏰", "nombre": "Palacio de la memoria", "que": "Colocar imágenes en lugares conocidos y en orden, para recorrerlos mentalmente.", "cuando": "Listas largas u ordenadas, muchas cifras de un mismo tema, clasificaciones.", "fuentes": "#195, #129, #139, #132, #190" },
-  "mnemotecnia": { "icono": "🔗", "nombre": "Mnemotecnia (acrónimos, historias)", "que": "Asociar lo nuevo a algo conocido: acrónimos, acrósticos, historias encadenadas, palabras clave.", "cuando": "Listas de causas, componentes de escalas, fórmulas.", "fuentes": "#143, #139, #137, #134" },
-  "visualizacion-imagenes": { "icono": "🖼️", "nombre": "Visualización", "que": "Convertir lo abstracto en una imagen exagerada, con movimiento, sentidos y emoción.", "cuando": "Base de todas las escenas.", "fuentes": "#139, #132, #187, #124" },
-  "memorizar-conceptos": { "icono": "💡", "nombre": "Memorizar conceptos", "que": "Entender primero, reducir a la idea clave y anclarla a una imagen o ejemplo.", "cuando": "Signos, leyes, definiciones conceptuales.", "fuentes": "#134, #132, #043, #044" },
-  "memorizar-listas": { "icono": "📋", "nombre": "Memorizar listas", "que": "Encadenar elementos de una lista en orden con imágenes o con un palacio.", "cuando": "Clasificaciones ordenadas (grados, clases, estadios).", "fuentes": "#137, #187, #139" },
-  "memorizar-textos-literal": { "icono": "📜", "nombre": "Textos literales", "que": "Memorizar palabra por palabra por bloques e imágenes clave.", "cuando": "Definiciones que se piden textuales.", "fuentes": "#128, #190" },
-  "memorizar-nombres": { "icono": "👤", "nombre": "Nombres (epónimos)", "que": "Convertir el nombre propio en una imagen sustituta y pegarla al rasgo.", "cuando": "Epónimos: signos, maniobras, respiraciones, facies.", "fuentes": "#124" },
-  "recuerdo-activo": { "icono": "🧠", "nombre": "Recuerdo activo", "que": "Recordar sin mirar antes de comprobar; la pregunta fuerza la memoria.", "cuando": "Siempre al repasar (modo Repaso).", "fuentes": "#039, #021, #035, #007, #005" },
-  "repeticion-espaciada": { "icono": "🔁", "nombre": "Repetición espaciada", "que": "Repasar justo antes de olvidar, con intervalos crecientes.", "cuando": "Programa los repasos de cada tarjeta.", "fuentes": "#035" }
+  "memorizar-numeros": {
+    "icono": "🔢",
+    "nombre": "Sistema mayor (números)",
+    "resumen": "Cada dígito es una consonante: el número se vuelve una palabra-imagen que actúa en una escena ligada al dato.",
+    "que": "Un código fijo convierte los dígitos en consonantes: 0 = S (Z, C suave), 1 = T/D, 2 = N/Ñ, 3 = M, 4 = R, 5 = L, 6 = J/CH/G suave, 7 = G/C dura/K/Q, 8 = F/V, 9 = P/B. Las vocales (y la H) son comodines que no valen nada. Así cada par de dígitos se vuelve una palabra que se puede ver: 32 = M-N = mono. Es \"la técnica más avanzada de todas\": conviene dominar antes la palabra sustituta y las historias.",
+    "como_funciona": "Los números se olvidan porque son información abstracta: no se pueden visualizar, y repetirlos no funciona (\"después de repetirlo muchas veces parece que se te borra\"). El sistema mayor los vuelve imágenes concretas que se encadenan en una historia o se colocan en un palacio. La escena se conecta con el significado del dato, no solo con los dígitos, y al repasar se decodifica cada imagen de vuelta a sus cifras.",
+    "pasos": [
+      "Diagnóstico: saber cómo lo van a preguntar (el número exacto, el rango o solo si sube o baja) y marcar solo las cifras imprescindibles.",
+      "Quitar los dígitos deducibles por lógica (el 19 de 1989, el 7 de todo pH 7,xx).",
+      "Aprender la tabla 0–9 hasta que salga automática: cerrar los ojos, visualizar cada dígito y decir su letra.",
+      "Partir el número en pares (o en tríos si sale una palabra fácil): \"lo más fácil siempre es memorizar en pares\".",
+      "Convertir cada grupo en palabra-imagen con sus consonantes y vocales de relleno (32 = mono), usando tu tabla fija 00–99.",
+      "Ligar la imagen al contenido: la palabra del número interactúa con algo que represente el parámetro.",
+      "Encadenar las imágenes en una historia absurda que siempre avance, o colocarlas en un palacio (una por micro-ubicación).",
+      "Repasar: primero la secuencia de imágenes y después decodificar cada una a sus dígitos, hasta recordarlo con naturalidad."
+    ],
+    "cuando": [
+      "Cifras que el examen exige exactas: valores normales, rangos, umbrales, dosis, puntajes de escalas, fechas, números de artículo o norma.",
+      "\"Números como normas o cantidades → sistema numérico\" (regla de elección).",
+      "Series largas (teléfonos, decimales), combinado con el palacio de la memoria.",
+      "En una escala: los máximos, mínimos y puntos de corte; en una fórmula: solo sus constantes."
+    ],
+    "cuando_no": [
+      "Antes de comprender el dato: la mnemotecnia es un atajo para retener, no reemplaza la comprensión.",
+      "Lo que no es imprescindible: el error típico es querer memorizarlo todo.",
+      "Cuando basta el orden de magnitud o la tendencia (sube o baja): ahí sirve más un esquema. [complemento]",
+      "Junto con todas las demás técnicas sobre el mismo dato: elegir la que aplica.",
+      "Para listas de causas, clasificaciones o conceptos sin cifras: usar listas, palacio o conceptos."
+    ],
+    "ejemplo_video": "Teléfono 12 32 59 42 81 = tina, mono, lupa, rana, foto: en una tina se baña un mono que saca una lupa, ve una rana en el fondo y se toman una foto (#189).",
+    "ejemplo_atlas": {
+      "id": "frecuencia-cardiaca-pulso",
+      "texto": "FC del adulto 60-100 lpm: 60 = CH-Z → choza y 100 = T-Z-S → tazas. En la puerta de emergencia hay una choza con una torre de cien tazas en el techo; Cora, el corazón boxeador, salta la soga entre ambas. Con fiebre rebasa las tazas y las hace estallar (taquisfigmia); con betabloqueante se hunde bajo el piso de la choza como un perezoso (bradisfigmia)."
+    },
+    "errores": [
+      "Repetir el número en voz alta en lugar de visualizarlo.",
+      "Mezclar el sistema mayor con el casillero mental, o copiar ejemplos de otra persona hechos con otro sistema.",
+      "Inventar la imagen en el momento en lugar de tener la lista 00–99 preparada.",
+      "Memorizar la cifra sin haber entendido el concepto, o memorizar lo que no es imprescindible.",
+      "Escenas sosas: deben ser exageradas, absurdas y con movimiento.",
+      "No verificar al decodificar: si un solo dígito está mal, toda la serie es incorrecta.",
+      "Usar rimas para números largos.",
+      "No repasar las asociaciones después de crearlas."
+    ],
+    "consejos": [
+      "Elige un solo sistema y no lo cambies: usar dos \"te va a confundir\". Pablo recomienda el mayor.",
+      "Atajo: antes de codificar, revisa si el número ya significa algo (23 = Michael Jordan, 007 = James Bond, 50 = billete de 50 dólares).",
+      "Meses: mejor una imagen que represente al mes (julio = playa, abril = abrir la puerta) que codificarlo.",
+      "Rango a–b: dos imágenes, siempre en orden menor → mayor dentro de la escena. [complemento]",
+      "Umbral (> o <): el signo se vuelve posición o acción: lo que está por encima se eleva o acelera; lo de abajo se hunde o se frena. [complemento]",
+      "Decimales: si la posición del punto es obvia, codifica solo los dígitos; si no, una imagen para la parte entera y otra para la decimal. [complemento]",
+      "Escenas sin censura ni perfeccionismo: \"como si tuvieras tu propio Steven Spielberg\" en el cerebro."
+    ],
+    "combina_con": ["palacio-memoria", "visualizacion-imagenes", "memorizar-listas", "memorizar-conceptos", "recuerdo-activo", "repeticion-espaciada"],
+    "fuentes": "#189, #139, #143, #148, #67, #73",
+    "version_skill": "3"
+  },
+  "palacio-memoria": {
+    "icono": "🏰",
+    "nombre": "Palacio de la memoria",
+    "resumen": "Una imagen exagerada en cada ubicación de un lugar que ya conoces; para recordar, lo recorres con la mente.",
+    "que": "El método loci (plural de locus, \"lugar\"): cada dato se vuelve una imagen viva y exagerada que se coloca, en orden, en una ubicación de un lugar que conoces de memoria. Viene de Simónides de Ceos, que identificó a los muertos de un banquete por el lugar donde estaba sentado cada uno.",
+    "como_funciona": "La memoria espacial es la más fuerte que tenemos y el palacio la aprovecha: recorres el lugar y \"ves\" lo que dejaste en cada parada. A diferencia de una historia larga, que falla si se rompe una asociación, el palacio permite ir directo a cualquier elemento sin pasar por los anteriores. El orden lo da el recorrido, así que la lista sale en orden y también al revés.",
+    "pasos": [
+      "Comprender el tema y quedarte con lo que realmente se va a preguntar (empezar por el final).",
+      "Contar los datos: si el tema tiene 20 datos, necesitas 20 ubicaciones, un dato por ubicación.",
+      "Reducir cada dato a su palabra o idea clave.",
+      "Elegir el lugar según el tipo de información: cerrados para el detalle, abiertos para lo general (lo más probable, tu casa).",
+      "Dividirlo en espacios grandes recorridos en una ruta lógica, y cada espacio en micro-ubicaciones (5 por habitación, siempre el mismo número).",
+      "Ordenar las ubicaciones siempre igual, por ejemplo en sentido horario, y repasar el palacio vacío hasta que salga solo.",
+      "Convertir cada dato en una imagen exagerada y colocarla en su ubicación, actuando sobre el mueble.",
+      "Si una idea tiene varias partes, usar el pilar de información: arriba, en medio y abajo de la misma ubicación.",
+      "Repasar hacia adelante y después hacia atrás, con repaso activo (aparta la vista, di el dato y comprueba).",
+      "Arreglar las imágenes que fallan y espaciar los repasos: al día, a la semana y al mes."
+    ],
+    "cuando": [
+      "Listas en orden sin importar el tamaño, y la estructura de un tema (sus partes, pasos o puntos clave).",
+      "Listas de causas de más de 6 elementos y clasificaciones donde importa el orden.",
+      "Escalas con varios componentes: un componente por ubicación y sus puntajes en niveles del pilar.",
+      "Muchas cifras de un mismo grupo (signos vitales, hemograma, gasometría): una imagen del sistema mayor por ubicación.",
+      "Cuando la cadena o la historia se rompe porque hay demasiados elementos."
+    ],
+    "cuando_no": [
+      "Antes de estudiar y comprender el tema: \"nunca lo utilices cuando todavía no hayas estudiado el tema\".",
+      "Para todo: solo lo imprescindible y lo que se va a preguntar.",
+      "Para textos enteros demasiado grandes o páginas completas de apuntes: se revuelven los lugares.",
+      "Para listas pequeñas (3 a 6 datos): basta un acrónimo, un acróstico o una historia corta.",
+      "En lugares abiertos o rutas que no conoces a la perfección: te pierdes y olvidas las estaciones."
+    ],
+    "ejemplo_video": "10 hábitos de estudio en una casa: en la estufa un jitomate gigante ruega que no lo cocines (técnica pomodoro); al abrir el refrigerador caen celulares sonando (eliminar distracciones); en el espejo tu reflejo te pregunta \"¿qué sabes?\". Se repasa del 1 al 10 y del 10 al 1 (#195).",
+    "ejemplo_atlas": {
+      "id": "presion-arterial",
+      "texto": "Estación 1 del palacio del Hospital Regional (Ventanilla de admisión), con pilar de información: arriba van las sistólicas apiladas (tunas = 120, Tomás = 130, torres = 140) y abajo, en el asiento, las diastólicas (vaso = 80, vela = 85, peso = 90). Arriba la cifra alta y abajo la baja, como se escribe la PA."
+    },
+    "errores": [
+      "Usar el palacio sin haber estudiado, o para memorizar textos enteros.",
+      "Elegir un lugar que no conoces a la perfección, o usar lugares abiertos para información a detalle.",
+      "Poner un número distinto de ubicaciones en cada habitación.",
+      "No repasar el palacio vacío antes de usarlo: si lo olvidas, es que no lo repasaste lo suficiente.",
+      "Palacios desorganizados, sin un sentido fijo de recorrido.",
+      "Imágenes sosas o que no se conectan con el dato.",
+      "Repasar solo mirando las notas (recuerdo pasivo).",
+      "Querer usar todas las técnicas a la vez."
+    ],
+    "consejos": [
+      "Las tres cualidades de un buen palacio: lo conoces sin memorizarlo, sus ubicaciones son obvias y recorres el orden rápido. \"Si tienes que memorizar las ubicaciones, no es un palacio.\"",
+      "Ten una biblioteca de palacios creada por adelantado (por contexto o por abecedario) y anota qué palacio usaste en cada tema.",
+      "Si el examen es en un salón concreto, usa ese salón como palacio: el acordeón queda frente a ti.",
+      "Tu cuerpo también es un palacio (\"el acordeón eres tú\"): sirve para el orden del examen físico.",
+      "Numera las estaciones de forma continua (1–5 sala, 6–10 cocina) para poder preguntarte \"¿qué hay en la 7?\".",
+      "Un parámetro por estación; su mínimo y máximo en dos niveles del pilar. [complemento]",
+      "Dibújalo, aunque sea simple, sobre todo al principio."
+    ],
+    "combina_con": ["memorizar-numeros", "visualizacion-imagenes", "mnemotecnia", "memorizar-conceptos", "memorizar-textos-literal", "recuerdo-activo", "repeticion-espaciada"],
+    "fuentes": "#195, #129, #139, #132, #190, #134, #067, #073, #148, #128, #189, #143, #185",
+    "version_skill": "1"
+  },
+  "mnemotecnia": {
+    "icono": "🔗",
+    "nombre": "Mnemotecnia (acrónimos, historias)",
+    "resumen": "Atajo mental: asociar el dato ya comprendido con algo conocido, de forma ridícula, con acrónimos, acrósticos, historias o palabras clave.",
+    "que": "\"Un atajo mental para recordar nueva información sin repetirla tantas veces\". Se elige la técnica según el dato: acrónimo (palabra) o acróstico (frase) para listas cortas, historia encadenada para secuencias, palabra sustituta para términos raros, rimas, palabras clave para fórmulas y dibujos mnemotécnicos.",
+    "como_funciona": "Funciona por asociación: conectar lo nuevo con algo que ya conoces \"de forma ridícula\" (Harry Lorayne). El acrónimo funciona por fragmentación: se recuerda un solo bloque y el cerebro reconstruye el resto (\"es el anzuelo\"). No es una herramienta para adquirir conocimiento, sino una estructura que sostiene temporalmente un dato difícil mientras el recuerdo activo y la repetición espaciada lo vuelven natural.",
+    "pasos": [
+      "Seleccionar las piezas: contar el número exacto del tema, comprender cada una y quitar las palabras que se repiten en todas.",
+      "Crear una imagen por pieza con la palabra sustituta (reglas del cerebro, corazón, espejo y lengua).",
+      "Elegir la técnica según el dato: acrónimo o acróstico para unas 3–7 piezas, historia para una secuencia, palabras clave para una fórmula.",
+      "Acrónimo: tomar iniciales, sílabas o letras clave y formar una palabra o frase divertida; si no sale palabra, pasar a frase o a sílabas.",
+      "Agregarle una imagen y hacerlo funcional: ligado al significado de lo que se memoriza.",
+      "Asociar las piezas con relaciones breves y exageradas: a cada pieza un verbo de acción y una emoción exagerada para pasar a la siguiente.",
+      "Repasar: comprobar que desde la sigla o la escena se reconstruye la lista completa y fortalecer lo que falló."
+    ],
+    "cuando": [
+      "Información pura o abstracta (datos duros): lo que no se deduce con lógica y se olvida fácil.",
+      "Listas pequeñas de elementos relacionados: síntomas, causas (\"si sube, piensa en…\"), componentes, pasos.",
+      "Componentes de una escala y su orden (Glasgow O-V-M).",
+      "Fórmulas cuyos términos se confunden (PAM, IMC).",
+      "Términos difíciles: fármacos, estructuras anatómicas, nombres; o un dato que \"no entra\" aunque ya se entendió."
+    ],
+    "cuando_no": [
+      "Antes de comprender: \"jamás memorices un dato sin antes comprender\" (\"no seas gorila\").",
+      "Lo que no es imprescindible o lo que se deduce con lógica.",
+      "Todas las técnicas a la vez sobre el mismo dato.",
+      "Listas largas en acrónimo o historia: tarda mucho y la cadena se rompe; ahí va el palacio.",
+      "Cifras y rangos (sistema mayor) o definiciones literales (textos literales)."
+    ],
+    "ejemplo_video": "ALICIA, los pasos para evaluar el dolor: Aparición, Localización, Irradiación, Características, Intensidad, Agravantes; imagen: \"Alicia te hace un estudio del dolor\" (#143).",
+    "ejemplo_atlas": {
+      "id": "escala-de-glasgow",
+      "texto": "Acrónimo O-V-M = 4-5-6: CUATRO OJOS, CINCO VOCALES, MOTOR V6. En el lavadero, el Profe Neuro mira un reloj de vidrio (glass → Glasgow) con tres manecillas: un ojo que marca las 4, una boca que canta las 5 vocales y una mano con motor V6 que marca las 6; la esfera es una tele (15, el máximo)."
+    },
+    "errores": [
+      "Repetir \"modo gorila\" en vez de asociar: leer, releer y repetir es la peor forma de memorizar.",
+      "Memorizar sin comprender.",
+      "Querer usar todas las técnicas a la vez, o memorizarlo todo.",
+      "Acrónimos para listas largas.",
+      "Historias largas o que se desvían: la secuencia siempre va hacia adelante.",
+      "Barreras mentales (\"no tengo imaginación\"): deja volar la imaginación sin censura y no pretendas que sea perfecto.",
+      "No repasar las asociaciones: la mnemotecnia sola no basta."
+    ],
+    "consejos": [
+      "Si una técnica no se puede aplicar a la realidad, no sirve.",
+      "La sigla sola no se recuerda: \"agrégale una imagen para visualizarlo\".",
+      "Tu frase puede ser distinta: la que te venga primero y te haga sentido.",
+      "Si la lista tiene orden (pasos, escala), respétalo; si no, reordénala para que salga una palabra. [complemento]",
+      "Fórmulas: una imagen por término y una escena que reproduzca la operación.",
+      "Practica primero con información conocida y controlable; luego sube la dificultad.",
+      "En el atlas, primero el dato tal como está en la fuente y debajo la mnemotecnia: nunca lo reemplaza."
+    ],
+    "combina_con": ["visualizacion-imagenes", "memorizar-numeros", "palacio-memoria", "memorizar-listas", "memorizar-conceptos", "memorizar-textos-literal", "recuerdo-activo", "repeticion-espaciada"],
+    "fuentes": "#139, #143, #137, #187, #134, #148, #067, #132, #042, #043, #057, #019, #124, #073, #071",
+    "version_skill": "1"
+  },
+  "visualizacion-imagenes": {
+    "icono": "🖼️",
+    "nombre": "Visualización",
+    "resumen": "Convertir cualquier dato, también lo abstracto, en una imagen exagerada, con movimiento, sentidos y emoción, ligada a su significado.",
+    "que": "El dato se sustituye por algo tangible que sí se puede imaginar y que, al recordarlo, devuelve el dato original. La palabra o imagen sustituta es \"la técnica más importante que debes aprender antes de todas las demás\": está dentro del acrónimo, la historia, el palacio y el dibujo. Es la base con la que se construye cada escena del atlas.",
+    "como_funciona": "Lo abstracto se olvida porque no se puede ver. Una imagen exagerada, con movimiento, sentidos y emoción, abre varios caminos de recuerdo; \"una emoción fuerte enlazada\" es lo que fija el dato. La acción de la escena debe mostrar qué hace el concepto, no solo cómo suena: \"nunca pierdas de vista el significado\".",
+    "pasos": [
+      "Comprender el dato y reducirlo a sus piezas o palabras clave, quitando lo que se repite.",
+      "Buscar la imagen sustituta con una sola de las 4 reglas: cerebro (¿a qué me recuerda?), corazón (¿qué significa para mí?), espejo (¿a qué se parece?) o lengua (¿a qué suena?).",
+      "Conectar la imagen con el significado: la acción muestra qué hace el concepto.",
+      "Intensificar con la checklist: exageración, movimiento, sentidos, emoción, absurdo; a cada pieza un verbo de acción y una emoción exagerada.",
+      "Si hay varias piezas, hacer que interactúen en una misma escena, una historia o un palacio.",
+      "Prueba de calidad: piensa solo en la imagen; si reconstruyes el dato, está bien hecha; si no, fortalécela.",
+      "Opcional: dibujarla en el apunte y repasar rehaciendo el dibujo de memoria."
+    ],
+    "cuando": [
+      "Siempre que otro método necesite una escena: historia, palacio, sistema mayor o acrónimo con imagen.",
+      "Términos difíciles o abstractos que se olvidan una y otra vez: fármacos, estructuras, síntomas, definiciones.",
+      "Conceptos que cuestan entender: con ejemplo cotidiano, metáfora o imagen.",
+      "Esquemas con partes que hay que nombrar: dibujo mnemotécnico dentro del mismo esquema.",
+      "Exámenes literales de diapositivas: una imagen o ejemplo por pregunta."
+    ],
+    "cuando_no": [
+      "Antes de comprender: la imagen ancla algo que ya entendiste, nunca sustituye la comprensión.",
+      "Para lo que ya entiendes y retienes sin esfuerzo.",
+      "Una imagen por palabra en textos largos: tarda una eternidad; va una por frase o línea.",
+      "Cuando cuesta mucho tiempo visualizar: basta con que el dato \"te haga sentido\" con un ejemplo."
+    ],
+    "ejemplo_video": "Patología en dibujos: atresia = Pac-Man comiendo tres manzanas con el esófago ocluido (\"a-tres-ia\"); hiperplasia = una persona con un cerebro enorme, como Megamente; patogenia = un pato estudiando en una línea de tiempo (#134).",
+    "ejemplo_atlas": {
+      "id": "temperatura",
+      "texto": "Protagonista: Termo, el termómetro bombero, en la camilla de triaje. Bajo la axila ve una mecha encendida a la que le cae una ola (36,5); en la boca lo espera un mago (37); en el recto el mismo mago surfea una ola (37,5). La mafia con puros encendidos es la fiebre elevada y la miel congelada, la hipotermia: cada pieza hace una acción con calor, humo o frío."
+    },
+    "errores": [
+      "Creer que \"no tengo imaginación\": con práctica se vuelve automático.",
+      "Usar varias reglas para el mismo concepto.",
+      "Pretender la imagen perfecta: lo que es perfecto para uno no evoca lo mismo en otro.",
+      "Perder de vista el significado: la imagen suena igual pero no explica nada.",
+      "Imaginar sin repasar las asociaciones.",
+      "Una imagen por palabra en textos largos.",
+      "Preocuparse por dibujar bonito."
+    ],
+    "consejos": [
+      "Checklist obligatoria: conecta con el significado, protagonista claro, pasa la prueba de reconstrucción, es breve y es tuya.",
+      "Potenciadores (al menos 3): exageración, movimiento, sentidos, emoción, absurdo, interacción, lugar conocido y color [el color como código es complemento].",
+      "Señales de escena débil: describe el objeto quieto, usa la palabra original sin transformarla o tiene más de 4 elementos sin acción entre ellos.",
+      "6 vías para lo abstracto: sonido, significado propio o cultural, forma, ejemplo cotidiano, metáfora y símbolo.",
+      "Para definiciones: una imagen por frase, en orden, unida en mini historia.",
+      "La calidad del dibujo no influye: \"bonito o feo vas a recordar igual de bien\"."
+    ],
+    "combina_con": ["mnemotecnia", "memorizar-numeros", "palacio-memoria", "memorizar-nombres", "recuerdo-activo", "repeticion-espaciada"],
+    "fuentes": "#137, #139, #043, #134, #132, #124, #143, #071, #190, #195, #044, #041, #074, #067, #072, #098, #187, #185",
+    "version_skill": "1"
+  },
+  "memorizar-conceptos": {
+    "icono": "💡",
+    "nombre": "Memorizar conceptos",
+    "resumen": "Contexto → comprender la esencia con preguntas (qué, cómo, por qué, para qué) → solo si cuesta, fijar su estructura; siempre con repaso activo.",
+    "que": "La estrategia \"aniquilando conceptos\": un concepto no se aprende repitiéndolo, se comprende y después, solo si hace falta, se fija su estructura. Tiene tres momentos: encontrar el contexto, comprender la esencia desarmándolo en piezas (interrogación elaborativa o PECS: pregunta, evidencia, conclusión) y memorizar y repasar.",
+    "como_funciona": "Comprender es \"crear una conexión entre lo que no conoces y lo que ya conoces\", y esa unión debe tener un significado que te haga sentido. Al desarmar el concepto en piezas solo tienes que recordar unas pocas cosas (\"solo tienes que recordar cinco cosas\"), y explicarlo sin notas desenmascara la ilusión de competencia. Si aun así cuesta, una historia, un palacio o un dibujo sostienen la estructura.",
+    "pasos": [
+      "Paso 0: saber cómo te lo van a preguntar (de qué trata, explicarlo con precisión o literal).",
+      "Construir contexto: adquirir el idioma del tema (glosario), repasar los conceptos básicos y agregar imágenes, ejemplos o metáforas.",
+      "Desarmar el concepto con interrogación elaborativa: qué, cómo, por qué y para qué (y si aplica cuál, dónde, cuándo); cada respuesta es una pieza.",
+      "O usar PECS: primero la pregunta (idea central), luego la conclusión (su significado) y al final la evidencia (por qué es verdad).",
+      "Contar las piezas, descartar el relleno y aterrizarlo en un caso práctico.",
+      "Comprobar: explícalo con apoyo de tus notas, luego completamente de memoria y luego enséñaselo a otra persona.",
+      "Solo si cuesta, memorizar la estructura: historia, palacio, pilar de información, dibujo o asociación memorable.",
+      "Repaso activo: después de cada técnica y al final del tema, explicar de memoria, corregir y volver a repasar."
+    ],
+    "cuando": [
+      "Definiciones, teoría, mecanismos, leyes o principios y signos clínicos que hay que saber explicar.",
+      "Cuando el examen pide explicar o aplicar (pregunta abierta, caso clínico), no recitar.",
+      "Cuando sientes que \"ya lo entendiste\" pero no lo puedes explicar (ilusión de competencia)."
+    ],
+    "cuando_no": [
+      "Texto que se exige palabra por palabra: textos literales (que empieza aquí, con la estructura).",
+      "Cifras exactas dentro del concepto: sistema mayor.",
+      "Listas o clasificaciones con orden: memorizar listas.",
+      "El nombre propio de un signo o maniobra: memorizar nombres.",
+      "Lo que ya entendiste y retienes: \"no memorizamos aquello que no es imprescindible\".",
+      "Si no entiendes algo, no te apoyes en la memorización: vuelve a las bases."
+    ],
+    "ejemplo_video": "Obligación (derecho) con PECS: pregunta \"¿qué es una obligación?\"; conclusión \"un vínculo jurídico entre dos personas determinadas, deudor y acreedor\"; evidencia \"el deudor se encuentra en la necesidad jurídica de dar, hacer o no hacer algo en favor del acreedor\" (#134).",
+    "ejemplo_atlas": {
+      "id": "cianosis",
+      "texto": "Piezas del concepto: ¿qué? la piel se tiñe de azul en labios, nariz, lóbulos y pulpejos; ¿por qué? cuenta la Hb sin oxígeno (>5 g/dl), no la que falta, por eso un anémico grave no se pone azul; ¿cómo se distingue? central (lengua tibia) frente a periférica (dedos fríos que mejoran al calentar). La escena: una ola de sangre azul sube las escaleras de la Catedral y Pulmi frota con una chompa de alpaca los dedos helados hasta que vuelven al rosado."
+    },
+    "errores": [
+      "Repetir, releer y subrayar \"a lo bestia\": repetirlo 20 veces \"te dura tres días en la cabeza\".",
+      "Memorizar todo el texto de golpe en lugar de fragmentarlo en piezas.",
+      "Memorizar sin entender (\"modo gorila\") o querer memorizarlo todo.",
+      "Confundir familiaridad con comprensión y dejar de estudiar.",
+      "Estudiar puro texto sin contexto, \"como contarte un chisme a medias\".",
+      "Perder de vista el significado al hacer la mnemotecnia.",
+      "Explicar solo a gente del mismo campo.",
+      "Preocuparse por la calidad del dibujo."
+    ],
+    "consejos": [
+      "Las cuatro mejores preguntas son qué, cómo, por qué y para qué: usa solo las que apliquen.",
+      "Numera las piezas: saber cuántas son es la mitad del recuerdo.",
+      "La prueba más dura: explicárselo a un lego, \"alguien que no tiene formación\" (o a un peluche, o graba un audio).",
+      "Regla de cantidad: entre más difícil el dato, más asociaciones; si es fácil, basta una o dos.",
+      "Con un dibujo, repasa en una hoja en blanco, rápido y en blanco y negro, explicando el concepto en tu mente.",
+      "\"Repaso activo, repaso activo, repaso.\""
+    ],
+    "combina_con": ["memorizar-numeros", "memorizar-textos-literal", "memorizar-listas", "palacio-memoria", "recuerdo-activo", "repeticion-espaciada"],
+    "fuentes": "#134, #132, #043, #044, #046, #028, #148",
+    "version_skill": "1"
+  },
+  "memorizar-listas": {
+    "icono": "📋",
+    "nombre": "Memorizar listas",
+    "resumen": "Cada elemento se vuelve una imagen con la palabra sustituta y las imágenes se unen en una historia, un acrónimo o un palacio según el tamaño de la lista.",
+    "que": "Método para listas, clasificaciones ordenadas (grados, tipos, estadios), pasos y vocabulario técnico. Se cuentan las piezas exactas, cada una se convierte en una imagen (4 reglas de la palabra sustituta) y se encadenan; el vocabulario nuevo del tema va en un glosario que se repasa a diario.",
+    "como_funciona": "Una lista se olvida porque sus piezas son datos duros o abstractos: sin técnica solo se recuerdan el principio, el final y algo llamativo del medio. Al volver cada pieza una imagen y unirla con la siguiente mediante algo emocional, chistoso o llamativo, la lista se recorre como una película. Con solo recordar cada imagen se reconstruye la pieza original.",
+    "pasos": [
+      "Seleccionar las piezas: identificar el número exacto, comprender cada una, quitar lo repetido y prestar atención total.",
+      "Crear una imagen por pieza con la regla que mejor aplique (cerebro, corazón, espejo o lengua), no las cuatro para la misma.",
+      "Elegir cómo unirlas: acrónimo o acróstico para pocos datos (hasta ~4–6), historia para una lista corta con orden, palacio para una lista larga.",
+      "Historia: relacionar cada imagen con la siguiente con un verbo de acción y una emoción exagerada, siempre hacia adelante.",
+      "Repasar: verificar que cada imagen devuelve su pieza, fortalecer la que falla y repasar también en reversa.",
+      "Glosario: marcar los términos nuevos, escribir su significado en fácil (con ejemplo e imagen si es difícil) y repasarlo una vez al día hasta dominarlo."
+    ],
+    "cuando": [
+      "Clasificaciones con orden: grados, tipos, estadios, clases (HTA grados 1-3, tipos de fiebre).",
+      "Listas de elementos o pasos: hábitos, consecuencias, componentes, la estructura de un discurso.",
+      "Vocabulario técnico nuevo del tema (glosario de semiología).",
+      "Vocabulario de un idioma, empezando por lo más común."
+    ],
+    "cuando_no": [
+      "Antes de comprender cada pieza: \"no memorices algo que no entiendes, la comprensión es primero\".",
+      "Si las piezas son cifras (los umbrales de cada grado): sistema mayor; aquí va el orden y el nombre de las categorías.",
+      "Si es un texto que se exige palabra por palabra: textos literales.",
+      "No uses todas las técnicas a la vez."
+    ],
+    "ejemplo_video": "7 hábitos para dormir mejor: tu teléfono crece y explota → del humo sale un monje meditando → sopla una brisa que entra a tu cuerpo → sale una burbuja de pensamientos que cierras con candado → dentro hay una cueva oscura → te acuestas sobre un reloj → Goku te despierta para hacer ejercicio (#137).",
+    "ejemplo_atlas": {
+      "id": "cilindros-urinarios",
+      "texto": "Clasificación de 6 tipos en una historia de mototaxis que salen de un molde con forma de túbulo (origen renal): vidrio transparente = hialino (nadie le hace caso), roja con sirena = hemático (glomerulonefritis), soldados blancos = leucocitario (pielonefritis), cera vieja = céreo (GN crónica), grava = granuloso (NTA) y aceite de fritura = graso (nefrótico)."
+    },
+    "errores": [
+      "Repetir la lista una y otra vez \"con mucho dolor, con mucho estrés\".",
+      "Memorizar sin entender cada pieza, o memorizar piezas repetidas o innecesarias.",
+      "Usar varias reglas de palabra sustituta para el mismo concepto.",
+      "Hacer asociaciones largas, o usar una cadena para listas muy grandes.",
+      "Detenerse a buscar cada palabra en el diccionario durante la lectura.",
+      "Aprender todo tipo de vocabulario desde el inicio, en lugar del más común.",
+      "Creer que no tienes imaginación."
+    ],
+    "consejos": [
+      "Escribe siempre la n: cuántos elementos tiene la lista.",
+      "Elimina lo que se repite: \"la palabra sociedad se repite en todas, no es necesario memorizarla\".",
+      "Prueba de calidad: si al pensar en la imagen recuerdas el concepto, está bien hecha (Garfield → gula).",
+      "Relaciones \"breves y exageradas al mismo tiempo\".",
+      "Si la lista pasa de ~6 elementos y te preguntan \"¿cuál es el 5.º?\", pásala a un palacio.",
+      "El glosario es solo para el principio del tema: cuando dominas las palabras, ya cumplió su función."
+    ],
+    "combina_con": ["palacio-memoria", "memorizar-numeros", "memorizar-conceptos", "mnemotecnia", "recuerdo-activo", "repeticion-espaciada"],
+    "fuentes": "#137, #187, #139, #195, #067, #072, #015, #185",
+    "version_skill": "1"
+  },
+  "memorizar-textos-literal": {
+    "icono": "📜",
+    "nombre": "Textos literales",
+    "resumen": "Primero la estructura, luego rellenarla con la literalidad: fragmentar, una imagen por frase, escalera o primera letra, y repasar en voz alta por 5 niveles de exactitud.",
+    "que": "Método para memorizar palabra por palabra (memoria verborum o verbatim) definiciones que el docente pide literales, artículos de ley, normas, juramentos, poemas o guiones. Es \"el nivel más alto de dificultad de memorización\"; en la mayoría de los casos basta la memoria rerum, la de las ideas.",
+    "como_funciona": "A fuerza bruta es lento y satura, y la repetición masiva da un recuerdo a corto plazo que se olvida rapidísimo. Al comprender primero y sacar la estructura, la memoria solo necesita disparadores; al fragmentar, la memoria de trabajo maneja grupos pequeños (\"memorizar cuatro grupos es mucho más fácil que las 54 palabras\"). El audio y la repetición espaciada por niveles suben la exactitud sin saturar.",
+    "pasos": [
+      "Decidir el nivel de exactitud: ¿de verdad hay que memorizarlo literal o basta saber de qué trata?",
+      "Comprender y sacar la estructura: leerlo un par de veces (Cicerón: 3 o 4) para captar la idea general.",
+      "Fragmentar: por ideas lógicas cortas (5–7 palabras clave), por preguntas (qué, quién, cómo) o en bloques de líneas.",
+      "Codificar con uno de tres métodos: A) una imagen por frase en un palacio o historia; B) escalera; C) pistas de primera letra.",
+      "Escalera: memoriza 2 líneas y recítalas; agrega la 3.ª y recita todo; no avanzas al siguiente escalón si te equivocas.",
+      "Primera letra: oculta el texto y deja visible solo la primera letra de cada palabra o línea; si falla, revela rápido y vuelve a ocultar.",
+      "Repaso activo en voz alta y con audio, intentando adelantarte a la grabación; anota las palabras que fallas.",
+      "Repetición espaciada por 5 niveles: 1) orden de las frases, 2) orden exacto, 3) palabras conectoras, 4) 70-80 %, 5) 90-100 %.",
+      "Dominar al 100 % repasando en los tiempos muertos, con el texto en el teléfono para comprobar."
+    ],
+    "cuando": [
+      "Cuando lo exige el profesor, la materia o la carrera.",
+      "Cuando lo preguntan tal cual en el examen o la presentación.",
+      "Por gusto personal.",
+      "Definiciones (OMS de salud, IASP de dolor), artículos de ley, normas, juramentos, poemas y guiones."
+    ],
+    "cuando_no": [
+      "En la gran mayoría de los casos no hace falta: si basta con explicarlo, memorizar conceptos.",
+      "Nunca antes de comprender ni de tener la estructura.",
+      "Textos enormes enteros: cuestan muchísimo tiempo, energía y estrés.",
+      "Cifras dentro del texto (número de artículo, umbrales): sistema mayor."
+    ],
+    "ejemplo_video": "\"La rama\", de Octavio Paz, en un hogar: en el lavabo un pino con un pájaro cantando en la punta (\"canta en la punta del pino\"); en el refrigerador tres mulas sobre un trineo (\"trémulo sobre su trino\") (#128).",
+    "ejemplo_atlas": {
+      "id": null,
+      "texto": "Ningún dato del atlas usa todavía esta técnica: los valores de la historia clínica se piden con tus palabras, no literales. Ejemplo de aplicación del skill: la definición de salud de la OMS (1946) en 3 frases y 3 ubicaciones, con la pista de primera letra \"L s e u e / d c b f, m y s, / y n s l a d a o e\" y atención a la conectora \"y no solamente\"."
+    },
+    "errores": [
+      "Repetir a lo bestia: \"perdí cinco años de vida en ese examen\".",
+      "Pasar directo a la literalidad sin estructura ni comprensión.",
+      "Esperar recordarlo todo a la primera.",
+      "Avanzar en la escalera con errores.",
+      "Memorizar muchísimo tiempo de corrido: se vuelve repetitivo y fatiga.",
+      "Hacer una imagen por palabra.",
+      "Recuerdo pasivo: seguir mirando el libro y \"solo reconocerlo\"."
+    ],
+    "consejos": [
+      "\"Primero la estructura, luego rellenarla con la literalidad.\"",
+      "\"Más literales sean las imágenes, más fácil memorizar\": en una sola imagen intenta cubrir todas las palabras de la frase.",
+      "Para palabras abstractas usa una sustituta: \"trémulo\" = tres mulas; \"dicha\" = ducha.",
+      "Graba el texto: en la memorización literal \"el sonido funciona muy bien\".",
+      "Copia el texto tal cual de la fuente del docente: un solo cambio de palabra invalida la respuesta.",
+      "Registra el nivel de exactitud de cada texto (1 a 5) y en qué palabras fallas."
+    ],
+    "combina_con": ["memorizar-conceptos", "palacio-memoria", "memorizar-numeros", "repeticion-espaciada", "recuerdo-activo"],
+    "fuentes": "#128, #190, #148, #073, #046, #028",
+    "version_skill": "1"
+  },
+  "memorizar-nombres": {
+    "icono": "👤",
+    "nombre": "Nombres (epónimos)",
+    "resumen": "Atención total, el nombre se vuelve una palabra o persona sustituta (¿a qué me suena?) y se pega a un rasgo llamativo: en clínica, el rasgo es el signo mismo.",
+    "que": "Cinco técnicas para nombres de personas, autores y personajes: repetición mental con atención total, asociación con una persona conocida, los cinco sentidos, mnemotecnia visual (sustituta + rasgo + decodificación) y práctica con registro. [complemento] En el atlas se aplica a los epónimos: signos, maniobras, respiraciones y facies.",
+    "como_funciona": "El nombre se olvida \"porque es una pieza de información intangible que no representa nada visual\". Asociarlo a algo conocido lo vuelve visible, y pegarlo a un rasgo llamativo permite decodificar: rasgo → imagen → nombre. Los apodos nunca se olvidan porque dan risa: \"una emoción fuerte enlazada al nombre\" es lo que lo fija, y cada sentido extra es un camino alternativo de recuerdo.",
+    "pasos": [
+      "Prestar atención al nombre al 100 %: apagar los demás pensamientos y repetirlo en tu mente.",
+      "Preguntarte \"¿a qué me recuerda o a qué me suena?\": una palabra que suene parecido o una persona conocida con ese nombre.",
+      "Buscar un rasgo muy llamativo; en un epónimo, el rasgo es el hallazgo del signo. [complemento]",
+      "Asociar la sustituta con ese rasgo, con muchos detalles y varios sentidos (oído, vista, olfato, tacto, algo gracioso).",
+      "Decodificar: rasgo → imagen asociada → nombre, y también del nombre al hallazgo.",
+      "Practicar y llevar un registro de las asociaciones hechas para reutilizarlas."
+    ],
+    "cuando": [
+      "Nombres de personas que conoces, y de autores o personajes que estudias.",
+      "Epónimos clínicos: signos (Murphy, Blumberg), maniobras (Giordano), puntos (McBurney), respiraciones (Kussmaul, Cheyne-Stokes, Biot) y facies. [complemento]",
+      "Cuando lo que se olvida es qué nombre va con qué hallazgo."
+    ],
+    "cuando_no": [
+      "Si lo que hay que saber es el mecanismo del signo: memorizar conceptos.",
+      "Si hay que memorizar el orden de varios epónimos: memorizar listas o palacio.",
+      "Si el epónimo incluye cifras (un umbral): sistema mayor.",
+      "Sin practicar: \"¿te quedó claro el procedimiento? Pues no, porque no has practicado\"."
+    ],
+    "ejemplo_video": "Ramón → ramo de rosas: su copete está lleno de rosas con espinas; al verlo, copete → rosas → ramo → Ramón (#124).",
+    "ejemplo_atlas": {
+      "id": "frecuencia-respiratoria",
+      "texto": "Tres epónimos con palabra sustituta junto a Pulmi, el globo-pulmón: un diabético da besos profundos (Kuss = beso → Kussmaul, acidosis), una cadena sube y baja y se para (chain → Cheyne-Stokes, crece-decrece-apnea) y un bote rema sin orden (Biot, respiración anárquica por daño cerebral). La pregunta inversa del atlas parte del hallazgo para llegar al nombre."
+    },
+    "errores": [
+      "No prestar atención en el momento: es la primera causa de olvido.",
+      "Depender de un solo sentido, el oído: si se olvida, no hay ruta alternativa.",
+      "No practicar ni llevar registro de asociaciones.",
+      "Asociar el epónimo solo a la imagen y no al hallazgo: recuerdas \"RoboCop\" pero no qué hace. [complemento]"
+    ],
+    "consejos": [
+      "\"Entre más detalles, mejor\": el copete de Ramón está lleno de rosas con espinas.",
+      "Si nadie cercano tiene ese nombre, busca personajes o famosos (Murphy → RoboCop, Alex Murphy).",
+      "Que la sustituta sea lo más parecida posible al nombre original.",
+      "Si un apellido tiene varios signos (Kussmaul: respiración y signo yugular), usa la misma sustituta con un rasgo distinto para cada signo. [complemento]",
+      "Pregúntate en los dos sentidos: nombre → hallazgo y hallazgo → nombre.",
+      "Muchos nombres a la vez: colócalos en un palacio (Ron White, 2400 soldados)."
+    ],
+    "combina_con": ["memorizar-conceptos", "palacio-memoria", "memorizar-listas", "recuerdo-activo", "visualizacion-imagenes"],
+    "fuentes": "#124, #139, #073, #195, #137",
+    "version_skill": "1"
+  },
+  "recuerdo-activo": {
+    "icono": "🧠",
+    "nombre": "Recuerdo activo",
+    "resumen": "Hacerte preguntas y responderlas de memoria sin ver la respuesta, calificarte con semáforo y repetir solo los errores hasta cero.",
+    "que": "Active recall: estudiar y entender una vez, y después hacerte preguntas y responderlas sin ver la respuesta, \"sin hacer trampa\". Lo contrario es el recuerdo pasivo: leer, releer o ver la pregunta y la respuesta y decir \"me hace sentido, creo que sí me la sé\".",
+    "como_funciona": "Releer solo hace que reconozcas la información y creas que la sabes (ilusión de competencia). Recuperarla de memoria la fortalece: \"entre más trabajo te cueste recordar y lo logres, mayor es el beneficio\". La ciencia lo clasifica como técnica de utilidad muy alta; en un estudio que cita el video, a los 10 minutos se recordó el 53 % con recuerdo activo frente al 36 % sin él.",
+    "pasos": [
+      "Estudiar y entender el tema, de preferencia ya con apunte o ideas clave seleccionadas.",
+      "Crear la guía de estudio: cada idea clave se vuelve una pregunta numerada con la respuesta oculta.",
+      "Examinarte: tapa la respuesta, aparta la mirada y di o escribe la respuesta.",
+      "Evaluarte con el semáforo, siendo honesto: 🟢 correcta, 🟡 regular (faltaron datos o costó mucho), 🔴 incorrecta; 🔵 aprendida, opcional.",
+      "Revisar y corregir los errores volviendo a la fuente para entender por qué fallaste.",
+      "Rondas hasta cero errores: solo se repiten las rojas y amarillas; lo correcto no se repasa en esa sesión.",
+      "Espaciar los repasos siguientes en días (repetición espaciada)."
+    ],
+    "cuando": [
+      "Siempre que haya que retener algo ya comprendido: teoría, datos duros, listas, escalas, definiciones.",
+      "Al final de cada fragmento, al terminar el tema, al final del día y en los repasos semanales.",
+      "En tiempos muertos (transporte, filas), solo con lo ya estudiado.",
+      "Para comprobar si de verdad entendiste: \"uno nunca sabe lo que sabe hasta que lo compruebas\"."
+    ],
+    "cuando_no": [
+      "Antes de comprender el tema: \"no puedes hacer preguntas sin antes haber entendido el tema\".",
+      "Con respuestas demasiado largas: divídelas en micro-preguntas.",
+      "Repitiendo \"como gorila\" una pregunta que falla 2 o 3 veces: está mal diseñada, edítala.",
+      "Para objetivos de bajo valor basta una guía rápida; las rondas hasta el 100 % son para los de alto valor."
+    ],
+    "ejemplo_video": "Rondas con 20 preguntas: ronda 1, 10 bien y 10 mal (50 %); ronda 2, solo las 10 falladas, fallas 5 (75 %); ronda 3, solo esas 5, hasta cero errores (#031, #040).",
+    "ejemplo_atlas": {
+      "id": "presion-arterial",
+      "texto": "Todas las fichas del atlas traen preguntas con su tipo para mezclarlas. En la PA: directa (\"¿PA ideal y normal según el docente?\" → <120/80 y <130/85), umbral (\"¿desde qué cifra se diagnostica HTA y con cuántas tomas?\" → ≥140/90 en ≥2 tomas) y caso (\"PA 165/95: ¿qué grado?\" → grado II, decide la cifra más alta). El modo Repaso las muestra con la respuesta oculta hasta el intento."
+    },
+    "errores": [
+      "Mostrar la respuesta, leerla y decir \"ah sí, me acuerdo\": \"eso es lo peor que puedes hacer\".",
+      "Releer y repetir en lugar de recuperar.",
+      "Repetir masivamente las mismas preguntas sin cambiarlas.",
+      "Repetir lo que ya tuviste correcto en lugar de solo los errores.",
+      "Respuestas gigantes.",
+      "No editar una pregunta que falla 2 o 3 veces: sintetízala, explícala mejor o agrégale un ejemplo, una mnemotecnia o algo visual.",
+      "Aceptar sin revisar las preguntas hechas por la IA.",
+      "Engañarte al calificarte, o dejar el repaso para el último día."
+    ],
+    "consejos": [
+      "Una idea por pregunta; respuesta breve de 1 a 3 líneas.",
+      "Mezcla tipos: concepto, aplicación (caso clínico), dato duro y pregunta trampa.",
+      "Abiertas antes que opción múltiple: \"ver opciones te va a hacer reconocer\".",
+      "De fácil a difícil, un poco más difícil que el examen real.",
+      "Incluye al menos una pregunta inversa (del dato al concepto). [complemento]",
+      "Con IA: \"tú no le haces preguntas a la IA, tú le pides que te haga preguntas a ti\", y por secciones.",
+      "La ancla de la ficha sirve de pista en la ronda 2, nunca antes del intento."
+    ],
+    "combina_con": ["repeticion-espaciada", "flashcards", "memorizar-numeros", "palacio-memoria", "mnemotecnia"],
+    "fuentes": "#039, #021, #035, #007, #005, #031, #040, #038, #012, #010, #134, #137",
+    "version_skill": "1"
+  },
+  "repeticion-espaciada": {
+    "icono": "🔁",
+    "nombre": "Repetición espaciada",
+    "resumen": "Repartir los repasos en el tiempo con intervalos crecientes (mismo día → día siguiente → semana → 15 días → mes) para romper la curva del olvido.",
+    "que": "Repartir el estudio y los repasos a lo largo del tiempo, dejando \"tiempo considerable entre cada sesión de práctica o repaso\". Lo contrario es la repetición masiva: repetir todo a última hora y de corrido, que da la sensación de haber aprendido pero \"después del examen toda esa información se empieza a olvidar\".",
+    "como_funciona": "Si no haces nada, la información decae (curva del olvido de Ebbinghaus): según los videos, hasta la mitad en horas o un día y 70-80 % en una semana. Cada repaso hecho a tiempo devuelve la retención a más del 90 % y deja la curva más estable, \"hasta que dejas de olvidar\". Conviene permitir un poco de olvido: se repasa antes de que sea demasiado tarde, no inmediatamente una y otra vez.",
+    "pasos": [
+      "Calcular el tiempo total de estudio: fecha límite, temario repartido entre los días y cuánto te toma de verdad un tema.",
+      "Elegir el modelo de intervalo: 10-20 % del tiempo, exacto, o 80/20 (terminar el temario en el primer 80 % y dejar el último 20 % para repasos y simulacros).",
+      "Programar los repasos: mismo día → día siguiente → una semana → 15 días → un mes (y luego 1-2 y 2-4 meses).",
+      "Hacer cada repaso con recuerdo activo, no releyendo; dentro de la sesión, repetir solo los errores hasta cero.",
+      "Ajustar el intervalo a la dificultad y a la fecha del examen: lo que se olvida vuelve a empezar.",
+      "Usar herramientas que automaticen el calendario (Anki, RemNote) o anotar a mano el último y el próximo repaso."
+    ],
+    "cuando": [
+      "Siempre que quieras recordar a largo plazo: exámenes, carrera, información con valor para tu vida.",
+      "Cuando el tema se debe dominar (examen, exposición).",
+      "Para textos literales: subir de exactitud por niveles en sesiones espaciadas.",
+      "Para programar el modo Repaso de una app según \"otra vez / difícil / bien / fácil\"."
+    ],
+    "cuando_no": [
+      "No exageres para ninguno de los dos lados: ni todo masivo ni espaciar demasiado (una clase al mes).",
+      "El modelo de 10-20 % falla con mucha información: todo se acumula.",
+      "Si el examen es mañana: extrae las ideas más importantes, bloques de 2 h con descanso y preguntas; \"con que domines el 70-80 %\" basta.",
+      "No sirve repasar releyendo."
+    ],
+    "ejemplo_video": "Calendario más reciente: mismo día → día siguiente → fin de semana → si el examen está lejos, 15 días → un mes; terminar el temario en el primer 80 % del tiempo (#031).",
+    "ejemplo_atlas": {
+      "id": "frecuencia-cardiaca-pulso",
+      "texto": "La pregunta \"¿Rango normal de FC en el adulto en reposo?\" (60-100 lpm) entra al modo Repaso con la escalera de srs.js [1, 3, 7, 15, 30, 60, 120] días: Bien el día que se estudia → mañana; Bien → 3 días; Bien → 7 días; Bien → 15 días y queda dominada. Si un día la confundes con la FR (Otra vez), vuelve al escalón 0 y reaparece en la misma sesión hasta acertar. [regla de intervalos: complemento del skill]"
+    },
+    "errores": [
+      "Repetición masiva: procrastinar el 80 % y estudiar todo en el último 20 % (\"técnica gorila\").",
+      "Las tres razones de la repetición masiva: flojera, ignorancia y, la más grave, miedo a olvidar.",
+      "Espaciar demasiado, por ejemplo una clase al mes.",
+      "Estudiar exactamente hasta el día del examen: lo del principio ya se olvidó.",
+      "Releer en cada repaso en lugar de preguntarse.",
+      "Acumular decenas de temas sin repasar, o dejar todo el repaso al final en lugar de intercalarlo."
+    ],
+    "consejos": [
+      "Coinciden todos los videos: primer repaso el mismo día, segundo al día siguiente, luego una semana y luego 15 a 30 días.",
+      "Fórmula sencilla de José María Bea: al día, a la semana y al mes.",
+      "Un día a la semana sin contenido nuevo, solo para repasar todo lo de esa semana.",
+      "Simulacros cuando ya se vio casi todo el temario, no al principio: sin base \"te acostumbras a fallar\".",
+      "Dormir consolida: estudia, duerme o toma una siesta y repasa al despertar.",
+      "Si una tarjeta vuelve una y otra vez a \"otra vez\", espaciarla no la arregla: recodifícala o edita la pregunta.",
+      "Lleva una bitácora por tema: estudiado, guía, repasos 1-2-3, examen de prueba y % de retención."
+    ],
+    "combina_con": ["recuerdo-activo", "flashcards", "memorizar-numeros", "palacio-memoria"],
+    "fuentes": "#035, #031, #038, #042, #058, #047, #148, #026, #063, #067, #015, #128",
+    "version_skill": "1"
+  },
+  "flashcards": {
+    "icono": "🃏",
+    "nombre": "Flashcards",
+    "resumen": "Una pregunta al frente y la respuesta oculta atrás, en papel o en apps, para aplicar recuerdo activo y repetición espaciada a la vez.",
+    "que": "Una tarjeta con una pregunta sobre un concepto o tema y su respuesta, que queda oculta hasta que intentas recordarla: \"si tuviéramos la respuesta a la vista nos podemos engañar\". Tipos: básica, hueco (cloze), oclusión de imagen y título → texto. Se hacen en papel o en apps como Anki, Quizlet, Notion, RemNote o NotebookLM.",
+    "como_funciona": "Une dos técnicas: el recuerdo activo (te haces la pregunta y la respondes sin ver) y el efecto espaciado (repartir el material en el tiempo hasta codificarlo en la memoria a largo plazo). Las apps con algoritmo, como Anki, programan solas cuándo vuelve cada tarjeta según cómo la calificaste.",
+    "pasos": [
+      "Estudiar y comprender el tema, con lectura activa y apunte.",
+      "Crear la guía o el apunte en preguntas, a mano o con IA, y revisarla contra el apunte.",
+      "Convertir la guía en tarjetas: IA → tabla de dos columnas → app, NotebookLM (\"tarjetas didácticas\") o fichas a mano.",
+      "Repasar: leer la pregunta, intentar recordar, pulsar \"Mostrar\", comparar y calificar (Otra vez, Difícil, Bien, Fácil).",
+      "Sin algoritmo: tres montones (incorrectas, regulares, correctas) y nuevas rondas solo con las que no salieron.",
+      "Llegar a cero errores en la sesión y espaciar las siguientes.",
+      "Editar las que siempre fallan: si falla 2 o 3 veces en la tercera ronda, está mal diseñada; agrégale algo, como una mnemotecnia."
+    ],
+    "cuando": [
+      "Cualquier información que se pueda formular como pregunta → respuesta: conceptos, definiciones, datos duros, vocabulario.",
+      "Información visual con oclusión de imagen (anatomía, esquemas, focos).",
+      "Cuando ya hay una guía de preguntas: se convierte en mazo y se repasa con algoritmo.",
+      "Para volver lúdico un tema aburrido y practicar en el teléfono en tiempos muertos."
+    ],
+    "cuando_no": [
+      "Antes de estudiar el tema: las tarjetas sintetizan solo la idea clave y no sabrás qué faltó.",
+      "Respuestas largas: \"no pongas un texto demasiado gigante\"; divídelas en micro-preguntas.",
+      "Hacerlas una por una a mano si eso te cansa y acumulas tarjetas: genéralas desde la guía o con IA.",
+      "Sin revisar las generadas por IA: \"no te bases al 100 %\".",
+      "Textos literales: las tarjetas de Anki \"tienen sus detalles\"; mejor título → texto ya memorizado."
+    ],
+    "ejemplo_video": "Tablero de flashcards en Notion: base de datos con Pregunta, Respuesta, Estado y una casilla \"Mostrar\" con la fórmula if(prop(\"Mostrar\"), prop(\"Respuesta\"), \"\"); se arrastra cada tarjeta a Correcta o Incorrecta en rondas \"como una pequeña escalera\" (#038).",
+    "ejemplo_atlas": {
+      "id": "lcr-proteinas",
+      "texto": "La ficha de proteínas del LCR mezcla una tarjeta básica (\"¿Proteínas normales en LCR?\" → 20-40 mg/100 ml), una trampa (bacteriana, viral o TBC → TBC) y una de hueco: \"La gammaglobulina en LCR es ___ y la albúmina es ___ que la globulina\" (<10 %; mayor). En el reverso va la ancla como gancho: cohete de la NASA con rosas (20-40)."
+    },
+    "errores": [
+      "Dejar la respuesta visible: da una falsa sensación de que sabes.",
+      "Marcar la tarjeta sin intentar recordar primero.",
+      "Respuestas gigantes.",
+      "Crear tarjetas antes de estudiar, o depender de la IA sin revisarlas ni editarlas.",
+      "Repasar sin espaciar, o repetir tarjetas falladas sin editarlas.",
+      "Acumular mazos desorganizados en Anki: mejor mazos por bloques."
+    ],
+    "consejos": [
+      "Una idea por tarjeta y respuesta corta y concreta.",
+      "Mezcla tarjetas de concepto, aplicación, datos duros y preguntas trampa.",
+      "Agrega mnemotecnias en la respuesta: la ancla, la escena o el código van al reverso, nunca al frente.",
+      "Tarjetas inversas para las cifras exactas. [complemento]",
+      "Recomendación de Pablo: Notion para apuntes y guías, y Anki para las preguntas que más cuestan; si Anki te desorganiza, Quizlet.",
+      "Para llevarlas a cualquier app: CSV UTF-8 de dos columnas (frente, reverso)."
+    ],
+    "combina_con": ["recuerdo-activo", "repeticion-espaciada", "memorizar-numeros", "palacio-memoria", "visualizacion-imagenes"],
+    "fuentes": "#038, #024, #039, #021, #007, #008, #010, #014, #128",
+    "version_skill": "1"
+  }
 }

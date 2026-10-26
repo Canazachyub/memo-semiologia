@@ -2,6 +2,8 @@
 // Interfaz igual que ciudad.js: crearEntrenar({ ATLAS, MEMO, SIGLAS, FACIES, srs, raiz }) → { pintar() }.
 // Reglas de los skills: abiertas antes que opción múltiple (#007), el ancla solo después del intento (#039),
 // rondas solo con los errores hasta cero errores (#031, #040), feedback inmediato.
+import { levenshtein, cobertura, sinMov, seguirSinMov, idCarta } from './juego-util.js';
+import * as mias from './mias.js';
 
 const esc = (t) => String(t ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const norm = (t) => String(t ?? '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ ]/g, '').trim();
@@ -125,10 +127,13 @@ const JUEGOS = [
   { id: 'match', ic: '🧩', t: 'Emparejar', d: 'Memoria de 6 parejas: voltea y encuentra.', c: 'g4' },
   { id: 'caso', ic: '🩺', t: 'Caso clínico', d: 'Lee los resultados: ¿normal, alto o bajo?', c: 'g5' },
   { id: 'facies', ic: '🙂', t: 'Facies', d: 'Reconoce la cara y lo que orienta.', c: 'g6' },
+  { id: 'orden', ic: '🪜', t: 'Ordena la clasificación', d: '¿Cuántos son? Ordénalos… y ahora al revés.', c: 'g7' },
 ];
+// Contrarreloj y Emparejar son de formato test: practican el formato, no mueven el calendario (EN1)
+const FORMATO = new Set(['reloj', 'match']);
 
-export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {}, srs, raiz }) {
-  MEMO = MEMO || {}; SIGLAS = SIGLAS || {}; FACIES = FACIES || {};
+export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {}, PALACIOS = {}, srs, raiz }) {
+  MEMO = MEMO || {}; SIGLAS = SIGLAS || {}; FACIES = FACIES || {}; PALACIOS = PALACIOS || {};
   const SECC = ATLAS.secciones || [];
   const FILAS = SECC.flatMap((s) => (s.filas || []).map((f) => ({ ...f, sec: s })));
   const FAC = (ATLAS.facies || []).filter((f) => f.nombre);
@@ -167,11 +172,21 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
   }
   const rec = (clave) => leer().rec?.[clave];
   function contarJugada(id) { const e = leer(); e.jug = e.jug || {}; e.jug[id] = (e.jug[id] || 0) + 1; guardar(e); }
+  // EN3: historial de retención por ronda → memo-semio-entrenar.hist = [{juego, fecha, pct, n}]
+  function guardarHist(juegoId, pct, n) {
+    const e = leer(); e.hist = e.hist || [];
+    const d = new Date();
+    e.hist.push({ juego: juegoId, fecha: `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`, t: Date.now(), pct, n });
+    if (e.hist.length > 200) e.hist.splice(0, e.hist.length - 200);
+    guardar(e);
+  }
+  // EN1: "Modo examen tipo test" (opciones desde el inicio) solo si el usuario lo activa
+  const modoTest = () => !!leer().test;
 
   // srs: tarjetas propias 'ent:' y, solo ante un fallo, la tarjeta del atlas pasa a "Difícil"
-  const idTarjeta = (id) => (MEMO[id]?.preguntas?.length ? `${id}#0` : `${id}#n`);
-  function srsEnt(id, nota) { try { srs?.calificar?.(`ent:${id}`, nota === true ? 3 : nota === false ? 1 : nota); } catch { /* sin srs */ } }
-  function srsFallo(filaId) { try { srs?.calificar?.(idTarjeta(filaId), 2); } catch { /* sin srs */ } }
+  const idTarjeta = (id) => (MEMO[id]?.preguntas?.length ? idCarta(id, MEMO[id].preguntas[0], 0) : `${id}#n`);
+  function srsEnt(id, nota) { try { srs?.calificar?.(`ent:${id}`, nota === true ? 3 : nota === false ? 1 : nota, { fuente: 'entrenar' }); } catch { /* sin srs */ } }
+  function srsFallo(filaId) { try { srs?.calificar?.(idTarjeta(filaId), 2, { fuente: 'entrenar' }); } catch { /* sin srs */ } }
   const debida = (id) => { try { return !!srs?.info?.(`ent:${id}`) && srs.vence(`ent:${id}`); } catch { return false; } };
   const nueva = (id) => { try { return !srs?.info?.(`ent:${id}`); } catch { return true; } };
   // primero lo que toca repasar, luego lo nuevo, luego el resto
@@ -184,12 +199,20 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
   let activo = null;           // id del juego en curso
   let acc = {};                // acciones de los botones data-acc
   let timers = [];
-  const limpiar = () => { timers.forEach((t) => { clearInterval(t); clearTimeout(t); }); timers = []; };
+  let alOcultar = null;         // pausa/reanuda del juego en curso (contrarreloj) con la pestaña oculta
+  const limpiar = () => { timers.forEach((t) => { clearInterval(t); clearTimeout(t); }); timers = []; alOcultar = null; };
+  {
+    const seccion = raiz.closest('.vista');
+    const avisar = () => { try { alOcultar?.(document.hidden || (seccion && !seccion.classList.contains('on'))); } catch { /* sin juego */ } };
+    document.addEventListener('visibilitychange', avisar);
+    if (seccion) new MutationObserver(avisar).observe(seccion, { attributes: true, attributeFilter: ['class'] });
+  }
   const despues = (ms, fn) => timers.push(setTimeout(fn, ms));
   const cada = (ms, fn) => timers.push(setInterval(fn, ms));
   const $ = (s) => raiz.querySelector(s);
 
   raiz.classList.add('ent');
+  seguirSinMov(raiz);
   raiz.addEventListener('click', (e) => {
     const b = e.target.closest('[data-acc]');
     if (!b || b.disabled || !raiz.contains(b)) return;
@@ -213,6 +236,7 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
     raiz.appendChild(el); setTimeout(() => el.remove(), 1300);
   }
   function confeti() {
+    if (sinMov()) return;
     const c = document.createElement('div'); c.className = 'ent-confeti'; c.setAttribute('aria-hidden', 'true');
     const col = ['#f43f5e', '#f59e0b', '#10b981', '#3b82f6', '#a855f7', '#ec4899'];
     c.innerHTML = Array.from({ length: 36 }, (_, i) => `<i style="left:${(Math.random() * 100).toFixed(1)}%;background:${col[i % col.length]};animation-delay:${(Math.random() * 0.5).toFixed(2)}s"></i>`).join('');
@@ -256,6 +280,7 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
     if (pct === 100 && M.total) confeti();
     xp(10 + Math.round(pct / 10), `ronda ${j.id}`);
     contarJugada(j.id);
+    if (M.total) guardarHist(j.id, pct, M.total);
     acc = { menu, otra, errores: () => errores(M.errores.map((e) => e.item)) };
     raiz.innerHTML = `<div class="ent-juego"><div class="ent-fin ent-pop">
       <div class="ent-medalla">${sem[0]}</div><h3>${sem[1]}</h3>
@@ -291,7 +316,7 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
 
   // ---------- menú ----------
   function menu() {
-    limpiar(); activo = null; acc = { jugar: (b) => JUEGOS_FN[b.dataset.j]() };
+    limpiar(); activo = null; acc = { jugar: (b) => JUEGOS_FN[b.dataset.j](), test: () => { const e = leer(); e.test = !e.test; guardar(e); menu(); } };
     let nivel = '';
     try {
       const n = JE?.nivel?.();
@@ -304,11 +329,14 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
       match: () => (rec('match:valores') != null ? `🏆 ${mmss(rec('match:valores'))}` : '3 modos'),
       caso: () => `${PARAMS_CASO.length} parámetros con rango`,
       facies: () => `${FAC.length} facies`,
+      orden: () => `${LISTAS.length} listas y tramos`,
     };
     raiz.innerHTML = `<div class="ent-menu ent-in">
       <div class="ent-hero"><div><h2>🏋️ Entrenar</h2><p>Recuerdo activo en modo juego: responde de memoria, mira el feedback y repite solo lo que fallaste.</p></div>${nivel}</div>
       <div class="ent-grid">${JUEGOS.map((j, i) => `<button class="ent-card ${j.c}" data-acc="jugar" data-j="${j.id}" style="animation-delay:${i * 60}ms">
-        <span class="ent-ic" aria-hidden="true">${j.ic}</span><b>${esc(j.t)}</b><span class="ent-d">${esc(j.d)}</span><span class="ent-rec">${esc(info[j.id]())}</span></button>`).join('')}</div>
+        <span class="ent-ic" aria-hidden="true">${j.ic}</span><b>${esc(j.t)}</b><span class="ent-d">${esc(j.d)}</span><span class="ent-rec">${esc(info[j.id]())}</span>
+        ${FORMATO.has(j.id) ? '<span class="ent-formato">🎮 práctica de formato (no mueve tu calendario)</span>' : ''}</button>`).join('')}</div>
+      <label class="ent-test"><input type="checkbox" data-acc="test" ${modoTest() ? 'checked' : ''}> <span><b>Modo examen tipo test</b><small>Siglas y Facies empiezan con 4 opciones. Apagado, primero respondes escribiendo: ver opciones te hace reconocer, no recordar.</small></span></label>
       <p class="ent-nota">Teclado: 1-4 eligen opción · Enter sigue · Esc vuelve al menú.</p>
     </div>`;
   }
@@ -475,12 +503,63 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
   }
 
   // =====================================================================
+  // EN1 · respuesta abierta primero; la pista y las 4 opciones solo tras fallar (#007, #039)
+  // =====================================================================
+  // 'ok' acierto automático · 'dudoso' comparar y autoevaluarse con honestidad · 'mal' fallo directo
+  function validarAbierta(tipo, v, correcta) {
+    const a = norm(v), b = norm(correcta);
+    if (!a) return 'mal';
+    if (a === b) return 'ok';
+    if (tipo === 'sigla') {
+      const x = a.replace(/\s/g, ''), y = b.replace(/\s/g, '');
+      if (x === y) return 'ok';
+      return y.length >= 3 && y.length <= 5 && levenshtein(x, y) <= 1 ? 'ok' : 'mal';
+    }
+    if (tipo === 'nombre') {
+      if (b.length >= 5 && (a.includes(b) || (a.length >= 5 && b.includes(a)) || levenshtein(a, b) <= 2)) return 'ok';
+      return 'dudoso';
+    }
+    return cobertura(v, correcta) >= 0.75 ? 'ok' : 'dudoso';
+  }
+  // cfg = { zona, tipo: 'sigla'|'nombre'|'texto', correcta, ops: [{t, v}], pista: html, fin({ok, intento, test}) }
+  function abierta(cfg) {
+    const z = () => $(cfg.zona);
+    const conOps = (intento) => {
+      z().innerHTML = `${intento === 2 ? `<div class="ent-feedback no ent-in">❌ Aún no.<p>2.º intento (menos XP): ${cfg.pista ? 'usa la pista y ' : ''}elige entre 4.</p></div>
+        ${cfg.pista ? `<div class="ent-pista ent-in">${cfg.pista}</div>` : ''}` : ''}${opciones(cfg.ops)}`;
+      acc.op = (b) => { marcarOps(cfg.correcta, b); cfg.fin({ ok: b.dataset.v === cfg.correcta, intento, test: intento === 1 }); };
+    };
+    if (modoTest()) { conOps(1); return; }
+    z().innerHTML = `<div class="ent-resp"><input id="ent-in" data-enter="abComprobar" autocomplete="off" autocapitalize="off" spellcheck="false"
+        placeholder="${cfg.tipo === 'sigla' ? 'Escribe la sigla…' : 'Escribe de memoria…'}" aria-label="Tu respuesta">
+      <button class="ent-b pri" data-acc="abComprobar">Comprobar</button></div>
+      <div class="ent-btns"><button class="ent-b" data-acc="abNose">🤷 No sé (ver pista)</button></div>`;
+    let escrito = '';
+    acc.abComprobar = () => {
+      escrito = $('#ent-in')?.value.trim() || '';
+      if (!escrito) { $('#ent-in')?.focus(); return; }
+      const r = validarAbierta(cfg.tipo, escrito, cfg.correcta);
+      if (r === 'ok') { z().innerHTML = ''; cfg.fin({ ok: true, intento: 1 }); return; }
+      if (r === 'mal') { conOps(2); return; }
+      z().innerHTML = `<div class="ent-compara ent-in"><div><small>Tú escribiste</small><p>${esc(escrito)}</p></div><div class="ok"><small>Respuesta</small><p>${esc(cfg.correcta)}</p></div></div>
+        <p class="ent-sub">Sé honesto contigo: ¿lo tenías?</p>
+        <div class="ent-btns"><button class="ent-b pri" data-acc="abSi">✅ Sí, lo sabía</button><button class="ent-b" data-acc="abNo">❌ No del todo</button></div>`;
+    };
+    acc.abSi = () => { z().innerHTML = ''; cfg.fin({ ok: true, intento: 1 }); };
+    acc.abNo = () => { z().innerHTML = ''; cfg.fin({ ok: false, intento: 1 }); };   // ya viste la respuesta: no hay 2.º intento
+    acc.abNose = () => conOps(2);
+    setTimeout(() => $('#ent-in')?.focus({ preventScroll: true }), 30);
+  }
+
+  // =====================================================================
   // 2. SIGLAS
   // =====================================================================
   const slug = (t) => String(t ?? '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   const SIG_IDX = {};
   for (const [k, v] of Object.entries(SIGLAS)) { if (!v || typeof v !== 'object') continue; SIG_IDX[k] = v; if (v.sigla) SIG_IDX[slug(v.sigla)] = SIG_IDX[slug(v.sigla)] || v; }
   const memoSigla = (s) => SIG_IDX[slug(s)] || null;
+  const miaDe = (ref) => { try { return mias.get(ref) || null; } catch { return null; } };
+  const anclaDe = (m, mia) => mia?.ancla || m?.ancla || '';
 
   function siglas(lista) {
     limpiar(); activo = 'siglas';
@@ -488,48 +567,39 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
     if (GLOS.length < 4) { raiz.innerHTML = `<div class="ent-juego">${cabecera(j, nuevoMarcador(0))}<p class="fin">No hay suficientes siglas en el glosario.</p></div>`; acc = { menu }; return; }
     const items = (lista || priorizar(GLOS, (x) => `sigla:${slug(x.sigla)}`, 10)).map((x) => ({ ...x, dir: Math.random() < 0.6 ? 'sig' : 'inv' }));
     const M = nuevoMarcador(items.length);
-    let i = 0, usoPista = false;
+    let i = 0;
     const pintarItem = () => {
-      const it = items[i]; usoPista = false;
+      const it = items[i];
       const mismos = GLOS.filter((g) => g.grupo === it.grupo);
       const pool = mismos.length >= 4 ? mismos : GLOS;
       const campo = it.dir === 'sig' ? 'significado' : 'sigla';
       const correcta = it[campo];
       const ops = azar([correcta, ...distractores(correcta, pool.map((g) => g[campo]))]).map((t) => ({ t, v: t }));
-      const m = memoSigla(it.sigla);
-      const pista = m && (m.ancla || m.sustituta || m.escena);
+      const m = memoSigla(it.sigla); const an = anclaDe(m, miaDe(`sig:${slug(it.sigla)}`));
+      const pista = [m?.sustituta && `🔊 Suena a: <b>${esc(m.sustituta)}</b>`, an ? `⚓ ${esc(an)}` : m?.escena && `🎬 ${esc(m.escena)}`].filter(Boolean).join('<br>');
       raiz.innerHTML = `<div class="ent-juego">${cabecera(j, M)}<div class="ent-tarjeta ent-in" id="ent-card">
         <p class="ent-pide">${it.dir === 'sig' ? '¿Qué significa la sigla…' : '¿Cuál es la sigla de…'} <span class="chip">${esc(it.grupo)}</span></p>
         <div class="ent-grande ${it.dir === 'sig' ? '' : 'ent-texto'}">${esc(it.dir === 'sig' ? it.sigla : it.significado)}</div>
-        ${pista ? `<div class="ent-btns"><button class="ent-b" data-acc="pista">💡 Pista de tu escena (−XP)</button></div><div id="ent-pista"></div>` : ''}
-        ${opciones(ops)}<div id="ent-fb"></div></div></div>`;
+        <div id="ent-ab"></div><div id="ent-fb"></div></div></div>`;
       relojSubida(M);
+      abierta({ zona: '#ent-ab', tipo: it.dir === 'sig' ? 'texto' : 'sigla', correcta, ops, pista, fin: resolver });
     };
-    acc = {
-      menu,
-      pista: (b) => {
-        usoPista = true; b.disabled = true;
-        const m = memoSigla(items[i].sigla);
-        $('#ent-pista').innerHTML = `<div class="ent-pista ent-in">${m.sustituta ? `🔊 Suena a: <b>${esc(m.sustituta)}</b><br>` : ''}${m.ancla ? `⚓ ${esc(m.ancla)}` : m.escena ? `🎬 ${esc(m.escena)}` : ''}</div>`;
-      },
-      op: (b) => {
-        const it = items[i];
-        const correcta = it.dir === 'sig' ? it.significado : it.sigla;
-        const ok = b.dataset.v === correcta;
-        marcarOps(correcta, b); flash($('#ent-card'), ok);
-        anotar(M, ok, ok ? null : { item: it, html: `<b>${esc(it.sigla)}</b> = ${esc(it.significado)}` });
-        if (ok) xp(usoPista ? 1 : 3, 'siglas');
-        srsEnt(`sigla:${slug(it.sigla)}`, ok ? (usoPista ? 2 : 3) : 1);
-        const m = memoSigla(it.sigla);
-        $('#ent-pista') && ($('#ent-pista').innerHTML = '');
-        $('#ent-fb').innerHTML = `<div class="ent-feedback ${ok ? 'si' : 'no'}">${ok ? '✅ ¡Correcto!' : '❌ No era'}
-          <p><b>${esc(it.sigla)}</b> = ${esc(it.significado)}</p>
-          ${m ? `<p class="ent-memo">${m.sustituta ? `🔊 ${esc(m.sustituta)}<br>` : ''}${pistaMemo(m)}${m.confusiones?.length ? `<br>⚠️ No confundir con: ${esc(m.confusiones.join(', '))}` : ''}</p>` : ''}
-          <button class="ent-b pri" data-acc="sig">${i + 1 < items.length ? 'Siguiente →' : 'Ver resultado'}</button></div>`;
-        if (ok && !m) despues(900, () => acc.sig());
-      },
-      sig: () => { limpiar(); i++; if (i < items.length) pintarItem(); else fin(j, M, { otra: () => siglas(), errores: (l) => siglas(l) }); },
+    const resolver = (r) => {
+      const it = items[i]; const ok = r.ok; const primera = ok && r.intento === 1;
+      flash($('#ent-card'), ok);
+      anotar(M, primera, primera ? null : { item: it, html: `<b>${esc(it.sigla)}</b> = ${esc(it.significado)}` });
+      if (ok) xp(primera ? (r.test ? 2 : 3) : 1, 'siglas');
+      srsEnt(`sigla:${slug(it.sigla)}`, ok ? (primera && !r.test ? 3 : 2) : 1);
+      const m = memoSigla(it.sigla); const an = anclaDe(m, miaDe(`sig:${slug(it.sigla)}`));
+      const conf = (m?.confusiones || []).map((x) => (typeof x === 'string' ? x : x?.sigla || '')).filter(Boolean);
+      $('#ent-fb').innerHTML = `<div class="ent-feedback ${ok ? 'si' : 'no'}">${ok ? (primera ? '✅ ¡Correcto!' : '✅ Bien, en el 2.º intento') : '❌ No era'}
+        <p><b>${esc(it.sigla)}</b> = ${esc(it.significado)}</p>
+        ${m || an ? `<p class="ent-memo">${m?.sustituta ? `🔊 ${esc(m.sustituta)}<br>` : ''}${an ? `⚓ ${esc(an)}` : ''}${m?.escena ? `${an ? '<br>' : ''}🎬 ${esc(m.escena)}` : ''}${conf.length ? `<br>⚠️ No confundir con: ${esc(conf.join(', '))}` : ''}</p>` : ''}
+        <button class="ent-b pri" data-acc="sig">${i + 1 < items.length ? 'Siguiente →' : 'Ver resultado'}</button></div>`;
+      if (primera && !m) despues(900, () => acc.sig());
+      else $('[data-acc="sig"]')?.focus({ preventScroll: true });
     };
+    acc = { menu, sig: () => { limpiar(); i++; if (i < items.length) pintarItem(); else fin(j, M, { otra: () => siglas(), errores: (l) => siglas(l) }); } };
     pintarItem();
   }
 
@@ -542,57 +612,164 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
     if (FAC.length < 4) { raiz.innerHTML = `<div class="ent-juego">${cabecera(j, nuevoMarcador(0))}<p class="fin">Faltan facies en el atlas.</p></div>`; acc = { menu }; return; }
     const items = lista || priorizar(FAC, (x) => `facies:${x.id}`, 8);
     const M = nuevoMarcador(items.length * 2);
-    let i = 0, paso = 1, okNombre = false, usoPista = false;
+    let i = 0, paso = 1, r1 = null;
     const img = (f) => f.imagen
-      ? `<img class="ent-facies-img" src="${esc(f.imagen)}" alt="Facies a reconocer" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ent-facies-img ent-sin',textContent:'🙂'}))">`
+      ? `<img decoding="async" class="ent-facies-img" src="${esc(f.imagen)}" alt="Facies a reconocer" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ent-facies-img ent-sin',textContent:'🙂'}))">`
       : '<div class="ent-facies-img ent-sin">🙂</div>';
+    const pistaDe = (f) => {
+      const m = FACIES[f.id]; const an = anclaDe(m, miaDe(`fac:${f.id}`));
+      if (paso === 1) return m?.rasgo_clave ? `👁 ${esc(m.rasgo_clave)}` : an ? `⚓ ${esc(an)}` : '';
+      return an ? `⚓ ${esc(an)}` : m?.rasgo_clave ? `👁 ${esc(m.rasgo_clave)}` : '';
+    };
     const pintarItem = () => {
       const f = items[i];
       const campo = paso === 1 ? 'nombre' : 'orienta';
       const ops = azar([f[campo], ...distractores(f[campo], FAC.map((x) => x[campo]))]).map((t) => ({ t, v: t }));
-      const m = FACIES[f.id];
       raiz.innerHTML = `<div class="ent-juego">${cabecera(j, M)}<div class="ent-tarjeta ent-in" id="ent-card">
         <div class="ent-facies">${img(f)}<div>
           <p class="ent-pide">${paso === 1 ? 'Paso 1 · ¿Qué facies es?' : `Paso 2 · Facies <b>${esc(f.nombre)}</b>: ¿qué orienta?`}</p>
           ${paso === 2 ? `<p class="ent-sub">Rasgo: ${esc(f.rasgo)}</p>` : ''}
-          ${m && (m.rasgo_clave || m.ancla) ? `<div class="ent-btns"><button class="ent-b" data-acc="pista">💡 Pista (−XP)</button></div><div id="ent-pista"></div>` : ''}
-        </div></div>${opciones(ops)}<div id="ent-fb"></div></div></div>`;
+        </div></div><div id="ent-ab"></div><div id="ent-fb"></div></div></div>`;
       relojSubida(M);
+      abierta({ zona: '#ent-ab', tipo: paso === 1 ? 'nombre' : 'texto', correcta: f[campo], ops, pista: pistaDe(f), fin: resolver });
+    };
+    const resolver = (r) => {
+      const f = items[i]; const ok = r.ok; const primera = ok && r.intento === 1;
+      flash($('#ent-card'), ok);
+      // el error de una facies se anota una sola vez (en el primer paso que falla)
+      anotar(M, primera, primera || (paso === 2 && !r1.primera) ? null : { item: f, html: `<b>${esc(f.nombre)}</b> → ${esc(f.orienta)}` });
+      if (ok) xp(primera ? (r.test ? 2 : 3) : 1, 'facies');
+      const m = FACIES[f.id]; const an = anclaDe(m, miaDe(`fac:${f.id}`));
+      if (paso === 1) {
+        r1 = { primera, test: r.test };
+        $('#ent-fb').innerHTML = `<div class="ent-feedback ${ok ? 'si' : 'no'}">${ok ? (primera ? '✅ ¡Correcto!' : '✅ Bien, en el 2.º intento') : '❌ No era'} <p>Es la facies <b>${esc(f.nombre)}</b>: ${esc(f.rasgo)}</p>
+          <button class="ent-b pri" data-acc="sig">Paso 2 →</button></div>`;
+        if (primera) despues(1100, () => acc.sig()); else $('[data-acc="sig"]')?.focus({ preventScroll: true });
+      } else {
+        const nota = r1.primera && primera ? (r.test || r1.test ? 2 : 3) : (r1.primera || ok) ? 2 : 1;
+        srsEnt(`facies:${f.id}`, nota);
+        $('#ent-fb').innerHTML = `<div class="ent-feedback ${ok ? 'si' : 'no'}">${ok ? (primera ? '✅ ¡Correcto!' : '✅ Bien, en el 2.º intento') : '❌ No era'}
+          <p><b>${esc(f.nombre)}</b> → ${esc(f.orienta)}</p>${m || an ? `<p class="ent-memo">${m?.rasgo_clave ? `👁 ${esc(m.rasgo_clave)}<br>` : ''}${an ? `⚓ ${esc(an)}` : ''}${m?.escena ? `${an ? '<br>' : ''}🎬 ${esc(m.escena)}` : ''}</p>` : ''}
+          <button class="ent-b pri" data-acc="sig">${i + 1 < items.length ? 'Siguiente facies →' : 'Ver resultado'}</button></div>`;
+        $('[data-acc="sig"]')?.focus({ preventScroll: true });
+      }
     };
     acc = {
       menu,
-      pista: (b) => {
-        usoPista = true; b.disabled = true;
-        const m = FACIES[items[i].id];
-        $('#ent-pista').innerHTML = `<div class="ent-pista ent-in">${paso === 1 && m.rasgo_clave ? `👁 ${esc(m.rasgo_clave)}` : m.ancla ? `⚓ ${esc(m.ancla)}` : `👁 ${esc(m.rasgo_clave)}`}</div>`;
-      },
-      op: (b) => {
-        const f = items[i];
-        const correcta = paso === 1 ? f.nombre : f.orienta;
-        const ok = b.dataset.v === correcta;
-        marcarOps(correcta, b); flash($('#ent-card'), ok);
-        anotar(M, ok, ok || paso === 2 && !okNombre ? null : { item: f, html: `<b>${esc(f.nombre)}</b> → ${esc(f.orienta)}` });
-        if (ok) xp(usoPista ? 1 : 3, 'facies');
-        const m = FACIES[f.id];
-        if (paso === 1) {
-          okNombre = ok;
-          $('#ent-fb').innerHTML = `<div class="ent-feedback ${ok ? 'si' : 'no'}">${ok ? '✅ ¡Correcto!' : '❌ No era'} <p>Es la facies <b>${esc(f.nombre)}</b>: ${esc(f.rasgo)}</p>
-            <button class="ent-b pri" data-acc="sig">Paso 2 →</button></div>`;
-          if (ok) despues(1100, () => acc.sig());
-        } else {
-          srsEnt(`facies:${f.id}`, okNombre && ok ? (usoPista ? 2 : 3) : okNombre || ok ? 2 : 1);
-          $('#ent-fb').innerHTML = `<div class="ent-feedback ${ok ? 'si' : 'no'}">${ok ? '✅ ¡Correcto!' : '❌ No era'}
-            <p><b>${esc(f.nombre)}</b> → ${esc(f.orienta)}</p>${m ? `<p class="ent-memo">${m.rasgo_clave ? `👁 ${esc(m.rasgo_clave)}<br>` : ''}${pistaMemo(m)}</p>` : ''}
-            <button class="ent-b pri" data-acc="sig">${i + 1 < items.length ? 'Siguiente facies →' : 'Ver resultado'}</button></div>`;
-        }
-        usoPista = false;
-      },
       sig: () => {
         limpiar();
         if (paso === 1) paso = 2; else { paso = 1; i++; }
         if (i < items.length) pintarItem();
         else fin(j, M, { otra: () => facies(), errores: (l) => facies([...new Map(l.map((x) => [x.id, x])).values()]) });
       },
+    };
+    pintarItem();
+  }
+
+  // =====================================================================
+  // 7. ORDENA LA CLASIFICACIÓN (EN2): ¿cuántos? → en orden → al revés (#137, #187, #195)
+  // =====================================================================
+  const LISTAS = (() => {
+    const r = [];
+    const unicos = (el) => new Set(el.map(norm)).size === el.length;
+    for (const e of ATLAS.escalas || []) {
+      const it = (e.interpretacion || []).filter((x) => x[0] && x[1]);
+      const textos = it.map((x) => corto(x[1], 60));
+      if (it.length >= 3 && unicos(textos)) r.push({ key: `orden:interp:${e.id}`, ic: e.icono || '📏', titulo: e.nombre, pide: `Interpretación, en el orden del atlas: de «${it[0][0]}» a «${it.at(-1)[0]}».`, el: textos });
+      (e.items || []).forEach(([comp, txt], k) => {
+        const partes = String(txt || '').split(/\s+·\s+/);
+        if (partes.length < 3 || !partes.every((p) => /^\d+\s+\S/.test(p))) return;
+        const nums = partes.map((p) => parseInt(p, 10));
+        const desc = nums.every((n, q) => !q || n < nums[q - 1]);
+        const asc = nums.every((n, q) => !q || n > nums[q - 1]);
+        const el = partes.map((p) => corto(p.replace(/^\d+\s+/, ''), 60));
+        if ((!desc && !asc) || !unicos(el)) return;
+        r.push({ key: `orden:item:${e.id}:${k}`, ic: e.icono || '📏', titulo: `${e.nombre} · ${comp}`, pide: `Ordena de ${desc ? 'mayor a menor' : 'menor a mayor'} puntaje (${nums[0]} → ${nums.at(-1)}).`, el });
+      });
+    }
+    // tramos de 5 estaciones de cada lugar del palacio (C4): el recorrido vacío, en orden
+    for (const sid of PALACIOS.orden_paseo || []) {
+      const L = PALACIOS.lugares?.[sid]; if (!L) continue;
+      const filas = sid === 'escalas' ? (ATLAS.escalas || []) : (SECC.find((x) => x.id === sid)?.filas || []);
+      const ubic = filas.map((f, n) => MEMO[f.id]?.estacion?.ubicacion || L.ruta?.[n] || '');
+      for (let t = 0; t * 5 < ubic.length; t++) {
+        const el = ubic.slice(t * 5, t * 5 + 5);
+        if (el.length < 3 || el.some((x) => !x) || !unicos(el)) continue;
+        r.push({ key: `orden:pal:${sid}:${t}`, ic: L.icono || '🏛️', titulo: `${L.lugar} · tramo ${t + 1}`, pide: `Palacio: recorre las estaciones ${t * 5 + 1}-${t * 5 + el.length} de este lugar en orden.`, el });
+      }
+    }
+    return r;
+  })();
+
+  function orden(lista) {
+    limpiar(); activo = 'orden';
+    const j = juego('orden');
+    if (!LISTAS.length) { raiz.innerHTML = `<div class="ent-juego">${cabecera(j, nuevoMarcador(0))}<p class="fin">No hay listas ordenadas en el atlas.</p></div>`; acc = { menu }; return; }
+    const items = lista || priorizar(LISTAS, (x) => x.key, 5);
+    const M = nuevoMarcador(items.length);
+    let i = 0, fase = 'contar', error = false, pos = 0, esperado = [];
+    const pintarItem = () => {
+      const it = items[i]; fase = 'contar'; error = false;
+      raiz.innerHTML = `<div class="ent-juego">${cabecera(j, M)}<div class="ent-tarjeta ent-in" id="ent-card">
+        <p class="ent-pide">${esc(it.ic)} <b>${esc(it.titulo)}</b></p><p class="ent-sub">${esc(it.pide)}</p>
+        <div id="ent-ord"><p class="ent-pide">Paso 1 · ¿Cuántos elementos tiene?</p>
+          <div class="ent-resp"><input id="ent-in" data-enter="contar" inputmode="numeric" pattern="[0-9]*" autocomplete="off" placeholder="Número" aria-label="Cuántos elementos tiene">
+          <button class="ent-b pri" data-acc="contar">Comprobar</button></div></div><div id="ent-fb"></div></div></div>`;
+      relojSubida(M);
+      setTimeout(() => $('#ent-in')?.focus({ preventScroll: true }), 30);
+    };
+    const empezar = (reves) => {
+      const it = items[i];
+      fase = reves ? 'reves' : 'orden'; pos = 0;
+      esperado = reves ? [...it.el].reverse() : [...it.el];
+      $('#ent-ord').innerHTML = `<p class="ent-pide">${reves ? 'Paso 3 · 🔙 Ahora al revés: del último al primero' : 'Paso 2 · Toca los elementos en orden'}</p>
+        <ol class="ent-orden-sec" id="ent-sec" aria-live="polite"></ol>
+        <div class="ent-fichas">${azar(it.el).map((t) => `<button class="ent-ficha" data-acc="ficha" data-v="${esc(t)}">${esc(t)}</button>`).join('')}</div>`;
+    };
+    const terminar = () => {
+      const it = items[i]; const ok = !error;
+      anotar(M, ok, ok ? null : { item: it, html: `${esc(it.ic)} <b>${esc(it.titulo)}</b>: ${it.el.map(esc).join(' → ')}` });
+      if (ok) xp(5, 'ordenar');
+      srsEnt(it.key, ok ? 3 : 1);
+      flash($('#ent-card'), ok);
+      $('#ent-fb').innerHTML = `<div class="ent-feedback ${ok ? 'si' : 'no'}">${ok ? '✅ ¡Perfecto, adelante y al revés!' : '❌ Hubo errores: va a tu ronda de errores.'}
+        <p>${it.el.map((t, k) => `${k + 1}. ${esc(t)}`).join('<br>')}</p>
+        <button class="ent-b pri" data-acc="sig">${i + 1 < items.length ? 'Siguiente →' : 'Ver resultado'}</button></div>`;
+      $('[data-acc="sig"]')?.focus({ preventScroll: true });
+    };
+    acc = {
+      menu,
+      contar: () => {
+        if (fase !== 'contar') return;
+        const it = items[i]; const v = parseInt($('#ent-in')?.value, 10);
+        if (!Number.isFinite(v)) { $('#ent-in')?.focus(); return; }
+        fase = 'contado';
+        const ok = v === it.el.length; if (!ok) error = true;
+        $('#ent-in').disabled = true; $('[data-acc="contar"]').disabled = true;
+        flash($('#ent-card'), ok);
+        $('#ent-fb').innerHTML = `<div class="ent-feedback ${ok ? 'si' : 'no'}">${ok ? `✅ Son ${it.el.length}.` : `❌ Son <b>${it.el.length}</b>, no ${v}.`}</div>`;
+        despues(ok ? 600 : 1400, () => { $('#ent-fb').innerHTML = ''; empezar(false); });
+      },
+      ficha: (b) => {
+        const toca = esperado[pos];
+        const bien = norm(b.dataset.v) === norm(toca);
+        let boton = b;
+        if (!bien) {   // se marca el error y se coloca el que tocaba, para seguir el recorrido
+          error = true; flash(b, false);
+          boton = [...raiz.querySelectorAll('.ent-ficha:not([disabled])')].find((x) => norm(x.dataset.v) === norm(toca)) || b;
+        }
+        boton.disabled = true; boton.classList.add(bien ? 'ent-bien' : 'ent-apagada');
+        $('#ent-sec').insertAdjacentHTML('beforeend', `<li class="${bien ? 'si' : 'no'}">${esc(toca)}${bien ? '' : ' <small>← era este</small>'}</li>`);
+        pos++;
+        if (pos < esperado.length) return;
+        if (fase === 'orden' && !error) {
+          $('#ent-fb').innerHTML = '<div class="ent-feedback si">✅ ¡En orden! Ahora al revés: el recorrido inverso refuerza más.</div>';
+          despues(900, () => { $('#ent-fb').innerHTML = ''; empezar(true); });
+          return;
+        }
+        terminar();
+      },
+      sig: () => { limpiar(); i++; if (i < items.length) pintarItem(); else fin(j, M, { otra: () => orden(), errores: (l) => orden(l) }); },
     };
     pintarItem();
   }
@@ -640,11 +817,24 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
     const M = nuevoMarcador(0); M.cuenta = true;
     let pts = 0, cola = azar(todas), actual = null, bloqueo = false;
     const errores = [];
-    const fin0 = Date.now() + DUR;
+    let fin0 = Date.now() + DUR, pausaT = 0;
+    // J3: con la pestaña oculta o fuera de Entrenar, el reloj se congela y la barra también
+    alOcultar = (oculto) => {
+      const b = $('#ent-tbar');
+      if (oculto && !pausaT) {
+        pausaT = Date.now();
+        if (b) { b.style.transitionDuration = '0ms'; b.style.width = `${(100 * Math.max(0, fin0 - pausaT) / DUR).toFixed(2)}%`; }
+      } else if (!oculto && pausaT) {
+        fin0 += Date.now() - pausaT; pausaT = 0;
+        const r = Math.max(0, fin0 - Date.now());
+        if (b) requestAnimationFrame(() => { b.style.transitionDuration = `${r}ms`; b.style.width = '0%'; });
+      }
+    };
     raiz.innerHTML = `<div class="ent-juego">${cabecera(j, M, `<span class="ent-st" title="Puntos">⭐ <b id="ent-pts">0</b></span>`)}
       <div class="ent-tiempo" aria-hidden="true"><i id="ent-tbar"></i></div><div id="ent-zona"></div></div>`;
     requestAnimationFrame(() => { const b = $('#ent-tbar'); if (b) { b.style.transitionDuration = `${DUR}ms`; b.style.width = '0%'; } });
     const tic = () => {
+      if (pausaT) return;
       const r = fin0 - Date.now();
       const e = $('#ent-t'); if (e) { e.textContent = mmss(r + 999); e.parentElement.classList.toggle('ent-urge', r < 10000); }
       if (r <= 0) terminar();
@@ -664,6 +854,7 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
       if (r.mejor || (r.prev == null && pts > 0)) confeti();
       xp(Math.round(pts / 10), 'contrarreloj');
       contarJugada('reloj');
+      if (M.n) guardarHist('reloj', Math.round(100 * M.ok / M.n), M.n);
       record('racha:reloj', M.mejor);
       acc = { menu, otra: () => partidaReloj(), config: () => reloj() };
       raiz.innerHTML = `<div class="ent-juego"><div class="ent-fin ent-pop">
@@ -833,6 +1024,7 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
           <button class="ent-b ${errores.length ? '' : 'pri'}" data-acc="sig">🩺 Otro caso</button><button class="ent-b" data-acc="menu">🏠 Juegos</button></div></div>`);
         limpiar();
         record('racha:caso', M.mejor); contarJugada('caso');
+        guardarHist('caso', Math.round(100 * M.ok / M.total), M.total);
         if (M.ok === M.total) { confeti(); xp(10, 'caso perfecto'); }
         acc.errores = () => caso(errores.map((x) => PARAMS_CASO.find((p) => p.f.id === x.f.id)));
         acc.sig = () => caso();
@@ -840,7 +1032,7 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
     };
   }
 
-  const JUEGOS_FN = { mayor, siglas: () => siglas(), reloj, match: emparejar, caso: () => caso(), facies: () => facies() };
+  const JUEGOS_FN = { mayor, siglas: () => siglas(), reloj, match: emparejar, caso: () => caso(), facies: () => facies(), orden: () => orden() };
 
   return {
     pintar() { if (!activo || !raiz.querySelector('.ent-juego')) menu(); },

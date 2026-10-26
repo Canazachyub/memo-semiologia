@@ -33,22 +33,26 @@
       {
         "q": "¿Rango normal de FC en el adulto en reposo?",
         "a": "60-100 lpm (media 70)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q6260ef4"
       },
       {
         "q": "Pulso de 112 lpm en un adulto se llama… y nombra 2 causas",
         "a": "Taquisfigmia (>100): fiebre, IC, hipertiroidismo, hipovolemia, shock",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q55fd9bf"
       },
       {
         "q": "Paciente con 39 °C y pulso de 60 lpm: ¿qué esperabas y qué enfermedad sospechas?",
         "a": "Esperabas que suba +12-15 lpm por cada °C sobre 37 (≈+24-30 lpm); un pulso que no acompaña la fiebre orienta a tifoidea (está entre las causas de bradisfigmia)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q667ca56"
       },
       {
         "q": "¿Qué es el déficit de pulso?",
         "a": "Latidos auscultados > pulsos radiales (FA, extrasístoles); contar 1 minuto",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q8d0ee02"
       }
     ],
     "fuentes_tecnica": [
@@ -128,22 +132,26 @@
       {
         "q": "¿PA ideal y PA normal según el docente?",
         "a": "Ideal <120/80; normal <130/85 (limítrofe 130-139/85-89)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q77ddf85"
       },
       {
         "q": "¿Desde qué cifra se diagnostica HTA y con cuántas tomas?",
         "a": "≥140/90 en ≥2 tomas",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q16963ff"
       },
       {
         "q": "PA 165/95: ¿qué grado de HTA?",
         "a": "Grado II (160-179 / 100-109): decide la cifra más alta, la sistólica",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qd562f25"
       },
       {
         "q": "¿Cómo se calcula la PAM y cuál es su normal?",
         "a": "(PAS + 2 × PAD)/3; normal 60-100 mmHg; <60 = isquemia cerebral",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q82b42d7"
       }
     ],
     "fuentes_tecnica": [
@@ -199,22 +207,26 @@
       {
         "q": "¿FR normal del adulto en reposo según el docente?",
         "a": "16-20 rpm; relación I:E 2:3",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q22ee8e9"
       },
       {
         "q": "FR de 26 rpm se llama… y da 2 causas",
         "a": "Taquipnea (>20): fiebre, neumonía, EPOC, EAP, acidosis metabólica, uremia",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qcc7fb32"
       },
       {
         "q": "Paciente con sobredosis de opiáceos y FR 10: ¿cómo se llama?",
         "a": "Bradipnea (<16)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q209ce58"
       },
       {
         "q": "Respiración crece-decrece seguida de apnea en un paciente con IC: ¿nombre?",
         "a": "Cheyne-Stokes",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q477b999"
       }
     ],
     "fuentes_tecnica": [
@@ -279,22 +291,26 @@
       {
         "q": "¿Temperatura normal axilar, oral y rectal?",
         "a": "36.5 / 37 / 37.5 °C (cada sitio +0.5)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qbce622b"
       },
       {
         "q": "Axilar de 38 °C: ¿febrícula, fiebre moderada o elevada?",
         "a": "Fiebre moderada (37.6-38.5); febrícula 37.5; elevada >38.6",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q239eb75"
       },
       {
         "q": "Abdomen agudo con diferencia axilo-rectal de 1 °C: ¿qué sospechas?",
         "a": "Apendicitis (diferencia >0.8 °C)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q4a78e3d"
       },
       {
         "q": "Fiebre que baja a la normalidad cada día (malaria): ¿qué curva? (literatura)",
         "a": "Intermitente; continua oscila <1 °C; remitente >1 °C sin normalizar",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qe47d21b"
       }
     ],
     "fuentes_tecnica": [
@@ -358,22 +374,26 @@
       {
         "q": "¿SatO2 normal a nivel del mar?",
         "a": "95-98%",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q78e28c3"
       },
       {
         "q": "¿SatO2 normal en Puno según el docente?",
         "a": "90% (wiki: 88-92% en adaptados a la altura)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q92a0fd4"
       },
       {
         "q": "Residente de Puno sano con SatO2 91%: ¿le das oxígeno?",
         "a": "No: es normal en la altura; no aplicar el corte 95% del nivel del mar",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qf9a63f4"
       },
       {
         "q": "SatO2 de 85% en un paciente con neumonía en Puno: ¿qué es y qué haces?",
         "a": "Hipoxemia (<90%): dar O2, posición sentada, buscar la causa",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qfbeaf8e"
       }
     ],
     "fuentes_tecnica": [
@@ -442,22 +462,26 @@
       {
         "q": "¿Fórmula del IMC?",
         "a": "Peso (kg) ÷ talla² (m)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q442a037"
       },
       {
         "q": "¿IMC normal según el docente y desde cuánto es obesidad?",
         "a": "Normal 19-23; sobrepeso 24-25; obesidad >26; mórbida >40",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qd8f172c"
       },
       {
         "q": "Mujer de 1.60 m y 78 kg con somnolencia y apnea: ¿IMC y síndrome?",
         "a": "IMC ≈30.5 = obesidad; síndrome de Pickwick",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q23c1b71"
       },
       {
         "q": "¿Peso ideal de Broca para un varón de 170 cm?",
         "a": "70 kg (talla cm − 100) ±10%; en la mujer −5%",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q31a4276"
       }
     ],
     "fuentes_tecnica": [
@@ -520,22 +544,26 @@
       {
         "q": "¿Desde qué talla se habla de gigantismo en varón y en mujer?",
         "a": ">1.90 m varón; >1.80 m mujer",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q71a7dda"
       },
       {
         "q": "¿Talla que define enanismo?",
         "a": "<1.50 m en ambos sexos",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q53146b0"
       },
       {
         "q": "¿Relación normal pubis-vértice / pubis-planta?",
         "a": "0.98-1.0",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q5860151"
       },
       {
         "q": "Envergadura mayor que la talla con segmento inferior largo sugiere… (literatura)",
         "a": "Hábito eunucoide o Marfan",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qcf908e6"
       }
     ],
     "fuentes_tecnica": [
@@ -593,17 +621,20 @@
       {
         "q": "¿Perímetro abdominal que define obesidad abdominal en mujer y en varón (ATP III)?",
         "a": ">88 cm mujer; >102 cm varón",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qf2fb2bd"
       },
       {
         "q": "¿Desde qué cintura marca riesgo la IDF?",
         "a": "Desde 80 cm mujer y 94 cm varón",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q219978c"
       },
       {
         "q": "¿Dónde y cuándo se mide la cintura?",
         "a": "Punto medio entre costilla y cresta ilíaca, al final de la espiración",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q165ae86"
       }
     ],
     "fuentes_tecnica": [
@@ -667,22 +698,26 @@
       {
         "q": "¿Máximo de cada componente de Glasgow y rango total?",
         "a": "Ocular 4, verbal 5, motora 6; total 3-15 (no existe 0)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qd01e1c1"
       },
       {
         "q": "¿Glasgow que obliga a proteger la vía aérea?",
         "a": "≤8 (coma grave) → intubar",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qca2d2ba"
       },
       {
         "q": "Abre ojos al dolor (2), sonidos incomprensibles (2), retira al dolor (4): ¿Glasgow y gravedad?",
         "a": "8 = grave → proteger vía aérea",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qf239d2b"
       },
       {
         "q": "¿Qué rango es TCE/coma moderado?",
         "a": "9-12",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q2f22fad"
       }
     ],
     "fuentes_tecnica": [
@@ -731,17 +766,20 @@
       {
         "q": "¿Llenado capilar normal?",
         "a": "<2 s en el lecho ungueal",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q0c78b86"
       },
       {
         "q": "Lactante con diarrea, fontanela deprimida y relleno de 4 s: ¿qué tiene?",
         "a": "Deshidratación grave",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qb2b4c76"
       },
       {
         "q": "Nombra 3 causas de llenado capilar >2 s",
         "a": "Deshidratación, shock, enfermedad vascular periférica, hipotermia",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q60173b0"
       }
     ],
     "fuentes_tecnica": [
@@ -779,17 +817,20 @@
       {
         "q": "¿Cuáles son las 3 categorías del estado general, en orden?",
         "a": "BEG, REG, MEG (bueno, regular, malo)",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q1eceb0f"
       },
       {
         "q": "¿Por qué se escribe completo y no la sigla en la HC?",
         "a": "Por su implicancia médico-legal",
-        "tipo": "explica"
+        "tipo": "explica",
+        "pid": "qf57e489"
       },
       {
         "q": "Paciente con pocos signos pero en MEG: ¿qué te debe hacer pensar?",
         "a": "Es una alerta: puede estar más grave de lo que muestran los signos",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q6617f65"
       }
     ],
     "fuentes_tecnica": [
@@ -828,17 +869,20 @@
       {
         "q": "¿Qué diferencia el marasmo del kwashiorkor? (literatura)",
         "a": "Marasmo: déficit calórico, piel y hueso, sin edema · kwashiorkor: déficit proteico, edema, cabello en bandera",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qb7411e4"
       },
       {
         "q": "¿Cómo se describe la piel del desnutrido?",
         "a": "Seca, «papel de lija»",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q0810e51"
       },
       {
         "q": "Niño con edema, cabello fino que se arranca fácil y xerosis conjuntival: ¿qué déficit?",
         "a": "Desnutrición proteica (kwashiorkor)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qa020a78"
       }
     ],
     "fuentes_tecnica": [
@@ -893,17 +937,20 @@
       {
         "q": "¿Grados de deshidratación según % de peso perdido?",
         "a": "Leve <5%, moderada 5-10%, grave >10%",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q9b6bb0a"
       },
       {
         "q": "Paciente que bajó 3 kg en un día por diarrea: ¿cuánta agua perdió?",
         "a": "≈3 litros (1 kg ≈ 1 L)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qcefdcb1"
       },
       {
         "q": "¿Dónde se busca el pliegue en el anciano y cuándo es positivo?",
         "a": "En la frente o el esternón; si tarda >2 s en volver",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q0792ceb"
       }
     ],
     "fuentes_tecnica": [
@@ -947,17 +994,20 @@
       {
         "q": "¿Con qué Hb se hace visible la palidez por anemia?",
         "a": "Hb <7 g/dl",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q0e27c35"
       },
       {
         "q": "¿Dónde se juzga la anemia? (literatura)",
         "a": "Conjuntiva palpebral, lecho ungueal, palmas y mucosas, no la piel del rostro",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q24e7163"
       },
       {
         "q": "Pierna derecha pálida y fría, la izquierda normal: ¿qué piensas?",
         "a": "Isquemia (ateroesclerosis, embolia)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q95cc1f8"
       }
     ],
     "fuentes_tecnica": [
@@ -1006,22 +1056,26 @@
       {
         "q": "¿Bilirrubina normal y desde cuánto se ve la ictericia?",
         "a": "Normal 1.2 mg%; visible con >2.5 mg%",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q8a7c194"
       },
       {
         "q": "¿Dónde se ve mejor la ictericia?",
         "a": "En la esclerótica",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qea3f9de"
       },
       {
         "q": "Ictericia con coluria, acolia y prurito: ¿qué tipo y qué bilirrubina sube?",
         "a": "Poshepática (obstructiva): sube la BD",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q7e585c0"
       },
       {
         "q": "Ictericia con BI elevada sin coluria: ¿tipo?",
         "a": "Prehepática (hemólisis)",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q1a916c3"
       }
     ],
     "fuentes_tecnica": [
@@ -1067,22 +1121,26 @@
       {
         "q": "¿Con cuánta Hb reducida aparece la cianosis?",
         "a": ">5 g/dl",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qcc8fac2"
       },
       {
         "q": "¿Cómo diferencias cianosis central de periférica? (literatura)",
         "a": "Central: labios y lengua, tibia · periférica: dedos fríos, mejora al calentar",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q7b98865"
       },
       {
         "q": "¿Por qué un anémico grave no presenta cianosis?",
         "a": "No alcanza a tener >5 g/dl de Hb reducida",
-        "tipo": "explica"
+        "tipo": "explica",
+        "pid": "q36dd861"
       },
       {
         "q": "Minero de altura, pletórico, con cianosis rojo-violácea que revierte al bajar al mar: ¿qué tiene?",
         "a": "Enfermedad de Monge (mal de montaña crónico)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qf947e13"
       }
     ],
     "fuentes_tecnica": [
@@ -1133,22 +1191,26 @@
       {
         "q": "¿Qué es el signo de Godet y dónde se busca?",
         "a": "Fóvea que deja la presión del dedo; sobre la tibia o el sacro",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q4a551eb"
       },
       {
         "q": "¿Cómo se gradúa la intensidad del edema?",
         "a": "De 1 cruz (leve) a 4 cruces (anasarca)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q05eb2c8"
       },
       {
         "q": "Edema de párpados que aparece por la mañana: ¿origen?",
         "a": "Nefrótico (renal)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q42d1a5f"
       },
       {
         "q": "Edema sin fóvea, piel fría y áspera: ¿cómo se llama?",
         "a": "Mixedema (piel fría y áspera, sin fóvea)",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q1a6af80"
       }
     ],
     "fuentes_tecnica": [
@@ -1203,17 +1265,20 @@
       {
         "q": "¿VSG normal en varón y en mujer? (literatura)",
         "a": "Varón <15 mm/h; mujer <20 mm/h",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q544c48f"
       },
       {
         "q": "¿Por qué sube la VSG en la inflamación?",
         "a": "El fibrinógeno apila los GR y sedimentan más rápido",
-        "tipo": "explica"
+        "tipo": "explica",
+        "pid": "q9217648"
       },
       {
         "q": "Anciano con VSG de 110 mm/h: ¿qué causas buscas? (literatura)",
         "a": "Mieloma, arteritis de células gigantes, TBC, endocarditis, metástasis",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qd5ace62"
       }
     ],
     "fuentes_tecnica": [
@@ -1276,17 +1341,20 @@
       {
         "q": "¿PCR normal y qué valor orienta a infección bacteriana? (literatura)",
         "a": "<5 mg/L (<0,5 mg/dL); >100 mg/L",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q0203a5b"
       },
       {
         "q": "¿Dónde se produce la PCR y qué la estimula?",
         "a": "En el hígado, vía IL-6 (reactante de fase aguda)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q03b80c9"
       },
       {
         "q": "¿Por qué la PCR sigue mejor la respuesta al tratamiento que la VSG?",
         "a": "Sube a las 6-8 h y cae rápido (vida media ~19 h)",
-        "tipo": "explica"
+        "tipo": "explica",
+        "pid": "q2c771b5"
       }
     ],
     "fuentes_tecnica": [
@@ -1335,22 +1403,26 @@
       {
         "q": "¿Valor de FR negativo? (literatura)",
         "a": "<14-20 UI/mL según técnica",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qff61906"
       },
       {
         "q": "¿Qué es el factor reumatoide?",
         "a": "IgM anti-Fc de IgG",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qa4ec721"
       },
       {
         "q": "Anciano sano con FR positivo: ¿tiene AR?",
         "a": "No necesariamente: también en Sjögren, hepatitis C, endocarditis y ancianos sanos",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qb696329"
       },
       {
         "q": "¿Qué prueba es más específica que el FR para AR?",
         "a": "Anti-CCP (E 95%, aparecen en fase prearticular)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q6c268bd"
       }
     ],
     "fuentes_tecnica": [
@@ -1422,22 +1494,26 @@
       {
         "q": "¿TP e INR normales?",
         "a": "TP ~12 s; INR 0,9-1,3",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q3527011"
       },
       {
         "q": "¿INR meta con warfarina?",
         "a": "2,0-3,0",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q2c0491b"
       },
       {
         "q": "Paciente con warfarina e INR de 5 que sangra por las encías: ¿riesgo y antídoto?",
         "a": "Alto riesgo de hemorragia (INR >4-5); antídoto: vitamina K",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q64b206d"
       },
       {
         "q": "¿Qué vía y qué factor evalúa el TP?",
         "a": "Vía extrínseca, factor VII",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q262325c"
       }
     ],
     "fuentes_tecnica": [
@@ -1497,22 +1573,26 @@
       {
         "q": "¿TTPa normal? (según laboratorio)",
         "a": "25-35 s",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qfd72fb3"
       },
       {
         "q": "¿Meta del TTPa con heparina no fraccionada?",
         "a": "1,5-2,5 veces el basal; >2,5 riesgo de hemorragia",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qdb8f699"
       },
       {
         "q": "Niño varón con TTPa largo y TP normal: ¿qué sospechas?",
         "a": "Hemofilia A (VIII) o B (IX)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q62b5680"
       },
       {
         "q": "¿Antídoto de la heparina?",
         "a": "Sulfato de protamina",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qc8fbf08"
       }
     ],
     "fuentes_tecnica": [
@@ -1561,17 +1641,20 @@
       {
         "q": "¿Fibrinógeno normal?",
         "a": "200-400 mg/dL (Guyton Cap 37: 100-700 mg/dL)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qd737b66"
       },
       {
         "q": "¿Por qué el fibrinógeno alto sube la VSG?",
         "a": "Hace que los GR sedimenten rápido (reactante de fase aguda)",
-        "tipo": "explica"
+        "tipo": "explica",
+        "pid": "qb77b140"
       },
       {
         "q": "TP y TTPa largos, plaquetas bajas, fibrinógeno bajo y dímero D alto: ¿diagnóstico?",
         "a": "CID (hipofibrinogenemia por consumo)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qc5e1e3f"
       }
     ],
     "fuentes_tecnica": [
@@ -1630,17 +1713,20 @@
       {
         "q": "¿Tiempo de sangría y de coagulación normales?",
         "a": "Sangría 1-6 min; coagulación 6-10 min",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qedebf23"
       },
       {
         "q": "¿Qué evalúa el tiempo de sangría y qué el de coagulación? (literatura)",
         "a": "Sangría: plaquetas y vaso (hemostasia primaria) · coagulación: factores (secundaria)",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qd28ffb9"
       },
       {
         "q": "Epistaxis recurrente sin causa local: ¿qué pides?",
         "a": "Plaquetas, tiempo de coagulación y de sangría",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q4e32a9c"
       }
     ],
     "fuentes_tecnica": [

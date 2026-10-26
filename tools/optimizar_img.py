@@ -8,6 +8,8 @@ cambios = {}
 for p in glob.glob(os.path.join(RAIZ, "img", "**", "*.*"), recursive=True):
     if os.path.splitext(p)[1].lower() not in (".png", ".jpg", ".jpeg"):
         continue
+    if os.path.basename(p).startswith("icon-"):  # íconos de la PWA: quedan en PNG con transparencia
+        continue
     im = Image.open(p).convert("RGB")
     im.thumbnail((900, 900))
     w = os.path.splitext(p)[0] + ".webp"

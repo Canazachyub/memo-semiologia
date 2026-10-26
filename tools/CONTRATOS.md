@@ -58,3 +58,36 @@ Se guarda en localStorage con la clave `memo-semio-juego`, y todo acceso va dent
 - Debe funcionar en el celular: táctil, 360 px de ancho, sin scroll horizontal. Respetar el modo oscuro.
 - Español, accesible: botones con texto o `aria-label`.
 - No romper las vistas existentes. Probar en http://127.0.0.1:8765 y revisar la consola.
+
+## Módulos tras el paso 0 (2026-10-26)
+`js/app.js` solo carga datos, monta módulos y navega. Arma el contexto `CTX = { ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES, MAPA, RUTA, CASOS, srs }`, que reciben todos los módulos, y además `raiz`.
+- `js/util.js`: `$ $$ esc norm resaltar celda`.
+- `js/vistas.js` (paquete B): `crearVistas(CTX)` devuelve `{tabla, escalas, facies, siglas, metodos, filtros, panelMemoria, filtrarSeccion}`, y además exporta `tarjetasExtra(ATLAS, MEMO)`, que importa repaso.js.
+- `js/repaso.js` (A): `crearRepaso({...CTX, raiz, alPendientes(n)})` devuelve `{pintar, tarjetas, pendientes}`.
+- `js/progreso.js` (A): `crearProgreso({...CTX, tarjetas, raiz})`.
+- `js/hoy.js` (A): `crearHoy({...CTX, tarjetas, raiz})`, pestaña "🏠 Hoy" (`#v-hoy`).
+- `js/plan.js` (A): `cargar() guardar(p) marcarEstudiada(sid) estudiada(sid) hoyToca() faseSimulacro() topeDue(ms)`.
+- `js/mias.js` (B): `get(ref) set(ref, obj|null) todas()`.
+- `js/ajustes.js` (C): `get(k) set(k, v) alCambiar(fn)`.
+- `js/respaldo.js` (C): `exportar() importar(txt)` cubre todas las claves `memo-semio-*`.
+- `js/metodos.js` (agente MÉTODOS): `crearMetodos({...CTX, raiz})`, que app.js carga dinámicamente.
+- **Eventos globales:** `window.dispatchEvent(new CustomEvent('memo:ir', {detail: {id}}))` abre la ficha de un dato; `memo:vista` con `{vista}` cambia de pestaña.
+- **CSS por paquete:** A va en `css/repaso.css`, B en `css/vistas.css`, C en `css/ajustes.css` y en `css/app.css` (solo C edita app.css), D en `css/entrenar.css` y `css/juego.css`.
+
+## Paquete B · contratos nuevos (2026-10-26)
+- **R6 · `pid` estable en cada pregunta** de `data/memoria.json` (vía `memoria_parts/*.json`), `memoria_siglas.json` y `memoria_facies.json`: `"q" + 7 hex` (hash de ref + q, asignado una sola vez). Pregunta nueva → déjala sin pid y corre `py tools/ids_preguntas.py` y luego `py tools/unir_memoria.py`. `py tools/validar_memoria.py` falla si falta un pid o se repite dentro de la ficha. Los pid `n`, `cz`, `inv`, `tr` están reservados.
+- **Los ids de tarjeta NO cambiaron** (siguen `${ref}#${i}`, `sig:${id}#${i}`, `fac:${id}#${i}` en repaso.js y juego.js). Migración para quien la haga (A en srs/repaso, D en juego): id nuevo = `${prefijo}#${p.pid}`; el mapa viejo→nuevo se arma en tiempo de ejecución desde los datos actuales (`preguntas[i].pid` ↔ índice `i`), válido porque al agregar los pid no se reordenó ninguna pregunta. Correr la migración una vez (`estado.v = 2`) **antes** de que alguien reordene preguntas.
+- **`vistas.tarjetasExtra(ATLAS, MEMO, {SIGLAS, FACIES}?)`** → `{id, ref, sec, q, a, m, nombre, tipo}`: ES2 `esc:<id>:i<k>` (tipo `componente`) y `esc:<id>:r<k>` (`umbral`), sin `m`; F2 `fac:<id>#inv` solo si falta la inversa; SG2 `sig:<id>#tr` (`trampa`). Sin el 3.er argumento usa SIGLAS/FACIES cacheados por `crearVistas` (app.js lo llama antes que crearRepaso).
+- **`VISTAS.filtrarTecnica(clave|null)`**: filtra Valores (y Escalas) por `MEMO[id].tecnicas` con chip "🧩 método ✕".
+- **`js/mias.js`, claves:** fila/escala = `<id>`; sigla = `sig:<slug>`; facies = `fac:<id>`; Métodos M2 = `num:NN`. Valor `{ancla, escena, notaPregunta, check:{significado, protagonista, accion, sentidos}, ts}`. La clave de mias = la parte del id de tarjeta antes de `#` (los slugs de siglas chocan con ids de filas: vcm, hdl, ldl…; por eso el prefijo).
+- **Eventos:** `memo:mia {id}` abre el editor "Mi versión" de ese dato (id = clave de mias); B emite `memo:mia-cambio {ref}` al guardar/borrar, `memo:estudiada {sid, estudiada}` al marcar una sección y `memo:repasar {sec}` antes de `memo:vista {vista:'repaso'}` ("Repasar las de hoy" de Siglas; mientras repaso.js no lo escuche, B elige `siglas` en `#rep-sec`).
+- **V1:** secciones marcables `s1…s12`, `escalas`, `facies`, `siglas` (usa `plan.marcarEstudiada/estudiada`; desmarcar = `plan.guardar` sin esa clave). Acepta `estudiadas[sid]` como ms o `'AAAA-MM-DD'`.
+- **`memo-semio-autoexamen`** (V2/ES1, no toca srs): `{ <ámbito>: {fecha:'AAAA-MM-DD', ronda, filas:{id:'r'|'a'|'v'}, cola:[ids]|null} }`, ámbito = `s1…s12` | `todas` | `escalas`.
+- **V2:** el selector "Ocultar: ninguno · Normal · Sube/Baja · todo" lo inserta vistas.js en `#v-tabla .barra` y esconde el viejo `#ocultar`; clases en `body`: `ocultar` (todo), `ocultar-n`, `ocultar-ub`.
+
+## Paquete C · transversal (2026-10-26)
+- **Avisos:** `window.dispatchEvent(new CustomEvent('memo:aviso', {detail: {texto, acciones, ms}}))` muestra un aviso accesible (aria-live).
+- **Variables CSS:** `--fs` (tamaño de letra base, en <html>) y `--barra-movil` (alto de la barra inferior en móvil ≤760 px). Los tamaños se escriben en rem.
+- **URL:** `?vista=<id>` abre una pestaña (lo usan los accesos directos del manifest); `?sw=0` desinstala el service worker para desarrollar.
+- **Publicar:** correr `py tools/precache.py` antes de cada commit/push. Actualiza la lista y la versión de `sw.js`.
+- **Ajustes que lee el paquete A:** nuevasDia, nuevasNoEstudiadas, diaSemanal, bloque. `reducirMov` devuelve booleano efectivo.

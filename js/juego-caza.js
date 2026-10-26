@@ -4,10 +4,11 @@
 // · Rareza: ⚪ común = dato del atlas · 🔵 raro = sigla, escala o facies · 🟣 épico = caso clínico.
 // · Encuentro a pantalla completa con carta holográfica, captura con el 🧠 y pista si falla.
 // · Cada respuesta llama srs.calificar con el mismo id que usa el repaso de la app:
-//   datos `${id}#i` / `${id}#n`, siglas `sig:${slug}#i`, facies `fac:${id}#i`, casos `caso:${id}`.
+//   datos `${id}#pid` / `${id}#n`, siglas `sig:${slug}#pid`, facies `fac:${id}#pid` (pid estable; índice si falta), casos `caso:${id}`.
 // · Misiones diarias (3, se renuevan a medianoche) y 🧲 cebo de estudio (15 min).
 import * as E from './juego-estado.js';
-import { esc, norm, resaltar, barajar, azar, pausa, sinMov, numeros, aLL, metros, desplazar, crearRuta, confetti, azarSemilla, ponderado } from './juego-util.js';
+import { esc, norm, resaltar, barajar, azar, pausa, sinMov, seguirSinMov, idCarta, numeros, aLL, metros, desplazar, crearRuta, confetti, azarSemilla, ponderado } from './juego-util.js';
+import * as mias from './mias.js';
 
 const VENTANA_MS = 5 * 60000;     // rotación de apariciones
 const RADIO_AQUI = 40;            // m para "¡Está aquí!" (x2 XP)
@@ -57,7 +58,7 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     const ps = (s?.preguntas || []).filter((p) => p?.q && p?.a);
     if (!s?.sigla || !ps.length) return;
     agregar({ k: `s:${slug}`, clase: 'sigla', rareza: 'raro', id: slug, capId: `sig:${slug}`, nombre: s.sigla, corto: s.sigla, icono: '🔤', color: '#2563eb', s, grupo: s.grupo || '',
-      preguntas: ps.map((p, i) => ({ q: p.q, a: p.a, tipo: p.tipo || '', card: `sig:${slug}#${(s.preguntas || []).indexOf(p) >= 0 ? s.preguntas.indexOf(p) : i}` })) });
+      preguntas: ps.map((p, i) => ({ q: p.q, a: p.a, tipo: p.tipo || '', card: idCarta(`sig:${slug}`, p, (s.preguntas || []).indexOf(p) >= 0 ? s.preguntas.indexOf(p) : i) })) });
   });
   const facAtlas = Object.fromEntries((ATLAS.facies || []).map((f) => [f.id, f]));
   Object.entries(FACIES || {}).forEach(([id, fm]) => {
@@ -65,7 +66,7 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     if (!ps.length) return;
     const fa = facAtlas[id] || {};
     agregar({ k: `f:${id}`, clase: 'facies', rareza: 'raro', id, capId: `fac:${id}`, nombre: `Facies ${fa.nombre || id}`, corto: fa.nombre || id, icono: '🙂', color: '#0891b2', fm, fa, imagen: fa.imagen || '', grupo: 'Facies',
-      preguntas: ps.map((p) => ({ q: p.q, a: p.a, tipo: p.tipo || '', card: `fac:${id}#${fm.preguntas.indexOf(p)}` })) });
+      preguntas: ps.map((p) => ({ q: p.q, a: p.a, tipo: p.tipo || '', card: idCarta(`fac:${id}`, p, fm.preguntas.indexOf(p)) })) });
   });
   Object.entries(CASOS || {}).forEach(([id, c]) => {
     if (id.startsWith('_') || !c || !Array.isArray(c.opciones) || c.opciones.length < 2) return;
@@ -87,9 +88,9 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     return 'aprendiendo';
   }
   /** Califica en el srs y avisa a las misiones si la tarjeta estaba vencida. Úsala para TODA respuesta del juego. */
-  function calificar(card, nota) {
+  function calificar(card, nota, fuente = 'caza') {
     const vencida = !!(S.info(card) && S.vence(card));
-    const r = S.calificar(card, nota);
+    const r = S.calificar(card, nota, { fuente });
     if (vencida) E.avanzarMisiones((m) => m.tipo === 'repaso');
     return r;
   }
@@ -214,7 +215,7 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     h.toast(`🛣️ <b>${esc(r.nombre)}</b>: nuevas criaturas en este camino.`);
   }
   function arte(c, conImg = true) {
-    if (conImg && c.imagen) return `<img src="${esc(c.imagen)}" alt="" loading="lazy" onerror="this.replaceWith(document.createTextNode('${esc(c.icono)}'))">`;
+    if (conImg && c.imagen) return `<img decoding="async" src="${esc(c.imagen)}" alt="" loading="lazy" onerror="this.replaceWith(document.createTextNode('${esc(c.icono)}'))">`;
     if (c.clase === 'sigla') return `<b class="jg-sig" style="--n:${Math.max(2, c.nombre.length)}">${esc(c.nombre)}</b>`;
     return `<span>${esc(c.icono)}</span>`;
   }
@@ -252,10 +253,24 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
 
   // ---------- reloj: rotación, cebo, día y franja horaria ----------
   let reloj = null, vVista = ventana(), diaVisto = E.hoy(), ceboVisto = E.ceboRestante() > 0;
+  let pausado = false;
   function arrancarReloj() {
-    if (reloj) return;
+    if (reloj || pausado || !dibujado) return;
     reloj = setInterval(tick, 1000);
   }
+  /** J3: con la pestaña oculta o la vista Juego cerrada se paran el reloj de rotación y el GPS (ahorra batería). */
+  function pausar(si) {
+    if (si === pausado) return;
+    pausado = si;
+    if (si) {
+      if (reloj) { clearInterval(reloj); reloj = null; }
+      if (vigia != null) { try { navigator.geolocation.clearWatch(vigia); } catch { /* sin gps */ } vigia = null; gpsDormido = true; }
+    } else {
+      arrancarReloj(); tick();
+      if (gpsDormido && posReal) { gpsDormido = false; alUbicar(posReal.ll); }
+    }
+  }
+  let gpsDormido = false;
   function tick() {
     const v = ventana();
     if (v !== vVista) {
@@ -321,7 +336,8 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
       { id: 'xp', tipo: 'xp', meta: 300, xp: 100, ic: '⭐', txt: 'Gana 300 XP' },
       { id: 'gym', tipo: 'gimnasio', meta: 1, xp: 150, ic: '⚔️', txt: 'Gana un desafío de gimnasio' },
     ];
-    if (venc >= 3) { const n = Math.min(10, venc); out.push({ id: 'vencidas', tipo: 'repaso', meta: n, xp: 150, ic: '⏰', txt: `Repasa ${n} vencidas` }); }
+    // J2: con ≥ 5 vencidas, una de las 3 misiones es recapturarlas (el repaso es la prioridad)
+    if (venc >= 5) out.push({ id: 'vencidas', tipo: 'repaso', meta: 5, xp: 150, ic: '⏰', txt: 'Recaptura 5 cartas ⏰ vencidas' });
     else out.push(azar(tercera, rnd));
     return out.filter((m, i, a) => a.findIndex((x) => x.id === m.id) === i);
   }
@@ -398,7 +414,8 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
   function encontrar(k, { spawn = null } = {}) {
     const c = CRI[k]; if (!c || enc) return;
     const p = preguntaPara(c); if (!p) { h.toast('Esta carta aún no tiene preguntas.', 'aviso'); return; }
-    enc = { c, p, spawn, clave: claveDe(), modo: c.clase === 'caso' || !p.opciones || p.opciones.length < 2 ? 'elegir' : 'elegir', fallos: 0, malas: new Set(), fase: 'preg', escrito: '',
+    // J1: abiertas antes que opción múltiple (#007); solo los casos clínicos son de formato test
+    enc = { c, p, spawn, clave: claveDe(), modo: c.clase === 'caso' || !p.opciones || p.opciones.length < 2 ? 'elegir' : 'escribir', vioOpciones: false, fallos: 0, malas: new Set(), fase: 'preg', escrito: '',
       eraVencida: !!(S.info(p.card) && S.vence(p.card)), eraCapturada: E.capturado(c.capId), estado: estadoSRS(c), x2: !!(spawn && aqui(spawn.ll)), foco: document.activeElement };
     montarEncuentro();
   }
@@ -426,6 +443,7 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
         <div class="jg-enc-panel" aria-live="polite"></div>
       </div>`;
     document.body.appendChild(capa);
+    seguirSinMov(capa);
     document.documentElement.classList.add('jg-enc-abierto');
     capa.addEventListener('click', alClicEnc);
     capa.addEventListener('keydown', (e) => {
@@ -485,8 +503,10 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
         ${enc.fallos >= 2 && k.explicacion ? `<p class="ancla">📖 ${resaltar(k.explicacion)}</p>` : enc.fallos < 2 && k.explicacion ? '<p class="jg-mute">Si fallas otra vez verás la explicación completa.</p>' : ''}</div>`;
     }
     const m = c.s || c.fm || {};
+    const mia = mias.get(c.capId) || null;
+    const ancla = mia?.ancla || m.ancla;
     return `<div class="jg-pista"><p class="jg-pt">💡 Pista de tu palacio</p>
-      ${m.ancla ? `<p class="ancla">⚓ ${esc(m.ancla)}</p>` : ''}
+      ${ancla ? `<p class="ancla">⚓ ${mia?.ancla ? '<small>(tu ancla)</small> ' : ''}${esc(ancla)}</p>` : ''}
       ${c.s?.sustituta ? `<p>🔁 Palabra sustituta: <b>${esc(c.s.sustituta)}</b></p>` : ''}
       ${c.fm?.rasgo_clave || c.fa?.rasgo ? `<p>👁️ Rasgo clave: ${esc(c.fm?.rasgo_clave || c.fa.rasgo)}</p>` : ''}
       ${m.escena ? `<p class="jg-esc-txt">🎬 ${esc(m.escena)}</p>` : ''}</div>`;
@@ -501,7 +521,7 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     }
     if (c.clase === 'facies') {
       const fa = c.fa || {}, fm = c.fm || {};
-      return `<div class="jg-ficha">${c.imagen ? `<img class="jg-escena grande" src="${esc(c.imagen)}" alt="${esc(c.nombre)}" loading="lazy" onerror="this.remove()">` : ''}
+      return `<div class="jg-ficha">${c.imagen ? `<img decoding="async" class="jg-escena grande" src="${esc(c.imagen)}" alt="${esc(c.nombre)}" loading="lazy" onerror="this.remove()">` : ''}
         ${fa.rasgo ? `<p class="jg-valor"><span>👁️ Rasgo</span>${esc(fa.rasgo)}</p>` : ''}${fa.orienta ? `<p><b>→ Orienta a:</b> ${esc(fa.orienta)}</p>` : ''}
         ${fm.ancla ? `<p class="ancla">⚓ ${esc(fm.ancla)}</p>` : ''}${fm.escena ? `<p class="jg-esc-txt">🎬 ${esc(fm.escena)}</p>` : ''}</div>`;
     }
@@ -534,9 +554,10 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
       const ops = enc.modo === 'elegir'
         ? `<div class="jg-ops" role="group" aria-label="Opciones">${p.opciones.map((o, i) => `<button class="jg-op ${enc.malas.has(i) ? 'mala' : ''}" data-e="op" data-i="${i}" ${enc.malas.has(i) ? 'disabled' : ''}>
             <span class="l">${'ABCDEF'[i]}</span><span class="t">${resaltar(o)}</span></button>`).join('')}</div>
-           ${puedeEscribir ? '<button class="jg-link" data-e="modo" data-modo="escribir">✍️ Prefiero escribirla de memoria</button>' : ''}`
-        : `<div class="jg-escribir"><textarea rows="2" placeholder="Escribe tu respuesta de memoria…" aria-label="Tu respuesta">${esc(enc.escrito)}</textarea>
-            <div class="jg-btns"><button class="btn pri" data-e="comprobar">Comprobar</button><button class="jg-link" data-e="modo" data-modo="elegir">🔘 Ver opciones</button></div></div>`;
+           ${puedeEscribir && !fallo ? '<button class="jg-link" data-e="modo" data-modo="escribir">✍️ Prefiero escribirla de memoria</button>' : ''}`
+        : `<p class="jg-mute">✍️ Recuerda sin mirar opciones: escribir cuesta más y fija más.</p>
+          <div class="jg-escribir"><textarea rows="2" placeholder="Escribe tu respuesta de memoria…" aria-label="Tu respuesta">${esc(enc.escrito)}</textarea>
+            <div class="jg-btns"><button class="btn pri" data-e="comprobar">Comprobar</button><button class="btn" data-e="nose">🤷 No sé</button><button class="jg-link" data-e="modo" data-modo="elegir">🔘 Ver opciones (½ XP)</button></div></div>`;
       html = `${c.clase === 'caso' && c.caso.viñeta ? `<div class="jg-vineta">📋 ${resaltar(c.caso.viñeta)}</div>` : ''}
         <p class="jg-q">${esc(p.q)}</p>
         ${fallo ? `<div class="jg-fallo">❌ ¡Se escapó del 🧠! Usa la pista y reintenta (XP ×${multXP(enc.fallos)}).</div>${pistaHTML()}` : ''}
@@ -558,8 +579,9 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     switch (b.dataset.e) {
       case 'huir': case 'cerrar': cerrarEncuentro(); break;
       case 'op': elegir(+b.dataset.i, b); break;
-      case 'modo': enc.modo = b.dataset.modo; pintarPanel(); break;
+      case 'modo': if (b.dataset.modo === 'elegir' && !enc.fallos) enc.vioOpciones = true; enc.modo = b.dataset.modo; pintarPanel(); break;
       case 'comprobar': comprobarEscrito(); break;
+      case 'nose': enc.escrito = ''; fallo(null); break;
       case 'autoeval': if (b.dataset.ok === '1') acierto(null); else fallo(null); break;
       case 'ver-resp': enc.verResp = true; pintarPanel(); break;
       case 'dex': { const c = enc.c; cerrarEncuentro(); h.abrirDex(c.d ? 'datos' : c.clase === 'sigla' ? 'siglas' : c.clase === 'facies' ? 'facies' : 'casos', c.d ? c.d.id : c.k); break; }
@@ -593,14 +615,16 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     const e = enc; if (!e || e.bloq) return;
     e.bloq = true;
     const { c } = e; const R = RAREZA[c.rareza];
-    if (!e.fallos) calificar(e.p.card, 3);
+    // J1: acertar escribiendo → nota 3; con las opciones a la vista → máximo 2 (Difícil) y la mitad de XP
+    const conOps = e.vioOpciones && c.clase !== 'caso';
+    if (!e.fallos) calificar(e.p.card, conOps ? 2 : 3);
     const nueva = E.capturar(c.capId);
     const repaso = !nueva && e.eraVencida;
     let base = R.xp;
     if (!nueva && !repaso) base = Math.round(R.xp * 0.4);       // ya la tenías y estaba al día
     if (!e.spawn) base = Math.round(base * 0.6);                 // práctica desde el Memodex
     const x2 = e.x2 && !!e.spawn;
-    const xp = Math.max(5, Math.round(base * multXP(e.fallos) * (x2 ? 2 : 1)));
+    const xp = Math.max(5, Math.round(base * multXP(e.fallos) * (conOps && !e.fallos ? 0.5 : 1) * (x2 ? 2 : 1)));
     E.contar('aciertos');
     if (e.spawn) { E.contar('salvajes'); E.cazar(e.clave, c.k); quitarMarca(c.k); }
     if (c.rareza === 'raro') E.contar('raros');
@@ -622,7 +646,7 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     const cap = document.createElement('div');
     cap.className = `jg-captura jg-cap-enc r-${c.rareza}`;
     cap.setAttribute('aria-hidden', 'true');
-    cap.innerHTML = `<div class="jg-cap-item" style="--c:${esc(RAREZA[c.rareza].color)}">${c.imagen ? `<img src="${esc(c.imagen)}" alt="">` : c.clase === 'sigla' ? `<b class="jg-sig">${esc(c.nombre)}</b>` : esc(c.icono)}</div>
+    cap.innerHTML = `<div class="jg-cap-item" style="--c:${esc(RAREZA[c.rareza].color)}">${c.imagen ? `<img decoding="async" src="${esc(c.imagen)}" alt="">` : c.clase === 'sigla' ? `<b class="jg-sig">${esc(c.nombre)}</b>` : esc(c.icono)}</div>
       <div class="jg-bola"><div class="jg-bola-base"></div><div class="jg-bola-tapa"><span>🧠</span></div><div class="jg-bola-boton"></div></div>
       <div class="jg-chispas">${'<i></i>'.repeat(10)}</div><div class="jg-cap-txt">¡Capturado!</div>`;
     capa.appendChild(cap);
@@ -692,7 +716,7 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     activo, RUTAS, LOGROS, CRI,
     inicio: () => INICIO?.ll || null,
     limites: () => (rutaSel ? rutaSel.pts : RUTAS.flatMap((r) => r.pts)).concat(INICIO ? [INICIO.ll] : [], FIN ? [FIN.ll] : []),
-    dibujar, montarBarra, pintarBarra, pintarApariciones, alUbicar, calificar, evento, encontrar, cerrarEncuentro,
+    dibujar, montarBarra, pintarBarra, pintarApariciones, alUbicar, calificar, evento, encontrar, cerrarEncuentro, pausar,
     htmlMisiones, dexTabs, htmlDexTab, htmlDexFicha, esClave: (k) => !!CRI[k] && !String(k).startsWith('d:'), alClic,
     abierto: () => !!enc,
   };

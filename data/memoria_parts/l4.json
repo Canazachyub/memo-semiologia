@@ -47,22 +47,26 @@
       {
         "q": "¿Volumen urinario normal en 24 h?",
         "a": "800-1800 mL/24h (media 1400)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qd191a1c"
       },
       {
         "q": "Diuresis <400 mL/24h se llama… ¿y <100 mL/24h?",
         "a": "Oliguria (<400, ≈20 mL/h); anuria (<100)",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qf665291"
       },
       {
         "q": "¿Desde qué volumen se habla de poliuria? Nombra 2 causas",
         "a": ">2000 mL/24h: DM descompensada, diabetes insípida (también hipercalcemia, diuréticos)",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qfcb6b81"
       },
       {
         "q": "Paciente con 60 mL de orina en 24 h y ecografía con hidronefrosis bilateral: ¿cómo se llama y qué sugiere?",
         "a": "Anuria (<100 mL/24h): obstrucción bilateral",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q7a5a5d2"
       }
     ],
     "fuentes_tecnica": [
@@ -120,17 +124,20 @@
       {
         "q": "¿Densidad urinaria normal?",
         "a": "1.015-1.025",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q328a813"
       },
       {
         "q": "Densidad >1.020 con oliguria orienta a…",
         "a": "IRA prerrenal (el riñón concentra)",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q6b12877"
       },
       {
         "q": "Densidad fija <1.010 se llama… y orienta a…",
         "a": "Isostenuria: NTA / IRA parenquimatosa",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qeee0053"
       }
     ],
     "fuentes_tecnica": [
@@ -179,17 +186,20 @@
       {
         "q": "¿pH urinario normal?",
         "a": "Ácido, 4.5-7",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q2cc2f85"
       },
       {
         "q": "ITU por Proteus: ¿qué pH urinario y qué cálculos produce?",
         "a": "Orina alcalina (ureasa: urea → amoníaco) → cálculos coraliformes de estruvita",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q089d695"
       },
       {
         "q": "Orina muy ácida (<5): una causa y qué cálculo precipita",
         "a": "Acidosis metabólica, dieta proteica o cetoacidosis; ácido úrico",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q2684a1c"
       }
     ],
     "fuentes_tecnica": [
@@ -226,22 +236,26 @@
       {
         "q": "¿Aspecto y color normales de la orina?",
         "a": "Amarillo pálido a ámbar; límpida",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q25ff388"
       },
       {
         "q": "¿Qué indica una orina turbia, roja, castaña y espumosa?",
         "a": "Turbia: pus/ITU o cristales · roja: hematuria · castaña: coluria · espumosa: nefrótico",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q396d8ca"
       },
       {
         "q": "Orina color coca-cola con edema y HTA: ¿qué síndrome?",
         "a": "Síndrome nefrítico (hematuria)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qd44a291"
       },
       {
         "q": "Orina roja, tira positiva para sangre, sedimento sin hematíes: ¿qué pensar?",
         "a": "Hemoglobinuria o mioglobinuria (no hematuria)",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q54117b4"
       }
     ],
     "fuentes_tecnica": [
@@ -284,22 +298,26 @@
       {
         "q": "¿Cuántos leucocitos por campo son normales en el sedimento?",
         "a": "Hasta 3 por campo",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qca7fae1"
       },
       {
         "q": "¿Desde cuántos leucocitos por campo se sospecha ITU?",
         "a": ">10/campo (piuria)",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q7e1d881"
       },
       {
         "q": "Piuria con cilindros leucocitarios y fiebre con dolor lumbar: ¿diagnóstico?",
         "a": "Pielonefritis",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qaeba81f"
       },
       {
         "q": "Piuria con urocultivo negativo: 2 causas",
         "a": "TBC renal, nefritis intersticial, litiasis",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q808229b"
       }
     ],
     "fuentes_tecnica": [
@@ -336,22 +354,26 @@
       {
         "q": "¿Cuántos hematíes por campo son normales?",
         "a": "Hasta 2 por campo",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qba17e03"
       },
       {
         "q": "Prueba de los 3 vasos: ¿qué indica hematuria inicial, terminal y total?",
         "a": "Inicial = uretra · terminal = cuello vesical/trígono · total = riñón, uréter o vejiga",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q2b2f9f5"
       },
       {
         "q": "Hematíes dismórficos sugieren origen…",
         "a": "Glomerular",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q16f43e4"
       },
       {
         "q": "¿Se puede ignorar una hematuria aislada en un adulto?",
         "a": "No: obliga a estudio urológico completo",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qb3326d3"
       }
     ],
     "fuentes_tecnica": [
@@ -388,17 +410,20 @@
       {
         "q": "¿Qué cantidad de células epiteliales es normal en orina?",
         "a": "Escasas (descamación normal)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q3daf30a"
       },
       {
         "q": "Sedimento con muchas células escamosas: ¿qué significa y qué haces?",
         "a": "Muestra contaminada: repetir, con aseo genital y chorro medio",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q7eb7d8e"
       },
       {
         "q": "Células epiteliales tubulares abundantes orientan a…",
         "a": "NTA",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q582943b"
       }
     ],
     "fuentes_tecnica": [
@@ -451,22 +476,26 @@
       {
         "q": "¿Proteinuria normal en 24 h?",
         "a": "≤120-150 mg/24h",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qf2e2776"
       },
       {
         "q": "¿Desde cuántos g/24h la proteinuria es de rango nefrótico?",
         "a": "≥3.5 g/24h",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q69242ce"
       },
       {
         "q": "¿Para qué sirve el índice proteína/creatinina en orina aislada?",
         "a": "Estima la proteinuria de 24 h (g/g ≈ g/24 h); >3.5 = nefrótico",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qa65fe9e"
       },
       {
         "q": "La microalbuminuria es marcador temprano de…",
         "a": "Nefropatía diabética",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qd77c74d"
       }
     ],
     "fuentes_tecnica": [
@@ -510,17 +539,20 @@
       {
         "q": "¿Glucosa en orina normal?",
         "a": "Ausente",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qe2af075"
       },
       {
         "q": "¿Umbral renal de glucosa aproximado?",
         "a": "≈180 mg/dL",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q4cfeed3"
       },
       {
         "q": "Glucosuria con glucemia normal: 3 causas",
         "a": "Tubulopatía (Fanconi), embarazo, gliflozinas",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q4584721"
       }
     ],
     "fuentes_tecnica": [
@@ -573,22 +605,26 @@
       {
         "q": "¿Cetonas y urobilinógeno en orina normal?",
         "a": "Ausentes",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qb682ad2"
       },
       {
         "q": "¿Criterios de cetoacidosis diabética?",
         "a": "Cetonas + glucosa >250 + pH <7.30 + HCO3 <18",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q0a2371f"
       },
       {
         "q": "Ictericia con coluria y orina sin urobilina: ¿qué tipo de ictericia?",
         "a": "Obstructiva",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qee73cbb"
       },
       {
         "q": "¿Dos causas de cetonuria?",
         "a": "DM descompensada grave y ayuno",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q7758b49"
       }
     ],
     "fuentes_tecnica": [
@@ -626,22 +662,26 @@
       {
         "q": "¿Qué es un cilindro urinario y qué prueba?",
         "a": "Un molde del túbulo: prueba que el origen es renal",
-        "tipo": "explica"
+        "tipo": "explica",
+        "pid": "q150b1be"
       },
       {
         "q": "¿Qué indican los cilindros hemáticos, leucocitarios y céreos?",
         "a": "Hemáticos: glomerular/nefrítico · leucocitarios: pielonefritis · céreos: GN crónica",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q9539461"
       },
       {
         "q": "¿Los cilindros hialinos aislados son patológicos?",
         "a": "No, no tienen valor patológico aislado",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q2de56d6"
       },
       {
         "q": "Edema masivo, proteinuria ≥3.5 g/24h y cilindros grasos: ¿síndrome?",
         "a": "Nefrótico",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qcdc181c"
       }
     ],
     "fuentes_tecnica": [
@@ -686,17 +726,20 @@
       {
         "q": "¿Qué significa un nitrito positivo en orina?",
         "a": "ITU por enterobacterias (E. coli)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q17e5a24"
       },
       {
         "q": "Dos causas de nitritos falsamente negativos",
         "a": "Enterococo y orina <4 h en vejiga",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q9f3f02d"
       },
       {
         "q": "ITU clínica con nitritos negativos en una muestra tomada 1 h después de orinar: ¿qué pasó?",
         "a": "Falso negativo: la orina estuvo <4 h en la vejiga",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qf779b08"
       }
     ],
     "fuentes_tecnica": [
@@ -755,22 +798,26 @@
       {
         "q": "¿Frecuencia normal de deposiciones?",
         "a": "De 3 al día a 1 cada 3 días, sin esfuerzo y consistencia normal",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q16756bb"
       },
       {
         "q": "¿Cuándo se habla de constipación?",
         "a": "<3 por semana (o cada 3 días o más), con dificultad",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qd11feb6"
       },
       {
         "q": "Escala de Bristol: ¿qué tipos son estreñimiento, normal y diarrea?",
         "a": "1-2 estreñimiento · 3-4 normal · 5-7 diarrea",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qb692fe1"
       },
       {
         "q": "Anciano con 'diarrea' líquida escasa y en el tacto un fecaloma: ¿qué es?",
         "a": "Pseudodiarrea",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q2c8ace7"
       }
     ],
     "fuentes_tecnica": [
@@ -823,22 +870,26 @@
       {
         "q": "¿Duración de la diarrea aguda y de la crónica?",
         "a": "Aguda <2-3 semanas (infecciosa); crónica >4 semanas (no infecciosa)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q8f5d38a"
       },
       {
         "q": "¿Qué 4 elementos definen la disentería?",
         "a": "Sangre + moco + pujo + tenesmo (TMPS)",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "qc9ba5ca"
       },
       {
         "q": "Diarrea con sangre, moco y tenesmo desde hace 3 días: ¿tipo y 2 agentes?",
         "a": "Disentería, diarrea invasiva: Shigella, ameba",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qa154404"
       },
       {
         "q": "Nombra 2 complicaciones de la diarrea",
         "a": "Hipopotasemia, alcalosis/acidosis, IRA, desnutrición",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q44044c0"
       }
     ],
     "fuentes_tecnica": [
@@ -882,22 +933,26 @@
       {
         "q": "¿Cómo se calcula el índice cardiotorácico y cuál es su límite normal?",
         "a": "ICT = (A+B)/C; normal hasta 0.50",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qa93c6b2"
       },
       {
         "q": "ICT de 0.58 indica…",
         "a": "Cardiomegalia (>0.50)",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q5688aac"
       },
       {
         "q": "¿Se puede medir el ICT en una Rx AP en decúbito?",
         "a": "No: solo vale en PA de pie e inspiración profunda; en AP o decúbito el corazón se magnifica",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qb24008f"
       },
       {
         "q": "EPOC hiperinsuflado con corazón estrecho y alargado: ¿cómo se describe?",
         "a": "ICT pequeño, «corazón en gota»",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qf7d717c"
       }
     ],
     "fuentes_tecnica": [
@@ -934,17 +989,20 @@
       {
         "q": "¿Qué estructuras forman el borde derecho e izquierdo de la silueta cardíaca en PA?",
         "a": "Derecho: VCS y AD · izquierdo: botón aórtico, arco medio (AP + orejuela AI), VI",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q24408f6"
       },
       {
         "q": "¿Cuál es el primer signo radiológico de patología mitral?",
         "a": "Abombamiento del arco medio (orejuela AI)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q81ddaa0"
       },
       {
         "q": "Rx con 4 arcos a la izquierda, doble contorno derecho y carina abierta: ¿qué valvulopatía?",
         "a": "Estenosis mitral",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q93fbd98"
       }
     ],
     "fuentes_tecnica": [
@@ -988,17 +1046,20 @@
       {
         "q": "¿Cómo es normalmente el seno costodiafragmático en la Rx?",
         "a": "Ángulo agudo (y libre)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q098f5c0"
       },
       {
         "q": "Seno borrado con menisco vs seno romo sin menisco: ¿qué significa cada uno?",
         "a": "Con menisco = derrame · romo sin menisco = engrosamiento pleural antiguo",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qd8ca401"
       },
       {
         "q": "¿Por qué el hemidiafragma derecho está más alto y cuánto?",
         "a": "Por el hígado; 2-3 cm",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qa561348"
       }
     ],
     "fuentes_tecnica": [
@@ -1036,17 +1097,20 @@
       {
         "q": "¿Qué forma la imagen de los hilios y cuál está más alto?",
         "a": "Arterias pulmonares (imagen vascular); el izquierdo es más alto",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q6bffe96"
       },
       {
         "q": "Hilios grandes bilaterales vs unilateral: ¿qué sugiere cada uno?",
         "a": "Bilaterales: hipertensión pulmonar o linfoma/sarcoidosis · unilateral: neoplasia o TBC",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qf7d0c3a"
       },
       {
         "q": "Micronódulos perihiliares y basales en un paciente febril: ¿qué sugiere?",
         "a": "Bronconeumonía",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qcbdfc20"
       }
     ],
     "fuentes_tecnica": [
@@ -1083,22 +1147,26 @@
       {
         "q": "¿Qué imagen radiológica es típica de la neumonía?",
         "a": "Opacidad homogénea con broncograma aéreo",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qa1bb07b"
       },
       {
         "q": "¿En qué consiste el signo de la silueta y para qué sirve?",
         "a": "Una opacidad en contacto con un borde (corazón, diafragma) lo borra; localiza la lesión: borde cardíaco = lóbulo medio o língula; hemidiafragma = lóbulo inferior",
-        "tipo": "explica"
+        "tipo": "explica",
+        "pid": "qc8a3b4f"
       },
       {
         "q": "¿Hacia dónde se desvía el mediastino en la atelectasia?",
         "a": "HACIA la lesión",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q7f1a7cd"
       },
       {
         "q": "Opacidad que borra el borde cardíaco derecho: ¿qué lóbulo?",
         "a": "Lóbulo medio",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q333196d"
       }
     ],
     "fuentes_tecnica": [
@@ -1153,22 +1221,26 @@
       {
         "q": "¿Qué es el signo del menisco?",
         "a": "Línea cóncava que sube hacia la axila: imagen del derrame pleural",
-        "tipo": "explica"
+        "tipo": "explica",
+        "pid": "q4f2baef"
       },
       {
         "q": "¿Desde qué volumen se ve un derrame en PA y en lateral?",
         "a": "~200 ml en PA; ~50 ml en lateral",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qcb99941"
       },
       {
         "q": "Sospecha de derrame pequeño (<300 ml) con Rx de pie normal: ¿qué proyección pides?",
         "a": "Decúbito lateral",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qe26c692"
       },
       {
         "q": "En la percusión, la curva que corresponde al menisco se llama…",
         "a": "Curva de Damoiseau",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q3d55868"
       }
     ],
     "fuentes_tecnica": [
@@ -1206,22 +1278,26 @@
       {
         "q": "¿Qué se ve en la Rx de un neumotórax?",
         "a": "Borde pulmonar colapsado separado de la pared por una claridad sin trama (aire)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q433a4ee"
       },
       {
         "q": "¿Qué signos radiológicos sugieren neumotórax hipertensivo?",
         "a": "Mediastino desviado, diafragma aplanado, EIC ensanchados",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q4804f16"
       },
       {
         "q": "Trauma con disnea, hipotensión, timpanismo y murmullo abolido: ¿pides Rx?",
         "a": "No: neumotórax hipertensivo, descomprimir sin esperar la Rx",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q0e662f3"
       },
       {
         "q": "¿Qué estructura de partes blandas puede simular un neumotórax enquistado?",
         "a": "El pectoral mayor",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q8d257dd"
       }
     ],
     "fuentes_tecnica": [
@@ -1274,17 +1350,20 @@
       {
         "q": "¿A qué nivel está normalmente el diafragma en la Rx PA?",
         "a": "6.º arco costal anterior (9-10 posterior), cúpulas convexas",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q09d9044"
       },
       {
         "q": "¿Cuántos arcos costales posteriores por encima del diafragma definen hiperinsuflación?",
         "a": "Más de 10",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q1abd1df"
       },
       {
         "q": "Nombra 4 signos radiológicos de hiperinsuflación",
         "a": "Hiperclaridad, costillas horizontales, EIC anchos, diafragma bajo",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "qbe2c62f"
       }
     ],
     "fuentes_tecnica": [

@@ -16,12 +16,14 @@
       {
         "q": "¿Qué significa la sigla PA?",
         "a": "presión arterial",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q3e23232"
       },
       {
         "q": "¿Con qué sigla se abrevia «presión arterial»?",
         "a": "PA",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qc198f24"
       }
     ]
   },
@@ -41,12 +43,14 @@
       {
         "q": "¿Qué significa la sigla PAS?",
         "a": "presión arterial sistólica",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q1cff133"
       },
       {
         "q": "¿Con qué sigla se abrevia «presión arterial sistólica»?",
         "a": "PAS",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qba4bfd8"
       }
     ]
   },
@@ -66,12 +70,14 @@
       {
         "q": "¿Qué significa la sigla PAD?",
         "a": "presión arterial diastólica",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q866fa0f"
       },
       {
         "q": "¿Con qué sigla se abrevia «presión arterial diastólica»?",
         "a": "PAD",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qdf68a03"
       }
     ]
   },
@@ -91,12 +97,14 @@
       {
         "q": "¿Qué significa la sigla FC?",
         "a": "frecuencia cardiaca",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qed8eefc"
       },
       {
         "q": "¿Con qué sigla se abrevia «frecuencia cardiaca»?",
         "a": "FC",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q4d83360"
       }
     ]
   },
@@ -117,12 +125,14 @@
       {
         "q": "¿Qué significa la sigla FR?",
         "a": "frecuencia respiratoria · fiebre reumática · factor reumatoide (según contexto)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qed6f2bb"
       },
       {
         "q": "¿Con qué sigla se abrevia «frecuencia respiratoria · fiebre reumática · factor reumatoide (según contexto)»?",
         "a": "FR",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q5348990"
       }
     ]
   },
@@ -142,12 +152,14 @@
       {
         "q": "¿Qué significa la sigla SatO₂?",
         "a": "saturación de oxígeno (pulsioxímetro)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q67d5795"
       },
       {
         "q": "¿Con qué sigla se abrevia «saturación de oxígeno (pulsioxímetro)»?",
         "a": "SatO₂",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qa00cacc"
       }
     ]
   },
@@ -167,12 +179,14 @@
       {
         "q": "¿Qué significa la sigla SaO2?",
         "a": "saturación arterial de oxígeno",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qb4d49e9"
       },
       {
         "q": "¿Con qué sigla se abrevia «saturación arterial de oxígeno»?",
         "a": "SaO2",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qb1ca826"
       }
     ]
   },
@@ -192,12 +206,14 @@
       {
         "q": "¿Qué significa la sigla PO2?",
         "a": "presión parcial de oxígeno",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q12107fd"
       },
       {
         "q": "¿Con qué sigla se abrevia «presión parcial de oxígeno»?",
         "a": "PO2",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q82ecca1"
       }
     ]
   },
@@ -217,12 +233,14 @@
       {
         "q": "¿Qué significa la sigla IMC?",
         "a": "índice de masa corporal",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qb545f32"
       },
       {
         "q": "¿Con qué sigla se abrevia «índice de masa corporal»?",
         "a": "IMC",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q8692696"
       }
     ]
   },
@@ -242,12 +260,14 @@
       {
         "q": "¿Qué significa la sigla BEG?",
         "a": "buen estado general",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qbed3019"
       },
       {
         "q": "¿Con qué sigla se abrevia «buen estado general»?",
         "a": "BEG",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qf4a6ce0"
       }
     ]
   },
@@ -267,12 +287,14 @@
       {
         "q": "¿Qué significa la sigla REG?",
         "a": "regular estado general",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qfbfa17f"
       },
       {
         "q": "¿Con qué sigla se abrevia «regular estado general»?",
         "a": "REG",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q367f836"
       }
     ]
   },
@@ -292,12 +314,14 @@
       {
         "q": "¿Qué significa la sigla MEG?",
         "a": "mal estado general",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qd08398c"
       },
       {
         "q": "¿Con qué sigla se abrevia «mal estado general»?",
         "a": "MEG",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q9132535"
       }
     ]
   },
@@ -317,12 +341,14 @@
       {
         "q": "¿Qué significa la sigla EIC?",
         "a": "espacio intercostal",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q51c8e82"
       },
       {
         "q": "¿Con qué sigla se abrevia «espacio intercostal»?",
         "a": "EIC",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q74d92d5"
       }
     ]
   },
@@ -342,12 +368,14 @@
       {
         "q": "¿Qué significa la sigla HC?",
         "a": "historia clínica",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qbd510a4"
       },
       {
         "q": "¿Con qué sigla se abrevia «historia clínica»?",
         "a": "HC",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q46c935d"
       }
     ]
   },
@@ -367,12 +395,14 @@
       {
         "q": "¿Qué significa la sigla RN?",
         "a": "recién nacido",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q13ee0be"
       },
       {
         "q": "¿Con qué sigla se abrevia «recién nacido»?",
         "a": "RN",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qc8a2bbd"
       }
     ]
   },
@@ -392,12 +422,14 @@
       {
         "q": "¿Qué significa la sigla O4?",
         "a": "Glasgow: apertura ocular 4",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q6a5afd7"
       },
       {
         "q": "¿Con qué sigla se abrevia «Glasgow: apertura ocular 4»?",
         "a": "O4",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q3366090"
       }
     ]
   },
@@ -417,12 +449,14 @@
       {
         "q": "¿Qué significa la sigla M6?",
         "a": "Glasgow: respuesta motora 6",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q86c6f75"
       },
       {
         "q": "¿Con qué sigla se abrevia «Glasgow: respuesta motora 6»?",
         "a": "M6",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qaa58085"
       }
     ]
   },
@@ -442,12 +476,14 @@
       {
         "q": "¿Qué significa la sigla V5?",
         "a": "Glasgow: respuesta verbal 5",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q63348bd"
       },
       {
         "q": "¿Con qué sigla se abrevia «Glasgow: respuesta verbal 5»?",
         "a": "V5",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qe3ac22a"
       }
     ]
   },
@@ -467,12 +503,14 @@
       {
         "q": "¿Qué significa la sigla FUR?",
         "a": "fecha de última regla",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q8ce2cb8"
       },
       {
         "q": "¿Con qué sigla se abrevia «fecha de última regla»?",
         "a": "FUR",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q39a637d"
       }
     ]
   },
@@ -492,12 +530,14 @@
       {
         "q": "¿Qué significa la sigla G2P1?",
         "a": "fórmula obstétrica: 2 gestas, 1 parto",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qf7e6185"
       },
       {
         "q": "¿Con qué sigla se abrevia «fórmula obstétrica: 2 gestas, 1 parto»?",
         "a": "G2P1",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q287aee5"
       }
     ]
   },
@@ -518,12 +558,14 @@
       {
         "q": "¿Qué significa la sigla Hb?",
         "a": "hemoglobina",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q3b7f8d3"
       },
       {
         "q": "¿Con qué sigla se abrevia «hemoglobina»?",
         "a": "Hb",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qbeeda58"
       }
     ]
   },
@@ -543,12 +585,14 @@
       {
         "q": "¿Qué significa la sigla Hto?",
         "a": "hematocrito",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q824c7bd"
       },
       {
         "q": "¿Con qué sigla se abrevia «hematocrito»?",
         "a": "Hto",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q08f237b"
       }
     ]
   },
@@ -568,12 +612,14 @@
       {
         "q": "¿Qué significa la sigla GR?",
         "a": "glóbulos rojos",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q098e6ca"
       },
       {
         "q": "¿Con qué sigla se abrevia «glóbulos rojos»?",
         "a": "GR",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q215d672"
       }
     ]
   },
@@ -594,12 +640,14 @@
       {
         "q": "¿Qué significa la sigla VCM?",
         "a": "volumen corpuscular medio",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qb5eaf1d"
       },
       {
         "q": "¿Con qué sigla se abrevia «volumen corpuscular medio»?",
         "a": "VCM",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q549eef5"
       }
     ]
   },
@@ -619,12 +667,14 @@
       {
         "q": "¿Qué significa la sigla HCM?",
         "a": "hemoglobina corpuscular media",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qec97d0f"
       },
       {
         "q": "¿Con qué sigla se abrevia «hemoglobina corpuscular media»?",
         "a": "HCM",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qfd26c38"
       }
     ]
   },
@@ -644,12 +694,14 @@
       {
         "q": "¿Qué significa la sigla CHCM?",
         "a": "concentración de hemoglobina corpuscular media",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q933fad1"
       },
       {
         "q": "¿Con qué sigla se abrevia «concentración de hemoglobina corpuscular media»?",
         "a": "CHCM",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qeb46339"
       }
     ]
   },
@@ -669,12 +721,14 @@
       {
         "q": "¿Qué significa la sigla MCHC?",
         "a": "= CHCM (sigla en inglés)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qfbc00f5"
       },
       {
         "q": "¿Cuál es la sigla en inglés equivalente a la CHCM (concentración de hemoglobina corpuscular media)?",
         "a": "MCHC",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qb09c1d8"
       }
     ]
   },
@@ -694,12 +748,14 @@
       {
         "q": "¿Qué significa la sigla ADE?",
         "a": "ancho de distribución eritrocitaria",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q3d8df2c"
       },
       {
         "q": "¿Con qué sigla se abrevia «ancho de distribución eritrocitaria»?",
         "a": "ADE",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q02b8dbe"
       }
     ]
   },
@@ -719,12 +775,14 @@
       {
         "q": "¿Qué significa la sigla RDW?",
         "a": "= ADE (en inglés)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qf5a3c1e"
       },
       {
         "q": "¿Cuál es la sigla en inglés equivalente al ADE (ancho de distribución eritrocitaria)?",
         "a": "RDW",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q8dc2159"
       }
     ]
   },
@@ -744,12 +802,14 @@
       {
         "q": "¿Qué significa la sigla VPM?",
         "a": "volumen plaquetario medio",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q955272d"
       },
       {
         "q": "¿Con qué sigla se abrevia «volumen plaquetario medio»?",
         "a": "VPM",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qb0cbe40"
       }
     ]
   },
@@ -769,12 +829,14 @@
       {
         "q": "¿Qué significa la sigla VSG?",
         "a": "velocidad de sedimentación globular",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qc4892a0"
       },
       {
         "q": "¿Con qué sigla se abrevia «velocidad de sedimentación globular»?",
         "a": "VSG",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qa6a437c"
       }
     ]
   },
@@ -795,12 +857,14 @@
       {
         "q": "¿Qué significa la sigla PCR?",
         "a": "proteína C reactiva",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qa789a22"
       },
       {
         "q": "¿Con qué sigla se abrevia «proteína C reactiva»?",
         "a": "PCR",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q9f6e2fa"
       }
     ]
   },
@@ -821,12 +885,14 @@
       {
         "q": "¿Qué significa la sigla TP?",
         "a": "tiempo de protrombina",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q1fb0ce6"
       },
       {
         "q": "¿Con qué sigla se abrevia «tiempo de protrombina»?",
         "a": "TP",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q111e490"
       }
     ]
   },
@@ -846,12 +912,14 @@
       {
         "q": "¿Qué significa la sigla INR?",
         "a": "razón normalizada internacional (del TP)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qd1f1d25"
       },
       {
         "q": "¿Con qué sigla se abrevia «razón normalizada internacional (del TP)»?",
         "a": "INR",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q95253a8"
       }
     ]
   },
@@ -871,12 +939,14 @@
       {
         "q": "¿Qué significa la sigla TTPa?",
         "a": "tiempo de tromboplastina parcial activado",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q7d02a5f"
       },
       {
         "q": "¿Con qué sigla se abrevia «tiempo de tromboplastina parcial activado»?",
         "a": "TTPa",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qfe8d253"
       }
     ]
   },
@@ -897,12 +967,14 @@
       {
         "q": "¿Qué significa la sigla TGO?",
         "a": "transaminasa glutámico oxalacética (= AST)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q2d21449"
       },
       {
         "q": "¿Con qué sigla se abrevia «transaminasa glutámico oxalacética (= AST)»?",
         "a": "TGO",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q75327eb"
       }
     ]
   },
@@ -922,12 +994,14 @@
       {
         "q": "¿Qué significa la sigla TGP?",
         "a": "transaminasa glutámico pirúvica (= ALT)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qf733f21"
       },
       {
         "q": "¿Con qué sigla se abrevia «transaminasa glutámico pirúvica (= ALT)»?",
         "a": "TGP",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qe2dd21a"
       }
     ]
   },
@@ -947,12 +1021,14 @@
       {
         "q": "¿Qué significa la sigla AST?",
         "a": "aspartato aminotransferasa",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q91f4bc7"
       },
       {
         "q": "¿Con qué sigla se abrevia «aspartato aminotransferasa»?",
         "a": "AST",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qeb0311e"
       }
     ]
   },
@@ -972,12 +1048,14 @@
       {
         "q": "¿Qué significa la sigla ALT?",
         "a": "alanina aminotransferasa",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qeed41d6"
       },
       {
         "q": "¿Con qué sigla se abrevia «alanina aminotransferasa»?",
         "a": "ALT",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q8e8095a"
       }
     ]
   },
@@ -997,12 +1075,14 @@
       {
         "q": "¿Qué significa la sigla FA?",
         "a": "fosfatasa alcalina",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q5d82624"
       },
       {
         "q": "¿Con qué sigla se abrevia «fosfatasa alcalina»?",
         "a": "FA",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q80740de"
       }
     ]
   },
@@ -1022,12 +1102,14 @@
       {
         "q": "¿Qué significa la sigla GGT?",
         "a": "gamma-glutamil transferasa",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qbb15316"
       },
       {
         "q": "¿Con qué sigla se abrevia «gamma-glutamil transferasa»?",
         "a": "GGT",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q99adc42"
       }
     ]
   },
@@ -1047,12 +1129,14 @@
       {
         "q": "¿Qué significa la sigla BT?",
         "a": "bilirrubina total",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qf1723d2"
       },
       {
         "q": "¿Con qué sigla se abrevia «bilirrubina total»?",
         "a": "BT",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qf7706b8"
       }
     ]
   },
@@ -1072,12 +1156,14 @@
       {
         "q": "¿Qué significa la sigla BD?",
         "a": "bilirrubina directa",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qc51c0d9"
       },
       {
         "q": "¿Con qué sigla se abrevia «bilirrubina directa»?",
         "a": "BD",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q2783408"
       }
     ]
   },
@@ -1097,12 +1183,14 @@
       {
         "q": "¿Qué significa la sigla BI?",
         "a": "bilirrubina indirecta",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qac1f41e"
       },
       {
         "q": "¿Con qué sigla se abrevia «bilirrubina indirecta»?",
         "a": "BI",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qff64c55"
       }
     ]
   },
@@ -1122,12 +1210,14 @@
       {
         "q": "¿Qué significa la sigla PT?",
         "a": "proteínas totales",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q3d40474"
       },
       {
         "q": "¿Con qué sigla se abrevia «proteínas totales»?",
         "a": "PT",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qa295874"
       }
     ]
   },
@@ -1148,12 +1238,14 @@
       {
         "q": "¿Qué significa la sigla CT?",
         "a": "colesterol total",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q25013c3"
       },
       {
         "q": "¿Con qué sigla se abrevia «colesterol total»?",
         "a": "CT",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qed22872"
       }
     ]
   },
@@ -1173,12 +1265,14 @@
       {
         "q": "¿Qué significa la sigla HDL?",
         "a": "colesterol de lipoproteínas de alta densidad («bueno»)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qa7c3c37"
       },
       {
         "q": "¿Con qué sigla se abrevia «colesterol de lipoproteínas de alta densidad («bueno»)»?",
         "a": "HDL",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qb4283c4"
       }
     ]
   },
@@ -1199,12 +1293,14 @@
       {
         "q": "¿Qué significa la sigla LDL?",
         "a": "colesterol de lipoproteínas de baja densidad («malo»)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q90350b9"
       },
       {
         "q": "¿Con qué sigla se abrevia «colesterol de lipoproteínas de baja densidad («malo»)»?",
         "a": "LDL",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q1dcfab2"
       }
     ]
   },
@@ -1224,12 +1320,14 @@
       {
         "q": "¿Qué significa la sigla TG?",
         "a": "triglicéridos",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qf99db51"
       },
       {
         "q": "¿Con qué sigla se abrevia «triglicéridos»?",
         "a": "TG",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qab17fef"
       }
     ]
   },
@@ -1249,12 +1347,14 @@
       {
         "q": "¿Qué significa la sigla BUN?",
         "a": "nitrógeno ureico en sangre",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qdf34c49"
       },
       {
         "q": "¿Con qué sigla se abrevia «nitrógeno ureico en sangre»?",
         "a": "BUN",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q88cedaa"
       }
     ]
   },
@@ -1274,12 +1374,14 @@
       {
         "q": "¿Qué significa la sigla Cr?",
         "a": "creatinina",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q0e2dc9d"
       },
       {
         "q": "¿Con qué sigla se abrevia «creatinina»?",
         "a": "Cr",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qef7266c"
       }
     ]
   },
@@ -1299,12 +1401,14 @@
       {
         "q": "¿Qué significa la sigla TFG?",
         "a": "tasa de filtración glomerular",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q18caaf4"
       },
       {
         "q": "¿Con qué sigla se abrevia «tasa de filtración glomerular»?",
         "a": "TFG",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qfd085b6"
       }
     ]
   },
@@ -1324,12 +1428,14 @@
       {
         "q": "¿Qué significa la sigla PTOG?",
         "a": "prueba de tolerancia oral a la glucosa",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q56f87d4"
       },
       {
         "q": "¿Con qué sigla se abrevia «prueba de tolerancia oral a la glucosa»?",
         "a": "PTOG",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q4b23216"
       }
     ]
   },
@@ -1349,12 +1455,14 @@
       {
         "q": "¿Qué significa la sigla HbA1c?",
         "a": "hemoglobina glicosilada",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q830b379"
       },
       {
         "q": "¿Con qué sigla se abrevia «hemoglobina glicosilada»?",
         "a": "HbA1c",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qcf4b7cd"
       }
     ]
   },
@@ -1374,12 +1482,14 @@
       {
         "q": "¿Qué significa la sigla EPO?",
         "a": "eritropoyetina",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q4475d6f"
       },
       {
         "q": "¿Con qué sigla se abrevia «eritropoyetina»?",
         "a": "EPO",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q5b54f08"
       }
     ]
   },
@@ -1399,12 +1509,14 @@
       {
         "q": "¿Qué significa la sigla IL?",
         "a": "interleucina",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q15a6e9a"
       },
       {
         "q": "¿Con qué sigla se abrevia «interleucina»?",
         "a": "IL",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qc69643c"
       }
     ]
   },
@@ -1424,12 +1536,14 @@
       {
         "q": "¿Qué significa la sigla IgG?",
         "a": "inmunoglobulina G",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q84c28d2"
       },
       {
         "q": "¿Con qué sigla se abrevia «inmunoglobulina G»?",
         "a": "IgG",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q8f11344"
       }
     ]
   },
@@ -1449,12 +1563,14 @@
       {
         "q": "¿Qué significa la sigla IgM?",
         "a": "inmunoglobulina M",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q9f0c297"
       },
       {
         "q": "¿Con qué sigla se abrevia «inmunoglobulina M»?",
         "a": "IgM",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qc1d3b34"
       }
     ]
   },
@@ -1474,12 +1590,14 @@
       {
         "q": "¿Qué significa la sigla CD3?",
         "a": "marcador de linfocitos T",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qd9b6514"
       },
       {
         "q": "¿Con qué sigla se abrevia «marcador de linfocitos T»?",
         "a": "CD3",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q2a5c77e"
       }
     ]
   },
@@ -1499,12 +1617,14 @@
       {
         "q": "¿Qué significa la sigla CCP?",
         "a": "péptido cíclico citrulinado (anti-CCP)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q92a6d08"
       },
       {
         "q": "¿Con qué sigla se abrevia «péptido cíclico citrulinado (anti-CCP)»?",
         "a": "CCP",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qad607e7"
       }
     ]
   },
@@ -1524,12 +1644,14 @@
       {
         "q": "¿Qué significa la sigla LPL?",
         "a": "lipoproteína lipasa",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qc13cb0c"
       },
       {
         "q": "¿Con qué sigla se abrevia «lipoproteína lipasa»?",
         "a": "LPL",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q23816ee"
       }
     ]
   },
@@ -1549,12 +1671,14 @@
       {
         "q": "¿Qué significa la sigla B12?",
         "a": "vitamina B12 (cobalamina)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qe78d802"
       },
       {
         "q": "¿Con qué sigla se abrevia «vitamina B12 (cobalamina)»?",
         "a": "B12",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q9c47891"
       }
     ]
   },
@@ -1574,12 +1698,14 @@
       {
         "q": "¿Qué significa la sigla HCl?",
         "a": "ácido clorhídrico",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q8303443"
       },
       {
         "q": "¿Con qué sigla se abrevia «ácido clorhídrico»?",
         "a": "HCl",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q5fec72e"
       }
     ]
   },
@@ -1599,12 +1725,14 @@
       {
         "q": "¿Qué significa la sigla LSN?",
         "a": "límite superior de lo normal",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qf48c1e8"
       },
       {
         "q": "¿Con qué sigla se abrevia «límite superior de lo normal»?",
         "a": "LSN",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qf8d51b2"
       }
     ]
   },
@@ -1624,12 +1752,14 @@
       {
         "q": "¿Qué significa la sigla VN?",
         "a": "valor normal",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q7ba28c8"
       },
       {
         "q": "¿Con qué sigla se abrevia «valor normal»?",
         "a": "VN",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q3ea8c0c"
       }
     ]
   },
@@ -1649,12 +1779,14 @@
       {
         "q": "¿Qué significa la sigla UI?",
         "a": "unidades internacionales",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q68a4b37"
       },
       {
         "q": "¿Con qué sigla se abrevia «unidades internacionales»?",
         "a": "UI",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q80bb44c"
       }
     ]
   },
@@ -1674,12 +1806,14 @@
       {
         "q": "¿Qué significa la sigla UA?",
         "a": "unidades de amilasa",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qacdb20b"
       },
       {
         "q": "¿Con qué sigla se abrevia «unidades de amilasa»?",
         "a": "UA",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q1ba38dd"
       }
     ]
   },
@@ -1699,12 +1833,14 @@
       {
         "q": "¿Qué significa la sigla mEq?",
         "a": "miliequivalentes",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q73f8d33"
       },
       {
         "q": "¿Con qué sigla se abrevia «miliequivalentes»?",
         "a": "mEq",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q427d9e5"
       }
     ]
   },
@@ -1724,12 +1860,14 @@
       {
         "q": "¿Qué significa la sigla pH?",
         "a": "grado de acidez",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q9511ffc"
       },
       {
         "q": "¿Con qué sigla se abrevia «grado de acidez»?",
         "a": "pH",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q3d0942b"
       }
     ]
   },
@@ -1749,12 +1887,14 @@
       {
         "q": "¿Qué significa la sigla ECG?",
         "a": "electrocardiograma",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q8fabfc0"
       },
       {
         "q": "¿Con qué sigla se abrevia «electrocardiograma»?",
         "a": "ECG",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q09365b1"
       }
     ]
   },
@@ -1774,12 +1914,14 @@
       {
         "q": "¿Qué significa la sigla Rx?",
         "a": "radiografía",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q6fff702"
       },
       {
         "q": "¿Con qué sigla se abrevia «radiografía»?",
         "a": "Rx",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qb65a90f"
       }
     ]
   },
@@ -1800,12 +1942,14 @@
       {
         "q": "¿Qué significa la sigla ICT?",
         "a": "índice cardiotorácico",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q0103d56"
       },
       {
         "q": "¿Con qué sigla se abrevia «índice cardiotorácico»?",
         "a": "ICT",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q879f347"
       }
     ]
   },
@@ -1825,12 +1969,14 @@
       {
         "q": "¿Qué significa la sigla VD?",
         "a": "ventrículo derecho",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q437c483"
       },
       {
         "q": "¿Con qué sigla se abrevia «ventrículo derecho»?",
         "a": "VD",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q160f225"
       }
     ]
   },
@@ -1850,12 +1996,14 @@
       {
         "q": "¿Qué significa la sigla VI?",
         "a": "ventrículo izquierdo",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q048a62e"
       },
       {
         "q": "¿Con qué sigla se abrevia «ventrículo izquierdo»?",
         "a": "VI",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qe35986b"
       }
     ]
   },
@@ -1875,12 +2023,14 @@
       {
         "q": "¿Qué significa la sigla AD?",
         "a": "aurícula derecha",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q6fae57f"
       },
       {
         "q": "¿Con qué sigla se abrevia «aurícula derecha»?",
         "a": "AD",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q791518d"
       }
     ]
   },
@@ -1901,12 +2051,14 @@
       {
         "q": "¿Qué significa la sigla AP?",
         "a": "arteria pulmonar",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q27d9576"
       },
       {
         "q": "¿Con qué sigla se abrevia «arteria pulmonar»?",
         "a": "AP",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q8f7c058"
       }
     ]
   },
@@ -1926,12 +2078,14 @@
       {
         "q": "¿Qué significa la sigla VCS?",
         "a": "vena cava superior",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q6e02c9e"
       },
       {
         "q": "¿Con qué sigla se abrevia «vena cava superior»?",
         "a": "VCS",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q5181c36"
       }
     ]
   },
@@ -1952,12 +2106,14 @@
       {
         "q": "¿Qué significa la sigla PaO2?",
         "a": "presión arterial de oxígeno",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q505cc8b"
       },
       {
         "q": "¿Con qué sigla se abrevia «presión arterial de oxígeno»?",
         "a": "PaO2",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qf25c680"
       }
     ]
   },
@@ -1977,12 +2133,14 @@
       {
         "q": "¿Qué significa la sigla PaCO2?",
         "a": "presión arterial de CO2",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q045250c"
       },
       {
         "q": "¿Con qué sigla se abrevia «presión arterial de CO2»?",
         "a": "PaCO2",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q2b7f50c"
       }
     ]
   },
@@ -2002,12 +2160,14 @@
       {
         "q": "¿Qué significa la sigla HCO3?",
         "a": "bicarbonato",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qd1bddf6"
       },
       {
         "q": "¿Con qué sigla se abrevia «bicarbonato»?",
         "a": "HCO3",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q523098a"
       }
     ]
   },
@@ -2027,12 +2187,14 @@
       {
         "q": "¿Qué significa la sigla AG?",
         "a": "anión gap (brecha aniónica)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q35b518d"
       },
       {
         "q": "¿Con qué sigla se abrevia «anión gap (brecha aniónica)»?",
         "a": "AG",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qe7b593d"
       }
     ]
   },
@@ -2052,12 +2214,14 @@
       {
         "q": "¿Qué significa la sigla LDH?",
         "a": "lactato deshidrogenasa",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qc57e0ea"
       },
       {
         "q": "¿Con qué sigla se abrevia «lactato deshidrogenasa»?",
         "a": "LDH",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qa55491e"
       }
     ]
   },
@@ -2077,12 +2241,14 @@
       {
         "q": "¿Qué significa la sigla LCR?",
         "a": "líquido cefalorraquídeo",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qe103503"
       },
       {
         "q": "¿Con qué sigla se abrevia «líquido cefalorraquídeo»?",
         "a": "LCR",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q50534f8"
       }
     ]
   },
@@ -2102,12 +2268,14 @@
       {
         "q": "¿Qué significa la sigla GASA?",
         "a": "gradiente de albúmina suero-ascitis",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q9ad1dc1"
       },
       {
         "q": "¿Con qué sigla se abrevia «gradiente de albúmina suero-ascitis»?",
         "a": "GASA",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qa49dff9"
       }
     ]
   },
@@ -2127,12 +2295,14 @@
       {
         "q": "¿Qué significa la sigla PMN?",
         "a": "polimorfonucleares (neutrófilos)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q969e34e"
       },
       {
         "q": "¿Con qué sigla se abrevia «polimorfonucleares (neutrófilos)»?",
         "a": "PMN",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q2070bd6"
       }
     ]
   },
@@ -2152,12 +2322,14 @@
       {
         "q": "¿Qué significa la sigla PBE?",
         "a": "peritonitis bacteriana espontánea",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q53d1335"
       },
       {
         "q": "¿Con qué sigla se abrevia «peritonitis bacteriana espontánea»?",
         "a": "PBE",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q9d84d04"
       }
     ]
   },
@@ -2177,12 +2349,14 @@
       {
         "q": "En el glosario de ECG, imagen, gases y líquidos, ¿qué significa la sigla PA?",
         "a": "posteroanterior (proyección de Rx) · presión arterial",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qede7d36"
       },
       {
         "q": "En una radiografía de tórax, ¿qué sigla indica la proyección posteroanterior?",
         "a": "PA",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q99b467c"
       }
     ]
   },
@@ -2203,12 +2377,14 @@
       {
         "q": "¿Qué significa la sigla HTA?",
         "a": "hipertensión arterial",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q35020dc"
       },
       {
         "q": "¿Con qué sigla se abrevia «hipertensión arterial»?",
         "a": "HTA",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qe5882e6"
       }
     ]
   },
@@ -2228,12 +2404,14 @@
       {
         "q": "¿Qué significa la sigla HTP?",
         "a": "hipertensión pulmonar",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q0f0f4c0"
       },
       {
         "q": "¿Con qué sigla se abrevia «hipertensión pulmonar»?",
         "a": "HTP",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qde8a4c6"
       }
     ]
   },
@@ -2253,12 +2431,14 @@
       {
         "q": "¿Qué significa la sigla HT?",
         "a": "hipertensión (HT portal)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q8b1ea46"
       },
       {
         "q": "¿Con qué sigla se abrevia «hipertensión (HT portal)»?",
         "a": "HT",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q4fa6301"
       }
     ]
   },
@@ -2279,12 +2459,14 @@
       {
         "q": "¿Qué significa la sigla IC?",
         "a": "insuficiencia cardiaca",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q80a3140"
       },
       {
         "q": "¿Con qué sigla se abrevia «insuficiencia cardiaca»?",
         "a": "IC",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q3c56eb0"
       }
     ]
   },
@@ -2304,12 +2486,14 @@
       {
         "q": "¿Qué significa la sigla IAM?",
         "a": "infarto agudo de miocardio",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q7ff3518"
       },
       {
         "q": "¿Con qué sigla se abrevia «infarto agudo de miocardio»?",
         "a": "IAM",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q3303b1e"
       }
     ]
   },
@@ -2329,12 +2513,14 @@
       {
         "q": "¿Qué significa la sigla IAo?",
         "a": "insuficiencia aórtica",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q72de1b9"
       },
       {
         "q": "¿Con qué sigla se abrevia «insuficiencia aórtica»?",
         "a": "IAo",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qadb23db"
       }
     ]
   },
@@ -2354,12 +2540,14 @@
       {
         "q": "¿Qué significa la sigla EAo?",
         "a": "estenosis aórtica",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qf4ab9b7"
       },
       {
         "q": "¿Con qué sigla se abrevia «estenosis aórtica»?",
         "a": "EAo",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q76ff973"
       }
     ]
   },
@@ -2379,12 +2567,14 @@
       {
         "q": "¿Qué significa la sigla AV?",
         "a": "auriculoventricular (bloqueo AV)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q9399d7c"
       },
       {
         "q": "¿Con qué sigla se abrevia «auriculoventricular (bloqueo AV)»?",
         "a": "AV",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qfeba55e"
       }
     ]
   },
@@ -2404,12 +2594,14 @@
       {
         "q": "¿Qué significa la sigla FV?",
         "a": "fibrilación ventricular",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q6351c6d"
       },
       {
         "q": "¿Con qué sigla se abrevia «fibrilación ventricular»?",
         "a": "FV",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q2f9168c"
       }
     ]
   },
@@ -2429,12 +2621,14 @@
       {
         "q": "¿Qué significa la sigla CPC?",
         "a": "cor pulmonale crónico",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q42a397f"
       },
       {
         "q": "¿Con qué sigla se abrevia «cor pulmonale crónico»?",
         "a": "CPC",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q8d54c60"
       }
     ]
   },
@@ -2454,12 +2648,14 @@
       {
         "q": "¿Qué significa la sigla EAP?",
         "a": "edema agudo de pulmón",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q2541b4d"
       },
       {
         "q": "¿Con qué sigla se abrevia «edema agudo de pulmón»?",
         "a": "EAP",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qd54510e"
       }
     ]
   },
@@ -2479,12 +2675,14 @@
       {
         "q": "¿Qué significa la sigla TVP?",
         "a": "trombosis venosa profunda",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qfc8d82d"
       },
       {
         "q": "¿Con qué sigla se abrevia «trombosis venosa profunda»?",
         "a": "TVP",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q84d4b99"
       }
     ]
   },
@@ -2504,12 +2702,14 @@
       {
         "q": "¿Qué significa la sigla TEP?",
         "a": "tromboembolia pulmonar",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q5707346"
       },
       {
         "q": "¿Con qué sigla se abrevia «tromboembolia pulmonar»?",
         "a": "TEP",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q0a1a100"
       }
     ]
   },
@@ -2530,12 +2730,14 @@
       {
         "q": "¿Qué significa la sigla EPOC?",
         "a": "enfermedad pulmonar obstructiva crónica",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q61054ca"
       },
       {
         "q": "¿Con qué sigla se abrevia «enfermedad pulmonar obstructiva crónica»?",
         "a": "EPOC",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qafb52a5"
       }
     ]
   },
@@ -2555,12 +2757,14 @@
       {
         "q": "¿Qué significa la sigla TBC?",
         "a": "tuberculosis",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q1c9019e"
       },
       {
         "q": "¿Con qué sigla se abrevia «tuberculosis»?",
         "a": "TBC",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qb2c41ae"
       }
     ]
   },
@@ -2580,12 +2784,14 @@
       {
         "q": "¿Qué significa la sigla DM?",
         "a": "diabetes mellitus",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q0d7aea1"
       },
       {
         "q": "¿Con qué sigla se abrevia «diabetes mellitus»?",
         "a": "DM",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q772f7e4"
       }
     ]
   },
@@ -2606,12 +2812,14 @@
       {
         "q": "¿Qué significa la sigla IRA?",
         "a": "insuficiencia renal aguda",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qa4253d6"
       },
       {
         "q": "¿Con qué sigla se abrevia «insuficiencia renal aguda»?",
         "a": "IRA",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qf3c0114"
       }
     ]
   },
@@ -2631,12 +2839,14 @@
       {
         "q": "¿Qué significa la sigla IRC?",
         "a": "insuficiencia renal crónica",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q29ddddb"
       },
       {
         "q": "¿Con qué sigla se abrevia «insuficiencia renal crónica»?",
         "a": "IRC",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q284338c"
       }
     ]
   },
@@ -2656,12 +2866,14 @@
       {
         "q": "¿Qué significa la sigla IR?",
         "a": "insuficiencia renal",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qe3d8c62"
       },
       {
         "q": "¿Con qué sigla se abrevia «insuficiencia renal»?",
         "a": "IR",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q868694c"
       }
     ]
   },
@@ -2681,12 +2893,14 @@
       {
         "q": "¿Qué significa la sigla NTA?",
         "a": "necrosis tubular aguda",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q5870d34"
       },
       {
         "q": "¿Con qué sigla se abrevia «necrosis tubular aguda»?",
         "a": "NTA",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q9f70699"
       }
     ]
   },
@@ -2706,12 +2920,14 @@
       {
         "q": "¿Qué significa la sigla NTI?",
         "a": "nefritis tubulointersticial",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q2b37cd9"
       },
       {
         "q": "¿Con qué sigla se abrevia «nefritis tubulointersticial»?",
         "a": "NTI",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q5891499"
       }
     ]
   },
@@ -2731,12 +2947,14 @@
       {
         "q": "¿Qué significa la sigla GN?",
         "a": "glomerulonefritis",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q9a4e9ed"
       },
       {
         "q": "¿Con qué sigla se abrevia «glomerulonefritis»?",
         "a": "GN",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qbc96e0c"
       }
     ]
   },
@@ -2756,12 +2974,14 @@
       {
         "q": "¿Qué significa la sigla ITU?",
         "a": "infección del tracto urinario",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q8562263"
       },
       {
         "q": "¿Con qué sigla se abrevia «infección del tracto urinario»?",
         "a": "ITU",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q6d47873"
       }
     ]
   },
@@ -2781,12 +3001,14 @@
       {
         "q": "¿Qué significa la sigla HDA?",
         "a": "hemorragia digestiva alta",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q24a74cb"
       },
       {
         "q": "¿Con qué sigla se abrevia «hemorragia digestiva alta»?",
         "a": "HDA",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q78af1ab"
       }
     ]
   },
@@ -2806,12 +3028,14 @@
       {
         "q": "¿Qué significa la sigla EHNA?",
         "a": "esteatohepatitis no alcohólica",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qc311fea"
       },
       {
         "q": "¿Con qué sigla se abrevia «esteatohepatitis no alcohólica»?",
         "a": "EHNA",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q620b343"
       }
     ]
   },
@@ -2831,12 +3055,14 @@
       {
         "q": "¿Qué significa la sigla CU?",
         "a": "colitis ulcerosa",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qe5b49d7"
       },
       {
         "q": "¿Con qué sigla se abrevia «colitis ulcerosa»?",
         "a": "CU",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qc505e9a"
       }
     ]
   },
@@ -2857,12 +3083,14 @@
       {
         "q": "¿Qué significa la sigla AR?",
         "a": "artritis reumatoide",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q1d9b71e"
       },
       {
         "q": "¿Con qué sigla se abrevia «artritis reumatoide»?",
         "a": "AR",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qe41c488"
       }
     ]
   },
@@ -2882,12 +3110,14 @@
       {
         "q": "¿Qué significa la sigla LES?",
         "a": "lupus eritematoso sistémico",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qa651d68"
       },
       {
         "q": "¿Con qué sigla se abrevia «lupus eritematoso sistémico»?",
         "a": "LES",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q61af82f"
       }
     ]
   },
@@ -2907,12 +3137,14 @@
       {
         "q": "¿Qué significa la sigla CID?",
         "a": "coagulación intravascular diseminada",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qc352776"
       },
       {
         "q": "¿Con qué sigla se abrevia «coagulación intravascular diseminada»?",
         "a": "CID",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q18ae857"
       }
     ]
   },
@@ -2932,12 +3164,14 @@
       {
         "q": "¿Qué significa la sigla PTI?",
         "a": "púrpura trombocitopénica inmune",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q1e7a61a"
       },
       {
         "q": "¿Con qué sigla se abrevia «púrpura trombocitopénica inmune»?",
         "a": "PTI",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qeea469b"
       }
     ]
   },
@@ -2957,12 +3191,14 @@
       {
         "q": "¿Qué significa la sigla HF?",
         "a": "hipercolesterolemia familiar",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q53fde98"
       },
       {
         "q": "¿Con qué sigla se abrevia «hipercolesterolemia familiar»?",
         "a": "HF",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qb9d4174"
       }
     ]
   },
@@ -2982,12 +3218,14 @@
       {
         "q": "¿Qué significa la sigla GH?",
         "a": "hormona del crecimiento",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q8437be8"
       },
       {
         "q": "¿Con qué sigla se abrevia «hormona del crecimiento»?",
         "a": "GH",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q4aa1089"
       }
     ]
   },
@@ -3007,12 +3245,14 @@
       {
         "q": "¿Qué significa la sigla HELLP?",
         "a": "hemólisis, enzimas hepáticas elevadas y plaquetas bajas (del embarazo)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q3665295"
       },
       {
         "q": "¿Con qué sigla se abrevia «hemólisis, enzimas hepáticas elevadas y plaquetas bajas (del embarazo)»?",
         "a": "HELLP",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qc32169a"
       }
     ]
   },
@@ -3032,12 +3272,14 @@
       {
         "q": "¿Qué significa la sigla CASPAR?",
         "a": "criterios de clasificación de la artritis psoriásica",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q8e347af"
       },
       {
         "q": "¿Con qué sigla se abrevia «criterios de clasificación de la artritis psoriásica»?",
         "a": "CASPAR",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q247f870"
       }
     ]
   },
@@ -3057,12 +3299,14 @@
       {
         "q": "¿Qué significa la sigla NF?",
         "a": "no fraccionada (heparina NF)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qe4b61b0"
       },
       {
         "q": "¿Con qué sigla se abrevia «no fraccionada (heparina NF)»?",
         "a": "NF",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qeeeef82"
       }
     ]
   },
@@ -3082,12 +3326,14 @@
       {
         "q": "¿Qué indica la marca «lit.» en el atlas?",
         "a": "texto gris azulado en cursiva: no está en tu teoría, completado con literatura médica estándar",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qa2d35a7"
       },
       {
         "q": "¿Con qué marca se señala en el atlas el texto gris azulado en cursiva que no está en tu teoría y se completó con literatura médica estándar?",
         "a": "lit.",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q1f97fb7"
       }
     ]
   },
@@ -3107,12 +3353,14 @@
       {
         "q": "¿Qué significa la sigla OMS?",
         "a": "Organización Mundial de la Salud",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q1f0e679"
       },
       {
         "q": "¿Con qué sigla se abrevia «Organización Mundial de la Salud»?",
         "a": "OMS",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q9c1dcf4"
       }
     ]
   },
@@ -3132,12 +3380,14 @@
       {
         "q": "¿Qué significa la sigla msnm?",
         "a": "metros sobre el nivel del mar",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qeb62dc0"
       },
       {
         "q": "¿Con qué sigla se abrevia «metros sobre el nivel del mar»?",
         "a": "msnm",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q43700b7"
       }
     ]
   }

@@ -4,8 +4,9 @@
 // Zona de caza (js/juego-caza.js): ruta diaria casa → UNA con criaturas salvajes que rotan cada 5 min, misiones y cebo.
 // Contrato: crearJuego({ ATLAS, MEMO, PALACIOS, MAPA, srs, raiz, RUTA?, CASOS?, SIGLAS?, FACIES? }) → { pintar() }.
 import * as E from './juego-estado.js';
-import { esc, norm, resaltar, barajar, azar, pausa, sinMov, numeros, aLL, metros, mezclar, desplazar, crearRuta, confetti } from './juego-util.js';
+import { esc, norm, resaltar, barajar, azar, pausa, sinMov, seguirSinMov, idCarta, numeros, aLL, metros, mezclar, desplazar, crearRuta, confetti } from './juego-util.js';
 import { crearCaza } from './juego-caza.js';
+import * as mias from './mias.js';
 
 const LEAF = 'https://unpkg.com/leaflet@1.9.4/dist/';
 const TESELAS = {
@@ -106,7 +107,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
 
   function preguntasDe(d) {
     const m = d.m;
-    if (m?.preguntas?.length) return m.preguntas.filter((p) => p?.q && p?.a).map((p, i) => ({ q: p.q, a: p.a, tipo: p.tipo || '', card: `${d.id}#${i}`, fuente: 'memo' }));
+    if (m?.preguntas?.length) return m.preguntas.map((p, i) => (p?.q && p?.a ? { q: p.q, a: p.a, tipo: p.tipo || '', card: idCarta(d.id, p, i), fuente: 'memo' } : null)).filter(Boolean);
     if (d.tipo === 'escala') {
       const it = (d.src.interpretacion || []).filter((x) => x[0] && x[1]);
       return it.length ? it.map(([r, t]) => ({ q: `${d.nombre}: ¿qué significa ${r}?`, a: t, card: `${d.id}#n`, fuente: 'interp' }))
@@ -160,7 +161,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
       oscuro: () => esOscuro(), esperarAnim: (ms) => { animHasta = Date.now() + ms; },
     },
   });
-  const calificar = caza.calificar;   // srs.calificar + avance de la misión "repasa vencidas"
+  const calificar = (card, nota) => caza.calificar(card, nota, 'juego');   // srs.calificar + avance de la misión "repasa vencidas"
 
   // ---------- logros ----------
   const conCodigo = (d) => d.m && ((d.m.codigo || []).length || (d.m.tecnicas || []).includes('memorizar-numeros'));
@@ -242,7 +243,8 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     el = { jg: q('.jg'), mapa: q('.jg-mapa'), aviso: q('.jg-aviso'), hud: q('.jg-hud'), hoja: q('.jg-hoja'), hojaIn: q('.jg-hoja-in'), dex: q('.jg-dex'), toasts: q('.jg-toasts'), fabs: q('.jg-fabs'), cielo: q('.jg-cielo') };
     caza.montarBarra(q('.jg-caza'));
     el.jg.classList.toggle('con-caza', caza.activo);
-    setInterval(ponerTeselas, 60000);   // franja horaria del mapa (amanecer / día / atardecer / noche)
+    seguirSinMov(el.jg);
+    vigilarVisibilidad();
     raiz.addEventListener('click', alClic);
     raiz.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') { if (dex.ficha) { dex.ficha = null; pintarDex(); } else if (dex.abierto) cerrarDex(); else cerrarHoja(); }
@@ -254,6 +256,22 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', ponerTeselas);
     E.suscribir(alEvento);
     montado = true;
+  }
+  // J3: pausar temporizadores, GPS y animaciones con la pestaña oculta o la vista Juego cerrada
+  let relojTeselas = null;
+  function vigilarVisibilidad() {
+    const seccion = raiz.closest('.vista');
+    const visible = () => !document.hidden && (!seccion || seccion.classList.contains('on'));
+    const aplicar = () => {
+      const v = visible();
+      el.jg?.classList.toggle('jg-pausa', !v);
+      caza.pausar(!v);
+      if (v && !relojTeselas) { relojTeselas = setInterval(ponerTeselas, 60000); ponerTeselas(); }   // franja horaria del mapa
+      else if (!v && relojTeselas) { clearInterval(relojTeselas); relojTeselas = null; }
+    };
+    document.addEventListener('visibilitychange', aplicar);
+    if (seccion) new MutationObserver(aplicar).observe(seccion, { attributes: true, attributeFilter: ['class'] });
+    aplicar();
   }
   function ajustarAlto() {
     if (!el.jg) return;
@@ -359,8 +377,8 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     temaActual = clave;
     capaTeselas?.remove();
     capaTeselas = usarCarto
-      ? L.tileLayer(TESELAS[t], { subdomains: 'abcd', maxZoom: 20, attribution: ATRIB })
-      : L.tileLayer(OSM, { maxZoom: 19, attribution: ATRIB_OSM, className: 'jg-osm' });
+      ? L.tileLayer(TESELAS[t], { subdomains: 'abcd', maxZoom: 20, attribution: ATRIB, crossOrigin: 'anonymous' })
+      : L.tileLayer(OSM, { maxZoom: 19, attribution: ATRIB_OSM, className: 'jg-osm', crossOrigin: 'anonymous' });
     capaTeselas.addTo(mapa);
   }
   function claseZoom() {
@@ -393,7 +411,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     return L.divIcon({
       className: 'jg-av-w', iconSize: [56, 64], iconAnchor: [28, 58],
       html: `<div class="jg-av ${avatar.caminando ? 'camina' : ''} ${avatar.izq ? 'izq' : ''}"><div class="jg-av-pulso"></div><div class="jg-av-sombra"></div>
-        <div class="jg-av-cuerpo">${avatar.src ? `<img src="${esc(avatar.src)}" alt="">` : '<span>🧑‍⚕️</span>'}</div></div>`,
+        <div class="jg-av-cuerpo">${avatar.src ? `<img decoding="async" src="${esc(avatar.src)}" alt="">` : '<span>🧑‍⚕️</span>'}</div></div>`,
     });
   }
   function pintarAvatar() { avatar.marca?.setIcon(iconoAvatar()); }
@@ -546,19 +564,23 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     reto = est === 'capturada' ? null : nuevoReto(d);
     abrirHoja({ tipo: 'parada', id });
   }
-  function nuevoReto(d, modo = 'elegir', evitar) {
+  // J1: el reto arranca escribiendo de memoria (#007, #042); las 4 opciones y la pista llegan tras fallar
+  function nuevoReto(d, modo = 'escribir', evitar) {
     const p = elegirPregunta(d, evitar);
-    return p ? { id: d.id, p, modo, fallos: 0, malas: new Set(), fase: 'preg', escrito: '', ganado: null, eraEstado: estadoDe(d) } : null;
+    return p ? { id: d.id, p, modo, vioOpciones: false, fallos: 0, malas: new Set(), fase: 'preg', escrito: '', ganado: null, eraEstado: estadoDe(d) } : null;
   }
 
-  const imgEscena = (d, cls = 'jg-escena') => (d.m?.imagen ? `<img class="${cls}" src="${esc(d.m.imagen)}" alt="${esc(d.m.ancla || d.nombre)}" loading="lazy" onerror="this.remove()">` : '');
+  const imgEscena = (d, cls = 'jg-escena') => (d.m?.imagen ? `<img decoding="async" class="${cls}" src="${esc(d.m.imagen)}" alt="${esc(d.m.ancla || d.nombre)}" loading="lazy" onerror="this.remove()">` : '');
   function htmlPista(d) {
     const m = d.m;
-    if (m && (m.ancla || m.escena || m.codigo?.length)) {
-      return `<div class="jg-pista"><p class="jg-pt">💡 Pista de tu palacio</p>
-        ${m.ancla ? `<p class="ancla">⚓ ${esc(m.ancla)}</p>` : ''}
-        ${m.codigo?.length ? `<div class="jg-cod">${m.codigo.map((c) => `<span><b>${esc(c.palabra)}</b><small>${esc(c.letras || '')}</small></span>`).join('')}</div>` : ''}
-        ${m.escena ? `<p class="jg-esc-txt">🎬 ${esc(m.escena)}</p>` : ''}</div>`;
+    const mia = mias.get(d.id) || null;   // V4: tu ancla / tu escena, si existen, van primero
+    const ancla = mia?.ancla || m?.ancla, escena = mia?.escena || m?.escena;
+    if (ancla || escena || m?.codigo?.length) {
+      return `<div class="jg-pista"><p class="jg-pt">💡 Pista de tu palacio${mia?.ancla || mia?.escena ? ' <small>(tu versión)</small>' : ''}</p>
+        ${imgEscena(d)}
+        ${ancla ? `<p class="ancla">⚓ ${esc(ancla)}</p>` : ''}
+        ${m?.codigo?.length ? `<div class="jg-cod">${m.codigo.map((c) => `<span><b>${esc(c.palabra)}</b><small>${esc(c.letras || '')}</small></span>`).join('')}</div>` : ''}
+        ${escena ? `<p class="jg-esc-txt">🎬 ${esc(escena)}</p>` : ''}</div>`;
     }
     if (d.tipo === 'fila') {
       const f = d.src; const pts = [];
@@ -614,9 +636,10 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
       const ops = r.modo === 'elegir'
         ? `<div class="jg-ops" role="group" aria-label="Opciones">${p.opciones.map((o, i) => `<button class="jg-op ${r.malas.has(i) ? 'mala' : ''}" data-acc="op" data-i="${i}" ${r.malas.has(i) ? 'disabled' : ''}>
             <span class="l">${'ABCD'[i]}</span><span class="t">${resaltar(o)}</span></button>`).join('')}</div>
-           <button class="jg-link" data-acc="modo" data-modo="escribir">✍️ Prefiero escribirla de memoria</button>`
-        : `<div class="jg-escribir"><textarea rows="2" placeholder="Escribe tu respuesta de memoria…" aria-label="Tu respuesta">${esc(r.escrito)}</textarea>
-            <div class="jg-btns"><button class="btn pri" data-acc="comprobar">Comprobar</button><button class="jg-link" data-acc="modo" data-modo="elegir">🔘 Ver 4 opciones</button></div></div>`;
+           ${fallo ? '' : '<button class="jg-link" data-acc="modo" data-modo="escribir">✍️ Prefiero escribirla de memoria</button>'}`
+        : `<p class="jg-mute">✍️ Responde de memoria, sin opciones: escribir cuesta más y fija más.</p>
+          <div class="jg-escribir"><textarea rows="2" placeholder="Escribe tu respuesta de memoria…" aria-label="Tu respuesta">${esc(r.escrito)}</textarea>
+            <div class="jg-btns"><button class="btn pri" data-acc="comprobar">Comprobar</button><button class="btn" data-acc="nose">🤷 No sé</button><button class="jg-link" data-acc="modo" data-modo="elegir">🔘 Ver 4 opciones (½ XP)</button></div></div>`;
       cuerpo = `${est === 'repaso' && E.capturado(d.id) ? '<p class="jg-aviso-rep">⏰ Esta carta se está escapando de tu memoria: recaptúrala.</p>' : ''}
         <div class="jg-reto-t">🎯 Reto de captura${r.fallos ? ` · intento ${r.fallos + 1}` : ''}</div>
         <p class="jg-q">${esc(p.q)}</p>
@@ -625,7 +648,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
         ${r.fallos >= 2 ? '<button class="jg-link" data-acc="ver-resp">👀 Ver la respuesta</button>' : ''}
         ${r.verResp ? `<p class="jg-resp">${resaltar(p.a)}</p>` : ''}`;
     }
-    return `${cabParada(d, est)}${r.fase !== 'ok' ? imgEscena(d) : ''}<div class="jg-reto">${cuerpo}</div>`;
+    return `${cabParada(d, est)}${r.fase === 'ok' ? imgEscena(d) : ''}<div class="jg-reto">${cuerpo}</div>`;
   }
   function fechaRepaso(d) {
     const due = Math.min(...cardsDe(d).map((c) => S.info(c)?.due || Infinity));
@@ -660,9 +683,11 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
   async function acierto(boton) {
     const r = reto; const d = POR_ID[r.id];
     const eraRepaso = r.eraEstado === 'repaso' && E.capturado(d.id);
-    if (!r.fallos) calificar(r.p.card, 3);
+    // J1: escribiendo → nota 3 y XP completo; con las 4 opciones a la vista → nota máx. 2 y la mitad de XP
+    if (!r.fallos) calificar(r.p.card, r.vioOpciones ? 2 : 3);
     const nueva = E.capturar(d.id);
     let xp = nueva ? (r.fallos ? XP.nuevaTrasFallo : XP.nueva) : eraRepaso ? XP.repaso : XP.practica;
+    if (r.vioOpciones && !r.fallos) xp = Math.max(XP.practica, Math.round(xp / 2));
     const x2 = conBonus(d) && (nueva || eraRepaso);
     if (x2) { xp *= 2; E.contar('enLugar'); }
     if (eraRepaso) E.contar('repasos');
@@ -700,7 +725,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     const lug = LUG[hoja.sid]; const cap = capturadasDe(lug), tot = lug.datos.length, conq = E.conquistado(lug.sid);
     const pend = lug.datos.filter(pendiente).length;
     return `<div class="jg-gym-cab" style="--c:${esc(lug.color)}">
-        <img class="jg-gym-img" src="img/lugares/${esc(lug.sid)}.webp" alt="" onerror="this.remove()">
+        <img decoding="async" class="jg-gym-img" src="img/lugares/${esc(lug.sid)}.webp" alt="" onerror="this.remove()">
         <div class="jg-gym-emb ${conq ? 'conq' : ''}">${esc(lug.icono)}${conq ? '<i>👑</i>' : ''}</div>
         <div><p class="jg-mute">Gimnasio · ${esc(lug.titulo)}</p><h3>${esc(lug.nombre)}</h3></div></div>
       ${lug.porque ? `<p class="jg-porque">${esc(lug.porque)}</p>` : ''}
@@ -708,9 +733,18 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
         <span>🧠 ${cap}/${tot} capturadas${pend ? ` · ⏰ ${pend} por repasar` : ''}${conq ? ' · 👑 conquistado' : ''}</span></div>
       <div class="jg-btns"><button class="btn pri jg-btn-des" data-acc="desafio" data-sid="${lug.sid}">⚔️ Desafío del gimnasio <small>5 preguntas · gana con ${GANA_DESAFIO}</small></button>
         ${mapa && lug.ll ? `<button class="btn" data-acc="acercar" data-sid="${lug.sid}">🔍 Acercar</button>` : ''}</div>
+      <div class="jg-palacio"><span>${chipPalacio(lug.sid)}</span><button class="btn" data-acc="palacio" data-sid="${lug.sid}">🏛️ Pasear este palacio</button></div>
       <p class="jg-pt">Memoparadas del recorrido</p>
       <ol class="jg-lista">${lug.datos.map((d) => { const e = estadoDe(d); return `<li><button data-acc="ir" data-id="${d.id}" class="${e}">
         <span class="jg-mini ${e}" style="--c:${esc(d.color)}">${esc(d.icono)}</span><span><b>${E.capturado(d.id) ? esc(d.nombre) : '???'}</b><small>📍 ${esc(d.ubicacion)}</small></span></button></li>`; }).join('')}</ol>`;
+  }
+  // C2: estado del lugar como tarjeta de palacio `pal:${sid}` (se califica en la vista Ciudad)
+  function chipPalacio(sid) {
+    const t = S.info(`pal:${sid}`);
+    if (!t) return '🏛️ Palacio sin pasear';
+    if (S.vence(`pal:${sid}`)) return '🏛️ <b>Toca repasar el palacio</b>';
+    const dias = Math.max(1, Math.ceil((t.due - Date.now()) / 86400000));
+    return `🏛️ Próximo paseo: ${dias === 1 ? 'mañana' : `en ${dias} días`}`;
   }
   function empezarDesafio(sid) {
     const lug = LUG[sid];
@@ -876,8 +910,9 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
       case 'ir': cerrarDex(); irAParada(b.dataset.id); break;
       case 'retar': cerrarDex(); abrirParada(b.dataset.id); if (!reto) { reto = nuevoReto(POR_ID[b.dataset.id]); pintarHoja(); } break;
       case 'op': elegir(+b.dataset.i, b); break;
-      case 'modo': if (reto) { reto.modo = b.dataset.modo; pintarHoja(); } break;
+      case 'modo': if (reto) { if (b.dataset.modo === 'elegir' && !reto.fallos) reto.vioOpciones = true; reto.modo = b.dataset.modo; pintarHoja(); } break;
       case 'comprobar': comprobarEscrito(); break;
+      case 'nose': if (reto) { reto.escrito = ''; fallo(null); } break;
       case 'autoeval': if (b.dataset.ok === '1') acierto(null); else fallo(null); break;
       case 'ver-resp': if (reto) { reto.verResp = true; pintarHoja(); } break;
       case 'practicar': { const d = POR_ID[hoja.id]; reto = nuevoReto(d); pintarHoja(); break; }
@@ -887,6 +922,12 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
       case 'gym': abrirGym(b.dataset.sid); break;
       case 'acercar': { const l = LUG[b.dataset.sid]; if (l?.ll) mapa.flyTo(l.ll, 18, { duration: sinMov() ? 0 : 0.7 }); if (innerWidth < 900) cerrarHoja(); break; }
       case 'desafio': empezarDesafio(b.dataset.sid); break;
+      case 'palacio': {
+        const sid = b.dataset.sid; cerrarHoja(true);
+        dispatchEvent(new CustomEvent('memo:vista', { detail: { vista: 'ciudad' } }));
+        dispatchEvent(new CustomEvent('memo:palacio', { detail: { sid } }));
+        break;
+      }
       case 'd-op': responderDesafio(+b.dataset.i, b); break;
       case 'ejemplo': cargarEjemplo(b); break;
       default: caza.alClic(a, b); break;

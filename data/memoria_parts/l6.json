@@ -45,22 +45,26 @@
       {
         "q": "¿Volumen normal de líquido pleural?",
         "a": "3-5 ml",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q94f0527"
       },
       {
         "q": "¿Bajo qué volumen un derrame puede no verse en la placa de pie y cómo se busca?",
         "a": "<300 ml; en decúbito lateral",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q85e7757"
       },
       {
         "q": "¿Tríada del derrame pleural al examen físico?",
         "a": "Matidez + vibraciones vocales ↓ + murmullo vesicular abolido",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q171908e"
       },
       {
         "q": "Vas a hacer una toracocentesis: ¿dónde punzas?",
         "a": "8.º-9.º EIC por detrás de la línea axilar posterior, por el borde superior de la costilla",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q22be081"
       }
     ],
     "fuentes_tecnica": [
@@ -99,22 +103,26 @@
       {
         "q": "¿Aspecto del trasudado pleural?",
         "a": "Claro, amarillo pálido, sin coágulos",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qdf2a91c"
       },
       {
         "q": "¿Por qué se forma un trasudado?",
         "a": "Pleura sana con falla de presiones: hidrostática ↑ u oncótica ↓; no cumple ningún criterio de Light",
-        "tipo": "explica"
+        "tipo": "explica",
+        "pid": "q2687891"
       },
       {
         "q": "Nombra las 6 causas de trasudado del atlas",
         "a": "IC derecha/congestiva, cirrosis, nefrótico, hipoproteinemia, mixedema, Meigs",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "qfbac099"
       },
       {
         "q": "Cirrótico con derrame claro y ningún criterio de Light: ¿trasudado o exudado?",
         "a": "Trasudado",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q95129ba"
       }
     ],
     "fuentes_tecnica": [
@@ -153,22 +161,26 @@
       {
         "q": "¿Aspecto del exudado pleural?",
         "a": "Opaco, color variable, forma coágulos",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qe23c3ee"
       },
       {
         "q": "¿Cuántos criterios de Light hacen falta para llamarlo exudado?",
         "a": "Basta 1",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q94ae256"
       },
       {
         "q": "Causas de exudado del atlas (4)",
         "a": "TBC, neumonía mal tratada, neoplasia, embolia pulmonar",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q1f4b641"
       },
       {
         "q": "¿Qué diferencia de fondo separa exudado de trasudado?",
         "a": "Exudado: pleura enferma (lesión directa); trasudado: pleura sana con falla de presiones",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qcc50638"
       }
     ],
     "fuentes_tecnica": [
@@ -223,22 +235,26 @@
       {
         "q": "¿Cuáles son los 3 criterios de Light y sus cortes?",
         "a": "Proteína pleura/suero >0.5; LDH pleura/suero >0.6; LDH pleural >2/3 del LSN sérico",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "qc21c367"
       },
       {
         "q": "¿Cuántos criterios bastan para exudado?",
         "a": "≥1",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q725ac5c"
       },
       {
         "q": ">0.6 es el corte de qué cociente en Light",
         "a": "LDH pleura/suero",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qffe45cd"
       },
       {
         "q": "Proteína pleura/suero 0.55, LDH pleura/suero 0.4, LDH pleural <2/3 del LSN: ¿qué es?",
         "a": "Exudado (cumple el criterio de proteínas)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q9ebb655"
       }
     ],
     "fuentes_tecnica": [
@@ -294,22 +310,26 @@
       {
         "q": "Líquido pleural sanguinolento en >60 años sugiere…",
         "a": "Neoplasia",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qdbf4d3a"
       },
       {
         "q": "¿Corte de triglicéridos que define quilotórax?",
         "a": "TG >110 mg/dL (aspecto lechoso)",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q4ee19c9"
       },
       {
         "q": "¿Cuándo un derrame hemático es hemotórax?",
         "a": "Hto pleural >50% del sanguíneo",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q506bb24"
       },
       {
         "q": "Líquido pleural achocolatado: ¿qué causa?",
         "a": "Amebiana",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qf0b5b9f"
       }
     ],
     "fuentes_tecnica": [
@@ -368,22 +388,26 @@
       {
         "q": "¿pH normal del líquido pleural?",
         "a": "7.60-7.64",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q762ac11"
       },
       {
         "q": "¿Qué tres cortes indican paraneumónico complicado/empiema?",
         "a": "pH <7.2, glucosa <60 mg/dL o LDH >1000",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q5239370"
       },
       {
         "q": "Derrame paraneumónico con pH 7.1: ¿conducta?",
         "a": "Tubo de drenaje (paraneumónico complicado/empiema)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q22bd708"
       },
       {
         "q": "Glucosa pleural ≈ sérica (>60) y LDH <50% de la sérica describen…",
         "a": "Líquido pleural normal",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qd62d2cf"
       }
     ],
     "fuentes_tecnica": [
@@ -432,22 +456,26 @@
       {
         "q": "¿Celularidad normal del líquido pleural?",
         "a": "<1000 células/µL, predominio mononuclear",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q63d3a6e"
       },
       {
         "q": "¿Valor de ADA pleural que apoya TBC?",
         "a": ">40 U/L",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qcc7134e"
       },
       {
         "q": "Derrame exudativo con 70% de linfocitos: ¿qué sospechas?",
         "a": "TBC o neoplasia (linfocitos >50%)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qdb48fcf"
       },
       {
         "q": "Predominio de neutrófilos en líquido pleural indica…",
         "a": "Exudado inflamatorio",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q26900d3"
       }
     ],
     "fuentes_tecnica": [
@@ -492,22 +520,26 @@
       {
         "q": "¿Cómo se calcula el GASA?",
         "a": "Albúmina sérica − albúmina ascítica",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q0c54e5a"
       },
       {
         "q": "GASA ≥1.1 g/dL indica…",
         "a": "Origen portal (hipertensión portal: cirrosis, IC)",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qd810176"
       },
       {
         "q": "Albúmina sérica 3.0 y ascítica 2.4 g/dL: ¿GASA y origen?",
         "a": "0.6 → <1.1, origen peritoneal (TBC, cáncer)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q3817db3"
       },
       {
         "q": "Ascitis por TBC peritoneal: ¿GASA alto o bajo?",
         "a": "Bajo (<1.1)",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qc749c3e"
       }
     ],
     "fuentes_tecnica": [
@@ -552,22 +584,26 @@
       {
         "q": "¿Corte de PMN en líquido ascítico para diagnosticar PBE?",
         "a": "≥250/mm³",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "q2b73972"
       },
       {
         "q": "Cirrótico con ascitis y fiebre; PMN 400/mm³ en paracentesis. ¿Diagnóstico y conducta?",
         "a": "PBE; antibiótico (cefotaxima) sin esperar cultivo",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q8c806b2"
       },
       {
         "q": "¿Se espera el cultivo para tratar la PBE?",
         "a": "No",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qd9596ee"
       },
       {
         "q": "PMN <250/mm³ en líquido ascítico es…",
         "a": "Normal",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qdb0bcec"
       }
     ],
     "fuentes_tecnica": [
@@ -617,22 +653,26 @@
       {
         "q": "¿Cuánto líquido ascítico se extrae para estudio y qué estudios se piden?",
         "a": "~100 ml: físico, fisicoquímico (proteínas, densidad), citológico, bacteriológico",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q5600d0a"
       },
       {
         "q": "¿Corte de TG para ascitis quilosa?",
         "a": "TG >200 mg/dL",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qa615b15"
       },
       {
         "q": "Quiloso: ¿corte de TG en ascitis vs en pleura?",
         "a": "Ascitis >200 mg/dL; quilotórax >110 mg/dL",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q77f4e1b"
       },
       {
         "q": "Ascitis hemorrágica sugiere…",
         "a": "Neoplasia o trauma",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q467ba88"
       }
     ],
     "fuentes_tecnica": [
@@ -681,22 +721,26 @@
       {
         "q": "Ordena signo del charco, matidez desplazable y oleada con su volumen",
         "a": "Charco ≈120 mL; matidez desplazable ≈500 mL; oleada >1 litro",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "qf4f3c1a"
       },
       {
         "q": "¿Desde qué volumen la ascitis es clínica?",
         "a": ">500 ml",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qe4c8f28"
       },
       {
         "q": "¿Dónde se punza una paracentesis?",
         "a": "Tercio externo de la línea ombligo-EIAS izquierda, sobre zona mate",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q109390d"
       },
       {
         "q": "Abdomen tenso con oleada positiva: ¿cuánto líquido calculas?",
         "a": ">1 litro (ascitis a tensión)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qe9104a6"
       }
     ],
     "fuentes_tecnica": [
@@ -745,22 +789,26 @@
       {
         "q": "¿Presión normal del LCR?",
         "a": "<180 mmH2O (docente: hasta 20 cm de agua)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q1222ec1"
       },
       {
         "q": "Paciente con papiledema y sospecha de meningitis: ¿qué haces antes de la punción lumbar?",
         "a": "TAC (riesgo de herniación)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q5da79c6"
       },
       {
         "q": "¿En qué posición se mide la presión del LCR?",
         "a": "Decúbito lateral relajado",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q5474fb2"
       },
       {
         "q": "Presión de LCR aumentada con neutrófilos sugiere…",
         "a": "Meningitis bacteriana",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q0a77ee2"
       }
     ],
     "fuentes_tecnica": [
@@ -805,22 +853,26 @@
       {
         "q": "¿Aspecto normal del LCR?",
         "a": "Transparente",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q9cbeef0"
       },
       {
         "q": "LCR xantocrómico indica…",
         "a": "Hemorragia subaracnoidea (>12 h)",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qe6c7576"
       },
       {
         "q": "LCR con sangre que se aclara del 1.º al 3.er tubo: ¿qué es?",
         "a": "Punción traumática",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q96c4981"
       },
       {
         "q": "Fiebre, púrpura y LCR purulento con diplococos gramnegativos: ¿agente?",
         "a": "Meningococo",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q457c803"
       }
     ],
     "fuentes_tecnica": [
@@ -870,22 +922,26 @@
       {
         "q": "¿Celularidad normal del LCR?",
         "a": "<5 linfocitos/ml (según la fila) y ningún eritrocito",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q658b09a"
       },
       {
         "q": "Predominio de neutrófilos en el LCR sugiere…",
         "a": "Meningitis bacteriana",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "qfd9a709"
       },
       {
         "q": "¿Cómo se corrige el conteo de leucocitos en una punción traumática?",
         "a": "Restar 1 leucocito por cada 500-1000 eritrocitos del LCR",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q2e591d3"
       },
       {
         "q": "LCR con linfocitos y celularidad mixta, proteínas muy altas: ¿qué patrón?",
         "a": "Tuberculoso (mononucleares o mixtas)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q2d69202"
       }
     ],
     "fuentes_tecnica": [
@@ -940,22 +996,26 @@
       {
         "q": "¿Proteínas normales en LCR?",
         "a": "20-40 mg/100 ml",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qcb6d7fe"
       },
       {
         "q": "Proteínas ↑ en LCR con células normales: ¿cómo se llama y qué sugiere?",
         "a": "Disociación albúmino-citológica; Guillain-Barré",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qb82162e"
       },
       {
         "q": "¿En qué meningitis el aumento de proteínas es más llamativo: bacteriana, viral o TBC?",
         "a": "TBC (viral solo moderado)",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q662ca67"
       },
       {
         "q": "La gammaglobulina en LCR es {{<10%}} y la albúmina es {{mayor}} que la globulina",
         "a": "<10%; mayor",
-        "tipo": "cloze"
+        "tipo": "cloze",
+        "pid": "qb823c6c"
       }
     ],
     "fuentes_tecnica": [
@@ -1009,22 +1069,26 @@
       {
         "q": "¿Glucosa normal del LCR?",
         "a": "50-60% de la glucemia",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q78197ad"
       },
       {
         "q": "Relación glucosa LCR/sangre <0.4 sugiere…",
         "a": "Meningitis bacteriana",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qf1ab322"
       },
       {
         "q": "¿Cómo está la glucosa del LCR en la meningitis viral?",
         "a": "Normal",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qe9f24e1"
       },
       {
         "q": "Vas a puncionar para estudiar LCR: ¿qué examen de sangre pides a la vez?",
         "a": "Glucemia simultánea",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q4f124c4"
       }
     ],
     "fuentes_tecnica": [
@@ -1063,22 +1127,26 @@
       {
         "q": "Patrón de LCR en meningitis bacteriana",
         "a": "Presión ↑, neutrófilos abundantes, proteínas ↑, glucosa ↓",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q96905f4"
       },
       {
         "q": "Tríada clínica meníngea",
         "a": "Fiebre + rigidez de nuca + alteración de conciencia",
-        "tipo": "lista"
+        "tipo": "lista",
+        "pid": "q79fdd38"
       },
       {
         "q": "Fiebre, rigidez de nuca, confusión; LCR con 93% PMN y glucosa baja: ¿patrón?",
         "a": "Bacteriano (piógeno)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q9cbee8e"
       },
       {
         "q": "Kernig y Brudzinski positivos indican…",
         "a": "Irritación meníngea (clínica meníngea)",
-        "tipo": "inversa"
+        "tipo": "inversa",
+        "pid": "q30eff70"
       }
     ],
     "fuentes_tecnica": [
@@ -1116,17 +1184,20 @@
       {
         "q": "Patrón de LCR en meningitis viral (aséptica)",
         "a": "Linfocitosis, proteínas moderadamente ↑, glucosa normal",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "qbdae9f0"
       },
       {
         "q": "LCR con linfocitos y glucosa baja: ¿viral?",
         "a": "No: pensar en TBC u hongos",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "q926d819"
       },
       {
         "q": "Meningitis de evolución tranquila, LCR linfocitario, glucosa normal: ¿patrón?",
         "a": "Viral (aséptico)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "qf9a0a48"
       }
     ],
     "fuentes_tecnica": [
@@ -1175,22 +1246,26 @@
       {
         "q": "Patrón de LCR en meningitis tuberculosa",
         "a": "Celularidad moderada mononuclear o mixta, proteínas muy ↑, glucosa ↓ o normal",
-        "tipo": "directa"
+        "tipo": "directa",
+        "pid": "q8ed4beb"
       },
       {
         "q": "¿ADA en LCR que apoya TBC?",
         "a": ">10 U/L",
-        "tipo": "umbral"
+        "tipo": "umbral",
+        "pid": "qf892664"
       },
       {
         "q": "ADA que apoya TBC: ¿en pleura y en LCR?",
         "a": "Pleura >40 U/L; LCR >10 U/L",
-        "tipo": "trampa"
+        "tipo": "trampa",
+        "pid": "qae7c8e7"
       },
       {
         "q": "Meningitis con parálisis del VI par e hidrocefalia: ¿qué etiología piensas?",
         "a": "Tuberculosa (exudado basal)",
-        "tipo": "caso"
+        "tipo": "caso",
+        "pid": "q291ba86"
       }
     ],
     "fuentes_tecnica": [

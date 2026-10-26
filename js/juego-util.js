@@ -1,4 +1,5 @@
-// Utilidades compartidas por el modo juego (juego.js y juego-caza.js): texto, azar, geometría y confetti.
+// Utilidades compartidas por el modo juego (juego.js y juego-caza.js) y Entrenar: texto, azar, geometría y confetti.
+import * as ajustes from './ajustes.js';
 
 export const esc = (t) => String(t ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 export const norm = (t) => String(t ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
@@ -6,7 +7,44 @@ export const resaltar = (t) => esc(t).replace(/([<>≥≤]=?\s?)?\d+(?:[.,]\d+)?
 export const barajar = (a, rnd = Math.random) => { const r = [...a]; for (let i = r.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; } return r; };
 export const azar = (a, rnd = Math.random) => a[Math.floor(rnd() * a.length)];
 export const pausa = (ms) => new Promise((r) => setTimeout(r, ms));
-export const sinMov = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+/** Reducir animaciones: Ajustes (T2) puede forzarlo con 'reducirMov'; si no, se hereda prefers-reduced-motion. */
+export const sinMov = () => {
+  let v; try { v = ajustes.get?.('reducirMov'); } catch { v = undefined; }
+  if (typeof v === 'boolean') return v;   // Ajustes devuelve el valor efectivo
+  if (v === true || v === 1 || v === 'si' || v === 'sí' || v === 'on') return true;
+  return matchMedia('(prefers-reduced-motion: reduce)').matches;
+};
+/** Pone o quita la clase `sin-mov` en los nodos dados cuando cambia el ajuste (y una vez al llamar). */
+export function seguirSinMov(...nodos) {
+  const poner = () => nodos.forEach((n) => n?.classList?.toggle('sin-mov', sinMov()));
+  poner();
+  try { ajustes.alCambiar?.((k) => { if (k === 'reducirMov') poner(); }); } catch { /* sin ajustes */ }
+  return poner;
+}
+/** Distancia de edición (Levenshtein) entre dos textos. */
+export function levenshtein(a, b) {
+  a = String(a); b = String(b);
+  if (a === b) return 0;
+  let prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i];
+    for (let j = 1; j <= b.length; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    prev = cur;
+  }
+  return prev[b.length];
+}
+const VACIAS = new Set('de del la las los el en y o a al con por para sin que un una unos unas se su sus lo es como mas'.split(' '));
+/** Palabras clave (≥ 4 letras, sin palabras vacías) de un texto normalizado. */
+export const palabrasClave = (t) => [...new Set(norm(t).replace(/[^a-z0-9ñ ]/g, ' ').split(' ').filter((w) => w.length >= 4 && !VACIAS.has(w)))];
+/** Fracción de palabras clave de `correcta` presentes en `escrito` (tolera 1 letra en palabras de ≥ 6). */
+export function cobertura(escrito, correcta) {
+  const ks = palabrasClave(correcta); if (!ks.length) return norm(escrito) === norm(correcta) ? 1 : 0;
+  const es = palabrasClave(escrito);
+  const ok = ks.filter((k) => es.some((w) => w === k || (k.length >= 6 && levenshtein(w, k) <= 1) || (k.length >= 6 && w.length >= 5 && (k.startsWith(w) || w.startsWith(k)))));
+  return ok.length / ks.length;
+}
+/** Id estable de tarjeta srs (R6): `${base}#${pid}` si la pregunta tiene pid; si no, `${base}#${i}`. Igual que repaso.js. */
+export const idCarta = (base, p, i) => (p?.pid ? `${base}#${/^\d+$/.test(String(p.pid)) ? `p${p.pid}` : p.pid}` : `${base}#${i}`);
 export const numeros = (t) => (String(t).match(/\d+(?:[.,]\d+)?/g) || []).map((x) => x.replace(',', '.'));
 
 /** Generador pseudoaleatorio con semilla de texto (cyrb128 + mulberry32): misma semilla → misma secuencia. */
