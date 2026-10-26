@@ -132,3 +132,65 @@ export function reiniciar() { estado = vacio(); guardar(); emitir('xp', { ganado
 // ---------- última memoparada visitada (para reubicar el avatar) ----------
 export function marcarParada(id) { estado.ultima = id; guardar(); }
 export function ultimaParada() { return estado.ultima || null; }
+
+// =====================================================================
+// Zona de caza (ruta diaria): apariciones, cebo, misiones y ruta elegida.
+// =====================================================================
+export const hoy = () => hoyStr();
+
+/** Ruta diaria elegida ('A', 'B', …). */
+export function rutaElegida() { return estado.rutaDiaria || null; }
+export function elegirRuta(id) { estado.rutaDiaria = id; guardar(); }
+
+/** Apariciones de la ventana actual. clave = "ventana|ruta". lista = [{ k, ll, r }]. */
+export function apariciones(clave) {
+  const c = estado.caza;
+  return c && c.clave === clave ? { lista: c.lista || [], cazadas: new Set(c.cazadas || []), extra: !!c.extra } : null;
+}
+export function guardarApariciones(clave, lista, extra = false) {
+  const prev = estado.caza?.clave === clave ? estado.caza.cazadas || [] : [];
+  estado.caza = { clave, lista, cazadas: prev, extra };
+  guardar();
+}
+/** Marca una aparición (por su clave k) como atrapada en la ventana actual. */
+export function cazar(clave, k) {
+  if (!estado.caza || estado.caza.clave !== clave) return;
+  if (!estado.caza.cazadas.includes(k)) estado.caza.cazadas.push(k);
+  guardar();
+}
+
+// ---------- cebo de estudio ----------
+/** Activa el cebo por `min` minutos. → ms de vigencia. */
+export function activarCebo(min = 15) {
+  estado.cebo = { hasta: Date.now() + min * 60000 };
+  contar('cebos');
+  emitir('cebo', { hasta: estado.cebo.hasta });
+  return min * 60000;
+}
+/** ms que le quedan al cebo (0 si no hay). */
+export function ceboRestante() { return Math.max(0, (estado.cebo?.hasta || 0) - Date.now()); }
+
+// ---------- misiones diarias ----------
+/** Devuelve las misiones de hoy; si cambió el día, las crea con `crear(dia)` → [{ id, txt, ic, tipo, meta, xp, filtro }]. */
+export function misionesHoy(crear) {
+  const dia = hoyStr();
+  if (!estado.misiones || estado.misiones.dia !== dia) {
+    const lista = (crear?.(dia) || []).map((m) => ({ ...m, prog: 0, hecha: false }));
+    estado.misiones = { dia, lista };
+    guardar();
+  }
+  return estado.misiones.lista;
+}
+/** Avanza las misiones que cumplan `coincide(m)`. → misiones recién completadas. */
+export function avanzarMisiones(coincide, n = 1) {
+  const ms = estado.misiones?.dia === hoyStr() ? estado.misiones.lista : [];
+  const hechas = [];
+  ms.forEach((m) => {
+    if (m.hecha || !coincide(m)) return;
+    m.prog = Math.min(m.meta, (m.prog || 0) + n);
+    if (m.prog >= m.meta) { m.hecha = true; hechas.push(m); }
+  });
+  if (ms.length) guardar();
+  hechas.forEach((m) => emitir('mision', m));
+  return hechas;
+}

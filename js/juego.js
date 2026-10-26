@@ -1,8 +1,11 @@
 // Modo juego tipo Pokémon GO sobre el mapa real de Puno.
 // Ruta del paseo = camino animado · lugares = gimnasios · estaciones = memoparadas.
 // Tocar una memoparada → el avatar camina hasta ella → reto de captura (recuerdo activo) → 🧠 se cierra.
-// Contrato: crearJuego({ ATLAS, MEMO, PALACIOS, MAPA, srs, raiz }) → { pintar() }.
+// Zona de caza (js/juego-caza.js): ruta diaria casa → UNA con criaturas salvajes que rotan cada 5 min, misiones y cebo.
+// Contrato: crearJuego({ ATLAS, MEMO, PALACIOS, MAPA, srs, raiz, RUTA?, CASOS?, SIGLAS?, FACIES? }) → { pintar() }.
 import * as E from './juego-estado.js';
+import { esc, norm, resaltar, barajar, azar, pausa, sinMov, numeros, aLL, metros, mezclar, desplazar, crearRuta, confetti } from './juego-util.js';
+import { crearCaza } from './juego-caza.js';
 
 const LEAF = 'https://unpkg.com/leaflet@1.9.4/dist/';
 const TESELAS = {
@@ -37,15 +40,7 @@ const BONUS_MIN = 15;            // minutos que dura el bonus después de ubicar
 const XP = { nueva: 50, nuevaTrasFallo: 25, repaso: 20, practica: 5, desafioOk: 10, gimnasio: 150, perfecto: 50 };
 const GANA_DESAFIO = 4;          // aciertos de 5 para conquistar
 
-const esc = (t) => String(t ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const norm = (t) => String(t ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
-const resaltar = (t) => esc(t).replace(/([<>≥≤]=?\s?)?\d+(?:[.,]\d+)?(?:\s?[-–]\s?\d+(?:[.,]\d+)?)?/g, '<b>$&</b>');
-const barajar = (a) => { const r = [...a]; for (let i = r.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; } return r; };
-const azar = (a) => a[Math.floor(Math.random() * a.length)];
-const pausa = (ms) => new Promise((r) => setTimeout(r, ms));
-const sinMov = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 const esOscuro = () => { const t = document.documentElement.dataset.theme; return t ? t === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches; };
-const numeros = (t) => (String(t).match(/\d+(?:[.,]\d+)?/g) || []).map((x) => x.replace(',', '.'));
 
 // ---------- carga perezosa de Leaflet y de la hoja de estilos ----------
 let promesaLeaflet = null;
@@ -70,88 +65,11 @@ function cargarCSS() {
   document.head.appendChild(Object.assign(document.createElement('link'), { rel: 'stylesheet', href }));
 }
 
-// ---------- geometría (metros en plano local; suficiente a escala de ciudad) ----------
-const M = 111320;
-const aLL = (p) => {
-  if (Array.isArray(p) && Number.isFinite(+p[0]) && Number.isFinite(+p[1])) return [+p[0], +p[1]];
-  if (p && Number.isFinite(+p.lat) && Number.isFinite(+(p.lng ?? p.lon))) return [+p.lat, +(p.lng ?? p.lon)];
-  return null;
-};
-function metros(a, b) {
-  const k = Math.cos(((a[0] + b[0]) / 2) * Math.PI / 180);
-  return Math.hypot((b[1] - a[1]) * k * M, (b[0] - a[0]) * M);
-}
-const mezclar = (a, b, t) => [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t];
-function desplazar(ll, dist, ang) {
-  return [ll[0] + (dist * Math.cos(ang)) / M, ll[1] + (dist * Math.sin(ang)) / (M * Math.cos(ll[0] * Math.PI / 180))];
-}
-function crearRuta(pts) {
-  const acum = [0];
-  for (let i = 1; i < pts.length; i++) acum.push(acum[i - 1] + metros(pts[i - 1], pts[i]));
-  const largo = acum[acum.length - 1] || 0;
-  function proyectar(p) {
-    let mejor = { d: Infinity, s: 0 };
-    const k = Math.cos(p[0] * Math.PI / 180);
-    for (let i = 0; i < pts.length - 1; i++) {
-      const a = pts[i], b = pts[i + 1];
-      const ax = a[1] * k, ay = a[0], bx = b[1] * k, by = b[0], px = p[1] * k, py = p[0];
-      const dx = bx - ax, dy = by - ay, l2 = dx * dx + dy * dy;
-      const t = l2 ? Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / l2)) : 0;
-      const q = mezclar(a, b, t), d = metros(p, q);
-      if (d < mejor.d) mejor = { d, s: acum[i] + t * (acum[i + 1] - acum[i]) };
-    }
-    return mejor;
-  }
-  function punto(s) {
-    s = Math.max(0, Math.min(largo, s));
-    let i = 0;
-    while (i < pts.length - 2 && acum[i + 1] < s) i++;
-    const seg = acum[i + 1] - acum[i];
-    return mezclar(pts[i], pts[i + 1] || pts[i], seg ? (s - acum[i]) / seg : 0);
-  }
-  function tramo(s0, s1) {
-    const out = [punto(s0)];
-    if (s1 >= s0) { for (let i = 0; i < pts.length; i++) if (acum[i] > s0 && acum[i] < s1) out.push(pts[i]); }
-    else { for (let i = pts.length - 1; i >= 0; i--) if (acum[i] < s0 && acum[i] > s1) out.push(pts[i]); }
-    out.push(punto(s1));
-    return out;
-  }
-  return { pts, largo, proyectar, punto, tramo };
-}
-
-// ---------- confetti propio (canvas, ~2,5 s) ----------
-function confetti(colores) {
-  if (sinMov()) return;
-  const c = document.createElement('canvas');
-  c.className = 'jg-confetti';
-  c.setAttribute('aria-hidden', 'true');
-  document.body.appendChild(c);
-  const dpr = Math.min(2, devicePixelRatio || 1);
-  const W = (c.width = innerWidth * dpr), H = (c.height = innerHeight * dpr);
-  const ctx = c.getContext('2d');
-  const piezas = Array.from({ length: 160 }, () => ({
-    x: W / 2 + (Math.random() - 0.5) * W * 0.3, y: H * 0.35, vx: (Math.random() - 0.5) * 26 * dpr, vy: (-Math.random() * 22 - 8) * dpr,
-    w: (6 + Math.random() * 7) * dpr, h: (4 + Math.random() * 6) * dpr, r: Math.random() * 6, vr: (Math.random() - 0.5) * 0.4,
-    c: azar(colores), forma: Math.random() < 0.3 ? 'o' : 'r',
-  }));
-  const t0 = performance.now();
-  (function paso(t) {
-    const dt = Math.min(2, (t - (paso.u || t)) / 16.7); paso.u = t;
-    ctx.clearRect(0, 0, W, H);
-    const vida = (t - t0) / 2600;
-    piezas.forEach((p) => {
-      p.vy += 0.55 * dpr * dt; p.vx *= 0.985; p.x += p.vx * dt; p.y += p.vy * dt; p.r += p.vr * dt;
-      ctx.save(); ctx.globalAlpha = Math.max(0, 1 - vida * vida); ctx.translate(p.x, p.y); ctx.rotate(p.r); ctx.fillStyle = p.c;
-      if (p.forma === 'o') { ctx.beginPath(); ctx.arc(0, 0, p.h / 2, 0, 7); ctx.fill(); } else ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h * Math.abs(Math.cos(p.r * 2)) + 1);
-      ctx.restore();
-    });
-    if (vida < 1) requestAnimationFrame(paso); else c.remove();
-  })(t0);
-}
 
 // =====================================================================
-export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, srs, raiz }) {
+export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, RUTA = null, CASOS = null, SIGLAS = null, FACIES = null, srs, raiz }) {
   cargarCSS();
+  ATLAS = ATLAS || {};
   MEMO = MEMO || {};
   PALACIOS = PALACIOS || {};
   const S = srs || { info: () => null, vence: () => true, calificar: () => ({}) };
@@ -229,6 +147,21 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     return { ...p, opciones: opcionesPara(d, p) };
   }
 
+  // ---------- zona de caza (ruta diaria, apariciones, misiones, cebo) ----------
+  const caza = crearCaza({
+    RUTA, CASOS, SIGLAS, FACIES, ATLAS, DATOS, POR_ID, LUGARES, S,
+    h: {
+      mapa: () => mapa, L: () => L, toast, elegirPregunta, htmlPista, htmlFicha, revisarLogros, pintarHUD, refrescarMarca,
+      caminar: (dest) => caminar(dest),
+      abrirDex: (tab, ficha) => { dex.tab = tab; abrirDex(ficha); },
+      pintarDex: () => pintarDex(), dexAbierto: () => dex.abierto,
+      moverAvatar: (ll) => { if (!avatar.marca || avatar.caminando) return; avatar.ll = ll; avatar.s = ruta ? ruta.proyectar(ll).s : null; avatar.marca.setLatLng(ll); },
+      abrirHoja: (estado) => abrirHoja(estado), hoja: () => hoja, pintarHoja: () => pintarHoja(),
+      oscuro: () => esOscuro(), esperarAnim: (ms) => { animHasta = Date.now() + ms; },
+    },
+  });
+  const calificar = caza.calificar;   // srs.calificar + avance de la misión "repasa vencidas"
+
   // ---------- logros ----------
   const conCodigo = (d) => d.m && ((d.m.codigo || []).length || (d.m.tecnicas || []).includes('memorizar-numeros'));
   const LOGROS = [
@@ -253,6 +186,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     { id: 'impecable', ic: '✨', nombre: 'Impecable', desc: 'Gana un desafío de gimnasio 5 de 5', ok: () => E.stats().perfectos >= 1 },
     { id: 'nivel-5', ic: '⭐', nombre: 'Nivel 5', desc: 'Llega al nivel 5', ok: () => E.nivel().n >= 5 },
     { id: 'nivel-10', ic: '🌟', nombre: 'Nivel 10', desc: 'Llega al nivel 10', ok: () => E.nivel().n >= 10 },
+    ...caza.LOGROS,
   ];
   const LOGRO = Object.fromEntries(LOGROS.map((l) => [l.id, l]));
   function revisarLogros() {
@@ -269,7 +203,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
   let hoja = null;                  // { tipo:'parada', id } | { tipo:'gym', sid } | { tipo:'desafio' }
   let reto = null;                  // estado del reto de captura
   let desafio = null;               // estado del desafío del gimnasio
-  let dex = { abierto: false, tab: 'cartas', sid: '', ficha: null };
+  let dex = { abierto: false, tab: 'datos', sid: '', ficha: null };
   let animHasta = 0;                // los toasts esperan a que termine la animación de captura
   let el = {};
 
@@ -291,7 +225,8 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
           <div class="jg-pill jg-caps" title="Capturas">🧠 <b>0</b><span>/${TOTAL}</span></div>
           <button class="jg-dexbtn" data-acc="dex" aria-label="Abrir Memodex">📖<span> Memodex</span></button>
         </div>
-        <div class="jg-leyenda" aria-hidden="true"><span class="nueva">Nueva</span><span class="repaso">Repasar</span><span class="capturada">Capturada</span><span>👑 Conquistado</span></div>
+        <div class="jg-caza" hidden></div>
+        <div class="jg-leyenda" aria-hidden="true"><span class="jg-cielo" title="Hora del día en el mapa"></span><span class="nueva">Nueva</span><span class="repaso">Repasar</span><span class="capturada">Capturada</span><span>👑 Conquistado</span></div>
       </div>
       <div class="jg-fabs">
         <button class="jg-fab" data-acc="sig" aria-label="Caminar a la siguiente memoparada">▶<span> Siguiente</span></button>
@@ -304,7 +239,10 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
       <div class="jg-toasts" aria-live="polite"></div>
     </div>`;
     const q = (s) => raiz.querySelector(s);
-    el = { jg: q('.jg'), mapa: q('.jg-mapa'), aviso: q('.jg-aviso'), hud: q('.jg-hud'), hoja: q('.jg-hoja'), hojaIn: q('.jg-hoja-in'), dex: q('.jg-dex'), toasts: q('.jg-toasts'), fabs: q('.jg-fabs') };
+    el = { jg: q('.jg'), mapa: q('.jg-mapa'), aviso: q('.jg-aviso'), hud: q('.jg-hud'), hoja: q('.jg-hoja'), hojaIn: q('.jg-hoja-in'), dex: q('.jg-dex'), toasts: q('.jg-toasts'), fabs: q('.jg-fabs'), cielo: q('.jg-cielo') };
+    caza.montarBarra(q('.jg-caza'));
+    el.jg.classList.toggle('con-caza', caza.activo);
+    setInterval(ponerTeselas, 60000);   // franja horaria del mapa (amanecer / día / atardecer / noche)
     raiz.addEventListener('click', alClic);
     raiz.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') { if (dex.ficha) { dex.ficha = null; pintarDex(); } else if (dex.abierto) cerrarDex(); else cerrarHoja(); }
@@ -353,12 +291,12 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
   async function crearMapa() {
     if (mapa) return;
     let datos = MAPA;
-    if (!hayMapa(datos)) { mostrarSinMapa(); return; }
+    if (!hayMapa(datos)) { if (!caza.activo) { mostrarSinMapa(); return; } datos = datos || {}; }
     el.aviso.hidden = true;
     el.jg.classList.remove('sin-mapa');
     try { L = await cargarLeaflet(); } catch (err) { avisar(`<b>🗺️ No se pudo cargar el mapa.</b> ${esc(err.message)}. El Memodex sigue disponible.`, true); return; }
     prepararGeo(datos);
-    const centro = aLL(datos.centro) || LUGARES.find((l) => l.ll)?.ll || [-15.8402, -70.028];
+    const centro = aLL(datos.centro) || LUGARES.find((l) => l.ll)?.ll || caza.inicio() || [-15.8402, -70.028];
     mapa = L.map(el.mapa, { zoomControl: false, center: centro, zoom: +datos.zoom || 15, minZoom: 12, maxZoom: 19, tapTolerance: 18, zoomSnap: 0.5 });
     L.control.zoom({ position: 'bottomleft', zoomInTitle: 'Acercar', zoomOutTitle: 'Alejar' }).addTo(mapa);
     mapa.attributionControl.setPrefix(false);
@@ -379,12 +317,14 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
           .on('click', () => irAParada(d.id)).addTo(mapa);
       }
     }
-    // avatar en la última parada o al inicio del paseo
+    caza.dibujar();   // ruta diaria A/B, casa y UNA, hitos y apariciones salvajes
+    // avatar en la última parada, o en casa (inicio de la ruta diaria), o al inicio del paseo
     const ult = POR_ID[E.ultimaParada()];
-    avatar.ll = ult?.ll || ruta?.pts[0] || centro;
+    avatar.ll = ult?.ll || caza.inicio() || ruta?.pts[0] || centro;
     avatar.s = ult?.s ?? (ruta ? 0 : null);
     avatar.marca = L.marker(avatar.ll, { icon: iconoAvatar(), zIndexOffset: 2000, interactive: false, keyboard: false }).addTo(mapa);
     if (ult) mapa.setView(ult.ll, 17, { animate: false });
+    else if (caza.activo) mapa.fitBounds(L.latLngBounds(caza.limites()), { padding: [70, 40], maxZoom: 16.5, animate: false });
     mapa.on('zoomend', claseZoom); claseZoom();
     if (mapaEjemplo) avisar('🧪 <b>Mapa de ejemplo</b> con coordenadas aproximadas: el mapa real del paseo aún no está listo.', false, true);
     setTimeout(() => mapa.invalidateSize(), 60);
@@ -401,10 +341,19 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     el.aviso.hidden = false;
   }
   let usarCarto = true;
+  // franja horaria: el mapa sigue la hora si el usuario no eligió tema; si lo eligió (🌓), sigue el tema
+  function franja(h = new Date().getHours()) { return h >= 19 || h < 5 ? 'noche' : h < 8 ? 'amanecer' : h >= 17 ? 'atardecer' : 'dia'; }
+  const CIELO = { amanecer: ['🌅', 'Amanecer'], dia: ['☀️', 'Día'], atardecer: ['🌇', 'Atardecer'], noche: ['🌙', 'Noche'] };
   function ponerTeselas() {
+    if (!el.jg) return;
+    const f = franja(); const elegido = document.documentElement.dataset.theme;
+    const mapaOscuro = elegido ? elegido === 'dark' : (f === 'noche' || esOscuro());
+    el.jg.classList.toggle('oscuro', esOscuro());
+    el.jg.classList.toggle('mapa-oscuro', mapaOscuro);
+    Object.keys(CIELO).forEach((k) => el.jg.classList.toggle(`h-${k}`, k === f));
+    if (el.cielo) el.cielo.textContent = `${CIELO[f][0]} ${CIELO[f][1]}`;
     if (!mapa) return;
-    const t = esOscuro() ? 'oscuro' : 'claro';
-    el.jg.classList.toggle('oscuro', t === 'oscuro');
+    const t = mapaOscuro ? 'oscuro' : 'claro';
     const clave = `${usarCarto ? 'carto' : 'osm'}-${usarCarto ? t : ''}`;
     if (clave === temaActual) return;
     temaActual = clave;
@@ -461,6 +410,10 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
   function caminoHasta(d) {
     const dest = d.ll;
     if (!avatar.ll) return [dest];
+    if (d.ruta) {   // destino sobre la ruta diaria: caminar por la calle si el avatar también está en ella
+      const a = d.ruta.proyectar(avatar.ll), b = d.ruta.proyectar(dest);
+      return a.d < 120 && b.d < 120 && Math.abs(a.s - b.s) > 40 ? [avatar.ll, ...d.ruta.tramo(a.s, b.s), dest] : [avatar.ll, dest];
+    }
     if (!ruta || avatar.s == null || d.s == null || metros(avatar.ll, dest) < 250) return [avatar.ll, dest];
     return [avatar.ll, ...ruta.tramo(avatar.s, d.s), dest];
   }
@@ -470,7 +423,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     const acum = [0];
     for (let i = 1; i < camino.length; i++) acum.push(acum[i - 1] + metros(camino[i - 1], camino[i]));
     const total = acum[acum.length - 1];
-    if (total < 2) { avatar.ll = d.ll; avatar.s = d.s; avatar.marca.setLatLng(d.ll); return; }
+    if (total < 2) { avatar.ll = d.ll; avatar.s = d.s ?? (ruta ? ruta.proyectar(d.ll).s : null); avatar.marca.setLatLng(d.ll); return; }
     // encuadrar el trayecto si se sale de la vista
     const b = L.latLngBounds(camino);
     if (!mapa.getBounds().pad(-0.08).contains(b)) {
@@ -495,7 +448,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
       };
       requestAnimationFrame(paso);
     });
-    avatar.ll = d.ll; avatar.s = d.s; avatar.caminando = false;
+    avatar.ll = d.ll; avatar.s = d.s ?? (ruta ? ruta.proyectar(d.ll).s : null); avatar.caminando = false;
     pintarAvatar();
   }
   let ocupado = false;
@@ -548,6 +501,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
       await caminar(falso);
       avatar.s = ruta ? ruta.proyectar(ll).s : null;
       bonus = { ll, t: Date.now() };
+      caza.alUbicar(ll);   // "¡Está aquí!" en apariciones a menos de 40 m (y seguimiento mientras juegas)
       let cerca = null, dmin = Infinity;
       DATOS.forEach((d) => { if (d.ll) { const m = metros(ll, d.ll); if (m < dmin) { dmin = m; cerca = d; } } });
       if (cerca && dmin < BONUS_M) {
@@ -583,7 +537,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
   }
   function pintarHoja() {
     if (!hoja) return;
-    el.hojaIn.innerHTML = hoja.tipo === 'parada' ? htmlParada() : hoja.tipo === 'gym' ? htmlGym() : htmlDesafio();
+    el.hojaIn.innerHTML = hoja.tipo === 'parada' ? htmlParada() : hoja.tipo === 'gym' ? htmlGym() : hoja.tipo === 'misiones' ? caza.htmlMisiones() : htmlDesafio();
     const ta = el.hojaIn.querySelector('textarea'); if (ta && !('ontouchstart' in window)) ta.focus();
   }
   function abrirParada(id) {
@@ -697,7 +651,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
   }
   function fallo(boton) {
     const r = reto; const d = POR_ID[r.id];
-    if (!r.fallos) S.calificar(r.p.card, 1);
+    if (!r.fallos) calificar(r.p.card, 1);
     r.fallos += 1; r.fase = 'fallo'; r.modo = r.modo === 'escribir' ? 'elegir' : r.modo;
     E.contar('fallos');
     if (boton) { boton.classList.add('mala', 'tiembla'); boton.disabled = true; }
@@ -706,7 +660,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
   async function acierto(boton) {
     const r = reto; const d = POR_ID[r.id];
     const eraRepaso = r.eraEstado === 'repaso' && E.capturado(d.id);
-    if (!r.fallos) S.calificar(r.p.card, 3);
+    if (!r.fallos) calificar(r.p.card, 3);
     const nueva = E.capturar(d.id);
     let xp = nueva ? (r.fallos ? XP.nuevaTrasFallo : XP.nueva) : eraRepaso ? XP.repaso : XP.practica;
     const x2 = conBonus(d) && (nueva || eraRepaso);
@@ -719,6 +673,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     if (animar) { animHasta = Date.now() + 2500; await pausa(250); await animacionCaptura(d); }
     E.registrarActividad();
     E.sumarXP(xp, `${nueva ? 'captura' : eraRepaso ? 'repaso' : 'práctica'}: ${d.nombre}`);
+    if (nueva || eraRepaso) caza.evento('captura', { clase: d.tipo === 'escala' ? 'escala' : 'dato', sid: d.sid, rareza: d.tipo === 'escala' ? 'raro' : 'comun', sinFallo: !r.fallos });
     revisarLogros();
     if (reto === r) { r.fase = 'ok'; pintarHoja(); }
     refrescarMarca(d); pintarHUD(); if (dex.abierto) pintarDex();
@@ -786,7 +741,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     ds.bloqueado = true;
     const { d, p } = ds.preguntas[ds.i];
     const bien = norm(p.opciones[i]) === norm(p.a);
-    S.calificar(p.card, bien ? 3 : 1);
+    calificar(p.card, bien ? 3 : 1);
     ds.marcas[ds.i] = bien;
     if (bien) { ds.ok += 1; E.sumarXP(XP.desafioOk, `desafío: ${d.nombre}`); E.contar('aciertos'); } else E.contar('fallos');
     el.hojaIn.querySelectorAll('.jg-op').forEach((b, k) => {
@@ -809,6 +764,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
       ds.xp = XP.gimnasio + (perfecto ? XP.perfecto : 0);
       if (perfecto) E.contar('perfectos');
       E.conquistar(ds.sid);
+      caza.evento('gimnasio');
       E.sumarXP(ds.xp, `gimnasio ${LUG[ds.sid].nombre}`);
       confetti([LUG[ds.sid].color, '#f59e0b', '#fde047', '#a78bfa', '#ffffff']);
     }
@@ -867,33 +823,40 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
   function pintarDex() {
     const caps = DATOS.filter((d) => E.capturado(d.id)).length;
     const nv = E.nivel(); const st = E.stats();
-    const cab = `<div class="jg-dex-cab"><div><h3>📖 Memodex</h3><p class="jg-mute">${caps}/${TOTAL} cartas · Nv ${nv.n} · ${nv.xp} XP · mejor racha ${E.mejorRacha()} 🔥 · ${st.aciertos} aciertos</p></div>
+    if (dex.tab === 'cartas') dex.tab = 'datos';
+    const tabs = [{ tab: 'datos', ic: '🃏', nombre: 'Datos', cap: caps, tot: TOTAL }, ...caza.dexTabs(),
+      { tab: 'logros', ic: '🏆', nombre: 'Logros', cap: LOGROS.filter((l) => E.tieneLogro(l.id)).length, tot: LOGROS.length }];
+    const totalCartas = tabs.filter((t) => t.tab !== 'logros').reduce((a, t) => [a[0] + t.cap, a[1] + t.tot], [0, 0]);
+    const cab = `<div class="jg-dex-cab"><div><h3>📖 Memodex</h3><p class="jg-mute">${totalCartas[0]}/${totalCartas[1]} cartas · Nv ${nv.n} · ${nv.xp} XP · mejor racha ${E.mejorRacha()} 🔥 · ${st.aciertos} aciertos${st.salvajes ? ` · 🌿 ${st.salvajes} salvajes` : ''}</p></div>
       <button class="jg-x estat" data-acc="dex-cerrar" aria-label="Cerrar Memodex">✕</button></div>
-      <div class="jg-dex-prog"><i style="width:${TOTAL ? (100 * caps / TOTAL).toFixed(1) : 0}%"></i></div>
-      <div class="jg-tabs" role="tablist"><button role="tab" aria-selected="${dex.tab === 'cartas'}" class="${dex.tab === 'cartas' ? 'on' : ''}" data-acc="dex-tab" data-tab="cartas">🃏 Cartas</button>
-        <button role="tab" aria-selected="${dex.tab === 'logros'}" class="${dex.tab === 'logros' ? 'on' : ''}" data-acc="dex-tab" data-tab="logros">🏆 Logros <small>${LOGROS.filter((l) => E.tieneLogro(l.id)).length}/${LOGROS.length}</small></button></div>`;
+      <div class="jg-dex-prog"><i style="width:${totalCartas[1] ? (100 * totalCartas[0] / totalCartas[1]).toFixed(1) : 0}%"></i></div>
+      <div class="jg-tabs" role="tablist">${tabs.map((t) => `<button role="tab" aria-selected="${dex.tab === t.tab}" class="${dex.tab === t.tab ? 'on' : ''}" data-acc="dex-tab" data-tab="${t.tab}">
+        <span aria-hidden="true">${t.ic}</span> ${t.nombre} <small>${t.cap}/${t.tot}</small></button>`).join('')}</div>`;
     let cuerpo;
     if (dex.tab === 'logros') {
       cuerpo = `<div class="jg-logros">${LOGROS.map((l) => { const ok = E.tieneLogro(l.id); return `<div class="jg-logro ${ok ? 'ok' : ''}"><span class="ic">${ok ? esc(l.ic) : '🔒'}</span><span><b>${esc(l.nombre)}</b><small>${esc(l.desc)}</small></span></div>`; }).join('')}</div>`;
+    } else if (dex.tab !== 'datos') {
+      cuerpo = caza.htmlDexTab(dex.tab);
     } else {
       const filtro = `<div class="jg-filtros"><button class="chip ${dex.sid ? '' : 'on'}" data-acc="dex-filtro" data-sid="">Todas</button>${LUGARES.map((l) =>
         `<button class="chip ${dex.sid === l.sid ? 'on' : ''}" data-acc="dex-filtro" data-sid="${l.sid}">${esc(l.icono)} ${esc(l.titulo)} <small>${capturadasDe(l)}/${l.datos.length}</small></button>`).join('')}</div>`;
       const lista = DATOS.filter((d) => !dex.sid || d.sid === dex.sid);
-      cuerpo = `${filtro}<div class="jg-cartas">${lista.map((d) => { const c = E.capturado(d.id); const e = estadoDe(d); return `<button class="jg-carta ${c ? 'cap' : ''} ${e}" style="--c:${esc(d.color)};--i:${(d.num % 12) * 30}ms" data-acc="dex-carta" data-id="${d.id}" aria-label="${c ? esc(d.nombre) : 'Carta sin capturar'}">
+      cuerpo = `${filtro}<div class="jg-cartas">${lista.map((d) => { const c = E.capturado(d.id); const e = estadoDe(d); const rar = d.tipo === 'escala' ? 'raro' : 'comun'; return `<button class="jg-carta r-${rar} ${c ? 'cap' : ''} ${e}" style="--c:${esc(d.color)};--i:${(d.num % 12) * 30}ms" data-acc="dex-carta" data-id="${d.id}" aria-label="${c ? esc(d.nombre) : 'Carta sin capturar'}">
         <span class="num">#${String(d.num).padStart(3, '0')}</span><span class="ic">${esc(d.icono)}</span><span class="nm">${c ? esc(d.nombre) : '???'}</span><span class="lg">${esc(d.lug.icono)}${e === 'repaso' ? ' ⏰' : ''}</span></button>`; }).join('')}</div>`;
     }
     let ficha = '';
     if (dex.ficha && POR_ID[dex.ficha]) {
-      const d = POR_ID[dex.ficha]; const c = E.capturado(d.id);
-      ficha = `<div class="jg-modal" data-acc="ficha-fondo"><div class="jg-ficha-carta ${c ? 'cap' : ''}" style="--c:${esc(d.color)}" role="dialog" aria-label="${esc(c ? d.nombre : 'Carta sin capturar')}">
+      const d = POR_ID[dex.ficha]; const c = E.capturado(d.id); const rar = d.tipo === 'escala' ? 'raro' : 'comun';
+      ficha = `<div class="jg-modal" data-acc="ficha-fondo"><div class="jg-ficha-carta r-${rar} ${c ? 'cap' : ''}" style="--c:${esc(d.color)}" role="dialog" aria-label="${esc(c ? d.nombre : 'Carta sin capturar')}">
         <button class="jg-x" data-acc="ficha-cerrar" aria-label="Cerrar ficha">✕</button>
         <div class="jg-fc-cab"><span class="ic">${esc(d.icono)}</span><div><small>#${String(d.num).padStart(3, '0')} · ${esc(d.lug.icono)} ${esc(d.lug.nombre)}</small><h3>${c ? esc(d.nombre) : '???'}</h3></div></div>
         <p class="jg-ub">📍 ${esc(d.ubicacion)}</p>
         ${c ? htmlFicha(d) : `<div class="jg-silueta">${esc(d.icono)}</div><p class="jg-mute" style="text-align:center">Aún no la capturas. Ve a su memoparada y supera el reto.</p>`}
         <div class="jg-btns">${mapa && d.ll ? `<button class="btn pri" data-acc="ir" data-id="${d.id}">🚶 Ir a la memoparada</button>` : ''}
           <button class="btn ${mapa && d.ll ? '' : 'pri'}" data-acc="retar" data-id="${d.id}">🎯 ${c ? 'Practicar aquí' : 'Retar aquí'}</button></div></div></div>`;
-    }
+    } else if (dex.ficha && caza.esClave(dex.ficha)) ficha = caza.htmlDexFicha(dex.ficha);
     el.dex.innerHTML = `<div class="jg-dex-in">${cab}${cuerpo}</div>${ficha}`;
+    const tabOn = el.dex.querySelector('.jg-tabs .on'); if (tabOn) tabOn.parentElement.scrollLeft = Math.max(0, tabOn.offsetLeft - 24);
   }
 
   // ---------- clics ----------
@@ -926,7 +889,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
       case 'desafio': empezarDesafio(b.dataset.sid); break;
       case 'd-op': responderDesafio(+b.dataset.i, b); break;
       case 'ejemplo': cargarEjemplo(b); break;
-      default: break;
+      default: caza.alClic(a, b); break;
     }
   }
   async function cargarEjemplo(b) {
@@ -946,7 +909,8 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
       ajustarAlto();
       pintarHUD();
       if (!mapa) await iniciarMapa();
-      else { mapa.invalidateSize(); refrescarTodo(); ponerTeselas(); }
+      else { mapa.invalidateSize(); refrescarTodo(); ponerTeselas(); caza.pintarApariciones(); }
+      caza.pintarBarra();
       if (hoja && !reto && !desafio) pintarHoja();
       if (dex.abierto) pintarDex();
     },

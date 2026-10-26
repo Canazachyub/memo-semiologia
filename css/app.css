@@ -170,3 +170,5 @@ details.fmemo, details.sigm { margin-top: 6px; } details summary { cursor: point
 details.sigm { break-inside: avoid; padding: 3px 0; font-size: 13.5px; }
 details.sigm[open] { background: var(--memo-bg); border-radius: 8px; padding: 6px 8px; }
 details.fmemo summary { color: var(--memo); font-weight: 700; font-size: 13px; }
+
+.tarjeta .q { white-space: pre-line; }

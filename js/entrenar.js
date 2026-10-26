@@ -819,7 +819,7 @@ export function crearEntrenar({ ATLAS = {}, MEMO = {}, SIGLAS = {}, FACIES = {},
           const el = $(`#ent-hc-${k}`);
           el.classList.add(ok ? 'si' : 'no'); flash(el, ok);
           anotar(M, ok, ok ? null : { item: x, html: `${esc(x.f.nombre)} ${esc(x.txt)} ${esc(x.r.u)} → <b>${ESTADOS[x.estado][1].toLowerCase()}</b> (normal: ${esc(corto(x.f.normal.t))})` });
-          srsEnt(`caso:${x.f.id}`, ok);
+          srsEnt(`clin:${x.f.id}`, ok);
           if (!ok) srsFallo(x.f.id);
           const extra = x.estado === 'alto' ? x.f.sube?.t : x.estado === 'bajo' ? x.f.baja?.t : '';
           el.querySelector('.ent-hc-fb').innerHTML = `${ok ? '✅' : `❌ Era <b>${ESTADOS[x.estado][1].toLowerCase()}</b>.`} Normal: ${esc(corto(x.f.normal.t, 110))}

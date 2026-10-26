@@ -11,7 +11,8 @@ const norm = (t) => String(t ?? '').toLowerCase().normalize('NFD').replace(/[̀-
 const [ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES] = await Promise.all(
   ['data/atlas.json', 'data/memoria.json', 'data/metodos.json', 'data/palacios.json', 'data/memoria_siglas.json', 'data/memoria_facies.json'].map((u) => fetch(u, { cache: 'no-cache' }).then((r) => r.json()).catch(() => ({}))),
 );
-const MAPA = await fetch('data/mapa.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+const [MAPA, RUTA, CASOS] = await Promise.all(['data/mapa.json', 'data/ruta_diaria.json', 'data/casos.json']
+  .map((u) => fetch(u, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null)));
 const FILAS = ATLAS.secciones.flatMap((s) => s.filas.map((f) => ({ ...f, sec: s })));
 const nombreMetodo = (k) => METODOS[k]?.nombre || k;
 
@@ -132,6 +133,9 @@ function construirTarjetas() {
   }
   for (const [id, s] of Object.entries(SIGLAS)) (s.preguntas || []).forEach((p, i) => t.push({ id: `sig:${id}#${i}`, ref: id, sec: 'siglas', q: p.q, a: p.a, m: { ancla: s.ancla, escena: s.escena }, nombre: s.sigla }));
   for (const f of ATLAS.facies) { const fm = FACIES[f.id]; (fm?.preguntas || []).forEach((p, i) => t.push({ id: `fac:${f.id}#${i}`, ref: f.id, sec: 'facies', q: p.q, a: p.a, m: { ...fm, imagen: f.imagen }, nombre: f.nombre })); }
+  for (const [id, c] of Object.entries(CASOS || {})) t.push({ id: `caso:${id}`, ref: id, sec: 'casos', q: `${c.viñeta}
+
+${c.pregunta}`, a: `${c.opciones[c.correcta]} — ${c.explicacion}`, m: { ancla: c.pista }, nombre: `🩺 ${c.titulo}` });
   return t;
 }
 const TARJETAS = construirTarjetas();
@@ -152,7 +156,8 @@ function pintarRepaso() {
   const opciones = [`<option value="">Todo</option>`, ...ATLAS.secciones.map((s) => `<option value="${s.id}" ${repSec === s.id ? 'selected' : ''}>${s.icono} ${esc(s.titulo)}</option>`),
     `<option value="escalas" ${repSec === 'escalas' ? 'selected' : ''}>📏 Escalas</option>`,
     `<option value="siglas" ${repSec === 'siglas' ? 'selected' : ''}>🔤 Siglas</option>`,
-    `<option value="facies" ${repSec === 'facies' ? 'selected' : ''}>🙂 Facies</option>`].join('');
+    `<option value="facies" ${repSec === 'facies' ? 'selected' : ''}>🙂 Facies</option>`,
+    `<option value="casos" ${repSec === 'casos' ? 'selected' : ''}>🩺 Casos clínicos</option>`].join('');
   if (!actual) { armarCola(); actual = cola.shift() || null; }
   const top = `<div class="rep-top"><label>Repasar: <select id="rep-sec">${opciones}</select></label>
     <label class="toggle"><input type="checkbox" id="rep-memo" ${soloConMemo ? 'checked' : ''}> <span>Solo con técnica</span></label>
@@ -199,7 +204,7 @@ document.addEventListener('keydown', (e) => {
 
 // ---------- progreso ----------
 function pintarProgreso() {
-  const grupos = [...ATLAS.secciones.map((s) => ({ id: s.id, t: `${s.icono} ${s.titulo}`, c: s.color })), { id: 'escalas', t: '📏 Escalas', c: '#455a64' }, { id: 'siglas', t: '🔤 Siglas', c: '#455a64' }, { id: 'facies', t: '🙂 Facies', c: '#455a64' }];
+  const grupos = [...ATLAS.secciones.map((s) => ({ id: s.id, t: `${s.icono} ${s.titulo}`, c: s.color })), { id: 'escalas', t: '📏 Escalas', c: '#455a64' }, { id: 'siglas', t: '🔤 Siglas', c: '#455a64' }, { id: 'facies', t: '🙂 Facies', c: '#455a64' }, { id: 'casos', t: '🩺 Casos clínicos', c: '#455a64' }];
   const cuenta = (lista) => lista.reduce((a, t) => (a[srs.nivel(t.id)]++, a), { nueva: 0, aprendiendo: 0, dominada: 0 });
   const total = cuenta(TARJETAS);
   const conMemo = Object.keys(MEMO).length;
@@ -242,7 +247,7 @@ function siglaMemo(sigla, grupo) {
 // ---------- navegación y eventos ----------
 const CIUDAD = crearCiudad({ ATLAS, MEMO, PALACIOS, raiz: $('#ciudad') });
 const ENTRENAR = crearEntrenar({ ATLAS, MEMO, SIGLAS, FACIES, srs, raiz: $('#entrenar') });
-const JUEGO = crearJuego({ ATLAS, MEMO, PALACIOS, MAPA, srs, raiz: $('#juego') });
+const JUEGO = crearJuego({ ATLAS, MEMO, PALACIOS, MAPA, RUTA, CASOS: CASOS || {}, SIGLAS, FACIES, srs, raiz: $('#juego') });
 const PINTAR = { juego: JUEGO.pintar, tabla: pintarTabla, ciudad: CIUDAD.pintar, entrenar: ENTRENAR.pintar, escalas: pintarEscalas, facies: pintarFacies, repaso: pintarRepaso, progreso: pintarProgreso, metodos: pintarMetodos, siglas: pintarSiglas };
 let vista = 'tabla';
 function ir(v) {

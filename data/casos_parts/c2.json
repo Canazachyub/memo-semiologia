@@ -1,0 +1,821 @@
+{
+  "c2-dm-ayunas": {
+    "titulo": "Dos glucosas en ayunas altas",
+    "nivel": 1,
+    "viñeta": "Varón de 52 años de Juliaca, con sobrepeso, acude a control. Tiene glucosa en ayunas de 138 mg/dL y, repetida una semana después, de 142 mg/dL. Está asintomático.",
+    "pregunta": "¿Cómo se interpretan estas glucosas?",
+    "opciones": [
+      "Diabetes mellitus",
+      "Glucosa normal",
+      "Prediabetes (glucosa alterada en ayunas)",
+      "Hipoglucemia"
+    ],
+    "correcta": 0,
+    "explicacion": "La glucosa en ayunas normal es <100 mg/dL; 100-125 es prediabetes y ≥126 mg/dL, confirmada al repetir, es diabetes. Las dos mediciones (138 y 142) superan 126.",
+    "datos_ids": [
+      "glucosa-en-ayunas"
+    ],
+    "pista": "Casa-tazas sano; túnel prediabetes; tinaja diabetes; bajo la casa, látigo de Whipple.",
+    "rareza": "epico"
+  },
+  "c2-prediabetes": {
+    "titulo": "Glucosa en la zona gris",
+    "nivel": 1,
+    "viñeta": "Mujer de 45 años de Puno, con antecedente familiar de diabetes. Glucosa en ayunas 112 mg/dL y HbA1c 6.0 %.",
+    "pregunta": "¿Qué categoría corresponde?",
+    "opciones": [
+      "Normal",
+      "Prediabetes",
+      "Diabetes mellitus",
+      "HbA1c falsamente baja por anemia"
+    ],
+    "correcta": 1,
+    "explicacion": "Glucosa en ayunas 100-125 mg/dL y HbA1c 5.7-6.4 % definen prediabetes. Para diabetes haría falta glucosa ≥126 mg/dL o HbA1c ≥6.5 %.",
+    "datos_ids": [
+      "glucosa-en-ayunas",
+      "glucosa-2-h-ptog-75-g-y-hba1c"
+    ],
+    "pista": "PTOG: torres sanas, nueces diabetes. HbA1c: lago prediabetes, jaula diabetes.",
+    "rareza": "epico"
+  },
+  "c2-hipoglucemia": {
+    "titulo": "Diabético sudoroso y confuso",
+    "nivel": 1,
+    "viñeta": "Varón de 68 años, diabético con insulina, no cenó. Lo traen sudoroso, tembloroso, con palpitaciones y confusión. Glucosa capilar de 52 mg/dL.",
+    "pregunta": "¿Cuál es el diagnóstico más probable?",
+    "opciones": [
+      "Cetoacidosis diabética",
+      "Hiponatremia sintomática",
+      "Hipoglucemia",
+      "Prediabetes descompensada"
+    ],
+    "correcta": 2,
+    "explicacion": "Una glucosa <70 mg/dL es hipoglucemia. Los síntomas adrenérgicos (sudor, temblor, palpitaciones) y la neuroglucopenia (confusión) lo confirman.",
+    "datos_ids": [
+      "glucosa-en-ayunas"
+    ],
+    "pista": "Casa-tazas sano; túnel prediabetes; tinaja diabetes; bajo la casa, látigo de Whipple.",
+    "rareza": "epico"
+  },
+  "c2-prerrenal": {
+    "titulo": "Diarrea y creatinina alta",
+    "nivel": 2,
+    "viñeta": "Varón de 70 años con diarrea de 3 días, mucosas secas e hipotensión. Urea 120 mg/dL, creatinina 2.5 mg% y densidad urinaria 1.028.",
+    "pregunta": "¿Qué tipo de falla renal sugieren estos datos?",
+    "opciones": [
+      "Necrosis tubular aguda",
+      "IRA postrenal por obstrucción",
+      "Función renal normal",
+      "IRA prerrenal"
+    ],
+    "correcta": 3,
+    "explicacion": "La relación urea/creatinina normal es 10-20; aquí es 120/2.5 = 48 (>20), lo que indica origen prerrenal. Una densidad urinaria >1.020 muestra que el riñón todavía concentra. En la NTA la densidad sería <1.010.",
+    "datos_ids": [
+      "relacion-urea-creatinina",
+      "densidad-urinaria",
+      "creatinina-serica",
+      "urea-sanguinea"
+    ],
+    "pista": "Taza a la NASA: normal. Pasar la NASA (o la rosa si es urea total) = prerrenal.",
+    "rareza": "epico"
+  },
+  "c2-tfg-cockcroft": {
+    "titulo": "Calcula la TFG",
+    "nivel": 3,
+    "viñeta": "Varón de 70 años que pesa 70 kg y tiene creatinina de 2.0 mg%. Se calcula su clearance con Cockcroft-Gault.",
+    "pregunta": "¿Cuál es la TFG aproximada y su grado?",
+    "opciones": [
+      "≈34 mL/min, insuficiencia moderada",
+      "≈120 mL/min, normal",
+      "≈65 mL/min, insuficiencia leve",
+      "≈8 mL/min, grave (diálisis)"
+    ],
+    "correcta": 0,
+    "explicacion": "Cockcroft-Gault: [(140 − 70) × 70] / (2.0 × 72) = 4900/144 ≈ 34 mL/min. Según el atlas, 10-50 es moderada y <60 ya es IRC. El clearance normal del varón es 97-137 mL/min.",
+    "datos_ids": [
+      "clearance-de-creatinina-tfg",
+      "creatinina-serica"
+    ],
+    "pista": "TFG: pencas de tunas normal; bajo la choza IRC; una taza = diálisis.",
+    "rareza": "epico"
+  },
+  "c2-hiperkalemia": {
+    "titulo": "Renal crónico con T picudas",
+    "nivel": 1,
+    "viñeta": "Varón de 60 años con IRC que no fue a su diálisis. Tiene debilidad y en el ECG hay ondas T altas y picudas. Potasio sérico de 6.8 mEq/L.",
+    "pregunta": "¿Qué alteración tiene y cuál es el riesgo principal?",
+    "opciones": [
+      "Hipopotasemia con ondas U",
+      "Hiperpotasemia con riesgo de arritmias",
+      "Hipercalcemia con poliuria",
+      "Hipomagnesemia por diuréticos"
+    ],
+    "correcta": 1,
+    "explicacion": "El potasio normal es 3.5-5.0 mEq/L; >5 es hiperpotasemia, típica de la IRA/IRC y la acidosis. Su riesgo son las arritmias, que pueden llegar a FV; >8 es grave.",
+    "datos_ids": [
+      "potasio-serico"
+    ],
+    "pista": "Potasio = plátano del corazón: de la miel a la losa; picas altas si sube, U si baja.",
+    "rareza": "epico"
+  },
+  "c2-hiponatremia": {
+    "titulo": "Abuela confusa con sodio bajo",
+    "nivel": 1,
+    "viñeta": "Mujer de 75 años de Puno, que toma diuréticos, llega con cefalea, náuseas y confusión. Su sodio sérico es de 122 mEq/L.",
+    "pregunta": "¿Cómo se interpreta este sodio?",
+    "opciones": [
+      "Normal para su edad",
+      "Hipernatremia por deshidratación",
+      "Hiponatremia sintomática; se corrige lento",
+      "Hiponatremia leve sin síntomas esperables"
+    ],
+    "correcta": 2,
+    "explicacion": "El sodio normal es 135-145 mEq/L. <135 es hiponatremia, los síntomas aparecen <130 y <120 hay riesgo de convulsiones y coma. Con 122 ya hay clínica, y se corrige lento.",
+    "datos_ids": [
+      "sodio-serico"
+    ],
+    "pista": "Sodio = salero del cerebro: de la miel a los rulos; corrígelo lento.",
+    "rareza": "epico"
+  },
+  "c2-sodio-glucosa": {
+    "titulo": "Hiponatremia por glucosa alta",
+    "nivel": 3,
+    "viñeta": "Varón de 50 años con diabetes descompensada. Glucosa 600 mg/dL y sodio 128 mEq/L.",
+    "pregunta": "Al corregir el sodio por la hiperglucemia, ¿qué valor se obtiene?",
+    "opciones": [
+      "≈120 mEq/L, hiponatremia más grave",
+      "≈128 mEq/L, no cambia",
+      "≈150 mEq/L, hipernatremia",
+      "≈136 mEq/L, prácticamente normal"
+    ],
+    "correcta": 3,
+    "explicacion": "La hiperglucemia baja el Na 1.6 mEq/L por cada 100 mg/dL de glucosa. Sobre 100 sobran 500 mg/dL, y 5 × 1.6 = 8, así que 128 + 8 ≈ 136 mEq/L, dentro de 135-145.",
+    "datos_ids": [
+      "sodio-serico",
+      "glucosa-en-ayunas"
+    ],
+    "pista": "Sodio = salero del cerebro: de la miel a los rulos; corrígelo lento.",
+    "rareza": "epico"
+  },
+  "c2-hipocalcemia-pancreatitis": {
+    "titulo": "Pancreatitis y mano en garra",
+    "nivel": 2,
+    "viñeta": "Varón de 45 años, bebedor, con pancreatitis aguda y equimosis periumbilical y en los flancos. Al inflar el manguito se produce un espasmo carpal (Trousseau). Calcio sérico de 6.4 mg/dL.",
+    "pregunta": "¿Qué significa este calcio?",
+    "opciones": [
+      "Hipocalcemia con tetania y mal pronóstico",
+      "Calcio normal",
+      "Hipercalcemia que explica la pancreatitis",
+      "Hipocalcemia sin relevancia clínica"
+    ],
+    "correcta": 0,
+    "explicacion": "El calcio normal es 9-11 mg/dL. <8 produce tetania (Trousseau), y <7 en una pancreatitis indica mal pronóstico, como en el caso del atlas con Cullen, Grey Turner y Ca 6.2.",
+    "datos_ids": [
+      "calcio-serico"
+    ],
+    "pista": "Calcio: sopa removida con el dedo; bajo el sofá, tetania (Chvostek cara, Trousseau mano).",
+    "rareza": "epico"
+  },
+  "c2-tgo-tgp-alcohol": {
+    "titulo": "Bebedor con TGO al doble",
+    "nivel": 1,
+    "viñeta": "Varón de 48 años de Puno, bebedor diario de alcohol desde hace años, con hepatomegalia dolorosa. TGO 220 UI/L y TGP 90 UI/L.",
+    "pregunta": "¿Qué sugiere este perfil?",
+    "opciones": [
+      "Hepatitis viral aguda",
+      "Hepatitis alcohólica",
+      "Coledocolitiasis",
+      "Transaminasas normales"
+    ],
+    "correcta": 1,
+    "explicacion": "Ambas transaminasas son normales <40 UI/L. Una relación TGO/TGP >2 (220/90 ≈ 2.4) orienta a hepatitis alcohólica. En la viral predomina la TGP.",
+    "datos_ids": [
+      "tgo-ast",
+      "tgp-alt"
+    ],
+    "pista": "TGO = O de Otros (corazón, músculo, sangre); doble que la TGP = alcohol.",
+    "rareza": "epico"
+  },
+  "c2-hepatitis-viral": {
+    "titulo": "Ictericia con TGP de miles",
+    "nivel": 1,
+    "viñeta": "Mujer de 22 años con malestar, náuseas e ictericia de 5 días. TGP 1800 UI/L, TGO 1100 UI/L y FA 140 UI/L.",
+    "pregunta": "¿Qué patrón y qué causa son más probables?",
+    "opciones": [
+      "Colestásico, por obstrucción biliar",
+      "Hepatocelular, por hepatitis alcohólica",
+      "Hepatocelular, por hepatitis viral aguda",
+      "Patrón óseo"
+    ],
+    "correcta": 2,
+    "explicacion": "Con transaminasas muy altas y FA normal o poco alta (normal 30-120) el patrón es hepatocelular. En la hepatitis viral aguda la TGP supera 10 × LSN (>400) y es mayor que la TGO.",
+    "datos_ids": [
+      "tgp-alt",
+      "tgo-ast",
+      "patron-hepatocelular-vs-colestasico"
+    ],
+    "pista": "TGP = P de Puro hígado: la del virus. Hy: 3 fuegos + 2 canarios.",
+    "rareza": "epico"
+  },
+  "c2-colestasis": {
+    "titulo": "Ictericia, coluria y heces claras",
+    "nivel": 2,
+    "viñeta": "Mujer de 55 años de Puno con ictericia, prurito, orina oscura y heces blanquecinas. FA 520 UI/L, GGT 310 U/L, TGO 55 y TGP 60 UI/L; BT 12 mg/dL con BD 9 mg/dL.",
+    "pregunta": "¿Qué patrón presenta?",
+    "opciones": [
+      "Hepatocelular",
+      "Hemolítico (prehepático)",
+      "Elevación de FA de origen óseo",
+      "Colestásico obstructivo"
+    ],
+    "correcta": 3,
+    "explicacion": "Una FA >3 × LSN (>360) con GGT alta (mujer <40) confirma colestasis hepatobiliar. Las transaminasas están poco elevadas y la bilirrubina es a predominio directo (normal <0.3), con coluria y acolia: patrón obstructivo.",
+    "datos_ids": [
+      "fosfatasa-alcalina-fa",
+      "ggt-gt",
+      "patron-hepatocelular-vs-colestasico",
+      "bilirrubina-directa-conjugada"
+    ],
+    "pista": "Directa = directo al baño: coluria + acolia + prurito; normal bajo el sumo.",
+    "rareza": "epico"
+  },
+  "c2-bilirrubina-indirecta": {
+    "titulo": "Ictericia sin coluria",
+    "nivel": 2,
+    "viñeta": "Varón de 19 años con ictericia leve y palidez. La orina es de color normal y las heces muy coloreadas. BT 3.2 mg/dL, BD 0.2 mg/dL, transaminasas y FA normales.",
+    "pregunta": "¿Qué tipo de hiperbilirrubinemia es?",
+    "opciones": [
+      "Indirecta, prehepática (hemolítica o Gilbert)",
+      "Directa, por obstrucción biliar",
+      "Hepatocelular, por hepatitis",
+      "No hay hiperbilirrubinemia"
+    ],
+    "correcta": 0,
+    "explicacion": "BI = BT − BD = 3.0 mg/dL (normal 0.2-0.8). Va unida a la albúmina y no se filtra por el riñón, por eso no hay coluria. La BT >2.5 explica la ictericia visible. Orienta a hemólisis o Gilbert.",
+    "datos_ids": [
+      "bilirrubina-indirecta-no-conjugada",
+      "bilirrubina-total"
+    ],
+    "pista": "Indirecta = en bote de albúmina, sin coluria; sauna-sofá; NASA en el bebé = kernícterus.",
+    "rareza": "epico"
+  },
+  "c2-pancreatitis": {
+    "titulo": "Dolor en barra tras la fiesta",
+    "nivel": 1,
+    "viñeta": "Mujer de 40 años con dolor epigástrico intenso irradiado en barra y vómitos tras una comida copiosa. Amilasa 950 UA/dL y lipasa 600 U/L.",
+    "pregunta": "¿Cuál es el diagnóstico más probable?",
+    "opciones": [
+      "Parotiditis",
+      "Pancreatitis aguda",
+      "Elevación inespecífica sin valor",
+      "Hepatitis aguda"
+    ],
+    "correcta": 1,
+    "explicacion": "La amilasa normal es 0-120 UA/dL y en la pancreatitis sube ≥3 × (>360). La lipasa (normal <60) >3 × es más específica y dura más. En la parotiditis la lipasa es normal.",
+    "datos_ids": [
+      "amilasa-serica",
+      "lipasa-serica"
+    ],
+    "pista": "Amilasa: tunas normal; mechas encendidas (≥3×) = pancreatitis; corre rápido y se apaga.",
+    "rareza": "epico"
+  },
+  "c2-hipoalbuminemia": {
+    "titulo": "Cirrótico hinchado",
+    "nivel": 1,
+    "viñeta": "Varón de 62 años con cirrosis, edema de miembros inferiores y ascitis. Proteínas totales 4.5 g/dL y albúmina 1.9 g/dL.",
+    "pregunta": "¿Qué explica el edema?",
+    "opciones": [
+      "Hiperalbuminemia por deshidratación",
+      "Proteínas normales; el edema es solo cardíaco",
+      "Hipoalbuminemia con caída de la presión oncótica",
+      "Hipergammaglobulinemia por mieloma"
+    ],
+    "correcta": 2,
+    "explicacion": "La albúmina normal es 4-5 g/dL y las proteínas totales 6.0-8.0. Una albúmina <2.5 g/dL baja la presión oncótica y produce edema, como en la cirrosis descompensada del atlas (PT 4.2, albúmina 1.8).",
+    "datos_ids": [
+      "albumina",
+      "proteinas-totales"
+    ],
+    "pista": "Albúmina: rulos-esponja (4-5); al encogerse a anillo (2.5), edema.",
+    "rareza": "epico"
+  },
+  "c2-itu-nitritos": {
+    "titulo": "Ardor al orinar",
+    "nivel": 1,
+    "viñeta": "Mujer de 26 años de Puno con disuria y polaquiuria de 2 días, sin fiebre. Orina turbia, leucocitos 30 por campo y nitritos positivos.",
+    "pregunta": "¿Cuál es la interpretación?",
+    "opciones": [
+      "Orina normal contaminada",
+      "Síndrome nefrótico",
+      "Hematuria glomerular",
+      "ITU baja por enterobacterias (E. coli)"
+    ],
+    "correcta": 3,
+    "explicacion": "Lo normal es hasta 3 leucocitos por campo; >10 es piuria y sugiere ITU. Los nitritos, que deben ser negativos, se vuelven positivos en la ITU por enterobacterias como E. coli.",
+    "datos_ids": [
+      "leucocitos-sedimento",
+      "nitritos-orina",
+      "aspecto-y-color-de-orina"
+    ],
+    "pista": "Las E. coli mineras hacen oro en 4 horas; sin tiempo o con Enterococo, no hay oro.",
+    "rareza": "epico"
+  },
+  "c2-pielonefritis": {
+    "titulo": "ITU con fiebre y Giordano",
+    "nivel": 2,
+    "viñeta": "Mujer de 30 años con fiebre de 39 °C, escalofríos, dolor lumbar derecho y puñopercusión positiva. En el sedimento: leucocitos 50 por campo y cilindros leucocitarios.",
+    "pregunta": "¿Qué indica el hallazgo de cilindros leucocitarios?",
+    "opciones": [
+      "Pielonefritis (compromiso renal)",
+      "Cistitis simple",
+      "Glomerulonefritis",
+      "Hallazgo normal sin valor"
+    ],
+    "correcta": 0,
+    "explicacion": "La piuria (>10 leucocitos por campo; normal hasta 3) con cilindros leucocitarios indica pielonefritis. Los cilindros se forman en el túbulo, así que la infección está en el riñón y no solo en la vejiga.",
+    "datos_ids": [
+      "cilindros-urinarios",
+      "leucocitos-sedimento"
+    ],
+    "pista": "Mototaxis del molde renal: vidrio-nada, roja-GN, blanca-pielo, cera-crónica, grava-NTA, aceite-nefrótico.",
+    "rareza": "epico"
+  },
+  "c2-nefrotico": {
+    "titulo": "Niño con orina espumosa",
+    "nivel": 1,
+    "viñeta": "Niño de 8 años de Puno con edema palpebral y luego generalizado. La orina es espumosa, la proteinuria de 4.5 g/24 h y la albúmina sérica de 2.1 g/dL.",
+    "pregunta": "¿Qué síndrome presenta?",
+    "opciones": [
+      "Síndrome nefrítico",
+      "Síndrome nefrótico",
+      "Infección urinaria",
+      "Proteinuria normal"
+    ],
+    "correcta": 1,
+    "explicacion": "La proteinuria normal es ≤120-150 mg/24 h. Si llega a ≥3.5 g/24 h hay síndrome nefrótico, con hipoalbuminemia (<2.5) y edema. La orina espumosa corresponde a la proteinuria.",
+    "datos_ids": [
+      "proteinas-en-orina",
+      "albumina",
+      "aspecto-y-color-de-orina"
+    ],
+    "pista": "Colador de tunas y telas deja pasar poquito; el río de miel es nefrótico.",
+    "rareza": "epico"
+  },
+  "c2-nefritico": {
+    "titulo": "Orina color coca-cola",
+    "nivel": 2,
+    "viñeta": "Niño de 9 años que, dos semanas después de una faringitis, presenta edema, PA elevada y orina color coca-cola. En el sedimento: hematíes 40 por campo, dismórficos, y cilindros hemáticos.",
+    "pregunta": "¿Cuál es el origen de la hematuria?",
+    "opciones": [
+      "Uretral, por traumatismo",
+      "Litiasis ureteral",
+      "Glomerular (síndrome nefrítico)",
+      "Contaminación de la muestra"
+    ],
+    "correcta": 2,
+    "explicacion": "Lo normal es hasta 2 hematíes por campo. Si son dismórficos y van con cilindros hemáticos, el origen es glomerular. La orina coca-cola es la hematuria típica del síndrome nefrítico.",
+    "datos_ids": [
+      "cilindros-urinarios",
+      "hematies-sedimento",
+      "aspecto-y-color-de-orina"
+    ],
+    "pista": "Mototaxis del molde renal: vidrio-nada, roja-GN, blanca-pielo, cera-crónica, grava-NTA, aceite-nefrótico.",
+    "rareza": "epico"
+  },
+  "c2-cetonas-cad": {
+    "titulo": "Aliento a manzana",
+    "nivel": 2,
+    "viñeta": "Mujer de 17 años con diabetes tipo 1 que dejó la insulina. Tiene poliuria, vómitos y aliento afrutado. Glucemia de 480 mg/dL; en la orina, glucosa (++++) y cetonas positivas.",
+    "pregunta": "¿Qué indica la orina?",
+    "opciones": [
+      "Orina normal",
+      "Glucosuria aislada por síndrome de Fanconi",
+      "Ictericia hepatocelular",
+      "DM descompensada grave con cetosis (cetoacidosis diabética)"
+    ],
+    "correcta": 3,
+    "explicacion": "En la orina la glucosa y las cetonas normalmente están ausentes. La glucosa aparece cuando se supera el umbral renal (≈180 mg/dL), y las cetonas positivas indican DM descompensada grave o ayuno: cetoacidosis diabética.",
+    "datos_ids": [
+      "cetonas-y-urobilinogeno-orina",
+      "glucosa-en-orina"
+    ],
+    "pista": "Poste con olor a manzana: anillos, mesa rota y tofu mordido = CAD.",
+    "rareza": "epico"
+  },
+  "c2-nta-oliguria": {
+    "titulo": "Oliguria que no responde",
+    "nivel": 2,
+    "viñeta": "Varón de 65 años en shock séptico, con diuresis de 300 mL/24 h. Densidad urinaria 1.010 y células tubulares en el sedimento. La creatinina sigue en 3.8 mg% tras 48 h de hidratación.",
+    "pregunta": "¿Qué cuadro renal es más probable?",
+    "opciones": [
+      "Necrosis tubular aguda (IRA parenquimatosa)",
+      "IRA prerrenal que mejorará con volumen",
+      "Anuria por obstrucción bilateral",
+      "Diuresis normal"
+    ],
+    "correcta": 0,
+    "explicacion": "Una diuresis <400 mL/24 h es oliguria. La densidad ≤1.010 (isostenuria) y las células tubulares indican NTA. En la prerrenal la creatinina mejora con volumen en 24-48 h, y aquí no mejoró.",
+    "datos_ids": [
+      "volumen-urinario",
+      "densidad-urinaria",
+      "creatinina-serica",
+      "celulas-epiteliales-orina"
+    ],
+    "pista": "Entre la tele y el anillo flota lo normal; la NASA camina en lo concentrado y la taza se hunde en la NTA.",
+    "rareza": "epico"
+  },
+  "c2-coledoco": {
+    "titulo": "Colédoco ancho en la eco",
+    "nivel": 1,
+    "viñeta": "Mujer de 50 años de Puno con cólico en el hipocondrio derecho e ictericia. La ecografía muestra un colédoco de 12 mm con una imagen hiperecoica en su interior.",
+    "pregunta": "¿Cómo se interpreta el colédoco?",
+    "opciones": [
+      "Normal para su edad",
+      "Dilatado: coledocolitiasis u obstrucción extrahepática",
+      "Normal por ser poscolecistectomía",
+      "Signo de hipertensión portal"
+    ],
+    "correcta": 1,
+    "explicacion": "El colédoco normal mide ≤6 mm en menores de 60 años (≤8 mm en mayores o poscolecistectomía). Con 12 mm y un cálculo, hay coledocolitiasis. La ecografía es el primer estudio.",
+    "datos_ids": [
+      "coledoco-ecografia"
+    ],
+    "pista": "Colédoco: el jefe (6→8 mm) y la choza de los 60.",
+    "rareza": "epico"
+  },
+  "c2-porta": {
+    "titulo": "Porta gruesa y bazo grande",
+    "nivel": 1,
+    "viñeta": "Varón de 58 años con cirrosis alcohólica y ascitis. En la ecografía la vena porta mide 16 mm y hay esplenomegalia.",
+    "pregunta": "¿Qué indican estos hallazgos?",
+    "opciones": [
+      "Trombosis portal",
+      "Ecografía normal",
+      "Hipertensión portal",
+      "Coledocolitiasis"
+    ],
+    "correcta": 2,
+    "explicacion": "La vena porta normal mide ≤13 mm, así que >13 mm indica hipertensión portal. La esplenomegalia por HT portal y la ascitis acompañan el cuadro. En la trombosis, la porta se ve fina o no se ve.",
+    "datos_ids": [
+      "vena-porta-ecografia",
+      "bazo-ecografia-examen"
+    ],
+    "pista": "Porta: la dama de la pila (13 mm); si se ensancha, rebalsa la ascitis.",
+    "rareza": "epico"
+  },
+  "c2-colecistitis": {
+    "titulo": "Murphy positivo",
+    "nivel": 1,
+    "viñeta": "Mujer de 42 años con dolor en el hipocondrio derecho de 24 h, fiebre y Murphy positivo. La ecografía muestra cálculos hiperecoicos y la pared vesicular mide 6 mm.",
+    "pregunta": "¿Qué diagnóstico apoya la ecografía?",
+    "opciones": [
+      "Vesícula normal",
+      "Hidrops sin inflamación",
+      "Pancreatitis crónica",
+      "Colecistitis aguda litiásica"
+    ],
+    "correcta": 3,
+    "explicacion": "La pared vesicular normal mide <3 mm. Una pared >3-4 mm con cálculos y Murphy positivo indica colecistitis.",
+    "datos_ids": [
+      "vesicula-pared-calculos"
+    ],
+    "pista": "Vesícula: pared de muro (3-4 mm); si engorda, Mur-phy te corta el aire.",
+    "rareza": "epico"
+  },
+  "c2-courvoisier": {
+    "titulo": "Ictericia sin dolor",
+    "nivel": 2,
+    "viñeta": "Varón de 68 años con ictericia progresiva, prurito y pérdida de peso, sin dolor. Se palpa la vesícula distendida e indolora.",
+    "pregunta": "¿Qué sospecha este hallazgo (signo de Courvoisier-Terrier)?",
+    "opciones": [
+      "Neoplasia de la cabeza del páncreas",
+      "Colecistitis aguda litiásica",
+      "Hepatitis viral",
+      "Hemólisis"
+    ],
+    "correcta": 0,
+    "explicacion": "La vesícula distendida e indolora con ictericia (Courvoisier-Terrier) orienta a una neoplasia de la cabeza del páncreas. Un cálculo suele dar vesícula dolorosa, Murphy positivo y una pared engrosada (>3-4 mm).",
+    "datos_ids": [
+      "vesicula-pared-calculos"
+    ],
+    "pista": "Vesícula: pared de muro (3-4 mm); si engorda, Mur-phy te corta el aire.",
+    "rareza": "epico"
+  },
+  "c2-acidosis-metabolica": {
+    "titulo": "Respiración de Kussmaul",
+    "nivel": 1,
+    "viñeta": "Varón de 18 años con diabetes tipo 1 en cetoacidosis, con respiración profunda y rápida. Gases: pH 7.15, PaCO2 22 mmHg, HCO3 8 mEq/L.",
+    "pregunta": "¿Cuál es el trastorno ácido-base?",
+    "opciones": [
+      "Acidosis respiratoria",
+      "Acidosis metabólica con compensación respiratoria",
+      "Alcalosis metabólica",
+      "Alcalosis respiratoria"
+    ],
+    "correcta": 1,
+    "explicacion": "Un pH <7.35 es acidosis. Como el HCO3 está bajo (normal 22-26; <9-10 es grave), el origen es metabólico. La PaCO2 baja (normal 36-44) es la compensación por hiperventilación (Kussmaul).",
+    "datos_ids": [
+      "gases-ph-arterial",
+      "gases-hco3",
+      "gases-paco2",
+      "gases-acidosis-metabolica"
+    ],
+    "pista": "Miel y noria se hunden juntas; Pulmi besa como Kussmaul; el muñeco de nieve mira la tele con la uva.",
+    "rareza": "epico"
+  },
+  "c2-acidosis-respiratoria": {
+    "titulo": "EPOC somnoliento",
+    "nivel": 2,
+    "viñeta": "Varón de 72 años con EPOC, exfumador, que llega somnoliento. Gases: pH 7.28, PaCO2 62 mmHg, HCO3 30 mEq/L.",
+    "pregunta": "¿Qué trastorno presenta?",
+    "opciones": [
+      "Acidosis metabólica",
+      "Alcalosis metabólica",
+      "Acidosis respiratoria con HCO3 elevado (componente crónico)",
+      "Gases normales"
+    ],
+    "correcta": 2,
+    "explicacion": "Un pH <7.32 con PaCO2 >45 mmHg es acidosis respiratoria por hipoventilación. El HCO3 >26 indica compensación renal: está normal en la aguda y elevado en la crónica, como en la EPOC.",
+    "datos_ids": [
+      "gases-ph-arterial",
+      "gases-paco2",
+      "gases-hco3",
+      "gases-acidosis-respiratoria"
+    ],
+    "pista": "Humo sobre los rulos, el mono cae; por cada taza, un té (aguda) o miel (crónica).",
+    "rareza": "epico"
+  },
+  "c2-alcalosis-respiratoria": {
+    "titulo": "Crisis de ansiedad",
+    "nivel": 1,
+    "viñeta": "Mujer de 25 años, en Lima, con crisis de ansiedad, respiración rápida y hormigueo peribucal. Gases: pH 7.52, PaCO2 28 mmHg, HCO3 23 mEq/L.",
+    "pregunta": "¿Cuál es el trastorno?",
+    "opciones": [
+      "Alcalosis metabólica",
+      "Acidosis respiratoria",
+      "Acidosis metabólica",
+      "Alcalosis respiratoria"
+    ],
+    "correcta": 3,
+    "explicacion": "Un pH >7.45 es alcalosis. Con PaCO2 <35 mmHg y HCO3 normal (22-26) es alcalosis respiratoria. La ansiedad es su causa más frecuente.",
+    "datos_ids": [
+      "gases-ph-arterial",
+      "gases-paco2",
+      "gases-alcalosis-respiratoria"
+    ],
+    "pista": "Turista ansioso sopla bajo la miel, balanza sobre los rulos; la uña rasca 2, la ola se lleva 5.",
+    "rareza": "epico"
+  },
+  "c2-alcalosis-metabolica": {
+    "titulo": "Vómitos de 4 días",
+    "nivel": 2,
+    "viñeta": "Varón de 35 años con vómitos profusos durante 4 días por estenosis pilórica. Gases: pH 7.52, PaCO2 47 mmHg, HCO3 36 mEq/L; cloro 88 mEq/L y potasio 3.0 mEq/L.",
+    "pregunta": "¿Qué trastorno presenta?",
+    "opciones": [
+      "Alcalosis metabólica hipoclorémica",
+      "Acidosis metabólica hiperclorémica",
+      "Alcalosis respiratoria",
+      "Acidosis respiratoria"
+    ],
+    "correcta": 0,
+    "explicacion": "Un pH >7.45 con HCO3 >26 es alcalosis metabólica; la PaCO2 normal o algo alta es la compensación. Los vómitos hacen perder HCl, por eso el cloro está bajo (<97) y aparece hipopotasemia.",
+    "datos_ids": [
+      "gases-ph-arterial",
+      "gases-hco3",
+      "gases-alcalosis-metabolica",
+      "cloro-serico",
+      "potasio-serico"
+    ],
+    "pista": "Vómito de nachos, balanza sobre los rulos, Pulmi guarda CO2 en el saco del nido.",
+    "rareza": "epico"
+  },
+  "c2-gases-puno": {
+    "titulo": "Gases de un puneño sano",
+    "nivel": 2,
+    "viñeta": "Varón de 30 años, nacido y residente en Puno (3800 m), sano, para un examen preocupacional. pH 7.43, HCO3 20 mEq/L, SatO2 90 % y PaCO2 por debajo de 40 mmHg por la hiperventilación de altura.",
+    "pregunta": "¿Cómo se interpretan estos gases en Puno?",
+    "opciones": [
+      "Acidosis metabólica por el HCO3 bajo",
+      "Gases esperables en un aclimatado a la altura",
+      "Hipoxemia grave que requiere oxígeno",
+      "Alcalosis metabólica"
+    ],
+    "correcta": 1,
+    "explicacion": "En el aclimatado el pH es normal o levemente alcalino (7.40-7.46). En Puno el HCO3 es de 19-22 mEq/L por la compensación renal de la alcalosis respiratoria, y la docente considera normal una SatO2 de 90 % 'en nuestro medio'. Con pH normal no hay acidosis.",
+    "datos_ids": [
+      "gases-ph-arterial",
+      "gases-hco3",
+      "gases-sato2-arterial",
+      "gases-paco2"
+    ],
+    "pista": "Niño, noria y nacho sobre la totora; en Puno, del topo al niño.",
+    "rareza": "epico"
+  },
+  "c2-eap-altura": {
+    "titulo": "Turista con disnea en Puno",
+    "nivel": 2,
+    "viñeta": "Turista de 28 años que llegó de la costa a Puno hace 2 días. Presenta disnea, tos y crepitantes. Gases: pH 7.50, PaO2 48 mmHg, PaCO2 26 mmHg.",
+    "pregunta": "¿Qué patrón gasométrico tiene?",
+    "opciones": [
+      "Acidosis respiratoria por hipoventilación",
+      "Gases normales para la altura",
+      "Hipoxemia con alcalosis respiratoria (EAP de altura inicial)",
+      "Alcalosis metabólica por vómitos"
+    ],
+    "correcta": 2,
+    "explicacion": "Una PaO2 <60 mmHg es hipoxemia. Un pH >7.45 con PaCO2 baja es alcalosis respiratoria por hiperventilación. El atlas describe el EAP de altura inicial con PO2 <60 y PCO2 <30.",
+    "datos_ids": [
+      "gases-pao2",
+      "gases-paco2",
+      "gases-alcalosis-respiratoria"
+    ],
+    "pista": "Pulmi llena del vaso a las tazas; en Puno, de la losa a la choza.",
+    "rareza": "epico"
+  },
+  "c2-anion-gap-alto": {
+    "titulo": "Calcula el anión gap",
+    "nivel": 3,
+    "viñeta": "Varón de 55 años con shock séptico y acidosis metabólica (pH 7.20). Na 140, Cl 100 y HCO3 10 mEq/L.",
+    "pregunta": "¿Cuánto vale el anión gap y qué sugiere?",
+    "opciones": [
+      "12, normal: diarrea",
+      "10, normal: acidosis tubular renal",
+      "50, error de laboratorio",
+      "30, elevado: acidosis láctica o cetoacidosis"
+    ],
+    "correcta": 3,
+    "explicacion": "AG = Na − (HCO3 + Cl) = 140 − (10 + 100) = 30, por encima del normal de 8-16 mEq/L. Un AG alto orienta a cetoacidosis, láctica, IRC, AAS o metanol. En el shock séptico, a la acidosis láctica.",
+    "datos_ids": [
+      "gases-anion-gap",
+      "gases-acidosis-metabolica"
+    ],
+    "pista": "Sodio menos sus dos amigos = hueco de la uva a la teja; si crece, cae la CALIMA.",
+    "rareza": "epico"
+  },
+  "c2-anion-gap-normal": {
+    "titulo": "Diarrea crónica y cloro alto",
+    "nivel": 3,
+    "viñeta": "Mujer de 40 años con diarrea acuosa de 5 semanas. Gases con pH 7.28; Na 138, Cl 114 y HCO3 14 mEq/L.",
+    "pregunta": "¿Qué tipo de acidosis metabólica es?",
+    "opciones": [
+      "Hiperclorémica con anión gap normal, por diarrea",
+      "Con anión gap alto, por cetoacidosis",
+      "Alcalosis hipoclorémica",
+      "Acidosis respiratoria"
+    ],
+    "correcta": 0,
+    "explicacion": "AG = 138 − (14 + 114) = 10, dentro del normal (8-16). El cloro está alto (normal 97-105). Una acidosis con AG normal es hiperclorémica, y la diarrea es su causa típica.",
+    "datos_ids": [
+      "gases-anion-gap",
+      "cloro-serico",
+      "gases-acidosis-metabolica",
+      "diarrea-duracion"
+    ],
+    "pista": "Cloro: del pico al diésel; en subibaja con el bicarbonato: vómito lo baja, diarrea lo sube.",
+    "rareza": "epico"
+  },
+  "c2-light-exudado": {
+    "titulo": "Derrame con fiebre",
+    "nivel": 1,
+    "viñeta": "Varón de 45 años de Puno con fiebre, tos y derrame pleural derecho. En la toracocentesis el líquido sale turbio, con proteína pleura/suero de 0.7 y LDH pleura/suero de 0.8.",
+    "pregunta": "Según los criterios de Light, ¿qué es este líquido?",
+    "opciones": [
+      "Trasudado",
+      "Exudado",
+      "No se puede clasificar sin cultivo",
+      "Líquido pleural normal"
+    ],
+    "correcta": 1,
+    "explicacion": "Basta un criterio de Light para hablar de exudado: proteína P/S >0.5, LDH P/S >0.6 o LDH pleural >2/3 del LSN sérico. Aquí se cumplen dos (0.7 y 0.8). Causas: neumonía, TBC, cáncer, TEP.",
+    "datos_ids": [
+      "pleural-criterios-de-light",
+      "pleural-exudado"
+    ],
+    "pista": "Faro de Light: sol (0.5 proteína), ceja de lechuza (0.6 LDH), Nemo con 2 de 3 franjas (2/3 LDH); con una luz basta = exudado.",
+    "rareza": "epico"
+  },
+  "c2-trasudado": {
+    "titulo": "Derrame bilateral en insuficiencia cardíaca",
+    "nivel": 1,
+    "viñeta": "Mujer de 74 años con insuficiencia cardíaca y derrame pleural bilateral. El líquido es claro, citrino y sin coágulos; proteína P/S 0.3, LDH P/S 0.4 y LDH pleural menor de 1/3 del LSN sérico.",
+    "pregunta": "¿Cómo se clasifica el derrame?",
+    "opciones": [
+      "Exudado tuberculoso",
+      "Empiema",
+      "Trasudado",
+      "Exudado neoplásico"
+    ],
+    "correcta": 2,
+    "explicacion": "No cumple ningún criterio de Light (P/S ≤0.5, LDH P/S ≤0.6, LDH pleural ≤2/3 del LSN), así que es un trasudado. El aspecto citrino es típico de la IC, la cirrosis y el nefrótico.",
+    "datos_ids": [
+      "pleural-criterios-de-light",
+      "pleural-trasudado",
+      "pleural-aspecto"
+    ],
+    "pista": "Trasudado: vidrio sano, agua que se TRAS-pasa por presión; 'Mi Mamá No Come Helado Industrial'; Light apagado.",
+    "rareza": "epico"
+  },
+  "c2-empiema": {
+    "titulo": "Pus en la pleura",
+    "nivel": 2,
+    "viñeta": "Varón de 50 años con neumonía mal tratada y fiebre persistente. El líquido pleural es purulento: glucosa 30 mg/dL, pH 7.0 y LDH 1500 UI/L.",
+    "pregunta": "¿Qué diagnóstico y qué conducta corresponden?",
+    "opciones": [
+      "Trasudado; solo diuréticos",
+      "Derrame paraneumónico simple; observar",
+      "Quilotórax",
+      "Empiema; requiere drenaje"
+    ],
+    "correcta": 3,
+    "explicacion": "Lo normal es una glucosa pleural ≈ la sérica (>60 mg/dL), un pH de 7.60-7.64 y una LDH <50 % de la sérica. Glucosa y pH bajos, LDH alta y aspecto purulento definen empiema, que según la docente requiere drenaje quirúrgico.",
+    "datos_ids": [
+      "pleural-glucosa-ph-y-ldh",
+      "pleural-aspecto"
+    ],
+    "pista": "Choza-jarra (pH 7.60-7.64) con Don Azúcar >60; empiema: azúcar bajo la choza, NASA estrellada (<7.2), milpiés (>1000) → tubo.",
+    "rareza": "epico"
+  },
+  "c2-gasa": {
+    "titulo": "¿Ascitis portal?",
+    "nivel": 1,
+    "viñeta": "Varón de 60 años con cirrosis y ascitis. Albúmina sérica 2.8 g/dL y albúmina en el líquido ascítico 0.9 g/dL.",
+    "pregunta": "¿Qué indica el gradiente albúmina suero-ascitis (GASA)?",
+    "opciones": [
+      "GASA 1.9: origen portal (hipertensión portal)",
+      "GASA 0.9: carcinomatosis peritoneal",
+      "GASA 3.7: peritonitis tuberculosa",
+      "No se puede calcular sin proteínas"
+    ],
+    "correcta": 0,
+    "explicacion": "GASA = albúmina del suero − albúmina de la ascitis = 2.8 − 0.9 = 1.9 g/dL. Un GASA ≥1.1 indica origen portal (cirrosis, IC). Un gradiente menor orienta a enfermedad peritoneal (TBC, cáncer).",
+    "datos_ids": [
+      "ascitis-gasa"
+    ],
+    "pista": "GASA: suero menos ascitis; ≥ un dedo (1.1) = puerta portal (cirrosis, IC); < dedo = peritoneo roto (TBC, cáncer).",
+    "rareza": "epico"
+  },
+  "c2-pbe": {
+    "titulo": "Cirrótico con fiebre",
+    "nivel": 1,
+    "viñeta": "Varón de 63 años con cirrosis y ascitis, con fiebre y dolor abdominal difuso. En la paracentesis el líquido está turbio y tiene 420 PMN/mm³.",
+    "pregunta": "¿Qué diagnóstico corresponde y qué se hace?",
+    "opciones": [
+      "Ascitis no complicada; solo diuréticos",
+      "PBE; iniciar antibiótico sin esperar el cultivo",
+      "Esperar el cultivo antes de tratar",
+      "Ascitis quilosa"
+    ],
+    "correcta": 1,
+    "explicacion": "Lo normal son PMN <250/mm³. Con ≥250/mm³ hay peritonitis bacteriana espontánea, y se trata (p. ej. con cefotaxima) sin esperar el cultivo.",
+    "datos_ids": [
+      "ascitis-pmn-pbe"
+    ],
+    "pista": "Olla del cirrótico con fiebre: 250 anillos de neutrófilos = PBE → el taxi de cefotaxima sin esperar cultivo.",
+    "rareza": "epico"
+  },
+  "c2-lcr-bacteriano": {
+    "titulo": "Fiebre y nuca rígida",
+    "nivel": 1,
+    "viñeta": "Varón de 19 años con fiebre, cefalea intensa, rigidez de nuca y confusión. LCR turbio con presión de 300 mmH2O, 1200 células (90 % neutrófilos), proteínas 180 mg/dL y glucosa 25 mg/dL, con glucemia de 100 mg/dL.",
+    "pregunta": "¿Qué patrón tiene el LCR?",
+    "opciones": [
+      "Viral (aséptico)",
+      "Tuberculoso",
+      "Bacteriano (piógeno)",
+      "LCR normal"
+    ],
+    "correcta": 2,
+    "explicacion": "Hay presión alta (normal <180 mmH2O), neutrófilos abundantes (normal <5 linfocitos), proteínas altas (normal 20-40) y glucosa baja: 25 % de la glucemia, cuando lo normal es 50-60 %. Todo sube menos el azúcar: meningitis bacteriana.",
+    "datos_ids": [
+      "lcr-patron-bacteriano-piogeno",
+      "lcr-presion",
+      "lcr-celulas",
+      "lcr-proteinas",
+      "lcr-glucosa"
+    ],
+    "pista": "Bacteriana: todo sube (presión, neutrófilos, proteínas) menos el azúcar; fiebre + nuca tiesa + confusión; la rana Kernig y la bruja Brudzinski positivas.",
+    "rareza": "epico"
+  },
+  "c2-lcr-viral": {
+    "titulo": "Meningitis con azúcar intacto",
+    "nivel": 1,
+    "viñeta": "Mujer de 24 años con fiebre, cefalea y rigidez de nuca leve, en buen estado general. LCR transparente con 120 células (85 % linfocitos), proteínas 60 mg/dL y glucosa 65 mg/dL, con glucemia de 110 mg/dL.",
+    "pregunta": "¿Qué patrón sugiere el LCR?",
+    "opciones": [
+      "Bacteriano (piógeno)",
+      "Tuberculoso",
+      "Hemorragia subaracnoidea",
+      "Viral (aséptico)"
+    ],
+    "correcta": 3,
+    "explicacion": "Tiene linfocitosis, proteínas moderadamente altas (normal 20-40) y glucosa normal: 65/110 ≈ 59 %, dentro del 50-60 % de la glucemia. Es el patrón viral. En la bacteriana la glucosa baja y predominan los neutrófilos.",
+    "datos_ids": [
+      "lcr-patron-viral-aseptico",
+      "lcr-celulas",
+      "lcr-glucosa",
+      "lcr-proteinas"
+    ],
+    "pista": "Viral: turista tranquilo con linfocitos de la mano, mochilita de proteínas y Don Azúcar intacto; azúcar mordido = TBC u hongos.",
+    "rareza": "epico"
+  }
+}

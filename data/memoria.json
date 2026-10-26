@@ -57,7 +57,7 @@
    "#195"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/frecuencia-cardiaca-pulso.webp",
   "estacion": {
    "seccion": "s1",
    "n": 0,
@@ -153,7 +153,7 @@
    "#143"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/presion-arterial.webp",
   "estacion": {
    "seccion": "s1",
    "n": 1,
@@ -223,7 +223,7 @@
    "#124"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/frecuencia-respiratoria.webp",
   "estacion": {
    "seccion": "s1",
    "n": 2,
@@ -303,7 +303,7 @@
    "#137"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/temperatura.webp",
   "estacion": {
    "seccion": "s1",
    "n": 3,
@@ -381,7 +381,7 @@
    "#139"
   ],
   "revisar": true,
-  "imagen": null,
+  "imagen": "img/memo/saturacion-de-oxigeno.webp",
   "estacion": {
    "seccion": "s1",
    "n": 4,
@@ -465,7 +465,7 @@
    "#189"
   ],
   "revisar": true,
-  "imagen": null,
+  "imagen": "img/memo/peso-talla-imc.webp",
   "estacion": {
    "seccion": "s1",
    "n": 5,
@@ -1721,7 +1721,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/hemoglobina.webp",
   "estacion": {
    "seccion": "s3",
    "n": 0,
@@ -1799,7 +1799,7 @@
    "#139"
   ],
   "revisar": false,
-  "imagen": null,
+  "imagen": "img/memo/eritrocitosis-de-altura-hb.webp",
   "estacion": {
    "seccion": "s3",
    "n": 1,
@@ -3328,7 +3328,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cubo de azúcar blanco antropomórfico con sombrero de copa negro, ojos enormes de pánico, cayendo de cabeza dentro de una tinaja de barro gigante llena de almíbar dorado que burbujea. Elementos secundarios: detrás, la boca de un túnel oscuro y pegajoso del que acaba de salir; a la izquierda, una casita cuyo techo está cubierto de tazas de té colgantes. Escenario: entrada de un mercado andino techado con puestos de colores. Composición: el cubo centrado y grande, líneas de movimiento de caída, salpicaduras de almíbar. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/glucosa-en-ayunas.webp",
   "imagen_clave": true,
   "preguntas": [
    {
@@ -3802,7 +3802,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un salero de vidrio gigante antropomórfico con ojos y brazos, con miel goteando por su base y rulos de peluquería en su tapa, sacudiéndose sobre un cerebro rosado. Acción: chorros de agua siguen a la sal como una correa, y el cerebro a un lado se hincha como globo con cara de pánico. Elementos secundarios: unas tunas y un taco a los costados. Escenario: puesto de carnes de mercado andino. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/sodio-serico.webp",
   "imagen_clave": true,
   "preguntas": [
    {
@@ -3871,7 +3871,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un plátano amarillo gigante antropomórfico bañado en miel brillante, patinando sobre una losa de piedra y sosteniendo palas de desfibrilador. Acción: frente a él, un corazón rojo con guantes de boxeo y cinturón de campeón tiembla mientras del suelo brotan picos altísimos y puntiagudos como carpas de circo. Elementos secundarios: un anillo dorado rodando en el suelo. Escenario: puesto de hierbas de un mercado andino con atados verdes. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/potasio-serico.webp",
   "imagen_clave": true,
   "preguntas": [
    {
@@ -3935,7 +3935,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un salvavidas de piscina caricaturesco con silbato y una botella de lejía en la mano, sentado en un extremo de un subibaja que cae de golpe hacia el suelo. Acción: en el otro extremo, una burbuja transparente y brillante sale volando hacia el cielo. Elementos secundarios: al fondo, el pico de una montaña nevada y un bidón metálico de combustible. Escenario: puesto de papas y chuño de mercado andino. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/cloro-serico.webp",
   "imagen_clave": true,
   "preguntas": [
    {
@@ -4010,7 +4010,7 @@
   "acronimo": null,
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un esqueleto blanco simpático sirviendo un plato de sopa humeante y removiéndola con un dedo gigante. Acción: a su lado, un paciente sentado en un sofá tiene la mano contraída con los dedos juntos en punta mientras un manguito de tensiómetro le aprieta el brazo, y su mejilla se tuerce al recibir un golpecito con un martillo de reflejos. Elementos secundarios: una balanza de mercado antigua al fondo. Escenario: mercado andino. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/calcio-serico.webp",
   "imagen_clave": true,
   "preguntas": [
    {
@@ -7323,7 +7323,7 @@
   },
   "imagen_clave": true,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una balanza de laboratorio de dos platos con cara, ojos grandes y brazos, de pie en la proa de una lancha de madera junto a un muelle de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: en el plato izquierdo sostiene un frasco de miel dorada que gotea y en el derecho una señora diminuta con rulos rosados que resbala sobre espuma de jabón. Elementos secundarios: un limón gigante con cara enojada escupiendo chorros desde el agua. Composición: balanza centrada y grande, lago azul y cielo limpio. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/gases-ph-arterial.webp",
   "preguntas": [
    {
     "q": "¿pH arterial normal?",
@@ -7465,7 +7465,7 @@
   },
   "imagen_clave": true,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo, unidos como pulmones, soplando con fuerza una nube de humo gris sobre la llegada a isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: el humo envuelve una rosa roja que sostiene una balanza de dos platos con cara y ojos; en un plato una señora diminuta con rulos tose con el pelo chamuscado. Elementos secundarios: un frasco de miel en el otro plato. Composición: Pulmi a la izquierda, balanza centrada, totora dorada y lago azul. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/gases-paco2.webp",
   "preguntas": [
    {
     "q": "¿PaCO2 normal?",
@@ -7538,7 +7538,7 @@
   },
   "imagen_clave": true,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un niño alegre con chullo andino saltando sobre un piso esponjoso de totora en isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: frente a él, un nacho de maíz gigante con cara rebota soltando polvo blanco que hace espuma, y entre ambos gira una pequeña noria de feria. Elementos secundarios: un topo asoma la cabeza entre los juncos a los pies del niño, y un frijol café con manguera tira polvo blanco al agua. Composición: niño centrado, colores dorado y azul. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/gases-hco3.webp",
   "preguntas": [
    {
     "q": "¿HCO3− normal?",
@@ -7664,7 +7664,7 @@
   },
   "imagen_clave": true,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un glóbulo rojo redondo con casco militar trepando la escalera de una torre de vigía de totora en isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado, sudando y cargando una pesa de bronce. Acción: detrás de él suben en fila muchos glóbulos rojos iguales, uno con una pala llena y otro abrazando un pavo. Elementos secundarios: un glóbulo morado y agotado sentado al pie de la torre con un vaso de agua. Composición: glóbulo centrado, cielo azul intenso. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
-  "imagen": null,
+  "imagen": "img/memo/gases-sato2-arterial.webp",
   "preguntas": [
    {
     "q": "¿SatO2 arterial normal a nivel del mar?",
@@ -9412,7 +9412,7 @@
    }
   ],
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete y puntero, con cara de urgencia. Acción: cuelga de un arco de piedra universitario un reloj de vidrio gigante cuyas tres manecillas son un ojo, una boca y una mano; la esfera del reloj es un televisor encendido con un estudiante sonriente. Elementos secundarios: una dama elegante montada sobre un toro que se tambalea; un paciente con una uva atorada en la garganta al que el cerebro le acerca un tubo de plástico. Escenario: portada de una universidad andina con cielo azul de altura. Composición: reloj centrado y grande, líneas de movimiento. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/escala-de-coma-de-glasgow.webp",
   "imagen_clave": true,
   "preguntas": [
    {
@@ -9573,7 +9573,7 @@
   "acronimo": "Nada · Tiembla · Arrastra · Levanta · Empuja algo · Gana (0 a 5).",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete, con un brazo musculoso de caricatura, sudando y con los dientes apretados. Acción: levanta en el aire un libro gigantesco mientras una bibliotecaria de lentes aplasta el libro hacia abajo con un solo dedo; ambos hacen fuerza con venas marcadas y líneas de tensión. Elementos secundarios: un pequeño planeta Tierra flotando sobre la mesa que tira del libro hacia abajo con una flecha de gravedad. Escenario: biblioteca universitaria con estantes de madera. Composición: duelo centrado, colores cálidos. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/fuerza-muscular-mrc-daniels.webp",
   "imagen_clave": true,
   "preguntas": [
    {
@@ -9766,7 +9766,7 @@
   "acronimo": "Pares: I-II se oye (silencio / enseguida) · III-IV se toca o no (sin / con frémito) · V-VI el estetoscopio se separa (borde / sin tocar).",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo con guantes de box y cinturón de campeón, inflando los cachetes y soplando un remolino de viento turquesa. Acción: el viento hace vibrar con fuerza las carpetas de un aula, con líneas de temblor, y un estudiante apoya la mano sobre una carpeta que tiembla. Elementos secundarios: un estetoscopio que flota en el aire separado del pecho del corazón, con ondas de sonido. Escenario: aula universitaria con pizarra verde. Composición: corazón centrado, remolino envolviendo la escena. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/soplos-freeman-levine.webp",
   "imagen_clave": true,
   "preguntas": [
    {
@@ -9818,7 +9818,7 @@
   "acronimo": "I nada · II grande · III mediano · IV reposo.",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo con guantes de box y cinturón de campeón, agotado, sudando a chorros. Acción: está sentado en una carpeta de aula sobre una torre altísima de almohadas, jadeando con la boca abierta y nubes de vapor, con los tobillos hinchados como globos. Elementos secundarios: al fondo, una escalera con huellas de saltos enérgicos y una mochila gigante de libros abandonada. Escenario: aula universitaria. Composición: corazón centrado y grande, tonos rojos y azules. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/clase-funcional-nyha.webp",
   "imagen_clave": true,
   "preguntas": [
    {
@@ -9887,7 +9887,7 @@
   "acronimo": "Dónde presionar: TiMaSa = Tibia, Maléolo, Sacro (nunca pantorrilla).",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo con guantes de box y cinturón de campeón, concentrado. Acción: presiona con un dedo enorme la espinilla de una pierna gigante de plastilina rosada y deja un hoyo profundo que permanece marcado. Elementos secundarios: una taza de café humeante junto a un pequeño televisor; un anillo dorado girando sobre la mesa. Escenario: laboratorio de anatomía con modelos anatómicos de plástico. Composición: pierna en diagonal, dedo y hoyo al centro. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/edema-signo-de-godet-fovea.webp",
   "imagen_clave": true,
   "preguntas": [
    {
@@ -9961,7 +9961,7 @@
    }
   ],
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una pierna gigante hinchada y roja sobre un escenario de anfiteatro, con cara de dolor. Acción: dentro de la pierna, pequeños glóbulos rojos con casco de soldado se apilan formando un tapón, mientras la pierna se infla al doble que la pierna sana de al lado. Elementos secundarios: en las gradas, un paciente con yeso y otro acostado en una tina de hospital; un ecógrafo con ruedas entra en escena con su sonda. Escenario: anfiteatro universitario de gradas semicirculares. Composición: pierna centrada. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/score-de-wells-para-tvp.webp",
   "imagen_clave": true,
   "preguntas": [
    {
@@ -10169,7 +10169,7 @@
   "acronimo": "RAP = Respiración ≥22 · Alteración mental (Glasgow <15) · Presión sistólica ≤100. Con 2 de 3 → alta sospecha.",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una bacteria verde villana con antifaz y capa morada, cantando rap con micrófono sobre un escenario. Acción: a su lado un niño sopla un pito con las mejillas infladas y líneas de velocidad, un televisor se apaga con chispas y una torre de tazas se derrumba. Elementos secundarios: dos enfermeras corren hacia el escenario con frascos de cultivo. Escenario: auditorio universitario con butacas rojas y reflectores. Composición: bacteria centrada bajo un foco. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/qsofa.webp",
   "imagen_clave": true,
   "preguntas": [
    {
@@ -10239,7 +10239,7 @@
   "acronimo": "FEAST = Fiebre >38 · Exudado amigdalino · Adenopatía cervical anterior dolorosa · Sin Tos.",
   "ruta_palacio": null,
   "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una cadena de bacterias verdes villanas con antifaz y capa morada, unidas como un collar, celebrando un banquete. Acción: sobre unas amígdalas gigantes rojas untan crema blanca con espátulas, junto a una olla hirviendo con vapor de fiebre. Elementos secundarios: ganglios del cuello inflados como pelotas que hacen una mueca de dolor; un niño saliendo de un vagón de metro y una señora con rulos. Escenario: oficina elegante de decanato. Composición: garganta como escenario central. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
-  "imagen": null,
+  "imagen": "img/memo/criterios-de-centor.webp",
   "imagen_clave": true,
   "preguntas": [
    {

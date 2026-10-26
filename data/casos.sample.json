@@ -1,0 +1,44 @@
+{
+ "_nota": {
+  "titulo": "_nota",
+  "nivel": "",
+  "viñeta": "CASOS DE EJEMPLO solo para probar el modo juego (las claves que empiezan con _ se ignoran). Los casos reales van en data/casos.json.",
+  "pregunta": "",
+  "opciones": [],
+  "correcta": 0
+ },
+ "ejemplo-anemia-altura": {
+  "titulo": "Fatiga en la ciudad del lago",
+  "nivel": "básico",
+  "viñeta": "Mujer de 28 años, vive en Puno (3800 m s. n. m.), consulta por cansancio y palidez de 3 meses. Menstruaciones abundantes. Hb 10,2 g/dL, VCM 72 fL, HCM 23 pg.",
+  "pregunta": "¿Qué tipo de anemia es más probable?",
+  "opciones": [
+   "Microcítica hipocrómica (ferropénica)",
+   "Macrocítica (megaloblástica)",
+   "Normocítica normocrómica por enfermedad crónica",
+   "No es anemia: en la altura la Hb normal es más baja"
+  ],
+  "correcta": 0,
+  "explicacion": "VCM < 80 fL y HCM < 27 pg = microcítica hipocrómica; con pérdidas menstruales, lo primero es ferropenia. Ojo: en la altura la Hb normal es MÁS ALTA, así que 10,2 g/dL es anemia franca.",
+  "datos_ids": ["hemoglobina", "vcm", "hcm", "eritrocitosis-de-altura-hb"],
+  "pista": "Mira el VCM: ¿está por debajo o por encima de 80 fL?",
+  "rareza": "epico"
+ },
+ "ejemplo-acidosis-diabetica": {
+  "titulo": "El joven que respira hondo",
+  "nivel": "intermedio",
+  "viñeta": "Varón de 19 años con diabetes tipo 1, vómitos y respiración profunda y rápida. Gases: pH 7,18 · PaCO2 22 mmHg · HCO3 8 mEq/L. Na 136, Cl 100.",
+  "pregunta": "¿Cuál es el trastorno ácido-base principal?",
+  "opciones": [
+   "Acidosis metabólica con anión gap elevado",
+   "Acidosis respiratoria aguda",
+   "Alcalosis metabólica por vómitos",
+   "Acidosis metabólica hiperclorémica (anión gap normal)"
+  ],
+  "correcta": 0,
+  "explicacion": "pH bajo + HCO3 bajo = acidosis metabólica; la PaCO2 baja es la compensación (Kussmaul). AG = 136 − (100 + 8) = 28 (> 12): anión gap elevado por cetoácidos.",
+  "datos_ids": ["gases-ph-arterial", "gases-hco3", "gases-anion-gap", "gases-acidosis-metabolica"],
+  "pista": "Primero el pH, luego quién lo explica (HCO3 o PaCO2), y al final calcula Na − (Cl + HCO3).",
+  "rareza": "epico"
+ }
+}
