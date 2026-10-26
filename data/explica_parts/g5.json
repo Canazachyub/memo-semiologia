@@ -1,0 +1,188 @@
+{
+ "gases-ph-arterial": {
+  "porque": "El pH expresa en escala logarítmica la concentración de H+ y depende del cociente HCO3 (lo regula el riñón) sobre PaCO2 (lo regula el pulmón). Baja si se acumulan ácidos fijos, se pierde bicarbonato o se retiene CO2; sube si se pierde H+ o se hiperventila. Los tampones lo frenan en segundos. [vault difiere de literatura: acidosis respiratoria con pH <7.32, no <7.35]",
+  "ejemplo": "Joven de 19 años con diabetes tipo 1 llega a emergencia en Puno con respiración de Kussmaul: pH 7.15 y HCO3 8 mEq/L. Es acidosis metabólica grave (pH <7.22) y cumple el criterio docente para bicarbonato IV (pH <7.20 y HCO3 <10).",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_08_ALTERACIONES_DEL_EQUILIBRIO_ACIDO-_BASE..md"
+ },
+ "gases-pao2": {
+  "porque": "La PaO2 es la presión del oxígeno disuelto en la sangre arterial y depende de la PO2 alveolar y de la relación ventilación/perfusión. En altura baja porque cae la presión barométrica y con ella la PO2 inspirada, sin que el pulmón falle; en el llano baja por hipoventilación, shunt, trastorno de difusión o desequilibrio V/Q. Sube con oxígeno suplementario.",
+  "ejemplo": "Turista de 30 años llega de Lima a Puno y a las 36 horas tiene disnea, tos y crepitantes: PaO2 48 mmHg y PaCO2 28. Aun para la altura (residente ≈50-60) es hipoxemia franca, menor de 60, compatible con edema agudo de pulmón de altura en fase inicial.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_30_EDEMA_AGUDO_PULMON_ALTURA.md"
+ },
+ "gases-paco2": {
+  "porque": "La PaCO2 refleja casi solo la ventilación alveolar: el CO2 difunde con facilidad, así que si se ventila poco se acumula (acidosis respiratoria) y si se ventila de más se elimina (alcalosis respiratoria). La hipocapnia contrae las arteriolas cerebrales: bajo 20 mmHg el flujo cerebral cae hasta un tercio. [vault difiere de literatura: Clase 08 la anota en mEq; es mmHg]",
+  "ejemplo": "Varón de 68 años con EPOC, somnoliento y confuso tras una neumonía: PaCO2 70 mmHg y pH 7.25. La hipercapnia explica la desorientación; es acidosis respiratoria y se trata mejorando la ventilación, incluso con ventilador, no con bicarbonato.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_09_I._ACIDOSIS_RESPIRATORIA.md"
+ },
+ "gases-hco3": {
+  "porque": "El bicarbonato es el principal tampón extracelular y su nivel lo fija el riñón, que reabsorbe todo lo filtrado y genera más al eliminar H+. Baja si se consume neutralizando ácidos fijos o se pierde (diarrea, acidosis tubular); sube con vómitos, diuréticos o al compensar una hipercapnia crónica. [vault difiere de literatura: docente da acidosis con HCO3 <24; literatura <22]",
+  "ejemplo": "Niño de 3 años de Juliaca con diarrea acuosa de 4 días, deshidratado y polipneico: HCO3 12 mEq/L y pH 7.24. La pérdida intestinal de bicarbonato causó acidosis metabólica; se rehidrata y se trata la causa, sin bicarbonato IV porque no llega a pH <7.20 con HCO3 <10.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_08_ALTERACIONES_DEL_EQUILIBRIO_ACIDO-_BASE..md"
+ },
+ "gases-exceso-de-base": {
+  "porque": "El exceso de base estima cuántos mEq de base sobran o faltan para llevar la sangre a pH 7.40 con PaCO2 de 40, así aísla el componente metabólico. Un valor negativo (déficit de base) indica bicarbonato consumido por ácidos fijos o perdido; uno positivo, bicarbonato en exceso. [vault difiere de literatura: docente ±2.5; página auto de Fisiología y literatura ±2]",
+  "ejemplo": "Paciente de 45 años en shock séptico con lactato alto: EB −12 y HCO3 13 mEq/L. El déficit de base marcado confirma acidosis metabólica por ácido láctico; orienta la gravedad, pero lo prioritario es restaurar la perfusión con fluidos y tratar la sepsis.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_08_ALTERACIONES_DEL_EQUILIBRIO_ACIDO-_BASE..md"
+ },
+ "gases-sato2-arterial": {
+  "porque": "La SatO2 es el porcentaje de hemoglobina ocupada por oxígeno y sigue una curva sigmoidea: arriba es plana y bajo PaO2 de 60 cae en picada. En Puno la menor PO2 inspirada deja la saturación cerca de 90%. La hipoxia crónica estimula la eritropoyetina y la eritrocitosis; si es excesiva, espesa la sangre, favorece trombosis y lleva a cor pulmonale.",
+  "ejemplo": "Minero de 55 años de La Rinconada con cianosis, edema de piernas e ingurgitación yugular: SatO2 72% y eritrocitosis marcada. La hipoxemia severa, por debajo de 80%, encaja con cor pulmonale crónico de altura agravado por la eritrocitosis excesiva.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_33_COR_PULMONALE_CRONICO.md"
+ },
+ "gases-anion-gap": {
+  "porque": "Como la sangre es eléctricamente neutra, el anión gap estima los aniones no medidos (sobre todo albúmina, más lactato, cetoácidos o sulfatos). Si un ácido fijo consume HCO3 y deja su anión, el gap sube; si el HCO3 perdido se reemplaza por cloro (diarrea, acidosis tubular), queda normal. La albúmina baja reduce el gap y puede ocultar uno elevado.",
+  "ejemplo": "Diabético de 25 años: Na 138, Cl 100 y HCO3 10 mEq/L. AG = 138 − (10 + 100) = 28, elevado: acidosis metabólica por cetoacidosis. Si además tuviera albúmina de 2 g/dL, el AG corregido sumaría 5 puntos más.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/clases/05_UNIDAD_V_LIQUIDOS_CORPORALES_Y_RINON/07_Capitulo_31.md"
+ },
+ "gases-acidosis-metabolica": {
+  "porque": "Hay ganancia neta de ácidos fijos (cetoácidos, lactato, tóxicos) o pérdida de bicarbonato (diarrea, insuficiencia renal, acidosis tubular). El exceso de H+ estimula el centro respiratorio y aparece la respiración de Kussmaul, que baja la PaCO2 para compensar. El H+ entra a la célula a cambio de K+ (hiperpotasemia) y el hueso cede carbonato como tampón.",
+  "ejemplo": "Mujer de 50 años con insuficiencia renal crónica: pH 7.28, HCO3 14 y PaCO2 29. Por Winter la PaCO2 esperada es 1.5 × 14 + 8 = 29 ± 2, así que la compensación respiratoria es adecuada y el trastorno es simple, sin componente respiratorio agregado.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_08_ALTERACIONES_DEL_EQUILIBRIO_ACIDO-_BASE..md"
+ },
+ "gases-acidosis-respiratoria": {
+  "porque": "La hipoventilación alveolar retiene CO2, que con agua forma ácido carbónico y libera H+. En horas el riñón aún no compensa y el HCO3 sigue casi normal; en días aumenta su reabsorción y síntesis, por eso en el EPOC crónico está alto. La hipercapnia dilata los vasos cerebrales y causa cefalea, confusión y coma. [vault difiere de literatura: docente usa pH <7.32; literatura <7.35]",
+  "ejemplo": "Paciente de 40 años con sobredosis de benzodiacepinas: PaCO2 60, HCO3 26 y pH 7.24. La PaCO2 subió 20 mmHg y el HCO3 solo 2, lo esperado en un trastorno agudo; se asegura la vía aérea y la ventilación, sin bicarbonato.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_09_I._ACIDOSIS_RESPIRATORIA.md"
+ },
+ "gases-alcalosis-metabolica": {
+  "porque": "Se genera al perder H+ (vómitos, sonda nasogástrica, diuréticos) o ganar bicarbonato, y se mantiene porque la depleción de volumen, cloro y K+ y el exceso de aldosterona impiden al riñón eliminar el bicarbonato sobrante. El pulmón compensa hipoventilando. El pH alto une calcio a la albúmina y baja el calcio ionizado: tetania y arritmias.",
+  "ejemplo": "Gestante de 24 años con hiperémesis: pH 7.52, HCO3 36, PaCO2 46 y cloro urinario 10. La PaCO2 esperada es 0.7 × 36 + 21 ≈ 46, compensación adecuada; el cloro urinario bajo indica que responde a suero salino 0.9% más cloruro de potasio.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_09_I._ACIDOSIS_RESPIRATORIA.md"
+ },
+ "gases-alcalosis-respiratoria": {
+  "porque": "La hiperventilación elimina más CO2 del que se produce; la causa más frecuente es la ansiedad, pero la hipoxemia de altura, la fiebre, la sepsis o los salicilatos estimulan igual el centro respiratorio. El pH alto baja el calcio ionizado (parestesias, Chvostek, Trousseau). En días el riñón elimina bicarbonato y compensa, como en el residente de altura.",
+  "ejemplo": "Estudiante limeña de 20 años, en su segundo día en Puno, con hormigueo perioral y espasmo carpopedal tras una discusión: PaCO2 25, HCO3 21 y pH 7.52. Alcalosis respiratoria aguda (HCO3 baja 2 por cada 10 mmHg); mejora con calma y reinhalando en bolsa de papel.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_09_I._ACIDOSIS_RESPIRATORIA.md"
+ },
+ "gases-compensacion-esperada": {
+  "porque": "Ante un trastorno primario, el sistema contrario mueve su variable en el mismo sentido para acercar el cociente HCO3/PaCO2 a lo normal: el pulmón responde en 6-12 horas y el riñón en 3-5 días. La compensación es parcial y nunca sobrepasa el pH; si se sale de lo esperado, o el pH es normal con ambos valores alterados, hay un trastorno mixto.",
+  "ejemplo": "Paciente de 60 años con sepsis: pH 7.40, PaCO2 25 y HCO3 15. Un pH normal con ambos valores muy bajos no es compensación perfecta: por Winter la PaCO2 debería ser ≈30, así que coexisten acidosis metabólica y alcalosis respiratoria, típico de la sepsis.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/clases/05_UNIDAD_V_LIQUIDOS_CORPORALES_Y_RINON/07_Capitulo_31.md"
+ },
+ "pleural-volumen-normal": {
+  "porque": "La pleura parietal filtra líquido y sus linfáticos lo drenan, dejando solo una película lubricante. Hay derrame cuando la filtración supera el drenaje. El líquido separa pulmón y pared: amortigua las vibraciones, da matidez y apaga el murmullo; los volúmenes pequeños se esconden en el seno costodiafragmático. [vault difiere de literatura: docente 3-5 ml; literatura ~5-15 ml]",
+  "ejemplo": "Varón de 65 años con neumonía basal izquierda: la placa de pie solo muestra el seno costodiafragmático romo. En decúbito lateral izquierdo el líquido se desplaza y forma una franja junto a la pared: derrame paraneumónico pequeño, menor de 300 ml, que de pie pasaba inadvertido.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/07e_Sindromes_pulmonares_y_pleurales.md"
+ },
+ "pleural-trasudado": {
+  "porque": "En el trasudado la pleura está sana y el líquido sale por desequilibrio de las fuerzas de Starling: sube la presión hidrostática (insuficiencia cardíaca) o baja la oncótica por hipoalbuminemia (cirrosis, nefrótico). Como el capilar no está dañado pasan agua y solutos pero pocas proteínas y células; por eso es claro, amarillo pálido y no coagula.",
+  "ejemplo": "Varón de 72 años con insuficiencia cardíaca congestiva y derrame derecho: líquido claro, amarillo pálido, sin coágulos, con proteína pleura/suero 0.3 y LDH pleura/suero 0.4. No cumple ningún criterio de Light: trasudado, y se trata la falla cardíaca con diuréticos.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/07g_Examenes_complementarios_del_aparato_respiratorio.md"
+ },
+ "pleural-exudado": {
+  "porque": "En el exudado la pleura está enferma: la inflamación, la infección o el tumor aumentan la permeabilidad capilar o bloquean el drenaje linfático. Escapan proteínas grandes como el fibrinógeno, además de LDH y células; por eso el líquido es opaco, de color variable y forma coágulos. Orienta a TBC, neumonía, neoplasia o embolia pulmonar.",
+  "ejemplo": "Joven de 22 años de Puno con fiebre vespertina, baja de peso y derrame izquierdo: líquido opaco que coagula, proteína pleura/suero 0.7, 80% de linfocitos y ADA 60 U/L. Exudado linfocitario con ADA alta: pleuresía tuberculosa.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/07g_Examenes_complementarios_del_aparato_respiratorio.md"
+ },
+ "pleural-criterios-de-light": {
+  "porque": "Comparan el líquido pleural con la sangre para saber si la pleura deja escapar proteínas y LDH, marcadores de daño o inflamación. Basta un criterio para llamarlo exudado, lo que los hace muy sensibles; su punto débil es el cardiópata tratado con diuréticos, cuyo trasudado se concentra y puede parecer exudado.",
+  "ejemplo": "Paciente de 58 años con derrame: proteína pleural 4.2 y sérica 6.0 g/dL (0.70), LDH pleural 310 y sérica 400 U/L (0.78), con límite superior sérico de 250 (2/3 = 167). Cumple los tres criterios: exudado; se busca neumonía, TBC o cáncer.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Efusion-Pleural.md"
+ },
+ "pleural-aspecto": {
+  "porque": "El color delata lo acumulado: el citrino es ultrafiltrado de plasma de un trasudado; el sanguinolento, sangre de un tumor que invade vasos pleurales; el achocolatado, el pus amebiano de un absceso hepático roto a la pleura; el purulento, neutrófilos y bacterias del empiema; el lechoso, quilo por rotura del conducto torácico.",
+  "ejemplo": "Varón de 68 años, fumador, con disnea progresiva y baja de peso: la toracocentesis extrae líquido sanguinolento que no se aclara. Por la edad mayor de 60 años sugiere neoplasia (carcinoma broncogénico o metástasis pleural) y se envía a citología en busca de células malignas.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/07g_Examenes_complementarios_del_aparato_respiratorio.md"
+ },
+ "pleural-glucosa-ph-y-ldh": {
+  "porque": "Neutrófilos y bacterias consumen glucosa y producen ácido láctico y CO2 por glucólisis anaerobia, así que en el empiema glucosa y pH caen; la LDH sube porque se libera de las células que se lisan. Por eso pH, glucosa y LDH miden cuán activa es la infección pleural y si el líquido se reabsorberá solo o necesita drenaje.",
+  "ejemplo": "Paciente de 50 años con neumonía mal tratada y fiebre persistente: líquido pleural turbio con pH 7.0, glucosa 35 mg/dL y LDH 1500 U/L. Es un derrame paraneumónico complicado o empiema: además del antibiótico requiere tubo de drenaje.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Empiema-Pleural.md"
+ },
+ "pleural-celulas": {
+  "porque": "Las células dicen qué tipo de inflamación hay: los neutrófilos llegan primero en la agresión bacteriana aguda (neumonía, empiema), mientras que la TBC genera una respuesta inmune celular crónica con linfocitos, igual que muchas neoplasias. La ADA es una enzima de los linfocitos activados, por eso sube en la pleuresía tuberculosa.",
+  "ejemplo": "Mujer de 35 años de Juliaca con tos de un mes y derrame derecho: 2500 células/µL con 85% de linfocitos y ADA 70 U/L. Exudado linfocitario con ADA mayor de 40: pleuresía tuberculosa, y se inicia tratamiento aunque la baciloscopia sea negativa.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Toracocentesis.md"
+ },
+ "ascitis-gasa": {
+  "porque": "La albúmina se reparte según las presiones: en la hipertensión portal el sinusoide filtra, por presión hidrostática alta, un líquido pobre en albúmina, y la diferencia suero-ascitis es grande. Cuando el peritoneo está enfermo (TBC, carcinomatosis) escapa líquido rico en proteínas y la diferencia es pequeña. El GASA orienta la causa mejor que trasudado o exudado.",
+  "ejemplo": "Varón de 55 años, bebedor crónico, con ascitis: albúmina sérica 2.8 y ascítica 0.9 g/dL, GASA 1.9. Es ascitis por hipertensión portal (cirrosis), y se maneja con restricción de sodio y diuréticos.",
+  "origen": "mixto",
+  "nota": "wiki/PATOLOGIA 2026/clases/15a_Insuficiencia-hepatica-cirrosis-hipertension-portal.md"
+ },
+ "ascitis-pmn-pbe": {
+  "porque": "En el cirrótico las bacterias intestinales atraviesan la pared y llegan a una ascitis pobre en proteínas y opsoninas, con pocas defensas. Los neutrófilos acuden a la infección, y un recuento de 250/mm³ o más basta para diagnosticar peritonitis bacteriana espontánea aunque el cultivo tarde o salga negativo; por eso se trata sin esperarlo.",
+  "ejemplo": "Cirrótico de 60 años con ascitis, fiebre de 38.3 °C y confusión leve, sin abdomen quirúrgico: la paracentesis muestra 600 PMN/mm³. Es PBE: se inicia cefotaxima de inmediato y se envía cultivo; la confusión puede ser encefalopatía precipitada por la infección.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md"
+ },
+ "ascitis-aspecto-y-estudio": {
+  "porque": "El aspecto delata el contenido: seroso o cetrino en la hipertensión portal (ultrafiltrado), turbio cuando hay neutrófilos de una infección, hemorrágico cuando un tumor o un trauma rompe vasos, y lechoso cuando se rompen linfáticos y vierten quilomicrones ricos en triglicéridos. Por eso se piden juntos los estudios físico, químico, citológico y bacteriológico.",
+  "ejemplo": "Mujer de 62 años con ascitis y baja de peso, sin estigmas de cirrosis: líquido hemorrágico con células carcinomatosas en la citología. Es carcinomatosis peritoneal y no ascitis portal; se busca el tumor primario, por ejemplo ovárico o gástrico.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09c_Semiologia_de_esofago_estomago_y_examenes_complementarios.md"
+ },
+ "ascitis-deteccion-y-puncion": {
+  "porque": "El líquido libre cae por gravedad a los flancos y las asas con gas flotan a la línea media; por eso la matidez aparece en flancos y se desplaza al cambiar de decúbito. Con poco volumen el examen no lo detecta (la ecografía sí) y la oleada exige abdomen a tensión. Se punza a la izquierda, en zona mate, para evitar el ciego y no pinchar asas.",
+  "ejemplo": "Cirrótico de 58 años con abdomen globoso: la matidez de flancos se desplaza al girarlo de lado, pero no hay oleada. Tiene ascitis moderada, más de 500 ml; se confirma con ecografía y se punza en el tercio externo de la línea ombligo-espina ilíaca anterosuperior izquierda.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md"
+ },
+ "lcr-presion": {
+  "porque": "La presión del LCR refleja la intracraneal y depende del equilibrio entre producción en plexos coroideos y absorción en vellosidades aracnoideas. Sube si pus y proteínas traban la absorción o hay masa o edema. Con papiledema, sacar líquido abajo crea un gradiente que puede herniar el encéfalo. [vault difiere internamente: <180 mmH2O vs 'hasta 20 cm de agua'; Guyton ~130]",
+  "ejemplo": "Joven de 18 años con fiebre, cefalea intensa y rigidez de nuca, sin papiledema ni focalidad: en decúbito lateral relajado el manómetro marca 320 mmH2O. La presión alta acompaña a la meningitis bacteriana; el LCR se envía a Gram, cultivo y bioquímica.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11j_Pares_oculomotores_examen_pupilar_y_neuroimagenes.md"
+ },
+ "lcr-aspecto": {
+  "porque": "El LCR normal es cristalino porque casi no tiene células ni proteínas. Se enturbia cuando hay cientos de leucocitos (meningitis purulenta) y se vuelve xantocrómico cuando los eritrocitos de una hemorragia subaracnoidea se lisan y liberan pigmentos (oxihemoglobina, bilirrubina), lo que tarda horas. En la punción traumática la sangre se aclara de tubo a tubo.",
+  "ejemplo": "Mujer de 45 años con la peor cefalea de su vida desde hace 18 horas y TAC dudosa: el LCR es amarillento en los tres tubos tras centrifugar. La xantocromía persistente indica hemorragia subaracnoidea y no punción traumática; se busca un aneurisma.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11j_Pares_oculomotores_examen_pupilar_y_neuroimagenes.md"
+ },
+ "lcr-celulas": {
+  "porque": "El espacio subaracnoideo casi no tiene células porque la barrera hematoencefálica las excluye. Ante bacterias llegan en horas neutrófilos (piógena); los virus inducen linfocitos; la TBC, una respuesta mononuclear o mixta. Eritrocitos indican hemorragia o punción traumática. [vault difiere de literatura: dice <5 linfocitos por ml; la literatura usa <5 por mm³]",
+  "ejemplo": "Lactante de 10 meses con fiebre y fontanela abombada: LCR con 1200 leucocitos/mm³, 90% neutrófilos, y diplococos grampositivos en el Gram. Pleocitosis neutrófila: meningitis bacteriana por neumococo, y se da antibiótico de inmediato.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11j_Pares_oculomotores_examen_pupilar_y_neuroimagenes.md"
+ },
+ "lcr-proteinas": {
+  "porque": "Las proteínas del LCR son bajas porque la barrera hematoencefálica frena las moléculas grandes del plasma. Suben cuando la inflamación la abre (meningitis, sobre todo la TBC con su exudado basal) o cuando raíces nerviosas inflamadas las dejan pasar sin atraer células, como en el Guillain-Barré. Más gammaglobulina sugiere síntesis inmune dentro del SNC.",
+  "ejemplo": "Varón de 30 años con debilidad ascendente de piernas y arreflexia dos semanas después de una diarrea: LCR con 3 células y proteínas de 150 mg/100 ml. Es disociación albúmino-citológica, típica del síndrome de Guillain-Barré.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11j_Pares_oculomotores_examen_pupilar_y_neuroimagenes.md"
+ },
+ "lcr-glucosa": {
+  "porque": "La glucosa pasa de la sangre al LCR por transportadores, así que depende de la glucemia y siempre se compara con una glucemia simultánea. Baja cuando bacterias y neutrófilos la consumen y la inflamación traba su transporte (piógena, TBC, hongos); los virus casi no la alteran. [vault difiere de literatura: 50-60% de la glucemia; la literatura suele dar ~60-66%]",
+  "ejemplo": "Paciente de 40 años con meningitis: glucosa en LCR 30 mg/dL y glucemia simultánea 120 mg/dL, relación 0.25 (menor de 0.4). Junto con predominio de neutrófilos, apoya meningitis bacteriana y no viral.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11j_Pares_oculomotores_examen_pupilar_y_neuroimagenes.md"
+ },
+ "lcr-patron-bacteriano-piogeno": {
+  "porque": "Las bacterias que llegan al espacio subaracnoideo atraen neutrófilos que forman un exudado purulento en las leptomeninges. Ese exudado consume glucosa, rompe la barrera hematoencefálica (proteínas altas) y obstruye la absorción del LCR (presión alta). La irritación de las meninges explica la rigidez de nuca y los signos de Kernig y Brudzinski.",
+  "ejemplo": "Profesora de 22 años con 2 días de cefalea y fiebre, confusa y con púrpura: LCR con 380 células/mm³ (93% PMN), proteínas 220 mg/dl, glucosa 32 mg/dl y diplococos gramnegativos. Patrón piógeno por meningococo; falleció pese a penicilina precoz, muestra de su rapidez.",
+  "origen": "vault",
+  "nota": "wiki/MICROBIOLOGIA 2026/clases/23b_Neisseria_meningitidis_Eikenella_y_Kingella.md"
+ },
+ "lcr-patron-viral-aseptico": {
+  "porque": "Los virus inducen una respuesta inmune celular con linfocitos que infiltran levemente las leptomeninges; como no consumen glucosa ni forman exudado purulento, la glucosa queda normal y las proteínas suben solo algo. Por eso el cuadro es menos fulminante y suele autolimitarse. Algunos arbovirus dan neutrófilos al inicio, que luego viran a linfocitos.",
+  "ejemplo": "Estudiante de 17 años con fiebre, cefalea y fotofobia, lúcido: LCR claro con 150 células/mm³ (85% linfocitos), proteínas 60 mg/100 ml y glucosa en 60% de la glucemia. Patrón aséptico: meningitis viral, con manejo de soporte y vigilancia.",
+  "origen": "vault",
+  "nota": "wiki/PATOLOGIA 2026/clases/22d_Infecciones_del_sistema_nervioso_central.md"
+ },
+ "lcr-patron-tuberculoso": {
+  "porque": "El bacilo de Koch causa una inflamación granulomatosa crónica con exudado gelatinoso en la base del cerebro: atrapa pares craneales (el VI, por su largo trayecto), oblitera cisternas y produce hidrocefalia. La respuesta es mononuclear o mixta, la barrera se rompe mucho (proteínas muy altas) y la glucosa baja más lento que en la piógena.",
+  "ejemplo": "Agricultor de 35 años de Azángaro con 3 semanas de cefalea, febrícula, vómitos y visión doble por parálisis del VI par: LCR con 200 células/mm³ mixtas, proteínas 300 mg/100 ml, glucosa baja y ADA 15 U/L. Meningitis tuberculosa: antituberculosos sin esperar cultivo.",
+  "origen": "mixto",
+  "nota": "wiki/PATOLOGIA 2026/clases/22d_Infecciones_del_sistema_nervioso_central.md"
+ }
+}

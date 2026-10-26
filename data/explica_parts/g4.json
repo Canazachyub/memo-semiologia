@@ -1,0 +1,164 @@
+{
+ "higado-examen-clinico-ecografia": {
+  "porque": "El hígado normal queda oculto bajo el reborde costal. Crece cuando se congestiona (insuficiencia cardíaca derecha), se inflama (hepatitis), se llena de grasa, quistes o tumor; si crece rápido distiende la cápsula de Glisson y duele, si crece lento (cirrosis) es indoloro, duro y de borde cortante. Se achica cuando se pierde masa de hepatocitos y solo queda fibrosis.",
+  "ejemplo": "Varón de 62 años de Juliaca con disnea, edema y yugulares ingurgitadas: borde hepático liso, blando y doloroso a 3 traveses bajo el reborde en la medioclavicular. Es una hepatomegalia mediana congestiva por insuficiencia cardíaca derecha; una cirrosis daría un borde duro e indoloro.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09b_Exploracion_del_abdomen_inspeccion_palpacion_percusion_y_auscultacion.md"
+ },
+ "coledoco-ecografia": {
+  "porque": "El colédoco lleva la bilis al duodeno por la ampolla de Vater. Si un cálculo o un tumor lo obstruye, la bilis se represa por encima y el conducto se dilata, algo que la ecografía ve aunque no logre ver el cálculo por el gas intestinal. Con la edad y tras la colecistectomía el conducto se ensancha de forma fisiológica, por eso su límite normal sube.",
+  "ejemplo": "Mujer de 32 años con dolor epigástrico, ictericia progresiva de 3 días, coluria y acolia: ecografía con colédoco de 11 mm y bilirrubina directa de 7.4 mg/dL. Con fiebre de 38.5 °C completa la tríada de Charcot: coledocolitiasis con colangitis, que pide CPRE urgente.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Coledocolitiasis.md"
+ },
+ "vena-porta-ecografia": {
+  "porque": "La porta lleva al hígado la sangre del intestino y el bazo. Si la cirrosis o una trombosis frenan ese flujo, la presión esplácnica sube y la vena se distiende; la congestión se transmite al bazo (esplenomegalia), al peritoneo (ascitis) y abre colaterales como las várices esofágicas y la cabeza de medusa. Una porta fina o invisible, en cambio, orienta a trombo dentro de ella.",
+  "ejemplo": "Varón de 55 años, bebedor, con ascitis y cabeza de medusa: la ecografía halla porta de 15 mm, bazo de 15 cm de eje largo e hígado nodular. Es hipertensión portal por cirrosis; antes de que sangre hay que buscar várices esofágicas con endoscopia.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md"
+ },
+ "bazo-ecografia-examen": {
+  "porque": "El bazo filtra la sangre, retira hematíes viejos y aloja linfocitos. Crece por congestión (hipertensión portal), por hiperplasia ante infecciones o hemólisis, o por infiltración (leucemias, linfomas); al crecer desciende hacia la fosa ilíaca izquierda y recién se palpa cuando ha aumentado mucho su volumen. Un bazo grande secuestra células y causa hiperesplenismo: anemia, leucopenia y plaquetopenia.",
+  "ejemplo": "Adolescente de 16 años con fiebre, faringitis y adenopatías cervicales: en decúbito dorsal no se palpa el bazo, pero con la maniobra de Schuster se toca su polo inferior en inspiración y la ecografía mide 14 cm de eje largo. Es esplenomegalia por mononucleosis; se prohíbe el deporte de contacto por riesgo de ruptura.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09d_Higado_vias_biliares_y_pancreas.md"
+ },
+ "pancreas-ecografia": {
+  "porque": "El páncreas es retroperitoneal y su conducto de Wirsung se une al colédoco en la ampolla de Vater. En la pancreatitis aguda la autodigestión enzimática produce edema, por eso la glándula crece y se ve hipoecoica; en la crónica la inflamación repetida la reemplaza por fibrosis y calcio y se atrofia. Si algo tapa la salida del Wirsung, el jugo se represa y el conducto se dilata.",
+  "ejemplo": "Mujer obesa de 48 años con dolor epigástrico en barra irradiado al dorso y vómitos tras una comida grasa: amilasa triplicada y ecografía con páncreas aumentado e hipoecoico más cálculos vesiculares. Es pancreatitis aguda biliar; un Wirsung de 5 mm haría buscar un cálculo impactado en la papila.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09d_Higado_vias_biliares_y_pancreas.md"
+ },
+ "vesicula-pared-calculos": {
+  "porque": "La vesícula solo almacena y concentra bilis, por eso su pared es fina. Si un cálculo obstruye el cístico y la vesícula se inflama e infecta, el edema engruesa la pared (colecistitis); si queda obstruida sin infección se llena de moco y se distiende con pared fina (hidrops). Los cálculos se ven hiperecoicos con sombra porque reflejan el ultrasonido.",
+  "ejemplo": "Mujer de 45 años, obesa, con dolor continuo en hipocondrio derecho tras una comida grasa, fiebre de 38.5 °C y Murphy positivo: eco con pared de 5 mm y cálculo en el cuello vesicular. Es colecistitis aguda litiásica. Una vesícula grande e indolora en un ictérico mayor sería, en cambio, Courvoisier-Terrier y haría pensar en cáncer.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Hidrops-Vesicular.md"
+ },
+ "menarquia": {
+  "porque": "La menarquia indica que el eje hipotálamo-hipófisis-ovario maduró: las neuronas kisspeptina activan la GnRH pulsátil, suben FSH y LH, y los estrógenos hacen crecer el endometrio hasta que descama. Se retrasa cuando falta energía o hay hipogonadismo (desnutrición, deporte intenso, enfermedad crónica) y se adelanta si el eje se enciende antes de tiempo (pubertad precoz central).",
+  "ejemplo": "Adolescente de 15 años de una comunidad de Puno, muy delgada, que nunca ha menstruado y tiene desarrollo mamario incipiente: cumple criterio de amenorrea primaria y se estudia desnutrición, hipogonadismo o causa genética. En cambio, una niña de 7 años con botón mamario y sangrado obliga a descartar pubertad precoz.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/clases/10_UNIDAD_X_ENDOCRINOLOGIA_Y_REPRODUCCION/08_Capitulo_82.md"
+ },
+ "formula-obstetrica-g-p": {
+  "porque": "Resume en una línea la historia reproductiva para estimar riesgos. G cuenta todas las gestaciones, incluida la actual y las perdidas; P desglosa cómo terminaron (a término, prematuros, abortos) y cuántos hijos viven. Así salen a la luz patrones como abortos a repetición o prematuros previos, que predicen complicaciones en el embarazo actual.",
+  "ejemplo": "Gestante de 30 años en Puno con un parto a término, ningún prematuro, un aborto y un hijo vivo, ahora embarazada de nuevo: se escribe G3 P1011. Si hubiera tenido dos abortos espontáneos previos se estudiaría pérdida gestacional recurrente.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/02b_Antecedentes_del_paciente.md"
+ },
+ "ecg-papel-y-cuadritos": {
+  "porque": "El papel corre a velocidad fija, así que la distancia horizontal es tiempo y la altura es voltaje. Saber cuánto vale cada cuadradito permite convertir cualquier onda en segundos o milivoltios y decidir si está alargada o crecida. Por eso, antes de leer, se verifica la velocidad y la señal de calibración: un trazado a otra velocidad o mal calibrado engaña todas las medidas.",
+  "ejemplo": "En un ECG a 25 mm/s el PR de un paciente ocupa 6 cuadraditos: 6 × 0.04 = 0.24 s, un BAV de 1.er grado. Si se hubiera grabado a 50 mm/s sin advertirlo, esos 6 cuadraditos serían solo 0.12 s, normal; por eso siempre se revisa la velocidad antes de medir.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08j_Bases_del_electrocardiograma.md"
+ },
+ "ecg-frecuencia-cardiaca": {
+  "porque": "El nódulo sinusal marca el ritmo según el balance simpático-vagal. Sube con el simpático, que compensa fiebre, hipoxia, anemia o shock sosteniendo el gasto cardíaco; baja con predominio vagal (atletas, sueño), fármacos, IAM inferior o hipertensión endocraneana. Las fórmulas de 1500 y 300 dividen los cuadritos de un minuto entre la distancia RR, por eso exigen ritmo regular.",
+  "ejemplo": "Turista limeño recién llegado a Puno: entre dos R hay 13 cuadraditos, 1500/13 ≈ 115 lpm, por hipoxia y descarga simpática; aclimatado semanas después vuelve cerca de 80. Un ciclista puneño entrenado con 48 lpm y sin síntomas tiene bradicardia sinusal fisiológica, que no se trata.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/08l_Bloqueos_auriculoventriculares_y_arritmias_sinusales.md"
+ },
+ "ecg-ritmo-sinusal": {
+  "porque": "Si el impulso nace en el nódulo sinusal, la activación auricular baja de derecha a izquierda y hacia los pies: la P sale positiva en DI, DII y aVF, negativa en aVR, y cada P conduce a un QRS. En la fibrilación auricular la pared auricular descarga caóticamente, no hay P sino ondas f, y el nódulo AV deja pasar impulsos al azar: RR irregular. [vault difiere de literatura: da 400-600 lpm auriculares; otros autores, 350-450]",
+  "ejemplo": "Mujer de 58 años con estenosis mitral reumática y palpitaciones: ECG sin P, con ondas f y RR irregular; en el foco se auscultan 120 lpm pero el pulso radial cuenta 80, porque los latidos con poco llenado no llegan a la muñeca. Es FA con déficit de pulso y riesgo de embolia: se valora anticoagulación.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08l_Bloqueos_auriculoventriculares_y_arritmias_sinusales.md"
+ },
+ "ecg-eje-electrico": {
+  "porque": "El eje es la dirección promedio de la despolarización ventricular y apunta hacia donde hay más masa muscular. Se va a la izquierda cuando el VI se hipertrofia o el corazón se horizontaliza (obesidad, embarazo, ascitis) y a la derecha cuando crece el VD o el corazón se verticaliza. En el poblador de altura la hipoxia crónica contrae la arteria pulmonar, sobrecarga el VD y desvía el eje a la derecha.",
+  "ejemplo": "Comunero de 50 años nacido en Puno, asintomático: QRS negativo en DI y positivo en aVF, eje cerca de +110°. En él puede ser adaptación a la altura (la clase la estima en 70-75% de pobladores); el mismo trazado en un limeño obligaría a buscar HVD, EPOC o embolia pulmonar.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08j_Bases_del_electrocardiograma.md"
+ },
+ "ecg-onda-p": {
+  "porque": "La P es la despolarización auricular: la primera mitad la genera la aurícula derecha y la segunda la izquierda. Si crece la AD (cor pulmonale, hipertensión pulmonar), su componente gana voltaje y la P se hace alta y picuda sin alargarse; si crece la AI (valvulopatía mitral), la activación tarda más y la P se ensancha con dos jorobas. Sin actividad auricular organizada, como en la FA, no hay P.",
+  "ejemplo": "Varón de 70 años de Puno con EPOC y edema de piernas: P de 3 mm, picuda en DII, y R dominante en V1. Es P pulmonale con HVD, un cor pulmonale crónico. Una mujer con estenosis mitral mostraría, en cambio, una P bimodal de 0.14 s (más de 3 cuadraditos) en DII.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08k_Hipertrofia_de_camaras_bloqueo_de_rama_e_infarto_de_miocardio.md"
+ },
+ "ecg-intervalo-pr": {
+  "porque": "El PR mide el viaje del impulso de las aurículas a los ventrículos e incluye la pausa del nódulo AV que da tiempo al llenado ventricular. Se alarga si el nódulo conduce lento (fibrosis del anciano, IAM, Chagas, digitálicos, betabloqueadores, verapamilo) y se acorta con el simpático o si una vía accesoria se salta el nódulo (Wolff-Parkinson-White). [vault difiere de literatura: 08l da PR alargado en la bradicardia sinusal; la literatura lo considera normal]",
+  "ejemplo": "Anciano de 78 años que toma atenolol y digoxina: PR fijo de 0.24 s y toda P conduce, un BAV de 1.er grado que obliga a revisar dosis. Si tuviera síncopes con convulsiones, 35 lpm y más P que QRS sin relación entre ellas, sería un BAV completo con Stokes-Adams: atropina y luego marcapaso definitivo.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08l_Bloqueos_auriculoventriculares_y_arritmias_sinusales.md"
+ },
+ "ecg-complejo-qrs": {
+  "porque": "El QRS es la despolarización ventricular y es angosto porque el His-Purkinje reparte el impulso muy rápido. Si una rama se bloquea, ese ventrículo se activa tarde a través del músculo, el QRS se ensancha y dibuja la M del lado afectado. Si la pared crece, el voltaje sube (HVI); si entre corazón y electrodo hay líquido, grasa o aire, el voltaje cae. [vault difiere de literatura: 08k da QRS <0.12 s en el BCRI, errata; el bloqueo completo exige ≥0.12 s]",
+  "ejemplo": "Hipertenso de 60 años mal controlado: S en V1 de 15 mm más R en V5 de 25 mm suman 40 mm, Sokolow positivo, con T invertida asimétrica en V5-V6: HVI por sobrecarga de presión. Otro paciente con QRS de 0.14 s y M en V1 tiene BCRD; en el altiplano se piensa antes en causa congénita, HTA o reumática que en Chagas.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08k_Hipertrofia_de_camaras_bloqueo_de_rama_e_infarto_de_miocardio.md"
+ },
+ "ecg-onda-q-patologica": {
+  "porque": "La Q normal es pequeña porque el tabique se despolariza primero, de izquierda a derecha. Cuando un infarto mata todo el espesor de la pared, ese tejido queda eléctricamente mudo y actúa como una ventana: el electrodo ve a través de él la activación de la pared opuesta, que se aleja, y registra una Q profunda y ancha. Como la cicatriz no recupera actividad, la Q persiste de por vida.",
+  "ejemplo": "Varón de 66 años que niega infarto previo pero tiene Q de 0.05 s y 5 mm de profundidad en DII, DIII y aVF, con ST isoeléctrico: es un infarto inferior antiguo, en fase de cicatrización. Si esas Q estuvieran en V1-V4, el territorio afectado sería el anteroseptal.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/08k_Hipertrofia_de_camaras_bloqueo_de_rama_e_infarto_de_miocardio.md"
+ },
+ "ecg-segmento-st": {
+  "porque": "Durante el ST todo el ventrículo está despolarizado y no hay diferencia de potencial, por eso es isoeléctrico. El músculo lesionado por isquemia severa no mantiene su potencial de reposo y genera una corriente de lesión: si el daño es subepicárdico o transmural el ST sube en las derivaciones que miran esa pared; si es subendocárdico, baja. La lesión es reversible si se reperfunde a tiempo.",
+  "ejemplo": "Minero de 57 años de Puno con dolor opresivo retroesternal de 40 minutos: ST elevado 3 mm en V1-V4 con descenso especular en DII, DIII y aVF. Es un IAM con ST elevado anteroseptal; cada minuto cuenta y se indica reperfusión inmediata.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/08k_Hipertrofia_de_camaras_bloqueo_de_rama_e_infarto_de_miocardio.md"
+ },
+ "ecg-onda-t": {
+  "porque": "La T es la repolarización ventricular; es positiva porque la repolarización avanza del epicardio al endocardio, al revés que la despolarización. La isquemia altera ese orden: si afecta al subendocardio la T queda alta y simétrica; si afecta al subepicardio se invierte, simétrica y puntiaguda. El potasio también la cambia. [vault difiere de literatura: SEMIOLOGIA da 5-10 mm; FISIOLOGIA, <5 mm en extremidades y <10 mm en precordiales]",
+  "ejemplo": "Paciente renal de 64 años en Puno que faltó a sus hemodiálisis: T altas, estrechas y picudas en V2-V4 con potasio muy elevado, una emergencia por hiperpotasemia. Distinto es un varón con dolor torácico y T negativas, simétricas, en V1-V4: isquemia subepicárdica anterior.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08k_Hipertrofia_de_camaras_bloqueo_de_rama_e_infarto_de_miocardio.md"
+ },
+ "ecg-intervalo-qt": {
+  "porque": "El QT abarca toda la sístole eléctrica, despolarización más repolarización. Se acorta cuando la FC sube porque cada ciclo dura menos, por eso se corrige con Bazett. Se alarga si la repolarización se demora por bloqueo de canales de potasio (macrólidos, antiarrítmicos), hipopotasemia, hipomagnesemia o hipocalcemia, y esa repolarización desigual favorece la torsades de pointes; la hipercalcemia lo acorta.",
+  "ejemplo": "Mujer de 40 años con diarrea intensa varios días que recibe azitromicina: QT de 0.48 s con FC de 60 lpm (RR de 1 s), así que QTc = 0.48/√1 = 480 ms, prolongado para mujer. Se corrigen potasio y magnesio y se suspende el fármaco por riesgo de torsades.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Intervalo-QT.md"
+ },
+ "rx-torax-indice-cardiotoracico": {
+  "porque": "El ICT compara el ancho del corazón con el del tórax en una placa PA de pie. Sube cuando las cavidades se dilatan por sobrecarga de volumen o fallo de bomba (valvulopatías, insuficiencia cardíaca) o hay derrame pericárdico. En AP o decúbito el corazón queda lejos de la placa y se magnifica; en el enfisema el diafragma bajo lo estira y afina. Puede haber cardiopatía sin cardiomegalia y al revés.",
+  "ejemplo": "Mujer de 65 años con insuficiencia mitral y disnea: en la PA, A+B mide 16 cm y el tórax 28 cm, ICT 0.57, cardiomegalia (frente al ejemplo del curso, 12/25 = 0.48, normal). En un pastor puneño sano el arco medio puede verse prominente por hipertensión pulmonar de altura sin que haya cardiomegalia.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08f_Examenes_complementarios_del_aparato_cardiovascular.md"
+ },
+ "rx-torax-silueta-cardiaca": {
+  "porque": "La silueta es la sombra de las cavidades y grandes vasos que forman los bordes del mediastino. Cuando una cavidad crece empuja su arco hacia afuera. En la valvulopatía mitral la aurícula izquierda es la primera en dilatarse, por eso su orejuela abomba el arco medio antes de que cambie el resto; si sigue creciendo asoma también por detrás del borde derecho y separa los bronquios principales.",
+  "ejemplo": "Mujer de 28 años de Azángaro con fiebre reumática en la infancia y disnea de esfuerzo: en la PA el arco medio está abombado, hay doble contorno a la derecha y la carina se abre. Es una estenosis mitral con AI dilatada, que se confirma con ecocardiograma.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08f_Examenes_complementarios_del_aparato_cardiovascular.md"
+ },
+ "rx-torax-senos-costofrenicos": {
+  "porque": "El seno costodiafragmático es el punto más bajo de la cavidad pleural de pie, así que el líquido libre se acumula ahí primero y borra su ángulo agudo. Si el borramiento trae una línea cóncava que sube por la pared, es líquido; si el ángulo queda romo, sin menisco y sin cambiar con la posición, suele ser pleura engrosada por un proceso antiguo.",
+  "ejemplo": "Varón de 35 años con TBC pleural tratada hace años: seno costofrénico izquierdo romo, sin menisco y sin cambios en decúbito lateral. Es una paquipleuritis residual, no un derrame activo. Si el seno estuviera borrado con menisco y hubiera fiebre, se pensaría en derrame y se puncionaría.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/07g_Examenes_complementarios_del_aparato_respiratorio.md"
+ },
+ "rx-torax-hilios": {
+  "porque": "El hilio radiológico es sobre todo la sombra de las arterias pulmonares que salen del mediastino y se ramifican afinándose hacia la periferia. Crecen ambos cuando la presión pulmonar sube y las arterias centrales se dilatan, o cuando se llenan de ganglios (linfoma, sarcoidosis); crece uno solo cuando un tumor o adenopatías tuberculosas ocupan ese lado.",
+  "ejemplo": "Varón de 60 años, fumador, de Puno, con tos y hemoptisis: hilio derecho grande y lobulado con el izquierdo normal; obliga a descartar carcinoma broncogénico o TBC ganglionar. Un niño con fiebre, tos purulenta y micronódulos perihiliares y basales en ambos lados tendría, en cambio, bronconeumonía.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/07g_Examenes_complementarios_del_aparato_respiratorio.md"
+ },
+ "rx-torax-condensacion": {
+  "porque": "En la neumonía el exudado inflamatorio reemplaza el aire alveolar: la zona se vuelve opaca, pero los bronquios siguen con aire y se dibujan como líneas oscuras (broncograma aéreo). Como el volumen no cambia, el mediastino no se mueve. Si en cambio el bronquio se tapa y el aire se reabsorbe, el lóbulo colapsa (atelectasia) y tira del mediastino hacia la lesión.",
+  "ejemplo": "Mujer de 70 años con fiebre, tos purulenta y crepitantes con soplo tubárico a la derecha: opacidad homogénea con broncograma aéreo que borra el borde derecho del corazón. Por el signo de la silueta está en el lóbulo medio; es una neumonía, probablemente neumocócica.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/07e_Sindromes_pulmonares_y_pleurales.md"
+ },
+ "rx-torax-derrame-pleural": {
+  "porque": "El líquido pleural se acumula cuando se rompe el balance de presiones (trasudado: insuficiencia cardíaca, cirrosis, hipoproteinemia) o cuando la pleura se inflama y deja escapar proteínas (exudado: TBC, neumonía, neoplasia). Por gravedad baja al seno costodiafragmático y sube por la pared formando el menisco; si es grande, empuja el mediastino hacia el lado sano.",
+  "ejemplo": "Varón de 25 años de Puno con fiebre vespertina, baja de peso y dolor pleurítico que cedió y dio paso a disnea: matidez con curva de Damoiseau y Rx con seno derecho borrado y menisco. La punción da un exudado; en nuestro medio se piensa primero en derrame tuberculoso.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/07e_Sindromes_pulmonares_y_pleurales.md"
+ },
+ "rx-torax-neumotorax": {
+  "porque": "El pulmón tiende a colapsarse y solo la presión negativa pleural lo mantiene pegado a la pared. Si entra aire a la pleura, por rotura de una bula o por trauma, esa presión se pierde y el pulmón se retrae hacia el hilio, dejando aire sin trama entre su borde y la costilla. Si el aire entra y no sale (mecanismo de válvula), la presión sube, empuja el mediastino y frena el retorno venoso.",
+  "ejemplo": "Joven de 20 años, alto y delgado, con dolor torácico súbito en puñalada y disnea: timpanismo y murmullo abolido a la izquierda; la Rx muestra el borde pulmonar separado de la pared sin trama. Es un neumotórax espontáneo por bula subpleural; si estuviera hipotenso con tráquea desviada, se descomprime con aguja sin esperar la placa.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/07e_Sindromes_pulmonares_y_pleurales.md"
+ },
+ "rx-torax-hiperinsuflacion": {
+  "porque": "En el enfisema se destruyen paredes alveolares y se pierde la retracción elástica; en el asma los bronquiolos se estrechan y el aire entra pero cuesta sacarlo. En ambos queda aire atrapado: los pulmones se ven más negros, empujan el diafragma hacia abajo y lo aplanan, las costillas se horizontalizan y el corazón, estirado, se ve largo y estrecho.",
+  "ejemplo": "Varón de 68 años, fumador de 40 paquetes-año, con tórax en tonel: la Rx muestra 11 arcos costales posteriores sobre un diafragma aplanado, hiperclaridad y corazón en gota. Es hiperinsuflación por enfisema; si además tuviera yugulares ingurgitadas y edema, ya se habría instalado un cor pulmonale.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/07e_Sindromes_pulmonares_y_pleurales.md"
+ }
+}

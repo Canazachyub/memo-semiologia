@@ -18,12 +18,13 @@ ajustes.aplicar();
 registrarSW();
 
 const json = (u, vacio) => fetch(u, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : vacio)).catch(() => vacio);
-const [ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES, MAPA, RUTA, CASOS] = await Promise.all([
+const [ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES, MAPA, RUTA, CASOS, EXPLICA] = await Promise.all([
   json('data/atlas.json', {}), json('data/memoria.json', {}), json('data/metodos.json', {}), json('data/palacios.json', {}),
   json('data/memoria_siglas.json', {}), json('data/memoria_facies.json', {}),
   json('data/mapa.json', null), json('data/ruta_diaria.json', null), json('data/casos.json', {}),
+  json('data/explica.json', {}),
 ]);
-const CTX = { ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES, MAPA, RUTA, CASOS: CASOS || {}, srs };
+const CTX = { ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES, MAPA, RUTA, CASOS: CASOS || {}, EXPLICA: EXPLICA || {}, srs };
 
 // ---------- módulos ----------
 const VISTAS = crearVistas(CTX);

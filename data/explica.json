@@ -1,0 +1,992 @@
+{
+ "frecuencia-cardiaca-pulso": {
+  "porque": "El pulso es la onda que cada sístole del ventrículo izquierdo transmite a la arteria. Sube cuando el simpático acelera el nódulo sinusal para sostener el gasto (fiebre, hipovolemia, hipertiroidismo) y baja por tono vagal, frío, hipotiroidismo, fármacos o bloqueo AV. Latidos débiles que no llegan a la radial dan déficit de pulso. [vault difiere de literatura: +12-15 lpm por °C; la literatura da ~10]",
+  "ejemplo": "Varón de 30 años en Puno con neumonía y 39 °C axilar: pulso de 110 lpm, esperable porque son 2 °C sobre 37 (unos 24-30 lpm extra). Si con la misma fiebre tuviera 70 lpm (bradicardia relativa), hay que pensar en fiebre tifoidea. Una anciana con FA y 120 latidos auscultados pero 90 radiales tiene un déficit de pulso de 30.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05d_Pulso_arterial_y_presion_arterial.md"
+ },
+ "presion-arterial": {
+  "porque": "La PA es el producto del gasto cardiaco por la resistencia periférica: el gasto gobierna sobre todo la sistólica y la resistencia la diastólica, mientras la rigidez arterial del anciano ensancha la diferencial. La HTA sostenida daña corazón, cerebro, riñón y retina; la hipotensión refleja caída del gasto, la volemia o el tono vascular. [vault difiere de literatura: ACC/AHA 2017 llama HTA desde 130/80]",
+  "ejemplo": "Anciano con diurético refiere mareo al levantarse: 118/76 echado y 90/60 de pie a los 3 minutos, caída de 28 en la sistólica, hipotensión postural. Otro paciente con 150/95 en dos tomas tiene HTA grado I; su PAM es (150 + 190) / 3, unos 113 mmHg.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05h_Presion_arterial_valores_hipertension_e_hipotension.md"
+ },
+ "frecuencia-respiratoria": {
+  "porque": "La FR la fija el centro respiratorio del tronco según el CO2, el pH y el O2. Sube cuando hay que eliminar más CO2 o compensar hipoxemia y acidosis (fiebre, neumonía, edema pulmonar, cetoacidosis) y cuando un pulmón rígido obliga a respiraciones cortas; baja cuando ese centro se deprime (opiáceos, barbitúricos, coma) o en la alcalosis metabólica, que retiene CO2 para compensar.",
+  "ejemplo": "Joven diabético con cetoacidosis: 30 rpm profundas y regulares (Kussmaul), que lavan CO2 para subir el pH. En cambio, un paciente somnoliento tras sobredosis de morfina, con 8 rpm y pupilas puntiformes, tiene bradipnea por depresión del centro respiratorio y riesgo de paro.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05e_Frecuencia_respiratoria_cardiaca_y_temperatura.md"
+ },
+ "temperatura": {
+  "porque": "El centro termorregulador del hipotálamo anterior equilibra producción y pérdida de calor. En la fiebre, IL-1, IL-6 y TNF inducen prostaglandina E, que sube el punto de ajuste; por eso hay escalofríos hasta alcanzarlo. La hipotermia aparece cuando fallan los mecanismos de conservación (frío con alcohol, shock, hipotiroidismo). [vault difiere de literatura: leve 32-35 °C, moderada 28-32, grave <28]",
+  "ejemplo": "Anciano con dolor en fosa ilíaca derecha: axilar 37.6 °C y rectal 38.8 °C; la diferencia de 1.2 °C supera la esperada de 0.8 y apoya apendicitis. En Puno, un hombre ebrio hallado de madrugada en la calle con 33 °C tiene hipotermia ambiental, con riesgo de bradicardia y arritmias.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05e_Frecuencia_respiratoria_cardiaca_y_temperatura.md"
+ },
+ "saturacion-de-oxigeno": {
+  "porque": "La SatO2 es el porcentaje de hemoglobina unida a O2 y depende de la PaO2 según la curva de disociación. A 3800 m la presión inspirada de O2 es baja, la PaO2 cae y el residente sano satura menos sin estar enfermo. Baja por hipoventilación, alteración V/Q o shunt; el oxímetro no detecta carboxi ni metahemoglobina. [el vault no coincide consigo mismo: 90% del docente vs 88-92% de la nota]",
+  "ejemplo": "Estudiante puneña sana: SatO2 de 90% en reposo, normal para la altura. Su compañero con neumonía tiene 82% y taquipnea: es hipoxemia, requiere O2 y sentarlo. Un turista limeño recién llegado con 86% y cefalea puede estar en mal de montaña agudo, no en su valor basal.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/Saturacion-Oxigeno.md"
+ },
+ "peso-talla-imc": {
+  "porque": "El IMC divide el peso entre la talla al cuadrado para corregirlo por la estatura y estimar la grasa, aunque no distingue músculo de grasa. Sube con balance calórico positivo y baja con ingesta insuficiente o enfermedades consuntivas (TBC, cáncer, hipertiroidismo). El exceso de grasa se asocia a HTA, diabetes y apnea del sueño. [vault difiere de literatura: OMS normal 18.5-24.9, sobrepeso 25-29.9, obesidad ≥30]",
+  "ejemplo": "Varón de 1.60 m y 78 kg: IMC 78 / 2.56, unos 30.5, obesidad con cualquier tabla; su peso ideal por Broca es 60 kg y el máximo normal 66 kg. Si además ronca, hace apneas y se duerme de día, se sospecha síndrome de Pickwick con poliglobulia, más marcada viviendo en altura.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05c_Peso_talla_e_indice_de_masa_corporal.md"
+ },
+ "talla": {
+  "porque": "La talla resulta de la genética, la nutrición y las hormonas del crecimiento (GH, tiroideas, sexuales) durante la infancia. El exceso de GH antes del cierre de las epífisis da gigantismo; la desnutrición, el raquitismo, el hipotiroidismo o el déficit de GH dan enanismo. La relación pubis-vértice / pubis-planta muestra si el crecimiento fue armónico o predominan las extremidades.",
+  "ejemplo": "Adolescente de 1.85 m, muy delgado, con envergadura de 1.95 m y relación pubis-vértice / pubis-planta de 0.88 (segmento inferior largo): hábito marfanoide, hay que buscar luxación de cristalino y dilatación aórtica. Un niño de talla baja con piel seca y retraso mental orienta a cretinismo por hipotiroidismo.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05c_Peso_talla_e_indice_de_masa_corporal.md"
+ },
+ "perimetro-abdominal-cintura": {
+  "porque": "La cintura estima la grasa visceral, metabólicamente más activa que la subcutánea: libera ácidos grasos libres al hígado y citocinas que generan resistencia a la insulina, dislipidemia e HTA. Por eso la obesidad central o androide predice diabetes e infarto mejor que el IMC solo. Se mide en el punto medio entre la última costilla y la cresta ilíaca, al final de la espiración.",
+  "ejemplo": "Varón de 48 años con IMC 27 pero cintura de 108 cm, PA 140/90 y glucosa en ayunas alterada: tiene obesidad abdominal y probable síndrome metabólico pese a un IMC solo de sobrepeso. Una mujer con 85 cm está bajo el corte ATP III de 88, pero ya sobre el de riesgo IDF de 80.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/clases/09_UNIDAD_IX_METABOLISMO_ENERGIA_Y_TEMPERATURA/05_Capitulo_72.md"
+ },
+ "escala-de-glasgow": {
+  "porque": "Evalúa el nivel de conciencia con tres respuestas independientes: apertura ocular (1-4), verbal (1-5) y motora (1-6), que suman de 3 a 15. Explora la corteza y el sistema activador reticular del tronco; con 8 o menos se pierden los reflejos que protegen la vía aérea, por eso ese corte obliga a intubar. La respuesta motora es la que mejor predice el pronóstico.",
+  "ejemplo": "Motociclista con TEC en Juliaca: abre los ojos al dolor (2), emite sonidos incomprensibles (2) y retira al dolor (4): Glasgow 8, coma grave, se protege la vía aérea e intuba. Otro que abre los ojos al hablarle, está confuso y obedece órdenes suma 3 + 4 + 6 = 13.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05a_Estado_general_nivel_de_conciencia_lenguaje_y_decubito.md"
+ },
+ "llenado-capilar": {
+  "porque": "Al presionar la uña se vacían los capilares; al soltar, el tiempo de recoloración refleja la perfusión periférica. Se alarga cuando el simpático contrae las arteriolas cutáneas para preservar órganos vitales (deshidratación, shock), cuando una arteria está obstruida o cuando el frío produce vasoconstricción. [el vault no coincide consigo mismo: FISIOPATOLOGIA usa >3 s en sepsis]",
+  "ejemplo": "Lactante de 8 meses en Puno con 3 días de diarrea: letárgico, ojos hundidos, fontanela deprimida, taquicardia y llenado de 4 s: deshidratación grave con hipovolemia, bolo de suero fisiológico ya. Ojo con un niño que llega del frío de la puna: el llenado lento puede ser vasoconstricción, hay que repetirlo abrigado.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Hipovolemia.md"
+ },
+ "estado-general": {
+  "porque": "Es la impresión global, en segundos, de cuánto ha comprometido la enfermedad al organismo, integrando aspecto, conciencia, postura, nutrición e hidratación. Orienta la urgencia y alerta cuando el deterioro es mayor de lo que explican los signos hallados. Se escribe completo en la historia (buen, regular o mal estado general) por su implicancia médico-legal.",
+  "ejemplo": "Anciano traído de una comunidad de Puno: postrado, adelgazado, poco reactivo, con fiebre leve y pocos hallazgos focales. Se registra mal estado general y obliga a buscar sepsis, TBC o neoplasia aunque los signos sean escasos; un joven con resfrío que camina y conversa está en buen estado general.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05a_Estado_general_nivel_de_conciencia_lenguaje_y_decubito.md"
+ },
+ "estado-de-nutricion": {
+  "porque": "Refleja el balance entre aporte y gasto de energía y proteínas. El déficit calórico consume grasa y músculo (marasmo); el déficit proteico baja la albúmina, cae la presión oncótica y aparece edema, con cabello fino y quebradizo y piel alterada (kwashiorkor). El exceso calórico acumula tejido adiposo, central o periférico, con distinto riesgo metabólico.",
+  "ejemplo": "Niño de 2 años destetado con dieta casi solo de papa y chuño: edema en piernas, cabello ralo y despigmentado que se arranca fácil y piel descamada: kwashiorkor por déficit proteico. Otro lactante muy delgado, piel y hueso, sin edema y con déficit de peso de 45%: marasmo, desnutrición de tercer grado de Gómez.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05c_Peso_talla_e_indice_de_masa_corporal.md"
+ },
+ "estado-de-hidratacion": {
+  "porque": "Ingresos y pérdidas se equilibran en unos 2500 ml/día. Con diarrea, vómitos, fiebre o taquipnea se pierde agua del intersticio: cae el turgor (pliegue positivo), se secan las mucosas y, si baja la volemia, aparecen taquicardia e hipotensión postural. El aire seco y frío de la altura aumenta las pérdidas insensibles. [vault difiere de literatura: hipotónica con Na <130; la literatura usa <135]",
+  "ejemplo": "Escolar de 20 kg que bajó a 18.6 kg tras una gastroenteritis: perdió 1.4 kg, unos 1.4 litros, el 7% del peso, deshidratación moderada. Tiene mucosas secas, ojos hundidos, pliegue lento y PA de 100/70 echado que cae a 80/50 de pie. En un anciano el pliegue se busca en la frente o el esternón.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05b_Biotipo_hidratacion_y_movimientos_involuntarios.md"
+ },
+ "palidez": {
+  "porque": "El color rosado depende de la sangre oxigenada que circula por la dermis. Hay palidez cuando llega menos sangre a la piel por vasoconstricción simpática (susto, dolor, shock) o cuando cada mililitro trae menos hemoglobina (anemia). La palidez de un solo miembro indica que una arteria se obstruyó. Por eso la anemia se juzga en conjuntivas, palmas y uñas, donde el pigmento cutáneo no confunde.",
+  "ejemplo": "Mujer de 35 años con menstruaciones abundantes: conjuntivas palpebrales y palmas pálidas, cansancio y Hb 6.8 g/dl: anemia ferropénica. En Puno la Hb basal es más alta por la altura, así que una cifra que en Lima sería leve aquí pesa más. Una pierna fría, pálida y sin pulso pedio en un paciente con FA sugiere embolia.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05f_Piel_secrecion_hidrica_y_mucosas.md"
+ },
+ "ictericia": {
+  "porque": "La bilirrubina viene de la hemoglobina degradada; el hígado la conjuga y la excreta por la bilis. Se acumula si se produce de más (hemólisis, predomina la indirecta), si el hepatocito no la procesa (hepatitis, cirrosis, mixta) o si la bilis no sale (cálculo, tumor, directa). La directa es hidrosoluble: pasa a la orina (coluria) y falta en las heces (acolia). Se ve primero en la esclerótica.",
+  "ejemplo": "Mujer de 50 años con cólico en hipocondrio derecho, escleras amarillas, orina color té, heces blancas y prurito; bilirrubina de 6 mg% a predominio directo: ictericia poshepática por coledocolitiasis. Un joven con anemia hemolítica tiene bilirrubina de 3 mg% indirecta, sin coluria.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05f_Piel_secrecion_hidrica_y_mucosas.md"
+ },
+ "cianosis": {
+  "porque": "Aparece cuando la hemoglobina reducida en los capilares supera unos 5 g/dl. Es central si la sangre ya sale desaturada del pulmón o del corazón (hipoventilación, cortocircuito, baja PO2 de la altura) y se ve en lengua y labios tibios; es periférica si se desatura lentamente en tejidos fríos o mal perfundidos. En la anemia grave no se alcanza ese umbral; en la policitemia, sí con facilidad.",
+  "ejemplo": "Minero de 45 años residente en Puno, con cefalea, somnolencia, cara morada, labios rojo-violáceos y Hb muy alta: enfermedad de Monge por desadaptación a la altura, que mejora si baja a nivel del mar. Una mujer con dedos azulados por el frío que se recoloran al calentarlos, con lengua rosada, tiene cianosis periférica.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/07a_Anamnesis_sintomas_respiratorios.md"
+ },
+ "edema": {
+  "porque": "Es líquido en el intersticio cuando se rompe el equilibrio de Starling: sube la presión hidrostática capilar (IC derecha, TVP), baja la oncótica por albúmina <2.5 (nefrótico, cirrosis, desnutrición), aumenta la permeabilidad (alergia, inflamación) o se obstruye la linfa. La gravedad lo lleva a zonas declives y la aldosterona lo perpetúa. El mixedema no deja fóvea porque son mucopolisacáridos.",
+  "ejemplo": "Mujer de 45 años con párpados hinchados al despertar que bajan a las piernas durante el día y orina espumosa: síndrome nefrótico. Un varón con disnea de esfuerzo y edema vespertino ascendente de 2 cruces en tibias es cardiaco. Edema de una sola pantorrilla, caliente y dolorosa tras inmovilización, obliga a descartar TVP con Doppler.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05g_Edema.md"
+ },
+ "hemoglobina": {
+  "porque": "Es la proteína del GR que transporta el O2 (1,34 mL por gramo). Sube cuando la hipoxia crónica (altura, EPOC) activa el HIF-1 renal y la eritropoyetina. Baja por pérdida, hemólisis o producción insuficiente (hierro, B12, folato, médula, riñón). [vault difiere de literatura: en Puno la Hb media del sano ronda 16-18 g/dL; 24-26 ya es eritrocitosis excesiva]",
+  "ejemplo": "Mujer de 28 años nacida en Puno con Hb 13,5 g/dL: para la costa sería normal, pero en altura el corte OMS ajustado es 14,7, así que tiene anemia leve. Se busca ferropenia (menstruaciones abundantes, dieta) antes de tranquilizarla.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/clases/06_UNIDAD_VI_SANGRE_INMUNIDAD_Y_COAGULACION/01_Capitulo_33.md"
+ },
+ "eritrocitosis-de-altura-hb": {
+  "porque": "La SaO2 baja estimula EPO y la médula produce más GR; si es excesiva, la sangre se vuelve hiperviscosa: estasis venosa (TVP, TEP), mayor resistencia pulmonar y microembolias que llevan a HTP y cor pulmonale. Se sangra antes del diurético porque este concentraría más la sangre. [vault difiere de literatura: 24-26 g/dL no es lo habitual del sano, ya es Monge]",
+  "ejemplo": "Minero de 52 años de Puno (3820 m) con facies pletórica, conjuntivas hiperémicas, edemas y Hb 23 g/dL con Hto 68%: eritrocitosis patológica con cor pulmonale. Antes de la furosemida se le hace sangría roja de 500 cc reponiendo con NaCl.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Eritrosis-Patologica-de-la-Altura.md"
+ },
+ "hematocrito": {
+  "porque": "Es el porcentaje de la sangre ocupado por GR y fija la viscosidad. Sube con más GR (policitemia) o con menos plasma (deshidratación, tercer espacio). Baja en anemia o hemodilución; en la hemorragia aguda se pierde sangre entera y el Hto cae recién cuando se repone el plasma, a los 2-3 días. [vault difiere de literatura: suele darse por sexo, V 41-50%, M 36-44%]",
+  "ejemplo": "Varón de 35 años con pancreatitis aguda y Hto 54% al ingreso: no es policitemia sino hemoconcentración por pérdida de plasma al tercer espacio. Tras hidratar baja a 44%. Un Hto que no desciende con volumen indica secuestro grave.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Policitemia.md"
+ },
+ "globulos-rojos-hematies": {
+  "porque": "El recuento refleja el balance entre producción medular (EPO, hierro, B12 y folato) y destrucción: el GR vive unos 120 días y, al volverse rígido, queda atrapado en los espacios de 3 µm del bazo. Sube por hipoxia (policitemia secundaria) o por clon autónomo (vera, que arrastra leucocitos y plaquetas). Baja por pérdida, hemólisis o médula insuficiente.",
+  "ejemplo": "Varón de 60 años con GR 7,6 millones/mm³, leucocitos 15.000, plaquetas 650.000, SaO2 normal y rubicundez: la triple elevación sin hipoxia sugiere policitemia vera, no eritrocitosis de altura. Se pide mutación JAK2 y EPO, que estará baja.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/clases/06_UNIDAD_VI_SANGRE_INMUNIDAD_Y_COAGULACION/01_Capitulo_33.md"
+ },
+ "vcm": {
+  "porque": "El VCM es el tamaño promedio del GR y clasifica la anemia. Sin hierro el eritroblasto sigue dividiéndose mientras espera la hemoglobina y sale pequeño (microcitosis). Sin B12 o folato no sintetiza ADN, el citoplasma madura pero el núcleo no y la célula sale grande y frágil (macrocito). En pérdida aguda o hemólisis el tamaño se conserva (normocítica).",
+  "ejemplo": "Mujer vegana de 34 años con cansancio, parestesias y Hb 9 g/dL con VCM 123 fL: anemia macrocítica megaloblástica. Se miden B12 y folato; si la B12 está baja se da por vía parenteral, porque dar solo folato corrige la anemia pero deja progresar la neuropatía.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Anemia.md"
+ },
+ "hcm": {
+  "porque": "La HCM es la cantidad de hemoglobina dentro de cada GR. Baja cuando falta hierro para formar el hemo: el GR queda con poca Hb y se ve pálido (hipocromía). Sube en la macrocitosis simplemente porque una célula más grande contiene más hemoglobina, no porque esté más concentrada.",
+  "ejemplo": "Escolar de 9 años de una comunidad de Puno con Hb 10,5 g/dL, VCM 70 fL y HCM 21 pg: anemia microcítica hipocrómica. Lo más probable es ferropenia (dieta pobre en hierro, parasitosis); se pide ferritina, que es el marcador más sensible.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Anemia-Microcitica-Hipocromica.md"
+ },
+ "chcm": {
+  "porque": "La CHCM expresa cuán concentrada está la hemoglobina dentro del GR. Baja en ferropenia porque falta hemo y el centro pálido se agranda. Casi nunca sube, porque el GR no puede llenarse de más Hb; la excepción es el esferocito, que pierde membrana pero no volumen, se vuelve esfera densa sin palidez central y es atrapado en el bazo.",
+  "ejemplo": "Adolescente de 15 años con ictericia leve, esplenomegalia, Hb 10 g/dL, CHCM 38 g/dL y reticulocitos 8%: anemia hemolítica con hipercromía, sugestiva de esferocitosis hereditaria. Se confirma con frotis y fragilidad osmótica; la esplenectomía corrige la anemia.",
+  "origen": "vault",
+  "nota": "wiki/PATOLOGIA 2026/clases/11b_Esferocitosis_hereditaria_y_drepanocitosis.md"
+ },
+ "reticulocitos": {
+  "porque": "El reticulocito es el GR recién salido de la médula, con restos de ARN, y circula solo 1-2 días antes de madurar. Por eso su recuento mide la actividad eritropoyética del momento: sube cuando la médula compensa una hemólisis o hemorragia (a los 5-7 días, por EPO) y queda bajo cuando la anemia es por falta de producción.",
+  "ejemplo": "Varón de 40 años con melena hace una semana, Hb 8 g/dL y reticulocitos 6%: la médula responde, anemia regenerativa posthemorrágica. En cambio, una mujer con Hb 8, VCM 68 y reticulocitos 0,5% tiene anemia arregenerativa ferropénica; tras dar hierro, los reticulocitos suben en pocos días.",
+  "origen": "vault",
+  "nota": "wiki/PATOLOGIA 2026/clases/11a_Clasificacion_de_las_anemias_y_perdida_de_sangre.md"
+ },
+ "leucocitos-totales": {
+  "porque": "Los leucocitos suben en la infección e inflamación: primero la médula libera su reserva (con formas inmaduras, desviación a la izquierda) y luego aumenta la producción por factores estimulantes de colonias. Bajan por aplasia, fármacos mielotóxicos, autoinmunidad o algunas infecciones como tifoidea y ciertos virus.",
+  "ejemplo": "Joven de 19 años con dolor en fosa ilíaca derecha, Blumberg positivo y leucocitos 17.500 con 84% de neutrófilos: el recuento por encima de 15.000 con neutrofilia mayor del 80% sugiere apendicitis perforada y apura la cirugía.",
+  "origen": "vault",
+  "nota": "wiki/PATOLOGIA 2026/clases/02f_Inflamacion_cronica_y_granulomas.md"
+ },
+ "neutrofilos-segmentados": {
+  "porque": "El neutrófilo es la primera línea contra bacterias: sale del vaso por selectinas e integrinas, fagocita y mata con el estallido respiratorio. Vive horas en sangre, así que su número depende de la producción continua por G-CSF. Sube en infección bacteriana, inflamación, estrés y epinefrina (que despega los neutrófilos marginados). Baja por quimioterapia, aplasia o fármacos.",
+  "ejemplo": "Mujer de 55 años en quimioterapia por cáncer de mama con fiebre de 38,5 °C, leucocitos 1.200 y 20% de segmentados: neutrófilos absolutos 240/µL, neutropenia grave. Es una urgencia: hemocultivos y antibiótico de amplio espectro sin esperar el foco.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Neutrofilos.md"
+ },
+ "abastonados-cayados": {
+  "porque": "El abastonado es un neutrófilo inmaduro con núcleo en banda. Cuando una infección bacteriana aguda consume neutrófilos, la médula vacía su reserva y salen formas jóvenes (desviación a la izquierda). Si además hay leucopenia, la médula ya no da abasto, lo que indica sepsis grave. En ancianos o con corticoides puede faltar la leucocitosis.",
+  "ejemplo": "Anciano de 78 años con dolor abdominal difuso, abdomen en tabla y leucocitos solo 9.000 pero con 14% de abastonados: aunque el recuento total parece normal, la desviación a la izquierda delata peritonitis. No se descarta el abdomen agudo por un recuento normal.",
+  "origen": "mixto",
+  "nota": "raw/SEMIOLOGIA/SOTITO-2018-UNIDAD-II-1_210414_142403.md"
+ },
+ "linfocitos": {
+  "porque": "Median la inmunidad adaptativa y aumentan sobre todo en virosis (hasta 20.000-30.000). La tos ferina da las cifras más altas porque su toxina bloquea las integrinas endoteliales: los linfocitos no salen a los tejidos y se acumulan en sangre. La linfopenia indica déficit de inmunidad celular. [vault difiere de literatura: escribe /mL; la unidad correcta es /µL]",
+  "ejemplo": "Estudiante de 18 años con fiebre, faringitis exudativa, adenopatías cervicales posteriores y esplenomegalia; leucocitos 14.000 con 60% de linfocitos y 15% atípicos: mononucleosis infecciosa. Se evita la amoxicilina (exantema) y el deporte de contacto por riesgo de rotura esplénica.",
+  "origen": "vault",
+  "nota": "wiki/INMUNOLOGIA 2026/clases/29_Enfermedades_proliferativas_de_las_celulas_del_sistema_inmune.md"
+ },
+ "monocitos": {
+  "porque": "El monocito circula y en los tejidos se convierte en macrófago, protagonista de la inflamación crónica y de los granulomas. Por eso aumenta cuando el agente persiste: tuberculosis, endocarditis subaguda, colagenosis y Hodgkin. Su descenso es raro y se ve en aplasia o con corticoides. [vault difiere de literatura: el vault escribe /mL, la unidad correcta es /µL]",
+  "ejemplo": "Varón de 45 años de Juliaca con tos de 4 semanas, sudoración nocturna y baja de peso; leucocitos 8.000 con 12% de monocitos (960/µL): monocitosis que apoya un proceso crónico granulomatoso. Se piden baciloscopías por sospecha de TBC pulmonar.",
+  "origen": "vault",
+  "nota": "wiki/INMUNOLOGIA 2026/clases/29_Enfermedades_proliferativas_de_las_celulas_del_sistema_inmune.md"
+ },
+ "eosinofilos": {
+  "porque": "El eosinófilo está especializado contra larvas de parásitos que invaden tejidos (las ataca con proteína básica mayor) y participa en la alergia mediada por IgE, reclutado por la eotaxina. Por eso sube en parasitosis tisulares, asma y fiebre del heno. Baja con el estrés agudo y los corticoides, que lo secuestran y acortan su vida.",
+  "ejemplo": "Campesino de 30 años que comió carne de cerdo mal cocida en una fiesta patronal; dos semanas después tiene mialgias, edema palpebral, fiebre y eosinófilos 25% (3.000/µL): eosinofilia marcada compatible con triquinosis. Se confirma con serología y CPK elevada.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/clases/06_UNIDAD_VI_SANGRE_INMUNIDAD_Y_COAGULACION/02_Capitulo_34.md"
+ },
+ "basofilos": {
+  "porque": "El basófilo es el granulocito más escaso; sus gránulos guardan histamina, heparina y leucotrienos, y tiene receptores de alta afinidad para IgE, por lo que es efector de la hipersensibilidad tipo I. Su aumento es raro; si es persistente y sin alergia que lo explique, se sospecha un clon mieloide como la leucemia mieloide crónica.",
+  "ejemplo": "Varón de 50 años con esplenomegalia gigante, leucocitos 120.000 con todas las formas de la serie mieloide y basófilos 6%: la basofilia persistente con leucocitosis extrema orienta a leucemia mieloide crónica. Se pide cromosoma Filadelfia (BCR-ABL).",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Basofilos.md"
+ },
+ "plaquetas": {
+  "porque": "Son fragmentos de megacariocito que viven unos 10 días y forman el tapón de la hemostasia primaria. Si bajan sangran capilares: petequias, púrpura y mucosas, con sangría prolongada y TP normal. Causas: menor producción, destrucción inmune (PTI), secuestro esplénico o consumo (CID). [vault difiere de literatura: el sangrado espontáneo suele darse con <10.000-20.000/µL]",
+  "ejemplo": "Niña de 6 años con petequias y gingivorragia dos semanas después de un cuadro viral, sin esplenomegalia; plaquetas 12.000/µL con resto del hemograma normal: PTI aguda. Por debajo de 30.000 hay riesgo de sangrado y se evitan AINEs e inyecciones intramusculares.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/clases/06_UNIDAD_VI_SANGRE_INMUNIDAD_Y_COAGULACION/05_Capitulo_37.md"
+ },
+ "ade-rdw": {
+  "porque": "El RDW mide qué tan distintos son los GR entre sí (anisocitosis). En la ferropenia conviven GR viejos normales con GR nuevos cada vez más pequeños, así que el RDW sube temprano, incluso antes que baje el VCM. En la talasemia la médula produce GR uniformemente pequeños, por lo que el RDW queda normal.",
+  "ejemplo": "Dos pacientes con VCM 68 fL: una mujer de 30 años con RDW 18% y ferritina baja tiene ferropenia; un varón de 25 años con RDW 13%, GR 6,2 millones e índice de Mentzer 11 sugiere rasgo talasémico. Darle hierro al segundo sería un error.",
+  "origen": "mixto",
+  "nota": "wiki/PATOLOGIA 2026/clases/11a_Clasificacion_de_las_anemias_y_perdida_de_sangre.md"
+ },
+ "vpm-volumen-plaquetario-medio": {
+  "porque": "El VPM es el tamaño promedio de las plaquetas. Las plaquetas recién liberadas son más grandes, así que cuando la médula responde a una destrucción periférica (PTI) o se recupera, el VPM sube. Si la médula no produce (aplasia, quimioterapia), circulan pocas plaquetas pequeñas y el VPM baja. Ayuda a saber si la trombocitopenia es periférica o central.",
+  "ejemplo": "Mujer de 25 años con plaquetas 40.000/µL y VPM 12,5 fL: plaquetas grandes y jóvenes, la médula está activa y el problema es destrucción periférica, orientando a PTI. Si el VPM fuera 6,5 fL con anemia y leucopenia, se pensaría en aplasia medular.",
+  "origen": "literatura",
+  "nota": null
+ },
+ "plaquetocrito": {
+  "porque": "El plaquetocrito es el porcentaje del volumen sanguíneo ocupado por plaquetas, el equivalente plaquetario del hematocrito: resulta del recuento por el VPM. Por eso sube y baja casi en paralelo con el número de plaquetas y rara vez aporta algo que no diga ya el recuento.",
+  "ejemplo": "Varón de 40 años con plaquetas 90.000/µL, VPM 9 fL y plaquetocrito 0,08%: el valor bajo solo confirma la trombocitopenia. Lo que guía el estudio es el recuento, el VPM y el frotis, no el plaquetocrito.",
+  "origen": "literatura",
+  "nota": null
+ },
+ "vsg": {
+  "porque": "Mide cuánto caen los glóbulos rojos en una hora. Normalmente se repelen por su carga negativa; las proteínas de fase aguda, sobre todo el fibrinógeno, neutralizan esa carga, los apilan en pilas de monedas y sedimentan más rápido. Sube en inflamación, infección, autoinmunidad y mieloma; baja con muchos hematíes o formas que no se apilan. [vault difiere de literatura: dice que VSG normal descarta infección bacteriana]",
+  "ejemplo": "Mujer de 45 años con dolor simétrico de manos y rigidez matutina de 1 hora: VSG 60 mm/h y PCR 45 mg/L apoyan artritis reumatoide activa. En altura, la poliglobulia fisiológica tiende a bajar la VSG, así que en un puneño una cifra limítrofe puede subestimar la inflamación.",
+  "origen": "mixto",
+  "nota": "wiki/PATOLOGIA 2026/clases/02f_Inflamacion_cronica_y_granulomas.md"
+ },
+ "pcr-proteina-c-reactiva": {
+  "porque": "Es una proteína de fase aguda que el hígado fabrica estimulado por IL-6 y que actúa como opsonina sobre bacterias y células dañadas. Sube a las 6-8 horas del estímulo y, por su vida media corta, cae rápido al controlarse la causa; por eso sigue mejor el tratamiento que la VSG. Cifras muy altas orientan a infección bacteriana; en el brote lúpico su respuesta es pobre.",
+  "ejemplo": "Paciente con LES y fiebre: VSG 70 mm/h y PCR 120 mg/L; como el brote lúpico casi no sube la PCR, se piensa primero en infección y se buscan focos. Un varón con neumonía tiene PCR de 180 mg/L al ingreso y de 40 mg/L al tercer día de antibiótico: buena respuesta.",
+  "origen": "vault",
+  "nota": "wiki/INMUNOLOGIA 2026/clases/42_Lupus_eritematoso_sistemico.md"
+ },
+ "factor-reumatoide": {
+  "porque": "Es un autoanticuerpo, en general IgM, dirigido contra la porción Fc de la IgG; forma inmunocomplejos que perpetúan la sinovitis. Apoya el diagnóstico de artritis reumatoide (sensibilidad 66%, especificidad 87%) y los títulos altos indican enfermedad más agresiva, nódulos y Felty. Otras estimulaciones inmunes crónicas también lo producen, por eso no basta solo y el anti-CCP es más específico.",
+  "ejemplo": "Mujer de 40 años con poliartritis simétrica de manos: FR de 120 UI/mL y anti-CCP positivo, AR seropositiva con mayor riesgo erosivo. Un anciano asintomático con FR de 30 UI/mL y hepatitis C no tiene AR: el FR se positiviza por la estimulación inmune crónica.",
+  "origen": "mixto",
+  "nota": "wiki/INMUNOLOGIA 2026/clases/40_Artritis_reumatoide.md"
+ },
+ "tp-inr": {
+  "porque": "El TP mide cuánto tarda en coagular el plasma al añadir factor tisular y calcio, y explora la vía extrínseca y común (VII, X, V, II, fibrinógeno). Se alarga si faltan factores dependientes de vitamina K (warfarina, déficit de vitamina K), si el hígado no los sintetiza o si se consumen (CID). El INR estandariza el TP entre laboratorios para poder comparar resultados.",
+  "ejemplo": "Paciente con FA anticoagulado con warfarina: INR 2.5, dentro de la meta de 2 a 3. Llega luego con hematuria e INR 6: sobreanticoagulación con alto riesgo hemorrágico, se suspende la warfarina y se da vitamina K. Un cirrótico con INR 1.9 sin anticoagulantes refleja falla de síntesis hepática.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/clases/06_UNIDAD_VI_SANGRE_INMUNIDAD_Y_COAGULACION/05_Capitulo_37.md"
+ },
+ "ttpa": {
+  "porque": "El TTPa explora la vía intrínseca y común (XII, XI, IX, VIII, X, V, II) añadiendo un activador de contacto, fosfolípido y calcio. Se alarga con la heparina no fraccionada, que potencia a la antitrombina contra la trombina y el Xa, con el déficit de VIII o IX (hemofilias) y en la CID por consumo. Por eso sirve para ajustar la heparina en infusión.",
+  "ejemplo": "Paciente con TEP en heparina no fraccionada: TTPa basal de 30 s; la meta es 45-75 s (1.5 a 2.5 veces). Si sube a 100 s y sangra, se suspende y se da sulfato de protamina. Un niño varón con hemartrosis, TTPa largo y TP normal orienta a hemofilia A o B.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/Heparina.md"
+ },
+ "fibrinogeno": {
+  "porque": "Es la proteína que la trombina convierte en fibrina, la malla del coágulo, y se sintetiza en el hígado. Como reactante de fase aguda (IL-6) sube en la inflamación y, al neutralizar la carga de los hematíes, acelera la VSG y aumenta la viscosidad. Baja cuando se consume masivamente en la CID o si el hígado no lo produce. [el vault no coincide consigo mismo: 200-400 mg/dL vs 100-700 de Guyton]",
+  "ejemplo": "Puérpera con desprendimiento de placenta que sangra por las punciones: plaquetas 50 000, TP y TTPa largos, fibrinógeno de 90 mg/dL y dímero D alto: CID por consumo, se trata la causa y se repone crioprecipitado. Un paciente con neumonía tiene fibrinógeno de 600 mg/dL como reactante de fase aguda.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Fibrinogeno.md"
+ },
+ "tiempo-de-sangria-coagulacion": {
+  "porque": "El tiempo de sangría mide cuánto tarda en cerrar una punción y depende de las plaquetas y la pared del vaso (hemostasia primaria). El tiempo de coagulación mide cuánto tarda en coagular la sangre en un tubo y depende de los factores (hemostasia secundaria); la heparina lo alarga mucho. [vault difiere de literatura: la atribuye también a déficit de factores; en hemofilia la sangría es normal]",
+  "ejemplo": "Joven con epistaxis y petequias: plaquetas 30 000 y tiempo de sangría de 12 min con coagulación normal: falla de la hemostasia primaria, se piensa en trombocitopenia inmune. Un paciente que recibe heparina IV pasa de un tiempo de coagulación de 6 min a más de 30 min.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/clases/06_UNIDAD_VI_SANGRE_INMUNIDAD_Y_COAGULACION/05_Capitulo_37.md"
+ },
+ "glucosa-en-ayunas": {
+  "porque": "En ayunas la glucemia depende del balance entre insulina, que la mete a músculo y grasa por GLUT-4, y glucagón, que libera glucosa hepática. Sube si falta insulina o hay resistencia (diabetes), o si predominan glucagón y estrés (pancreatitis). Baja por exceso de insulina o hipoglucemiantes, y el cerebro, que depende de la glucosa, sufre primero.",
+  "ejemplo": "Varón de 48 años con obesidad abdominal y glucosa en ayunas 132 mg/dL; se repite otro día y sale 128: dos valores de 126 o más confirman diabetes mellitus. Si hubiera salido 110, sería glucosa alterada en ayunas (prediabetes) y se indicaría cambio de estilo de vida.",
+  "origen": "vault",
+  "nota": "wiki/FARMACOLOGIA 2026/clases/41a_Insulina_glucagon_diabetes_mellitus.md"
+ },
+ "glucosa-2-h-ptog-75-g-y-hba1c": {
+  "porque": "La PTOG mide cuánto tarda el organismo en sacar de la sangre una carga de 75 g de glucosa: si la insulina falla, sigue alta a las 2 horas. La HbA1c es Hb glucosilada de forma irreversible y, como el GR vive unos 120 días, resume la glucemia de 8-12 semanas. Por eso da valores falsamente bajos si los GR viven menos (hemólisis, sangrado, transfusión reciente).",
+  "ejemplo": "Mujer de 55 años con glucosa en ayunas 118 mg/dL; la PTOG a las 2 horas da 215 mg/dL y la HbA1c 6,8%: ambos cumplen criterio de diabetes. Una HbA1c de 6,8% equivale a una glucosa promedio cercana a 150 mg/dL.",
+  "origen": "vault",
+  "nota": "wiki/FARMACOLOGIA 2026/clases/41a_Insulina_glucagon_diabetes_mellitus.md"
+ },
+ "urea-sanguinea": {
+  "porque": "La urea es el producto final de las proteínas, fabricado en el hígado a partir del amoníaco y eliminado por filtración glomerular con reabsorción pasiva. Sube si el riñón filtra menos, si el flujo tubular es lento (más reabsorción, como en deshidratación) o si llega más proteína (catabolismo, sangre digerida en HDA). Baja si el hígado no la fabrica o faltan proteínas.",
+  "ejemplo": "Paciente de 32 años con pancreatitis biliar complicada, anuria y urea 180 mg/dL con creatinina 5 mg/dL: urea cuatro veces el límite, IRA grave con catabolismo aumentado. Con urea mayor de 400 aparecerían encefalopatía, pericarditis y escarcha urémica.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Urea.md"
+ },
+ "bun": {
+  "porque": "El BUN mide solo el nitrógeno contenido en la urea, por eso es menor que la urea total: urea = BUN × 2,14. Se mueve por las mismas causas que la urea (filtrado, flujo tubular, carga proteica y síntesis hepática). En Perú se informa como urea, así que hay que convertir antes de aplicar cortes de libros que usan BUN.",
+  "ejemplo": "Un artículo dice que un BUN de 40 mg/dL es elevado; el laboratorio de Puno reporta urea 86 mg/dL. Dividiendo 86 entre 2,14 da un BUN de unos 40: es el mismo hallazgo expresado en otra unidad.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Urea.md"
+ },
+ "relacion-urea-creatinina": {
+  "porque": "La creatinina se filtra y casi no se reabsorbe; la urea sí se reabsorbe pasivamente, y más cuanto más lento es el flujo tubular. En la hipovolemia el flujo es lento, la urea sube más que la creatinina y la relación crece (prerrenal). Si el túbulo está dañado (NTA) pierde esa reabsorción y ambas suben juntas. HDA o corticoides también la elevan por mayor carga proteica.",
+  "ejemplo": "Mujer de 32 años con pancreatitis, PVC 0, urea 180 y creatinina 5 (relación 36): sugería prerrenal. Tras reponer volumen la creatinina no bajó, lo que indica que el cuadro evolucionó a necrosis tubular aguda.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Urea.md"
+ },
+ "creatinina-serica": {
+  "porque": "Sale de la degradación espontánea de la creatina fosfato muscular, a ritmo constante según la masa muscular, y se elimina casi solo por filtración. Sube cuando cae el filtrado, pero tarde: la TFG puede bajar a la mitad antes de salir del rango. Baja con poca masa muscular. [vault difiere de literatura: suele darse por sexo, V 0,7-1,2 y M 0,5-1,1 mg/dL]",
+  "ejemplo": "Anciana de 82 años, delgada, con creatinina 1,2 mg/dL: parece normal, pero con poca masa muscular su clearance estimado ronda 30 mL/min. En ella hay que ajustar dosis de fármacos aunque la creatinina 'esté en rango'.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Creatinina.md"
+ },
+ "clearance-de-creatinina-tfg": {
+  "porque": "El clearance estima cuántos mililitros de plasma limpian los glomérulos por minuto, es decir, cuántas nefronas siguen funcionando. Baja cuando se pierden nefronas: en la IRC, menos de 60 mL/min de forma sostenida; con más de 90% destruido aparece el síndrome urémico. Sube transitoriamente por hiperfiltración (embarazo, diabetes inicial).",
+  "ejemplo": "Varón de 60 años, 62 kg, creatinina 3 mg/dL. Con Cockcroft-Gault: (140 − 60) × 62 / (3 × 72) = 22,9 mL/min, IRC moderada según la clasificación de clase (G4 en KDIGO). Se ajustan dosis y se prepara el acceso para diálisis futura.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/10c_Sindromes_clinicos_renales.md"
+ },
+ "sodio-serico": {
+  "porque": "El sodio, con sus aniones, da casi toda la osmolaridad extracelular y decide hacia dónde se mueve el agua. Si baja, el agua entra a las células y la neurona se edematiza (cefalea, convulsiones, coma). Si sube, el agua sale y la neurona se deshidrata. Por eso la corrección debe ser lenta: subir rápido el sodio causa desmielinización pontina; bajarlo rápido, edema cerebral.",
+  "ejemplo": "Varón diabético de 60 años con glucosa 700 mg/dL y sodio 128 mEq/L: la hiperglucemia arrastra agua al plasma y diluye el sodio unos 1,6 mEq/L por cada 100 mg/dL. Corrigiendo, el sodio real ronda 137; no hay que tratarlo como hiponatremia verdadera.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_06_METABOLISMO_DEL_SODIO.md"
+ },
+ "potasio-serico": {
+  "porque": "El 98% del potasio está dentro de la célula y ese gradiente fija el potencial de reposo de corazón y músculo. Sube si el riñón no lo excreta (IRA, IRC) o si sale de la célula (acidosis, que cambia H+ por K+; rabdomiólisis). Baja por pérdidas (vómitos, diarrea, diuréticos) o por entrada a la célula (insulina, alcalosis, beta-agonistas).",
+  "ejemplo": "Varón de 65 años con IRC que suspendió la diálisis, debilidad y potasio 7,2 mEq/L; el ECG muestra T altas y picudas con QRS ensanchándose. Riesgo de fibrilación ventricular: se da gluconato de calcio para estabilizar la membrana e insulina con glucosa para meter el potasio a la célula.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_07_METABOLISMO_DEL_POTASIO.md"
+ },
+ "cloro-serico": {
+  "porque": "Es el principal anión extracelular y se mueve en espejo con el bicarbonato para mantener la neutralidad eléctrica. Si se pierde HCl por vómitos, se retiene bicarbonato: alcalosis hipoclorémica con hipopotasemia. Si se pierde bicarbonato (diarrea, acidosis tubular), se retiene cloro: acidosis hiperclorémica. El exceso de suero fisiológico también lo sube.",
+  "ejemplo": "Lactante de 6 semanas con vómitos en proyectil tras cada toma y una oliva palpable; cloro 85 mEq/L, potasio 3 y HCO3 34: alcalosis metabólica hipoclorémica e hipopotasémica por estenosis hipertrófica del píloro. Se rehidrata con SF y potasio antes de operar.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_04_ALTERACIONES_EN_EL_METABOLISMO_HIDROELECTROLITICO_Y_ACIDO_BA.md"
+ },
+ "calcio-serico": {
+  "porque": "El calcio iónico estabiliza la membrana de nervio y músculo; si baja, las neuronas se disparan solas: tetania (Chvostek, Trousseau). Casi la mitad va unido a albúmina, por eso se corrige. En la pancreatitis se consume formando jabones con la grasa necrosada; si sube, hay poliuria. [vault difiere de literatura: normal 8,5-10,5 mg/dL; el 6-11 de 2020 no es válido]",
+  "ejemplo": "Varón de 58 años alcohólico con pancreatitis aguda, equimosis de Cullen y Grey Turner y calcio 6,2 mg/dL con albúmina 3: corregido da 7 mg/dL, en el umbral de mal pronóstico. Se vigila tetania y se repone calcio.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/09d_Higado_vias_biliares_y_pancreas.md"
+ },
+ "magnesio-serico": {
+  "porque": "Se elimina casi solo por el riñón (reabsorción en el asa de Henle): se acumula en IRA o IRC, al inicio sin síntomas, y se pierde con diuréticos de asa. La hipomagnesemia impide corregir potasio y calcio, potencia la digoxina y favorece torsades de pointes. [vault difiere de literatura: 1,8-2,3 corresponde a mg/dL; en mEq/L el normal es 1,4-2,0]",
+  "ejemplo": "Mujer de 70 años con insuficiencia cardíaca, furosemida y digoxina, con potasio 2,9 que no sube pese a reponerlo y magnesio bajo: la hipomagnesemia hace perder potasio por el riñón. Se repone primero magnesio; si no, la hipopotasemia persiste y aumenta el riesgo de arritmia digitálica.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Hipermagnesemia.md"
+ },
+ "tgo-ast": {
+  "porque": "La TGO es una enzima intracelular de hígado, corazón, músculo, riñón y eritrocitos; parte de ella vive en la mitocondria. Cuando la célula se rompe (citólisis) pasa a la sangre, por eso sube en necrosis hepática pero también en infarto, rabdomiólisis o hemólisis. El alcohol daña la mitocondria y agota el cofactor de la TGP, de ahí que la TGO supere al doble de la TGP.",
+  "ejemplo": "Varón de 50 años de Puno, bebedor de fin de semana, con TGO 180 y TGP 70 UI/L: cociente 2,6, sugiere hepatopatía alcohólica. Si la TGO sale alta con TGP normal tras una caída con aplastamiento, hay que pensar en músculo y pedir CPK.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/TGO.md"
+ },
+ "tgp-alt": {
+  "porque": "La TGP es citoplasmática y casi exclusiva del hepatocito: transfiere el grupo amino de la alanina al alfa-cetoglutarato. Basta que se dañe la membrana del hepatocito para que salga a la sangre, por eso es el marcador más específico de lesión hepática. Sube muchísimo en hepatitis viral o tóxica (TGP mayor que TGO) y poco en obstrucción biliar.",
+  "ejemplo": "Escolar de 9 años con ictericia, coluria y anorexia, TGP 1450 y TGO 980 UI/L: más de 10 veces el límite, con TGP mayor que TGO, típico de hepatitis A. Si además tomara un fármaco con bilirrubina mayor de 2 veces el límite, la ley de Hy anuncia lesión grave.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/TGP.md"
+ },
+ "fosfatasa-alcalina-fa": {
+  "porque": "La FA está en el polo canalicular del hepatocito, en osteoblastos y en placenta. Cuando la bilis no sale, la presión retrógrada induce al hepatocito a fabricar más FA y rompe la membrana canalicular, por eso es el marcador de colestasis. También sube con hueso en formación (niños, Paget, metástasis) y en el tercer trimestre. Como su vida media es de unos 7 días, baja lento.",
+  "ejemplo": "Mujer de 32 años con cólico, ictericia y fiebre: FA 234 UI/L y GGT alta, ecografía con cálculo en colédoco, colestasis obstructiva. Al día 10, tras el manejo, las transaminasas ya normalizaron pero la FA sigue en 100 UI/L, descenso lento esperable.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Fosfatasa-Alcalina.md"
+ },
+ "ggt-gt": {
+  "porque": "La GGT es una enzima de membrana del hepatocito y del epitelio biliar que no existe en el hueso. Por eso sirve como juez de la FA: si ambas suben, el origen es hepatobiliar; si la FA sube sola, es ósea. Además el alcohol y fármacos inductores (fenitoína, barbitúricos) aumentan su síntesis en el retículo del hepatocito, de modo que sube aislada sin colestasis.",
+  "ejemplo": "Mujer de 45 años con ictericia y acolia: FA 390 U/L y GGT 280 U/L, origen biliar, ecografía con colédoco dilatado por cálculo. En cambio, un adulto mayor con FA 350 y GGT normal más dolor óseo orienta a enfermedad de Paget o metástasis.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Colestasis.md"
+ },
+ "bilirrubina-total": {
+  "porque": "La bilirrubina viene del hemo de eritrocitos viejos (80% bazo e hígado, 20% eritropoyesis ineficaz). Sube si se produce de más (hemólisis), si el hígado no la capta o conjuga, o si la bilis no sale. Se ve primero en escleróticas porque su elastina tiene afinidad por el pigmento, y solo se nota por encima de 2,5 mg/dL. [vault difiere de literatura: Esquema 36 da normal hasta 1,5 mg%, el resto del vault 1,2]",
+  "ejemplo": "Joven con piel amarilla tras comer mucha zanahoria y papaya, escleróticas blancas y bilirrubina 0,9 mg/dL: hipercarotinemia, no ictericia, sin necesidad de biopsia. Otro paciente con BT 1,8 tiene hiperbilirrubinemia subclínica que todavía no se ve.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/09a_Anamnesis_y_sintomas_del_aparato_digestivo.md"
+ },
+ "bilirrubina-directa-conjugada": {
+  "porque": "Es la bilirrubina que el hepatocito ya unió a ácido glucurónico con la UDP-glucuroniltransferasa; así se vuelve hidrosoluble. Si la bilis no sale (cálculo, tumor) regresa a la sangre, el riñón la filtra y da coluria; al no llegar al intestino falta estercobilina y hay acolia, y las sales biliares retenidas dan prurito. En la hepatitis sube junto con la indirecta.",
+  "ejemplo": "Mujer de 40 años con cólico biliar previo, ictericia intensa, orina como coca-cola y heces color masilla: BT 20 y BD 15 mg/dL, patrón obstructivo por coledocolitiasis. La ecografía muestra el colédoco dilatado y se indica CPRE.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/09a_Anamnesis_y_sintomas_del_aparato_digestivo.md"
+ },
+ "bilirrubina-indirecta-no-conjugada": {
+  "porque": "Es la bilirrubina recién salida del hemo, liposoluble y fuertemente unida a albúmina, por eso no se filtra en el riñón y no da coluria. Sube si se destruyen muchos eritrocitos o si falla la conjugación (Gilbert, Crigler-Najjar, inmadurez del recién nacido). Al ser liposoluble cruza la barrera hematoencefálica del neonato y se deposita en ganglios basales (kernícterus).",
+  "ejemplo": "Universitario de 20 años con ojos amarillos tras ayunar en semana de exámenes: BT 2,6 con BI 2,2 mg/dL, hemoglobina y reticulocitos normales, orina clara. Es síndrome de Gilbert, benigno. Un neonato con BI 22 mg/dL, en cambio, requiere fototerapia urgente.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09a_Anamnesis_y_sintomas_del_aparato_digestivo.md"
+ },
+ "patron-hepatocelular-vs-colestasico": {
+  "porque": "Compara qué se rompe: si es el hepatocito, salen transaminasas en gran cantidad; si es el sistema excretor biliar, se induce la FA y sube la bilirrubina directa. El factor R lo cuantifica dividiendo TGP y FA entre sus límites. [vault difiere de literatura: Esquema 36 da transaminasas normales en la obstructiva; en la literatura pueden subir transitoriamente al impactar un cálculo]",
+  "ejemplo": "Paciente con TGP 600 (límite 40) y FA 180 (límite 120): R = 15 ÷ 1,5 = 10, patrón hepatocelular, buscar hepatitis viral o tóxica. Otro con TGP 80 y FA 480: R = 2 ÷ 4 = 0,5, colestásico, pedir ecografía de vías biliares.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/esquemas/Esquema_36_Sindrome-Icterico.md"
+ },
+ "proteinas-totales": {
+  "porque": "Suma albúmina y globulinas. Bajan si el hígado no sintetiza (cirrosis), si falta materia prima (desnutrición), si se pierden por riñón, intestino o quemaduras, o por dilución. Al caer la albúmina baja la presión oncótica y el líquido sale al intersticio (Starling). Suben si se pierde agua (hemoconcentración) o si hay muchas globulinas, como en el mieloma.",
+  "ejemplo": "Varón de 55 años con cirrosis descompensada, ascitis y edema de piernas: proteínas totales 4,2 g/dL y albúmina 1,8, hipoproteinemia por falla de síntesis. Si un adulto mayor tuviera PT 9,5 con albúmina 3,2, la brecha de 6,3 obliga a buscar mieloma.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/signos/Hipoproteinemia.md"
+ },
+ "albumina": {
+  "porque": "La sintetiza solo el hígado y aporta 75-80% de la presión oncótica, que retiene agua en los vasos; también transporta bilirrubina indirecta, calcio y fármacos. Baja por menor síntesis (cirrosis, desnutrición), pérdida (nefrótico, enteropatía, quemaduras) o inflamación. Con vida media de unos 20 días tarda en caer, así que refleja daño crónico y no agudo.",
+  "ejemplo": "Niña de 6 años con edema palpebral matutino que progresa a anasarca y orina espumosa: proteinuria 4 g/24h y albúmina 1,9 g/dL, síndrome nefrótico. El calcio total bajo que acompaña no es hipocalcemia real, porque falta su transportador.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/Albumina.md"
+ },
+ "globulinas": {
+  "porque": "Son el resto de proteínas plasmáticas: alfa y beta (transporte, reactantes de fase aguda) y gamma (anticuerpos de células plasmáticas). En la cirrosis suben porque los antígenos intestinales evitan el hígado y estimulan una producción policlonal de inmunoglobulinas, mientras la albúmina cae. Un solo clon de plasmocitos da pico monoclonal (mieloma); bajan si se pierden o no se producen.",
+  "ejemplo": "Varón de 60 años con cirrosis alcohólica: TGO alta, albúmina 2,6 y globulinas 4,4 g/dL, electroforesis con aumento policlonal gamma. Si en cambio un adulto con dolor óseo y anemia mostrara un pico estrecho en gamma, se sospecha mieloma múltiple.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md"
+ },
+ "relacion-albumina-globulina-a-g": {
+  "porque": "Normalmente la albúmina casi duplica a las globulinas. La relación se invierte (menor de 1) cuando a la vez baja la albúmina y suben las globulinas: el hígado cirrótico deja de sintetizar albúmina mientras aumentan las inmunoglobulinas policlonales, o un clon de plasmocitos produce una paraproteína en el mieloma. Sube solo si faltan globulinas.",
+  "ejemplo": "Mujer de 58 años con ascitis y arañas vasculares: albúmina 2,4 y globulinas 4,0 g/dL, A/G 0,6, inversión compatible con cirrosis. Un niño con infecciones respiratorias repetidas y A/G de 3, en cambio, hace pensar en hipogammaglobulinemia.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/Albumina.md"
+ },
+ "amilasa-serica": {
+  "porque": "Enzima que digiere almidón, de páncreas y saliva. Si un cálculo tapa la papila, sube la presión en el Wirsung, los zimógenos se activan dentro del acino y la amilasa pasa al plasma; se filtra por el riñón, por eso dura poco. No mide gravedad: una necrosis extensa puede dar valores bajos. [vault difiere de literatura: 09d dice que normaliza en 36-72 h; la literatura, en 3-5 días]",
+  "ejemplo": "Mujer obesa de 45 años con dolor epigástrico en barra irradiado al dorso y vómitos: amilasa 968 UA/dL, unas 8 veces lo normal, más dolor típico, cumple 2 de 3 de Atlanta: pancreatitis biliar. Si llegara al 4.º día, la amilasa podría ya ser normal y conviene pedir lipasa.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Amilasa.md"
+ },
+ "lipasa-serica": {
+  "porque": "La lipasa pancreática hidroliza triglicéridos en el duodeno; la glándula salival casi no la produce, por eso es más específica que la amilasa (normal en parotiditis). Sale del acino inflamado igual que la amilasa, pero se reabsorbe en el túbulo y persiste elevada más días. [vault difiere de literatura: PATOLOGIA dice que la lipasa sube entre 72-96 h; en la literatura sube a las 4-8 h y permanece alta 8-14 días]",
+  "ejemplo": "Varón de 38 años que consulta al cuarto día de un dolor en barra tras una fiesta con mucho alcohol: amilasa ya normal pero lipasa 5 veces el límite, confirma pancreatitis aguda tardía. Con 60 años y glucosa de 230 suma 2 criterios de Ranson al ingreso.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09d_Higado_vias_biliares_y_pancreas.md"
+ },
+ "colesterol-total": {
+  "porque": "Es la suma del colesterol transportado por LDL, HDL y VLDL. Sube si hay exceso de síntesis o dieta, o si falla la depuración por receptor LDL (hipercolesterolemia familiar, hipotiroidismo, que reduce receptores); en el nefrótico el hígado aumenta la síntesis de lipoproteínas al perder albúmina. El exceso se deposita en párpados (xantelasma) y córnea (arco senil).",
+  "ejemplo": "Varón de 38 años con xantelasmas y arco corneal: colesterol total 320 mg/dL, rango alto que en un joven obliga a pensar en hipercolesterolemia familiar y en hipotiroidismo (pedir TSH). Un hipertiroideo con colesterol de 120 refleja el catabolismo acelerado.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/06a_Cabeza_cara_ojos.md"
+ },
+ "hdl": {
+  "porque": "La HDL hace el transporte reverso: recoge colesterol de los tejidos y de la pared arterial y lo lleva al hígado para eliminarlo, por eso protege. En la resistencia a la insulina el exceso de VLDL rica en triglicéridos intercambia lípidos con la HDL y la vuelve fácil de degradar, de ahí que baje en el síndrome metabólico. El ejercicio y los estrógenos la elevan.",
+  "ejemplo": "Varón sedentario de 48 años con cintura de 104 cm, TG 210 y HDL 34 mg/dL: dos criterios lipídicos del síndrome metabólico. Una mujer de 55 años con HDL de 68 resta un factor de riesgo en su cálculo cardiovascular.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Síndrome-metabólico.md"
+ },
+ "ldl": {
+  "porque": "La LDL nace de la VLDL y lleva colesterol a las células, que la captan por su receptor (apo B-100). Si el receptor falla (hipercolesterolemia familiar) o hay exceso, se acumula en la íntima, se oxida, la fagocitan macrófagos que se vuelven células espumosas y nace la placa de ateroma. Por eso es el principal factor causal modificable de aterosclerosis.",
+  "ejemplo": "Varón de 55 años con CT 280, HDL 35 y TG 150: por Friedewald, LDL = 280 − 35 − 30 = 215 mg/dL, muy alto, sugiere origen familiar. Se indica estatina de alta intensidad, que aumenta los receptores LDL del hígado.",
+  "origen": "vault",
+  "nota": "wiki/BIOQUIMICA 2026/concepts/Colesterol-LDL.md"
+ },
+ "trigliceridos": {
+  "porque": "Viajan en quilomicrones (de la dieta) y VLDL (del hígado), y la lipoproteína lipasa del endotelio los descompone. En la resistencia a la insulina llegan más ácidos grasos al hígado y este produce más VLDL, por eso suben en el síndrome metabólico. Por encima de 700-1000 la lipasa se satura, los quilomicrones obstruyen capilares pancreáticos y sus ácidos grasos libres inflaman el páncreas.",
+  "ejemplo": "Mujer de 42 años con obesidad abdominal, PA 135/88 y TG 240 mg/dL: suma ya 3 criterios de síndrome metabólico. Un varón alcohólico con dolor en barra, suero lechoso y TG 1500 mg/dL tiene pancreatitis por hipertrigliceridemia.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Síndrome-metabólico.md"
+ },
+ "volumen-urinario": {
+  "porque": "La diuresis depende del volumen que llega al riñón, de la filtración y de la capacidad de concentrar (ADH). Hay oliguria si falta perfusión (deshidratación, hemorragia, insuficiencia cardíaca), si el riñón está lesionado, o anuria si se obstruyen ambos uréteres. Hay poliuria si la glucosa arrastra agua (diuresis osmótica), si falta ADH o si el túbulo no responde (hipercalcemia).",
+  "ejemplo": "Varón de 70 kg con diarrea intensa que orina 300 mL en 24 h, unos 0,18 mL/kg/h: oliguria por hipovolemia, debe hidratarse antes de que se instale la lesión renal. Una diabética que orina 4 L al día con glucemia de 400 tiene poliuria osmótica.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/10a_Anamnesis_y_sintomas_del_aparato_genitourinario.md"
+ },
+ "densidad-urinaria": {
+  "porque": "Refleja cuántos solutos lleva la orina, es decir, la capacidad del túbulo de concentrar con ADH. Un riñón sano mal perfundido retiene agua y sodio y concentra (densidad alta, FENa menor de 1%); un túbulo necrosado pierde esa capacidad y la orina queda isostenúrica (FENa mayor de 2%). [vault difiere de literatura: SEMIOLOGIA usa unidad mg/ml; la densidad es adimensional]",
+  "ejemplo": "Agricultor de 60 años tras vómitos de 2 días, orina escasa con densidad 1.028 y FENa 0,5%: insuficiencia renal prerrenal, responde a hidratación. Otro tras shock séptico con densidad 1.010 y FENa 3% tiene necrosis tubular aguda.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/10b_Exploracion_genitourinaria_y_examenes_complementarios.md"
+ },
+ "ph-urinario": {
+  "porque": "El riñón elimina la carga ácida diaria de la dieta (proteínas), por eso la orina es normalmente ácida; en una acidosis sistémica el túbulo excreta aún más H+. Se alcaliniza con dietas vegetales o cuando bacterias con ureasa, como Proteus, convierten la urea en amoníaco. El pH decide qué cristal precipita: en ácida ácido úrico y oxalato, en alcalina fosfatos y estruvita.",
+  "ejemplo": "Mujer de 35 años con infecciones urinarias repetidas, orina con pH 8,5 y urocultivo con Proteus mirabilis: la radiografía muestra un cálculo coraliforme de estruvita. Un paciente con gota y pH urinario de 5 tiene riesgo de litiasis úrica.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/10b_Exploracion_genitourinaria_y_examenes_complementarios.md"
+ },
+ "aspecto-y-color-de-orina": {
+  "porque": "El color amarillo lo da la urobilina y su intensidad depende de cuánta agua se elimina. Se vuelve turbia con pus o cristales que precipitan al enfriarse; roja con hematíes, hemoglobina libre (hemólisis) o mioglobina (destrucción muscular); castaña por bilirrubina directa (coluria); y espumosa cuando hay mucha proteína que baja la tensión superficial. Betarraga y rifampicina dan falsa hematuria.",
+  "ejemplo": "Niño de 8 años, dos semanas después de una faringitis, con orina color coca-cola, edema palpebral y PA elevada: hematuria glomerular del síndrome nefrítico postestreptocócico. Un minero aplastado con orina oscura sin hematíes en el sedimento tiene mioglobinuria.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/10a_Anamnesis_y_sintomas_del_aparato_genitourinario.md"
+ },
+ "leucocitos-sedimento": {
+  "porque": "Los leucocitos migran a la vía urinaria cuando hay inflamación, casi siempre bacteriana: es la piuria. Si forman cilindros se moldearon en el túbulo, lo que ubica la inflamación en el riñón (pielonefritis, nefritis intersticial). Piuria con cultivo negativo apunta a otra causa. [vault difiere de literatura: SEMIOLOGIA da normal hasta 3 y piuria desde 10/campo; la literatura, piuria desde 5/campo]",
+  "ejemplo": "Mujer de 25 años con disuria y polaquiuria: sedimento con 25 leucocitos por campo y nitritos positivos, cistitis. Si tuviera fiebre, Giordano positivo y cilindros leucocitarios, sería pielonefritis. Piuria persistente con cultivos negativos en un paciente con tos crónica obliga a buscar TBC renal.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/10b_Exploracion_genitourinaria_y_examenes_complementarios.md"
+ },
+ "hematies-sedimento": {
+  "porque": "Los hematíes salen a la orina por un glomérulo inflamado o por lesión de la vía urinaria. Al cruzar el glomérulo y los cambios osmóticos del túbulo se deforman (dismórficos), lo que señala origen glomerular; si están intactos vienen de más abajo (cálculo, tumor). Fiebre, ejercicio intenso o trastornos de coagulación pueden dar pocos hematíes sin lesión renal.",
+  "ejemplo": "Varón de 62 años, fumador, con hematuria total indolora y 40 hematíes isomórficos por campo: pese a no doler, obliga a cistoscopia por sospecha de tumor vesical. Un atleta que corrió una maratón con 5 hematíes por campo debe repetir el examen en reposo.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/10a_Anamnesis_y_sintomas_del_aparato_genitourinario.md"
+ },
+ "celulas-epiteliales-orina": {
+  "porque": "El epitelio urinario se renueva y descama, por eso aparecen algunas células. Muchas células escamosas vienen de la piel y la vulva o el prepucio, lo que indica que la muestra no se tomó del chorro medio y está contaminada. Las células tubulares renales, más pequeñas y redondas, en cambio, aparecen cuando el túbulo se necrosa y se desprende.",
+  "ejemplo": "Mujer de 30 años cuyo examen muestra 30 células escamosas por campo y flora mixta: muestra contaminada, se repite con aseo genital y chorro medio. Un paciente tras hipotensión prolongada con células tubulares y cilindros granulosos marrones orienta a necrosis tubular aguda.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Sedimento-Urinario.md"
+ },
+ "proteinas-en-orina": {
+  "porque": "El glomérulo normal retiene la albúmina por tamaño y carga negativa, y el túbulo reabsorbe lo poco que pasa. Cuando la membrana basal se daña (glomerulopatía, diabetes) se pierden proteínas: en el nefrótico la permeabilidad es masiva y cae la albúmina, en el nefrítico la inflamación da proteinuria moderada con hematuria. La microalbuminuria es la primera señal de nefropatía diabética.",
+  "ejemplo": "Diabético de 50 años con tira reactiva negativa pero albúmina/creatinina de 120 mg/g: microalbuminuria, nefropatía incipiente, se inicia IECA. Una niña con anasarca y proteína/creatinina de 5 g/g pierde unos 5 g al día: síndrome nefrótico.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/10c_Sindromes_clinicos_renales.md"
+ },
+ "glucosa-en-orina": {
+  "porque": "La glucosa se filtra libremente y el túbulo proximal la reabsorbe toda mediante transportadores SGLT, hasta que se saturan con glucemias de unos 180 mg/dL. Por eso aparece en la DM descompensada, y también con glucemia normal si el túbulo falla (Fanconi), si el umbral baja (embarazo) o si se bloquea el SGLT2 con gliflozinas. La glucosa en orina arrastra agua: poliuria.",
+  "ejemplo": "Adolescente de 15 años con poliuria, sed intensa y baja de peso: glucosuria marcada y glucemia de 380 mg/dL, debut de diabetes tipo 1. Una gestante de 28 semanas con glucosuria leve y glucemia de 85 tiene solo un umbral renal más bajo.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/10b_Exploracion_genitourinaria_y_examenes_complementarios.md"
+ },
+ "cetonas-y-urobilinogeno-orina": {
+  "porque": "Las cetonas aparecen cuando, sin insulina o sin comida, el hígado quema grasa y produce cuerpos cetónicos que se filtran. El urobilinógeno nace en el intestino de la bilirrubina conjugada y parte se reabsorbe y sale por orina: sube en hemólisis y daño hepatocelular y falta si la bilis no llega al intestino. [vault difiere: 10b dice que sube en obstructivas; 09a y la literatura, que falta]",
+  "ejemplo": "Joven diabética con vómitos, respiración de Kussmaul, glucosa 420, pH 7,15, HCO3 10 y cetonas +++: cetoacidosis diabética. Un paciente ictérico con coluria intensa, acolia y urobilinógeno ausente orienta a obstrucción completa del colédoco.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Urobilinogeno.md"
+ },
+ "cilindros-urinarios": {
+  "porque": "Son moldes de proteína de Tamm-Horsfall que coagula dentro del túbulo y atrapa lo que encuentra, por eso su presencia prueba que el problema es renal. Los hialinos solos pueden aparecer con deshidratación o ejercicio; los hemáticos atrapan hematíes que salieron del glomérulo inflamado; los leucocitarios, pus del intersticio; y los céreos, túbulos dilatados y estancados de la IRC.",
+  "ejemplo": "Mujer de 40 años con endocarditis, hematuria, piuria y cilindros hemáticos en el sedimento: glomerulonefritis por inmunocomplejos, no una simple infección urinaria. Un anciano con creatinina crónicamente alta y cilindros céreos amplios tiene insuficiencia renal crónica avanzada.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Sedimento-Urinario.md"
+ },
+ "nitritos-orina": {
+  "porque": "La dieta deja nitratos en la orina y las enterobacterias como E. coli tienen nitrato reductasa, que los convierte en nitritos; por eso un resultado positivo delata bacterias gramnegativas. La conversión necesita unas 4 horas de orina en vejiga, así que la poliuria o micciones frecuentes dan falso negativo, igual que gérmenes sin esa enzima como Enterococo o Staphylococcus saprophyticus.",
+  "ejemplo": "Mujer de 22 años con disuria y tira reactiva con nitritos y leucocitos positivos en la primera orina de la mañana: cistitis por E. coli muy probable. Otra con la misma clínica que orina cada media hora puede tener nitritos negativos sin descartar infección: se pide urocultivo.",
+  "origen": "literatura",
+  "nota": null
+ },
+ "frecuencia-de-deposiciones": {
+  "porque": "El ritmo depende de la motilidad del colon y del agua que absorbe. La diarrea alta (delgado) da gran volumen porque llega mucho líquido y pocas veces; la baja (colon) da muchas evacuaciones pequeñas con moco y sangre porque el recto inflamado se irrita. El estreñimiento ocurre con poca fibra, fármacos u obstrucción; un fecaloma puede dejar escapar líquido y simular diarrea.",
+  "ejemplo": "Adulta mayor encamada con 'diarrea' de pequeñas cantidades de líquido fecaloideo tras una semana sin evacuar: el tacto rectal halla un fecaloma, es pseudodiarrea y no debe darse antidiarreico. Un adulto con heces tipo 6 de Bristol, 6 veces al día y voluminosas, tiene diarrea alta.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/09a_Anamnesis_y_sintomas_del_aparato_digestivo.md"
+ },
+ "diarrea-duracion": {
+  "porque": "La duración orienta la causa: la aguda empieza de golpe en una persona sana y casi siempre es infecciosa y autolimitada; la crónica sugiere malabsorción, colon irritable, tumor o causa endocrina. La pérdida de agua, potasio y bicarbonato explica la hipopotasemia, la acidosis y la IRA prerrenal. [vault difiere: 09a da aguda menor de un mes; la literatura, aguda menor de 14 días]",
+  "ejemplo": "Niño de 3 años en una comunidad rural de Puno con 3 días de deposiciones con sangre, moco, pujo y fiebre: disentería, sospecha de Shigella. Un adulto con 2 meses de diarrea y esteatorrea que baja de peso tiene diarrea crónica y se estudia malabsorción.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md"
+ },
+ "higado-examen-clinico-ecografia": {
+  "porque": "El hígado normal queda oculto bajo el reborde costal. Crece cuando se congestiona (insuficiencia cardíaca derecha), se inflama (hepatitis), se llena de grasa, quistes o tumor; si crece rápido distiende la cápsula de Glisson y duele, si crece lento (cirrosis) es indoloro, duro y de borde cortante. Se achica cuando se pierde masa de hepatocitos y solo queda fibrosis.",
+  "ejemplo": "Varón de 62 años de Juliaca con disnea, edema y yugulares ingurgitadas: borde hepático liso, blando y doloroso a 3 traveses bajo el reborde en la medioclavicular. Es una hepatomegalia mediana congestiva por insuficiencia cardíaca derecha; una cirrosis daría un borde duro e indoloro.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09b_Exploracion_del_abdomen_inspeccion_palpacion_percusion_y_auscultacion.md"
+ },
+ "coledoco-ecografia": {
+  "porque": "El colédoco lleva la bilis al duodeno por la ampolla de Vater. Si un cálculo o un tumor lo obstruye, la bilis se represa por encima y el conducto se dilata, algo que la ecografía ve aunque no logre ver el cálculo por el gas intestinal. Con la edad y tras la colecistectomía el conducto se ensancha de forma fisiológica, por eso su límite normal sube.",
+  "ejemplo": "Mujer de 32 años con dolor epigástrico, ictericia progresiva de 3 días, coluria y acolia: ecografía con colédoco de 11 mm y bilirrubina directa de 7.4 mg/dL. Con fiebre de 38.5 °C completa la tríada de Charcot: coledocolitiasis con colangitis, que pide CPRE urgente.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Coledocolitiasis.md"
+ },
+ "vena-porta-ecografia": {
+  "porque": "La porta lleva al hígado la sangre del intestino y el bazo. Si la cirrosis o una trombosis frenan ese flujo, la presión esplácnica sube y la vena se distiende; la congestión se transmite al bazo (esplenomegalia), al peritoneo (ascitis) y abre colaterales como las várices esofágicas y la cabeza de medusa. Una porta fina o invisible, en cambio, orienta a trombo dentro de ella.",
+  "ejemplo": "Varón de 55 años, bebedor, con ascitis y cabeza de medusa: la ecografía halla porta de 15 mm, bazo de 15 cm de eje largo e hígado nodular. Es hipertensión portal por cirrosis; antes de que sangre hay que buscar várices esofágicas con endoscopia.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md"
+ },
+ "bazo-ecografia-examen": {
+  "porque": "El bazo filtra la sangre, retira hematíes viejos y aloja linfocitos. Crece por congestión (hipertensión portal), por hiperplasia ante infecciones o hemólisis, o por infiltración (leucemias, linfomas); al crecer desciende hacia la fosa ilíaca izquierda y recién se palpa cuando ha aumentado mucho su volumen. Un bazo grande secuestra células y causa hiperesplenismo: anemia, leucopenia y plaquetopenia.",
+  "ejemplo": "Adolescente de 16 años con fiebre, faringitis y adenopatías cervicales: en decúbito dorsal no se palpa el bazo, pero con la maniobra de Schuster se toca su polo inferior en inspiración y la ecografía mide 14 cm de eje largo. Es esplenomegalia por mononucleosis; se prohíbe el deporte de contacto por riesgo de ruptura.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09d_Higado_vias_biliares_y_pancreas.md"
+ },
+ "pancreas-ecografia": {
+  "porque": "El páncreas es retroperitoneal y su conducto de Wirsung se une al colédoco en la ampolla de Vater. En la pancreatitis aguda la autodigestión enzimática produce edema, por eso la glándula crece y se ve hipoecoica; en la crónica la inflamación repetida la reemplaza por fibrosis y calcio y se atrofia. Si algo tapa la salida del Wirsung, el jugo se represa y el conducto se dilata.",
+  "ejemplo": "Mujer obesa de 48 años con dolor epigástrico en barra irradiado al dorso y vómitos tras una comida grasa: amilasa triplicada y ecografía con páncreas aumentado e hipoecoico más cálculos vesiculares. Es pancreatitis aguda biliar; un Wirsung de 5 mm haría buscar un cálculo impactado en la papila.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09d_Higado_vias_biliares_y_pancreas.md"
+ },
+ "vesicula-pared-calculos": {
+  "porque": "La vesícula solo almacena y concentra bilis, por eso su pared es fina. Si un cálculo obstruye el cístico y la vesícula se inflama e infecta, el edema engruesa la pared (colecistitis); si queda obstruida sin infección se llena de moco y se distiende con pared fina (hidrops). Los cálculos se ven hiperecoicos con sombra porque reflejan el ultrasonido.",
+  "ejemplo": "Mujer de 45 años, obesa, con dolor continuo en hipocondrio derecho tras una comida grasa, fiebre de 38.5 °C y Murphy positivo: eco con pared de 5 mm y cálculo en el cuello vesicular. Es colecistitis aguda litiásica. Una vesícula grande e indolora en un ictérico mayor sería, en cambio, Courvoisier-Terrier y haría pensar en cáncer.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Hidrops-Vesicular.md"
+ },
+ "menarquia": {
+  "porque": "La menarquia indica que el eje hipotálamo-hipófisis-ovario maduró: las neuronas kisspeptina activan la GnRH pulsátil, suben FSH y LH, y los estrógenos hacen crecer el endometrio hasta que descama. Se retrasa cuando falta energía o hay hipogonadismo (desnutrición, deporte intenso, enfermedad crónica) y se adelanta si el eje se enciende antes de tiempo (pubertad precoz central).",
+  "ejemplo": "Adolescente de 15 años de una comunidad de Puno, muy delgada, que nunca ha menstruado y tiene desarrollo mamario incipiente: cumple criterio de amenorrea primaria y se estudia desnutrición, hipogonadismo o causa genética. En cambio, una niña de 7 años con botón mamario y sangrado obliga a descartar pubertad precoz.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/clases/10_UNIDAD_X_ENDOCRINOLOGIA_Y_REPRODUCCION/08_Capitulo_82.md"
+ },
+ "formula-obstetrica-g-p": {
+  "porque": "Resume en una línea la historia reproductiva para estimar riesgos. G cuenta todas las gestaciones, incluida la actual y las perdidas; P desglosa cómo terminaron (a término, prematuros, abortos) y cuántos hijos viven. Así salen a la luz patrones como abortos a repetición o prematuros previos, que predicen complicaciones en el embarazo actual.",
+  "ejemplo": "Gestante de 30 años en Puno con un parto a término, ningún prematuro, un aborto y un hijo vivo, ahora embarazada de nuevo: se escribe G3 P1011. Si hubiera tenido dos abortos espontáneos previos se estudiaría pérdida gestacional recurrente.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/02b_Antecedentes_del_paciente.md"
+ },
+ "ecg-papel-y-cuadritos": {
+  "porque": "El papel corre a velocidad fija, así que la distancia horizontal es tiempo y la altura es voltaje. Saber cuánto vale cada cuadradito permite convertir cualquier onda en segundos o milivoltios y decidir si está alargada o crecida. Por eso, antes de leer, se verifica la velocidad y la señal de calibración: un trazado a otra velocidad o mal calibrado engaña todas las medidas.",
+  "ejemplo": "En un ECG a 25 mm/s el PR de un paciente ocupa 6 cuadraditos: 6 × 0.04 = 0.24 s, un BAV de 1.er grado. Si se hubiera grabado a 50 mm/s sin advertirlo, esos 6 cuadraditos serían solo 0.12 s, normal; por eso siempre se revisa la velocidad antes de medir.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08j_Bases_del_electrocardiograma.md"
+ },
+ "ecg-frecuencia-cardiaca": {
+  "porque": "El nódulo sinusal marca el ritmo según el balance simpático-vagal. Sube con el simpático, que compensa fiebre, hipoxia, anemia o shock sosteniendo el gasto cardíaco; baja con predominio vagal (atletas, sueño), fármacos, IAM inferior o hipertensión endocraneana. Las fórmulas de 1500 y 300 dividen los cuadritos de un minuto entre la distancia RR, por eso exigen ritmo regular.",
+  "ejemplo": "Turista limeño recién llegado a Puno: entre dos R hay 13 cuadraditos, 1500/13 ≈ 115 lpm, por hipoxia y descarga simpática; aclimatado semanas después vuelve cerca de 80. Un ciclista puneño entrenado con 48 lpm y sin síntomas tiene bradicardia sinusal fisiológica, que no se trata.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/08l_Bloqueos_auriculoventriculares_y_arritmias_sinusales.md"
+ },
+ "ecg-ritmo-sinusal": {
+  "porque": "Si el impulso nace en el nódulo sinusal, la activación auricular baja de derecha a izquierda y hacia los pies: la P sale positiva en DI, DII y aVF, negativa en aVR, y cada P conduce a un QRS. En la fibrilación auricular la pared auricular descarga caóticamente, no hay P sino ondas f, y el nódulo AV deja pasar impulsos al azar: RR irregular. [vault difiere de literatura: da 400-600 lpm auriculares; otros autores, 350-450]",
+  "ejemplo": "Mujer de 58 años con estenosis mitral reumática y palpitaciones: ECG sin P, con ondas f y RR irregular; en el foco se auscultan 120 lpm pero el pulso radial cuenta 80, porque los latidos con poco llenado no llegan a la muñeca. Es FA con déficit de pulso y riesgo de embolia: se valora anticoagulación.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08l_Bloqueos_auriculoventriculares_y_arritmias_sinusales.md"
+ },
+ "ecg-eje-electrico": {
+  "porque": "El eje es la dirección promedio de la despolarización ventricular y apunta hacia donde hay más masa muscular. Se va a la izquierda cuando el VI se hipertrofia o el corazón se horizontaliza (obesidad, embarazo, ascitis) y a la derecha cuando crece el VD o el corazón se verticaliza. En el poblador de altura la hipoxia crónica contrae la arteria pulmonar, sobrecarga el VD y desvía el eje a la derecha.",
+  "ejemplo": "Comunero de 50 años nacido en Puno, asintomático: QRS negativo en DI y positivo en aVF, eje cerca de +110°. En él puede ser adaptación a la altura (la clase la estima en 70-75% de pobladores); el mismo trazado en un limeño obligaría a buscar HVD, EPOC o embolia pulmonar.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08j_Bases_del_electrocardiograma.md"
+ },
+ "ecg-onda-p": {
+  "porque": "La P es la despolarización auricular: la primera mitad la genera la aurícula derecha y la segunda la izquierda. Si crece la AD (cor pulmonale, hipertensión pulmonar), su componente gana voltaje y la P se hace alta y picuda sin alargarse; si crece la AI (valvulopatía mitral), la activación tarda más y la P se ensancha con dos jorobas. Sin actividad auricular organizada, como en la FA, no hay P.",
+  "ejemplo": "Varón de 70 años de Puno con EPOC y edema de piernas: P de 3 mm, picuda en DII, y R dominante en V1. Es P pulmonale con HVD, un cor pulmonale crónico. Una mujer con estenosis mitral mostraría, en cambio, una P bimodal de 0.14 s (más de 3 cuadraditos) en DII.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08k_Hipertrofia_de_camaras_bloqueo_de_rama_e_infarto_de_miocardio.md"
+ },
+ "ecg-intervalo-pr": {
+  "porque": "El PR mide el viaje del impulso de las aurículas a los ventrículos e incluye la pausa del nódulo AV que da tiempo al llenado ventricular. Se alarga si el nódulo conduce lento (fibrosis del anciano, IAM, Chagas, digitálicos, betabloqueadores, verapamilo) y se acorta con el simpático o si una vía accesoria se salta el nódulo (Wolff-Parkinson-White). [vault difiere de literatura: 08l da PR alargado en la bradicardia sinusal; la literatura lo considera normal]",
+  "ejemplo": "Anciano de 78 años que toma atenolol y digoxina: PR fijo de 0.24 s y toda P conduce, un BAV de 1.er grado que obliga a revisar dosis. Si tuviera síncopes con convulsiones, 35 lpm y más P que QRS sin relación entre ellas, sería un BAV completo con Stokes-Adams: atropina y luego marcapaso definitivo.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08l_Bloqueos_auriculoventriculares_y_arritmias_sinusales.md"
+ },
+ "ecg-complejo-qrs": {
+  "porque": "El QRS es la despolarización ventricular y es angosto porque el His-Purkinje reparte el impulso muy rápido. Si una rama se bloquea, ese ventrículo se activa tarde a través del músculo, el QRS se ensancha y dibuja la M del lado afectado. Si la pared crece, el voltaje sube (HVI); si entre corazón y electrodo hay líquido, grasa o aire, el voltaje cae. [vault difiere de literatura: 08k da QRS <0.12 s en el BCRI, errata; el bloqueo completo exige ≥0.12 s]",
+  "ejemplo": "Hipertenso de 60 años mal controlado: S en V1 de 15 mm más R en V5 de 25 mm suman 40 mm, Sokolow positivo, con T invertida asimétrica en V5-V6: HVI por sobrecarga de presión. Otro paciente con QRS de 0.14 s y M en V1 tiene BCRD; en el altiplano se piensa antes en causa congénita, HTA o reumática que en Chagas.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08k_Hipertrofia_de_camaras_bloqueo_de_rama_e_infarto_de_miocardio.md"
+ },
+ "ecg-onda-q-patologica": {
+  "porque": "La Q normal es pequeña porque el tabique se despolariza primero, de izquierda a derecha. Cuando un infarto mata todo el espesor de la pared, ese tejido queda eléctricamente mudo y actúa como una ventana: el electrodo ve a través de él la activación de la pared opuesta, que se aleja, y registra una Q profunda y ancha. Como la cicatriz no recupera actividad, la Q persiste de por vida.",
+  "ejemplo": "Varón de 66 años que niega infarto previo pero tiene Q de 0.05 s y 5 mm de profundidad en DII, DIII y aVF, con ST isoeléctrico: es un infarto inferior antiguo, en fase de cicatrización. Si esas Q estuvieran en V1-V4, el territorio afectado sería el anteroseptal.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/08k_Hipertrofia_de_camaras_bloqueo_de_rama_e_infarto_de_miocardio.md"
+ },
+ "ecg-segmento-st": {
+  "porque": "Durante el ST todo el ventrículo está despolarizado y no hay diferencia de potencial, por eso es isoeléctrico. El músculo lesionado por isquemia severa no mantiene su potencial de reposo y genera una corriente de lesión: si el daño es subepicárdico o transmural el ST sube en las derivaciones que miran esa pared; si es subendocárdico, baja. La lesión es reversible si se reperfunde a tiempo.",
+  "ejemplo": "Minero de 57 años de Puno con dolor opresivo retroesternal de 40 minutos: ST elevado 3 mm en V1-V4 con descenso especular en DII, DIII y aVF. Es un IAM con ST elevado anteroseptal; cada minuto cuenta y se indica reperfusión inmediata.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/08k_Hipertrofia_de_camaras_bloqueo_de_rama_e_infarto_de_miocardio.md"
+ },
+ "ecg-onda-t": {
+  "porque": "La T es la repolarización ventricular; es positiva porque la repolarización avanza del epicardio al endocardio, al revés que la despolarización. La isquemia altera ese orden: si afecta al subendocardio la T queda alta y simétrica; si afecta al subepicardio se invierte, simétrica y puntiaguda. El potasio también la cambia. [vault difiere de literatura: SEMIOLOGIA da 5-10 mm; FISIOLOGIA, <5 mm en extremidades y <10 mm en precordiales]",
+  "ejemplo": "Paciente renal de 64 años en Puno que faltó a sus hemodiálisis: T altas, estrechas y picudas en V2-V4 con potasio muy elevado, una emergencia por hiperpotasemia. Distinto es un varón con dolor torácico y T negativas, simétricas, en V1-V4: isquemia subepicárdica anterior.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08k_Hipertrofia_de_camaras_bloqueo_de_rama_e_infarto_de_miocardio.md"
+ },
+ "ecg-intervalo-qt": {
+  "porque": "El QT abarca toda la sístole eléctrica, despolarización más repolarización. Se acorta cuando la FC sube porque cada ciclo dura menos, por eso se corrige con Bazett. Se alarga si la repolarización se demora por bloqueo de canales de potasio (macrólidos, antiarrítmicos), hipopotasemia, hipomagnesemia o hipocalcemia, y esa repolarización desigual favorece la torsades de pointes; la hipercalcemia lo acorta.",
+  "ejemplo": "Mujer de 40 años con diarrea intensa varios días que recibe azitromicina: QT de 0.48 s con FC de 60 lpm (RR de 1 s), así que QTc = 0.48/√1 = 480 ms, prolongado para mujer. Se corrigen potasio y magnesio y se suspende el fármaco por riesgo de torsades.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Intervalo-QT.md"
+ },
+ "rx-torax-indice-cardiotoracico": {
+  "porque": "El ICT compara el ancho del corazón con el del tórax en una placa PA de pie. Sube cuando las cavidades se dilatan por sobrecarga de volumen o fallo de bomba (valvulopatías, insuficiencia cardíaca) o hay derrame pericárdico. En AP o decúbito el corazón queda lejos de la placa y se magnifica; en el enfisema el diafragma bajo lo estira y afina. Puede haber cardiopatía sin cardiomegalia y al revés.",
+  "ejemplo": "Mujer de 65 años con insuficiencia mitral y disnea: en la PA, A+B mide 16 cm y el tórax 28 cm, ICT 0.57, cardiomegalia (frente al ejemplo del curso, 12/25 = 0.48, normal). En un pastor puneño sano el arco medio puede verse prominente por hipertensión pulmonar de altura sin que haya cardiomegalia.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08f_Examenes_complementarios_del_aparato_cardiovascular.md"
+ },
+ "rx-torax-silueta-cardiaca": {
+  "porque": "La silueta es la sombra de las cavidades y grandes vasos que forman los bordes del mediastino. Cuando una cavidad crece empuja su arco hacia afuera. En la valvulopatía mitral la aurícula izquierda es la primera en dilatarse, por eso su orejuela abomba el arco medio antes de que cambie el resto; si sigue creciendo asoma también por detrás del borde derecho y separa los bronquios principales.",
+  "ejemplo": "Mujer de 28 años de Azángaro con fiebre reumática en la infancia y disnea de esfuerzo: en la PA el arco medio está abombado, hay doble contorno a la derecha y la carina se abre. Es una estenosis mitral con AI dilatada, que se confirma con ecocardiograma.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/08f_Examenes_complementarios_del_aparato_cardiovascular.md"
+ },
+ "rx-torax-senos-costofrenicos": {
+  "porque": "El seno costodiafragmático es el punto más bajo de la cavidad pleural de pie, así que el líquido libre se acumula ahí primero y borra su ángulo agudo. Si el borramiento trae una línea cóncava que sube por la pared, es líquido; si el ángulo queda romo, sin menisco y sin cambiar con la posición, suele ser pleura engrosada por un proceso antiguo.",
+  "ejemplo": "Varón de 35 años con TBC pleural tratada hace años: seno costofrénico izquierdo romo, sin menisco y sin cambios en decúbito lateral. Es una paquipleuritis residual, no un derrame activo. Si el seno estuviera borrado con menisco y hubiera fiebre, se pensaría en derrame y se puncionaría.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/07g_Examenes_complementarios_del_aparato_respiratorio.md"
+ },
+ "rx-torax-hilios": {
+  "porque": "El hilio radiológico es sobre todo la sombra de las arterias pulmonares que salen del mediastino y se ramifican afinándose hacia la periferia. Crecen ambos cuando la presión pulmonar sube y las arterias centrales se dilatan, o cuando se llenan de ganglios (linfoma, sarcoidosis); crece uno solo cuando un tumor o adenopatías tuberculosas ocupan ese lado.",
+  "ejemplo": "Varón de 60 años, fumador, de Puno, con tos y hemoptisis: hilio derecho grande y lobulado con el izquierdo normal; obliga a descartar carcinoma broncogénico o TBC ganglionar. Un niño con fiebre, tos purulenta y micronódulos perihiliares y basales en ambos lados tendría, en cambio, bronconeumonía.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/07g_Examenes_complementarios_del_aparato_respiratorio.md"
+ },
+ "rx-torax-condensacion": {
+  "porque": "En la neumonía el exudado inflamatorio reemplaza el aire alveolar: la zona se vuelve opaca, pero los bronquios siguen con aire y se dibujan como líneas oscuras (broncograma aéreo). Como el volumen no cambia, el mediastino no se mueve. Si en cambio el bronquio se tapa y el aire se reabsorbe, el lóbulo colapsa (atelectasia) y tira del mediastino hacia la lesión.",
+  "ejemplo": "Mujer de 70 años con fiebre, tos purulenta y crepitantes con soplo tubárico a la derecha: opacidad homogénea con broncograma aéreo que borra el borde derecho del corazón. Por el signo de la silueta está en el lóbulo medio; es una neumonía, probablemente neumocócica.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/07e_Sindromes_pulmonares_y_pleurales.md"
+ },
+ "rx-torax-derrame-pleural": {
+  "porque": "El líquido pleural se acumula cuando se rompe el balance de presiones (trasudado: insuficiencia cardíaca, cirrosis, hipoproteinemia) o cuando la pleura se inflama y deja escapar proteínas (exudado: TBC, neumonía, neoplasia). Por gravedad baja al seno costodiafragmático y sube por la pared formando el menisco; si es grande, empuja el mediastino hacia el lado sano.",
+  "ejemplo": "Varón de 25 años de Puno con fiebre vespertina, baja de peso y dolor pleurítico que cedió y dio paso a disnea: matidez con curva de Damoiseau y Rx con seno derecho borrado y menisco. La punción da un exudado; en nuestro medio se piensa primero en derrame tuberculoso.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/07e_Sindromes_pulmonares_y_pleurales.md"
+ },
+ "rx-torax-neumotorax": {
+  "porque": "El pulmón tiende a colapsarse y solo la presión negativa pleural lo mantiene pegado a la pared. Si entra aire a la pleura, por rotura de una bula o por trauma, esa presión se pierde y el pulmón se retrae hacia el hilio, dejando aire sin trama entre su borde y la costilla. Si el aire entra y no sale (mecanismo de válvula), la presión sube, empuja el mediastino y frena el retorno venoso.",
+  "ejemplo": "Joven de 20 años, alto y delgado, con dolor torácico súbito en puñalada y disnea: timpanismo y murmullo abolido a la izquierda; la Rx muestra el borde pulmonar separado de la pared sin trama. Es un neumotórax espontáneo por bula subpleural; si estuviera hipotenso con tráquea desviada, se descomprime con aguja sin esperar la placa.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/07e_Sindromes_pulmonares_y_pleurales.md"
+ },
+ "rx-torax-hiperinsuflacion": {
+  "porque": "En el enfisema se destruyen paredes alveolares y se pierde la retracción elástica; en el asma los bronquiolos se estrechan y el aire entra pero cuesta sacarlo. En ambos queda aire atrapado: los pulmones se ven más negros, empujan el diafragma hacia abajo y lo aplanan, las costillas se horizontalizan y el corazón, estirado, se ve largo y estrecho.",
+  "ejemplo": "Varón de 68 años, fumador de 40 paquetes-año, con tórax en tonel: la Rx muestra 11 arcos costales posteriores sobre un diafragma aplanado, hiperclaridad y corazón en gota. Es hiperinsuflación por enfisema; si además tuviera yugulares ingurgitadas y edema, ya se habría instalado un cor pulmonale.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/07e_Sindromes_pulmonares_y_pleurales.md"
+ },
+ "gases-ph-arterial": {
+  "porque": "El pH expresa en escala logarítmica la concentración de H+ y depende del cociente HCO3 (lo regula el riñón) sobre PaCO2 (lo regula el pulmón). Baja si se acumulan ácidos fijos, se pierde bicarbonato o se retiene CO2; sube si se pierde H+ o se hiperventila. Los tampones lo frenan en segundos. [vault difiere de literatura: acidosis respiratoria con pH <7.32, no <7.35]",
+  "ejemplo": "Joven de 19 años con diabetes tipo 1 llega a emergencia en Puno con respiración de Kussmaul: pH 7.15 y HCO3 8 mEq/L. Es acidosis metabólica grave (pH <7.22) y cumple el criterio docente para bicarbonato IV (pH <7.20 y HCO3 <10).",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_08_ALTERACIONES_DEL_EQUILIBRIO_ACIDO-_BASE..md"
+ },
+ "gases-pao2": {
+  "porque": "La PaO2 es la presión del oxígeno disuelto en la sangre arterial y depende de la PO2 alveolar y de la relación ventilación/perfusión. En altura baja porque cae la presión barométrica y con ella la PO2 inspirada, sin que el pulmón falle; en el llano baja por hipoventilación, shunt, trastorno de difusión o desequilibrio V/Q. Sube con oxígeno suplementario.",
+  "ejemplo": "Turista de 30 años llega de Lima a Puno y a las 36 horas tiene disnea, tos y crepitantes: PaO2 48 mmHg y PaCO2 28. Aun para la altura (residente ≈50-60) es hipoxemia franca, menor de 60, compatible con edema agudo de pulmón de altura en fase inicial.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_30_EDEMA_AGUDO_PULMON_ALTURA.md"
+ },
+ "gases-paco2": {
+  "porque": "La PaCO2 refleja casi solo la ventilación alveolar: el CO2 difunde con facilidad, así que si se ventila poco se acumula (acidosis respiratoria) y si se ventila de más se elimina (alcalosis respiratoria). La hipocapnia contrae las arteriolas cerebrales: bajo 20 mmHg el flujo cerebral cae hasta un tercio. [vault difiere de literatura: Clase 08 la anota en mEq; es mmHg]",
+  "ejemplo": "Varón de 68 años con EPOC, somnoliento y confuso tras una neumonía: PaCO2 70 mmHg y pH 7.25. La hipercapnia explica la desorientación; es acidosis respiratoria y se trata mejorando la ventilación, incluso con ventilador, no con bicarbonato.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_09_I._ACIDOSIS_RESPIRATORIA.md"
+ },
+ "gases-hco3": {
+  "porque": "El bicarbonato es el principal tampón extracelular y su nivel lo fija el riñón, que reabsorbe todo lo filtrado y genera más al eliminar H+. Baja si se consume neutralizando ácidos fijos o se pierde (diarrea, acidosis tubular); sube con vómitos, diuréticos o al compensar una hipercapnia crónica. [vault difiere de literatura: docente da acidosis con HCO3 <24; literatura <22]",
+  "ejemplo": "Niño de 3 años de Juliaca con diarrea acuosa de 4 días, deshidratado y polipneico: HCO3 12 mEq/L y pH 7.24. La pérdida intestinal de bicarbonato causó acidosis metabólica; se rehidrata y se trata la causa, sin bicarbonato IV porque no llega a pH <7.20 con HCO3 <10.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_08_ALTERACIONES_DEL_EQUILIBRIO_ACIDO-_BASE..md"
+ },
+ "gases-exceso-de-base": {
+  "porque": "El exceso de base estima cuántos mEq de base sobran o faltan para llevar la sangre a pH 7.40 con PaCO2 de 40, así aísla el componente metabólico. Un valor negativo (déficit de base) indica bicarbonato consumido por ácidos fijos o perdido; uno positivo, bicarbonato en exceso. [vault difiere de literatura: docente ±2.5; página auto de Fisiología y literatura ±2]",
+  "ejemplo": "Paciente de 45 años en shock séptico con lactato alto: EB −12 y HCO3 13 mEq/L. El déficit de base marcado confirma acidosis metabólica por ácido láctico; orienta la gravedad, pero lo prioritario es restaurar la perfusión con fluidos y tratar la sepsis.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_08_ALTERACIONES_DEL_EQUILIBRIO_ACIDO-_BASE..md"
+ },
+ "gases-sato2-arterial": {
+  "porque": "La SatO2 es el porcentaje de hemoglobina ocupada por oxígeno y sigue una curva sigmoidea: arriba es plana y bajo PaO2 de 60 cae en picada. En Puno la menor PO2 inspirada deja la saturación cerca de 90%. La hipoxia crónica estimula la eritropoyetina y la eritrocitosis; si es excesiva, espesa la sangre, favorece trombosis y lleva a cor pulmonale.",
+  "ejemplo": "Minero de 55 años de La Rinconada con cianosis, edema de piernas e ingurgitación yugular: SatO2 72% y eritrocitosis marcada. La hipoxemia severa, por debajo de 80%, encaja con cor pulmonale crónico de altura agravado por la eritrocitosis excesiva.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_33_COR_PULMONALE_CRONICO.md"
+ },
+ "gases-anion-gap": {
+  "porque": "Como la sangre es eléctricamente neutra, el anión gap estima los aniones no medidos (sobre todo albúmina, más lactato, cetoácidos o sulfatos). Si un ácido fijo consume HCO3 y deja su anión, el gap sube; si el HCO3 perdido se reemplaza por cloro (diarrea, acidosis tubular), queda normal. La albúmina baja reduce el gap y puede ocultar uno elevado.",
+  "ejemplo": "Diabético de 25 años: Na 138, Cl 100 y HCO3 10 mEq/L. AG = 138 − (10 + 100) = 28, elevado: acidosis metabólica por cetoacidosis. Si además tuviera albúmina de 2 g/dL, el AG corregido sumaría 5 puntos más.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/clases/05_UNIDAD_V_LIQUIDOS_CORPORALES_Y_RINON/07_Capitulo_31.md"
+ },
+ "gases-acidosis-metabolica": {
+  "porque": "Hay ganancia neta de ácidos fijos (cetoácidos, lactato, tóxicos) o pérdida de bicarbonato (diarrea, insuficiencia renal, acidosis tubular). El exceso de H+ estimula el centro respiratorio y aparece la respiración de Kussmaul, que baja la PaCO2 para compensar. El H+ entra a la célula a cambio de K+ (hiperpotasemia) y el hueso cede carbonato como tampón.",
+  "ejemplo": "Mujer de 50 años con insuficiencia renal crónica: pH 7.28, HCO3 14 y PaCO2 29. Por Winter la PaCO2 esperada es 1.5 × 14 + 8 = 29 ± 2, así que la compensación respiratoria es adecuada y el trastorno es simple, sin componente respiratorio agregado.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_08_ALTERACIONES_DEL_EQUILIBRIO_ACIDO-_BASE..md"
+ },
+ "gases-acidosis-respiratoria": {
+  "porque": "La hipoventilación alveolar retiene CO2, que con agua forma ácido carbónico y libera H+. En horas el riñón aún no compensa y el HCO3 sigue casi normal; en días aumenta su reabsorción y síntesis, por eso en el EPOC crónico está alto. La hipercapnia dilata los vasos cerebrales y causa cefalea, confusión y coma. [vault difiere de literatura: docente usa pH <7.32; literatura <7.35]",
+  "ejemplo": "Paciente de 40 años con sobredosis de benzodiacepinas: PaCO2 60, HCO3 26 y pH 7.24. La PaCO2 subió 20 mmHg y el HCO3 solo 2, lo esperado en un trastorno agudo; se asegura la vía aérea y la ventilación, sin bicarbonato.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_09_I._ACIDOSIS_RESPIRATORIA.md"
+ },
+ "gases-alcalosis-metabolica": {
+  "porque": "Se genera al perder H+ (vómitos, sonda nasogástrica, diuréticos) o ganar bicarbonato, y se mantiene porque la depleción de volumen, cloro y K+ y el exceso de aldosterona impiden al riñón eliminar el bicarbonato sobrante. El pulmón compensa hipoventilando. El pH alto une calcio a la albúmina y baja el calcio ionizado: tetania y arritmias.",
+  "ejemplo": "Gestante de 24 años con hiperémesis: pH 7.52, HCO3 36, PaCO2 46 y cloro urinario 10. La PaCO2 esperada es 0.7 × 36 + 21 ≈ 46, compensación adecuada; el cloro urinario bajo indica que responde a suero salino 0.9% más cloruro de potasio.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_09_I._ACIDOSIS_RESPIRATORIA.md"
+ },
+ "gases-alcalosis-respiratoria": {
+  "porque": "La hiperventilación elimina más CO2 del que se produce; la causa más frecuente es la ansiedad, pero la hipoxemia de altura, la fiebre, la sepsis o los salicilatos estimulan igual el centro respiratorio. El pH alto baja el calcio ionizado (parestesias, Chvostek, Trousseau). En días el riñón elimina bicarbonato y compensa, como en el residente de altura.",
+  "ejemplo": "Estudiante limeña de 20 años, en su segundo día en Puno, con hormigueo perioral y espasmo carpopedal tras una discusión: PaCO2 25, HCO3 21 y pH 7.52. Alcalosis respiratoria aguda (HCO3 baja 2 por cada 10 mmHg); mejora con calma y reinhalando en bolsa de papel.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_09_I._ACIDOSIS_RESPIRATORIA.md"
+ },
+ "gases-compensacion-esperada": {
+  "porque": "Ante un trastorno primario, el sistema contrario mueve su variable en el mismo sentido para acercar el cociente HCO3/PaCO2 a lo normal: el pulmón responde en 6-12 horas y el riñón en 3-5 días. La compensación es parcial y nunca sobrepasa el pH; si se sale de lo esperado, o el pH es normal con ambos valores alterados, hay un trastorno mixto.",
+  "ejemplo": "Paciente de 60 años con sepsis: pH 7.40, PaCO2 25 y HCO3 15. Un pH normal con ambos valores muy bajos no es compensación perfecta: por Winter la PaCO2 debería ser ≈30, así que coexisten acidosis metabólica y alcalosis respiratoria, típico de la sepsis.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/clases/05_UNIDAD_V_LIQUIDOS_CORPORALES_Y_RINON/07_Capitulo_31.md"
+ },
+ "pleural-volumen-normal": {
+  "porque": "La pleura parietal filtra líquido y sus linfáticos lo drenan, dejando solo una película lubricante. Hay derrame cuando la filtración supera el drenaje. El líquido separa pulmón y pared: amortigua las vibraciones, da matidez y apaga el murmullo; los volúmenes pequeños se esconden en el seno costodiafragmático. [vault difiere de literatura: docente 3-5 ml; literatura ~5-15 ml]",
+  "ejemplo": "Varón de 65 años con neumonía basal izquierda: la placa de pie solo muestra el seno costodiafragmático romo. En decúbito lateral izquierdo el líquido se desplaza y forma una franja junto a la pared: derrame paraneumónico pequeño, menor de 300 ml, que de pie pasaba inadvertido.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/07e_Sindromes_pulmonares_y_pleurales.md"
+ },
+ "pleural-trasudado": {
+  "porque": "En el trasudado la pleura está sana y el líquido sale por desequilibrio de las fuerzas de Starling: sube la presión hidrostática (insuficiencia cardíaca) o baja la oncótica por hipoalbuminemia (cirrosis, nefrótico). Como el capilar no está dañado pasan agua y solutos pero pocas proteínas y células; por eso es claro, amarillo pálido y no coagula.",
+  "ejemplo": "Varón de 72 años con insuficiencia cardíaca congestiva y derrame derecho: líquido claro, amarillo pálido, sin coágulos, con proteína pleura/suero 0.3 y LDH pleura/suero 0.4. No cumple ningún criterio de Light: trasudado, y se trata la falla cardíaca con diuréticos.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/07g_Examenes_complementarios_del_aparato_respiratorio.md"
+ },
+ "pleural-exudado": {
+  "porque": "En el exudado la pleura está enferma: la inflamación, la infección o el tumor aumentan la permeabilidad capilar o bloquean el drenaje linfático. Escapan proteínas grandes como el fibrinógeno, además de LDH y células; por eso el líquido es opaco, de color variable y forma coágulos. Orienta a TBC, neumonía, neoplasia o embolia pulmonar.",
+  "ejemplo": "Joven de 22 años de Puno con fiebre vespertina, baja de peso y derrame izquierdo: líquido opaco que coagula, proteína pleura/suero 0.7, 80% de linfocitos y ADA 60 U/L. Exudado linfocitario con ADA alta: pleuresía tuberculosa.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/07g_Examenes_complementarios_del_aparato_respiratorio.md"
+ },
+ "pleural-criterios-de-light": {
+  "porque": "Comparan el líquido pleural con la sangre para saber si la pleura deja escapar proteínas y LDH, marcadores de daño o inflamación. Basta un criterio para llamarlo exudado, lo que los hace muy sensibles; su punto débil es el cardiópata tratado con diuréticos, cuyo trasudado se concentra y puede parecer exudado.",
+  "ejemplo": "Paciente de 58 años con derrame: proteína pleural 4.2 y sérica 6.0 g/dL (0.70), LDH pleural 310 y sérica 400 U/L (0.78), con límite superior sérico de 250 (2/3 = 167). Cumple los tres criterios: exudado; se busca neumonía, TBC o cáncer.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Efusion-Pleural.md"
+ },
+ "pleural-aspecto": {
+  "porque": "El color delata lo acumulado: el citrino es ultrafiltrado de plasma de un trasudado; el sanguinolento, sangre de un tumor que invade vasos pleurales; el achocolatado, el pus amebiano de un absceso hepático roto a la pleura; el purulento, neutrófilos y bacterias del empiema; el lechoso, quilo por rotura del conducto torácico.",
+  "ejemplo": "Varón de 68 años, fumador, con disnea progresiva y baja de peso: la toracocentesis extrae líquido sanguinolento que no se aclara. Por la edad mayor de 60 años sugiere neoplasia (carcinoma broncogénico o metástasis pleural) y se envía a citología en busca de células malignas.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/07g_Examenes_complementarios_del_aparato_respiratorio.md"
+ },
+ "pleural-glucosa-ph-y-ldh": {
+  "porque": "Neutrófilos y bacterias consumen glucosa y producen ácido láctico y CO2 por glucólisis anaerobia, así que en el empiema glucosa y pH caen; la LDH sube porque se libera de las células que se lisan. Por eso pH, glucosa y LDH miden cuán activa es la infección pleural y si el líquido se reabsorberá solo o necesita drenaje.",
+  "ejemplo": "Paciente de 50 años con neumonía mal tratada y fiebre persistente: líquido pleural turbio con pH 7.0, glucosa 35 mg/dL y LDH 1500 U/L. Es un derrame paraneumónico complicado o empiema: además del antibiótico requiere tubo de drenaje.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Empiema-Pleural.md"
+ },
+ "pleural-celulas": {
+  "porque": "Las células dicen qué tipo de inflamación hay: los neutrófilos llegan primero en la agresión bacteriana aguda (neumonía, empiema), mientras que la TBC genera una respuesta inmune celular crónica con linfocitos, igual que muchas neoplasias. La ADA es una enzima de los linfocitos activados, por eso sube en la pleuresía tuberculosa.",
+  "ejemplo": "Mujer de 35 años de Juliaca con tos de un mes y derrame derecho: 2500 células/µL con 85% de linfocitos y ADA 70 U/L. Exudado linfocitario con ADA mayor de 40: pleuresía tuberculosa, y se inicia tratamiento aunque la baciloscopia sea negativa.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Toracocentesis.md"
+ },
+ "ascitis-gasa": {
+  "porque": "La albúmina se reparte según las presiones: en la hipertensión portal el sinusoide filtra, por presión hidrostática alta, un líquido pobre en albúmina, y la diferencia suero-ascitis es grande. Cuando el peritoneo está enfermo (TBC, carcinomatosis) escapa líquido rico en proteínas y la diferencia es pequeña. El GASA orienta la causa mejor que trasudado o exudado.",
+  "ejemplo": "Varón de 55 años, bebedor crónico, con ascitis: albúmina sérica 2.8 y ascítica 0.9 g/dL, GASA 1.9. Es ascitis por hipertensión portal (cirrosis), y se maneja con restricción de sodio y diuréticos.",
+  "origen": "mixto",
+  "nota": "wiki/PATOLOGIA 2026/clases/15a_Insuficiencia-hepatica-cirrosis-hipertension-portal.md"
+ },
+ "ascitis-pmn-pbe": {
+  "porque": "En el cirrótico las bacterias intestinales atraviesan la pared y llegan a una ascitis pobre en proteínas y opsoninas, con pocas defensas. Los neutrófilos acuden a la infección, y un recuento de 250/mm³ o más basta para diagnosticar peritonitis bacteriana espontánea aunque el cultivo tarde o salga negativo; por eso se trata sin esperarlo.",
+  "ejemplo": "Cirrótico de 60 años con ascitis, fiebre de 38.3 °C y confusión leve, sin abdomen quirúrgico: la paracentesis muestra 600 PMN/mm³. Es PBE: se inicia cefotaxima de inmediato y se envía cultivo; la confusión puede ser encefalopatía precipitada por la infección.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md"
+ },
+ "ascitis-aspecto-y-estudio": {
+  "porque": "El aspecto delata el contenido: seroso o cetrino en la hipertensión portal (ultrafiltrado), turbio cuando hay neutrófilos de una infección, hemorrágico cuando un tumor o un trauma rompe vasos, y lechoso cuando se rompen linfáticos y vierten quilomicrones ricos en triglicéridos. Por eso se piden juntos los estudios físico, químico, citológico y bacteriológico.",
+  "ejemplo": "Mujer de 62 años con ascitis y baja de peso, sin estigmas de cirrosis: líquido hemorrágico con células carcinomatosas en la citología. Es carcinomatosis peritoneal y no ascitis portal; se busca el tumor primario, por ejemplo ovárico o gástrico.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09c_Semiologia_de_esofago_estomago_y_examenes_complementarios.md"
+ },
+ "ascitis-deteccion-y-puncion": {
+  "porque": "El líquido libre cae por gravedad a los flancos y las asas con gas flotan a la línea media; por eso la matidez aparece en flancos y se desplaza al cambiar de decúbito. Con poco volumen el examen no lo detecta (la ecografía sí) y la oleada exige abdomen a tensión. Se punza a la izquierda, en zona mate, para evitar el ciego y no pinchar asas.",
+  "ejemplo": "Cirrótico de 58 años con abdomen globoso: la matidez de flancos se desplaza al girarlo de lado, pero no hay oleada. Tiene ascitis moderada, más de 500 ml; se confirma con ecografía y se punza en el tercio externo de la línea ombligo-espina ilíaca anterosuperior izquierda.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md"
+ },
+ "lcr-presion": {
+  "porque": "La presión del LCR refleja la intracraneal y depende del equilibrio entre producción en plexos coroideos y absorción en vellosidades aracnoideas. Sube si pus y proteínas traban la absorción o hay masa o edema. Con papiledema, sacar líquido abajo crea un gradiente que puede herniar el encéfalo. [vault difiere internamente: <180 mmH2O vs 'hasta 20 cm de agua'; Guyton ~130]",
+  "ejemplo": "Joven de 18 años con fiebre, cefalea intensa y rigidez de nuca, sin papiledema ni focalidad: en decúbito lateral relajado el manómetro marca 320 mmH2O. La presión alta acompaña a la meningitis bacteriana; el LCR se envía a Gram, cultivo y bioquímica.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11j_Pares_oculomotores_examen_pupilar_y_neuroimagenes.md"
+ },
+ "lcr-aspecto": {
+  "porque": "El LCR normal es cristalino porque casi no tiene células ni proteínas. Se enturbia cuando hay cientos de leucocitos (meningitis purulenta) y se vuelve xantocrómico cuando los eritrocitos de una hemorragia subaracnoidea se lisan y liberan pigmentos (oxihemoglobina, bilirrubina), lo que tarda horas. En la punción traumática la sangre se aclara de tubo a tubo.",
+  "ejemplo": "Mujer de 45 años con la peor cefalea de su vida desde hace 18 horas y TAC dudosa: el LCR es amarillento en los tres tubos tras centrifugar. La xantocromía persistente indica hemorragia subaracnoidea y no punción traumática; se busca un aneurisma.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11j_Pares_oculomotores_examen_pupilar_y_neuroimagenes.md"
+ },
+ "lcr-celulas": {
+  "porque": "El espacio subaracnoideo casi no tiene células porque la barrera hematoencefálica las excluye. Ante bacterias llegan en horas neutrófilos (piógena); los virus inducen linfocitos; la TBC, una respuesta mononuclear o mixta. Eritrocitos indican hemorragia o punción traumática. [vault difiere de literatura: dice <5 linfocitos por ml; la literatura usa <5 por mm³]",
+  "ejemplo": "Lactante de 10 meses con fiebre y fontanela abombada: LCR con 1200 leucocitos/mm³, 90% neutrófilos, y diplococos grampositivos en el Gram. Pleocitosis neutrófila: meningitis bacteriana por neumococo, y se da antibiótico de inmediato.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11j_Pares_oculomotores_examen_pupilar_y_neuroimagenes.md"
+ },
+ "lcr-proteinas": {
+  "porque": "Las proteínas del LCR son bajas porque la barrera hematoencefálica frena las moléculas grandes del plasma. Suben cuando la inflamación la abre (meningitis, sobre todo la TBC con su exudado basal) o cuando raíces nerviosas inflamadas las dejan pasar sin atraer células, como en el Guillain-Barré. Más gammaglobulina sugiere síntesis inmune dentro del SNC.",
+  "ejemplo": "Varón de 30 años con debilidad ascendente de piernas y arreflexia dos semanas después de una diarrea: LCR con 3 células y proteínas de 150 mg/100 ml. Es disociación albúmino-citológica, típica del síndrome de Guillain-Barré.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11j_Pares_oculomotores_examen_pupilar_y_neuroimagenes.md"
+ },
+ "lcr-glucosa": {
+  "porque": "La glucosa pasa de la sangre al LCR por transportadores, así que depende de la glucemia y siempre se compara con una glucemia simultánea. Baja cuando bacterias y neutrófilos la consumen y la inflamación traba su transporte (piógena, TBC, hongos); los virus casi no la alteran. [vault difiere de literatura: 50-60% de la glucemia; la literatura suele dar ~60-66%]",
+  "ejemplo": "Paciente de 40 años con meningitis: glucosa en LCR 30 mg/dL y glucemia simultánea 120 mg/dL, relación 0.25 (menor de 0.4). Junto con predominio de neutrófilos, apoya meningitis bacteriana y no viral.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11j_Pares_oculomotores_examen_pupilar_y_neuroimagenes.md"
+ },
+ "lcr-patron-bacteriano-piogeno": {
+  "porque": "Las bacterias que llegan al espacio subaracnoideo atraen neutrófilos que forman un exudado purulento en las leptomeninges. Ese exudado consume glucosa, rompe la barrera hematoencefálica (proteínas altas) y obstruye la absorción del LCR (presión alta). La irritación de las meninges explica la rigidez de nuca y los signos de Kernig y Brudzinski.",
+  "ejemplo": "Profesora de 22 años con 2 días de cefalea y fiebre, confusa y con púrpura: LCR con 380 células/mm³ (93% PMN), proteínas 220 mg/dl, glucosa 32 mg/dl y diplococos gramnegativos. Patrón piógeno por meningococo; falleció pese a penicilina precoz, muestra de su rapidez.",
+  "origen": "vault",
+  "nota": "wiki/MICROBIOLOGIA 2026/clases/23b_Neisseria_meningitidis_Eikenella_y_Kingella.md"
+ },
+ "lcr-patron-viral-aseptico": {
+  "porque": "Los virus inducen una respuesta inmune celular con linfocitos que infiltran levemente las leptomeninges; como no consumen glucosa ni forman exudado purulento, la glucosa queda normal y las proteínas suben solo algo. Por eso el cuadro es menos fulminante y suele autolimitarse. Algunos arbovirus dan neutrófilos al inicio, que luego viran a linfocitos.",
+  "ejemplo": "Estudiante de 17 años con fiebre, cefalea y fotofobia, lúcido: LCR claro con 150 células/mm³ (85% linfocitos), proteínas 60 mg/100 ml y glucosa en 60% de la glucemia. Patrón aséptico: meningitis viral, con manejo de soporte y vigilancia.",
+  "origen": "vault",
+  "nota": "wiki/PATOLOGIA 2026/clases/22d_Infecciones_del_sistema_nervioso_central.md"
+ },
+ "lcr-patron-tuberculoso": {
+  "porque": "El bacilo de Koch causa una inflamación granulomatosa crónica con exudado gelatinoso en la base del cerebro: atrapa pares craneales (el VI, por su largo trayecto), oblitera cisternas y produce hidrocefalia. La respuesta es mononuclear o mixta, la barrera se rompe mucho (proteínas muy altas) y la glucosa baja más lento que en la piógena.",
+  "ejemplo": "Agricultor de 35 años de Azángaro con 3 semanas de cefalea, febrícula, vómitos y visión doble por parálisis del VI par: LCR con 200 células/mm³ mixtas, proteínas 300 mg/100 ml, glucosa baja y ADA 15 U/L. Meningitis tuberculosa: antituberculosos sin esperar cultivo.",
+  "origen": "mixto",
+  "nota": "wiki/PATOLOGIA 2026/clases/22d_Infecciones_del_sistema_nervioso_central.md"
+ },
+ "escala-de-coma-de-glasgow": {
+  "porque": "Gradúa el nivel de conciencia sumando tres respuestas independientes: ocular (1-4), verbal (1-5) y motora (1-6). La conciencia depende de la corteza y del sistema reticular del tronco; si un TEC, un ACV o una encefalopatía los deprime, se pierden primero las respuestas complejas (orientarse, obedecer) y al final las reflejas. Con 8 o menos fallan los reflejos que protegen la vía aérea.",
+  "ejemplo": "Varón de 28 años, caída de moto en Juliaca: abre los ojos solo al dolor (O2), dice palabras inapropiadas (V3) y retira la extremidad al pellizco (M4). Glasgow 9, TEC moderado: hay que vigilarlo de cerca, porque si baja a 8 se asegura la vía aérea y se intuba.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05a_Estado_general_nivel_de_conciencia_lenguaje_y_decubito.md"
+ },
+ "grados-de-coma": {
+  "porque": "Ordena la profundidad del coma, el escalón que sigue al estupor, según qué funciones se conservan. Primero se pierde la respuesta a órdenes, luego al dolor, después la deglución y los reflejos, y al final la respiración espontánea. Cada grado indica cuánto del tronco y del bulbo sigue funcionando, y por eso el IV, con apnea y EEG plano, equivale a muerte encefálica.",
+  "ejemplo": "Mujer de 60 años con ACV hemorrágico: no obedece, apenas reacciona a un pellizco enérgico, deglute con dificultad y conserva los reflejos pupilares y tendinosos. Es coma grado II (moderado): el tronco aún funciona, pero hay que proteger la vía aérea por el riesgo de aspiración.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05a_Estado_general_nivel_de_conciencia_lenguaje_y_decubito.md"
+ },
+ "encefalopatia-hepatica-west-haven": {
+  "porque": "Gradúa el daño cerebral de la insuficiencia hepática avanzada. El hígado no depura el amonio que viene del intestino, el amonio llega al cerebro y altera la neurotransmisión. Por eso empieza con confusión e inversión del sueño, sigue con asterixis y termina en coma. La hemorragia digestiva, las infecciones, el estreñimiento y el alcohol aumentan la carga de nitrógeno y la desencadenan.",
+  "ejemplo": "Cirrótico alcohólico de 55 años en Puno ingresa por hematemesis por várices. Al día siguiente está letárgico, desorientado en el tiempo y con flapping evidente: encefalopatía grado II, desencadenada por la sangre digerida. Con laxantes, dieta hipoproteica y antibiótico revierte, pero si sigue bebiendo puede llegar al grado IV.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md"
+ },
+ "fuerza-muscular-mrc-daniels": {
+  "porque": "Cuantifica de 0 a 5 la fuerza de cada grupo muscular, comparando lados y segmentos proximales con distales, y usa como referencia la gravedad y la resistencia del examinador. La fuerza cae cuando falla cualquier punto de la vía motora (corteza, vía piramidal, motoneurona inferior, unión neuromuscular o músculo), y el patrón de la debilidad ayuda a localizar la lesión.",
+  "ejemplo": "Varón de 70 años con ACV izquierdo: el brazo derecho se levanta contra la gravedad pero cede ante cualquier resistencia (3/5), y el izquierdo es 5/5. Es una hemiparesia derecha moderada; como además tiene hiperreflexia y Babinski, la lesión es de motoneurona superior.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11b_Motilidad_tono_fuerza_y_reflejos.md"
+ },
+ "reflejos-osteotendinosos": {
+  "porque": "Gradúan la respuesta del arco reflejo miotático (huso, vía aferente, médula, vía eferente, músculo) a la percusión del tendón. Si se interrumpe el arco (nervio, raíz o motoneurona inferior), el reflejo disminuye o desaparece. Si se lesiona la vía piramidal, se pierde su freno y el reflejo se exalta hasta el clonus. La asimetría importa más que el número aislado.",
+  "ejemplo": "Mujer de 50 años con lumbociática izquierda: aquiliano izquierdo 0 y derecho 2+, con rotulianos simétricos. La arreflexia de un solo lado orienta a compresión de la raíz S1 izquierda (motoneurona inferior), no a un problema piramidal.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11b_Motilidad_tono_fuerza_y_reflejos.md"
+ },
+ "mini-mental-mmse-folstein": {
+  "porque": "Cribado cognitivo de cabecera de 30 puntos que resume orientación, fijación, atención y cálculo, recuerdo diferido, lenguaje y praxis. Cada función depende de redes corticales distintas (hipocampo para la memoria, áreas perisilvianas para el lenguaje), y por eso el patrón de fallos orienta. Su gran limitación es que el puntaje depende de la escolaridad y del medio del paciente.",
+  "ejemplo": "Comunero de 72 años de una zona rural de Puno, sin escolaridad formal, obtiene 21/30 porque no puede restar de 7 en 7 ni escribir una frase. Antes de rotular deterioro leve hay que ajustar por escolaridad, porque esos puntos miden instrucción y no demencia, y preguntar a la familia cómo se desempeña en su vida diaria.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11i_Funciones_cognitivas_y_examen_mental.md"
+ },
+ "soplos-freeman-levine": {
+  "porque": "Gradúa de I a VI la intensidad de un soplo, que es el ruido de la turbulencia del flujo por una válvula alterada o por un cambio de velocidad o viscosidad de la sangre. Suena más fuerte cuanto mayor es la estenosis, mayor la velocidad y mejor transmite la pared torácica; el enfisema lo apaga. Desde el grado IV la vibración se palpa como frémito, lo que sugiere un soplo orgánico.",
+  "ejemplo": "Mujer de 35 años con antecedente de fiebre reumática: soplo sistólico mitral fuerte con frémito palpable, grado IV/VI, orgánico. Su sobrina con anemia tiene un soplo sistólico II/VI sin frémito: es funcional, por la baja viscosidad, y debería desaparecer al corregir la hemoglobina.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/08d_Soplos_cardiacos_y_frote_pericardico.md"
+ },
+ "clase-funcional-nyha": {
+  "porque": "Clasifica la insuficiencia cardíaca por el esfuerzo que desencadena los síntomas. Cuando el gasto no aumenta lo suficiente con la actividad, sube la presión de llenado, se congestiona el pulmón y aparece la disnea. A peor función ventricular, menor es el esfuerzo necesario, hasta tener síntomas en reposo. Sirve para seguir la evolución y estimar el pronóstico.",
+  "ejemplo": "Varón de 65 años con miocardiopatía: está bien en reposo y hace sus labores, pero se ahoga al subir las cuestas de Puno con su carga habitual. Es clase II. Si meses después se ahoga ya al caminar en plano o al vestirse, pasa a clase III, y si tiene disnea en reposo con ortopnea, a clase IV.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_16_INSUFICIENCIA_CARDIACA.md"
+ },
+ "edema-signo-de-godet-fovea": {
+  "porque": "Mide la intensidad del edema por la profundidad de la fóvea que deja el dedo al presionar sobre un plano óseo. El edema aparece cuando se desequilibran las fuerzas de Starling: sube la presión hidrostática, cae la oncótica (albúmina menor de 2,5 g/dL), aumenta la permeabilidad o se obstruye la linfa. El líquido libre del intersticio se desplaza con la presión y tarda en volver.",
+  "ejemplo": "Mujer de 45 años con orina espumosa: la fóvea en la tibia es profunda, tarda cerca de un minuto en llenarse y la pierna está engrosada, 3+. La proteinuria masiva bajó su albúmina y la presión oncótica. En la insuficiencia cardíaca derecha, el mismo 3+ se produciría por la presión venosa retrógrada.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05g_Edema.md"
+ },
+ "score-de-wells-para-tvp": {
+  "porque": "Estima la probabilidad de TVP antes de pedir exámenes. Suma factores de la tríada de Virchow (estasis por inmovilización o yeso, hipercoagulabilidad por cáncer, TVP previa) y signos de obstrucción del retorno venoso (edema de toda la pierna, pantorrilla más gruesa, colaterales), y resta 2 si otro diagnóstico es más probable. Decide si basta el dímero D o va directo la eco Doppler.",
+  "ejemplo": "Varón de 58 años, operado de cadera hace 3 semanas y con cáncer de próstata activo, tiene la pantorrilla izquierda 4 cm más gruesa y edema con fóvea. Suma 4 puntos (cáncer, cirugía, diferencia de pantorrilla y fóvea): probabilidad alta, se pide eco Doppler sin esperar el dímero D.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Tromboembolismo-Venoso.md"
+ },
+ "score-de-wells-para-tep": {
+  "porque": "Estima la probabilidad de tromboembolia pulmonar antes de pedir exámenes. Pesan más los signos de TVP, el origen del émbolo, y que no haya otra explicación. Suman menos la taquicardia, la inmovilización, el antecedente, la hemoptisis y el cáncer. El dímero D solo descarta si la probabilidad es baja. [vault difiere de literatura: Score-de-Wells.md usa cortes 4 o menos / 5-6 / 7 o más]",
+  "ejemplo": "Mujer de 40 años, tras un viaje largo en bus Lima-Puno, con disnea súbita, FC 115 y pierna derecha edematosa. Suma 7,5: signos de TVP (3), TEP más probable que otro diagnóstico (3) y FC mayor de 100 (1,5). Probabilidad alta: angiotomografía directamente.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/examenes/Score-de-Wells.md"
+ },
+ "hemoptisis-por-volumen": {
+  "porque": "Gradúa la hemoptisis por el volumen expulsado en 24 horas. El peligro inmediato no es solo la anemia: la sangre llena las vías aéreas y los coágulos pueden asfixiar antes de que llegue el shock. Puede venir de vasos bronquiales o de capilares alveolares, como en la caverna tuberculosa con aneurisma de Rasmussen. [vault difiere de literatura: muchos textos llaman masiva desde 200 ml/24 h]",
+  "ejemplo": "Varón de 45 años de Puno con tos crónica y baja de peso expectora unos 150 ml de sangre roja en un día. Es una hemoptisis moderada y en la altura lo más probable es TBC cavitada. Se hospitaliza, se pide baciloscopía y radiografía, y se vigila porque un vaso de la caverna puede romperse y volverla masiva.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/07a_Anamnesis_sintomas_respiratorios.md"
+ },
+ "qsofa": {
+  "porque": "Detecta en la cabecera al infectado con riesgo de disfunción orgánica, con un punto por taquipnea, alteración mental e hipotensión. Cada criterio refleja una falla de la respuesta desregulada a la infección: la vasodilatación baja la presión, la hipoperfusión cerebral altera la conciencia y la acidosis láctica acelera la respiración. Con 2 o más se busca sepsis.",
+  "ejemplo": "Mujer de 70 años con pielonefritis: FR 24, confusa (Glasgow 14) y PAS 95 mmHg. qSOFA 3, alta sospecha de sepsis: hemocultivos, lactato, fluidos y antibiótico. En Puno la FR basal puede ser algo mayor por la hipoxia de altura, así que la taquipnea se interpreta junto a los otros criterios.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Sepsis.md"
+ },
+ "criterios-de-centor": {
+  "porque": "Estima si una faringoamigdalitis es por estreptococo del grupo A: un punto por fiebre, exudado, adenopatía cervical anterior dolorosa y ausencia de tos (la tos sugiere virus), y McIsaac ajusta por edad. Importa porque tratar el estreptococo evita la fiebre reumática, que se produce por mimetismo molecular entre antígenos bacterianos y el tejido cardíaco.",
+  "ejemplo": "Escolar de 9 años con fiebre de 38,8 °C, amígdalas con exudado, ganglios cervicales anteriores dolorosos y sin tos: Centor 4, más 1 por la edad (McIsaac 5). La probabilidad de estreptococo es alta y se indica penicilina o amoxicilina por 10 días para prevenir la fiebre reumática.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Faringitis.md"
+ },
+ "deshidratacion": {
+  "porque": "Clasifica por peso perdido (intensidad) y por sodio sérico (tipo osmolar). Cae el volumen intravascular (taquicardia, hipotensión postural, yugulares colapsadas) y el intersticial (pliegue, mucosas secas). El sodio dice hacia dónde se mueve el agua entre célula y extracelular. [vault difiere de literatura: 2020 pone la hipotónica en Na menor de 130; la literatura, menor de 135]",
+  "ejemplo": "Niño de 2 años con diarrea que pesaba 12 kg y ahora pesa 11 kg (8% perdido), con ojos hundidos, fontanela deprimida y pliegue positivo: deshidratación moderada. Con sodio de 150 mEq/L es hipertónica y se rehidrata lentamente. En la altura, el aire seco y la mayor ventilación aumentan las pérdidas insensibles.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05b_Biotipo_hidratacion_y_movimientos_involuntarios.md"
+ },
+ "desnutricion-criterios-de-gomez": {
+  "porque": "Gradúa la desnutrición por el porcentaje de peso que falta respecto del ideal para la edad y el sexo. Cuando el aporte no cubre el gasto, el cuerpo consume primero la grasa y luego la proteína muscular y visceral, y de ahí salen la hipotrofia, el panículo escaso y los cambios de cabello y piel. A mayor déficit, mayor riesgo de infección y muerte.",
+  "ejemplo": "Niña de 3 años de una comunidad altoandina pesa 10 kg y su peso ideal es 14 kg: déficit = (14 − 10) / 14 × 100 ≈ 29%. Es desnutrición de segundo grado (moderada); el cabello fino y quebradizo sugiere además un componente proteico.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05c_Peso_talla_e_indice_de_masa_corporal.md"
+ },
+ "escala-visual-analogica-del-dolor-eva": {
+  "porque": "Mide de 0 a 10 la intensidad del dolor tal como la percibe el paciente. El dolor es subjetivo y no tiene marcador objetivo, así que convertirlo en número permite compararlo entre visitas y medir la respuesta al analgésico. La intensidad es solo un elemento del guion del dolor; antigüedad, localización, carácter y agravantes completan el diagnóstico.",
+  "ejemplo": "Mujer de 30 años con cefalea pulsátil marca 7 al ingresar: dolor severo. Tras el analgésico baja a 3 (leve), lo que demuestra respuesta. Si una cefalea nueva no baja de 7 o tiene signos de alarma, se buscan causas secundarias.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/03b_Percusion_auscultacion_instrumentos_y_semiologia_del_dolor.md"
+ },
+ "ascitis-por-volumen-percusion": {
+  "porque": "Estima cuánto líquido libre hay en el peritoneo según lo que detecta la percusión. El líquido cae a las zonas declives y las asas con gas flotan al centro: así aparecen matidez en flancos con timpanismo central, matidez que se desplaza al girar al paciente y, con mucho líquido, la oleada. Con menos de 500 ml la percusión no alcanza y se necesita ecografía.",
+  "ejemplo": "Cirrótico de 60 años con abdomen en batracio, matidez en flancos de concavidad superior, oleada positiva y disnea por elevación del diafragma: ascitis de gran volumen, más de 1500 ml, a tensión. Se indica paracentesis evacuadora y se analiza el líquido; si hay fiebre, se sospecha peritonitis bacteriana espontánea.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/09b_Exploracion_del_abdomen_inspeccion_palpacion_percusion_y_auscultacion.md"
+ },
+ "proteinuria-en-cruces-tira-reactiva": {
+  "porque": "La tira estima en cruces la concentración de proteínas en la orina. El glomérulo sano no deja pasar la albúmina por su tamaño y su carga negativa; si se daña (nefrótico, nefrítico, nefropatía diabética) se pierde en la orina, baja la albúmina sérica y aparece edema. Mide concentración, no pérdida diaria. [vault difiere de literatura: muchas tiras leen + 0,3, ++ 1 y +++ 3 g/L]",
+  "ejemplo": "Niño de 6 años con edema palpebral matutino y orina espumosa: tira ++++ y proteinuria de 24 h de 4 g, en rango nefrótico, con albúmina baja que explica el edema: síndrome nefrótico. En cambio, un diabético con tira negativa necesita microalbuminuria para detectar la nefropatía temprana.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/10b_Exploracion_genitourinaria_y_examenes_complementarios.md"
+ },
+ "funcion-renal-por-tfg": {
+  "porque": "Estadifica la función renal por la filtración glomerular, que refleja cuántas nefronas siguen funcionando. Al perderse nefronas, las restantes hiperfiltran y al principio compensan (reserva disminuida, asintomática); luego suben urea y creatinina, y al final llegan la uremia y la diálisis. [vault difiere de literatura: KDIGO define ERC con TFG menor de 60 y estadios G1-G5]",
+  "ejemplo": "Varón de 60 años, 62 kg, creatinina 3 mg%: por Cockcroft-Gault, (140 − 60) × 62 / (3 × 72) ≈ 23 ml/min. Es IRC moderada en la tabla del docente (G4 en KDIGO). Se controlan potasio, anemia y presión arterial, y se prepara al paciente para una futura terapia de reemplazo renal.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/10c_Sindromes_clinicos_renales.md"
+ }
+}

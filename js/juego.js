@@ -7,6 +7,8 @@ import * as E from './juego-estado.js';
 import { esc, norm, resaltar, barajar, azar, pausa, sinMov, seguirSinMov, idCarta, numeros, aLL, metros, mezclar, desplazar, crearRuta, confetti } from './juego-util.js';
 import { crearCaza } from './juego-caza.js';
 import * as mias from './mias.js';
+import * as ajustes from './ajustes.js';
+import * as P from './juego-paseo.js';
 
 const LEAF = 'https://unpkg.com/leaflet@1.9.4/dist/';
 const TESELAS = {
@@ -68,7 +70,7 @@ function cargarCSS() {
 
 
 // =====================================================================
-export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, RUTA = null, CASOS = null, SIGLAS = null, FACIES = null, srs, raiz }) {
+export function crearJuego({ EXPLICA = {}, ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, RUTA = null, CASOS = null, SIGLAS = null, FACIES = null, srs, raiz }) {
   cargarCSS();
   ATLAS = ATLAS || {};
   MEMO = MEMO || {};
@@ -159,6 +161,12 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
       moverAvatar: (ll) => { if (!avatar.marca || avatar.caminando) return; avatar.ll = ll; avatar.s = ruta ? ruta.proyectar(ll).s : null; avatar.marca.setLatLng(ll); },
       abrirHoja: (estado) => abrirHoja(estado), hoja: () => hoja, pintarHoja: () => pintarHoja(),
       oscuro: () => esOscuro(), esperarAnim: (ms) => { animHasta = Date.now() + ms; },
+      progresivo: () => progresivo(), avatarLL: () => avatar.ll, ubicar: () => ubicar(),
+      alPasar: (ids) => {   // pasaste de verdad cerca de memoparadas: quedan desbloqueadas aunque estén más allá de la frontera
+        const ds = ids.map((id) => POR_ID[id]).filter(Boolean); if (!ds.length) return;
+        aplicarNiebla();
+        toast(`📍 <b>Pasaste por ${esc(ds[0].ubicacion)}</b>: se desbloqueó «${esc(ds[0].nombre)}»${ds.length > 1 ? ` y ${ds.length - 1} más` : ''}.`, 'oro');
+      },
     },
   });
   const calificar = (card, nota) => caza.calificar(card, nota, 'juego');   // srs.calificar + avance de la misión "repasa vencidas"
@@ -422,7 +430,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     for (const lug of LUGARES) {
       if (lug.ll) {
         marcas.gym[lug.sid] = L.marker(lug.ll, { icon: iconoGym(lug), keyboard: true, title: lug.nombre, alt: `Gimnasio ${lug.nombre}`, riseOnHover: true })
-          .on('click', () => abrirGym(lug.sid)).addTo(mapa);
+          .on('click', () => (bloqueado(lug) ? avisoBloqueado(lug) : abrirGym(lug.sid))).addTo(mapa);
       }
       for (const d of lug.datos) {
         if (!d.ll) continue;
@@ -430,12 +438,14 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
           .on('click', () => irAParada(d.id)).addTo(mapa);
       }
     }
+    aplicarNiebla(false);
     caza.dibujar();   // ruta diaria A/B, casa y UNA, hitos y apariciones salvajes
     // avatar en la última parada, o en casa (inicio de la ruta diaria), o al inicio del paseo
     const ult = POR_ID[E.ultimaParada()];
     avatar.ll = ult?.ll || caza.inicio() || ruta?.pts[0] || centro;
     avatar.s = ult?.s ?? (ruta ? 0 : null);
     avatar.marca = L.marker(avatar.ll, { icon: iconoAvatar(), zIndexOffset: 2000, interactive: false, keyboard: false }).addTo(mapa);
+    if (progresivo()) caza.pintarApariciones();   // ya hay avatar: criaturas e hitos cercanos
     if (ult) mapa.setView(ult.ll, 17, { animate: false });
     else if (caza.activo) mapa.fitBounds(L.latLngBounds(caza.limites()), { padding: [70, 40], maxZoom: 16.5, animate: false });
     mapa.on('zoomend', claseZoom); claseZoom();
@@ -487,6 +497,13 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
   function iconoGym(lug) {
     const cap = capturadasDe(lug), tot = lug.datos.length, conq = E.conquistado(lug.sid);
     const pend = lug.datos.some(pendiente);
+    if (bloqueado(lug)) {
+      return L.divIcon({
+        className: 'jg-gym-w', iconSize: [64, 64], iconAnchor: [32, 32],
+        html: `<div class="jg-gym bloq" style="--c:${esc(lug.color)};--p:0%"><div class="jg-gym-anillo"><div class="jg-gym-ic">🔒</div></div>
+          <div class="jg-gym-nom">${esc(lug.nombre)}<small>próximo</small></div></div>`,
+      });
+    }
     return L.divIcon({
       className: 'jg-gym-w', iconSize: [64, 64], iconAnchor: [32, 32],
       html: `<div class="jg-gym ${conq ? 'conq' : ''} ${cap === tot ? 'lleno' : ''} ${pend ? 'pend' : ''}" style="--c:${esc(lug.color)};--p:${(100 * cap / tot).toFixed(1)}%">
@@ -513,11 +530,66 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
   function refrescarMarca(d) {
     marcas.stop[d.id]?.setIcon(iconoStop(d));
     if (marcas.gym[d.sid]) marcas.gym[d.sid].setIcon(iconoGym(d.lug));
+    aplicarNiebla();
   }
   function refrescarTodo() {
     DATOS.forEach((d) => marcas.stop[d.id]?.setIcon(iconoStop(d)));
     LUGARES.forEach((l) => marcas.gym[l.sid]?.setIcon(iconoGym(l)));
+    aplicarNiebla();
   }
+
+  // ---------- mapa por etapas (celular): se revela conforme capturas ----------
+  // Visibles: las memoparadas ya capturadas + las FRONTERA siguientes del paseo. Gimnasio abierto = tiene alguna
+  // parada visible; el siguiente aparece con candado y los demás quedan ocultos. En pantalla ancha se ve todo.
+  const FRONTERA = 3;
+  const mqCel = matchMedia('(max-width: 899px)');
+  const progresivo = () => mqCel.matches && ajustes.get('mapaProgresivo') !== false;
+  let abiertos = null;   // Set de sid con alguna parada visible (null = sin niebla)
+  const bloqueado = (lug) => !!abiertos && !abiertos.has(lug.sid);
+  function paradasVisibles() {
+    const ver = new Set([...DATOS.filter((d) => E.capturado(d.id)).map((d) => d.id), ...P.pasadas()]);
+    let n = 0;
+    for (const d of DATOS) { if (n >= FRONTERA) break; if (!ver.has(d.id)) { ver.add(d.id); n++; } }
+    if (hoja?.id) ver.add(hoja.id);
+    return ver;
+  }
+  function aplicarNiebla(avisarNuevos = true) {
+    if (!mapa) return;
+    const antes = abiertos;
+    const ver = progresivo() ? paradasVisibles() : null;
+    el.mapa.classList.toggle('jg-prog', !!ver);
+    const ahora = ver ? new Set() : null;
+    for (const d of DATOS) {
+      const m = marcas.stop[d.id]; if (!m) continue;
+      const si = !ver || ver.has(d.id);
+      if (si && ahora) ahora.add(d.sid);
+      if (si && !mapa.hasLayer(m)) { m.addTo(mapa); if (antes && ver) m.getElement()?.classList.add('jg-aparece'); }
+      else if (!si && mapa.hasLayer(m)) m.remove();
+    }
+    abiertos = ahora;
+    let candado = false;
+    for (const lug of LUGARES) {
+      const m = marcas.gym[lug.sid]; if (!m) continue;
+      const bloq = bloqueado(lug);
+      const mostrar = !bloq || !candado;   // solo el primer gimnasio cerrado, como adelanto
+      if (bloq) candado = true;
+      if (mostrar) {
+        const cambio = !antes !== !ahora || antes?.has(lug.sid) !== ahora?.has(lug.sid);
+        if (cambio || !mapa.hasLayer(m)) m.setIcon(iconoGym(lug));
+        if (!mapa.hasLayer(m)) m.addTo(mapa);
+      } else if (mapa.hasLayer(m)) m.remove();
+    }
+    if (avisarNuevos && antes && ahora) {
+      for (const sid of ahora) if (!antes.has(sid)) toast(`🔓 <b>¡Nuevo gimnasio abierto!</b> ${esc(LUG[sid].icono)} ${esc(LUG[sid].nombre)}`, 'oro');
+    }
+  }
+  function avisoBloqueado(lug) {
+    const faltan = DATOS.filter((d) => !E.capturado(d.id) && LUG[d.sid] !== lug && DATOS.indexOf(d) < DATOS.indexOf(lug.datos[0])).length;
+    toast(`🔒 <b>${esc(lug.nombre)}</b> se abre cuando captures ${faltan === 1 ? 'la parada que falta' : `las ${faltan} paradas que faltan`} antes en el paseo.`);
+  }
+  const alCambiarVista = () => { if (!mapa) return; aplicarNiebla(false); caza.pintarApariciones(); };
+  mqCel.addEventListener?.('change', alCambiarVista);
+  ajustes.alCambiar((k) => { if (k === 'mapaProgresivo') alCambiarVista(); });
 
   // ---------- caminar ----------
   function caminoHasta(d) {
@@ -563,6 +635,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     });
     avatar.ll = d.ll; avatar.s = d.s ?? (ruta ? ruta.proyectar(d.ll).s : null); avatar.caminando = false;
     pintarAvatar();
+    if (progresivo()) caza.pintarApariciones();   // las criaturas e hitos visibles dependen de dónde estás
   }
   let ocupado = false;
   async function irAParada(id) {
@@ -570,6 +643,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     if (!mapa || !d.ll) { abrirParada(id); return; }
     ocupado = true;
     try {
+      if (marcas.stop[id] && !mapa.hasLayer(marcas.stop[id])) marcas.stop[id].addTo(mapa);
       if (window.innerWidth < 900) cerrarHoja(true);
       await caminar(d);
       E.marcarParada(d.id);
@@ -693,12 +767,29 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     return `<div class="jg-ficha">
       ${conImg ? imgEscena(d, 'jg-escena grande') : ''}
       <p class="jg-valor"><span>✅ ${d.tipo === 'fila' ? 'Normal' : 'Interpretación'}</span>${resaltar(d.valor || '—')}</p>
+      ${htmlRealidad(d)}
       ${m?.codigo?.length ? `<div class="jg-cod">${m.codigo.map((c) => `<span><i>${esc(c.numero)}</i><b>${esc(c.palabra)}</b><small>${esc(c.letras || '')}</small></span>`).join('')}</div>` : ''}
       ${m?.ancla ? `<p class="ancla">⚓ ${esc(m.ancla)}</p>` : ''}
       ${m?.acronimo?.sigla ? `<p class="jg-acr">🔤 <b>${esc(m.acronimo.sigla)}</b> — ${esc(m.acronimo.desarrollo || '')}</p>` : ''}
       ${m?.escena ? `<p class="jg-esc-txt">🎬 ${esc(m.escena)}</p>` : ''}
       ${!m ? '<p class="jg-mute">🧠 Este dato aún no tiene escena de memoria.</p>' : ''}
     </div>`;
+  }
+  // la realidad del dato (no solo la mnemotecnia): qué indica si sube o baja, dato clave y perla clínica
+  function htmlRealidad(d) {
+    const t = (x) => (x?.t ? resaltar(x.t) : '');
+    const f = d.tipo === 'fila' ? d.src : null;
+    const filas = f ? [
+      f.clave?.texto && [`${f.clave.icono || '💡'} Clave`, resaltar(f.clave.texto)],
+      f.sube?.t && ['⬆️ Si sube', t(f.sube)], f.baja?.t && ['⬇️ Si baja', t(f.baja)],
+      f.altura?.t && ['🏔️ En altura', t(f.altura)], f.perla && ['💎 Perla', resaltar(f.perla)],
+    ] : [d.src.mide && ['📏 Mide', esc(d.src.mide)]];
+    const x = EXPLICA[d.id];
+    if (x?.porque) filas.unshift(['🧪 Por qué pasa', esc(x.porque)]);
+    if (x?.ejemplo) filas.push(['🩺 Ejemplo', resaltar(x.ejemplo)]);
+    const v = filas.filter(Boolean);
+    if (x?.origen === 'literatura') v.push(['', '<small class="jg-mute">📚 Explicación de literatura estándar (no estaba en tu vault)</small>']);
+    return v.length ? `<details class="jg-real" open><summary>🔬 Qué significa en la clínica</summary><dl>${v.map(([k, x]) => `<dt>${k}</dt><dd>${x}</dd>`).join('')}</dl></details>` : '';
   }
   function cabParada(d, est) {
     return `<div class="jg-h-cab" style="--c:${esc(d.color)}">
@@ -998,7 +1089,7 @@ export function crearJuego({ ATLAS = {}, MEMO = {}, PALACIOS = {}, MAPA = null, 
     const a = b.dataset.acc;
     if (a === 'ficha-fondo' && ev.target !== b) return;
     // una acción tomada desde la hoja de controles la recoge, para ver el mapa
-    if (el.dock?.contains(b) && !['dock', 'dock-asa', 'cebo', 'ruta-sig'].includes(a)) ponerDock('peek');
+    if (el.dock?.contains(b) && !['dock', 'dock-asa', 'cebo', 'ruta-sig', 'paseo-borrar'].includes(a)) ponerDock('peek');
     switch (a) {
       case 'salir': dispatchEvent(new CustomEvent('memo:atras')); break;
       case 'menu': dispatchEvent(new CustomEvent('memo:menu')); break;

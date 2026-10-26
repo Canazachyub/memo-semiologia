@@ -1,0 +1,188 @@
+{
+ "hemoglobina": {
+  "porque": "Es la proteína del GR que transporta el O2 (1,34 mL por gramo). Sube cuando la hipoxia crónica (altura, EPOC) activa el HIF-1 renal y la eritropoyetina. Baja por pérdida, hemólisis o producción insuficiente (hierro, B12, folato, médula, riñón). [vault difiere de literatura: en Puno la Hb media del sano ronda 16-18 g/dL; 24-26 ya es eritrocitosis excesiva]",
+  "ejemplo": "Mujer de 28 años nacida en Puno con Hb 13,5 g/dL: para la costa sería normal, pero en altura el corte OMS ajustado es 14,7, así que tiene anemia leve. Se busca ferropenia (menstruaciones abundantes, dieta) antes de tranquilizarla.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/clases/06_UNIDAD_VI_SANGRE_INMUNIDAD_Y_COAGULACION/01_Capitulo_33.md"
+ },
+ "eritrocitosis-de-altura-hb": {
+  "porque": "La SaO2 baja estimula EPO y la médula produce más GR; si es excesiva, la sangre se vuelve hiperviscosa: estasis venosa (TVP, TEP), mayor resistencia pulmonar y microembolias que llevan a HTP y cor pulmonale. Se sangra antes del diurético porque este concentraría más la sangre. [vault difiere de literatura: 24-26 g/dL no es lo habitual del sano, ya es Monge]",
+  "ejemplo": "Minero de 52 años de Puno (3820 m) con facies pletórica, conjuntivas hiperémicas, edemas y Hb 23 g/dL con Hto 68%: eritrocitosis patológica con cor pulmonale. Antes de la furosemida se le hace sangría roja de 500 cc reponiendo con NaCl.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Eritrosis-Patologica-de-la-Altura.md"
+ },
+ "hematocrito": {
+  "porque": "Es el porcentaje de la sangre ocupado por GR y fija la viscosidad. Sube con más GR (policitemia) o con menos plasma (deshidratación, tercer espacio). Baja en anemia o hemodilución; en la hemorragia aguda se pierde sangre entera y el Hto cae recién cuando se repone el plasma, a los 2-3 días. [vault difiere de literatura: suele darse por sexo, V 41-50%, M 36-44%]",
+  "ejemplo": "Varón de 35 años con pancreatitis aguda y Hto 54% al ingreso: no es policitemia sino hemoconcentración por pérdida de plasma al tercer espacio. Tras hidratar baja a 44%. Un Hto que no desciende con volumen indica secuestro grave.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Policitemia.md"
+ },
+ "globulos-rojos-hematies": {
+  "porque": "El recuento refleja el balance entre producción medular (EPO, hierro, B12 y folato) y destrucción: el GR vive unos 120 días y, al volverse rígido, queda atrapado en los espacios de 3 µm del bazo. Sube por hipoxia (policitemia secundaria) o por clon autónomo (vera, que arrastra leucocitos y plaquetas). Baja por pérdida, hemólisis o médula insuficiente.",
+  "ejemplo": "Varón de 60 años con GR 7,6 millones/mm³, leucocitos 15.000, plaquetas 650.000, SaO2 normal y rubicundez: la triple elevación sin hipoxia sugiere policitemia vera, no eritrocitosis de altura. Se pide mutación JAK2 y EPO, que estará baja.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/clases/06_UNIDAD_VI_SANGRE_INMUNIDAD_Y_COAGULACION/01_Capitulo_33.md"
+ },
+ "vcm": {
+  "porque": "El VCM es el tamaño promedio del GR y clasifica la anemia. Sin hierro el eritroblasto sigue dividiéndose mientras espera la hemoglobina y sale pequeño (microcitosis). Sin B12 o folato no sintetiza ADN, el citoplasma madura pero el núcleo no y la célula sale grande y frágil (macrocito). En pérdida aguda o hemólisis el tamaño se conserva (normocítica).",
+  "ejemplo": "Mujer vegana de 34 años con cansancio, parestesias y Hb 9 g/dL con VCM 123 fL: anemia macrocítica megaloblástica. Se miden B12 y folato; si la B12 está baja se da por vía parenteral, porque dar solo folato corrige la anemia pero deja progresar la neuropatía.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Anemia.md"
+ },
+ "hcm": {
+  "porque": "La HCM es la cantidad de hemoglobina dentro de cada GR. Baja cuando falta hierro para formar el hemo: el GR queda con poca Hb y se ve pálido (hipocromía). Sube en la macrocitosis simplemente porque una célula más grande contiene más hemoglobina, no porque esté más concentrada.",
+  "ejemplo": "Escolar de 9 años de una comunidad de Puno con Hb 10,5 g/dL, VCM 70 fL y HCM 21 pg: anemia microcítica hipocrómica. Lo más probable es ferropenia (dieta pobre en hierro, parasitosis); se pide ferritina, que es el marcador más sensible.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Anemia-Microcitica-Hipocromica.md"
+ },
+ "chcm": {
+  "porque": "La CHCM expresa cuán concentrada está la hemoglobina dentro del GR. Baja en ferropenia porque falta hemo y el centro pálido se agranda. Casi nunca sube, porque el GR no puede llenarse de más Hb; la excepción es el esferocito, que pierde membrana pero no volumen, se vuelve esfera densa sin palidez central y es atrapado en el bazo.",
+  "ejemplo": "Adolescente de 15 años con ictericia leve, esplenomegalia, Hb 10 g/dL, CHCM 38 g/dL y reticulocitos 8%: anemia hemolítica con hipercromía, sugestiva de esferocitosis hereditaria. Se confirma con frotis y fragilidad osmótica; la esplenectomía corrige la anemia.",
+  "origen": "vault",
+  "nota": "wiki/PATOLOGIA 2026/clases/11b_Esferocitosis_hereditaria_y_drepanocitosis.md"
+ },
+ "reticulocitos": {
+  "porque": "El reticulocito es el GR recién salido de la médula, con restos de ARN, y circula solo 1-2 días antes de madurar. Por eso su recuento mide la actividad eritropoyética del momento: sube cuando la médula compensa una hemólisis o hemorragia (a los 5-7 días, por EPO) y queda bajo cuando la anemia es por falta de producción.",
+  "ejemplo": "Varón de 40 años con melena hace una semana, Hb 8 g/dL y reticulocitos 6%: la médula responde, anemia regenerativa posthemorrágica. En cambio, una mujer con Hb 8, VCM 68 y reticulocitos 0,5% tiene anemia arregenerativa ferropénica; tras dar hierro, los reticulocitos suben en pocos días.",
+  "origen": "vault",
+  "nota": "wiki/PATOLOGIA 2026/clases/11a_Clasificacion_de_las_anemias_y_perdida_de_sangre.md"
+ },
+ "leucocitos-totales": {
+  "porque": "Los leucocitos suben en la infección e inflamación: primero la médula libera su reserva (con formas inmaduras, desviación a la izquierda) y luego aumenta la producción por factores estimulantes de colonias. Bajan por aplasia, fármacos mielotóxicos, autoinmunidad o algunas infecciones como tifoidea y ciertos virus.",
+  "ejemplo": "Joven de 19 años con dolor en fosa ilíaca derecha, Blumberg positivo y leucocitos 17.500 con 84% de neutrófilos: el recuento por encima de 15.000 con neutrofilia mayor del 80% sugiere apendicitis perforada y apura la cirugía.",
+  "origen": "vault",
+  "nota": "wiki/PATOLOGIA 2026/clases/02f_Inflamacion_cronica_y_granulomas.md"
+ },
+ "neutrofilos-segmentados": {
+  "porque": "El neutrófilo es la primera línea contra bacterias: sale del vaso por selectinas e integrinas, fagocita y mata con el estallido respiratorio. Vive horas en sangre, así que su número depende de la producción continua por G-CSF. Sube en infección bacteriana, inflamación, estrés y epinefrina (que despega los neutrófilos marginados). Baja por quimioterapia, aplasia o fármacos.",
+  "ejemplo": "Mujer de 55 años en quimioterapia por cáncer de mama con fiebre de 38,5 °C, leucocitos 1.200 y 20% de segmentados: neutrófilos absolutos 240/µL, neutropenia grave. Es una urgencia: hemocultivos y antibiótico de amplio espectro sin esperar el foco.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Neutrofilos.md"
+ },
+ "abastonados-cayados": {
+  "porque": "El abastonado es un neutrófilo inmaduro con núcleo en banda. Cuando una infección bacteriana aguda consume neutrófilos, la médula vacía su reserva y salen formas jóvenes (desviación a la izquierda). Si además hay leucopenia, la médula ya no da abasto, lo que indica sepsis grave. En ancianos o con corticoides puede faltar la leucocitosis.",
+  "ejemplo": "Anciano de 78 años con dolor abdominal difuso, abdomen en tabla y leucocitos solo 9.000 pero con 14% de abastonados: aunque el recuento total parece normal, la desviación a la izquierda delata peritonitis. No se descarta el abdomen agudo por un recuento normal.",
+  "origen": "mixto",
+  "nota": "raw/SEMIOLOGIA/SOTITO-2018-UNIDAD-II-1_210414_142403.md"
+ },
+ "linfocitos": {
+  "porque": "Median la inmunidad adaptativa y aumentan sobre todo en virosis (hasta 20.000-30.000). La tos ferina da las cifras más altas porque su toxina bloquea las integrinas endoteliales: los linfocitos no salen a los tejidos y se acumulan en sangre. La linfopenia indica déficit de inmunidad celular. [vault difiere de literatura: escribe /mL; la unidad correcta es /µL]",
+  "ejemplo": "Estudiante de 18 años con fiebre, faringitis exudativa, adenopatías cervicales posteriores y esplenomegalia; leucocitos 14.000 con 60% de linfocitos y 15% atípicos: mononucleosis infecciosa. Se evita la amoxicilina (exantema) y el deporte de contacto por riesgo de rotura esplénica.",
+  "origen": "vault",
+  "nota": "wiki/INMUNOLOGIA 2026/clases/29_Enfermedades_proliferativas_de_las_celulas_del_sistema_inmune.md"
+ },
+ "monocitos": {
+  "porque": "El monocito circula y en los tejidos se convierte en macrófago, protagonista de la inflamación crónica y de los granulomas. Por eso aumenta cuando el agente persiste: tuberculosis, endocarditis subaguda, colagenosis y Hodgkin. Su descenso es raro y se ve en aplasia o con corticoides. [vault difiere de literatura: el vault escribe /mL, la unidad correcta es /µL]",
+  "ejemplo": "Varón de 45 años de Juliaca con tos de 4 semanas, sudoración nocturna y baja de peso; leucocitos 8.000 con 12% de monocitos (960/µL): monocitosis que apoya un proceso crónico granulomatoso. Se piden baciloscopías por sospecha de TBC pulmonar.",
+  "origen": "vault",
+  "nota": "wiki/INMUNOLOGIA 2026/clases/29_Enfermedades_proliferativas_de_las_celulas_del_sistema_inmune.md"
+ },
+ "eosinofilos": {
+  "porque": "El eosinófilo está especializado contra larvas de parásitos que invaden tejidos (las ataca con proteína básica mayor) y participa en la alergia mediada por IgE, reclutado por la eotaxina. Por eso sube en parasitosis tisulares, asma y fiebre del heno. Baja con el estrés agudo y los corticoides, que lo secuestran y acortan su vida.",
+  "ejemplo": "Campesino de 30 años que comió carne de cerdo mal cocida en una fiesta patronal; dos semanas después tiene mialgias, edema palpebral, fiebre y eosinófilos 25% (3.000/µL): eosinofilia marcada compatible con triquinosis. Se confirma con serología y CPK elevada.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/clases/06_UNIDAD_VI_SANGRE_INMUNIDAD_Y_COAGULACION/02_Capitulo_34.md"
+ },
+ "basofilos": {
+  "porque": "El basófilo es el granulocito más escaso; sus gránulos guardan histamina, heparina y leucotrienos, y tiene receptores de alta afinidad para IgE, por lo que es efector de la hipersensibilidad tipo I. Su aumento es raro; si es persistente y sin alergia que lo explique, se sospecha un clon mieloide como la leucemia mieloide crónica.",
+  "ejemplo": "Varón de 50 años con esplenomegalia gigante, leucocitos 120.000 con todas las formas de la serie mieloide y basófilos 6%: la basofilia persistente con leucocitosis extrema orienta a leucemia mieloide crónica. Se pide cromosoma Filadelfia (BCR-ABL).",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Basofilos.md"
+ },
+ "plaquetas": {
+  "porque": "Son fragmentos de megacariocito que viven unos 10 días y forman el tapón de la hemostasia primaria. Si bajan sangran capilares: petequias, púrpura y mucosas, con sangría prolongada y TP normal. Causas: menor producción, destrucción inmune (PTI), secuestro esplénico o consumo (CID). [vault difiere de literatura: el sangrado espontáneo suele darse con <10.000-20.000/µL]",
+  "ejemplo": "Niña de 6 años con petequias y gingivorragia dos semanas después de un cuadro viral, sin esplenomegalia; plaquetas 12.000/µL con resto del hemograma normal: PTI aguda. Por debajo de 30.000 hay riesgo de sangrado y se evitan AINEs e inyecciones intramusculares.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/clases/06_UNIDAD_VI_SANGRE_INMUNIDAD_Y_COAGULACION/05_Capitulo_37.md"
+ },
+ "ade-rdw": {
+  "porque": "El RDW mide qué tan distintos son los GR entre sí (anisocitosis). En la ferropenia conviven GR viejos normales con GR nuevos cada vez más pequeños, así que el RDW sube temprano, incluso antes que baje el VCM. En la talasemia la médula produce GR uniformemente pequeños, por lo que el RDW queda normal.",
+  "ejemplo": "Dos pacientes con VCM 68 fL: una mujer de 30 años con RDW 18% y ferritina baja tiene ferropenia; un varón de 25 años con RDW 13%, GR 6,2 millones e índice de Mentzer 11 sugiere rasgo talasémico. Darle hierro al segundo sería un error.",
+  "origen": "mixto",
+  "nota": "wiki/PATOLOGIA 2026/clases/11a_Clasificacion_de_las_anemias_y_perdida_de_sangre.md"
+ },
+ "vpm-volumen-plaquetario-medio": {
+  "porque": "El VPM es el tamaño promedio de las plaquetas. Las plaquetas recién liberadas son más grandes, así que cuando la médula responde a una destrucción periférica (PTI) o se recupera, el VPM sube. Si la médula no produce (aplasia, quimioterapia), circulan pocas plaquetas pequeñas y el VPM baja. Ayuda a saber si la trombocitopenia es periférica o central.",
+  "ejemplo": "Mujer de 25 años con plaquetas 40.000/µL y VPM 12,5 fL: plaquetas grandes y jóvenes, la médula está activa y el problema es destrucción periférica, orientando a PTI. Si el VPM fuera 6,5 fL con anemia y leucopenia, se pensaría en aplasia medular.",
+  "origen": "literatura",
+  "nota": null
+ },
+ "plaquetocrito": {
+  "porque": "El plaquetocrito es el porcentaje del volumen sanguíneo ocupado por plaquetas, el equivalente plaquetario del hematocrito: resulta del recuento por el VPM. Por eso sube y baja casi en paralelo con el número de plaquetas y rara vez aporta algo que no diga ya el recuento.",
+  "ejemplo": "Varón de 40 años con plaquetas 90.000/µL, VPM 9 fL y plaquetocrito 0,08%: el valor bajo solo confirma la trombocitopenia. Lo que guía el estudio es el recuento, el VPM y el frotis, no el plaquetocrito.",
+  "origen": "literatura",
+  "nota": null
+ },
+ "glucosa-en-ayunas": {
+  "porque": "En ayunas la glucemia depende del balance entre insulina, que la mete a músculo y grasa por GLUT-4, y glucagón, que libera glucosa hepática. Sube si falta insulina o hay resistencia (diabetes), o si predominan glucagón y estrés (pancreatitis). Baja por exceso de insulina o hipoglucemiantes, y el cerebro, que depende de la glucosa, sufre primero.",
+  "ejemplo": "Varón de 48 años con obesidad abdominal y glucosa en ayunas 132 mg/dL; se repite otro día y sale 128: dos valores de 126 o más confirman diabetes mellitus. Si hubiera salido 110, sería glucosa alterada en ayunas (prediabetes) y se indicaría cambio de estilo de vida.",
+  "origen": "vault",
+  "nota": "wiki/FARMACOLOGIA 2026/clases/41a_Insulina_glucagon_diabetes_mellitus.md"
+ },
+ "glucosa-2-h-ptog-75-g-y-hba1c": {
+  "porque": "La PTOG mide cuánto tarda el organismo en sacar de la sangre una carga de 75 g de glucosa: si la insulina falla, sigue alta a las 2 horas. La HbA1c es Hb glucosilada de forma irreversible y, como el GR vive unos 120 días, resume la glucemia de 8-12 semanas. Por eso da valores falsamente bajos si los GR viven menos (hemólisis, sangrado, transfusión reciente).",
+  "ejemplo": "Mujer de 55 años con glucosa en ayunas 118 mg/dL; la PTOG a las 2 horas da 215 mg/dL y la HbA1c 6,8%: ambos cumplen criterio de diabetes. Una HbA1c de 6,8% equivale a una glucosa promedio cercana a 150 mg/dL.",
+  "origen": "vault",
+  "nota": "wiki/FARMACOLOGIA 2026/clases/41a_Insulina_glucagon_diabetes_mellitus.md"
+ },
+ "urea-sanguinea": {
+  "porque": "La urea es el producto final de las proteínas, fabricado en el hígado a partir del amoníaco y eliminado por filtración glomerular con reabsorción pasiva. Sube si el riñón filtra menos, si el flujo tubular es lento (más reabsorción, como en deshidratación) o si llega más proteína (catabolismo, sangre digerida en HDA). Baja si el hígado no la fabrica o faltan proteínas.",
+  "ejemplo": "Paciente de 32 años con pancreatitis biliar complicada, anuria y urea 180 mg/dL con creatinina 5 mg/dL: urea cuatro veces el límite, IRA grave con catabolismo aumentado. Con urea mayor de 400 aparecerían encefalopatía, pericarditis y escarcha urémica.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Urea.md"
+ },
+ "bun": {
+  "porque": "El BUN mide solo el nitrógeno contenido en la urea, por eso es menor que la urea total: urea = BUN × 2,14. Se mueve por las mismas causas que la urea (filtrado, flujo tubular, carga proteica y síntesis hepática). En Perú se informa como urea, así que hay que convertir antes de aplicar cortes de libros que usan BUN.",
+  "ejemplo": "Un artículo dice que un BUN de 40 mg/dL es elevado; el laboratorio de Puno reporta urea 86 mg/dL. Dividiendo 86 entre 2,14 da un BUN de unos 40: es el mismo hallazgo expresado en otra unidad.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Urea.md"
+ },
+ "relacion-urea-creatinina": {
+  "porque": "La creatinina se filtra y casi no se reabsorbe; la urea sí se reabsorbe pasivamente, y más cuanto más lento es el flujo tubular. En la hipovolemia el flujo es lento, la urea sube más que la creatinina y la relación crece (prerrenal). Si el túbulo está dañado (NTA) pierde esa reabsorción y ambas suben juntas. HDA o corticoides también la elevan por mayor carga proteica.",
+  "ejemplo": "Mujer de 32 años con pancreatitis, PVC 0, urea 180 y creatinina 5 (relación 36): sugería prerrenal. Tras reponer volumen la creatinina no bajó, lo que indica que el cuadro evolucionó a necrosis tubular aguda.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Urea.md"
+ },
+ "creatinina-serica": {
+  "porque": "Sale de la degradación espontánea de la creatina fosfato muscular, a ritmo constante según la masa muscular, y se elimina casi solo por filtración. Sube cuando cae el filtrado, pero tarde: la TFG puede bajar a la mitad antes de salir del rango. Baja con poca masa muscular. [vault difiere de literatura: suele darse por sexo, V 0,7-1,2 y M 0,5-1,1 mg/dL]",
+  "ejemplo": "Anciana de 82 años, delgada, con creatinina 1,2 mg/dL: parece normal, pero con poca masa muscular su clearance estimado ronda 30 mL/min. En ella hay que ajustar dosis de fármacos aunque la creatinina 'esté en rango'.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Creatinina.md"
+ },
+ "clearance-de-creatinina-tfg": {
+  "porque": "El clearance estima cuántos mililitros de plasma limpian los glomérulos por minuto, es decir, cuántas nefronas siguen funcionando. Baja cuando se pierden nefronas: en la IRC, menos de 60 mL/min de forma sostenida; con más de 90% destruido aparece el síndrome urémico. Sube transitoriamente por hiperfiltración (embarazo, diabetes inicial).",
+  "ejemplo": "Varón de 60 años, 62 kg, creatinina 3 mg/dL. Con Cockcroft-Gault: (140 − 60) × 62 / (3 × 72) = 22,9 mL/min, IRC moderada según la clasificación de clase (G4 en KDIGO). Se ajustan dosis y se prepara el acceso para diálisis futura.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/10c_Sindromes_clinicos_renales.md"
+ },
+ "sodio-serico": {
+  "porque": "El sodio, con sus aniones, da casi toda la osmolaridad extracelular y decide hacia dónde se mueve el agua. Si baja, el agua entra a las células y la neurona se edematiza (cefalea, convulsiones, coma). Si sube, el agua sale y la neurona se deshidrata. Por eso la corrección debe ser lenta: subir rápido el sodio causa desmielinización pontina; bajarlo rápido, edema cerebral.",
+  "ejemplo": "Varón diabético de 60 años con glucosa 700 mg/dL y sodio 128 mEq/L: la hiperglucemia arrastra agua al plasma y diluye el sodio unos 1,6 mEq/L por cada 100 mg/dL. Corrigiendo, el sodio real ronda 137; no hay que tratarlo como hiponatremia verdadera.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_06_METABOLISMO_DEL_SODIO.md"
+ },
+ "potasio-serico": {
+  "porque": "El 98% del potasio está dentro de la célula y ese gradiente fija el potencial de reposo de corazón y músculo. Sube si el riñón no lo excreta (IRA, IRC) o si sale de la célula (acidosis, que cambia H+ por K+; rabdomiólisis). Baja por pérdidas (vómitos, diarrea, diuréticos) o por entrada a la célula (insulina, alcalosis, beta-agonistas).",
+  "ejemplo": "Varón de 65 años con IRC que suspendió la diálisis, debilidad y potasio 7,2 mEq/L; el ECG muestra T altas y picudas con QRS ensanchándose. Riesgo de fibrilación ventricular: se da gluconato de calcio para estabilizar la membrana e insulina con glucosa para meter el potasio a la célula.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_07_METABOLISMO_DEL_POTASIO.md"
+ },
+ "cloro-serico": {
+  "porque": "Es el principal anión extracelular y se mueve en espejo con el bicarbonato para mantener la neutralidad eléctrica. Si se pierde HCl por vómitos, se retiene bicarbonato: alcalosis hipoclorémica con hipopotasemia. Si se pierde bicarbonato (diarrea, acidosis tubular), se retiene cloro: acidosis hiperclorémica. El exceso de suero fisiológico también lo sube.",
+  "ejemplo": "Lactante de 6 semanas con vómitos en proyectil tras cada toma y una oliva palpable; cloro 85 mEq/L, potasio 3 y HCO3 34: alcalosis metabólica hipoclorémica e hipopotasémica por estenosis hipertrófica del píloro. Se rehidrata con SF y potasio antes de operar.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_04_ALTERACIONES_EN_EL_METABOLISMO_HIDROELECTROLITICO_Y_ACIDO_BA.md"
+ },
+ "calcio-serico": {
+  "porque": "El calcio iónico estabiliza la membrana de nervio y músculo; si baja, las neuronas se disparan solas: tetania (Chvostek, Trousseau). Casi la mitad va unido a albúmina, por eso se corrige. En la pancreatitis se consume formando jabones con la grasa necrosada; si sube, hay poliuria. [vault difiere de literatura: normal 8,5-10,5 mg/dL; el 6-11 de 2020 no es válido]",
+  "ejemplo": "Varón de 58 años alcohólico con pancreatitis aguda, equimosis de Cullen y Grey Turner y calcio 6,2 mg/dL con albúmina 3: corregido da 7 mg/dL, en el umbral de mal pronóstico. Se vigila tetania y se repone calcio.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/09d_Higado_vias_biliares_y_pancreas.md"
+ },
+ "magnesio-serico": {
+  "porque": "Se elimina casi solo por el riñón (reabsorción en el asa de Henle): se acumula en IRA o IRC, al inicio sin síntomas, y se pierde con diuréticos de asa. La hipomagnesemia impide corregir potasio y calcio, potencia la digoxina y favorece torsades de pointes. [vault difiere de literatura: 1,8-2,3 corresponde a mg/dL; en mEq/L el normal es 1,4-2,0]",
+  "ejemplo": "Mujer de 70 años con insuficiencia cardíaca, furosemida y digoxina, con potasio 2,9 que no sube pese a reponerlo y magnesio bajo: la hipomagnesemia hace perder potasio por el riñón. Se repone primero magnesio; si no, la hipopotasemia persiste y aumenta el riesgo de arritmia digitálica.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Hipermagnesemia.md"
+ }
+}

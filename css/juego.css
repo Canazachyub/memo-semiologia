@@ -774,3 +774,29 @@ html.jg-enc-abierto { overflow: hidden; }
 
 /* el avatar debe llenar su círculo (Leaflet pisa width/height de las img) */
 .leaflet-container .jg-av-cuerpo > img { width: 100% !important; height: 100% !important; max-width: none; object-fit: cover; display: block; }
+
+/* mapa por etapas (celular): gimnasio con candado, paradas que aparecen y menos ruido al alejar */
+.jg-gym.bloq { filter: grayscale(1); opacity: .72; }
+.jg-gym.bloq .jg-gym-anillo { background: var(--card); }
+.jg-gym.bloq .jg-gym-nom small { text-transform: uppercase; letter-spacing: .04em; }
+.jg-stop-w.jg-aparece { animation: jgAparece .7s cubic-bezier(.3, 1.6, .5, 1) both; }
+@keyframes jgAparece { from { scale: 0; opacity: 0; } }
+.sin-mov .jg-stop-w.jg-aparece { animation: none; }
+.jg-prog.z-medio .jg-stop-w:has(> .jg-stop.capturada) { opacity: 0; pointer-events: none; }
+.jg-real { margin: 8px 0; padding: 8px 10px; border-radius: 12px; background: color-mix(in srgb, var(--c, #6d28d9) 8%, var(--card)); border: 1px solid var(--line); }
+.jg-real summary { font-weight: 800; font-size: .8125rem; cursor: pointer; }
+.jg-real dl { margin: 6px 0 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 8px; font-size: .8125rem; }
+.jg-real dt { font-weight: 700; color: var(--muted); }
+.jg-real dd { margin: 0; }
+@media (max-width: 420px) { .jg-real dl { grid-template-columns: 1fr; } .jg-real dd { margin-bottom: 4px; } }
+
+/* paseo real: rastro en el mapa y bloque del dock */
+.jg-rastro { stroke: #f97316; filter: drop-shadow(0 0 3px rgba(249,115,22,.6)); }
+.jg-rastro-sem { stroke: #f97316; stroke-opacity: .32; stroke-dasharray: 1 8; }
+.jg-paseo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 8px; align-items: stretch; }
+.jg-paseo.on .jg-dk-t { border-color: #f97316; background: color-mix(in srgb, #f97316 12%, var(--card)); }
+.jg-paseo-km { padding: 8px 10px; border-radius: 14px; border: 1px solid var(--line); background: var(--card); font-size: .75rem; }
+.jg-paseo-km > b { font-size: 1.125rem; display: block; }
+.jg-paseo-km small { color: var(--muted); }
+.jg-paseo-km ul { margin: 4px 0 0; padding: 0; list-style: none; display: grid; gap: 1px; }
+.jg-paseo-nota { font-size: .6875rem; color: var(--muted); margin: 6px 2px 0; }

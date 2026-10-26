@@ -1,0 +1,122 @@
+{
+ "escala-de-coma-de-glasgow": {
+  "porque": "Gradúa el nivel de conciencia sumando tres respuestas independientes: ocular (1-4), verbal (1-5) y motora (1-6). La conciencia depende de la corteza y del sistema reticular del tronco; si un TEC, un ACV o una encefalopatía los deprime, se pierden primero las respuestas complejas (orientarse, obedecer) y al final las reflejas. Con 8 o menos fallan los reflejos que protegen la vía aérea.",
+  "ejemplo": "Varón de 28 años, caída de moto en Juliaca: abre los ojos solo al dolor (O2), dice palabras inapropiadas (V3) y retira la extremidad al pellizco (M4). Glasgow 9, TEC moderado: hay que vigilarlo de cerca, porque si baja a 8 se asegura la vía aérea y se intuba.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05a_Estado_general_nivel_de_conciencia_lenguaje_y_decubito.md"
+ },
+ "grados-de-coma": {
+  "porque": "Ordena la profundidad del coma, el escalón que sigue al estupor, según qué funciones se conservan. Primero se pierde la respuesta a órdenes, luego al dolor, después la deglución y los reflejos, y al final la respiración espontánea. Cada grado indica cuánto del tronco y del bulbo sigue funcionando, y por eso el IV, con apnea y EEG plano, equivale a muerte encefálica.",
+  "ejemplo": "Mujer de 60 años con ACV hemorrágico: no obedece, apenas reacciona a un pellizco enérgico, deglute con dificultad y conserva los reflejos pupilares y tendinosos. Es coma grado II (moderado): el tronco aún funciona, pero hay que proteger la vía aérea por el riesgo de aspiración.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05a_Estado_general_nivel_de_conciencia_lenguaje_y_decubito.md"
+ },
+ "encefalopatia-hepatica-west-haven": {
+  "porque": "Gradúa el daño cerebral de la insuficiencia hepática avanzada. El hígado no depura el amonio que viene del intestino, el amonio llega al cerebro y altera la neurotransmisión. Por eso empieza con confusión e inversión del sueño, sigue con asterixis y termina en coma. La hemorragia digestiva, las infecciones, el estreñimiento y el alcohol aumentan la carga de nitrógeno y la desencadenan.",
+  "ejemplo": "Cirrótico alcohólico de 55 años en Puno ingresa por hematemesis por várices. Al día siguiente está letárgico, desorientado en el tiempo y con flapping evidente: encefalopatía grado II, desencadenada por la sangre digerida. Con laxantes, dieta hipoproteica y antibiótico revierte, pero si sigue bebiendo puede llegar al grado IV.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md"
+ },
+ "fuerza-muscular-mrc-daniels": {
+  "porque": "Cuantifica de 0 a 5 la fuerza de cada grupo muscular, comparando lados y segmentos proximales con distales, y usa como referencia la gravedad y la resistencia del examinador. La fuerza cae cuando falla cualquier punto de la vía motora (corteza, vía piramidal, motoneurona inferior, unión neuromuscular o músculo), y el patrón de la debilidad ayuda a localizar la lesión.",
+  "ejemplo": "Varón de 70 años con ACV izquierdo: el brazo derecho se levanta contra la gravedad pero cede ante cualquier resistencia (3/5), y el izquierdo es 5/5. Es una hemiparesia derecha moderada; como además tiene hiperreflexia y Babinski, la lesión es de motoneurona superior.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11b_Motilidad_tono_fuerza_y_reflejos.md"
+ },
+ "reflejos-osteotendinosos": {
+  "porque": "Gradúan la respuesta del arco reflejo miotático (huso, vía aferente, médula, vía eferente, músculo) a la percusión del tendón. Si se interrumpe el arco (nervio, raíz o motoneurona inferior), el reflejo disminuye o desaparece. Si se lesiona la vía piramidal, se pierde su freno y el reflejo se exalta hasta el clonus. La asimetría importa más que el número aislado.",
+  "ejemplo": "Mujer de 50 años con lumbociática izquierda: aquiliano izquierdo 0 y derecho 2+, con rotulianos simétricos. La arreflexia de un solo lado orienta a compresión de la raíz S1 izquierda (motoneurona inferior), no a un problema piramidal.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11b_Motilidad_tono_fuerza_y_reflejos.md"
+ },
+ "mini-mental-mmse-folstein": {
+  "porque": "Cribado cognitivo de cabecera de 30 puntos que resume orientación, fijación, atención y cálculo, recuerdo diferido, lenguaje y praxis. Cada función depende de redes corticales distintas (hipocampo para la memoria, áreas perisilvianas para el lenguaje), y por eso el patrón de fallos orienta. Su gran limitación es que el puntaje depende de la escolaridad y del medio del paciente.",
+  "ejemplo": "Comunero de 72 años de una zona rural de Puno, sin escolaridad formal, obtiene 21/30 porque no puede restar de 7 en 7 ni escribir una frase. Antes de rotular deterioro leve hay que ajustar por escolaridad, porque esos puntos miden instrucción y no demencia, y preguntar a la familia cómo se desempeña en su vida diaria.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/11i_Funciones_cognitivas_y_examen_mental.md"
+ },
+ "soplos-freeman-levine": {
+  "porque": "Gradúa de I a VI la intensidad de un soplo, que es el ruido de la turbulencia del flujo por una válvula alterada o por un cambio de velocidad o viscosidad de la sangre. Suena más fuerte cuanto mayor es la estenosis, mayor la velocidad y mejor transmite la pared torácica; el enfisema lo apaga. Desde el grado IV la vibración se palpa como frémito, lo que sugiere un soplo orgánico.",
+  "ejemplo": "Mujer de 35 años con antecedente de fiebre reumática: soplo sistólico mitral fuerte con frémito palpable, grado IV/VI, orgánico. Su sobrina con anemia tiene un soplo sistólico II/VI sin frémito: es funcional, por la baja viscosidad, y debería desaparecer al corregir la hemoglobina.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/08d_Soplos_cardiacos_y_frote_pericardico.md"
+ },
+ "clase-funcional-nyha": {
+  "porque": "Clasifica la insuficiencia cardíaca por el esfuerzo que desencadena los síntomas. Cuando el gasto no aumenta lo suficiente con la actividad, sube la presión de llenado, se congestiona el pulmón y aparece la disnea. A peor función ventricular, menor es el esfuerzo necesario, hasta tener síntomas en reposo. Sirve para seguir la evolución y estimar el pronóstico.",
+  "ejemplo": "Varón de 65 años con miocardiopatía: está bien en reposo y hace sus labores, pero se ahoga al subir las cuestas de Puno con su carga habitual. Es clase II. Si meses después se ahoga ya al caminar en plano o al vestirse, pasa a clase III, y si tiene disnea en reposo con ortopnea, a clase IV.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/clases/Clase_16_INSUFICIENCIA_CARDIACA.md"
+ },
+ "edema-signo-de-godet-fovea": {
+  "porque": "Mide la intensidad del edema por la profundidad de la fóvea que deja el dedo al presionar sobre un plano óseo. El edema aparece cuando se desequilibran las fuerzas de Starling: sube la presión hidrostática, cae la oncótica (albúmina menor de 2,5 g/dL), aumenta la permeabilidad o se obstruye la linfa. El líquido libre del intersticio se desplaza con la presión y tarda en volver.",
+  "ejemplo": "Mujer de 45 años con orina espumosa: la fóvea en la tibia es profunda, tarda cerca de un minuto en llenarse y la pierna está engrosada, 3+. La proteinuria masiva bajó su albúmina y la presión oncótica. En la insuficiencia cardíaca derecha, el mismo 3+ se produciría por la presión venosa retrógrada.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05g_Edema.md"
+ },
+ "score-de-wells-para-tvp": {
+  "porque": "Estima la probabilidad de TVP antes de pedir exámenes. Suma factores de la tríada de Virchow (estasis por inmovilización o yeso, hipercoagulabilidad por cáncer, TVP previa) y signos de obstrucción del retorno venoso (edema de toda la pierna, pantorrilla más gruesa, colaterales), y resta 2 si otro diagnóstico es más probable. Decide si basta el dímero D o va directo la eco Doppler.",
+  "ejemplo": "Varón de 58 años, operado de cadera hace 3 semanas y con cáncer de próstata activo, tiene la pantorrilla izquierda 4 cm más gruesa y edema con fóvea. Suma 4 puntos (cáncer, cirugía, diferencia de pantorrilla y fóvea): probabilidad alta, se pide eco Doppler sin esperar el dímero D.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Tromboembolismo-Venoso.md"
+ },
+ "score-de-wells-para-tep": {
+  "porque": "Estima la probabilidad de tromboembolia pulmonar antes de pedir exámenes. Pesan más los signos de TVP, el origen del émbolo, y que no haya otra explicación. Suman menos la taquicardia, la inmovilización, el antecedente, la hemoptisis y el cáncer. El dímero D solo descarta si la probabilidad es baja. [vault difiere de literatura: Score-de-Wells.md usa cortes 4 o menos / 5-6 / 7 o más]",
+  "ejemplo": "Mujer de 40 años, tras un viaje largo en bus Lima-Puno, con disnea súbita, FC 115 y pierna derecha edematosa. Suma 7,5: signos de TVP (3), TEP más probable que otro diagnóstico (3) y FC mayor de 100 (1,5). Probabilidad alta: angiotomografía directamente.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/examenes/Score-de-Wells.md"
+ },
+ "hemoptisis-por-volumen": {
+  "porque": "Gradúa la hemoptisis por el volumen expulsado en 24 horas. El peligro inmediato no es solo la anemia: la sangre llena las vías aéreas y los coágulos pueden asfixiar antes de que llegue el shock. Puede venir de vasos bronquiales o de capilares alveolares, como en la caverna tuberculosa con aneurisma de Rasmussen. [vault difiere de literatura: muchos textos llaman masiva desde 200 ml/24 h]",
+  "ejemplo": "Varón de 45 años de Puno con tos crónica y baja de peso expectora unos 150 ml de sangre roja en un día. Es una hemoptisis moderada y en la altura lo más probable es TBC cavitada. Se hospitaliza, se pide baciloscopía y radiografía, y se vigila porque un vaso de la caverna puede romperse y volverla masiva.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/07a_Anamnesis_sintomas_respiratorios.md"
+ },
+ "qsofa": {
+  "porque": "Detecta en la cabecera al infectado con riesgo de disfunción orgánica, con un punto por taquipnea, alteración mental e hipotensión. Cada criterio refleja una falla de la respuesta desregulada a la infección: la vasodilatación baja la presión, la hipoperfusión cerebral altera la conciencia y la acidosis láctica acelera la respiración. Con 2 o más se busca sepsis.",
+  "ejemplo": "Mujer de 70 años con pielonefritis: FR 24, confusa (Glasgow 14) y PAS 95 mmHg. qSOFA 3, alta sospecha de sepsis: hemocultivos, lactato, fluidos y antibiótico. En Puno la FR basal puede ser algo mayor por la hipoxia de altura, así que la taquipnea se interpreta junto a los otros criterios.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Sepsis.md"
+ },
+ "criterios-de-centor": {
+  "porque": "Estima si una faringoamigdalitis es por estreptococo del grupo A: un punto por fiebre, exudado, adenopatía cervical anterior dolorosa y ausencia de tos (la tos sugiere virus), y McIsaac ajusta por edad. Importa porque tratar el estreptococo evita la fiebre reumática, que se produce por mimetismo molecular entre antígenos bacterianos y el tejido cardíaco.",
+  "ejemplo": "Escolar de 9 años con fiebre de 38,8 °C, amígdalas con exudado, ganglios cervicales anteriores dolorosos y sin tos: Centor 4, más 1 por la edad (McIsaac 5). La probabilidad de estreptococo es alta y se indica penicilina o amoxicilina por 10 días para prevenir la fiebre reumática.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Faringitis.md"
+ },
+ "deshidratacion": {
+  "porque": "Clasifica por peso perdido (intensidad) y por sodio sérico (tipo osmolar). Cae el volumen intravascular (taquicardia, hipotensión postural, yugulares colapsadas) y el intersticial (pliegue, mucosas secas). El sodio dice hacia dónde se mueve el agua entre célula y extracelular. [vault difiere de literatura: 2020 pone la hipotónica en Na menor de 130; la literatura, menor de 135]",
+  "ejemplo": "Niño de 2 años con diarrea que pesaba 12 kg y ahora pesa 11 kg (8% perdido), con ojos hundidos, fontanela deprimida y pliegue positivo: deshidratación moderada. Con sodio de 150 mEq/L es hipertónica y se rehidrata lentamente. En la altura, el aire seco y la mayor ventilación aumentan las pérdidas insensibles.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05b_Biotipo_hidratacion_y_movimientos_involuntarios.md"
+ },
+ "desnutricion-criterios-de-gomez": {
+  "porque": "Gradúa la desnutrición por el porcentaje de peso que falta respecto del ideal para la edad y el sexo. Cuando el aporte no cubre el gasto, el cuerpo consume primero la grasa y luego la proteína muscular y visceral, y de ahí salen la hipotrofia, el panículo escaso y los cambios de cabello y piel. A mayor déficit, mayor riesgo de infección y muerte.",
+  "ejemplo": "Niña de 3 años de una comunidad altoandina pesa 10 kg y su peso ideal es 14 kg: déficit = (14 − 10) / 14 × 100 ≈ 29%. Es desnutrición de segundo grado (moderada); el cabello fino y quebradizo sugiere además un componente proteico.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05c_Peso_talla_e_indice_de_masa_corporal.md"
+ },
+ "escala-visual-analogica-del-dolor-eva": {
+  "porque": "Mide de 0 a 10 la intensidad del dolor tal como la percibe el paciente. El dolor es subjetivo y no tiene marcador objetivo, así que convertirlo en número permite compararlo entre visitas y medir la respuesta al analgésico. La intensidad es solo un elemento del guion del dolor; antigüedad, localización, carácter y agravantes completan el diagnóstico.",
+  "ejemplo": "Mujer de 30 años con cefalea pulsátil marca 7 al ingresar: dolor severo. Tras el analgésico baja a 3 (leve), lo que demuestra respuesta. Si una cefalea nueva no baja de 7 o tiene signos de alarma, se buscan causas secundarias.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/03b_Percusion_auscultacion_instrumentos_y_semiologia_del_dolor.md"
+ },
+ "ascitis-por-volumen-percusion": {
+  "porque": "Estima cuánto líquido libre hay en el peritoneo según lo que detecta la percusión. El líquido cae a las zonas declives y las asas con gas flotan al centro: así aparecen matidez en flancos con timpanismo central, matidez que se desplaza al girar al paciente y, con mucho líquido, la oleada. Con menos de 500 ml la percusión no alcanza y se necesita ecografía.",
+  "ejemplo": "Cirrótico de 60 años con abdomen en batracio, matidez en flancos de concavidad superior, oleada positiva y disnea por elevación del diafragma: ascitis de gran volumen, más de 1500 ml, a tensión. Se indica paracentesis evacuadora y se analiza el líquido; si hay fiebre, se sospecha peritonitis bacteriana espontánea.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/09b_Exploracion_del_abdomen_inspeccion_palpacion_percusion_y_auscultacion.md"
+ },
+ "proteinuria-en-cruces-tira-reactiva": {
+  "porque": "La tira estima en cruces la concentración de proteínas en la orina. El glomérulo sano no deja pasar la albúmina por su tamaño y su carga negativa; si se daña (nefrótico, nefrítico, nefropatía diabética) se pierde en la orina, baja la albúmina sérica y aparece edema. Mide concentración, no pérdida diaria. [vault difiere de literatura: muchas tiras leen + 0,3, ++ 1 y +++ 3 g/L]",
+  "ejemplo": "Niño de 6 años con edema palpebral matutino y orina espumosa: tira ++++ y proteinuria de 24 h de 4 g, en rango nefrótico, con albúmina baja que explica el edema: síndrome nefrótico. En cambio, un diabético con tira negativa necesita microalbuminuria para detectar la nefropatía temprana.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/10b_Exploracion_genitourinaria_y_examenes_complementarios.md"
+ },
+ "funcion-renal-por-tfg": {
+  "porque": "Estadifica la función renal por la filtración glomerular, que refleja cuántas nefronas siguen funcionando. Al perderse nefronas, las restantes hiperfiltran y al principio compensan (reserva disminuida, asintomática); luego suben urea y creatinina, y al final llegan la uremia y la diálisis. [vault difiere de literatura: KDIGO define ERC con TFG menor de 60 y estadios G1-G5]",
+  "ejemplo": "Varón de 60 años, 62 kg, creatinina 3 mg%: por Cockcroft-Gault, (140 − 60) × 62 / (3 × 72) ≈ 23 ml/min. Es IRC moderada en la tabla del docente (G4 en KDIGO). Se controlan potasio, anemia y presión arterial, y se prepara al paciente para una futura terapia de reemplazo renal.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/10c_Sindromes_clinicos_renales.md"
+ }
+}

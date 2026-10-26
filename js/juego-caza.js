@@ -9,6 +9,7 @@
 import * as E from './juego-estado.js';
 import { esc, norm, resaltar, barajar, azar, pausa, sinMov, seguirSinMov, idCarta, numeros, aLL, metros, desplazar, crearRuta, confetti, azarSemilla, ponderado } from './juego-util.js';
 import * as mias from './mias.js';
+import * as P from './juego-paseo.js';
 
 const VENTANA_MS = 5 * 60000;     // rotación de apariciones
 const RADIO_AQUI = 40;            // m para "¡Está aquí!" (x2 XP)
@@ -142,7 +143,8 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
       const extra = generar(v, { cebo: true, extra: true, excluir: new Set(a.lista.map((x) => x.k)), n: Math.max(12, a.lista.length) });
       E.guardarApariciones(clave, [...a.lista, ...extra], true); a = E.apariciones(clave);
     }
-    return { clave, lista: a.lista.filter((x) => CRI[x.k]), cazadas: a.cazadas };
+    const premios = P.premiosVivos().filter((p) => CRI[p.k] && !a.lista.some((x) => x.k === p.k));
+    return { clave, lista: [...a.lista.filter((x) => CRI[x.k]), ...premios], cazadas: a.cazadas };
   }
 
   // ---------- ubicación real ----------
@@ -153,14 +155,88 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     posReal = { ll, t: Date.now() };
     pintarApariciones();
     revisarCercanas();
-    if (vigia == null && 'geolocation' in navigator) {
-      vigia = navigator.geolocation.watchPosition((pos) => {
-        posReal = { ll: [pos.coords.latitude, pos.coords.longitude], t: Date.now() };
-        h.moverAvatar(posReal.ll);
-        pintarApariciones(); revisarCercanas();
-      }, () => {}, { enableHighAccuracy: true, maximumAge: 15000, timeout: 30000 });
-    }
+    vigilar();
   }
+  function vigilar() {
+    if (vigia != null || !('geolocation' in navigator)) return;
+    vigia = navigator.geolocation.watchPosition((pos) => {
+      posReal = { ll: [pos.coords.latitude, pos.coords.longitude], t: Date.now() };
+      h.moverAvatar(posReal.ll);
+      if (P.activo()) lecturaPaseo(pos);
+      pintarApariciones(); revisarCercanas();
+    }, () => {}, { enableHighAccuracy: true, maximumAge: 15000, timeout: 30000 });
+  }
+
+  // ---------- paseo real: rastro, km → premios, paradas por las que pasas ----------
+  function lecturaPaseo(pos) {
+    // candidatas a desbloquearse al pasar: hasta 3 paradas abiertas sin capturar por lugar (captúralas para abrir más)
+    const ya = P.pasadas();
+    const cand = LUGARES.flatMap((l) => {
+      const pend = l.datos.filter((d) => ya.has(d.id) && !E.capturado(d.id)).length;
+      return l.datos.filter((d) => !E.capturado(d.id) && !ya.has(d.id)).slice(0, Math.max(0, 3 - pend));
+    });
+    const r = P.registrar(pos.coords, Date.now(), cand);
+    if (!r.ok) return;
+    pintarRastro();
+    for (const pr of r.premios) {
+      const c = crearPremio(pr.rareza, posReal.ll);
+      if (c) h.toast(`🥚 <b>¡Caminaste ${pr.cada >= 1000 ? `${pr.cada / 1000} km` : `${pr.cada} m`}!</b> Apareció ${RAREZA[c.rareza].ic} ${esc(pr.nombre)} en tu camino.`, pr.rareza === 'comun' ? '' : 'oro');
+    }
+    if (r.pasadas.length) h.alPasar(r.pasadas);
+    pintarBarra();
+  }
+  /** Pone una criatura-premio a 20-45 m de `ll`; prioriza tarjetas vencidas o nuevas. */
+  function crearPremio(rareza, ll) {
+    const vistas = new Set(asegurar().lista.map((x) => x.k));
+    const orden = rareza === 'epico' ? ['epico', 'raro', 'comun'] : rareza === 'raro' ? ['raro', 'comun'] : ['comun', 'raro'];
+    let c = null;
+    for (const rr of orden) {
+      const pool = Object.values(CRI).filter((x) => x.rareza === rr && !vistas.has(x.k));
+      if (pool.length) { c = ponderado(pool, (x) => PESO[estadoSRS(x)]); break; }
+    }
+    if (!c) return null;
+    const p = desplazar(ll, 20 + Math.random() * 25, Math.random() * Math.PI * 2);
+    P.agregarPremio({ k: c.k, ll: [+p[0].toFixed(6), +p[1].toFixed(6)], r: c.rareza, premio: true, hasta: Date.now() + P.vidaPremio() });
+    pintarApariciones();
+    return c;
+  }
+  function pintarRastro() {
+    const mapa = h.mapa(), L = h.L(); if (!mapa || !L) return;
+    const t = P.tramos();
+    if (!capas.rastro) {
+      mapa.createPane('jgRastro'); mapa.getPane('jgRastro').style.zIndex = 395;
+      capas.rastro = {
+        semana: L.polyline([], { pane: 'jgRastro', className: 'jg-rastro-sem', weight: 4, opacity: 1, lineCap: 'round', lineJoin: 'round', interactive: false }).addTo(mapa),
+        hoy: L.polyline([], { pane: 'jgRastro', className: 'jg-rastro', weight: 5, opacity: 1, lineCap: 'round', lineJoin: 'round', interactive: false }).addTo(mapa),
+      };
+    }
+    capas.rastro.semana.setLatLngs(t.semana);
+    capas.rastro.hoy.setLatLngs(t.hoy);
+  }
+  function alternarPaseo() {
+    if (P.activo()) {
+      P.activar(false);
+      if (vigia != null) { try { navigator.geolocation.clearWatch(vigia); } catch { /* sin gps */ } vigia = null; }
+      h.toast(`🚶 Paseo en pausa. Hoy caminaste <b>${km(P.metrosHoy())}</b>.`);
+    } else {
+      if (!('geolocation' in navigator)) { h.toast('📍 Este navegador no permite usar la ubicación.', 'aviso'); return; }
+      P.activar(true);
+      h.ubicar();
+      h.toast('🚶 <b>Paseo iniciado.</b> Deja la app abierta mientras caminas: cada 200 m aparece una criatura y cada 1 km un caso clínico. Tu recorrido se queda solo en este celular.', 'oro', 0);
+    }
+    pintarBarra();
+  }
+  function htmlPaseo() {
+    const on = P.activo(), [epico, raro, comun] = P.faltan();
+    return `<p class="jg-pt">Paseo real 🚶</p>
+      <div class="jg-paseo ${on ? 'on' : ''}">
+        <button class="jg-dk-t" data-acc="paseo" aria-pressed="${on}"><span aria-hidden="true">${on ? '⏸️' : '▶️'}</span><b>${on ? 'Pausar paseo' : 'Iniciar paseo'}</b><small>${on ? 'GPS activo' : 'usa tu ubicación real'}</small></button>
+        <div class="jg-paseo-km"><b>${km(P.metrosHoy())}</b><small>hoy · ${km(P.metrosTotal())} en total</small>
+          <ul><li>🌿 criatura en ${km(comun.falta)}</li><li>🔷 rara en ${km(raro.falta)}</li><li>🟣 caso clínico en ${km(epico.falta)}</li></ul></div>
+      </div>
+      <p class="jg-paseo-nota">Las paradas a menos de ${P.RADIO_PASO} m por las que pases se desbloquean. Solo cuenta lo que caminas (no la combi). Tu recorrido queda solo en este celular · <button class="link" data-acc="paseo-borrar">🗑️ Borrar mi recorrido</button></p>`;
+  }
+  const km = (m) => (m < 1000 ? `${Math.round(m)} m` : `${(m / 1000).toFixed(2).replace('.', ',')} km`);
   function revisarCercanas() {
     const { lista, cazadas } = asegurar();
     const cerca = lista.find((x) => !cazadas.has(x.k) && aqui(x.ll));
@@ -172,7 +248,10 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
   }
 
   // ---------- mapa: rutas, hitos, inicio/fin, apariciones ----------
-  const capas = { rutas: {}, marcas: {}, fijas: [] };
+  const capas = { rutas: {}, marcas: {}, fijas: [], hitos: [] };
+  // celular con mapa por etapas: solo las criaturas más cercanas a ti (o al avatar) y los hitos del entorno
+  const TOPE_SALVAJES = 5, RADIO_HITOS = 450;
+  const centroJugador = () => (posReal && Date.now() - posReal.t < FRESCO_GPS ? posReal.ll : h.avatarLL?.());
   let dibujado = false;
   function dibujar() {
     const mapa = h.mapa(), L = h.L();
@@ -194,10 +273,12 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     if (FIN) capas.fijas.push(pin(FIN.ll, '🎓', FIN.nombre, 'una'));
     for (const x of HITOS) {
       const ic = ICONO_HITO[norm(x.tipo)] || '📌';
-      capas.fijas.push(L.marker(x.ll, { icon: L.divIcon({ className: 'jg-hito-w', iconSize: [18, 18], iconAnchor: [9, 9], html: `<div class="jg-hito"><span>${ic}</span><b>${esc(x.nombre)}</b></div>` }), interactive: false, keyboard: false, zIndexOffset: -200 }).addTo(mapa));
+      capas.hitos.push({ ll: x.ll, m: L.marker(x.ll, { icon: L.divIcon({ className: 'jg-hito-w', iconSize: [18, 18], iconAnchor: [9, 9], html: `<div class="jg-hito"><span>${ic}</span><b>${esc(x.nombre)}</b></div>` }), interactive: false, keyboard: false, zIndexOffset: -200 }) });
     }
+    pintarRastro();
     pintarApariciones();
     arrancarReloj();
+    if (P.activo()) navigator.permissions?.query({ name: 'geolocation' }).then((x) => { if (x.state === 'granted') vigilar(); }).catch(() => {});
   }
   function estilarRutas() {
     for (const [id, capasR] of Object.entries(capas.rutas)) {
@@ -232,9 +313,19 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     const mapa = h.mapa(), L = h.L();
     if (!mapa || !L || !activo) return;
     const { lista, cazadas } = asegurar();
+    const prog = !!h.progresivo?.(), yo = prog ? centroJugador() : null;
+    let permitidas = null;
+    if (prog && yo) {
+      const libres = lista.filter((it) => !cazadas.has(it.k)).sort((a, b) => metros(yo, a.ll) - metros(yo, b.ll));
+      permitidas = new Set(libres.filter((it, n) => n < TOPE_SALVAJES || aqui(it.ll) || it.premio).map((it) => it.k));
+    }
+    for (const x of capas.hitos) {
+      const si = !prog || !yo || metros(yo, x.ll) < RADIO_HITOS;
+      if (si && !mapa.hasLayer(x.m)) x.m.addTo(mapa); else if (!si && mapa.hasLayer(x.m)) x.m.remove();
+    }
     const vivas = new Set();
     lista.forEach((it, i) => {
-      if (cazadas.has(it.k)) return;
+      if (cazadas.has(it.k) || (permitidas && !permitidas.has(it.k))) return;
       vivas.add(it.k);
       const c = CRI[it.k];
       const etq = `${RAREZA[c.rareza].nombre}: ${nombreVisible(c)}`;
@@ -248,7 +339,7 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     const m = capas.marcas[k]; if (!m) return;
     delete capas.marcas[k];
     m.getElement()?.querySelector('.jg-sp')?.classList.add('atrapada');
-    setTimeout(() => m.remove(), sinMov() ? 0 : 650);
+    setTimeout(() => { m.remove(); if (h.progresivo?.()) pintarApariciones(); }, sinMov() ? 0 : 650);   // en etapas, entra la siguiente más cercana
   }
 
   // ---------- reloj: rotación, cebo, día y franja horaria ----------
@@ -267,7 +358,7 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
       if (vigia != null) { try { navigator.geolocation.clearWatch(vigia); } catch { /* sin gps */ } vigia = null; gpsDormido = true; }
     } else {
       arrancarReloj(); tick();
-      if (gpsDormido && posReal) { gpsDormido = false; alUbicar(posReal.ll); }
+      if (gpsDormido) { gpsDormido = false; vigilar(); }
     }
   }
   let gpsDormido = false;
@@ -325,7 +416,8 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
           <button class="jg-dk-t jg-mis" data-acc="misiones"><span aria-hidden="true">📜</span><b>Misiones</b><small>${hechas}/${ms.length} hechas hoy</small></button>
           <button class="jg-dk-t jg-cebo ${cebo > 0 ? 'on' : ''}" data-acc="cebo"><span aria-hidden="true">🧲</span><b>Cebo</b><small>${cebo > 0 ? `activo ${mmss(cebo)}` : '15 min, x2 criaturas'}</small></button>
           <div class="jg-dk-t jg-rot" role="timer" aria-label="Próxima rotación de criaturas"><span aria-hidden="true">🌀</span><b>${mmss(resta)}</b><small>nuevas criaturas</small></div>
-        </div>`;
+        </div>
+        ${htmlPaseo()}`;
       return;
     }
     barra.innerHTML = `${RUTAS.length > 1 ? `<div class="jg-rutas" role="radiogroup" aria-label="Ruta diaria">${RUTAS.map((r) =>
@@ -669,7 +761,7 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
     const x2 = e.x2 && !!e.spawn;
     const xp = Math.max(5, Math.round(base * multXP(e.fallos) * (conOps && !e.fallos ? 0.5 : 1) * (x2 ? 2 : 1)));
     E.contar('aciertos');
-    if (e.spawn) { E.contar('salvajes'); E.cazar(e.clave, c.k); quitarMarca(c.k); }
+    if (e.spawn) { E.contar('salvajes'); E.cazar(e.clave, c.k); quitarMarca(c.k); if (e.spawn.premio) P.consumirPremio(c.k); }
     if (c.rareza === 'raro') E.contar('raros');
     if (c.rareza === 'epico') E.contar('epicos');
     if (x2) E.contar('enLugar');
@@ -752,6 +844,10 @@ export function crearCaza({ RUTA = null, CASOS = null, SIGLAS = null, FACIES = n
       case 'cebo': activarCebo(); if (h.hoja()?.tipo === 'misiones') h.pintarHoja(); return true;
       case 'misiones': h.abrirHoja({ tipo: 'misiones' }); return true;
       case 'cazar-retar': encontrar(b.dataset.k); return true;
+      case 'paseo': alternarPaseo(); return true;
+      case 'paseo-borrar':
+        if (b.dataset.seguro !== '1') { b.dataset.seguro = '1'; b.textContent = '¿Seguro? Toca otra vez'; setTimeout(() => { b.dataset.seguro = ''; b.textContent = '🗑️ Borrar mi recorrido'; }, 4000); return true; }
+        P.borrar(); pintarRastro(); pintarApariciones(); pintarBarra(); h.toast('🗑️ Recorrido borrado de este celular.'); return true;
       default: return false;
     }
   }

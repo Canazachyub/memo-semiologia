@@ -61,7 +61,7 @@ function aeGet(amb) {
 function aeSet(amb, a) { const t = aeTodo(); t[amb] = a; try { localStorage.setItem(AE_K, JSON.stringify(t)); } catch { /* sin almacenamiento */ } }
 const SEM = [['r', '🔴', 'No lo sabía'], ['a', '🟡', 'Dudé'], ['v', '🟢', 'Lo sabía']];
 
-export function crearVistas({ ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES, srs }) {
+export function crearVistas({ ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES, EXPLICA = {}, srs }) {
   CACHE.SIGLAS = SIGLAS || {}; CACHE.FACIES = FACIES || {};
   METODOS = METODOS || {}; PALACIOS = PALACIOS || {};
   const nombreMetodo = (k) => METODOS[k]?.nombre || k;
@@ -150,7 +150,9 @@ export function crearVistas({ ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES, sr
     const mia = ref ? mias.get(claveMia.dato(ref)) : null;
     const img = m.imagen ? `<img src="${esc(m.imagen)}" alt="${esc(mia?.ancla || m.ancla || '')}" loading="lazy" decoding="async" data-zoom>` : '';
     const dato = m.dato_a_recordar || f?.normal?.t || '';
+    const x = ref ? EXPLICA[ref] : null;
     const porque = [
+      x?.porque ? `<p class="porque">🧪 ${esc(x.porque)}</p>` : '',
       m.por_que ? `<p class="porque">${esc(m.por_que)}</p>` : '',
       f?.clave?.texto ? `<p class="v-pq">${esc(f.clave.icono || '🔑')} ${resaltar(f.clave.texto)}</p>` : '',
       (f?.perla || e?.perla) ? `<p class="v-pq">💡 ${resaltar(f?.perla || e?.perla)}</p>` : '',
@@ -160,6 +162,7 @@ export function crearVistas({ ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES, sr
       <div class="v-memo" data-ref="${esc(ref || '')}">
         ${dato ? `<div class="v-paso"><p class="h">🎯 Qué recordar</p><p class="v-dato">${resaltar(dato)}</p></div>` : ''}
         ${porque ? `<div class="v-paso"><p class="h">💡 Por qué</p>${porque}</div>` : ''}
+        ${x?.ejemplo ? `<div class="v-paso"><p class="h">🩺 Ejemplo clínico</p><p class="porque">${resaltar(x.ejemplo)}</p>${x.origen === 'literatura' ? '<p class="v-pq"><small>📚 De literatura estándar (no estaba en tu vault)</small></p>' : ''}</div>` : ''}
         ${mia ? `${bloqueMia(mia)}<details class="v-oficial"><summary>Versión oficial de la técnica</summary><div class="v-tec">${tecnica}</div></details>`
     : `<div class="v-paso v-tec"><p class="h">🧠 La técnica</p>${tecnica}</div>`}
         ${ref ? `<div class="v-acc">

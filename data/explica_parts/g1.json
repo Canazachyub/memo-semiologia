@@ -1,0 +1,146 @@
+{
+ "frecuencia-cardiaca-pulso": {
+  "porque": "El pulso es la onda que cada sístole del ventrículo izquierdo transmite a la arteria. Sube cuando el simpático acelera el nódulo sinusal para sostener el gasto (fiebre, hipovolemia, hipertiroidismo) y baja por tono vagal, frío, hipotiroidismo, fármacos o bloqueo AV. Latidos débiles que no llegan a la radial dan déficit de pulso. [vault difiere de literatura: +12-15 lpm por °C; la literatura da ~10]",
+  "ejemplo": "Varón de 30 años en Puno con neumonía y 39 °C axilar: pulso de 110 lpm, esperable porque son 2 °C sobre 37 (unos 24-30 lpm extra). Si con la misma fiebre tuviera 70 lpm (bradicardia relativa), hay que pensar en fiebre tifoidea. Una anciana con FA y 120 latidos auscultados pero 90 radiales tiene un déficit de pulso de 30.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05d_Pulso_arterial_y_presion_arterial.md"
+ },
+ "presion-arterial": {
+  "porque": "La PA es el producto del gasto cardiaco por la resistencia periférica: el gasto gobierna sobre todo la sistólica y la resistencia la diastólica, mientras la rigidez arterial del anciano ensancha la diferencial. La HTA sostenida daña corazón, cerebro, riñón y retina; la hipotensión refleja caída del gasto, la volemia o el tono vascular. [vault difiere de literatura: ACC/AHA 2017 llama HTA desde 130/80]",
+  "ejemplo": "Anciano con diurético refiere mareo al levantarse: 118/76 echado y 90/60 de pie a los 3 minutos, caída de 28 en la sistólica, hipotensión postural. Otro paciente con 150/95 en dos tomas tiene HTA grado I; su PAM es (150 + 190) / 3, unos 113 mmHg.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05h_Presion_arterial_valores_hipertension_e_hipotension.md"
+ },
+ "frecuencia-respiratoria": {
+  "porque": "La FR la fija el centro respiratorio del tronco según el CO2, el pH y el O2. Sube cuando hay que eliminar más CO2 o compensar hipoxemia y acidosis (fiebre, neumonía, edema pulmonar, cetoacidosis) y cuando un pulmón rígido obliga a respiraciones cortas; baja cuando ese centro se deprime (opiáceos, barbitúricos, coma) o en la alcalosis metabólica, que retiene CO2 para compensar.",
+  "ejemplo": "Joven diabético con cetoacidosis: 30 rpm profundas y regulares (Kussmaul), que lavan CO2 para subir el pH. En cambio, un paciente somnoliento tras sobredosis de morfina, con 8 rpm y pupilas puntiformes, tiene bradipnea por depresión del centro respiratorio y riesgo de paro.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05e_Frecuencia_respiratoria_cardiaca_y_temperatura.md"
+ },
+ "temperatura": {
+  "porque": "El centro termorregulador del hipotálamo anterior equilibra producción y pérdida de calor. En la fiebre, IL-1, IL-6 y TNF inducen prostaglandina E, que sube el punto de ajuste; por eso hay escalofríos hasta alcanzarlo. La hipotermia aparece cuando fallan los mecanismos de conservación (frío con alcohol, shock, hipotiroidismo). [vault difiere de literatura: leve 32-35 °C, moderada 28-32, grave <28]",
+  "ejemplo": "Anciano con dolor en fosa ilíaca derecha: axilar 37.6 °C y rectal 38.8 °C; la diferencia de 1.2 °C supera la esperada de 0.8 y apoya apendicitis. En Puno, un hombre ebrio hallado de madrugada en la calle con 33 °C tiene hipotermia ambiental, con riesgo de bradicardia y arritmias.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05e_Frecuencia_respiratoria_cardiaca_y_temperatura.md"
+ },
+ "saturacion-de-oxigeno": {
+  "porque": "La SatO2 es el porcentaje de hemoglobina unida a O2 y depende de la PaO2 según la curva de disociación. A 3800 m la presión inspirada de O2 es baja, la PaO2 cae y el residente sano satura menos sin estar enfermo. Baja por hipoventilación, alteración V/Q o shunt; el oxímetro no detecta carboxi ni metahemoglobina. [el vault no coincide consigo mismo: 90% del docente vs 88-92% de la nota]",
+  "ejemplo": "Estudiante puneña sana: SatO2 de 90% en reposo, normal para la altura. Su compañero con neumonía tiene 82% y taquipnea: es hipoxemia, requiere O2 y sentarlo. Un turista limeño recién llegado con 86% y cefalea puede estar en mal de montaña agudo, no en su valor basal.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/Saturacion-Oxigeno.md"
+ },
+ "peso-talla-imc": {
+  "porque": "El IMC divide el peso entre la talla al cuadrado para corregirlo por la estatura y estimar la grasa, aunque no distingue músculo de grasa. Sube con balance calórico positivo y baja con ingesta insuficiente o enfermedades consuntivas (TBC, cáncer, hipertiroidismo). El exceso de grasa se asocia a HTA, diabetes y apnea del sueño. [vault difiere de literatura: OMS normal 18.5-24.9, sobrepeso 25-29.9, obesidad ≥30]",
+  "ejemplo": "Varón de 1.60 m y 78 kg: IMC 78 / 2.56, unos 30.5, obesidad con cualquier tabla; su peso ideal por Broca es 60 kg y el máximo normal 66 kg. Si además ronca, hace apneas y se duerme de día, se sospecha síndrome de Pickwick con poliglobulia, más marcada viviendo en altura.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05c_Peso_talla_e_indice_de_masa_corporal.md"
+ },
+ "talla": {
+  "porque": "La talla resulta de la genética, la nutrición y las hormonas del crecimiento (GH, tiroideas, sexuales) durante la infancia. El exceso de GH antes del cierre de las epífisis da gigantismo; la desnutrición, el raquitismo, el hipotiroidismo o el déficit de GH dan enanismo. La relación pubis-vértice / pubis-planta muestra si el crecimiento fue armónico o predominan las extremidades.",
+  "ejemplo": "Adolescente de 1.85 m, muy delgado, con envergadura de 1.95 m y relación pubis-vértice / pubis-planta de 0.88 (segmento inferior largo): hábito marfanoide, hay que buscar luxación de cristalino y dilatación aórtica. Un niño de talla baja con piel seca y retraso mental orienta a cretinismo por hipotiroidismo.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05c_Peso_talla_e_indice_de_masa_corporal.md"
+ },
+ "perimetro-abdominal-cintura": {
+  "porque": "La cintura estima la grasa visceral, metabólicamente más activa que la subcutánea: libera ácidos grasos libres al hígado y citocinas que generan resistencia a la insulina, dislipidemia e HTA. Por eso la obesidad central o androide predice diabetes e infarto mejor que el IMC solo. Se mide en el punto medio entre la última costilla y la cresta ilíaca, al final de la espiración.",
+  "ejemplo": "Varón de 48 años con IMC 27 pero cintura de 108 cm, PA 140/90 y glucosa en ayunas alterada: tiene obesidad abdominal y probable síndrome metabólico pese a un IMC solo de sobrepeso. Una mujer con 85 cm está bajo el corte ATP III de 88, pero ya sobre el de riesgo IDF de 80.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/clases/09_UNIDAD_IX_METABOLISMO_ENERGIA_Y_TEMPERATURA/05_Capitulo_72.md"
+ },
+ "escala-de-glasgow": {
+  "porque": "Evalúa el nivel de conciencia con tres respuestas independientes: apertura ocular (1-4), verbal (1-5) y motora (1-6), que suman de 3 a 15. Explora la corteza y el sistema activador reticular del tronco; con 8 o menos se pierden los reflejos que protegen la vía aérea, por eso ese corte obliga a intubar. La respuesta motora es la que mejor predice el pronóstico.",
+  "ejemplo": "Motociclista con TEC en Juliaca: abre los ojos al dolor (2), emite sonidos incomprensibles (2) y retira al dolor (4): Glasgow 8, coma grave, se protege la vía aérea e intuba. Otro que abre los ojos al hablarle, está confuso y obedece órdenes suma 3 + 4 + 6 = 13.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05a_Estado_general_nivel_de_conciencia_lenguaje_y_decubito.md"
+ },
+ "llenado-capilar": {
+  "porque": "Al presionar la uña se vacían los capilares; al soltar, el tiempo de recoloración refleja la perfusión periférica. Se alarga cuando el simpático contrae las arteriolas cutáneas para preservar órganos vitales (deshidratación, shock), cuando una arteria está obstruida o cuando el frío produce vasoconstricción. [el vault no coincide consigo mismo: FISIOPATOLOGIA usa >3 s en sepsis]",
+  "ejemplo": "Lactante de 8 meses en Puno con 3 días de diarrea: letárgico, ojos hundidos, fontanela deprimida, taquicardia y llenado de 4 s: deshidratación grave con hipovolemia, bolo de suero fisiológico ya. Ojo con un niño que llega del frío de la puna: el llenado lento puede ser vasoconstricción, hay que repetirlo abrigado.",
+  "origen": "vault",
+  "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Hipovolemia.md"
+ },
+ "estado-general": {
+  "porque": "Es la impresión global, en segundos, de cuánto ha comprometido la enfermedad al organismo, integrando aspecto, conciencia, postura, nutrición e hidratación. Orienta la urgencia y alerta cuando el deterioro es mayor de lo que explican los signos hallados. Se escribe completo en la historia (buen, regular o mal estado general) por su implicancia médico-legal.",
+  "ejemplo": "Anciano traído de una comunidad de Puno: postrado, adelgazado, poco reactivo, con fiebre leve y pocos hallazgos focales. Se registra mal estado general y obliga a buscar sepsis, TBC o neoplasia aunque los signos sean escasos; un joven con resfrío que camina y conversa está en buen estado general.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05a_Estado_general_nivel_de_conciencia_lenguaje_y_decubito.md"
+ },
+ "estado-de-nutricion": {
+  "porque": "Refleja el balance entre aporte y gasto de energía y proteínas. El déficit calórico consume grasa y músculo (marasmo); el déficit proteico baja la albúmina, cae la presión oncótica y aparece edema, con cabello fino y quebradizo y piel alterada (kwashiorkor). El exceso calórico acumula tejido adiposo, central o periférico, con distinto riesgo metabólico.",
+  "ejemplo": "Niño de 2 años destetado con dieta casi solo de papa y chuño: edema en piernas, cabello ralo y despigmentado que se arranca fácil y piel descamada: kwashiorkor por déficit proteico. Otro lactante muy delgado, piel y hueso, sin edema y con déficit de peso de 45%: marasmo, desnutrición de tercer grado de Gómez.",
+  "origen": "mixto",
+  "nota": "wiki/SEMIOLOGIA/clases/05c_Peso_talla_e_indice_de_masa_corporal.md"
+ },
+ "estado-de-hidratacion": {
+  "porque": "Ingresos y pérdidas se equilibran en unos 2500 ml/día. Con diarrea, vómitos, fiebre o taquipnea se pierde agua del intersticio: cae el turgor (pliegue positivo), se secan las mucosas y, si baja la volemia, aparecen taquicardia e hipotensión postural. El aire seco y frío de la altura aumenta las pérdidas insensibles. [vault difiere de literatura: hipotónica con Na <130; la literatura usa <135]",
+  "ejemplo": "Escolar de 20 kg que bajó a 18.6 kg tras una gastroenteritis: perdió 1.4 kg, unos 1.4 litros, el 7% del peso, deshidratación moderada. Tiene mucosas secas, ojos hundidos, pliegue lento y PA de 100/70 echado que cae a 80/50 de pie. En un anciano el pliegue se busca en la frente o el esternón.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05b_Biotipo_hidratacion_y_movimientos_involuntarios.md"
+ },
+ "palidez": {
+  "porque": "El color rosado depende de la sangre oxigenada que circula por la dermis. Hay palidez cuando llega menos sangre a la piel por vasoconstricción simpática (susto, dolor, shock) o cuando cada mililitro trae menos hemoglobina (anemia). La palidez de un solo miembro indica que una arteria se obstruyó. Por eso la anemia se juzga en conjuntivas, palmas y uñas, donde el pigmento cutáneo no confunde.",
+  "ejemplo": "Mujer de 35 años con menstruaciones abundantes: conjuntivas palpebrales y palmas pálidas, cansancio y Hb 6.8 g/dl: anemia ferropénica. En Puno la Hb basal es más alta por la altura, así que una cifra que en Lima sería leve aquí pesa más. Una pierna fría, pálida y sin pulso pedio en un paciente con FA sugiere embolia.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05f_Piel_secrecion_hidrica_y_mucosas.md"
+ },
+ "ictericia": {
+  "porque": "La bilirrubina viene de la hemoglobina degradada; el hígado la conjuga y la excreta por la bilis. Se acumula si se produce de más (hemólisis, predomina la indirecta), si el hepatocito no la procesa (hepatitis, cirrosis, mixta) o si la bilis no sale (cálculo, tumor, directa). La directa es hidrosoluble: pasa a la orina (coluria) y falta en las heces (acolia). Se ve primero en la esclerótica.",
+  "ejemplo": "Mujer de 50 años con cólico en hipocondrio derecho, escleras amarillas, orina color té, heces blancas y prurito; bilirrubina de 6 mg% a predominio directo: ictericia poshepática por coledocolitiasis. Un joven con anemia hemolítica tiene bilirrubina de 3 mg% indirecta, sin coluria.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05f_Piel_secrecion_hidrica_y_mucosas.md"
+ },
+ "cianosis": {
+  "porque": "Aparece cuando la hemoglobina reducida en los capilares supera unos 5 g/dl. Es central si la sangre ya sale desaturada del pulmón o del corazón (hipoventilación, cortocircuito, baja PO2 de la altura) y se ve en lengua y labios tibios; es periférica si se desatura lentamente en tejidos fríos o mal perfundidos. En la anemia grave no se alcanza ese umbral; en la policitemia, sí con facilidad.",
+  "ejemplo": "Minero de 45 años residente en Puno, con cefalea, somnolencia, cara morada, labios rojo-violáceos y Hb muy alta: enfermedad de Monge por desadaptación a la altura, que mejora si baja a nivel del mar. Una mujer con dedos azulados por el frío que se recoloran al calentarlos, con lengua rosada, tiene cianosis periférica.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/07a_Anamnesis_sintomas_respiratorios.md"
+ },
+ "edema": {
+  "porque": "Es líquido en el intersticio cuando se rompe el equilibrio de Starling: sube la presión hidrostática capilar (IC derecha, TVP), baja la oncótica por albúmina <2.5 (nefrótico, cirrosis, desnutrición), aumenta la permeabilidad (alergia, inflamación) o se obstruye la linfa. La gravedad lo lleva a zonas declives y la aldosterona lo perpetúa. El mixedema no deja fóvea porque son mucopolisacáridos.",
+  "ejemplo": "Mujer de 45 años con párpados hinchados al despertar que bajan a las piernas durante el día y orina espumosa: síndrome nefrótico. Un varón con disnea de esfuerzo y edema vespertino ascendente de 2 cruces en tibias es cardiaco. Edema de una sola pantorrilla, caliente y dolorosa tras inmovilización, obliga a descartar TVP con Doppler.",
+  "origen": "vault",
+  "nota": "wiki/SEMIOLOGIA/clases/05g_Edema.md"
+ },
+ "vsg": {
+  "porque": "Mide cuánto caen los glóbulos rojos en una hora. Normalmente se repelen por su carga negativa; las proteínas de fase aguda, sobre todo el fibrinógeno, neutralizan esa carga, los apilan en pilas de monedas y sedimentan más rápido. Sube en inflamación, infección, autoinmunidad y mieloma; baja con muchos hematíes o formas que no se apilan. [vault difiere de literatura: dice que VSG normal descarta infección bacteriana]",
+  "ejemplo": "Mujer de 45 años con dolor simétrico de manos y rigidez matutina de 1 hora: VSG 60 mm/h y PCR 45 mg/L apoyan artritis reumatoide activa. En altura, la poliglobulia fisiológica tiende a bajar la VSG, así que en un puneño una cifra limítrofe puede subestimar la inflamación.",
+  "origen": "mixto",
+  "nota": "wiki/PATOLOGIA 2026/clases/02f_Inflamacion_cronica_y_granulomas.md"
+ },
+ "pcr-proteina-c-reactiva": {
+  "porque": "Es una proteína de fase aguda que el hígado fabrica estimulado por IL-6 y que actúa como opsonina sobre bacterias y células dañadas. Sube a las 6-8 horas del estímulo y, por su vida media corta, cae rápido al controlarse la causa; por eso sigue mejor el tratamiento que la VSG. Cifras muy altas orientan a infección bacteriana; en el brote lúpico su respuesta es pobre.",
+  "ejemplo": "Paciente con LES y fiebre: VSG 70 mm/h y PCR 120 mg/L; como el brote lúpico casi no sube la PCR, se piensa primero en infección y se buscan focos. Un varón con neumonía tiene PCR de 180 mg/L al ingreso y de 40 mg/L al tercer día de antibiótico: buena respuesta.",
+  "origen": "vault",
+  "nota": "wiki/INMUNOLOGIA 2026/clases/42_Lupus_eritematoso_sistemico.md"
+ },
+ "factor-reumatoide": {
+  "porque": "Es un autoanticuerpo, en general IgM, dirigido contra la porción Fc de la IgG; forma inmunocomplejos que perpetúan la sinovitis. Apoya el diagnóstico de artritis reumatoide (sensibilidad 66%, especificidad 87%) y los títulos altos indican enfermedad más agresiva, nódulos y Felty. Otras estimulaciones inmunes crónicas también lo producen, por eso no basta solo y el anti-CCP es más específico.",
+  "ejemplo": "Mujer de 40 años con poliartritis simétrica de manos: FR de 120 UI/mL y anti-CCP positivo, AR seropositiva con mayor riesgo erosivo. Un anciano asintomático con FR de 30 UI/mL y hepatitis C no tiene AR: el FR se positiviza por la estimulación inmune crónica.",
+  "origen": "mixto",
+  "nota": "wiki/INMUNOLOGIA 2026/clases/40_Artritis_reumatoide.md"
+ },
+ "tp-inr": {
+  "porque": "El TP mide cuánto tarda en coagular el plasma al añadir factor tisular y calcio, y explora la vía extrínseca y común (VII, X, V, II, fibrinógeno). Se alarga si faltan factores dependientes de vitamina K (warfarina, déficit de vitamina K), si el hígado no los sintetiza o si se consumen (CID). El INR estandariza el TP entre laboratorios para poder comparar resultados.",
+  "ejemplo": "Paciente con FA anticoagulado con warfarina: INR 2.5, dentro de la meta de 2 a 3. Llega luego con hematuria e INR 6: sobreanticoagulación con alto riesgo hemorrágico, se suspende la warfarina y se da vitamina K. Un cirrótico con INR 1.9 sin anticoagulantes refleja falla de síntesis hepática.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/clases/06_UNIDAD_VI_SANGRE_INMUNIDAD_Y_COAGULACION/05_Capitulo_37.md"
+ },
+ "ttpa": {
+  "porque": "El TTPa explora la vía intrínseca y común (XII, XI, IX, VIII, X, V, II) añadiendo un activador de contacto, fosfolípido y calcio. Se alarga con la heparina no fraccionada, que potencia a la antitrombina contra la trombina y el Xa, con el déficit de VIII o IX (hemofilias) y en la CID por consumo. Por eso sirve para ajustar la heparina en infusión.",
+  "ejemplo": "Paciente con TEP en heparina no fraccionada: TTPa basal de 30 s; la meta es 45-75 s (1.5 a 2.5 veces). Si sube a 100 s y sangra, se suspende y se da sulfato de protamina. Un niño varón con hemartrosis, TTPa largo y TP normal orienta a hemofilia A o B.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOPATOLOGIA 2026/Heparina.md"
+ },
+ "fibrinogeno": {
+  "porque": "Es la proteína que la trombina convierte en fibrina, la malla del coágulo, y se sintetiza en el hígado. Como reactante de fase aguda (IL-6) sube en la inflamación y, al neutralizar la carga de los hematíes, acelera la VSG y aumenta la viscosidad. Baja cuando se consume masivamente en la CID o si el hígado no lo produce. [el vault no coincide consigo mismo: 200-400 mg/dL vs 100-700 de Guyton]",
+  "ejemplo": "Puérpera con desprendimiento de placenta que sangra por las punciones: plaquetas 50 000, TP y TTPa largos, fibrinógeno de 90 mg/dL y dímero D alto: CID por consumo, se trata la causa y se repone crioprecipitado. Un paciente con neumonía tiene fibrinógeno de 600 mg/dL como reactante de fase aguda.",
+  "origen": "vault",
+  "nota": "wiki/FISIOLOGIA 2026/conceptos/Fibrinogeno.md"
+ },
+ "tiempo-de-sangria-coagulacion": {
+  "porque": "El tiempo de sangría mide cuánto tarda en cerrar una punción y depende de las plaquetas y la pared del vaso (hemostasia primaria). El tiempo de coagulación mide cuánto tarda en coagular la sangre en un tubo y depende de los factores (hemostasia secundaria); la heparina lo alarga mucho. [vault difiere de literatura: la atribuye también a déficit de factores; en hemofilia la sangría es normal]",
+  "ejemplo": "Joven con epistaxis y petequias: plaquetas 30 000 y tiempo de sangría de 12 min con coagulación normal: falla de la hemostasia primaria, se piensa en trombocitopenia inmune. Un paciente que recibe heparina IV pasa de un tiempo de coagulación de 6 min a más de 30 min.",
+  "origen": "mixto",
+  "nota": "wiki/FISIOLOGIA 2026/clases/06_UNIDAD_VI_SANGRE_INMUNIDAD_Y_COAGULACION/05_Capitulo_37.md"
+ }
+}

@@ -1,0 +1,194 @@
+{
+  "tgo-ast": {
+    "porque": "La TGO es una enzima intracelular de hígado, corazón, músculo, riñón y eritrocitos; parte de ella vive en la mitocondria. Cuando la célula se rompe (citólisis) pasa a la sangre, por eso sube en necrosis hepática pero también en infarto, rabdomiólisis o hemólisis. El alcohol daña la mitocondria y agota el cofactor de la TGP, de ahí que la TGO supere al doble de la TGP.",
+    "ejemplo": "Varón de 50 años de Puno, bebedor de fin de semana, con TGO 180 y TGP 70 UI/L: cociente 2,6, sugiere hepatopatía alcohólica. Si la TGO sale alta con TGP normal tras una caída con aplastamiento, hay que pensar en músculo y pedir CPK.",
+    "origen": "mixto",
+    "nota": "wiki/FISIOPATOLOGIA 2026/concepts/TGO.md"
+  },
+  "tgp-alt": {
+    "porque": "La TGP es citoplasmática y casi exclusiva del hepatocito: transfiere el grupo amino de la alanina al alfa-cetoglutarato. Basta que se dañe la membrana del hepatocito para que salga a la sangre, por eso es el marcador más específico de lesión hepática. Sube muchísimo en hepatitis viral o tóxica (TGP mayor que TGO) y poco en obstrucción biliar.",
+    "ejemplo": "Escolar de 9 años con ictericia, coluria y anorexia, TGP 1450 y TGO 980 UI/L: más de 10 veces el límite, con TGP mayor que TGO, típico de hepatitis A. Si además tomara un fármaco con bilirrubina mayor de 2 veces el límite, la ley de Hy anuncia lesión grave.",
+    "origen": "vault",
+    "nota": "wiki/FISIOPATOLOGIA 2026/concepts/TGP.md"
+  },
+  "fosfatasa-alcalina-fa": {
+    "porque": "La FA está en el polo canalicular del hepatocito, en osteoblastos y en placenta. Cuando la bilis no sale, la presión retrógrada induce al hepatocito a fabricar más FA y rompe la membrana canalicular, por eso es el marcador de colestasis. También sube con hueso en formación (niños, Paget, metástasis) y en el tercer trimestre. Como su vida media es de unos 7 días, baja lento.",
+    "ejemplo": "Mujer de 32 años con cólico, ictericia y fiebre: FA 234 UI/L y GGT alta, ecografía con cálculo en colédoco, colestasis obstructiva. Al día 10, tras el manejo, las transaminasas ya normalizaron pero la FA sigue en 100 UI/L, descenso lento esperable.",
+    "origen": "vault",
+    "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Fosfatasa-Alcalina.md"
+  },
+  "ggt-gt": {
+    "porque": "La GGT es una enzima de membrana del hepatocito y del epitelio biliar que no existe en el hueso. Por eso sirve como juez de la FA: si ambas suben, el origen es hepatobiliar; si la FA sube sola, es ósea. Además el alcohol y fármacos inductores (fenitoína, barbitúricos) aumentan su síntesis en el retículo del hepatocito, de modo que sube aislada sin colestasis.",
+    "ejemplo": "Mujer de 45 años con ictericia y acolia: FA 390 U/L y GGT 280 U/L, origen biliar, ecografía con colédoco dilatado por cálculo. En cambio, un adulto mayor con FA 350 y GGT normal más dolor óseo orienta a enfermedad de Paget o metástasis.",
+    "origen": "mixto",
+    "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Colestasis.md"
+  },
+  "bilirrubina-total": {
+    "porque": "La bilirrubina viene del hemo de eritrocitos viejos (80% bazo e hígado, 20% eritropoyesis ineficaz). Sube si se produce de más (hemólisis), si el hígado no la capta o conjuga, o si la bilis no sale. Se ve primero en escleróticas porque su elastina tiene afinidad por el pigmento, y solo se nota por encima de 2,5 mg/dL. [vault difiere de literatura: Esquema 36 da normal hasta 1,5 mg%, el resto del vault 1,2]",
+    "ejemplo": "Joven con piel amarilla tras comer mucha zanahoria y papaya, escleróticas blancas y bilirrubina 0,9 mg/dL: hipercarotinemia, no ictericia, sin necesidad de biopsia. Otro paciente con BT 1,8 tiene hiperbilirrubinemia subclínica que todavía no se ve.",
+    "origen": "vault",
+    "nota": "wiki/SEMIOLOGIA/clases/09a_Anamnesis_y_sintomas_del_aparato_digestivo.md"
+  },
+  "bilirrubina-directa-conjugada": {
+    "porque": "Es la bilirrubina que el hepatocito ya unió a ácido glucurónico con la UDP-glucuroniltransferasa; así se vuelve hidrosoluble. Si la bilis no sale (cálculo, tumor) regresa a la sangre, el riñón la filtra y da coluria; al no llegar al intestino falta estercobilina y hay acolia, y las sales biliares retenidas dan prurito. En la hepatitis sube junto con la indirecta.",
+    "ejemplo": "Mujer de 40 años con cólico biliar previo, ictericia intensa, orina como coca-cola y heces color masilla: BT 20 y BD 15 mg/dL, patrón obstructivo por coledocolitiasis. La ecografía muestra el colédoco dilatado y se indica CPRE.",
+    "origen": "vault",
+    "nota": "wiki/SEMIOLOGIA/clases/09a_Anamnesis_y_sintomas_del_aparato_digestivo.md"
+  },
+  "bilirrubina-indirecta-no-conjugada": {
+    "porque": "Es la bilirrubina recién salida del hemo, liposoluble y fuertemente unida a albúmina, por eso no se filtra en el riñón y no da coluria. Sube si se destruyen muchos eritrocitos o si falla la conjugación (Gilbert, Crigler-Najjar, inmadurez del recién nacido). Al ser liposoluble cruza la barrera hematoencefálica del neonato y se deposita en ganglios basales (kernícterus).",
+    "ejemplo": "Universitario de 20 años con ojos amarillos tras ayunar en semana de exámenes: BT 2,6 con BI 2,2 mg/dL, hemoglobina y reticulocitos normales, orina clara. Es síndrome de Gilbert, benigno. Un neonato con BI 22 mg/dL, en cambio, requiere fototerapia urgente.",
+    "origen": "mixto",
+    "nota": "wiki/SEMIOLOGIA/clases/09a_Anamnesis_y_sintomas_del_aparato_digestivo.md"
+  },
+  "patron-hepatocelular-vs-colestasico": {
+    "porque": "Compara qué se rompe: si es el hepatocito, salen transaminasas en gran cantidad; si es el sistema excretor biliar, se induce la FA y sube la bilirrubina directa. El factor R lo cuantifica dividiendo TGP y FA entre sus límites. [vault difiere de literatura: Esquema 36 da transaminasas normales en la obstructiva; en la literatura pueden subir transitoriamente al impactar un cálculo]",
+    "ejemplo": "Paciente con TGP 600 (límite 40) y FA 180 (límite 120): R = 15 ÷ 1,5 = 10, patrón hepatocelular, buscar hepatitis viral o tóxica. Otro con TGP 80 y FA 480: R = 2 ÷ 4 = 0,5, colestásico, pedir ecografía de vías biliares.",
+    "origen": "mixto",
+    "nota": "wiki/FISIOPATOLOGIA 2026/esquemas/Esquema_36_Sindrome-Icterico.md"
+  },
+  "proteinas-totales": {
+    "porque": "Suma albúmina y globulinas. Bajan si el hígado no sintetiza (cirrosis), si falta materia prima (desnutrición), si se pierden por riñón, intestino o quemaduras, o por dilución. Al caer la albúmina baja la presión oncótica y el líquido sale al intersticio (Starling). Suben si se pierde agua (hemoconcentración) o si hay muchas globulinas, como en el mieloma.",
+    "ejemplo": "Varón de 55 años con cirrosis descompensada, ascitis y edema de piernas: proteínas totales 4,2 g/dL y albúmina 1,8, hipoproteinemia por falla de síntesis. Si un adulto mayor tuviera PT 9,5 con albúmina 3,2, la brecha de 6,3 obliga a buscar mieloma.",
+    "origen": "vault",
+    "nota": "wiki/FISIOPATOLOGIA 2026/entities/signos/Hipoproteinemia.md"
+  },
+  "albumina": {
+    "porque": "La sintetiza solo el hígado y aporta 75-80% de la presión oncótica, que retiene agua en los vasos; también transporta bilirrubina indirecta, calcio y fármacos. Baja por menor síntesis (cirrosis, desnutrición), pérdida (nefrótico, enteropatía, quemaduras) o inflamación. Con vida media de unos 20 días tarda en caer, así que refleja daño crónico y no agudo.",
+    "ejemplo": "Niña de 6 años con edema palpebral matutino que progresa a anasarca y orina espumosa: proteinuria 4 g/24h y albúmina 1,9 g/dL, síndrome nefrótico. El calcio total bajo que acompaña no es hipocalcemia real, porque falta su transportador.",
+    "origen": "vault",
+    "nota": "wiki/FISIOPATOLOGIA 2026/Albumina.md"
+  },
+  "globulinas": {
+    "porque": "Son el resto de proteínas plasmáticas: alfa y beta (transporte, reactantes de fase aguda) y gamma (anticuerpos de células plasmáticas). En la cirrosis suben porque los antígenos intestinales evitan el hígado y estimulan una producción policlonal de inmunoglobulinas, mientras la albúmina cae. Un solo clon de plasmocitos da pico monoclonal (mieloma); bajan si se pierden o no se producen.",
+    "ejemplo": "Varón de 60 años con cirrosis alcohólica: TGO alta, albúmina 2,6 y globulinas 4,4 g/dL, electroforesis con aumento policlonal gamma. Si en cambio un adulto con dolor óseo y anemia mostrara un pico estrecho en gamma, se sospecha mieloma múltiple.",
+    "origen": "mixto",
+    "nota": "wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md"
+  },
+  "relacion-albumina-globulina-a-g": {
+    "porque": "Normalmente la albúmina casi duplica a las globulinas. La relación se invierte (menor de 1) cuando a la vez baja la albúmina y suben las globulinas: el hígado cirrótico deja de sintetizar albúmina mientras aumentan las inmunoglobulinas policlonales, o un clon de plasmocitos produce una paraproteína en el mieloma. Sube solo si faltan globulinas.",
+    "ejemplo": "Mujer de 58 años con ascitis y arañas vasculares: albúmina 2,4 y globulinas 4,0 g/dL, A/G 0,6, inversión compatible con cirrosis. Un niño con infecciones respiratorias repetidas y A/G de 3, en cambio, hace pensar en hipogammaglobulinemia.",
+    "origen": "mixto",
+    "nota": "wiki/FISIOPATOLOGIA 2026/Albumina.md"
+  },
+  "amilasa-serica": {
+    "porque": "Enzima que digiere almidón, de páncreas y saliva. Si un cálculo tapa la papila, sube la presión en el Wirsung, los zimógenos se activan dentro del acino y la amilasa pasa al plasma; se filtra por el riñón, por eso dura poco. No mide gravedad: una necrosis extensa puede dar valores bajos. [vault difiere de literatura: 09d dice que normaliza en 36-72 h; la literatura, en 3-5 días]",
+    "ejemplo": "Mujer obesa de 45 años con dolor epigástrico en barra irradiado al dorso y vómitos: amilasa 968 UA/dL, unas 8 veces lo normal, más dolor típico, cumple 2 de 3 de Atlanta: pancreatitis biliar. Si llegara al 4.º día, la amilasa podría ya ser normal y conviene pedir lipasa.",
+    "origen": "vault",
+    "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Amilasa.md"
+  },
+  "lipasa-serica": {
+    "porque": "La lipasa pancreática hidroliza triglicéridos en el duodeno; la glándula salival casi no la produce, por eso es más específica que la amilasa (normal en parotiditis). Sale del acino inflamado igual que la amilasa, pero se reabsorbe en el túbulo y persiste elevada más días. [vault difiere de literatura: PATOLOGIA dice que la lipasa sube entre 72-96 h; en la literatura sube a las 4-8 h y permanece alta 8-14 días]",
+    "ejemplo": "Varón de 38 años que consulta al cuarto día de un dolor en barra tras una fiesta con mucho alcohol: amilasa ya normal pero lipasa 5 veces el límite, confirma pancreatitis aguda tardía. Con 60 años y glucosa de 230 suma 2 criterios de Ranson al ingreso.",
+    "origen": "mixto",
+    "nota": "wiki/SEMIOLOGIA/clases/09d_Higado_vias_biliares_y_pancreas.md"
+  },
+  "colesterol-total": {
+    "porque": "Es la suma del colesterol transportado por LDL, HDL y VLDL. Sube si hay exceso de síntesis o dieta, o si falla la depuración por receptor LDL (hipercolesterolemia familiar, hipotiroidismo, que reduce receptores); en el nefrótico el hígado aumenta la síntesis de lipoproteínas al perder albúmina. El exceso se deposita en párpados (xantelasma) y córnea (arco senil).",
+    "ejemplo": "Varón de 38 años con xantelasmas y arco corneal: colesterol total 320 mg/dL, rango alto que en un joven obliga a pensar en hipercolesterolemia familiar y en hipotiroidismo (pedir TSH). Un hipertiroideo con colesterol de 120 refleja el catabolismo acelerado.",
+    "origen": "mixto",
+    "nota": "wiki/SEMIOLOGIA/clases/06a_Cabeza_cara_ojos.md"
+  },
+  "hdl": {
+    "porque": "La HDL hace el transporte reverso: recoge colesterol de los tejidos y de la pared arterial y lo lleva al hígado para eliminarlo, por eso protege. En la resistencia a la insulina el exceso de VLDL rica en triglicéridos intercambia lípidos con la HDL y la vuelve fácil de degradar, de ahí que baje en el síndrome metabólico. El ejercicio y los estrógenos la elevan.",
+    "ejemplo": "Varón sedentario de 48 años con cintura de 104 cm, TG 210 y HDL 34 mg/dL: dos criterios lipídicos del síndrome metabólico. Una mujer de 55 años con HDL de 68 resta un factor de riesgo en su cálculo cardiovascular.",
+    "origen": "mixto",
+    "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Síndrome-metabólico.md"
+  },
+  "ldl": {
+    "porque": "La LDL nace de la VLDL y lleva colesterol a las células, que la captan por su receptor (apo B-100). Si el receptor falla (hipercolesterolemia familiar) o hay exceso, se acumula en la íntima, se oxida, la fagocitan macrófagos que se vuelven células espumosas y nace la placa de ateroma. Por eso es el principal factor causal modificable de aterosclerosis.",
+    "ejemplo": "Varón de 55 años con CT 280, HDL 35 y TG 150: por Friedewald, LDL = 280 − 35 − 30 = 215 mg/dL, muy alto, sugiere origen familiar. Se indica estatina de alta intensidad, que aumenta los receptores LDL del hígado.",
+    "origen": "vault",
+    "nota": "wiki/BIOQUIMICA 2026/concepts/Colesterol-LDL.md"
+  },
+  "trigliceridos": {
+    "porque": "Viajan en quilomicrones (de la dieta) y VLDL (del hígado), y la lipoproteína lipasa del endotelio los descompone. En la resistencia a la insulina llegan más ácidos grasos al hígado y este produce más VLDL, por eso suben en el síndrome metabólico. Por encima de 700-1000 la lipasa se satura, los quilomicrones obstruyen capilares pancreáticos y sus ácidos grasos libres inflaman el páncreas.",
+    "ejemplo": "Mujer de 42 años con obesidad abdominal, PA 135/88 y TG 240 mg/dL: suma ya 3 criterios de síndrome metabólico. Un varón alcohólico con dolor en barra, suero lechoso y TG 1500 mg/dL tiene pancreatitis por hipertrigliceridemia.",
+    "origen": "mixto",
+    "nota": "wiki/FISIOPATOLOGIA 2026/entities/enfermedades/Síndrome-metabólico.md"
+  },
+  "volumen-urinario": {
+    "porque": "La diuresis depende del volumen que llega al riñón, de la filtración y de la capacidad de concentrar (ADH). Hay oliguria si falta perfusión (deshidratación, hemorragia, insuficiencia cardíaca), si el riñón está lesionado, o anuria si se obstruyen ambos uréteres. Hay poliuria si la glucosa arrastra agua (diuresis osmótica), si falta ADH o si el túbulo no responde (hipercalcemia).",
+    "ejemplo": "Varón de 70 kg con diarrea intensa que orina 300 mL en 24 h, unos 0,18 mL/kg/h: oliguria por hipovolemia, debe hidratarse antes de que se instale la lesión renal. Una diabética que orina 4 L al día con glucemia de 400 tiene poliuria osmótica.",
+    "origen": "vault",
+    "nota": "wiki/SEMIOLOGIA/clases/10a_Anamnesis_y_sintomas_del_aparato_genitourinario.md"
+  },
+  "densidad-urinaria": {
+    "porque": "Refleja cuántos solutos lleva la orina, es decir, la capacidad del túbulo de concentrar con ADH. Un riñón sano mal perfundido retiene agua y sodio y concentra (densidad alta, FENa menor de 1%); un túbulo necrosado pierde esa capacidad y la orina queda isostenúrica (FENa mayor de 2%). [vault difiere de literatura: SEMIOLOGIA usa unidad mg/ml; la densidad es adimensional]",
+    "ejemplo": "Agricultor de 60 años tras vómitos de 2 días, orina escasa con densidad 1.028 y FENa 0,5%: insuficiencia renal prerrenal, responde a hidratación. Otro tras shock séptico con densidad 1.010 y FENa 3% tiene necrosis tubular aguda.",
+    "origen": "mixto",
+    "nota": "wiki/SEMIOLOGIA/clases/10b_Exploracion_genitourinaria_y_examenes_complementarios.md"
+  },
+  "ph-urinario": {
+    "porque": "El riñón elimina la carga ácida diaria de la dieta (proteínas), por eso la orina es normalmente ácida; en una acidosis sistémica el túbulo excreta aún más H+. Se alcaliniza con dietas vegetales o cuando bacterias con ureasa, como Proteus, convierten la urea en amoníaco. El pH decide qué cristal precipita: en ácida ácido úrico y oxalato, en alcalina fosfatos y estruvita.",
+    "ejemplo": "Mujer de 35 años con infecciones urinarias repetidas, orina con pH 8,5 y urocultivo con Proteus mirabilis: la radiografía muestra un cálculo coraliforme de estruvita. Un paciente con gota y pH urinario de 5 tiene riesgo de litiasis úrica.",
+    "origen": "mixto",
+    "nota": "wiki/SEMIOLOGIA/clases/10b_Exploracion_genitourinaria_y_examenes_complementarios.md"
+  },
+  "aspecto-y-color-de-orina": {
+    "porque": "El color amarillo lo da la urobilina y su intensidad depende de cuánta agua se elimina. Se vuelve turbia con pus o cristales que precipitan al enfriarse; roja con hematíes, hemoglobina libre (hemólisis) o mioglobina (destrucción muscular); castaña por bilirrubina directa (coluria); y espumosa cuando hay mucha proteína que baja la tensión superficial. Betarraga y rifampicina dan falsa hematuria.",
+    "ejemplo": "Niño de 8 años, dos semanas después de una faringitis, con orina color coca-cola, edema palpebral y PA elevada: hematuria glomerular del síndrome nefrítico postestreptocócico. Un minero aplastado con orina oscura sin hematíes en el sedimento tiene mioglobinuria.",
+    "origen": "vault",
+    "nota": "wiki/SEMIOLOGIA/clases/10a_Anamnesis_y_sintomas_del_aparato_genitourinario.md"
+  },
+  "leucocitos-sedimento": {
+    "porque": "Los leucocitos migran a la vía urinaria cuando hay inflamación, casi siempre bacteriana: es la piuria. Si forman cilindros se moldearon en el túbulo, lo que ubica la inflamación en el riñón (pielonefritis, nefritis intersticial). Piuria con cultivo negativo apunta a otra causa. [vault difiere de literatura: SEMIOLOGIA da normal hasta 3 y piuria desde 10/campo; la literatura, piuria desde 5/campo]",
+    "ejemplo": "Mujer de 25 años con disuria y polaquiuria: sedimento con 25 leucocitos por campo y nitritos positivos, cistitis. Si tuviera fiebre, Giordano positivo y cilindros leucocitarios, sería pielonefritis. Piuria persistente con cultivos negativos en un paciente con tos crónica obliga a buscar TBC renal.",
+    "origen": "mixto",
+    "nota": "wiki/SEMIOLOGIA/clases/10b_Exploracion_genitourinaria_y_examenes_complementarios.md"
+  },
+  "hematies-sedimento": {
+    "porque": "Los hematíes salen a la orina por un glomérulo inflamado o por lesión de la vía urinaria. Al cruzar el glomérulo y los cambios osmóticos del túbulo se deforman (dismórficos), lo que señala origen glomerular; si están intactos vienen de más abajo (cálculo, tumor). Fiebre, ejercicio intenso o trastornos de coagulación pueden dar pocos hematíes sin lesión renal.",
+    "ejemplo": "Varón de 62 años, fumador, con hematuria total indolora y 40 hematíes isomórficos por campo: pese a no doler, obliga a cistoscopia por sospecha de tumor vesical. Un atleta que corrió una maratón con 5 hematíes por campo debe repetir el examen en reposo.",
+    "origen": "vault",
+    "nota": "wiki/SEMIOLOGIA/clases/10a_Anamnesis_y_sintomas_del_aparato_genitourinario.md"
+  },
+  "celulas-epiteliales-orina": {
+    "porque": "El epitelio urinario se renueva y descama, por eso aparecen algunas células. Muchas células escamosas vienen de la piel y la vulva o el prepucio, lo que indica que la muestra no se tomó del chorro medio y está contaminada. Las células tubulares renales, más pequeñas y redondas, en cambio, aparecen cuando el túbulo se necrosa y se desprende.",
+    "ejemplo": "Mujer de 30 años cuyo examen muestra 30 células escamosas por campo y flora mixta: muestra contaminada, se repite con aseo genital y chorro medio. Un paciente tras hipotensión prolongada con células tubulares y cilindros granulosos marrones orienta a necrosis tubular aguda.",
+    "origen": "mixto",
+    "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Sedimento-Urinario.md"
+  },
+  "proteinas-en-orina": {
+    "porque": "El glomérulo normal retiene la albúmina por tamaño y carga negativa, y el túbulo reabsorbe lo poco que pasa. Cuando la membrana basal se daña (glomerulopatía, diabetes) se pierden proteínas: en el nefrótico la permeabilidad es masiva y cae la albúmina, en el nefrítico la inflamación da proteinuria moderada con hematuria. La microalbuminuria es la primera señal de nefropatía diabética.",
+    "ejemplo": "Diabético de 50 años con tira reactiva negativa pero albúmina/creatinina de 120 mg/g: microalbuminuria, nefropatía incipiente, se inicia IECA. Una niña con anasarca y proteína/creatinina de 5 g/g pierde unos 5 g al día: síndrome nefrótico.",
+    "origen": "mixto",
+    "nota": "wiki/SEMIOLOGIA/clases/10c_Sindromes_clinicos_renales.md"
+  },
+  "glucosa-en-orina": {
+    "porque": "La glucosa se filtra libremente y el túbulo proximal la reabsorbe toda mediante transportadores SGLT, hasta que se saturan con glucemias de unos 180 mg/dL. Por eso aparece en la DM descompensada, y también con glucemia normal si el túbulo falla (Fanconi), si el umbral baja (embarazo) o si se bloquea el SGLT2 con gliflozinas. La glucosa en orina arrastra agua: poliuria.",
+    "ejemplo": "Adolescente de 15 años con poliuria, sed intensa y baja de peso: glucosuria marcada y glucemia de 380 mg/dL, debut de diabetes tipo 1. Una gestante de 28 semanas con glucosuria leve y glucemia de 85 tiene solo un umbral renal más bajo.",
+    "origen": "mixto",
+    "nota": "wiki/SEMIOLOGIA/clases/10b_Exploracion_genitourinaria_y_examenes_complementarios.md"
+  },
+  "cetonas-y-urobilinogeno-orina": {
+    "porque": "Las cetonas aparecen cuando, sin insulina o sin comida, el hígado quema grasa y produce cuerpos cetónicos que se filtran. El urobilinógeno nace en el intestino de la bilirrubina conjugada y parte se reabsorbe y sale por orina: sube en hemólisis y daño hepatocelular y falta si la bilis no llega al intestino. [vault difiere: 10b dice que sube en obstructivas; 09a y la literatura, que falta]",
+    "ejemplo": "Joven diabética con vómitos, respiración de Kussmaul, glucosa 420, pH 7,15, HCO3 10 y cetonas +++: cetoacidosis diabética. Un paciente ictérico con coluria intensa, acolia y urobilinógeno ausente orienta a obstrucción completa del colédoco.",
+    "origen": "mixto",
+    "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Urobilinogeno.md"
+  },
+  "cilindros-urinarios": {
+    "porque": "Son moldes de proteína de Tamm-Horsfall que coagula dentro del túbulo y atrapa lo que encuentra, por eso su presencia prueba que el problema es renal. Los hialinos solos pueden aparecer con deshidratación o ejercicio; los hemáticos atrapan hematíes que salieron del glomérulo inflamado; los leucocitarios, pus del intersticio; y los céreos, túbulos dilatados y estancados de la IRC.",
+    "ejemplo": "Mujer de 40 años con endocarditis, hematuria, piuria y cilindros hemáticos en el sedimento: glomerulonefritis por inmunocomplejos, no una simple infección urinaria. Un anciano con creatinina crónicamente alta y cilindros céreos amplios tiene insuficiencia renal crónica avanzada.",
+    "origen": "vault",
+    "nota": "wiki/FISIOPATOLOGIA 2026/concepts/Sedimento-Urinario.md"
+  },
+  "nitritos-orina": {
+    "porque": "La dieta deja nitratos en la orina y las enterobacterias como E. coli tienen nitrato reductasa, que los convierte en nitritos; por eso un resultado positivo delata bacterias gramnegativas. La conversión necesita unas 4 horas de orina en vejiga, así que la poliuria o micciones frecuentes dan falso negativo, igual que gérmenes sin esa enzima como Enterococo o Staphylococcus saprophyticus.",
+    "ejemplo": "Mujer de 22 años con disuria y tira reactiva con nitritos y leucocitos positivos en la primera orina de la mañana: cistitis por E. coli muy probable. Otra con la misma clínica que orina cada media hora puede tener nitritos negativos sin descartar infección: se pide urocultivo.",
+    "origen": "literatura",
+    "nota": null
+  },
+  "frecuencia-de-deposiciones": {
+    "porque": "El ritmo depende de la motilidad del colon y del agua que absorbe. La diarrea alta (delgado) da gran volumen porque llega mucho líquido y pocas veces; la baja (colon) da muchas evacuaciones pequeñas con moco y sangre porque el recto inflamado se irrita. El estreñimiento ocurre con poca fibra, fármacos u obstrucción; un fecaloma puede dejar escapar líquido y simular diarrea.",
+    "ejemplo": "Adulta mayor encamada con 'diarrea' de pequeñas cantidades de líquido fecaloideo tras una semana sin evacuar: el tacto rectal halla un fecaloma, es pseudodiarrea y no debe darse antidiarreico. Un adulto con heces tipo 6 de Bristol, 6 veces al día y voluminosas, tiene diarrea alta.",
+    "origen": "vault",
+    "nota": "wiki/SEMIOLOGIA/clases/09a_Anamnesis_y_sintomas_del_aparato_digestivo.md"
+  },
+  "diarrea-duracion": {
+    "porque": "La duración orienta la causa: la aguda empieza de golpe en una persona sana y casi siempre es infecciosa y autolimitada; la crónica sugiere malabsorción, colon irritable, tumor o causa endocrina. La pérdida de agua, potasio y bicarbonato explica la hipopotasemia, la acidosis y la IRA prerrenal. [vault difiere: 09a da aguda menor de un mes; la literatura, aguda menor de 14 días]",
+    "ejemplo": "Niño de 3 años en una comunidad rural de Puno con 3 días de deposiciones con sangre, moco, pujo y fiebre: disentería, sospecha de Shigella. Un adulto con 2 meses de diarrea y esteatorrea que baja de peso tiene diarrea crónica y se estudia malabsorción.",
+    "origen": "mixto",
+    "nota": "wiki/SEMIOLOGIA/clases/09e_Grandes_cuadros_abdominales_sindromes_medicos.md"
+  }
+}
