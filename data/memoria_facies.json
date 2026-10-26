@@ -1,0 +1,662 @@
+{
+  "mitral": {
+    "escena": "Cora, el corazón boxeador, lleva puesta una MITRA de obispo tan apretada que le estrangula la válvula de entrada (estenosis mitral). Cada vez que la mitra aprieta, salpica pintura morada justo en los pómulos, la punta de la nariz y los labios del paciente, mientras el resto de su cara queda blanco como una hostia. Huele a incienso de iglesia y se oye el crujido de la mitra al cerrarse.",
+    "ancla": "Pómulos morados sobre cara pálida → la mitra apretada de Cora → facies Mitral → estenosis mitral.",
+    "tecnicas": [
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Cianosis en pómulos, nariz y labios que contrasta con la palidez del resto de la cara",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Cara pálida con cianosis localizada en pómulos, nariz y labios: ¿qué facies es?",
+        "a": "Facies mitral"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies mitral?",
+        "a": "Estenosis mitral / doble lesión mitral"
+      },
+      {
+        "tipo": "trampa",
+        "q": "¿Cómo distingues la facies mitral de la de Ayerza si ambas tienen cianosis?",
+        "a": "Mitral: cianosis localizada (pómulos, nariz, labios) que contrasta con palidez. Ayerza: cianosis intensa con poliglobulia ('cardíacos negros'), por cor pulmonale crónico."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un corazón rojo boxeador con guantes y cinturón de campeón que lleva una mitra de obispo diminuta y apretadísima, haciendo muecas de esfuerzo. Acción: la mitra salpica pintura violeta que cae con precisión sobre los pómulos, la punta de la nariz y los labios de un adulto sereno de cara muy pálida, sentado a su lado. Elementos secundarios: un incensario que suelta humo, gotas violetas en el aire. Escenario: interior sencillo de capilla con luz cálida. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "aortica": {
+    "escena": "Un MOSQUETERO (Musset → mosquete) con una AORTA-manguera roja que gotea hacia atrás (insuficiencia aórtica) está de pie junto al paciente. Con cada latido de Cora, la cabeza del mosquetero y la del paciente asienten a la vez, '¡sí, sí, sí!', y en el cuello se ve saltar la carótida como una serpiente bajo la piel. Alrededor de la boca del paciente queda un anillo blanco, como si se hubiera tomado un vaso de leche.",
+    "ancla": "Anillo pálido en la boca + cabeza que asiente con el latido → mosquetero Musset con la aorta que gotea → facies Aórtica → insuficiencia aórtica.",
+    "tecnicas": [
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Palidez peribucal con signo de Musset y latido carotídeo visible",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Palidez alrededor de la boca, signo de Musset y latido carotídeo visible: ¿qué facies es?",
+        "a": "Facies aórtica"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies aórtica?",
+        "a": "Insuficiencia aórtica"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Facies aórtica vs. mitral: ¿qué color las separa?",
+        "a": "Aórtica: palidez peribucal (más Musset y latido carotídeo). Mitral: cianosis en pómulos, nariz y labios sobre fondo pálido."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un mosquetero caricaturesco con sombrero de pluma que sostiene una manguera roja con forma de arteria aorta que gotea hacia atrás. Acción: él y un adulto tranquilo a su lado asienten con la cabeza al mismo ritmo, con líneas de movimiento rítmicas; en el cuello del adulto se marca un latido visible con ondas de pulso. Elementos secundarios: un anillo claro y pálido alrededor de la boca del adulto, un corazón rojo boxeador al fondo dando el ritmo. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "de-ayerza": {
+    "escena": "Sube por un cerro de Puno Pulmi, el globo-pulmón, empujando cuesta arriba a Cora, que va cargada de sangre espesa como mermelada de mora (poliglobulia). Pulmi grita '¡AY, qué FUERZA!' (Ayerza) a cada paso; tanto esfuerzo pone la cara del paciente de un morado casi negro. Hace frío de altura, el aire es delgado y se oye el jadeo.",
+    "ancla": "Cara morado-negra + sangre espesa → '¡Ay, qué fuerza!' de Pulmi empujando a Cora en la altura → Ayerza → cor pulmonale crónico.",
+    "tecnicas": [
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Cianosis intensa con poliglobulia ('cardíacos negros')",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Cianosis intensa, casi negra, con poliglobulia ('cardíacos negros'): ¿qué facies es?",
+        "a": "Facies de Ayerza"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies de Ayerza y por qué es frecuente en Puno?",
+        "a": "Cor pulmonale crónico; frecuente en Puno por altura"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Ayerza vs. cianótica: ¿qué rasgo de la ficha distingue a cada una?",
+        "a": "Ayerza: cianosis intensa con poliglobulia ('cardíacos negros'), cor pulmonale crónico. Cianótica: cianosis labial intensa con congestión conjuntival, eritrocitosis de altura o cor pulmonar crónico."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: dos globos-pulmón rosados con lentes de buceo, sudando y con cara de esfuerzo enorme. Acción: empujan cuesta arriba por una ladera andina a un corazón rojo boxeador cargado de un líquido rojo oscuro espeso como mermelada. Elementos secundarios: a un lado, un adulto andino con poncho, digno y sereno, de cara intensamente violácea oscura; nubes bajas y montañas nevadas al fondo. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "hipocratica-o-peritoneal": {
+    "escena": "El busto de mármol de HIPÓCRATES cobra vida en urgencias, pero se agrieta: los ojos se le hunden como dos pozos, la nariz se le afila como un lápiz recién tajado, se pone blanco y lo cubre un sudor frío que gotea. Las alas de su nariz aletean como mariposa asustada. Bajo él, el abdomen del paciente está duro como una tabla de mármol (peritonitis) y suena una alarma de shock.",
+    "ancla": "Ojos hundidos + nariz afilada + sudor → el busto de Hipócrates que se agrieta → facies Hipocrática → peritonitis, shock inminente.",
+    "tecnicas": [
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Ojos hundidos y nariz afilada, con sudor, palidez y aleteo nasal",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Ojos hundidos, nariz afilada, sudor, palidez y aleteo nasal: ¿qué facies es?",
+        "a": "Facies hipocrática o peritoneal"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies hipocrática?",
+        "a": "Peritonitis generalizada, shock inminente"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Facies hipocrática vs. pálida: ¿qué las diferencia?",
+        "a": "La pálida tiene palidez facial marcada pero sin los demás rasgos de la hipocrática (ojos hundidos, nariz afilada, sudor, aleteo nasal)."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un busto de mármol blanco de un sabio griego barbudo que cobra vida con expresión de alarma. Acción: el mármol se agrieta, los ojos se hunden en dos cuencas profundas, la nariz se afila en punta fina, gotas de sudor caen por la cara pálida y las alas de la nariz se abren y cierran con líneas de movimiento. Elementos secundarios: una luz roja de alarma girando, una camilla de urgencias. Fondo: pasillo de hospital simple. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "febril": {
+    "escena": "Termo, el termómetro bombero, llega corriendo con la sirena encendida: con su manguera apunta solo a los pómulos del paciente, que arden rojos como dos brasas, mientras el resto de la cara queda pálido. Los ojos del paciente brillan como dos faros mojados. Se siente el calor que sale de las mejillas como de una estufa.",
+    "ancla": "Dos brasas en los pómulos + ojos brillantes → Termo el bombero → facies Febril → síndrome febril.",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Pómulos rojos con el resto de la cara pálido y ojos brillantes",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Pómulos rojos, resto de la cara pálido y ojos brillantes: ¿qué facies es?",
+        "a": "Facies febril"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies febril?",
+        "a": "Síndrome febril"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Facies febril vs. neumónica: ¿qué agrega la neumónica?",
+        "a": "La neumónica, además de mejillas rojas, tiene aleteo nasal y herpes labial; la febril tiene pómulos rojos, resto pálido y ojos brillantes."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un termómetro antropomórfico con casco de bombero, corriendo con una manguera. Acción: apunta su manguera a las mejillas de un niño tranquilo que tiene solo los pómulos rojo intenso y brillantes como brasas, con el resto de la cara pálida y los ojos muy brillantes. Elementos secundarios: ondas de calor que suben de las mejillas, una manta suave. Escenario: dormitorio simple. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "neumonica": {
+    "escena": "Pulmi, el globo-pulmón, está rojo de fiebre y tan agitado que las alas de la nariz del paciente aletean como dos pajaritos tratando de despegar. En la comisura del labio aparece una pequeña ampolla brillante, como una gota de rocío (herpes labial). Se oye el silbido rápido del aire entrando por la nariz.",
+    "ancla": "Mejillas rojas + alas de la nariz que vuelan + ampollita en el labio → Pulmi agitado → facies Neumónica → neumonía.",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Mejillas rojas con aleteo nasal y herpes labial",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Mejillas rojas, aleteo nasal y herpes labial: ¿qué facies es?",
+        "a": "Facies neumónica"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies neumónica?",
+        "a": "Neumonía"
+      },
+      {
+        "tipo": "trampa",
+        "q": "¿Qué dos rasgos separan la facies neumónica de la febril?",
+        "a": "El aleteo nasal y el herpes labial (la febril: pómulos rojos, resto pálido, ojos brillantes)."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: dos globos-pulmón rosados con lentes de buceo, enrojecidos y sudorosos. Acción: soplan aire rápido y las alas de la nariz de un adulto sentado se abren como pequeñas alas de pájaro con líneas de movimiento. Elementos secundarios: las mejillas del adulto rojas, una pequeña vesícula brillante en la comisura del labio, un pajarito que revolotea junto a la nariz. Escenario: consultorio simple de colores claros. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "nefritica-o-renal": {
+    "escena": "Frijo, el frijol-riñón bombero, se equivoca de objetivo: en vez de sacar el agua del cuerpo, con su manguera llena dos globitos de agua debajo y alrededor de los ojos del paciente, que se hinchan como almohadas (edema periorbitario). La cara queda pálida, sin color, mientras Frijo, avergonzado, no logra cerrar la llave. Se oye el chapoteo del agua.",
+    "ancla": "Ojos hinchados como almohadas en cara pálida → Frijo llenando globos de agua → facies Nefrítica → IRC, síndrome nefrítico.",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Edema periorbitario con cara pálida",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Edema periorbitario con cara pálida: ¿qué facies es?",
+        "a": "Facies nefrítica o renal"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies nefrítica?",
+        "a": "IRC, síndrome nefrótico"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Facies nefrítica vs. mixedematosa: ambas hinchan los párpados, ¿qué agrega la mixedematosa?",
+        "a": "Mixedematosa: cara redonda, cejas ralas y apatía (hipotiroidismo avanzado). Nefrítica: edema periorbitario y cara pálida."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un riñón café con forma de frijol, con casco y manguera de bombero, con cara apenada. Acción: su manguera llena dos globitos de agua transparentes alrededor de los ojos de un adulto de cara pálida, que se ven como almohadillas hinchadas. Elementos secundarios: gotas de agua flotando, una llave de agua que no cierra. Escenario: baño simple azulejado. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "mixedematosa": {
+    "escena": "Una LICUADORA (mix-edema → mixer) gigante va en la velocidad más lenta, casi apagada: así está la mariposa tiroidea, posada encima, con las alas caídas y bostezando (hipotiroidismo). De la licuadora sale una masa de gelatina que redondea la cara del paciente y le infla los párpados; las cejas se le despeinan y se le caen pelitos. El paciente mira todo con calma infinita, sin ganas de nada, y se oye un zumbido lento, 'mmmm…'.",
+    "ancla": "Cara redonda de gelatina + cejas ralas + apatía → la licuadora lenta (mixer) con la mariposa dormida → facies Mixedematosa → hipotiroidismo avanzado.",
+    "tecnicas": [
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Cara redonda con párpados edematosos, cejas ralas y apatía",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Cara redonda, párpados edematosos, cejas ralas y apatía: ¿qué facies es?",
+        "a": "Facies mixedematosa"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies mixedematosa?",
+        "a": "Hipotiroidismo avanzado"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Mixedematosa vs. Cushing: las dos tienen cara redonda, ¿qué las separa?",
+        "a": "Cushing: cara roja y tensa, con acné e hipertricosis. Mixedematosa: párpados edematosos, cejas ralas y apatía."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: una licuadora gigante y somnolienta con párpados pesados, girando en cámara lenta. Acción: encima reposa una mariposa con alas caídas y bostezando; de la licuadora sale una gelatina suave que envuelve el rostro redondo de un adulto tranquilo y algo apático, de párpados hinchados y cejas escasas. Elementos secundarios: unos pocos pelitos de ceja flotando, una taza de té tibio. Escenario: sala con luz tenue. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "basedowiana-hipertiroidea": {
+    "escena": "BASEDOW suena a 'BASE de ojos': los ojos del paciente se salen de su base como dos resortes, '¡boing!', y brillan como focos (exoftalmos, mirada brillante). En el cuello, la mariposa tiroidea está enorme (bocio) y aletea a toda velocidad, cargada de cafés. El paciente mueve las piernas, mira el reloj, no puede estarse quieto (ansiedad). Huele a café cargado.",
+    "ancla": "Ojos que saltan de su base + bocio → 'BASE-de-ojos' → facies Basedowiana → Graves / hipertiroidismo.",
+    "tecnicas": [
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Exoftalmos con mirada brillante, más bocio y ansiedad",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Exoftalmos, mirada brillante, bocio y ansiedad: ¿qué facies es?",
+        "a": "Facies basedowiana (hipertiroidea)"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies basedowiana?",
+        "a": "Enfermedad de Graves / hipertiroidismo"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Basedowiana vs. Claude-Bernard-Horner: ¿qué pasa con el globo ocular en cada una?",
+        "a": "Basedowiana: exoftalmos (ojo hacia afuera), con bocio. Horner: enoftalmos (ojo hundido) con ptosis y miosis, unilateral."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: una mariposa gigante en el cuello de un adulto, aleteando a toda velocidad con líneas de movimiento y varias tazas de café a su alrededor. Acción: los ojos del adulto sobresalen de sus órbitas con pequeños resortes cómicos y brillan intensamente; el adulto, inquieto, mira un reloj. Elementos secundarios: un cuello abultado por la mariposa, vapor de café. Escenario: oficina simple. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "cushing-luna-llena": {
+    "escena": "Cushing suena a CUSHION (cojín en inglés): la cara del paciente es un cojín redondo, rojo y tan inflado que está tenso como tambor, y sale en el cielo como una LUNA LLENA roja. Sobre el cojín brotan granitos (acné) y vello de más (hipertricosis). Un frasco gigante de corticoides sigue inflándolo con un inflador, '¡fsss, fsss!'.",
+    "ancla": "Cara redonda, roja y tensa → cojín-cushion inflado con corticoides, luna llena → Cushing → exceso de glucocorticoides.",
+    "tecnicas": [
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Cara redonda, roja y tensa (luna llena)",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Cara redonda, roja y tensa, con acné e hipertricosis: ¿qué facies es?",
+        "a": "Facies de Cushing (luna llena)"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies de Cushing?",
+        "a": "Exceso de glucocorticoides"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Cushing vs. mixedematosa: ¿cómo las separas si ambas son redondas?",
+        "a": "Cushing: roja y tensa, con acné e hipertricosis. Mixedematosa: párpados edematosos, cejas ralas y apatía (hipotiroidismo)."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un cojín redondo, rojo brillante y muy inflado, tenso como un tambor, que flota en el cielo nocturno como una luna llena y tiene la cara amable de un adulto con algunos granitos y vello fino. Acción: un frasco de medicamento antropomórfico lo infla con un inflador de bicicleta. Elementos secundarios: estrellas, líneas de presión alrededor del cojín. Escenario: cielo nocturno simple. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "acromegalica": {
+    "escena": "ACRO-MEGA = las puntas en tamaño MEGA. Una hipófisis pequeñita, como un garbanzo con megáfono, grita '¡CRECE!' y la cara del paciente obedece: la frente se adelanta como una visera (arcos supraorbitarios), la mandíbula sale como un cajón, y la nariz y los labios se agrandan. Se oye el crujir del hueso creciendo como madera.",
+    "ancla": "Frente de visera + mandíbula de cajón + nariz y labios grandes → la hipófisis con megáfono 'acro-MEGA' → facies Acromegálica → exceso de GH.",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Arcos supraorbitarios y mandíbula prominentes, con nariz y labios grandes",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Arcos supraorbitarios y mandíbula prominentes, nariz y labios grandes: ¿qué facies es?",
+        "a": "Facies acromegálica"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies acromegálica?",
+        "a": "Exceso de GH (hipófisis)"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Acromegálica vs. leonina: las dos engrosan la nariz, ¿qué las diferencia?",
+        "a": "Acromegálica: crecen los huesos (arcos supraorbitarios, mandíbula) además de nariz y labios. Leonina: lepromas confluentes en frente y mejillas con nariz espesa (lepra lepromatosa)."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: una glándula diminuta con forma de garbanzo que grita con un megáfono, con ondas de sonido. Acción: frente a ella, el rostro amable de un adulto se agranda en sus extremos: frente prominente como visera, mandíbula grande y adelantada, nariz y labios grandes, con líneas de crecimiento. Elementos secundarios: una regla de medir, astillas de madera cómicas. Escenario: fondo liso de color. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "parkinsoniana": {
+    "escena": "PARKINSON suena a PARKING: la cara del paciente está ESTACIONADA en un parking, inmóvil como una estatua de cera, con la mirada fija al frente y cara de espanto congelada. Un guardia del parking le pone un cepo a la sonrisa para que no se mueva (hipomimia). Profe Neuro, el cerebro profesor, señala con su puntero la zona que se apagó.",
+    "ancla": "Cara de estatua con mirada fija y espanto → la cara estacionada en el PARKING → facies Parkinsoniana → enfermedad de Parkinson.",
+    "tecnicas": [
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Cara inmóvil con mirada fija e hipomimia ('expresión de espanto')",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Cara inmóvil, mirada fija, hipomimia, 'expresión de espanto': ¿qué facies es?",
+        "a": "Facies parkinsoniana"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies parkinsoniana?",
+        "a": "Enfermedad de Parkinson"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Parkinsoniana vs. esclerodérmica: las dos son inmóviles, ¿qué las separa?",
+        "a": "Esclerodérmica: piel dura, pómulos salientes, nariz afilada y boca pequeña (de momia). Parkinsoniana: hipomimia con mirada fija y expresión de espanto, sin esos cambios de la piel."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un adulto mayor digno sentado en una banca dentro de un estacionamiento, con el rostro quieto como estatua, mirada fija al frente y cejas levemente alzadas. Acción: a su lado, un cerebro rosado con birrete y puntero señala con cariño su cabeza; las líneas de un cajón de estacionamiento rodean la banca. Elementos secundarios: un pequeño cono de tráfico, un reloj detenido. Escenario: estacionamiento limpio y luminoso. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "lupica": {
+    "escena": "LUPUS = LOBO en latín: un lobo pintor, con boina, posa sobre la cara del paciente una MARIPOSA roja gigante: el cuerpo de la mariposa cae en el puente de la nariz y las dos alas se abren sobre las mejillas. El lobo aúlla orgulloso '¡auuu!' y el paciente sonríe al ver su 'tatuaje' de mariposa en el espejo.",
+    "ancla": "Mariposa roja en mejillas y nariz → el lobo (lupus) pintor → facies Lúpica → lupus eritematoso sistémico.",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Eritema en alas de mariposa en mejillas y nariz",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Eritema en alas de mariposa en mejillas y nariz: ¿qué facies es?",
+        "a": "Facies lúpica"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies lúpica?",
+        "a": "Lupus eritematoso sistémico"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Lúpica vs. febril: ambas enrojecen las mejillas, ¿qué detalle es propio de la lúpica?",
+        "a": "En la lúpica el eritema forma alas de mariposa que cruzan mejillas y nariz; en la febril solo los pómulos están rojos, el resto pálido y los ojos brillantes."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un lobo gris simpático con boina de pintor y pincel. Acción: coloca con delicadeza una gran mariposa roja sobre el rostro de una mujer joven y sonriente: el cuerpo de la mariposa sobre el puente de la nariz y las alas extendidas sobre ambas mejillas. Elementos secundarios: una paleta de pintor, un espejo de mano donde ella se mira. Escenario: taller de arte simple. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "leonina": {
+    "escena": "Un LEÓN noble y bondadoso le presta su cara al paciente: en la frente y las mejillas aparecen bultos que se juntan unos con otros como adoquines (lepromas confluentes) y la nariz se ensancha y engruesa como la de un felino. El león ruge suave y orgulloso, protegiendo al paciente. Se siente al tacto una piel gruesa y abultada.",
+    "ancla": "Frente y mejillas con bultos que se juntan + nariz espesa → el león → facies Leonina → lepra lepromatosa.",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Lepromas confluentes en frente y mejillas con nariz espesa",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Lepromas confluentes en frente y mejillas con nariz espesa: ¿qué facies es?",
+        "a": "Facies leonina"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies leonina?",
+        "a": "Lepra lepromatosa"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Leonina vs. acromegálica: ¿qué engrosa cada una?",
+        "a": "Leonina: lepromas confluentes en frente y mejillas, nariz espesa (lesiones de la piel). Acromegálica: arcos supraorbitarios y mandíbula prominentes, nariz y labios grandes (exceso de GH)."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un león majestuoso y bondadoso con melena dorada, abrazando protectoramente a un adulto de mirada serena. Acción: el rostro del adulto muestra la frente y las mejillas con nódulos que se unen en placas abultadas y una nariz ancha y gruesa, dibujado con respeto y sin exageración grotesca. Elementos secundarios: rayos de sol cálidos detrás del león. Escenario: sabana dorada simple. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "adenoidea": {
+    "escena": "Detrás de la nariz de un niño, dos esponjas gigantes (las adenoides hinchadas) taponan el paso del aire como corchos de botella. Su nariz se queda pequeña y afilada, como la punta de un lápiz, y como el aire no pasa, la boca le queda siempre entreabierta, como un buzón abierto por el que entra el viento con un silbido. El niño juega tranquilo, respirando por la boca.",
+    "ancla": "Boca siempre entreabierta + nariz pequeña afilada → esponjas-corcho tapando la nariz → facies Adenoidea → hipertrofia de adenoides en niños.",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Boca entreabierta permanente con nariz pequeña y afilada",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Niño con nariz pequeña y afilada y la boca entreabierta todo el tiempo: ¿qué facies es?",
+        "a": "Facies adenoidea"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies adenoidea?",
+        "a": "Hipertrofia de adenoides en niños"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Adenoidea vs. miasténica: ambas pueden mostrar la boca abierta, ¿cómo las separas?",
+        "a": "Adenoidea: boca entreabierta permanente con nariz pequeña y afilada, en niños. Miasténica: caída de los párpados superiores y de la mandíbula (miastenia gravis)."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un niño alegre jugando con bloques de colores, con nariz pequeña y fina y la boca entreabierta. Acción: en un recuadro tipo radiografía cómica detrás de su nariz, dos esponjas amarillas hinchadas bloquean el paso del aire como corchos; una corriente de aire con líneas de viento entra por su boca. Elementos secundarios: un corcho de botella flotando, una pequeña brisa dibujada. Escenario: cuarto de juegos luminoso. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "caquectica": {
+    "escena": "Un CAQUI (caqu-éctica) jugoso se va secando al sol hasta quedar como una pasa arrugada: así se vacía la cara del paciente. Un bichito ladrón (BICHAT → bicho) sale de las mejillas cargando en su espalda dos bolitas de grasa, dejando los cachetes hundidos. A lo lejos, dos sombras lentas (cáncer avanzado, tuberculosis) se llevan las reservas en una carretilla.",
+    "ancla": "Cachetes hundidos sin grasa → el caqui que se seca y el bicho que roba la bola de Bichat → facies Caquéctica → consunción (cáncer avanzado, TBC).",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Pérdida del panículo adiposo y de la bola de Bichat (cara desnutrida y flaca)",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Cara flaca con pérdida del panículo adiposo y de la bola de Bichat: ¿qué facies es?",
+        "a": "Facies caquéctica"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies caquéctica?",
+        "a": "Consunción: cáncer avanzado, tuberculosis"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Caquéctica vs. hipocrática: ambas se ven demacradas, ¿qué las distingue?",
+        "a": "Caquéctica: desnutrición con pérdida del panículo adiposo y de la bola de Bichat (consunción). Hipocrática: ojos hundidos, nariz afilada, sudor, palidez y aleteo nasal (peritonitis, shock inminente)."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: una fruta caqui naranja con carita que se va arrugando y secando bajo un sol fuerte, en tres etapas de izquierda a derecha. Acción: un pequeño escarabajo simpático sale cargando en su espalda dos bolitas amarillas de grasa. Elementos secundarios: al lado, un adulto delgado y digno, con las mejillas hundidas, envuelto en una manta, mirando con serenidad. Escenario: patio soleado simple. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "cianotica": {
+    "escena": "Los Glóbulos, soldados rojos, son tantos en la altura que hacen fila apretada y se ponen morados; uno de ellos, con un cartucho de tinta CIAN de impresora, pinta de azul-violeta intenso los labios del paciente. Mientras tanto, los ojos se le llenan de venitas rojas como un mapa de carreteras (congestión conjuntival). Sopla el viento frío del altiplano.",
+    "ancla": "Labios azul-violeta + ojos congestionados → el soldado con tinta CIAN en la altura → facies Cianótica → eritrocitosis de altura, cor pulmonar crónico.",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Cianosis labial intensa con congestión conjuntival",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Cianosis labial intensa con congestión conjuntival: ¿qué facies es?",
+        "a": "Facies cianótica"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies cianótica?",
+        "a": "Eritrocitosis de altura, cor pulmonar crónico"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Cianótica vs. de Ayerza: ¿qué rasgos de la ficha corresponden a cada una?",
+        "a": "Cianótica: cianosis labial intensa y congestión conjuntival. Ayerza: cianosis intensa con poliglobulia ('cardíacos negros'), cor pulmonale crónico."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un glóbulo rojo soldado con casco que sostiene un gran cartucho de tinta cian y un pincel. Acción: pinta con cuidado de azul violeta intenso los labios de un adulto andino sereno con chullo, cuyos ojos muestran el blanco con finas venitas rojas. Elementos secundarios: una fila apretada de glóbulos rojos soldados detrás, montañas nevadas al fondo. Escenario: altiplano con cielo azul. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "de-claude-bernard-horner": {
+    "escena": "HORNER suena a HORNO, y CLAUDE-BERNARD a un perro SAN BERNARDO. En un solo lado de la cara el ojo es un horno viejo: la puerta del horno se cae a medio cerrar (ptosis), el horno se hunde en la pared (enoftalmos) y la lucecita de adentro queda chiquitita como cabeza de alfiler (miosis). El San Bernardo sigue el cable del horno hasta arriba del pulmón, donde Pulmi tiene un bulto en la punta que aprieta el cable (tumor del vértice) y ladra para avisar.",
+    "ancla": "Un solo ojo con párpado caído, hundido y pupila pequeña → el horno (Horner) con el San Bernardo (Claude-Bernard) → lesión simpática cervical, tumor del vértice pulmonar.",
+    "tecnicas": [
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Ptosis palpebral, enoftalmos y miosis de un solo lado",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Ptosis, enoftalmos y miosis de un solo lado: ¿qué facies es?",
+        "a": "Facies de Claude-Bernard-Horner"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies de Claude-Bernard-Horner?",
+        "a": "Lesión simpático cervical: tumor del vértice pulmonar"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Horner vs. miasténica: ambas tienen el párpado caído, ¿qué solo tiene Horner?",
+        "a": "Horner: enoftalmos y miosis, unilateral. Miasténica: caída de párpados superiores y de la mandíbula, sin miosis ni enoftalmos."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un perro San Bernardo con barrilito al cuello, atento y heroico. Acción: sigue con el hocico un cable que va desde un pequeño horno antiguo hasta la punta de un globo-pulmón rosado con lentes de buceo, donde un bulto aprieta el cable. Elementos secundarios: el horno representa el ojo de un adulto tranquilo: de un solo lado, párpado superior caído, ojo un poco hundido y pupila muy pequeña; el otro ojo normal. Escenario: fondo liso. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "de-depresion": {
+    "escena": "Sobre la cabeza del paciente flota una pequeña nube gris que llueve suavemente; el peso de las gotas lo hace bajar la cabeza (cabizbajo). Sus ojos miran fijo al piso y brillan como si estuvieran a punto de llorar. Un amigo se acerca con un paraguas y una taza caliente: la escena se siente tierna, no triste del todo. Huele a lluvia.",
+    "ancla": "Cabeza gacha + mirada fija y brillante → la nubecita gris que llueve encima → facies de Depresión → síndrome depresivo.",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Cabizbajo, con mirada fija y brillante y expresión de tristeza",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Paciente cabizbajo, con mirada fija y brillante y expresión de tristeza: ¿qué facies es?",
+        "a": "Facies de depresión"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies de depresión?",
+        "a": "Síndrome depresivo"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Depresión vs. parkinsoniana: ambas tienen mirada fija, ¿qué las distingue?",
+        "a": "Depresión: cabizbajo, mirada brillante y expresión de tristeza. Parkinsoniana: cara inmóvil con hipomimia y 'expresión de espanto'."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un adulto joven sentado con la cabeza inclinada hacia abajo, mirada fija y ojos brillantes de tristeza, dibujado con ternura. Acción: sobre su cabeza flota una pequeña nube gris que deja caer gotas suaves; un amigo sonriente se acerca con un paraguas amarillo y una taza humeante. Elementos secundarios: charquitos brillantes, un rayo de sol asomando. Escenario: banca de parque simple. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "etilica": {
+    "escena": "Chef Hepa, el hígado cocinero, hace un FLAMBEADO con una botella de alcohol: '¡FUUUSH!', la llamarada le sube a la cara al paciente, que queda colorada como tomate (rubor facial), y el humo le enrojece los ojos. Chef Hepa tose y se tambalea, agotado de tanto procesar alcohol día tras día. Huele a licor quemado.",
+    "ancla": "Cara colorada + ojos rojos → el flambeado de Chef Hepa con alcohol → facies Etílica → alcoholismo crónico.",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Rubor facial con ojos rojos",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Rubor facial con ojos rojos: ¿qué facies es?",
+        "a": "Facies etílica"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies etílica?",
+        "a": "Alcoholismo crónico"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Etílica vs. febril: ambas enrojecen la cara, ¿qué cambia?",
+        "a": "Etílica: rubor facial y ojos rojos. Febril: solo los pómulos rojos con el resto pálido y ojos brillantes."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un hígado granate con gorro de chef, cansado y tambaleante, flambeando una sartén con una gran llamarada naranja. Acción: el calor de la llama sube hacia el rostro de un adulto sentado a la mesa, que se ve con las mejillas y la cara enrojecidas y los ojos rojos, dibujado con respeto. Elementos secundarios: una botella sin etiqueta, humo en espiral. Escenario: cocina simple. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "icterica": {
+    "escena": "Chef Hepa derrama una olla gigante de bilis AMARILLA y todo se tiñe: la piel del paciente y hasta lo blanco de los ojos queda amarillo canario. Tres culpables huyen: un Glóbulo que se revienta como globo de agua (hemólisis), Chef Hepa con el gorro hinchado (hepatitis/cirrosis) y una tubería tapada con una piedra (obstrucción). Huele a mostaza.",
+    "ancla": "Piel y blanco de los ojos amarillos → la olla de bilis de Chef Hepa con tres culpables → facies Ictérica → hiperbilirrubinemia (hemólisis, hepatitis/cirrosis, obstrucción).",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Coloración amarilla de piel, conjuntivas y escleróticas",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Coloración amarillenta de piel, conjuntivas y escleróticas: ¿qué facies es?",
+        "a": "Facies ictérica"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies ictérica?",
+        "a": "Hiperbilirrubinemia: hemólisis, hepatitis/cirrosis, obstrucción"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Ictérica vs. pálida: ¿qué parte del ojo te ayuda a diferenciarlas?",
+        "a": "En la ictérica se tiñen de amarillo también las conjuntivas y escleróticas; la pálida es palidez facial marcada (anemia, endocarditis bacteriana subaguda)."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un hígado granate con gorro de chef que vuelca sin querer una olla gigante de líquido amarillo brillante. Acción: la ola amarilla tiñe la piel y el blanco de los ojos de un adulto sereno. Elementos secundarios: un glóbulo rojo que se rompe como globo de agua, una tubería con una piedra atascada, salpicaduras amarillas. Escenario: cocina simple con baldosas blancas. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "miastenica": {
+    "escena": "Miastenia GRAVIS suena a GRAVEDAD: un imán gigante en el piso tira de la cara del paciente hacia abajo. Los párpados superiores caen como persianas pesadas y la mandíbula se descuelga como un puente levadizo. El paciente intenta subirlos con todas sus fuerzas, pero se cansan y vuelven a caer, '¡clonk!'. Profe Neuro, con su puntero, señala la unión entre el nervio y el músculo.",
+    "ancla": "Párpados y mandíbula que caen → el imán de la GRAVEDAD (gravis) → facies Miasténica → miastenia gravis.",
+    "tecnicas": [
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Caída de los párpados superiores y de la mandíbula",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Caída de los párpados superiores y de la mandíbula: ¿qué facies es?",
+        "a": "Facies miasténica"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies miasténica?",
+        "a": "Miastenia gravis"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Miasténica vs. Claude-Bernard-Horner: ¿cómo las separas si ambas tienen ptosis?",
+        "a": "Miasténica: caída de párpados superiores y de la mandíbula. Horner: ptosis con enoftalmos y miosis, de un solo lado."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un imán gigante rojo en forma de herradura en el piso, con líneas de atracción hacia arriba. Acción: atrae suavemente los párpados superiores de un adulto tranquilo, que caen como persianas, y su mandíbula, que baja como un puente levadizo; el adulto hace un gesto cómico de esfuerzo por levantarlos. Elementos secundarios: un cerebro rosado con birrete señalando con su puntero, pesas pequeñas colgando. Escenario: fondo liso. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "palida": {
+    "escena": "La cara del paciente es una hoja de papel BLANCO: Los Glóbulos, que deberían pintarla de rosado, llegan muy pocos y cansados, con los pinceles casi secos (anemia). Al fondo, Cora tiene unas bacterias pegadas a su válvula como chicles (endocarditis bacteriana subaguda). A diferencia del busto de Hipócrates, aquí no hay ojos hundidos, ni nariz afilada, ni sudor: solo blanco.",
+    "ancla": "Cara blanca como papel, sin más → pocos Glóbulos con pinceles secos → facies Pálida → anemia, endocarditis bacteriana subaguda.",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Palidez facial marcada sin los demás rasgos de la hipocrática",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Palidez facial marcada sin ojos hundidos, nariz afilada ni sudor: ¿qué facies es?",
+        "a": "Facies pálida"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies pálida?",
+        "a": "Anemia, endocarditis bacteriana subaguda"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Pálida vs. hipocrática: ¿qué tiene la hipocrática que no tiene la pálida?",
+        "a": "Ojos hundidos, nariz afilada, sudor y aleteo nasal (peritonitis, shock inminente)."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un adulto sereno con el rostro blanco como una hoja de papel. Acción: unos pocos glóbulos rojos soldados con casco, cansados, intentan pintarle las mejillas con pinceles casi secos que apenas dejan color. Elementos secundarios: al fondo, un corazón rojo boxeador con pequeñas bacterias verdes pegadas como chicles, un tarro de pintura rosada vacío. Escenario: fondo liso claro. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "paralisis-facial-periferica": {
+    "escena": "Sopla el 'MAL VIENTO' sobre la mitad de la cara del paciente y la deja como una cortina caída: de ese lado el párpado no logra cerrarse (el ojo queda abierto como ventana trabada), el surco entre la nariz y la boca se plancha como si pasaran una plancha, y la sonrisa sale chueca, solo de un lado. Profe Neuro sostiene el cable del nervio facial que el viento desconectó.",
+    "ancla": "Media cara caída con ojo que no cierra y surco borrado → el 'mal viento' que desconecta el cable facial → parálisis facial periférica.",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Asimetría facial: no cierra el párpado y el surco nasolabial se borra del lado afectado",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Asimetría facial, no cierra el párpado y el surco nasolabial borrado: ¿qué facies es?",
+        "a": "Parálisis facial periférica"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la parálisis facial periférica?",
+        "a": "Lesión del nervio facial (\"mal viento\")"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Parálisis facial periférica vs. Claude-Bernard-Horner: ¿qué hace el párpado en cada una?",
+        "a": "Parálisis facial periférica: el párpado no cierra (ojo abierto). Horner: el párpado cae (ptosis) con enoftalmos y miosis."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: un remolino de viento con carita traviesa que sopla sobre la mitad de la cara de un adulto amable. Acción: de ese lado el párpado queda abierto sin cerrar, el pliegue entre nariz y boca se ve liso y la sonrisa sube solo del lado sano; el otro lado se ve normal. Elementos secundarios: un cerebro rosado con birrete sosteniendo un cable desconectado con una chispa, hojas volando. Escenario: calle ventosa simple. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  },
+  "esclerodermica-o-de-momia": {
+    "escena": "ESCLERO = duro: la piel del paciente se vuelve un vendaje tieso de MOMIA, tan apretado que la cara queda inmóvil. Las vendas tiran y marcan los pómulos salientes, afilan la nariz y fruncen la boca hasta dejarla pequeñita, como un ojal. Al tocarla suena 'toc, toc', dura como cartón.",
+    "ancla": "Cara dura e inmóvil, boca pequeña y nariz afilada → las vendas tiesas de la momia → facies Esclerodérmica → esclerodermia.",
+    "tecnicas": [
+      "visualizacion-imagenes"
+    ],
+    "rasgo_clave": "Cara inmóvil de piel dura, con pómulos salientes, nariz afilada y boca pequeña (de momia)",
+    "preguntas": [
+      {
+        "tipo": "inversa",
+        "q": "Cara inmóvil, piel dura, pómulos salientes, nariz afilada y boca pequeña: ¿qué facies es?",
+        "a": "Facies esclerodérmica (o de momia)"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué orienta la facies esclerodérmica?",
+        "a": "Esclerodermia"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Esclerodérmica vs. parkinsoniana: las dos son inmóviles, ¿qué solo tiene la esclerodérmica?",
+        "a": "Piel dura, pómulos salientes, nariz afilada y boca pequeña. La parkinsoniana es hipomimia con mirada fija y expresión de espanto."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura educativa exagerada, colores intensos y saturados, contornos limpios. Protagonista: una momia simpática y amable de vendas color crema muy tensas. Acción: las vendas tiran de su rostro, marcando pómulos salientes, una nariz fina y afilada y una boca pequeña y fruncida; alguien golpea suavemente su mejilla con el nudillo y aparecen líneas de sonido de algo duro. Elementos secundarios: una pirámide al fondo, un rollo de venda. Escenario: desierto simple al atardecer. Composición: protagonista centrado y grande, fondo simple, formato cuadrado 1:1. El paciente se dibuja con ternura y dignidad, nunca ridiculizado; el humor está en los objetos y personajes sustitutos. Sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos."
+  }
+}

@@ -1,0 +1,1949 @@
+{
+ "glucosa-en-ayunas": {
+  "id": "glucosa-en-ayunas",
+  "parametro": "Glucosa en ayunas",
+  "grupo": "Glucosa, riñón y electrolitos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "Normal <100 mg/dL (70-100). 100-125 = prediabetes (glucosa alterada en ayunas); ≥126 = diabetes (repetir). <70 = hipoglucemia. Tríada de Whipple: síntomas + glucosa <70 + alivio al dar glucosa.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "visualizacion-imagenes",
+   "memorizar-nombres"
+  ],
+  "por_que": "Rango con tres cortes exactos que se preguntan siempre → sistema mayor (casa 70, tazas 100, túnel 125, tinaja 126) + escena con Don Azúcar. Whipple → 'whip' (látigo). La tríada de Whipple viene marcada como literatura (lit).",
+  "codigo": [
+   {
+    "numero": "70",
+    "letras": "C-S",
+    "palabra": "casa"
+   },
+   {
+    "numero": "100",
+    "letras": "T-Z-S",
+    "palabra": "tazas"
+   },
+   {
+    "numero": "125",
+    "letras": "T-N-L",
+    "palabra": "túnel"
+   },
+   {
+    "numero": "126",
+    "letras": "T-N-J",
+    "palabra": "tinaja"
+   }
+  ],
+  "escena": "En la puerta principal del Mercado Central, Don Azúcar, el terrón con sombrero de copa, vive en una CASA (70) de cuyo techo cuelgan cien TAZAS (100) de té dulce: entre la casa y las tazas está sano. Si se pasa, entra a un TÚNEL oscuro y pegajoso (100-125, prediabetes) y al salir cae de cabeza en una TINAJA de almíbar hirviendo (≥126, diabetes), donde se disuelve gritando. Si baja del piso de su casa (<70) tiembla, suda frío y se desmaya, hasta que un domador le hace chasquear un LÁTIGO (whip → Whipple) y le mete un caramelo en la boca: revive al instante.",
+  "ancla": "Casa-tazas sano; túnel prediabetes; tinaja diabetes; bajo la casa, látigo de Whipple.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cubo de azúcar blanco antropomórfico con sombrero de copa negro, ojos enormes de pánico, cayendo de cabeza dentro de una tinaja de barro gigante llena de almíbar dorado que burbujea. Elementos secundarios: detrás, la boca de un túnel oscuro y pegajoso del que acaba de salir; a la izquierda, una casita cuyo techo está cubierto de tazas de té colgantes. Escenario: entrada de un mercado andino techado con puestos de colores. Composición: el cubo centrado y grande, líneas de movimiento de caída, salpicaduras de almíbar. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": true,
+  "preguntas": [
+   {
+    "q": "¿Glucosa en ayunas normal?",
+    "a": "<100 mg/dL (70-100)",
+    "tipo": "directa"
+   },
+   {
+    "q": "Glucosa en ayunas de 112 mg/dL se clasifica como…",
+    "a": "Prediabetes (glucosa alterada en ayunas, 100-125)",
+    "tipo": "umbral"
+   },
+   {
+    "q": "¿Desde qué glucosa en ayunas se diagnostica diabetes?",
+    "a": "≥126 mg/dL (repetir para confirmar)",
+    "tipo": "umbral"
+   },
+   {
+    "q": "¿Qué es la tríada de Whipple?",
+    "a": "Síntomas + glucosa <70 + alivio al dar glucosa = hipoglucemia verdadera",
+    "tipo": "directa"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139",
+   "#124"
+  ],
+  "estacion": {
+   "seccion": "s5",
+   "n": 0,
+   "ubicacion": "Puerta principal"
+  },
+  "revisar": false
+ },
+ "glucosa-2-h-ptog-75-g-y-hba1c": {
+  "id": "glucosa-2-h-ptog-75-g-y-hba1c",
+  "parametro": "Glucosa 2 h (PTOG 75 g) y HbA1c",
+  "grupo": "Glucosa, riñón y electrolitos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "Normal: PTOG <140 mg/dL; HbA1c <5.7%. Prediabetes: PTOG 140-199 / HbA1c 5.7-6.4. DM: PTOG ≥200 / HbA1c ≥6.5. HbA1c refleja las 8-12 semanas previas.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Dos pruebas con dos cortes cada una → sistema mayor: torso 140, nueces 200 (PTOG); lago 57, jaula 65 (HbA1c; el punto decimal es obvio, se codifican solo los dígitos). Los cortes 199 y 6.4 se deducen (justo bajo el siguiente).",
+  "codigo": [
+   {
+    "numero": "140",
+    "letras": "T-R-S",
+    "palabra": "torres"
+   },
+   {
+    "numero": "200",
+    "letras": "N-C-S",
+    "palabra": "nueces"
+   },
+   {
+    "numero": "57",
+    "letras": "L-G",
+    "palabra": "lago"
+   },
+   {
+    "numero": "65",
+    "letras": "J-L",
+    "palabra": "jaula"
+   }
+  ],
+  "escena": "En el puesto de azúcar y harina, Don Azúcar se toma de golpe un vaso con 75 g de jarabe y espera dos horas. Si está sano, sólo le llega hasta la altura de dos TORRES (140) de terrones que lleva a cuestas, como una camiseta dulce. Si se diabetiza, de lo alto de las torres le brotan NUECES (200) por todos lados y suenan crac-crac al caer. Al lado, un glóbulo rojo azucarado (HbA1c) lleva tres meses nadando en un LAGO de almíbar (5.7, empieza el riesgo): cuando el lago se espesa demasiado, el glóbulo queda atrapado en una JAULA de caramelo (6.5, diabetes).",
+  "ancla": "PTOG: torres sanas, nueces diabetes. HbA1c: lago prediabetes, jaula diabetes.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cubo de azúcar con sombrero de copa bebiendo de un vaso gigante de jarabe, con dos torres de terrones a sus lados de las que le brotan nueces que caen. Elementos secundarios: a su lado, un glóbulo rojo cubierto de azúcar atrapado dentro de una jaula de caramelo dorado, sobre un pequeño lago de almíbar. Escenario: puesto de mercado andino con sacos de azúcar y harina. Composición: cubo centrado, colores blanco, dorado y rojo, líneas de movimiento de las nueces cayendo. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Valor normal de glucosa a las 2 h en la PTOG de 75 g?",
+    "a": "<140 mg/dL",
+    "tipo": "directa"
+   },
+   {
+    "q": "PTOG a las 2 h de 210 mg/dL indica…",
+    "a": "Diabetes (≥200)",
+    "tipo": "umbral"
+   },
+   {
+    "q": "¿Cortes de HbA1c para prediabetes y diabetes?",
+    "a": "5.7-6.4% prediabetes; ≥6.5% diabetes",
+    "tipo": "umbral"
+   },
+   {
+    "q": "¿Qué periodo refleja la HbA1c?",
+    "a": "El control glucémico de las 8-12 semanas previas",
+    "tipo": "directa"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s5",
+   "n": 1,
+   "ubicacion": "Puesto de azúcar y harina"
+  },
+  "revisar": false
+ },
+ "urea-sanguinea": {
+  "id": "urea-sanguinea",
+  "parametro": "Urea sanguínea",
+  "grupo": "Glucosa, riñón y electrolitos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "Urea 15-45 mg/dL. Sube: caída de TFG (IRA, IRC), deshidratación/prerrenal, catabolismo, sangrado digestivo. >400 mg/dL = uremia franca. Síndrome urémico: aliento urinoso, escarcha urémica, frote pericárdico, asterixis, prurito.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "mnemotecnia",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango numérico (tele 15, rulo 45) + umbral de uremia (rosas 400) + signos del síndrome urémico en una escena. El síndrome urémico viene marcado como literatura (lit).",
+  "codigo": [
+   {
+    "numero": "15",
+    "letras": "T-L",
+    "palabra": "tele"
+   },
+   {
+    "numero": "45",
+    "letras": "R-L",
+    "palabra": "rulo"
+   },
+   {
+    "numero": "400",
+    "letras": "R-S-S",
+    "palabra": "rosas"
+   }
+  ],
+  "escena": "En el puesto de sal, Frijo el frijol bombero mira una TELE (15) sentado junto a una señora con RULOS (45): mientras la urea quede entre la tele y los rulos, todo tranquilo. Pero Frijo se tapa (cae la TFG) y la urea se acumula hasta formar un ramo de 400 ROSAS que huelen a orina. La señora de rulos sopla y su aliento es urinoso, su piel se cubre de escarcha blanca como sal, se rasca sin parar, sus manos aletean (asterixis) y su corazón roza la pared con un frote áspero.",
+  "ancla": "Urea entre la tele y los rulos; a las 400 rosas, uremia.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un riñón café con forma de frijol y casco de bombero con manguera, tapado y sudando, sentado frente a un televisor antiguo. Acción: a su lado una señora con rulos enormes sopla un aliento amarillento visible, tiene la piel cubierta de escarcha blanca como sal y se rasca, mientras sus manos aletean. Elementos secundarios: un ramo gigantesco de rosas amarillas que crece y llena el puesto. Escenario: puesto de sal de un mercado andino con sacos blancos. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Valor normal de la urea sanguínea?",
+    "a": "15-45 mg/dL",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Qué valor de urea se considera uremia franca?",
+    "a": ">400 mg/dL",
+    "tipo": "umbral"
+   },
+   {
+    "q": "Nombra 3 signos del síndrome urémico",
+    "a": "Aliento urinoso, escarcha urémica, frote pericárdico, asterixis, prurito",
+    "tipo": "lista"
+   },
+   {
+    "q": "Además de la caída de TFG, ¿qué causas no renales suben la urea?",
+    "a": "Deshidratación/prerrenal, catabolismo, sangrado digestivo",
+    "tipo": "directa"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s5",
+   "n": 2,
+   "ubicacion": "Puesto de sal"
+  },
+  "revisar": false
+ },
+ "bun": {
+  "id": "bun",
+  "parametro": "BUN",
+  "grupo": "Glucosa, riñón y electrolitos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "BUN 7-20 mg/dL (Urea = BUN × 2.14). BUN/Cr >20:1 sugiere origen prerrenal. En Perú se reporta como urea total, no como BUN.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango (saco 07, NASA 20) + la conversión a urea (×2.14, 'el BUN es la mitad de la urea'). El 2.14 se ancla con 'dos toros' (2 + toro 14) solo en la escena.",
+  "codigo": [
+   {
+    "numero": "07",
+    "letras": "S-C",
+    "palabra": "saco"
+   },
+   {
+    "numero": "20",
+    "letras": "N-S",
+    "palabra": "NASA"
+   }
+  ],
+  "escena": "En el puesto de plátanos, Frijo carga un SACO (07) pequeño de nitrógeno: es el BUN, la mitad de la urea. Lo lanza tan alto que llega a la NASA (20) y un astronauta lo devuelve. Para volverlo urea, DOS TOROS lo pisan y lo inflan al doble y un poquito más (×2.14). Si el saco de BUN pesa más de 20 veces la creatinina, es que al frijol le falta agua: prerrenal.",
+  "ancla": "BUN: del saco a la NASA; dos toros lo vuelven urea.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un riñón café con forma de frijol y casco de bombero lanzando un pequeño saco de tela hacia el cielo, donde lo atrapa un astronauta con traje blanco junto a un cohete. Elementos secundarios: dos toros negros pisando otro saco que se infla al doble de tamaño. Escenario: puesto de plátanos de un mercado andino con racimos amarillos. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Valor normal del BUN?",
+    "a": "7-20 mg/dL",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Cómo se convierte el BUN en urea?",
+    "a": "Urea = BUN × 2.14",
+    "tipo": "directa"
+   },
+   {
+    "q": "BUN/Cr mayor de 20:1 sugiere…",
+    "a": "Origen prerrenal",
+    "tipo": "umbral"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s5",
+   "n": 3,
+   "ubicacion": "Puesto de plátanos"
+  },
+  "revisar": false
+ },
+ "relacion-urea-creatinina": {
+  "id": "relacion-urea-creatinina",
+  "parametro": "Relación urea/creatinina",
+  "grupo": "Glucosa, riñón y electrolitos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "Normal 10-20. >20 = IRA prerrenal (deshidratación, sangrado, bajo gasto). <15 = parenquimatosa/postrenal; <10 = hepatopatía severa o desnutrición. El corte 20 es para BUN/Cr; con urea total el equivalente prerrenal es ≈40.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "memorizar-conceptos",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango (taza 10, NASA 20) + la trampa del corte con urea total (rosa 40). La regla BUN/Cr vs urea viene marcada como literatura (lit).",
+  "codigo": [
+   {
+    "numero": "10",
+    "letras": "T-Z",
+    "palabra": "taza"
+   },
+   {
+    "numero": "20",
+    "letras": "N-S",
+    "palabra": "NASA"
+   },
+   {
+    "numero": "40",
+    "letras": "R-S",
+    "palabra": "rosa"
+   }
+  ],
+  "escena": "En el puesto de quesos, Frijo pone urea en una TAZA (10) y la balancea contra un trozo de creatinina. Mientras la taza no pase de un cohete de la NASA (20), el cociente es normal. Si el frijol está seco (deshidratado o sangrando), la urea hierve y la taza sale disparada a la NASA y más allá: prerrenal. Pero ojo: si el vendedor te da urea total, la taza debe llegar a una ROSA (40) para ser prerrenal, porque la urea pesa el doble del BUN.",
+  "ancla": "Taza a la NASA: normal. Pasar la NASA (o la rosa si es urea total) = prerrenal.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un riñón café con forma de frijol y casco de bombero, reseco y agrietado, viendo cómo una taza humeante sale disparada como cohete hacia el cielo. Elementos secundarios: una rosa roja gigante clavada en lo alto como meta; un trozo de queso en el otro plato de una balanza. Escenario: puesto de quesos de un mercado andino. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Relación urea/creatinina normal?",
+    "a": "10-20",
+    "tipo": "directa"
+   },
+   {
+    "q": "Relación >20 sugiere IRA…",
+    "a": "Prerrenal (deshidratación, sangrado, bajo gasto)",
+    "tipo": "umbral"
+   },
+   {
+    "q": "Si el laboratorio reporta urea total (no BUN), ¿cuál es el corte prerrenal aproximado?",
+    "a": "≈40 (urea = BUN × 2.14)",
+    "tipo": "trampa"
+   },
+   {
+    "q": "Urea 180 / Cr 5 = 36, pero la Cr no mejora con volumen: ¿diagnóstico?",
+    "a": "NTA (necrosis tubular aguda)",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#043"
+  ],
+  "estacion": {
+   "seccion": "s5",
+   "n": 4,
+   "ubicacion": "Puesto de quesos"
+  },
+  "revisar": false
+ },
+ "creatinina-serica": {
+  "id": "creatinina-serica",
+  "parametro": "Creatinina sérica",
+  "grupo": "Glucosa, riñón y electrolitos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "Creatinina 0.6-1.4 mg%. Sube con caída de TFG (IRA, IRC); marcador tardío (la TFG cae ~50% antes de subir). Baja con poca masa muscular. IRA (KDIGO): Cr ↑ ≥0.3 mg/dL en 48 h, o ≥1.5 × basal en 7 días, o diuresis <0.5 mL/kg/h por 6 h.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango con decimales (ceja 06, toro 14). Los criterios KDIGO (lit) van como escena secundaria; la creatinina viene del músculo, por eso baja con poca masa muscular.",
+  "codigo": [
+   {
+    "numero": "06",
+    "letras": "C-J",
+    "palabra": "ceja"
+   },
+   {
+    "numero": "14",
+    "letras": "T-R",
+    "palabra": "toro"
+   }
+  ],
+  "escena": "En el puesto de leche, un TORO (14) musculoso suelta creatinina por el sudor de sus músculos, y Frijo la bebe y la filtra por una CEJA (06) tupida que hace de colador. Entre la ceja y el toro, normal. Si Frijo se rompe, la creatinina sube, pero llega tarde: cuando por fin se ve, ya perdió la mitad de su filtro. Un anciano flaquito, sin músculos, apenas suelta creatinina: por eso la suya es baja.",
+  "ancla": "Creatinina: de la ceja al toro; viene del músculo y avisa tarde.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un toro musculoso enorme sudando gotas blancas que caen en un balde de leche. Acción: un riñón café con forma de frijol y casco de bombero bebe del balde y lo filtra a través de una ceja gigante y peluda que usa como colador. Elementos secundarios: un anciano muy delgado que apenas suda a un lado. Escenario: puesto de leche de un mercado andino con porongos metálicos. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Creatinina sérica normal (Semiología)?",
+    "a": "0.6-1.4 mg%",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Por qué la creatinina es un marcador tardío?",
+    "a": "La TFG cae ~50% antes de que suba",
+    "tipo": "directa"
+   },
+   {
+    "q": "Criterios KDIGO de IRA por creatinina",
+    "a": "↑ ≥0.3 mg/dL en 48 h o ≥1.5 × basal en 7 días (o diuresis <0.5 mL/kg/h por 6 h)",
+    "tipo": "directa"
+   },
+   {
+    "q": "Anciano desnutrido con Cr 0.5: ¿por qué tan baja?",
+    "a": "Poca masa muscular",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s5",
+   "n": 5,
+   "ubicacion": "Puesto de leche"
+  },
+  "revisar": false
+ },
+ "clearance-de-creatinina-tfg": {
+  "id": "clearance-de-creatinina-tfg",
+  "parametro": "Clearance de creatinina / TFG",
+  "grupo": "Glucosa, riñón y electrolitos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "Varón 97-137, mujer 88-128 mL/min (promedio 120). Baja: <60 = IRC; 50-80 leve; 10-50 moderada; <10 grave (diálisis). Sube por hiperfiltración: embarazo, diabetes inicial.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Muchas cifras: se codifica lo más preguntado (promedio tenis 120, IRC choza 60, diálisis taza 10); los rangos por sexo se deducen como ±~17 alrededor del promedio (varón algo más alto). La juguería del mercado = el filtro.",
+  "codigo": [
+   {
+    "numero": "120",
+    "letras": "T-N-S",
+    "palabra": "tunas"
+   },
+   {
+    "numero": "60",
+    "letras": "CH-Z",
+    "palabra": "choza"
+   },
+   {
+    "numero": "10",
+    "letras": "T-Z",
+    "palabra": "taza"
+   }
+  ],
+  "escena": "En la juguería, Frijo filtra jugo con un colador hecho de una penca de TUNAS espinosas (120 mL/min en promedio): el jugo sale a chorros. Cuando el colador se tapa y gotea por debajo de una CHOZA (60), ya hay insuficiencia renal crónica. Si apenas llena una TAZA (10), conectan a Frijo a una máquina de diálisis que zumba. Una embarazada y un diabético recién diagnosticado, en cambio, exprimen tan fuerte que el jugo desborda (hiperfiltración).",
+  "ancla": "TFG: pencas de tunas normal; bajo la choza IRC; una taza = diálisis.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un riñón café con forma de frijol y casco de bombero que usa una penca gigante de tunas como colador, filtrando un chorro de jugo rojo de tuna hacia una jarra. Elementos secundarios: al fondo, una choza de paja y una pequeña taza goteando conectada a una máquina con tubos. Escenario: juguería de mercado andino con frutas de colores. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Clearance de creatinina normal promedio y por sexo?",
+    "a": "Prom. 120 mL/min; varón 97-137, mujer 88-128",
+    "tipo": "directa"
+   },
+   {
+    "q": "TFG por debajo de qué valor define IRC?",
+    "a": "<60 mL/min",
+    "tipo": "umbral"
+   },
+   {
+    "q": "TFG <10 mL/min indica…",
+    "a": "Insuficiencia grave: diálisis",
+    "tipo": "umbral"
+   },
+   {
+    "q": "¿En qué situaciones hay hiperfiltración?",
+    "a": "Embarazo, diabetes inicial",
+    "tipo": "directa"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s5",
+   "n": 6,
+   "ubicacion": "Juguería"
+  },
+  "revisar": false
+ },
+ "sodio-serico": {
+  "id": "sodio-serico",
+  "parametro": "Sodio sérico",
+  "grupo": "Glucosa, riñón y electrolitos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "Na 135-145 mEq/L. >145 hipernatremia (>170 convulsiones, coma). <135 hiponatremia; síntomas <130; <120 convulsiones, coma, muerte. Corregir lento: ≤8-10 mEq/L en 24 h (rápido en hipo → mielinólisis; en hiper → edema cerebral).",
+  "tecnicas": [
+   "memorizar-numeros",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango exacto muy preguntado. El 1 inicial se deduce (el Na siempre es 1xx, como el 7 del pH) y se codifican 35 (miel) y 45 (rulo). Cortes graves: tenis 120, tacos 170. Personaje nuevo DON SALERO: salero gigante de vidrio que arrastra el agua consigo (el agua sigue al sodio) y actúa sobre el cerebro: así el Na se distingue del K (corazón) por el órgano que sufre. La regla de corrección es literatura (lit).",
+  "codigo": [
+   {
+    "numero": "35",
+    "letras": "M-L",
+    "palabra": "miel"
+   },
+   {
+    "numero": "45",
+    "letras": "R-L",
+    "palabra": "rulo"
+   },
+   {
+    "numero": "120",
+    "letras": "T-N-S",
+    "palabra": "tunas"
+   },
+   {
+    "numero": "170",
+    "letras": "T-C-S",
+    "palabra": "tacos"
+   }
+  ],
+  "escena": "En el puesto de carnes, DON SALERO, un salero de vidrio gigante, sala un jamón: por donde va la sal, el agua lo sigue como un perrito. Su tapa tiene MIEL (135) abajo y una señora con RULOS (145) arriba. Si sala de más (>145), el agua huye de las neuronas, el cerebro se arruga como pasa y, pasando los TACOS (170), convulsiona. Si se queda sin sal (<135), el agua inunda el cerebro, que se hincha como globo; bajo unas TUNAS espinosas (120), convulsiona y entra en coma. Y si lo corriges de golpe, el cerebro se rompe: se corrige lento, una cucharadita por día.",
+  "ancla": "Sodio = salero del cerebro: de la miel a los rulos; corrígelo lento.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un salero de vidrio gigante antropomórfico con ojos y brazos, con miel goteando por su base y rulos de peluquería en su tapa, sacudiéndose sobre un cerebro rosado. Acción: chorros de agua siguen a la sal como una correa, y el cerebro a un lado se hincha como globo con cara de pánico. Elementos secundarios: unas tunas y un taco a los costados. Escenario: puesto de carnes de mercado andino. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": true,
+  "preguntas": [
+   {
+    "q": "¿Sodio sérico normal?",
+    "a": "135-145 mEq/L",
+    "tipo": "directa"
+   },
+   {
+    "q": "135-145 mEq/L es el rango normal de… (electrolito sérico)",
+    "a": "Sodio",
+    "tipo": "inversa"
+   },
+   {
+    "q": "¿Desde qué Na aparecen síntomas y desde cuál convulsiones en la hiponatremia?",
+    "a": "Síntomas <130; convulsiones, coma y muerte <120",
+    "tipo": "umbral"
+   },
+   {
+    "q": "¿Cuánto se corrige el Na por día y qué pasa si se corrige rápido una hiponatremia?",
+    "a": "≤8-10 mEq/L en 24 h; mielinólisis",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139",
+   "#148"
+  ],
+  "estacion": {
+   "seccion": "s5",
+   "n": 7,
+   "ubicacion": "Puesto de carnes"
+  },
+  "revisar": false
+ },
+ "potasio-serico": {
+  "id": "potasio-serico",
+  "parametro": "Potasio sérico",
+  "grupo": "Glucosa, riñón y electrolitos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "K 3.5-5.0 mEq/L. >5 hiperpotasemia (IRA/IRC, acidosis); grave >8; FV >9. <3.5 hipopotasemia (vómitos, diarrea, diuréticos); síntomas <2.5. ECG: hiperK T alta picuda → P plana y QRS ancho; hipoK T aplanada + onda U.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango exacto (miel 35, losa 50) + umbral de síntomas (anillo 25) + el ECG, que es lo que lo diferencia del sodio: el K actúa sobre el CORAZÓN (Cora), el Na sobre el cerebro. Personaje nuevo KUKY PLÁTANO: plátano gigante con un desfibrilador, siempre junto a Cora.",
+  "codigo": [
+   {
+    "numero": "35",
+    "letras": "M-L",
+    "palabra": "miel"
+   },
+   {
+    "numero": "50",
+    "letras": "L-S",
+    "palabra": "losa"
+   },
+   {
+    "numero": "25",
+    "letras": "N-L",
+    "palabra": "anillo"
+   }
+  ],
+  "escena": "En el puesto de hierbas, KUKY PLÁTANO, bañado en MIEL (3.5), patina sobre una LOSA (5.0) junto a Cora el corazón boxeador. Si llega demasiado potasio (>5, riñón que no lo saca), Kuky le clava a Cora unas picas altísimas como carpas de circo (T picudas), la carpa pequeña se aplasta (P plana), la base se ensancha (QRS ancho) y Cora cae temblando en fibrilación. Si al plátano se le escapa el potasio por vómitos, diarrea o diuréticos, las carpas se desinflan planas y aparece una pequeña U de plátano detrás; si se encoge hasta un ANILLO (2.5), los músculos se aflojan.",
+  "ancla": "Potasio = plátano del corazón: de la miel a la losa; picas altas si sube, U si baja.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un plátano amarillo gigante antropomórfico bañado en miel brillante, patinando sobre una losa de piedra y sosteniendo palas de desfibrilador. Acción: frente a él, un corazón rojo con guantes de boxeo y cinturón de campeón tiembla mientras del suelo brotan picos altísimos y puntiagudos como carpas de circo. Elementos secundarios: un anillo dorado rodando en el suelo. Escenario: puesto de hierbas de un mercado andino con atados verdes. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": true,
+  "preguntas": [
+   {
+    "q": "¿Potasio sérico normal?",
+    "a": "3.5-5.0 mEq/L",
+    "tipo": "directa"
+   },
+   {
+    "q": "3.5-5.0 mEq/L es el rango normal de… (electrolito)",
+    "a": "Potasio",
+    "tipo": "inversa"
+   },
+   {
+    "q": "Cambios ECG de hiperpotasemia y de hipopotasemia",
+    "a": "Hiper: T alta picuda → P plana y QRS ancho → arritmia. Hipo: T aplanada + onda U",
+    "tipo": "directa"
+   },
+   {
+    "q": "Paciente con IRC y K de 8.5: ¿qué riesgo tiene?",
+    "a": "Hiperpotasemia grave (>8): arritmias, FV (>9)",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s5",
+   "n": 8,
+   "ubicacion": "Puesto de hierbas"
+  },
+  "revisar": false
+ },
+ "cloro-serico": {
+  "id": "cloro-serico",
+  "parametro": "Cloro sérico",
+  "grupo": "Glucosa, riñón y electrolitos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "Cl 97-105 mEq/L. Baja: vómitos profusos (pérdida de HCl) → alcalosis hipoclorémica. Sube: acidosis hiperclorémica (diarrea, acidosis tubular), deshidratación, exceso de SF 0,9%. Cl y HCO3 van al revés: vómitos Cl↓ HCO3↑; diarrea Cl↑ HCO3↓.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "memorizar-conceptos",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango (pico 97, diésel 105) + el 'subibaja' Cl/HCO3, que es lo que lo diferencia en examen. Personaje nuevo CLORITO: salvavidas de piscina con silbato y botella de lejía (cloro), sube y baja en un subibaja frente a una Burbuja (HCO3). Las causas de hipercloremia y la regla vienen marcadas como literatura (lit).",
+  "codigo": [
+   {
+    "numero": "97",
+    "letras": "P-C",
+    "palabra": "pico"
+   },
+   {
+    "numero": "105",
+    "letras": "D-S-L",
+    "palabra": "diésel"
+   }
+  ],
+  "escena": "En el puesto de papas y chuño, CLORITO, el salvavidas de piscina con silbato y botella de lejía, está montado en un subibaja entre un PICO de montaña (97) y un bidón de DIÉSEL (105). En el otro extremo del subibaja va la Burbuja de bicarbonato. Un comensal VOMITA a chorros el ácido del estómago (HCl): Clorito sale disparado hacia abajo y la Burbuja sube al cielo (alcalosis hipoclorémica). Otro tiene DIARREA y pierde bicarbonato: la Burbuja se hunde y Clorito sube con su silbato estridente (acidosis hiperclorémica), igual que si le echas demasiado suero fisiológico.",
+  "ancla": "Cloro: del pico al diésel; en subibaja con el bicarbonato: vómito lo baja, diarrea lo sube.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un salvavidas de piscina caricaturesco con silbato y una botella de lejía en la mano, sentado en un extremo de un subibaja que cae de golpe hacia el suelo. Acción: en el otro extremo, una burbuja transparente y brillante sale volando hacia el cielo. Elementos secundarios: al fondo, el pico de una montaña nevada y un bidón metálico de combustible. Escenario: puesto de papas y chuño de mercado andino. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": true,
+  "preguntas": [
+   {
+    "q": "¿Cloro sérico normal?",
+    "a": "97-105 mEq/L",
+    "tipo": "directa"
+   },
+   {
+    "q": "Vómitos profusos producen ¿qué alteración del Cl y del equilibrio ácido-base?",
+    "a": "Hipocloremia con HCO3↑: alcalosis hipoclorémica",
+    "tipo": "caso"
+   },
+   {
+    "q": "Diarrea con Cl alto y HCO3 bajo se llama…",
+    "a": "Acidosis hiperclorémica",
+    "tipo": "umbral"
+   },
+   {
+    "q": "¿Cómo se mueven el Cl y el HCO3 entre sí?",
+    "a": "Al revés (si uno sube, el otro baja)",
+    "tipo": "directa"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#043"
+  ],
+  "estacion": {
+   "seccion": "s5",
+   "n": 9,
+   "ubicacion": "Puesto de papas y chuño"
+  },
+  "revisar": false
+ },
+ "calcio-serico": {
+  "id": "calcio-serico",
+  "parametro": "Calcio sérico",
+  "grupo": "Glucosa, riñón y electrolitos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "Ca 9-11 mg/dL. Sube: poliuria. Baja: <8 = tetania (Trousseau); <7 en pancreatitis = mal pronóstico; IRA/IRC. Ca corregido = Ca + 0.8 × (4 − albúmina). Hipocalcemia: Chvostek (cara) y Trousseau (mano de partero).",
+  "tecnicas": [
+   "memorizar-numeros",
+   "memorizar-nombres",
+   "mnemotecnia",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango (sopa 09, dedo 11) + umbrales (sofá 08 tetania, saco 07 pancreatitis) + epónimos: Chvostek → 'chiste' en la cara (mejilla que se contrae al golpear), Trousseau → 'trusa'/mano de partero. Personaje nuevo CALCI: esqueleto-huesito que da firmeza a los músculos; sin calcio los músculos se acalambran (se diferencia del K porque su signo es la TETANIA). La balanza del mercado sirve para la fórmula de corrección. Hay discrepancia de fuentes en el rango (nota del atlas: 6-11, 8.5-10.5); se usa el 9-11 de la fila. Nota: la tabla trae tetera para el 11, pero el validador cuenta todas las consonantes (T-T-R = 114); se usa dedo (D-D).",
+  "codigo": [
+   {
+    "numero": "09",
+    "letras": "S-P",
+    "palabra": "sopa"
+   },
+   {
+    "numero": "11",
+    "letras": "D-D",
+    "palabra": "dedo"
+   },
+   {
+    "numero": "08",
+    "letras": "S-F",
+    "palabra": "sofá"
+   },
+   {
+    "numero": "07",
+    "letras": "S-C",
+    "palabra": "saco"
+   }
+  ],
+  "escena": "En la balanza del mercado, CALCI el esqueleto sirve SOPA (9) de hueso y la remueve con un DEDO (11) gigante: con eso los músculos están firmes y tranquilos. Si el calcio cae bajo el SOFÁ (8), al paciente se le encalambra la mano en forma de mano de partero cuando le inflas el tensiómetro (Trousseau) y, si le golpeas la mejilla, la boca se le tuerce como si contara un CHISTE (Chvostek). Si cae hasta el SACO (7) en una pancreatitis, el páncreas se ha comido el calcio: mal pronóstico. Y antes de asustarte, pesa la albúmina en la balanza: por cada gramo que falte bajo 4, súmale 0.8.",
+  "ancla": "Calcio: sopa removida con el dedo; bajo el sofá, tetania (Chvostek cara, Trousseau mano).",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un esqueleto blanco simpático sirviendo un plato de sopa humeante y removiéndola con un dedo gigante. Acción: a su lado, un paciente sentado en un sofá tiene la mano contraída con los dedos juntos en punta mientras un manguito de tensiómetro le aprieta el brazo, y su mejilla se tuerce al recibir un golpecito con un martillo de reflejos. Elementos secundarios: una balanza de mercado antigua al fondo. Escenario: mercado andino. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": true,
+  "preguntas": [
+   {
+    "q": "¿Calcio sérico normal (fila del atlas)?",
+    "a": "9-11 mg/dL",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Bajo qué calcio aparece tetania?",
+    "a": "<8 mg/dL",
+    "tipo": "umbral"
+   },
+   {
+    "q": "Diferencia entre Chvostek y Trousseau",
+    "a": "Chvostek: contracción facial al percutir la cara. Trousseau: mano de partero al inflar el manguito",
+    "tipo": "trampa"
+   },
+   {
+    "q": "Ca 7.2 con albúmina 2: ¿Ca corregido?",
+    "a": "7.2 + 0.8 × (4 − 2) = 8.8 mg/dL",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#124",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s5",
+   "n": 10,
+   "ubicacion": "Balanza del mercado"
+  },
+  "revisar": false
+ },
+ "magnesio-serico": {
+  "id": "magnesio-serico",
+  "parametro": "Magnesio sérico",
+  "grupo": "Glucosa, riñón y electrolitos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "Mg 1.8-2.3 mEq/L. Sube en IRA/IRC (riñón no excreta); al inicio asintomática. Baja con diuréticos de asa; aumenta la toxicidad digitálica. HipoK o hipoCa que no corrigen = buscar hipoMg; hipoMg predispone a torsades de pointes.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango con decimal (tofu 18, Nemo 23) + la regla clínica (lit): el Mg es el 'jefe' que sostiene al K y al Ca. Personaje nuevo MAGNO: mago (Mg ≈ mago) con varita, que mantiene en pie a Kuky Plátano y a Calci; si desaparece, ellos se caen y el corazón gira en torsades.",
+  "codigo": [
+   {
+    "numero": "18",
+    "letras": "T-F",
+    "palabra": "tofu"
+   },
+   {
+    "numero": "23",
+    "letras": "N-M",
+    "palabra": "Nemo"
+   }
+  ],
+  "escena": "En el puesto de pescado, MAGNO el mago hace su truco: de su sombrero saca un cubo de TOFU (1.8) y luego a NEMO, el pez payaso (2.3), que nada entre los pescados. Con su varita mantiene levitando a Kuky Plátano y a Calci el esqueleto. Pero un diurético de asa le roba el sombrero: Magno se esfuma, Kuky y Calci caen al suelo y por más que les eches potasio o calcio no se levantan; Cora el corazón empieza a girar como trompo (torsades de pointes). Si el riñón no excreta, en cambio, se llenan de magos silenciosos.",
+  "ancla": "Magnesio = el mago del tofu y Nemo que sostiene al K y al Ca.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un mago con capa morada y sombrero de copa sacando de su sombrero un cubo blanco de tofu y un pez payaso naranja. Acción: con su varita mantiene levitando a un plátano amarillo con cara y a un pequeño esqueleto sonriente. Elementos secundarios: un corazón rojo con guantes de box girando como trompo con líneas de giro. Escenario: puesto de pescado de un mercado andino con truchas sobre hielo. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Magnesio sérico normal?",
+    "a": "1.8-2.3 mEq/L",
+    "tipo": "directa"
+   },
+   {
+    "q": "HipoK que no corrige pese a reponer potasio: ¿qué buscas?",
+    "a": "Hipomagnesemia",
+    "tipo": "caso"
+   },
+   {
+    "q": "¿Qué arritmia favorece la hipomagnesemia y qué fármaco hace más tóxico?",
+    "a": "Torsades de pointes; digital (toxicidad digitálica)",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Qué fármacos bajan el Mg y en qué cuadro sube?",
+    "a": "Diuréticos de asa; sube en IRA/IRC",
+    "tipo": "directa"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s5",
+   "n": 11,
+   "ubicacion": "Puesto de pescado"
+  },
+  "revisar": false
+ },
+ "tgo-ast": {
+  "id": "tgo-ast",
+  "parametro": "TGO / AST",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "cifra",
+  "dato_a_recordar": "TGO <40 UI/L. Sube: necrosis hepatocelular, hepatitis alcohólica (TGO/TGP >2), IAM, rabdomiólisis, hemólisis. TGO también sale del músculo y del corazón (no es solo hepática). Hepatitis: transaminasas muy elevadas; coledocolitiasis: normales o poco elevadas.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "mnemotecnia",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Umbral (rosa 40) + lo que la distingue de la TGP: la O = 'Otros órganos' (corazón, músculo, glóbulos) y el cociente >2 del alcohol. Gancho TGO vs TGP: 'O de Otros, P de Puro hígado'.",
+  "codigo": [
+   {
+    "numero": "40",
+    "letras": "R-S",
+    "palabra": "rosa"
+   }
+  ],
+  "escena": "En la entrada del malecón, Chef Hepa sostiene una ROSA (40) en la boca: mientras la TGO no pase la rosa, todo está normal. Pero la TGO es una chismosa que sale de OTROS órganos: brota a chorros de Cora el corazón tras un infarto, de los bíceps de un fisicoculturista que se revienta (rabdomiólisis) y de glóbulos rojos que explotan como globos. Luego Chef Hepa aparece borracho con DOS botellas de aguardiente en una mano y solo una galleta en la otra: la TGO dobla a la TGP (>2) = alcohol.",
+  "ancla": "TGO = O de Otros (corazón, músculo, sangre); doble que la TGP = alcohol.",
+  "acronimo": "TGO = O de Otros órganos; TGP = P de Puro hígado",
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hígado granate con gorro de chef, mejillas rojas de borracho y una rosa roja entre los dientes, tambaleándose con dos botellas en una mano y una sola galleta en la otra. Elementos secundarios: a su lado, un corazón rojo con guantes de box y un brazo musculoso gigante, ambos lanzando chorros de líquido verde. Escenario: entrada de un malecón junto a un lago andino azul. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": true,
+  "preguntas": [
+   {
+    "q": "¿TGO (AST) normal?",
+    "a": "<40 UI/L",
+    "tipo": "directa"
+   },
+   {
+    "q": "TGO/TGP >2 sugiere…",
+    "a": "Hepatitis alcohólica",
+    "tipo": "umbral"
+   },
+   {
+    "q": "¿Por qué la TGO no es específica del hígado?",
+    "a": "También sale del músculo y del corazón (IAM, rabdomiólisis) y en hemólisis",
+    "tipo": "trampa"
+   },
+   {
+    "q": "¿Cómo están las transaminasas en hepatitis vs coledocolitiasis?",
+    "a": "Hepatitis muy elevadas; coledocolitiasis normales o poco elevadas",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 0,
+   "ubicacion": "Entrada del malecón"
+  },
+  "revisar": false
+ },
+ "tgp-alt": {
+  "id": "tgp-alt",
+  "parametro": "TGP / ALT",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "cifra",
+  "dato_a_recordar": "TGP <40 UI/L. Más específica de hígado que TGO. Hepatitis viral aguda >10× LSN (TGP > TGO); tóxica >1000; EHNA 2-5×; obstrucción biliar leve (<5×). Ley de Hy: fármaco + TGP >3 × LSN + bilirrubina >2 × LSN = lesión hepática grave.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "memorizar-conceptos",
+   "memorizar-nombres",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Mismo umbral que la TGO (rosa 40, misma palabra para el mismo número) pero escena opuesta: P = Puro hígado, y el virus la hace dominar. Ley de Hy (lit) → '¡Hay!' con 3 fuegos (TGP ×3) y 2 canarios (bilirrubina ×2), como en estudio-memorizar-conceptos.",
+  "codigo": [
+   {
+    "numero": "40",
+    "letras": "R-S",
+    "palabra": "rosa"
+   }
+  ],
+  "escena": "En el primer restaurante de trucha frita, Chef Hepa cocina con una ROSA (40) en el delantal: la TGP es PURO hígado, no sale de ningún otro órgano. Entra un virus de hepatitis con capa y la TGP sale disparada diez pisos hacia arriba, adelantando a la TGO. Luego un cliente le da una pastilla: estallan TRES fuegos artificiales de TGP y salen volando DOS canarios amarillos de bilirrubina; el chef grita '¡HAY peligro!' (ley de Hy): lesión hepática grave.",
+  "ancla": "TGP = P de Puro hígado: la del virus. Hy: 3 fuegos + 2 canarios.",
+  "acronimo": "Hy = TGP >3× + bilirrubina >2× (tras un fármaco)",
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hígado granate con gorro de chef y una rosa prendida en el delantal, gritando con la boca enorme y las manos en la cabeza. Acción: sobre él estallan tres fuegos artificiales verdes mientras dos canarios amarillos salen volando de su sartén. Elementos secundarios: un virus verde con capa de villano huyendo; una pastilla gigante sobre la mesa. Escenario: restaurante de trucha frita a orillas de un lago andino. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": true,
+  "preguntas": [
+   {
+    "q": "¿TGP (ALT) normal?",
+    "a": "<40 UI/L",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Cuál transaminasa es más específica del hígado y cuál predomina en la hepatitis viral aguda?",
+    "a": "La TGP en ambos casos (viral >10× LSN, TGP > TGO)",
+    "tipo": "trampa"
+   },
+   {
+    "q": "¿Qué dice la ley de Hy?",
+    "a": "Fármaco + TGP >3 × LSN + bilirrubina >2 × LSN = lesión hepática grave",
+    "tipo": "directa"
+   },
+   {
+    "q": "TGP de 1500 UI/L tras ingerir un fármaco sugiere hepatitis…",
+    "a": "Tóxica (>1000)",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#134",
+   "#043"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 1,
+   "ubicacion": "Primer restaurante de trucha frita"
+  },
+  "revisar": false
+ },
+ "fosfatasa-alcalina-fa": {
+  "id": "fosfatasa-alcalina-fa",
+  "parametro": "Fosfatasa alcalina (FA)",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "FA 30-120 UI/L (embarazo hasta 300; niños hasta 400). Sube: colestasis/obstrucción biliar (>3× LSN); origen óseo si GGT normal (Paget, metástasis). Baja (raro): hipotiroidismo severo, desnutrición, anemia perniciosa. Baja más lento que TGO/TGP tras resolver la obstrucción (vida media 7 días).",
+  "tecnicas": [
+   "memorizar-numeros",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango (mesa 30, tenis 120) + lo que la diferencia de las transaminasas: la FA vive en las TUBERÍAS (vía biliar) y en el HUESO. Imagen: el FONTANERO ALCALINO (F-A) que destapa cañerías con un hueso como herramienta. Embarazo y niños (mayor valor) se recuerdan por la placenta y el hueso que crece.",
+  "codigo": [
+   {
+    "numero": "30",
+    "letras": "M-S",
+    "palabra": "mesa"
+   },
+   {
+    "numero": "120",
+    "letras": "T-N-S",
+    "palabra": "tunas"
+   }
+  ],
+  "escena": "En la parrilla humeante, el FONTANERO ALCALINO (FA) trabaja bajo una MESA (30) sobre la que ruedan unas TUNAS maduras (120): ese es su rango. Cuando un cálculo tapa la tubería de bilis de Chef Hepa, el fontanero se infla al triple y la tubería escupe bilis verde (colestasis, >3×). Pero su llave inglesa es un HUESO: si el hueso de un abuelo crece raro (Paget) o tiene metástasis, la FA también sube, y entonces la GGT (que solo vive en las tuberías) se queda quieta. Cuando destapan la tubería, el fontanero tarda una semana en desinflarse.",
+  "ancla": "FA = Fontanero Alcalino: tubería de bilis y hueso; de la mesa a las tunas.",
+  "acronimo": "FA = Fontanero Alcalino (tuberías biliares + hueso)",
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un fontanero caricaturesco hinchado y sudoroso, con overol azul, usando un hueso gigante como llave inglesa para destapar una tubería verde que escupe un chorro de bilis. Elementos secundarios: una mesa de madera sobre la que ruedan unas tunas maduras; una piedra atorada en la tubería. Escenario: parrilla humeante junto a un malecón andino. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": true,
+  "preguntas": [
+   {
+    "q": "¿FA normal en el adulto?",
+    "a": "30-120 UI/L (embarazo hasta 300; niños hasta 400)",
+    "tipo": "directa"
+   },
+   {
+    "q": "FA >3× LSN con GGT alta sugiere…",
+    "a": "Colestasis / obstrucción biliar",
+    "tipo": "umbral"
+   },
+   {
+    "q": "FA alta con GGT normal: ¿origen?",
+    "a": "Óseo (Paget, metástasis)",
+    "tipo": "trampa"
+   },
+   {
+    "q": "¿Por qué la FA tarda en normalizarse tras resolver la obstrucción?",
+    "a": "Vida media de 7 días (baja más lento que TGO/TGP)",
+    "tipo": "directa"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 2,
+   "ubicacion": "Parrilla humeante"
+  },
+  "revisar": false
+ },
+ "ggt-gt": {
+  "id": "ggt-gt",
+  "parametro": "GGT (γ-GT)",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "cifra",
+  "dato_a_recordar": "Mujer <40 U/L · varón <60 U/L. GGT↑ + FA↑ confirma colestasis (la GGT no está en hueso). FA alta con GGT normal → origen óseo. GGT aislada alta = marcador de consumo de alcohol y fármacos inductores.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "mnemotecnia",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Dos cortes por sexo (rosa 40 mujer, choza 60 varón) + su función: la 'detective' que dice si la FA viene de la tubería o del hueso. Gancho: GGT = 'Gota-Gota-Trago' (alcohol). Los valores normales y la GGT aislada vienen marcados como literatura (lit).",
+  "codigo": [
+   {
+    "numero": "40",
+    "letras": "R-S",
+    "palabra": "rosa"
+   },
+   {
+    "numero": "60",
+    "letras": "CH-Z",
+    "palabra": "choza"
+   }
+  ],
+  "escena": "En los juegos infantiles, la detective GGT (Gota-Gota-Trago) huele con su lupa cada copa de licor que pasa. Una niña le regala una ROSA (40, mujer) y un niño le construye una CHOZA (60, varón) en el arenero: hasta ahí es normal. Cuando el Fontanero Alcalino se infla, la detective revisa: si ella también se infla, el problema es la tubería (colestasis); si ella sigue flaca, el fontanero viene del hueso. Y si se infla sola, sin el fontanero, es que alguien está tomando gota a gota a escondidas (alcohol) o pastillas inductoras.",
+  "ancla": "GGT = Gota-Gota-Trago: rosa ella, choza él; confirma que la FA es hepática.",
+  "acronimo": "GGT = Gota-Gota-Trago",
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una detective caricaturesca con gabardina y lupa gigante olfateando una copa de licor de la que caen gotas. Elementos secundarios: una niña le ofrece una rosa roja y un niño construye una pequeña choza de paja en el arenero; al lado, un fontanero hinchado con una tubería verde. Escenario: juegos infantiles de colores junto a un lago andino. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": true,
+  "preguntas": [
+   {
+    "q": "¿GGT normal en mujer y en varón?",
+    "a": "Mujer <40 U/L; varón <60 U/L",
+    "tipo": "directa"
+   },
+   {
+    "q": "FA y GGT altas juntas indican…",
+    "a": "Colestasis (origen hepatobiliar)",
+    "tipo": "umbral"
+   },
+   {
+    "q": "GGT elevada aislada, con resto normal, sugiere…",
+    "a": "Consumo de alcohol o fármacos inductores",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 3,
+   "ubicacion": "Juegos infantiles"
+  },
+  "revisar": false
+ },
+ "bilirrubina-total": {
+  "id": "bilirrubina-total",
+  "parametro": "Bilirrubina total",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "cifra",
+  "dato_a_recordar": "Bilirrubina total normal 1.2 mg/dL. 1.2-2.5 = hiperbilirrubinemia subclínica; >2.5 = ictericia visible. La ictericia aparece primero en escleróticas y frenillo lingual y desaparece al último de ellas. Hipercarotinemia tiñe la piel pero las escleras quedan blancas.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Dos cortes (tina 12, anillo 25) + el signo clínico. Personaje nuevo BILI, el canario amarillo (la bilirrubina): en la total es un solo canario; en la directa e indirecta se diferencia por cómo sale (directo al baño o pegado a la albúmina). Hay discrepancia de fuentes (esquema 36 da hasta 1.5); se usa 1.2 de la fila. La regla de escleróticas/frenillo es literatura (lit).",
+  "codigo": [
+   {
+    "numero": "12",
+    "letras": "T-N",
+    "palabra": "tina"
+   },
+   {
+    "numero": "25",
+    "letras": "N-L",
+    "palabra": "anillo"
+   }
+  ],
+  "escena": "En la glorieta, BILI el canario amarillo se baña en una TINA (1.2): mientras no se desborde, nadie lo ve. Si se llena más, el agua se tiñe por dentro pero aún no se nota (subclínica). Cuando Bili lanza un ANILLO dorado (2.5) al aire, todo se vuelve amarillo: lo primero que se pinta es lo blanco de los ojos y el frenillo bajo la lengua de los paseantes, y es lo último que se despinta. Un señor que comió zanahorias tiene la piel naranja, pero sus ojos siguen blancos: no es ictericia.",
+  "ancla": "Bilirrubina: tina normal; anillo = ictericia, primero en los ojos.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un canario amarillo brillante bañándose en una tina antigua que desborda agua amarilla, lanzando un anillo dorado al aire. Acción: un paseante a su lado tiene la parte blanca de los ojos teñida de amarillo intenso. Elementos secundarios: un señor de piel naranja comiendo zanahorias con los ojos completamente blancos. Escenario: glorieta de un malecón junto a un lago andino. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Bilirrubina total normal?",
+    "a": "1.2 mg/dL",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Desde qué bilirrubina total se ve la ictericia?",
+    "a": ">2.5 mg/dL (1.2-2.5 = subclínica)",
+    "tipo": "umbral"
+   },
+   {
+    "q": "¿Dónde aparece primero la ictericia?",
+    "a": "Escleróticas y frenillo lingual (y desaparece al último de ellas)",
+    "tipo": "directa"
+   },
+   {
+    "q": "Piel amarilla-naranja con escleras blancas: ¿qué piensas?",
+    "a": "Hipercarotinemia, no ictericia",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 4,
+   "ubicacion": "Glorieta"
+  },
+  "revisar": false
+ },
+ "bilirrubina-directa-conjugada": {
+  "id": "bilirrubina-directa-conjugada",
+  "parametro": "Bilirrubina directa (conjugada)",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "cifra",
+  "dato_a_recordar": "BD <0.3 mg/dL. Sube: poshepática/obstructiva (coluria intensa + acolia); hepatocelular (sube con BI). Hidrosoluble → filtra por riñón → coluria. Colestasis: coluria + acolia (no llega bilis al intestino) + prurito (sales biliares).",
+  "tecnicas": [
+   "memorizar-numeros",
+   "memorizar-conceptos",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Umbral (sumo 03) + el mecanismo que la distingue de la indirecta: DIRECTA = va DIRECTO al baño porque es hidrosoluble (coluria). Bili el canario ya está 'conjugado': lleva su pareja y sabe nadar. El valor normal sale de un caso clínico (nota del atlas).",
+  "codigo": [
+   {
+    "numero": "03",
+    "letras": "S-M",
+    "palabra": "sumo"
+   }
+  ],
+  "escena": "En las bancas frente al lago, un luchador de SUMO (0.3) aplasta la cantidad normal de bilirrubina directa con su panza. Pero un cálculo tapa el colédoco: los canarios Bili, ya casados (conjugados) y que saben nadar (hidrosolubles), no pueden ir al intestino y se van DIRECTO por el riñón: la orina sale color Coca-Cola (coluria) y las heces quedan blancas como masilla (acolia). Las sales biliares atrapadas pican la piel y el sumo se rasca desesperado (prurito).",
+  "ancla": "Directa = directo al baño: coluria + acolia + prurito; normal bajo el sumo.",
+  "acronimo": "CAP de la colestasis = Coluria, Acolia, Prurito",
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un luchador de sumo enorme rascándose la espalda desesperado, sentado en una banca. Acción: a su lado, una pareja de canarios amarillos con anillos de boda nadando dentro de un frasco de orina color refresco de cola oscuro. Elementos secundarios: una bacinica con heces blancas como masilla; una piedra tapando un tubo verde. Escenario: bancas frente a un lago andino azul. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": true,
+  "preguntas": [
+   {
+    "q": "¿Bilirrubina directa normal?",
+    "a": "<0.3 mg/dL",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Por qué la bilirrubina directa produce coluria?",
+    "a": "Es hidrosoluble y filtra por el riñón",
+    "tipo": "directa"
+   },
+   {
+    "q": "Tríada clínica de la colestasis",
+    "a": "Coluria + acolia + prurito",
+    "tipo": "lista"
+   },
+   {
+    "q": "BT 20, BD 15 con coluria y acolia: ¿tipo de ictericia?",
+    "a": "Poshepática/obstructiva (coledocolitiasis)",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#043",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 5,
+   "ubicacion": "Bancas frente al lago"
+  },
+  "revisar": false
+ },
+ "bilirrubina-indirecta-no-conjugada": {
+  "id": "bilirrubina-indirecta-no-conjugada",
+  "parametro": "Bilirrubina indirecta (no conjugada)",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "BI 0,2-0,8 mg/dL (= BT − BD). Sube: prehepática/hemolítica (sin coluria, heces muy coloreadas); Gilbert, Crigler-Najjar. Unida a albúmina, no filtra (sin coluria); liposoluble → kernícterus en RN (BI >20 mg/dL). Gilbert: BI leve que sube con ayuno o estrés, sin hemólisis.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "memorizar-conceptos",
+   "memorizar-nombres",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango (sauna 02, sofá 08) + umbral del kernícterus (NASA 20) + mecanismo opuesto a la directa: la INDIRECTA va por el camino INDIRECTO, montada en la albúmina, no sabe nadar (liposoluble) y no llega a la orina. Gilbert → 'Gil-bert, el que se salta comidas'. El rango normal viene marcado como literatura (lit).",
+  "codigo": [
+   {
+    "numero": "02",
+    "letras": "S-N",
+    "palabra": "sauna"
+   },
+   {
+    "numero": "08",
+    "letras": "S-F",
+    "palabra": "sofá"
+   },
+   {
+    "numero": "20",
+    "letras": "N-S",
+    "palabra": "NASA"
+   }
+  ],
+  "escena": "En los totorales, el canario Bili SOLTERO (no conjugado) no sabe nadar: viaja en un bote de albúmina por el camino INDIRECTO, entre una SAUNA (0.2) y un SOFÁ (0.8). Como va en bote, no cae al riñón: la orina sale clara y las heces muy oscuras, porque los glóbulos rojos estallan como globos y lo producen de más (hemólisis). Su primo GILBERT se salta el desayuno y se pone un poco amarillo, sin que nada estalle. Pero en un recién nacido, si el canario pasa la NASA (20), atraviesa la grasa del cerebro y se le mete dentro: kernícterus.",
+  "ancla": "Indirecta = en bote de albúmina, sin coluria; sauna-sofá; NASA en el bebé = kernícterus.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un canario amarillo con salvavidas, asustado porque no sabe nadar, navegando en un bote blanco con forma de clara de huevo entre totoras. Acción: a su alrededor estallan glóbulos rojos como globos y lo llenan de pluma amarilla. Elementos secundarios: una pequeña sauna de madera en una orilla y un sofá en la otra; al fondo un cohete despegando. Escenario: totorales de un lago andino azul. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Bilirrubina indirecta normal y cómo se calcula?",
+    "a": "0,2-0,8 mg/dL; BT − BD",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Por qué la ictericia hemolítica no tiene coluria?",
+    "a": "La BI va unida a albúmina y no filtra por el riñón",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Sobre qué BI hay riesgo de kernícterus en el RN?",
+    "a": ">20 mg/dL",
+    "tipo": "umbral"
+   },
+   {
+    "q": "Joven con BI leve que sube en ayuno o estrés, sin hemólisis: ¿diagnóstico?",
+    "a": "Síndrome de Gilbert",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#043",
+   "#124"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 6,
+   "ubicacion": "Totorales"
+  },
+  "revisar": false
+ },
+ "patron-hepatocelular-vs-colestasico": {
+  "id": "patron-hepatocelular-vs-colestasico",
+  "parametro": "Patrón hepatocelular vs colestásico",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "concepto",
+  "dato_a_recordar": "Hepatocelular: TGO/TGP muy altas, FA normal o poco alta. Colestásico: FA↑, transaminasas normales. Factor R = (TGP ÷ su límite) ÷ (FA ÷ su límite): ≥5 hepatocelular · 2-5 mixto · ≤2 colestásico.",
+  "tecnicas": [
+   "memorizar-conceptos",
+   "mnemotecnia",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Concepto de comparación: quién gana el pulso entre la TGP (hepatocito) y la FA (tubería). El Factor R (lit) se ancla con la mano: 5 dedos = el hepatocito gana claro; 2 dedos (V) = gana la tubería. Las cifras son de un dígito, por eso no van en código.",
+  "codigo": null,
+  "escena": "En el puesto de anticuchos, la TGP (Chef Hepa) y el Fontanero Alcalino hacen un pulso sobre la parrilla. El juez divide la fuerza de cada uno entre su peso normal: si la TGP le gana mostrando la MANO abierta (5 veces o más), el daño está en el hepatocito (hepatitis). Si el fontanero gana y el chef apenas levanta DOS dedos en V (2 o menos), el problema está en la tubería (colestasis). Entre la V y la mano abierta, empate: mixto.",
+  "ancla": "Factor R: mano abierta (≥5) hepatocito; V de dos dedos (≤2) tubería; en medio, mixto.",
+  "acronimo": "R = TGP/FA (cada una entre su límite)",
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hígado granate con gorro de chef haciendo un pulso de fuerza contra un fontanero de overol azul sobre una parrilla de anticuchos humeante. Acción: el chef levanta su otra mano con los cinco dedos abiertos en señal de victoria mientras el fontanero suda. Elementos secundarios: un árbitro con silbato mirando de cerca. Escenario: puesto de anticuchos en un malecón andino al atardecer. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Qué caracteriza al patrón hepatocelular y al colestásico?",
+    "a": "Hepatocelular: transaminasas muy altas, FA normal/poco alta. Colestásico: FA alta, transaminasas normales",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Cómo se calcula el Factor R?",
+    "a": "(TGP ÷ su límite normal) ÷ (FA ÷ su límite normal)",
+    "tipo": "directa"
+   },
+   {
+    "q": "Factor R de 6: ¿patrón?",
+    "a": "Hepatocelular (≥5)",
+    "tipo": "caso"
+   },
+   {
+    "q": "Factor R de 1.5: ¿patrón?",
+    "a": "Colestásico (≤2)",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#043",
+   "#134"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 7,
+   "ubicacion": "Puesto de anticuchos"
+  },
+  "revisar": false
+ },
+ "proteinas-totales": {
+  "id": "proteinas-totales",
+  "parametro": "Proteínas totales",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "Proteínas totales 6.0-8.0 g/dL. Sube: deshidratación (hemoconcentración) o globulinas altas (infección crónica, mieloma, hepatopatía crónica). Baja: insuficiencia hepática, desnutrición, pérdida renal/digestiva. Brecha proteica = PT − albúmina; >4 g/dL: pensar en mieloma.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango con decimal obvio (choza 60, vaso 80) + la brecha proteica (lit). El valor normal sale de un caso clínico (nota del atlas). Imagen: un pedalón cargado de huevos (proteínas).",
+  "codigo": [
+   {
+    "numero": "60",
+    "letras": "CH-Z",
+    "palabra": "choza"
+   },
+   {
+    "numero": "80",
+    "letras": "V-S",
+    "palabra": "vaso"
+   }
+  ],
+  "escena": "En el muelle de pedalones, un pedalón con forma de CHOZA (6.0) navega cargado de huevos (proteínas) y lleva un VASO (8.0) gigante de leche en el techo. Si el lago se seca (deshidratación), los huevos se amontonan y la carga sube. Si el hígado no cocina o los huevos se escapan por el riñón o el intestino, el pedalón queda vacío. Restas las claras (albúmina) y si quedan más de cuatro yemas raras en el fondo, sospechas mieloma.",
+  "ancla": "Proteínas: pedalón choza con vaso arriba (6-8); brecha >4 = mieloma.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un pedalón con forma de choza de paja flotando en un lago andino, repleto de huevos blancos apilados, con un vaso gigante de leche en el techo. Acción: los huevos se tambalean mientras el pedalón avanza salpicando. Elementos secundarios: unas yemas raras y moradas en el fondo del pedalón. Escenario: muelle de pedalones en un lago azul de altura. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Proteínas totales normales?",
+    "a": "6.0-8.0 g/dL",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Qué es la brecha proteica y qué sugiere si es >4 g/dL?",
+    "a": "PT − albúmina; mieloma",
+    "tipo": "umbral"
+   },
+   {
+    "q": "Cirrótico descompensado con PT 4.2 y albúmina 1.8: ¿qué esperas clínicamente?",
+    "a": "Edema y ascitis (hipoproteinemia)",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 8,
+   "ubicacion": "Muelle de pedalones"
+  },
+  "revisar": false
+ },
+ "albumina": {
+  "id": "albumina",
+  "parametro": "Albúmina",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "Albúmina 4-5 g/dL. Sube: deshidratación. Baja: <2.5 g/dL → edema (↓presión oncótica): cirrosis, nefrótico, desnutrición. Nefrótico: proteinuria ≥3.5 g/24 h → hipoalbuminemia → edema hasta anasarca. Vida media ~20 días: mide falla hepática crónica; en daño agudo mirar TP/INR.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "memorizar-conceptos",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango corto en una sola palabra (rulo = 4-5) + umbral de edema (anillo 25) + vida media (NASA 20 días). Hay discrepancia de cortes entre fuentes (nota: <3.5 FISIOPATO, <3 nefrótico, docente <2); se usa el <2.5 de la fila. La vida media es literatura (lit). Imagen: la albúmina es una esponja que sujeta el agua dentro del vaso.",
+  "codigo": [
+   {
+    "numero": "45",
+    "letras": "R-L",
+    "palabra": "rulo"
+   },
+   {
+    "numero": "25",
+    "letras": "N-L",
+    "palabra": "anillo"
+   },
+   {
+    "numero": "20",
+    "letras": "N-S",
+    "palabra": "NASA"
+   }
+  ],
+  "escena": "En la estatua del malecón, una señora con RULOS (4-5) hechos de esponjas blancas de albúmina está de pie dentro de una tubería de agua: cada esponja chupa y retiene el agua dentro del vaso. Si las esponjas se encogen hasta el tamaño de un ANILLO (2.5), el agua escapa a chorros y la estatua se hincha de pies a cabeza (edema, anasarca), como en el cirrótico o el nefrótico que pierde esponjas por la orina. Las esponjas tardan un viaje a la NASA (20 días) en renovarse: miden el hígado crónico, no el de hoy.",
+  "ancla": "Albúmina: rulos-esponja (4-5); al encogerse a anillo (2.5), edema.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una estatua de piedra con forma de señora con rulos de esponjas blancas, hinchándose como globo mientras chorros de agua le salen por la piel. Acción: sus esponjas se encogen hasta el tamaño de anillos dorados y el agua se escapa. Elementos secundarios: un cohete pequeño despegando al fondo. Escenario: plaza de un malecón junto a un lago andino azul. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Albúmina sérica normal?",
+    "a": "4-5 g/dL",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Bajo qué albúmina aparece edema (fila del atlas) y por qué?",
+    "a": "<2.5 g/dL; por ↓ presión oncótica",
+    "tipo": "umbral"
+   },
+   {
+    "q": "¿Por qué la albúmina no sirve para evaluar daño hepático agudo?",
+    "a": "Vida media ~20 días; en lo agudo se mira el TP/INR",
+    "tipo": "trampa"
+   },
+   {
+    "q": "Proteinuria ≥3.5 g/24 h con edema y albúmina baja: ¿síndrome?",
+    "a": "Síndrome nefrótico",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#043"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 9,
+   "ubicacion": "Estatua"
+  },
+  "revisar": false
+ },
+ "globulinas": {
+  "id": "globulinas",
+  "parametro": "Globulinas",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "Globulinas 2.3-3.5 g/dL (~35% de proteínas totales). Sube en insuficiencia hepática (globulina aumentada con albúmina baja). Baja: hipogammaglobulinemia (inmunodeficiencia, nefrótico, desnutrición). Electroforesis: pico monoclonal gamma = mieloma; aumento policlonal = cirrosis o inflamación crónica.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "memorizar-conceptos",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango (Nemo 23, miel 35) + la diferencia mono/policlonal (lit). Imagen: globulinas = ciclistas-escudo (anticuerpos); un solo clon idéntico = mieloma, muchos distintos = cirrosis/inflamación.",
+  "codigo": [
+   {
+    "numero": "23",
+    "letras": "N-M",
+    "palabra": "Nemo"
+   },
+   {
+    "numero": "35",
+    "letras": "M-L",
+    "palabra": "miel"
+   }
+  ],
+  "escena": "Por la ciclovía pasa un pelotón de globulinas en bicicleta, con escudos: abre NEMO el pez payaso (2.3) y cierra un oso cubierto de MIEL (3.5). Si el hígado falla, las globulinas se multiplican mientras la albúmina se queda atrás. Un día pasan mil ciclistas IDÉNTICOS, clones con la misma cara, formando una sola torre altísima: pico monoclonal, mieloma. Otro día pasan muchos ciclistas DIFERENTES en una ola ancha: policlonal, cirrosis o inflamación crónica.",
+  "ancla": "Globulinas: de Nemo a la miel; clones iguales = mieloma; todos distintos = cirrosis.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un pelotón de ciclistas idénticos con la misma cara y escudos, apilados en una torre altísima y estrecha sobre sus bicicletas. Elementos secundarios: al frente del pelotón, un pez payaso naranja en bicicleta; al final, un oso cubierto de miel pedaleando. Escenario: ciclovía de un malecón junto a un lago andino. Composición: la torre de clones al centro, colores vivos. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Globulinas séricas normales?",
+    "a": "2.3-3.5 g/dL (~35% de las proteínas totales)",
+    "tipo": "directa"
+   },
+   {
+    "q": "En la electroforesis, pico monoclonal gamma vs aumento policlonal",
+    "a": "Monoclonal = mieloma; policlonal = cirrosis o inflamación crónica",
+    "tipo": "trampa"
+   },
+   {
+    "q": "Laboratorio típico de insuficiencia hepática (proteínas)",
+    "a": "Albúmina ↓ y globulina ↑ (transaminasas ↑)",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#043"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 10,
+   "ubicacion": "Ciclovía"
+  },
+  "revisar": false
+ },
+ "relacion-albumina-globulina-a-g": {
+  "id": "relacion-albumina-globulina-a-g",
+  "parametro": "Relación albúmina/globulina (A/G)",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "A/G normal 1,1-2,2 (≈1,5). Baja sugiere inflamación crónica o cirrosis; <1 = inversión: cirrosis, mieloma. Sube (poco frecuente): hipogammaglobulinemia. Regla: albúmina ≈ doble de las globulinas (A/G 1.2-2).",
+  "tecnicas": [
+   "memorizar-numeros",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Rango (dedo 11, niño 22) + la inversión <1 como acción (la balanza se voltea). Normal y regla vienen marcados como literatura (lit); la regla da 1.2-2 y la fila 1.1-2.2, se codifica el de 'normal'. Se usa dedo para el 11 (tetera decodifica 114 en el validador).",
+  "codigo": [
+   {
+    "numero": "11",
+    "letras": "D-D",
+    "palabra": "dedo"
+   },
+   {
+    "numero": "22",
+    "letras": "N-Ñ",
+    "palabra": "niño"
+   }
+  ],
+  "escena": "En el mirador, una balanza enorme tiene en un plato a la albúmina (una señora de rulos) y en el otro a las globulinas (los ciclistas). Normalmente la albúmina pesa el doble: la aguja se mueve entre un DEDO (1.1) que la empuja y un NIÑO (2.2) sentado en el plato. Pero en la cirrosis o el mieloma, los ciclistas se multiplican, la señora adelgaza y la balanza SE VOLTEA de golpe: la relación cae bajo 1, la inversión, y el niño sale volando hacia el lago.",
+  "ancla": "A/G: del dedo al niño; si se voltea (<1), cirrosis o mieloma.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una balanza de dos platos gigante volteándose de golpe en un mirador. Acción: en el plato que sube, una señora delgada con rulos empujada por un dedo gigante; en el plato que baja, un montón de ciclistas apilados; un niño sale volando por el aire hacia el lago. Escenario: mirador sobre un lago andino azul con islas de totora. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Relación A/G normal?",
+    "a": "1,1-2,2 (≈1,5): la albúmina es ≈ el doble de las globulinas",
+    "tipo": "directa"
+   },
+   {
+    "q": "A/G <1 se llama… y sugiere…",
+    "a": "Inversión; cirrosis o mieloma",
+    "tipo": "umbral"
+   },
+   {
+    "q": "¿Qué causa una A/G alta (poco frecuente)?",
+    "a": "Hipogammaglobulinemia",
+    "tipo": "directa"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 11,
+   "ubicacion": "Mirador del malecón"
+  },
+  "revisar": false
+ },
+ "amilasa-serica": {
+  "id": "amilasa-serica",
+  "parametro": "Amilasa sérica",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "rango",
+  "dato_a_recordar": "Amilasa 0-120 UA/dL. Pancreatitis: ≥3× VN (>360); también úlcera perforada, colecistitis, obstrucción. Vuelve a lo normal en 36-72 h; no exclusiva de pancreatitis; no mide gravedad. Pancreatitis = 2 de 3 (Atlanta): dolor típico · amilasa o lipasa ≥3 × normal · imagen compatible.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "mnemotecnia",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Límite (tenis 120) + corte de pancreatitis (mechas 360 = 3 × 120) + criterios de Atlanta (lit) como 'dos de tres helados'. Personaje: Don Azúcar (páncreas). Se diferencia de la lipasa porque la amilasa es la 'velocista': sube primero y se apaga rápido.",
+  "codigo": [
+   {
+    "numero": "120",
+    "letras": "T-N-S",
+    "palabra": "tunas"
+   },
+   {
+    "numero": "360",
+    "letras": "M-CH-S",
+    "palabra": "mechas"
+   }
+  ],
+  "escena": "En el puesto de helados, Don Azúcar (el páncreas) juega con una penca de TUNAS (120) de amilasa: hasta ahí, normal. De pronto se inflama y la penca se triplica, se prende fuego por sus MECHAS (360) y sale corriendo como velocista: llega primero, pero en dos o tres días se apaga. El heladero le sirve un cono de tres bolas: dolor en cinturón, enzima triple y una ecografía; con DOS de las tres bolas ya es pancreatitis. Ojo: la penca también se enciende en una úlcera perforada o una colecistitis, y su fuego no dice qué tan grave es.",
+  "ancla": "Amilasa: tunas normal; mechas encendidas (≥3×) = pancreatitis; corre rápido y se apaga.",
+  "acronimo": "Atlanta 2 de 3 = Dolor · Enzima ≥3× · Imagen",
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cubo de azúcar con sombrero de copa, rojo e inflamado, corriendo como velocista con una penca gigante de tunas en llamas por varias mechas encendidas. Elementos secundarios: un heladero le ofrece un cono con tres bolas de helado de colores distintos. Escenario: puesto de helados en un malecón junto a un lago andino. Composición: líneas de velocidad, colores naranja y rojo. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": true,
+  "preguntas": [
+   {
+    "q": "¿Amilasa sérica normal?",
+    "a": "0-120 UA/dL",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Qué valor de amilasa apoya pancreatitis?",
+    "a": "≥3× VN (>360)",
+    "tipo": "umbral"
+   },
+   {
+    "q": "Criterios de Atlanta para pancreatitis aguda",
+    "a": "2 de 3: dolor típico, amilasa o lipasa ≥3× normal, imagen compatible",
+    "tipo": "lista"
+   },
+   {
+    "q": "¿La amilasa elevada mide la gravedad de la pancreatitis?",
+    "a": "No; además no es exclusiva (úlcera perforada, colecistitis, obstrucción)",
+    "tipo": "trampa"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 12,
+   "ubicacion": "Puesto de helados"
+  },
+  "revisar": false
+ },
+ "lipasa-serica": {
+  "id": "lipasa-serica",
+  "parametro": "Lipasa sérica",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "cifra",
+  "dato_a_recordar": "Lipasa <60 U/L (según laboratorio). Pancreatitis aguda >3× VN; más específica y dura más que la amilasa; útil si consulta tarde (>48-72 h); normal en parotiditis. Ranson al ingreso: edad >55 · leucocitos >16.000 · glucosa >200 · LDH >350 · TGO >250.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "mnemotecnia",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Límite (choza 60) + Ranson al ingreso (lit) con sus cinco cortes en orden: lila 55, teja 16, nueces 200, mulas 350, anillos 250. Acróstico 'El Loco Glotón Lame Trucha' = Edad, Leucocitos, Glucosa, LDH, TGO. La lipasa es la 'fondista' que dura más que la amilasa velocista. El límite normal es literatura (lit).",
+  "codigo": [
+   {
+    "numero": "60",
+    "letras": "CH-Z",
+    "palabra": "choza"
+   },
+   {
+    "numero": "55",
+    "letras": "L-L",
+    "palabra": "lila"
+   },
+   {
+    "numero": "16",
+    "letras": "T-J",
+    "palabra": "teja"
+   },
+   {
+    "numero": "200",
+    "letras": "N-C-S",
+    "palabra": "nueces"
+   },
+   {
+    "numero": "350",
+    "letras": "M-L-S",
+    "palabra": "mulas"
+   },
+   {
+    "numero": "250",
+    "letras": "N-LL-S",
+    "palabra": "anillos"
+   }
+  ],
+  "escena": "Bajo los faroles, la lipasa es una maratonista de fondo que vive en una CHOZA (60): cuando Don Azúcar se inflama, ella también se triplica, pero sigue corriendo días después de que la amilasa se apagó (útil si llegas tarde), y no le hace caso a las paperas. Al llegar a emergencias, el Loco Glotón (Ranson) cuenta sus fichas: un abuelo con flores LILA (>55 años), una TEJA llena de leucocitos (>16.000), un saco de NUECES dulces (glucosa >200), dos MULAS (LDH >350) y un puñado de ANILLOS (TGO >250) que se lame con la trucha.",
+  "ancla": "Lipasa: la fondista de la choza. Ranson: lila, teja, nueces, mulas, anillos.",
+  "acronimo": "El Loco Glotón Lame Trucha = Edad >55 · Leucocitos >16.000 · Glucosa >200 · LDH >350 · TGO >250",
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una maratonista de fondo musculosa corriendo incansable bajo faroles encendidos, saliendo de una pequeña choza. Elementos secundarios: a su lado un hombre glotón y alocado sostiene en orden un ramo de flores lila, una teja de barro, un saco de nueces y dos mulas atadas, con anillos dorados en los dedos. Escenario: malecón de noche junto a un lago andino. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Lipasa sérica normal y valor en pancreatitis?",
+    "a": "<60 U/L (según laboratorio); pancreatitis >3× VN",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Por qué la lipasa es mejor que la amilasa si el paciente consulta a las 72 h?",
+    "a": "Es más específica y dura más elevada",
+    "tipo": "trampa"
+   },
+   {
+    "q": "Criterios de Ranson al ingreso",
+    "a": "Edad >55, leucocitos >16.000, glucosa >200, LDH >350, TGO >250",
+    "tipo": "lista"
+   },
+   {
+    "q": "Parotiditis con amilasa alta: ¿cómo está la lipasa?",
+    "a": "Normal",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 13,
+   "ubicacion": "Faroles"
+  },
+  "revisar": false
+ },
+ "colesterol-total": {
+  "id": "colesterol-total",
+  "parametro": "Colesterol total",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "clasificacion",
+  "dato_a_recordar": "Colesterol total (ATP III): <200 deseable · 200-239 límite · ≥240 alto (mg/dL). Hipercolesterolemia: xantelasma, arco senil; nefrótico, hipotiroidismo. HF heterocigota 260-500; homocigota >1000 mg/dL.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "memorizar-listas",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Clasificación con dos cortes (nueces 200, nariz 240; el 239 se deduce). Los cortes vienen marcados como literatura (lit). Personaje: Cora (cardiovascular). Los signos visibles (xantelasma, arco senil) se ponen en la cara del vigilante.",
+  "codigo": [
+   {
+    "numero": "200",
+    "letras": "N-C-S",
+    "palabra": "nueces"
+   },
+   {
+    "numero": "240",
+    "letras": "N-R-Z",
+    "palabra": "nariz"
+   }
+  ],
+  "escena": "En la caseta de vigilancia, Cora el corazón boxeador cuida un tarro de NUECES (200): mientras el colesterol quede bajo las nueces, es deseable. Si se lo come todo, llega hasta su NARIZ (240) y se vuelve alto: le salen bolitas amarillas de grasa en los párpados (xantelasma) y un anillo blanco alrededor del iris (arco senil). Entre las nueces y la nariz, zona límite.",
+  "ancla": "Colesterol: bajo las nueces deseable; hasta la nariz, alto.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo con guantes de box y cinturón de campeón, dentro de una caseta de vigilancia, comiendo nueces de un tarro gigante. Acción: la grasa amarilla le sube hasta una nariz enorme y le aparecen bolitas amarillas en los párpados y un anillo blanco en el ojo. Escenario: caseta de vigilancia en un malecón junto a un lago andino. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "Clasificación ATP III del colesterol total",
+    "a": "<200 deseable · 200-239 límite · ≥240 alto (mg/dL)",
+    "tipo": "directa"
+   },
+   {
+    "q": "Colesterol total de 225 mg/dL es…",
+    "a": "Límite (200-239)",
+    "tipo": "caso"
+   },
+   {
+    "q": "Signos físicos de hipercolesterolemia",
+    "a": "Xantelasma, arco senil",
+    "tipo": "directa"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 14,
+   "ubicacion": "Caseta de vigilancia"
+  },
+  "revisar": false
+ },
+ "hdl": {
+  "id": "hdl",
+  "parametro": "HDL",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "cifra",
+  "dato_a_recordar": "HDL: varón ≥40 · mujer ≥50 mg/dL; ≥60 protector (resta un factor de riesgo). <40 varón, <50 mujer = criterio de síndrome metabólico. El ejercicio y los estrógenos lo suben.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Tres cortes (rosa 40 varón, losa 50 mujer, choza 60 protector). Es el 'colesterol bueno' que SUBE: por eso está en las escaleras. Normal y regla vienen marcados como literatura (lit).",
+  "codigo": [
+   {
+    "numero": "40",
+    "letras": "R-S",
+    "palabra": "rosa"
+   },
+   {
+    "numero": "50",
+    "letras": "L-S",
+    "palabra": "losa"
+   },
+   {
+    "numero": "60",
+    "letras": "CH-Z",
+    "palabra": "choza"
+   }
+  ],
+  "escena": "En las escaleras al lago, el HDL es un barrendero bueno que sube los escalones llevándose la grasa de las arterias. Un varón le entrega una ROSA (40) en el primer escalón y una mujer una LOSA (50) en el siguiente: esos son los mínimos; si no llegan ahí, cuenta para síndrome metabólico. Arriba, el barrendero entra en una CHOZA (60) protectora y Cora el corazón se esconde feliz adentro. Cuanto más corres por las escaleras (ejercicio), más alto sube.",
+  "ancla": "HDL sube la escalera: rosa él, losa ella, choza protectora.",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un barrendero sonriente y deportista subiendo escaleras de piedra con una escoba, cargando bolas de grasa amarilla. Elementos secundarios: en un escalón, un hombre le da una rosa roja; en otro, una mujer le da una losa de piedra; en lo alto, una choza donde se refugia un corazón rojo con guantes de box. Escenario: escaleras que bajan a un lago andino. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿HDL mínimo deseable en varón y en mujer?",
+    "a": "Varón ≥40; mujer ≥50 mg/dL",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Desde qué HDL es protector?",
+    "a": "≥60 mg/dL (resta un factor de riesgo)",
+    "tipo": "umbral"
+   },
+   {
+    "q": "Mujer con HDL 45: ¿cuenta para síndrome metabólico?",
+    "a": "Sí (<50 en mujer)",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 15,
+   "ubicacion": "Escaleras al lago"
+  },
+  "revisar": false
+ },
+ "ldl": {
+  "id": "ldl",
+  "parametro": "LDL",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "clasificacion",
+  "dato_a_recordar": "LDL: óptimo <100 mg/dL; normal <130. Clasificación: <100 óptimo · 100-129 casi óptimo · 130-159 límite · 160-189 alto · ≥190 muy alto (¿familiar?). Principal factor causal de aterosclerosis. Friedewald: LDL = CT − HDL − TG/5 (válida si TG <400).",
+  "tecnicas": [
+   "memorizar-numeros",
+   "memorizar-listas",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Clasificación con cortes cada 30: tazas 100, damas 130, tapas 190 (160 se deduce sumando 30). La clasificación es literatura (lit). Es el 'colesterol malo' que tapa arterias: por eso vive en los tachos de basura.",
+  "codigo": [
+   {
+    "numero": "100",
+    "letras": "T-Z-S",
+    "palabra": "tazas"
+   },
+   {
+    "numero": "130",
+    "letras": "D-M-S",
+    "palabra": "Tomás"
+   },
+   {
+    "numero": "190",
+    "letras": "T-P-S",
+    "palabra": "topos"
+   }
+  ],
+  "escena": "En los tachos de basura, el LDL es un camión de basura grasienta que se estaciona dentro de las arterias de Cora. Si carga menos de cien TAZAS (100) sucias, óptimo. Si lo esperan TOMÁS (130) furioso con una escoba, ya pasó lo normal y empieza el límite; cada treinta tazas más sube un escalón. Y si trae TOPOS (190) asomando de tachos apilados hasta el cielo, es muy alto: sospechas una hipercolesterolemia familiar, un defecto del receptor que deja la basura en la calle.",
+  "ancla": "LDL: tazas óptimo, Tomás límite, topos muy alto (¿familiar?).",
+  "acronimo": null,
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un camión de basura grasiento atascado dentro de una tubería roja que representa una arteria, con un corazón rojo con guantes de box empujándolo. Elementos secundarios: tazas sucias cayendo del camión, un hombre furioso con una escoba (Tomás) y una torre de tachos de basura apilados hasta el cielo de los que asoman topos. Escenario: tachos de basura en un malecón andino. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿LDL óptimo y LDL normal?",
+    "a": "Óptimo <100; normal <130 mg/dL",
+    "tipo": "directa"
+   },
+   {
+    "q": "LDL ≥190 mg/dL: ¿clasificación y qué sospechas?",
+    "a": "Muy alto; hipercolesterolemia familiar",
+    "tipo": "umbral"
+   },
+   {
+    "q": "Fórmula de Friedewald y su límite",
+    "a": "LDL = CT − HDL − TG/5; válida si TG <400",
+    "tipo": "directa"
+   },
+   {
+    "q": "LDL de 145 mg/dL se clasifica como…",
+    "a": "Límite (130-159)",
+    "tipo": "caso"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 16,
+   "ubicacion": "Tachos de basura"
+  },
+  "revisar": false
+ },
+ "trigliceridos": {
+  "id": "trigliceridos",
+  "parametro": "Triglicéridos",
+  "grupo": "Hígado, páncreas y lípidos",
+  "tipo_info": "cifra",
+  "dato_a_recordar": "Triglicéridos <150 mg/dL (≥150 = elevados; criterio de síndrome metabólico). >700 satura la LPL → riesgo de pancreatitis. Síndrome metabólico = 3 de 5: cintura ↑, TG ≥150, HDL bajo, PA ≥130/85, glucosa ≥100.",
+  "tecnicas": [
+   "memorizar-numeros",
+   "mnemotecnia",
+   "visualizacion-imagenes"
+  ],
+  "por_que": "Dos cortes (telas 150, casas 700) + los 5 criterios del síndrome metabólico como 'cinco objetos de la mano'. El final del malecón cierra la sección con la grasa que llega al páncreas (Don Azúcar).",
+  "codigo": [
+   {
+    "numero": "150",
+    "letras": "T-L-S",
+    "palabra": "telas"
+   },
+   {
+    "numero": "700",
+    "letras": "C-S-S",
+    "palabra": "casas"
+   }
+  ],
+  "escena": "Al final del malecón, un vendedor fríe trucha y escurre el aceite (triglicéridos) en TELAS (150) blancas: si el aceite empapa las telas, ya están elevados. Un señor panzón cuenta con los cinco dedos: su cinturón revienta (cintura), las telas chorrean aceite (TG ≥150), el barrendero bueno no aparece (HDL bajo), su tensiómetro silba (PA ≥130/85) y Don Azúcar le sube a la cabeza (glucosa ≥100): con tres dedos ya es síndrome metabólico. Si el aceite llena siete CASAS (700), inunda a Don Azúcar y lo inflama: pancreatitis.",
+  "ancla": "TG: telas empapadas (≥150); siete casas de aceite (>700) = pancreatitis.",
+  "acronimo": "Síndrome metabólico, 3 de 5: Cintura · TG · HDL · PA · Glucosa",
+  "ruta_palacio": null,
+  "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un vendedor de trucha frita escurriendo un aceite dorado sobre telas blancas que chorrean. Acción: el aceite desborda y avanza como río hacia un cubo de azúcar con sombrero de copa que se pone rojo e inflamado. Elementos secundarios: un señor panzón con el cinturón reventando, contando con los dedos; varias casitas al fondo inundadas de aceite. Escenario: final de un malecón junto a un lago andino. Sin texto, sin letras, sin números, sin logotipos.",
+  "imagen": null,
+  "imagen_clave": false,
+  "preguntas": [
+   {
+    "q": "¿Triglicéridos normales?",
+    "a": "<150 mg/dL",
+    "tipo": "directa"
+   },
+   {
+    "q": "¿Desde qué nivel de TG hay riesgo de pancreatitis y por qué?",
+    "a": ">700 mg/dL; satura la lipoproteinlipasa",
+    "tipo": "umbral"
+   },
+   {
+    "q": "Criterios del síndrome metabólico",
+    "a": "3 de 5: cintura ↑, TG ≥150, HDL bajo, PA ≥130/85, glucosa ≥100",
+    "tipo": "lista"
+   }
+  ],
+  "fuentes_tecnica": [
+   "#189",
+   "#139"
+  ],
+  "estacion": {
+   "seccion": "s6",
+   "n": 17,
+   "ubicacion": "Final del malecón"
+  },
+  "revisar": false
+ }
+}

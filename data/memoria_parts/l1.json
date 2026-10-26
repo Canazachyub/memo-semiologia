@@ -1,0 +1,1658 @@
+{
+  "frecuencia-cardiaca-pulso": {
+    "id": "frecuencia-cardiaca-pulso",
+    "parametro": "Frecuencia cardiaca / pulso",
+    "grupo": "Signos vitales y antropometría",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Adulto 60-100 lpm (media 70); >100 taquisfigmia (fiebre, IC, hipertiroidismo, shock); <60 bradisfigmia (hipotermia, hipotiroidismo, β-bloq/digital, bloqueo AV). Fiebre: +12-15 lpm por cada °C sobre 37. Déficit de pulso (FA): contar 1 min.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "palacio-memoria",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango exacto con dos umbrales que dan nombre (taqui/bradisfigmia) → sistema mayor (60 = choza, 100 = tazas) + escena en la estación 0 del palacio. La perla de la fiebre (+12-15 lpm/°C) va solo en preguntas para no recargar la escena.",
+    "codigo": [
+      {
+        "numero": "60",
+        "letras": "CH-Z",
+        "palabra": "choza"
+      },
+      {
+        "numero": "100",
+        "letras": "T-Z-S",
+        "palabra": "tazas"
+      }
+    ],
+    "escena": "En la puerta de emergencia del Hospital Regional hay una choza de totora y, encima del techo, una torre de cien tazas tintineando. Cora, el corazón boxeador, salta la soga entre la choza y las tazas: ¡pum-pum, pum-pum!, ese es su ritmo sano. Le echas fuego al guante (fiebre) y Cora se acelera tanto que rebasa las tazas y las hace estallar en lluvia de porcelana: taquisfigmia. Le das una pastilla de betabloqueante y se hunde bajo el piso de la choza arrastrando los guantes como un perezoso: bradisfigmia.",
+    "ancla": "Cora salta entre la choza (60) y las tazas (100): rompe tazas = taqui, se hunde en la choza = bradi.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo musculoso con guantes de box y cinturón de campeón, saltando la soga con gotas de sudor y líneas de movimiento. Acción: rebota con tanta fuerza que golpea una torre alta de tazas blancas apiladas, que estallan en pedazos por los aires. Elementos secundarios: debajo de él una pequeña choza de totora dorada; una llamita de fuego en uno de sus guantes. Escenario: entrada de emergencia de un hospital andino con cerros al fondo y cielo azul intenso de altura. Composición: corazón centrado y grande, rojo sobre azul, tazas en la parte superior y choza abajo. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Rango normal de FC en el adulto en reposo?",
+        "a": "60-100 lpm (media 70)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Pulso de 112 lpm en un adulto se llama… y nombra 2 causas",
+        "a": "Taquisfigmia (>100): fiebre, IC, hipertiroidismo, hipovolemia, shock",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Paciente con 39 °C y pulso de 60 lpm: ¿qué esperabas y qué enfermedad sospechas?",
+        "a": "Esperabas que suba +12-15 lpm por cada °C sobre 37 (≈+24-30 lpm); un pulso que no acompaña la fiebre orienta a tifoidea (está entre las causas de bradisfigmia)",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Qué es el déficit de pulso?",
+        "a": "Latidos auscultados > pulsos radiales (FA, extrasístoles); contar 1 minuto",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#195"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s1",
+      "n": 0,
+      "ubicacion": "Puerta de emergencia"
+    }
+  },
+  "presion-arterial": {
+    "id": "presion-arterial",
+    "parametro": "Presión arterial",
+    "grupo": "Signos vitales y antropometría",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Normal <130/85; ideal <120/80; limítrofe 130-139/85-89; HTA ≥140/90 en ≥2 tomas (I 140-159/90-99; II 160-179/100-109; III >180/>110). Hipotensión: PAS sostenida <90. PAM = (PAS + 2 × PAD)/3, normal 60-100 mmHg.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "palacio-memoria",
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Varios cortes exactos (ideal, normal, HTA, hipotensión) → sistema mayor en un pilar del tensiómetro: lo alto (sistólica) arriba y lo bajo (diastólica) abajo, como se escribe la PA. Los grados I-III siguen la regla de sumar 20/10 desde 140/90 y van en preguntas; la PAM con acróstico.",
+    "codigo": [
+      {
+        "numero": "120",
+        "letras": "T-N-S",
+        "palabra": "tunas"
+      },
+      {
+        "numero": "80",
+        "letras": "V-S",
+        "palabra": "vaso"
+      },
+      {
+        "numero": "130",
+        "letras": "T-M-S",
+        "palabra": "Tomás"
+      },
+      {
+        "numero": "85",
+        "letras": "V-L",
+        "palabra": "vela"
+      },
+      {
+        "numero": "140",
+        "letras": "T-RR-S",
+        "palabra": "torres"
+      },
+      {
+        "numero": "90",
+        "letras": "P-S",
+        "palabra": "peso"
+      }
+    ],
+    "escena": "En la ventanilla de admisión, Cora el corazón boxeador se pone el manguito del tensiómetro y lo infla a puñetazos. Primer escalón, el ideal: exprime tunas rojas que chorrean jugo dentro de un vaso. Segundo, el límite normal: llega su amigo Tomás con una vela encendida y la vela empieza a derretirse. Tercero, la hipertensión: el manguito se infla tanto que levanta dos torres de piedra y encima cae una pesa de gimnasio que hace temblar el vidrio de la ventanilla, ¡CRAC! Si Cora se desmaya y la sistólica cae bajo la pesa, queda tirado en el suelo: hipotensión.",
+    "ancla": "Tunas-vaso (ideal 120/80) · Tomás-vela (normal <130/85) · torres-peso (HTA 140/90); bajo el peso (PAS <90) = hipotensión.",
+    "acronimo": "PAM = «Dos Damas y un Señor entre tres» = (PAS + 2·PAD)/3; normal 60-100 (choza-tazas, como la FC)",
+    "ruta_palacio": [
+      {
+        "lugar": "Ventanilla de admisión > arriba",
+        "imagen": "Sistólicas: tunas (120), Tomás (130), torres (140) apiladas hacia arriba"
+      },
+      {
+        "lugar": "Ventanilla de admisión > abajo",
+        "imagen": "Diastólicas: vaso (80), vela (85), peso (90) en el asiento"
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo musculoso con guantes de box y cinturón de campeón, inflando a puñetazos un manguito de tensiómetro gigante en su brazo, con la cara roja de esfuerzo. Acción: el manguito hinchado levanta dos torres de piedra y una pesa de gimnasio enorme cae encima con ondas de impacto. Elementos secundarios: a la izquierda tunas rojas exprimidas goteando jugo dentro de un vaso de vidrio; un hombre sonriente sosteniendo una vela que se derrite. Escenario: ventanilla de admisión de un hospital con vidrio y mostrador. Composición: corazón al centro, lo bajo a la izquierda y lo alto a la derecha, rojos y azules saturados. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿PA ideal y PA normal según el docente?",
+        "a": "Ideal <120/80; normal <130/85 (limítrofe 130-139/85-89)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Desde qué cifra se diagnostica HTA y con cuántas tomas?",
+        "a": "≥140/90 en ≥2 tomas",
+        "tipo": "umbral"
+      },
+      {
+        "q": "PA 165/95: ¿qué grado de HTA?",
+        "a": "Grado II (160-179 / 100-109): decide la cifra más alta, la sistólica",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Cómo se calcula la PAM y cuál es su normal?",
+        "a": "(PAS + 2 × PAD)/3; normal 60-100 mmHg; <60 = isquemia cerebral",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#132",
+      "#143"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s1",
+      "n": 1,
+      "ubicacion": "Ventanilla de admisión"
+    }
+  },
+  "frecuencia-respiratoria": {
+    "id": "frecuencia-respiratoria",
+    "parametro": "Frecuencia respiratoria",
+    "grupo": "Signos vitales y antropometría",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Adulto en reposo 16-20 rpm; relación inspiración:espiración 2:3. >20 taquipnea (fiebre, neumonía, EPOC, acidosis metabólica); <16 bradipnea (sueño/atleta, opiáceos, barbitúricos, coma). Kussmaul: acidosis · Cheyne-Stokes: crece-decrece-apnea (IC) · Biot: anárquica, daño cerebral.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Ojo: el docente usa 16-20 (no el 12-20 de otros textos) → sistema mayor con 16 = teja, 20 = NASA y 23 = Nemo para la relación 2:3. Los tres epónimos con palabra sustituta (Kuss = beso, chain = cadena, Biot = bote).",
+    "codigo": [
+      {
+        "numero": "16",
+        "letras": "T-J",
+        "palabra": "teja"
+      },
+      {
+        "numero": "20",
+        "letras": "N-S",
+        "palabra": "NASA"
+      },
+      {
+        "numero": "23",
+        "letras": "N-M",
+        "palabra": "Nemo"
+      }
+    ],
+    "escena": "En las sillas de espera, Pulmi, el globo-pulmón con lentes de buceo, respira bajo un techo de tejas: cada inspiración lo hincha hasta rozar las tejas. Si se apura y pasa de veinte, despega como un cohete de la NASA, jadeando y quemando el techo: taquipnea. Si un opiáceo lo duerme, se desinfla bajo las tejas y apenas suspira: bradipnea. En su pecera, el pez Nemo marca el compás: inhala en dos burbujas y exhala en tres (2:3). Al lado, un diabético da besos profundos (Kuss-maul), una cadena sube y baja y se para (Cheyne-Stokes) y un bote rema sin orden (Biot).",
+    "ancla": "Pulmi entre la teja (16) y la NASA (20); Nemo respira 2:3.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados unidos con forma de pulmones y lentes de buceo, inflándose enormemente sobre una fila de sillas de plástico. Acción: despegan como un cohete espacial blanco con llamas y humo, rompiendo un techo de tejas rojas de arcilla que salen volando. Elementos secundarios: un pez payaso naranja con rayas blancas en una pecera soltando burbujas; un globo pequeño dormido y desinflado al costado. Escenario: sala de espera de hospital con sillas de plástico en fila. Composición: pulmones al centro ascendiendo con líneas de velocidad, rosa y naranja sobre azul. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿FR normal del adulto en reposo según el docente?",
+        "a": "16-20 rpm; relación I:E 2:3",
+        "tipo": "directa"
+      },
+      {
+        "q": "FR de 26 rpm se llama… y da 2 causas",
+        "a": "Taquipnea (>20): fiebre, neumonía, EPOC, EAP, acidosis metabólica, uremia",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Paciente con sobredosis de opiáceos y FR 10: ¿cómo se llama?",
+        "a": "Bradipnea (<16)",
+        "tipo": "caso"
+      },
+      {
+        "q": "Respiración crece-decrece seguida de apnea en un paciente con IC: ¿nombre?",
+        "a": "Cheyne-Stokes",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#124"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s1",
+      "n": 2,
+      "ubicacion": "Sillas de espera"
+    }
+  },
+  "temperatura": {
+    "id": "temperatura",
+    "parametro": "Temperatura",
+    "grupo": "Signos vitales y antropometría",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Axilar 36.5 °C; oral 37 °C; rectal 37.5 °C. Febrícula 37.5; fiebre moderada 37.6-38.5; elevada >38.6 °C (axilar). Hipotermia <35 °C. Axilo-rectal >0.8 °C en abdomen agudo orienta a apendicitis.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-listas",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Tres sitios en orden de calor (axila < boca < recto, cada uno +0.5) y cortes de fiebre exactos → sistema mayor: parte entera y decimal en ese orden (36 = mecha + 5 = ola). La clasificación de la curva febril (continua/remitente/intermitente) está marcada lit: true en la fuente: es literatura y va solo en preguntas.",
+    "codigo": [
+      {
+        "numero": "36",
+        "letras": "M-CH",
+        "palabra": "mecha"
+      },
+      {
+        "numero": "5",
+        "letras": "L",
+        "palabra": "ola"
+      },
+      {
+        "numero": "37",
+        "letras": "M-G",
+        "palabra": "mago"
+      },
+      {
+        "numero": "38",
+        "letras": "M-F",
+        "palabra": "mafia"
+      },
+      {
+        "numero": "35",
+        "letras": "M-L",
+        "palabra": "miel"
+      }
+    ],
+    "escena": "En la camilla de triaje, Termo, el termómetro bombero, se mete bajo la axila del paciente y ve una mecha encendida a la que le cae una ola: 36 coma 5, la axila normal. Sube a la boca y ahí lo espera un mago que le saca un conejo de la lengua: 37 oral. Baja al recto y el mismo mago surfea una ola: 37 coma 5 rectal, medio grado más caliente cada sitio. Si en la axila aparece la mafia con puros encendidos, todo humea: más de 38 coma 6 es fiebre elevada. Y si el paciente queda pegado en miel congelada, dura y fría, está por debajo de 35: hipotermia.",
+    "ancla": "Axila mecha-ola (36.5) → boca mago (37) → recto mago-ola (37.5); la mafia es fiebre; miel congelada <35 = hipotermia.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un termómetro antropomórfico con casco rojo de bombero, sudando y con ojos enormes, apagando con su manguera una mecha encendida. Acción: una ola de agua azul cae sobre la mecha mientras un mago con capa y sombrero de copa surfea encima de la ola. Elementos secundarios: tres mafiosos caricaturescos con trajes a rayas y puros humeantes al fondo; un frasco de miel congelada con escarcha a un lado. Escenario: camilla de triaje de un hospital. Composición: termómetro centrado y grande, rojo y azul intensos, vapor y líneas de calor. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Temperatura normal axilar, oral y rectal?",
+        "a": "36.5 / 37 / 37.5 °C (cada sitio +0.5)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Axilar de 38 °C: ¿febrícula, fiebre moderada o elevada?",
+        "a": "Fiebre moderada (37.6-38.5); febrícula 37.5; elevada >38.6",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Abdomen agudo con diferencia axilo-rectal de 1 °C: ¿qué sospechas?",
+        "a": "Apendicitis (diferencia >0.8 °C)",
+        "tipo": "caso"
+      },
+      {
+        "q": "Fiebre que baja a la normalidad cada día (malaria): ¿qué curva? (literatura)",
+        "a": "Intermitente; continua oscila <1 °C; remitente >1 °C sin normalizar",
+        "tipo": "trampa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#137"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s1",
+      "n": 3,
+      "ubicacion": "Camilla de triaje"
+    }
+  },
+  "saturacion-de-oxigeno": {
+    "id": "saturacion-de-oxigeno",
+    "parametro": "Saturación de oxígeno",
+    "grupo": "Signos vitales y antropometría",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Nivel del mar 95-98% (SaO2). En nuestro medio (Puno) 90%; nota wiki: 88-92% en adaptados a altura. <90% = hipoxemia: dar O2, posición sentada, buscar causa.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Dos normales según la altura: es lo más preguntado en Puno. Sistema mayor: 95 = pala, 98 = pavo (nivel del mar), 90 = peso (Puno y corte de hipoxemia), 88 = FIFA y 92 = pino (rango wiki). El 85-92% de la clave es literatura (lit: true) y no se codifica. Revisar: la fuente da tres cifras para la altura (90% del docente, 88-92% de la wiki, 85-92% en la clave de literatura); se fija el 90% del docente.",
+    "codigo": [
+      {
+        "numero": "95",
+        "letras": "P-L",
+        "palabra": "pala"
+      },
+      {
+        "numero": "98",
+        "letras": "P-V",
+        "palabra": "pavo"
+      },
+      {
+        "numero": "90",
+        "letras": "P-S",
+        "palabra": "peso"
+      },
+      {
+        "numero": "88",
+        "letras": "F-F",
+        "palabra": "FIFA"
+      },
+      {
+        "numero": "92",
+        "letras": "P-N",
+        "palabra": "pino"
+      }
+    ],
+    "escena": "Junto al tensiómetro de pared, Los Glóbulos, soldados rojos con casco, cargan globos de oxígeno. Abajo en la playa, a nivel del mar, un soldado llena su globo con una pala y se lo da a un pavo gordo: 95-98, casi lleno. En Puno, a 3800 metros, el aire es tan delgado que el mismo soldado jadea y solo logra levantar una pesa: 90 es nuestro normal. Si la aguja cae por debajo de la pesa, el soldado se pone morado y suena una alarma: hipoxemia, siéntalo y dale oxígeno. Detrás, entre un balón FIFA y un pino andino, rebotan los adaptados de altura: 88-92.",
+    "ancla": "Mar: pala-pavo (95-98) · Puno: peso (90); bajo el peso = hipoxemia.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un glóbulo rojo caricaturesco con casco militar, jadeando con la lengua afuera mientras levanta una pesa de gimnasio enorme sobre un cerro nevado andino. Acción: a su lado otro glóbulo rojo relajado en una playa llena un globo azul con una pala y se lo entrega a un pavo gordo. Elementos secundarios: un balón de fútbol y un pino junto a la montaña; un tensiómetro colgado en la pared del hospital enmarca la escena. Composición: escena dividida en diagonal, playa abajo a la izquierda y montaña arriba a la derecha, rojo, azul y blanco. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿SatO2 normal a nivel del mar?",
+        "a": "95-98%",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿SatO2 normal en Puno según el docente?",
+        "a": "90% (wiki: 88-92% en adaptados a la altura)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Residente de Puno sano con SatO2 91%: ¿le das oxígeno?",
+        "a": "No: es normal en la altura; no aplicar el corte 95% del nivel del mar",
+        "tipo": "trampa"
+      },
+      {
+        "q": "SatO2 de 85% en un paciente con neumonía en Puno: ¿qué es y qué haces?",
+        "a": "Hipoxemia (<90%): dar O2, posición sentada, buscar la causa",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": true,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s1",
+      "n": 4,
+      "ubicacion": "Tensiómetro de pared"
+    }
+  },
+  "peso-talla-imc": {
+    "id": "peso-talla-imc",
+    "parametro": "Peso, talla, IMC",
+    "grupo": "Signos vitales y antropometría",
+    "tipo_info": "formula",
+    "dato_a_recordar": "IMC = peso (kg) ÷ talla² (m). Normal 19-23; sobrepeso 24-25; obesidad >26; obesidad mórbida >40 kg/m²; bajo peso <18. Peso ideal (Broca) = talla cm − 100 (mujer −5%) ±10%. Ej.: 1.60 m y 78 kg → IMC ≈30.5 = obesidad.",
+    "tecnicas": [
+      "mnemotecnia",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Fórmula + cortes del docente (INAM 1991), que NO son los de la OMS (18.5-25 / 25-29.9 / ≥30) → escena de la operación (la llama sobre la caja cuadrada) + sistema mayor para los cortes. Personaje nuevo: Llami, la llama paciente de Puno (antropometría y examen general); rasgo fijo: llama blanca con chullo de colores. Revisar: el docente y la OMS dan cortes distintos.",
+    "codigo": [
+      {
+        "numero": "18",
+        "letras": "T-F",
+        "palabra": "tofu"
+      },
+      {
+        "numero": "19",
+        "letras": "T-P",
+        "palabra": "topo"
+      },
+      {
+        "numero": "23",
+        "letras": "N-M",
+        "palabra": "Nemo"
+      },
+      {
+        "numero": "26",
+        "letras": "N-CH",
+        "palabra": "nacho"
+      },
+      {
+        "numero": "40",
+        "letras": "R-S",
+        "palabra": "rosa"
+      },
+      {
+        "numero": "100",
+        "letras": "T-Z-S",
+        "palabra": "tazas"
+      }
+    ],
+    "escena": "En la balanza y el tallímetro, Llami, la llama de Puno, se sienta con todo su peso sobre una caja perfectamente cuadrada hecha de cintas métricas: el peso dividido entre la talla al cuadrado. La caja cruje. Por debajo de ella se escapa un cubo de tofu blanco y flaco (bajo peso <18). Llami sana come tranquila entre un topo y el pez Nemo (19-23). Pero si se zampa un nacho gigante, la caja revienta (obesidad >26), y si encima le cae una montaña de rosas, la balanza se hunde en el suelo (mórbida >40). Para el peso ideal, Llami quita cien tazas de su talla en centímetros.",
+    "ancla": "Llami sobre la caja cuadrada: tofu flaco (<18) · topo-Nemo sano (19-23) · nacho obeso (>26) · rosas mórbidas (>40).",
+    "acronimo": "«El Peso se sienta Sobre la Talla Cuadrada» = kg / m² · Broca: talla − cien tazas",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una llama andina blanca con chullo de colores, regordeta y con cara de satisfacción, sentada sobre una caja perfectamente cuadrada hecha de cintas métricas amarillas que se hunde y cruje. Acción: muerde un nacho gigante mientras la caja se agrieta con líneas de impacto. Elementos secundarios: un topo y un pez payaso naranja a su lado; un cubo de tofu flaco escapándose por debajo de la caja. Escenario: balanza y tallímetro de un hospital. Composición: llama centrada, blanco, amarillo y turquesa. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Fórmula del IMC?",
+        "a": "Peso (kg) ÷ talla² (m)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿IMC normal según el docente y desde cuánto es obesidad?",
+        "a": "Normal 19-23; sobrepeso 24-25; obesidad >26; mórbida >40",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Mujer de 1.60 m y 78 kg con somnolencia y apnea: ¿IMC y síndrome?",
+        "a": "IMC ≈30.5 = obesidad; síndrome de Pickwick",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Peso ideal de Broca para un varón de 170 cm?",
+        "a": "70 kg (talla cm − 100) ±10%; en la mujer −5%",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#139",
+      "#189"
+    ],
+    "revisar": true,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s1",
+      "n": 5,
+      "ubicacion": "Balanza y tallímetro"
+    }
+  },
+  "talla": {
+    "id": "talla",
+    "parametro": "Talla",
+    "grupo": "Signos vitales y antropometría",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Relación pubis-vértice / pubis-planta 0.98-1.0. Gigantismo: >1.90 m varón, >1.80 m mujer. Enanismo: <1.50 m ambos sexos. Envergadura ≈ talla; envergadura > talla + segmento inferior largo = eunucoide/Marfan.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Cortes exactos de talla → sistema mayor de 3 dígitos (metros sin punto: 1.90 = 190 = topos; en 0.98 el 0 se deduce y solo se codifica 98). La regla de envergadura es literatura (lit: true) y se usa en una pregunta.",
+    "codigo": [
+      {
+        "numero": "98",
+        "letras": "P-V",
+        "palabra": "pavo"
+      },
+      {
+        "numero": "1.0",
+        "letras": "T-S",
+        "palabra": "taza"
+      },
+      {
+        "numero": "190",
+        "letras": "T-P-S",
+        "palabra": "topos"
+      },
+      {
+        "numero": "180",
+        "letras": "T-F-S",
+        "palabra": "tofus"
+      },
+      {
+        "numero": "150",
+        "letras": "T-L-S",
+        "palabra": "telas"
+      }
+    ],
+    "escena": "Frente al monitor del tópico, Llami mide a dos gigantes. Un varón altísimo tiene una torre de topos excavando hasta su cabeza: más de 1.90. Una mujer gigante lleva una pila de tofus temblorosos en la cabeza: más de 1.80. Abajo, un enano se enreda en telas que arrastra por el piso: menos de 1.50 en ambos sexos. Para ver si la mitad de arriba y la de abajo cuadran, Llami pone un pavo en una balanza contra una taza: casi iguales, 0.98 a 1. Al final un hombre abre los brazos en cruz y sus dedos larguísimos tocan las dos paredes: Marfan.",
+    "ancla": "Topos (>1.90 V) · tofus (>1.80 M) · telas (<1.50): pavo-taza (0.98-1.0) = mitades iguales.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hombre gigante altísimo con una columna de topos cavando y asomando hasta su cabeza. Acción: junto a él una mujer alta equilibra una pila de cubos de tofu temblorosos sobre la cabeza, y un hombre bajito se enreda en metros de telas de colores. Elementos secundarios: una llama blanca con chullo mide con una cinta métrica; una balanza con un pavo en un plato y una taza en el otro. Escenario: tópico de hospital con monitor en la pared. Composición: personajes en fila de izquierda a derecha por altura, colores vivos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Desde qué talla se habla de gigantismo en varón y en mujer?",
+        "a": ">1.90 m varón; >1.80 m mujer",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Talla que define enanismo?",
+        "a": "<1.50 m en ambos sexos",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Relación normal pubis-vértice / pubis-planta?",
+        "a": "0.98-1.0",
+        "tipo": "directa"
+      },
+      {
+        "q": "Envergadura mayor que la talla con segmento inferior largo sugiere… (literatura)",
+        "a": "Hábito eunucoide o Marfan",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s1",
+      "n": 6,
+      "ubicacion": "Monitor del tópico"
+    }
+  },
+  "perimetro-abdominal-cintura": {
+    "id": "perimetro-abdominal-cintura",
+    "parametro": "Perímetro abdominal / cintura",
+    "grupo": "Signos vitales y antropometría",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Mujer <88 cm · varón <102 cm (ATP III); riesgo desde 80/94 cm (IDF). Obesidad abdominal: >102 cm varón, >88 cm mujer (cintura/cadera >0.9 y >0.85). Obesidad central/androide → DM, HTA, infarto.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Dos pares de cortes por sexo → sistema mayor (88 = FIFA, 102 = tisana; 80 = vaso, 94 = pera). Los normales y la regla IDF están marcados lit: true: son literatura (Guyton), no del docente de Semiología.",
+    "codigo": [
+      {
+        "numero": "88",
+        "letras": "F-F",
+        "palabra": "FIFA"
+      },
+      {
+        "numero": "102",
+        "letras": "T-S-N",
+        "palabra": "tisana"
+      },
+      {
+        "numero": "80",
+        "letras": "V-S",
+        "palabra": "vaso"
+      },
+      {
+        "numero": "94",
+        "letras": "P-R",
+        "palabra": "pera"
+      }
+    ],
+    "escena": "Sobre el coche de paro, Llami mide cinturas con una cinta métrica en el punto medio entre la costilla y la cresta ilíaca, al final de la espiración. A la señora se le infla la panza como un balón FIFA: si pasa de ese balón, obesidad abdominal. Al señor la barriga se le hincha como una tetera de tisana hirviendo que silba: más de 102. Antes de eso, la IDF ya da la alarma pequeña: un vaso que tiembla en la señora (80) y una pera que se balancea en el señor (94). El coche de paro está ahí porque esa barriga de manzana trae infarto, diabetes e hipertensión.",
+    "ancla": "Mujer balón FIFA (88) · varón tisana (102); alarma IDF vaso (80) y pera (94).",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una llama blanca con chullo apretando una cinta métrica amarilla alrededor de la barriga de un señor redondo, cuya panza humea y silba como una tetera de infusión hirviendo. Acción: a su lado una señora con la panza inflada como un balón de fútbol a punto de reventar. Elementos secundarios: un vaso temblando y una pera balanceándose sobre la tapa de un coche de paro rojo de hospital. Composición: llama al centro, panzas a izquierda y derecha, rojos y amarillos intensos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Perímetro abdominal que define obesidad abdominal en mujer y en varón (ATP III)?",
+        "a": ">88 cm mujer; >102 cm varón",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Desde qué cintura marca riesgo la IDF?",
+        "a": "Desde 80 cm mujer y 94 cm varón",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Dónde y cuándo se mide la cintura?",
+        "a": "Punto medio entre costilla y cresta ilíaca, al final de la espiración",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s1",
+      "n": 7,
+      "ubicacion": "Coche de paro"
+    }
+  },
+  "escala-de-glasgow": {
+    "id": "escala-de-glasgow",
+    "parametro": "Escala de Glasgow",
+    "grupo": "Signos vitales y antropometría",
+    "tipo_info": "escala",
+    "dato_a_recordar": "15 (O4 + M6 + V5); rango 3-15 (mínimo 3, no existe 0). Ocular 1-4 · verbal 1-5 · motora 1-6. Moderado 9-12; ≤8 grave = coma → proteger vía aérea/intubar. Leve 13-15: sin dato en el vault.",
+    "tecnicas": [
+      "mnemotecnia",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Escala: componentes con acrónimo (cuatro ojos, cinco vocales, motor V6) y puntajes con sistema mayor (456 = reloj en orden O-V-M, 15 = tele, 8 = uva). Los cortes 9-12 y ≤8 vienen de Fisiopatología/Fisiología, no de Semiología; leve 13-15 no tiene dato en el vault y no se fija.",
+    "codigo": [
+      {
+        "numero": "456",
+        "letras": "R-L-J",
+        "palabra": "reloj"
+      },
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      },
+      {
+        "numero": "8",
+        "letras": "V",
+        "palabra": "uva"
+      },
+      {
+        "numero": "9",
+        "letras": "P",
+        "palabra": "pie"
+      },
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      }
+    ],
+    "escena": "En el lavadero, Profe Neuro, el cerebro con birrete, mira un reloj de vidrio (glass, Glasgow) con tres manecillas: un ojo que marca las 4, una boca que canta las 5 vocales y una mano con motor V6 que marca las 6. La esfera del reloj es una tele encendida: 15, el máximo. Al paciente que lo mira se le atora una uva en la garganta: con 8 o menos hay que meterle un tubo. Entre un pie metido en la tina del lavadero, el chapoteo es el coma moderado: 9 a 12. Nadie baja de 3: cada manecilla vale por lo menos 1.",
+    "ancla": "Glasgow: reloj (O4 V5 M6) con esfera de tele (15); uva atorada ≤8 = intubar; pie en la tina 9-12.",
+    "acronimo": "O-V-M = 4-5-6: CUATRO OJOS, CINCO VOCALES, MOTOR V6",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete y puntero señalando un reloj de vidrio gigante con tres manecillas: una con forma de ojo, otra de boca cantando y otra de mano mecánica con motor. Acción: la esfera del reloj es una pantalla de televisor encendida que brilla. Elementos secundarios: un paciente con una uva atorada en la garganta y ojos de susto; un pie chapoteando en una tina dentro de un lavadero de hospital. Composición: cerebro y reloj al centro, rosa y celeste brillantes. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Máximo de cada componente de Glasgow y rango total?",
+        "a": "Ocular 4, verbal 5, motora 6; total 3-15 (no existe 0)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Glasgow que obliga a proteger la vía aérea?",
+        "a": "≤8 (coma grave) → intubar",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Abre ojos al dolor (2), sonidos incomprensibles (2), retira al dolor (4): ¿Glasgow y gravedad?",
+        "a": "8 = grave → proteger vía aérea",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Qué rango es TCE/coma moderado?",
+        "a": "9-12",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#139",
+      "#189",
+      "#143"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s1",
+      "n": 8,
+      "ubicacion": "Lavadero"
+    }
+  },
+  "llenado-capilar": {
+    "id": "llenado-capilar",
+    "parametro": "Llenado capilar",
+    "grupo": "Signos vitales y antropometría",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "<2 s (lecho ungueal). >2 s: deshidratación, shock, enfermedad vascular periférica, hipotermia. Presionar la uña 5 s y soltar: debe recolorear antes de decir «llenado capilar».",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Un solo umbral → sistema mayor 2 = uña (N/Ñ), que además es el sitio donde se mide. La técnica (presionar 5 s y decir «llenado capilar») es literatura (lit: true); Fisiopatología usa >3 s en sepsis/bajo gasto.",
+    "codigo": [
+      {
+        "numero": "2",
+        "letras": "Ñ",
+        "palabra": "uña"
+      },
+      {
+        "numero": "5",
+        "letras": "L",
+        "palabra": "ola"
+      }
+    ],
+    "escena": "En la puerta del shock trauma, Cora el corazón boxeador aprieta con su guante la uña gigante de un paciente mientras cuenta una ola que rompe (5 s). Suelta y grita «¡lle-na-do ca-pi-lar!»: si la uña ya se puso rosada antes de terminar la frase, todo bien, menos de 2 s. Si la uña sigue blanca como tiza y el paciente está frío y seco, la puerta del shock se abre de golpe con una sirena: deshidratación o shock.",
+    "ancla": "Uña (2): aprieta una ola (5 s), suelta y di «llenado capilar» antes de que se coloree.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo con guantes de box y cinturón de campeón apretando con su guante la uña gigante de un dedo humano, que se ve blanca bajo la presión. Acción: al soltar, el color rosado vuelve a la uña con un destello. Elementos secundarios: una ola azul rompiendo detrás; una puerta de sala de shock que se abre con luces rojas de sirena. Composición: dedo y corazón en primer plano, rojo, rosa y blanco. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Llenado capilar normal?",
+        "a": "<2 s en el lecho ungueal",
+        "tipo": "directa"
+      },
+      {
+        "q": "Lactante con diarrea, fontanela deprimida y relleno de 4 s: ¿qué tiene?",
+        "a": "Deshidratación grave",
+        "tipo": "caso"
+      },
+      {
+        "q": "Nombra 3 causas de llenado capilar >2 s",
+        "a": "Deshidratación, shock, enfermedad vascular periférica, hipotermia",
+        "tipo": "lista"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s1",
+      "n": 9,
+      "ubicacion": "Puerta del shock trauma"
+    }
+  },
+  "estado-general": {
+    "id": "estado-general",
+    "parametro": "Estado general",
+    "grupo": "Examen general y piel",
+    "tipo_info": "clasificacion",
+    "dato_a_recordar": "BEG (buen estado general) es lo normal; REG / MEG si está alterado; escribir completo en la HC (implicancia médico-legal). Evaluación subjetiva en segundos; alerta si hay pocos signos y MEG.",
+    "tecnicas": [
+      "memorizar-listas",
+      "memorizar-conceptos",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Clasificación ordenada de 3 (bueno, regular, malo) más una regla (escribirlo completo, no la sigla) → historia de 3 llamas en orden + concepto de la alerta. Sin cifras.",
+    "codigo": null,
+    "escena": "En la esquina con el Jr. Lima pasan tres llamas en fila y tú las juzgas en un parpadeo. La primera, Llami, va erguida, rosada y bailando una diablada: BEG. La segunda camina cansada, arrastrando un poco las patas: REG. La tercera llega casi tirada, gris y sudorosa: MEG. Un juez con martillo te arranca el lapicero si escribes solo la sigla: en la historia clínica se escribe completo. Y si la tercera llama tiene pocos signos pero se ve tan mal, ¡alerta roja!",
+    "ancla": "Tres llamas en la esquina: baila (BEG), se cansa (REG), se cae (MEG); se escribe completo.",
+    "acronimo": "BEG · REG · MEG = Bueno, Regular, Malo",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: tres llamas andinas en fila en una esquina de plaza con portales coloniales: la primera erguida y bailando con traje de diablada, la segunda cansada arrastrando las patas, la tercera tirada en el suelo, pálida y sudorosa. Acción: un juez caricaturesco con martillo de madera señala severo un cuaderno. Composición: llamas de izquierda a derecha en orden de gravedad, del color vivo al gris. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Cuáles son las 3 categorías del estado general, en orden?",
+        "a": "BEG, REG, MEG (bueno, regular, malo)",
+        "tipo": "lista"
+      },
+      {
+        "q": "¿Por qué se escribe completo y no la sigla en la HC?",
+        "a": "Por su implicancia médico-legal",
+        "tipo": "explica"
+      },
+      {
+        "q": "Paciente con pocos signos pero en MEG: ¿qué te debe hacer pensar?",
+        "a": "Es una alerta: puede estar más grave de lo que muestran los signos",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#137",
+      "#139",
+      "#043"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s2",
+      "n": 0,
+      "ubicacion": "Esquina con el Jr. Lima"
+    }
+  },
+  "estado-de-nutricion": {
+    "id": "estado-de-nutricion",
+    "parametro": "Estado de nutrición",
+    "grupo": "Examen general y piel",
+    "tipo_info": "clasificacion",
+    "dato_a_recordar": "Normal: peso, musculatura, panículo, desarrollo, estado general, piel, pelo y ojos normales. Obesidad: exceso adiposo (central/androide o periférica/ginecoide). Desnutrición: peso bajo mínimo, músculo hipotrófico, piel seca «papel de lija»; proteica: cabello fino que se arranca fácil, xerosis conjuntival. Marasmo: déficit calórico, piel y hueso, sin edema · kwashiorkor: déficit proteico, edema, cabello en bandera.",
+    "tecnicas": [
+      "memorizar-listas",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Dos pares para comparar (androide/ginecoide; marasmo/kwashiorkor) → palabra sustituta por sonido: mar-asmo = un esqueleto seco junto al mar; kwashi-ORCO = un orco hinchado. La clasificación marasmo/kwashiorkor es literatura (lit: true). Sustitutas: marasmo → esqueleto seco en el mar; kwashiorkor → orco hinchado; androide → robot con barriga de manzana; ginecoide → pera de caderas anchas.",
+    "codigo": null,
+    "escena": "En la pileta central de la plaza, un esqueleto flaquísimo sale del agua del «mar», sin una gota de hinchazón, puro piel y hueso: marasmo, le faltaron calorías. Detrás emerge un orco con la panza y las piernas hinchadas de agua (edema) y el pelo a franjas de colores como una bandera: kwashiORCO, le faltaron proteínas, y cada vez que se rasca la cabeza se le arrancan mechones. Al tocar la piel del esqueleto raspa como papel de lija. En la orilla, un robot androide con barriga de manzana y una pera de caderas anchas (ginecoide) muestran las dos obesidades.",
+    "ancla": "Mar-asmo = esqueleto seco sin edema (calorías) · kwashi-ORCO = hinchado con pelo en bandera (proteínas).",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un ogro verde caricaturesco con piernas y panza hinchadas y cabello con franjas horizontales de colores como una bandera, saliendo de una pileta de plaza. Acción: se rasca la cabeza y se le caen mechones de pelo. Elementos secundarios: a su lado un esqueleto flaquísimo con piel seca y áspera, sin hinchazón, sale del agua; un robot con barriga redonda y una pera gigante con caderas anchas miran desde el borde. Escenario: pileta de piedra en una plaza andina. Composición: ogro al centro, verde y azul intensos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Qué diferencia el marasmo del kwashiorkor? (literatura)",
+        "a": "Marasmo: déficit calórico, piel y hueso, sin edema · kwashiorkor: déficit proteico, edema, cabello en bandera",
+        "tipo": "trampa"
+      },
+      {
+        "q": "¿Cómo se describe la piel del desnutrido?",
+        "a": "Seca, «papel de lija»",
+        "tipo": "directa"
+      },
+      {
+        "q": "Niño con edema, cabello fino que se arranca fácil y xerosis conjuntival: ¿qué déficit?",
+        "a": "Desnutrición proteica (kwashiorkor)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#137",
+      "#139",
+      "#124"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s2",
+      "n": 1,
+      "ubicacion": "Pileta central"
+    }
+  },
+  "estado-de-hidratacion": {
+    "id": "estado-de-hidratacion",
+    "parametro": "Estado de hidratación",
+    "grupo": "Examen general y piel",
+    "tipo_info": "clasificacion",
+    "dato_a_recordar": "Normal: piel rosada, elástica y húmeda; mucosas húmedas; sin caída brusca de peso. Deshidratación: sed, pliegue +, mucosas secas, ojos hundidos, fontanela deprimida. Leve <5%, moderada 5-10%, grave >10% del peso. Pérdida aguda de peso = agua: 1 kg ≈ 1 litro; pliegue que tarda >2 s en volver.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-listas",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Clasificación en 3 grados con cortes de % de peso → sistema mayor (5 = ola, 10 = taza) + el pliegue >2 s (uña, igual que el llenado capilar). La perla de grados y la regla 1 kg ≈ 1 L son literatura (lit: true).",
+    "codigo": [
+      {
+        "numero": "5",
+        "letras": "L",
+        "palabra": "ola"
+      },
+      {
+        "numero": "10",
+        "letras": "T-S",
+        "palabra": "taza"
+      },
+      {
+        "numero": "2",
+        "letras": "Ñ",
+        "palabra": "uña"
+      }
+    ],
+    "escena": "En las bancas del lado de la Catedral, Frijo, el frijol bombero, apunta su manguera a un paciente reseco que suplica agua. Si perdió menos de una ola, apenas tiene sed: leve. Entre la ola y una taza, ya tiene la boca de cartón y los ojos hundidos: moderada. Si perdió más de una taza, la fontanela del bebé se hunde como un charco vacío: grave. Frijo pellizca con su uña la piel del abuelo en la frente y el pliegue se queda parado como una carpa: más de 2 segundos. En la balanza de la banca, cada kilo que bajó es un litro de agua que se fue.",
+    "ancla": "Frijo: menos de una ola (5%) leve · ola-taza (5-10%) moderada · más de una taza (>10%) grave; pliegue >2 s (uña).",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un riñón café con forma de frijol, casco de bombero y manguera, rociando agua sobre un paciente reseco y agrietado sentado en una banca de piedra. Acción: con la otra mano pellizca la piel de la frente de un anciano y el pliegue se queda levantado como una carpa. Elementos secundarios: una ola pequeña y una taza volcada vacía en el piso; un bebé con ojos hundidos. Escenario: bancas frente a una catedral de piedra andina. Composición: frijol al centro, café, azul y amarillo. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Grados de deshidratación según % de peso perdido?",
+        "a": "Leve <5%, moderada 5-10%, grave >10%",
+        "tipo": "lista"
+      },
+      {
+        "q": "Paciente que bajó 3 kg en un día por diarrea: ¿cuánta agua perdió?",
+        "a": "≈3 litros (1 kg ≈ 1 L)",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Dónde se busca el pliegue en el anciano y cuándo es positivo?",
+        "a": "En la frente o el esternón; si tarda >2 s en volver",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#137"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s2",
+      "n": 2,
+      "ubicacion": "Bancas del lado de la Catedral"
+    }
+  },
+  "palidez": {
+    "id": "palidez",
+    "parametro": "Palidez",
+    "grupo": "Examen general y piel",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Normal: piel levemente rosada (blanca) u oscura (morena). Palidez generalizada: vasoconstricción (susto, dolor, shock) o anemia Hb <7 g/dl. Palidez localizada de un miembro = isquemia (ateroesclerosis, embolia). La anemia se juzga en conjuntiva palpebral, lecho ungueal, palmas y mucosas, no en la piel del rostro.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Concepto con dos mecanismos (vaso que se cierra o falta de hemoglobina) y un umbral → piezas qué/por qué/dónde + sistema mayor 7 = oca. La regla de dónde mirar es literatura (lit: true).",
+    "codigo": [
+      {
+        "numero": "7",
+        "letras": "C",
+        "palabra": "oca"
+      }
+    ],
+    "escena": "En los jardines de la plaza, una oca blanca, pálida como papel, pasa revista a Los Glóbulos: quedan tan pocos soldados rojos que la hemoglobina bajó de la oca (<7) y el paciente se ve blanco. Pero otro paciente se pone pálido de golpe porque un perro le ladra: sus vasos se cierran del susto (vasoconstricción), no le falta sangre. La oca no le mira la cara: le baja el párpado con el pico y mira la conjuntiva, luego las uñas y las palmas. A un costado, una sola pierna blanca y fría, con un tapón en la arteria: isquemia.",
+    "ancla": "La oca pálida (Hb <7) mira párpado, uña y palma, nunca la cara.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una oca blanca enorme con lentes de doctora bajando con el pico el párpado inferior de un paciente pálido para mirar la conjuntiva. Acción: a su lado pocos glóbulos rojos con casco militar, flacos y cansados, hacen fila. Elementos secundarios: un paciente que palidece de susto ante un perro que ladra; una pierna blanca y fría junto a otra rosada. Escenario: jardines verdes de una plaza andina. Composición: oca al centro, blanco y rojo sobre verde. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Con qué Hb se hace visible la palidez por anemia?",
+        "a": "Hb <7 g/dl",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Dónde se juzga la anemia? (literatura)",
+        "a": "Conjuntiva palpebral, lecho ungueal, palmas y mucosas, no la piel del rostro",
+        "tipo": "directa"
+      },
+      {
+        "q": "Pierna derecha pálida y fría, la izquierda normal: ¿qué piensas?",
+        "a": "Isquemia (ateroesclerosis, embolia)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#043",
+      "#189"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s2",
+      "n": 3,
+      "ubicacion": "Jardines"
+    }
+  },
+  "ictericia": {
+    "id": "ictericia",
+    "parametro": "Ictericia",
+    "grupo": "Examen general y piel",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "Bilirrubina plasmática normal 1.2 mg%; ictericia visible con bilirrubina >2.5 mg%, mejor vista en la esclerótica. Prehepática (hemólisis): BI ↑ sin coluria · hepática (hepatitis, cirrosis): mixta · poshepática (obstrucción): BD ↑ + coluria + acolia + prurito.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-listas",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Dos cifras exactas (normal y umbral de visibilidad) → sistema mayor con el punto deducido (1.2 = tina, 2.5 = anillo) + clasificación de 3 en orden anatómico (antes, dentro y después del hígado).",
+    "codigo": [
+      {
+        "numero": "1.2",
+        "letras": "T-N",
+        "palabra": "tina"
+      },
+      {
+        "numero": "2.5",
+        "letras": "N-LL",
+        "palabra": "anillo"
+      }
+    ],
+    "escena": "Bajo un poste de luz, Chef Hepa, el hígado cocinero, se baña en una tina de caldo amarillo: hasta ahí la bilirrubina es normal y nadie lo nota. Pero el caldo rebalsa y le cae un anillo de oro en el ojo: el blanco de los ojos se pone amarillo y ahora sí se ve la ictericia. Antes de la cocina, glóbulos rojos se revientan como globos (prehepática, sin orina oscura); en la cocina, Chef Hepa se enferma (hepática); y después, un tapón bloquea el desagüe: la orina sale color Coca-Cola, la caca blanca como masa y el paciente se rasca sin parar (poshepática).",
+    "ancla": "Chef Hepa en la tina (1.2 normal); el anillo (2.5) cae en el ojo = ictericia visible en la esclerótica.",
+    "acronimo": "Antes / Dentro / Después del hígado = pre / hepática / pos",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hígado granate con gorro de chef bañándose en una tina de caldo amarillo brillante que rebalsa. Acción: un anillo de oro gigante cae y rebota en su ojo, cuyo blanco se vuelve amarillo intenso. Elementos secundarios: a la izquierda glóbulos rojos reventando como globos; a la derecha una tubería tapada con un corcho. Escenario: un poste de luz antiguo en una plaza andina al atardecer. Composición: hígado centrado y grande, amarillos y granates intensos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Bilirrubina normal y desde cuánto se ve la ictericia?",
+        "a": "Normal 1.2 mg%; visible con >2.5 mg%",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Dónde se ve mejor la ictericia?",
+        "a": "En la esclerótica",
+        "tipo": "directa"
+      },
+      {
+        "q": "Ictericia con coluria, acolia y prurito: ¿qué tipo y qué bilirrubina sube?",
+        "a": "Poshepática (obstructiva): sube la BD",
+        "tipo": "caso"
+      },
+      {
+        "q": "Ictericia con BI elevada sin coluria: ¿tipo?",
+        "a": "Prehepática (hemólisis)",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#137"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s2",
+      "n": 4,
+      "ubicacion": "Postes de luz"
+    }
+  },
+  "cianosis": {
+    "id": "cianosis",
+    "parametro": "Cianosis",
+    "grupo": "Examen general y piel",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Aparece con Hb reducida >5 g/dl; buscar en labios, nariz, lóbulos y pulpejos. Central: labios y lengua, tibia · periférica: dedos fríos, mejora al calentar · anemia grave: sin cianosis. Altura: enfermedad de Monge, aspecto pletórico, cianosis rojo-violácea; revierte a nivel del mar.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Concepto de mecanismo (cuenta la Hb sin oxígeno, no la que falta) + umbral 5 = ola + epónimo de altura muy de Puno (Monge = un monje). La distinción central/periférica es literatura (lit: true).",
+    "codigo": [
+      {
+        "numero": "5",
+        "letras": "L",
+        "palabra": "ola"
+      }
+    ],
+    "escena": "En las escaleras de la Catedral, una ola de sangre azul sube los escalones: cuando la Hb sin oxígeno pasa de esa ola, labios, nariz, orejas y pulpejos se tiñen de azul. Pulmi, el globo-pulmón, toca la lengua azul de un paciente y está tibia: central. Otro paciente tiene solo los dedos azules y helados; Pulmi se los frota con una chompa de alpaca y vuelven al rosado: periférica. Un anémico muy pálido no se pone azul: no tiene ni una ola de hemoglobina para teñir. Arriba, un monje (Monge) de cara rojo-violácea, cachetón y pletórico, baja en bus a la costa y en el mar se le quita el color.",
+    "ancla": "Ola azul (Hb reducida >5); monje rojo-violáceo de altura = Monge.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un monje andino regordete con hábito café y cara rojo-violácea, cachetón y pletórico, en lo alto de unas escaleras de piedra de catedral. Acción: una ola azul de líquido sube los escalones hacia él. Elementos secundarios: dos globos rosados con lentes de buceo frotan los dedos azules y helados de un paciente con una chompa de lana; otro paciente muestra labios y lengua azules. Composición: monje arriba al centro, ola abajo, azules y violetas intensos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Con cuánta Hb reducida aparece la cianosis?",
+        "a": ">5 g/dl",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Cómo diferencias cianosis central de periférica? (literatura)",
+        "a": "Central: labios y lengua, tibia · periférica: dedos fríos, mejora al calentar",
+        "tipo": "trampa"
+      },
+      {
+        "q": "¿Por qué un anémico grave no presenta cianosis?",
+        "a": "No alcanza a tener >5 g/dl de Hb reducida",
+        "tipo": "explica"
+      },
+      {
+        "q": "Minero de altura, pletórico, con cianosis rojo-violácea que revierte al bajar al mar: ¿qué tiene?",
+        "a": "Enfermedad de Monge (mal de montaña crónico)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#043",
+      "#189",
+      "#124"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s2",
+      "n": 5,
+      "ubicacion": "Escaleras de la Catedral"
+    }
+  },
+  "edema": {
+    "id": "edema",
+    "parametro": "Edema",
+    "grupo": "Examen general y piel",
+    "tipo_info": "clasificacion",
+    "dato_a_recordar": "Normal: sin fóvea; pre-edema (<5 L) solo se detecta por el peso. Godet (fóvea) sobre tibia/sacro; intensidad de 1 cruz (leve) a 4 cruces (anasarca). Cardiaco: vespertino, piernas, ascendente · nefrótico: matutino, párpados · hepático: ascitis + piernas. Mixedema: sin fóvea, piel fría y áspera; postural hasta 2 cruces; carencial con albúmina <2.5.",
+    "tecnicas": [
+      "memorizar-nombres",
+      "memorizar-listas",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Epónimo (Godet = «¡go, dedo!») + clasificación de 3 orígenes con su hora y lugar, cada uno con el personaje de su órgano + cifras con sistema mayor (5 = ola para el pre-edema, 2.5 = anillo para la albúmina, con el punto deducido).",
+    "codigo": [
+      {
+        "numero": "5",
+        "letras": "L",
+        "palabra": "ola"
+      },
+      {
+        "numero": "2.5",
+        "letras": "N-LL",
+        "palabra": "anillo"
+      }
+    ],
+    "escena": "En los portales de la plaza, gritas «¡Go, dedo!» (Godet) y un dedo gigante se hunde en la tibia de un paciente: el hoyo se queda marcado como en plastilina. Cuentas las cruces en su pierna, de 1 a 4, hasta que todo el cuerpo es un globo (anasarca). Al atardecer pasa Cora el corazón boxeador con los tobillos hinchados que suben como marea (cardiaco: vespertino, ascendente); al amanecer, Frijo el frijol bombero se despierta con los párpados como almohadas (nefrótico: matutino); Chef Hepa carga una panza llena de agua (ascitis). Antes de todo eso, una ola de 5 litros escondida solo la delata la balanza: pre-edema.",
+    "ancla": "«¡Go, dedo!» deja el hoyo: Cora en la tarde (piernas), Frijo en la mañana (párpados), Hepa con la panza (ascitis).",
+    "acronimo": "Godet = «¡Go, dedo!» · 1 a 4 cruces",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un dedo índice gigante presionando la espinilla hinchada de un paciente y dejando un hoyo profundo como en plastilina. Acción: alrededor, un corazón rojo con guantes de box tiene los tobillos hinchados, un riñón café con casco de bombero bosteza con párpados inflados como almohadas, y un hígado granate con gorro de chef carga una panza redonda llena de agua. Escenario: portales coloniales de piedra con arcos. Composición: dedo y pierna al centro, personajes alrededor, colores cálidos intensos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Qué es el signo de Godet y dónde se busca?",
+        "a": "Fóvea que deja la presión del dedo; sobre la tibia o el sacro",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Cómo se gradúa la intensidad del edema?",
+        "a": "De 1 cruz (leve) a 4 cruces (anasarca)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Edema de párpados que aparece por la mañana: ¿origen?",
+        "a": "Nefrótico (renal)",
+        "tipo": "caso"
+      },
+      {
+        "q": "Edema sin fóvea, piel fría y áspera: ¿cómo se llama?",
+        "a": "Mixedema (piel fría y áspera, sin fóvea)",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#124",
+      "#137",
+      "#189"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s2",
+      "n": 6,
+      "ubicacion": "Portales"
+    }
+  },
+  "vsg": {
+    "id": "vsg",
+    "parametro": "VSG",
+    "grupo": "Inflamación y coagulación",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Varón <15 mm/h · mujer <20 mm/h (aprox. edad/2; mujer (edad+10)/2). Sube (inespecífica): el fibrinógeno apila los GR; FR (Jones), AR, vasculitis, LES, polimialgia. VSG >100 mm/h: mieloma, arteritis de células gigantes, TBC, endocarditis, metástasis.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Dos límites por sexo y un umbral extremo → sistema mayor (15 = tele, 20 = NASA, 100 = tazas). Los normales, la fórmula por edad y la lista >100 son literatura (lit: true).",
+    "codigo": [
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      },
+      {
+        "numero": "20",
+        "letras": "N-S",
+        "palabra": "NASA"
+      },
+      {
+        "numero": "100",
+        "letras": "T-Z-S",
+        "palabra": "tazas"
+      }
+    ],
+    "escena": "En la escalinata del Arco Deustua, Los Glóbulos, soldados rojos, bajan rodando por un tubo de vidrio gigante. En los varones caen despacio y se quedan antes de llegar a la tele del descanso; en las mujeres pueden bajar hasta el cohete de la NASA. Pero si sube el fibrinógeno, unas sogas pegajosas los amarran en pilas de monedas y caen en bloque, ¡plof!, rapidísimo: inflamación. Si caen más de cien tazas de golpe y se hacen añicos al pie de la escalinata, piensa en lo grave: mieloma, arteritis, TBC, endocarditis o metástasis.",
+    "ancla": "GR que caen por la escalinata: tele (15 V) · NASA (20 M); cien tazas rotas (>100) = algo grave.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: soldados glóbulos rojos con casco amarrados en pilas como monedas por sogas pegajosas amarillas, cayendo rápido dentro de un tubo de vidrio gigante apoyado en una escalinata de piedra. Acción: al pie de la escalinata una torre de tazas blancas se hace añicos con el impacto. Elementos secundarios: un televisor en un descanso de la escalera y un pequeño cohete blanco más abajo. Escenario: escalinata que sube a un arco de piedra colonial. Composición: tubo en diagonal al centro, rojos y amarillos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿VSG normal en varón y en mujer? (literatura)",
+        "a": "Varón <15 mm/h; mujer <20 mm/h",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Por qué sube la VSG en la inflamación?",
+        "a": "El fibrinógeno apila los GR y sedimentan más rápido",
+        "tipo": "explica"
+      },
+      {
+        "q": "Anciano con VSG de 110 mm/h: ¿qué causas buscas? (literatura)",
+        "a": "Mieloma, arteritis de células gigantes, TBC, endocarditis, metástasis",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s4",
+      "n": 0,
+      "ubicacion": "Escalinata de subida"
+    }
+  },
+  "pcr-proteina-c-reactiva": {
+    "id": "pcr-proteina-c-reactiva",
+    "parametro": "PCR (proteína C reactiva)",
+    "grupo": "Inflamación y coagulación",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "Normal <5 mg/L (<0,5 mg/dL); >100 mg/L orienta a infección bacteriana. Reactante de fase aguda (hígado vía IL-6), sube rápido: infección, FR, AR; marcador de riesgo de IAM. Sube a las 6-8 h y cae rápido (vida media ~19 h): sigue mejor la respuesta al tratamiento que la VSG.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Cortes exactos y una cinética que se pregunta → sistema mayor (5 = ola, 100 = tazas, 6 = ajo, 8 = uva, 19 = topo). PCR suena a «pecera». Normal, corte >100 y cinética son literatura (lit: true).",
+    "codigo": [
+      {
+        "numero": "5",
+        "letras": "L",
+        "palabra": "ola"
+      },
+      {
+        "numero": "100",
+        "letras": "T-Z-S",
+        "palabra": "tazas"
+      },
+      {
+        "numero": "6",
+        "letras": "J",
+        "palabra": "ajo"
+      },
+      {
+        "numero": "8",
+        "letras": "V",
+        "palabra": "uva"
+      },
+      {
+        "numero": "19",
+        "letras": "T-P",
+        "palabra": "topo"
+      }
+    ],
+    "escena": "En la columna izquierda del arco hay una pecera (PCR) con apenas una olita adentro: menos de 5, normal. Chef Hepa, el hígado cocinero, recibe un mensaje de la IL-6 y empieza a llenarla de golpe: entre un ajo y una uva (6-8 h) la pecera ya hierve. Si el agua rebalsa más de cien tazas, hay bacterias nadando adentro: infección bacteriana. En cuanto llega el antibiótico, un topo abre un hoyo en el fondo y el agua se va en un día (vida media ~19 h): por eso la pecera sigue el tratamiento mejor que la VSG.",
+    "ancla": "Pecera con olita (<5); se llena entre ajo y uva (6-8 h); rebalsa cien tazas (>100) = bacteria; el topo la vacía.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hígado granate con gorro de chef llenando con una jarra una pecera de vidrio gigante que hierve y rebalsa, apoyada en una columna de piedra. Acción: bacterias verdes caricaturescas nadan y gritan dentro del agua burbujeante. Elementos secundarios: una cabeza de ajo y un racimo de uvas junto a la pecera; un topo asomando de un hoyo en el fondo por donde se escapa el agua. Escenario: columna de un arco colonial de piedra. Composición: pecera al centro, verdes y naranjas. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿PCR normal y qué valor orienta a infección bacteriana? (literatura)",
+        "a": "<5 mg/L (<0,5 mg/dL); >100 mg/L",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Dónde se produce la PCR y qué la estimula?",
+        "a": "En el hígado, vía IL-6 (reactante de fase aguda)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Por qué la PCR sigue mejor la respuesta al tratamiento que la VSG?",
+        "a": "Sube a las 6-8 h y cae rápido (vida media ~19 h)",
+        "tipo": "explica"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s4",
+      "n": 1,
+      "ubicacion": "Columna izquierda"
+    }
+  },
+  "factor-reumatoide": {
+    "id": "factor-reumatoide",
+    "parametro": "Factor reumatoide",
+    "grupo": "Inflamación y coagulación",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "Negativo: <14-20 UI/mL (según técnica). Es IgM anti-Fc de IgG: AR (S 66%, E 87%); títulos altos en Felty. Negativo en artritis psoriásica (CASPAR). FR positivo no es igual a AR: también Sjögren, hepatitis C, endocarditis, ancianos sanos. Anti-CCP superan al FR (E 95%).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-conceptos",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Corte numérico (14 = toro, 20 = NASA) + concepto trampa (FR+ no es AR). El rango normal y la regla son literatura (lit: true).",
+    "codigo": [
+      {
+        "numero": "14",
+        "letras": "T-R",
+        "palabra": "toro"
+      },
+      {
+        "numero": "20",
+        "letras": "N-S",
+        "palabra": "NASA"
+      }
+    ],
+    "escena": "En la columna derecha del arco, un toro con rodillas y dedos hinchados, deformes y rígidos (AR) embiste un cohete de la NASA: si la cuenta queda por debajo del toro o del cohete, el factor reumatoide es negativo. El toro lleva en los cuernos un anticuerpo grande en forma de estrella (IgM) mordiendo la cola de otro anticuerpo (Fc de IgG). Pero detrás del toro también corren una abuela sana, un paciente con hepatitis C y otro con ojos y boca secos (Sjögren) con el mismo anticuerpo: positivo no es lo mismo que AR. Más fino que todos, un detective (anti-CCP) apunta solo al toro.",
+    "ancla": "Toro artrítico (14) contra la NASA (20): bajo eso es negativo; FR+ ≠ AR.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un toro caricaturesco con rodillas y patas hinchadas y deformes, embistiendo con esfuerzo un cohete espacial blanco junto a una columna de piedra. Acción: en sus cuernos lleva una estrella brillante de cinco puntas que muerde la cola de una figura en forma de Y. Elementos secundarios: una abuela sonriente y un detective con lupa observando al toro. Escenario: columna derecha de un arco colonial. Composición: toro al centro, rojo y azul. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Valor de FR negativo? (literatura)",
+        "a": "<14-20 UI/mL según técnica",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Qué es el factor reumatoide?",
+        "a": "IgM anti-Fc de IgG",
+        "tipo": "directa"
+      },
+      {
+        "q": "Anciano sano con FR positivo: ¿tiene AR?",
+        "a": "No necesariamente: también en Sjögren, hepatitis C, endocarditis y ancianos sanos",
+        "tipo": "trampa"
+      },
+      {
+        "q": "¿Qué prueba es más específica que el FR para AR?",
+        "a": "Anti-CCP (E 95%, aparecen en fase prearticular)",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#043"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s4",
+      "n": 2,
+      "ubicacion": "Columna derecha"
+    }
+  },
+  "tp-inr": {
+    "id": "tp-inr",
+    "parametro": "TP / INR",
+    "grupo": "Inflamación y coagulación",
+    "tipo_info": "rango",
+    "dato_a_recordar": "TP ~12 s; INR 0,9-1,3. Vía extrínseca (factor VII): sube con warfarina, hepatopatía, CID; INR >4-5 alto riesgo de hemorragia. Meta con warfarina: INR 2,0-3,0. INR = (TP paciente ÷ TP control)^ISI; antídoto de warfarina: vitamina K.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Varias cifras exactas del mismo dato (normal, meta y alarma) → sistema mayor con el punto deducido (0,9 = sopa, 1,3 = dama, 2,0 = NASA, 3,0 = mesa) en un pilar. Personaje nuevo: Las Plaquetas albañiles (coagulación y hemostasia); rasgo fijo: discos con casco amarillo de albañil y balde de cemento. La fórmula y la vitamina K son literatura (lit: true).",
+    "codigo": [
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      },
+      {
+        "numero": "0.9",
+        "letras": "S-P",
+        "palabra": "sopa"
+      },
+      {
+        "numero": "1.3",
+        "letras": "T-M",
+        "palabra": "dama"
+      },
+      {
+        "numero": "2.0",
+        "letras": "N-S",
+        "palabra": "NASA"
+      },
+      {
+        "numero": "3.0",
+        "letras": "M-S",
+        "palabra": "mesa"
+      }
+    ],
+    "escena": "En la parte alta del Arco Deustua, Las Plaquetas albañiles tapan una grieta del arco con cemento mientras el reloj corre: tardan lo que tarda en llenarse una tina, unos 12 segundos. Una dama elegante les sirve sopa: el INR normal está entre la sopa y la dama. Llega la warfarina, un guerrero con harina, y les quita la cal (vitamina K): ahora tardan tanto que hay que lanzarlos con un cohete de la NASA hasta una mesa, la meta de 2 a 3. Si se pasan de 4-5, la grieta chorrea y el arco empieza a sangrar; para arreglarlo, alguien les devuelve la vitamina K en un balde.",
+    "ancla": "Tina (TP 12 s) · sopa-dama (INR 0,9-1,3) · NASA-mesa (meta warfarina 2-3).",
+    "acronimo": null,
+    "ruta_palacio": [
+      {
+        "lugar": "Parte alta del arco > abajo",
+        "imagen": "Tina llenándose (TP ~12 s) con una dama sirviendo sopa (INR 0,9-1,3)"
+      },
+      {
+        "lugar": "Parte alta del arco > arriba",
+        "imagen": "Cohete de la NASA aterrizando en una mesa (meta con warfarina 2,0-3,0)"
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un grupo de plaquetas caricaturescas con forma de disco, casco amarillo de albañil y baldes de cemento, tapando una grieta en lo alto de un arco de piedra colonial. Acción: corren contra un gran reloj de arena mientras una tina se llena de agua a su lado. Elementos secundarios: una dama elegante sirviendo un plato de sopa; un pequeño cohete blanco aterrizando sobre una mesa de madera; un guerrero cubierto de harina robándoles un balde. Composición: plaquetas al centro arriba, cielo azul andino, amarillos y rojos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿TP e INR normales?",
+        "a": "TP ~12 s; INR 0,9-1,3",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿INR meta con warfarina?",
+        "a": "2,0-3,0",
+        "tipo": "directa"
+      },
+      {
+        "q": "Paciente con warfarina e INR de 5 que sangra por las encías: ¿riesgo y antídoto?",
+        "a": "Alto riesgo de hemorragia (INR >4-5); antídoto: vitamina K",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Qué vía y qué factor evalúa el TP?",
+        "a": "Vía extrínseca, factor VII",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#132"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s4",
+      "n": 3,
+      "ubicacion": "Parte alta del arco"
+    }
+  },
+  "ttpa": {
+    "id": "ttpa",
+    "parametro": "TTPa",
+    "grupo": "Inflamación y coagulación",
+    "tipo_info": "rango",
+    "dato_a_recordar": "25-35 s (según laboratorio). Heparina NF: meta 1,5-2,5 veces el basal; >2,5: hemorragia; antídoto sulfato de protamina. CID prolonga TP y TTPa. Vía intrínseca (XII, XI, IX, VIII): TTPa largo con TP normal = hemofilia A (VIII) o B (IX).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-conceptos",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango y meta de heparina → sistema mayor (25 = anillo, 35 = miel; 1,5 = tele, 2,5 = anillo, con el punto deducido). La vía intrínseca y las hemofilias son literatura (lit: true), al igual que el rango normal.",
+    "codigo": [
+      {
+        "numero": "25",
+        "letras": "N-LL",
+        "palabra": "anillo"
+      },
+      {
+        "numero": "35",
+        "letras": "M-L",
+        "palabra": "miel"
+      },
+      {
+        "numero": "1.5",
+        "letras": "T-L",
+        "palabra": "tele"
+      },
+      {
+        "numero": "2.5",
+        "letras": "N-LL",
+        "palabra": "anillo"
+      }
+    ],
+    "escena": "Sobre la placa conmemorativa, Las Plaquetas albañiles pegan un anillo de oro con miel: el pegado tarda entre el anillo y la miel, 25 a 35 segundos. Por adentro del arco (vía intrínseca) pasan cuatro obreros numerados al revés del doce al ocho. Llega la heparina y les pone una tele para distraerlos: el pegado tarda entre la tele y el anillo, 1,5 a 2,5 veces lo normal, la meta. Si pasa del anillo, la placa chorrea sangre y el bombero trae protamina para cortar. Un príncipe pálido al que le falta el obrero ocho o el nueve sangra por las rodillas: hemofilia, con TP normal.",
+    "ancla": "Anillo pegado con miel (25-35 s); heparina con tele-anillo (1,5-2,5×); protamina la corta.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: plaquetas con forma de disco y casco amarillo de albañil pegando un anillo de oro gigante con miel dorada sobre una placa de piedra. Acción: un televisor encendido las distrae y la miel gotea lentamente. Elementos secundarios: un bombero con un frasco gigante corre hacia ellas; un príncipe pálido con corona se sujeta la rodilla. Escenario: placa conmemorativa en un arco colonial de piedra. Composición: anillo y plaquetas al centro, dorados y rojos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿TTPa normal? (según laboratorio)",
+        "a": "25-35 s",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Meta del TTPa con heparina no fraccionada?",
+        "a": "1,5-2,5 veces el basal; >2,5 riesgo de hemorragia",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Niño varón con TTPa largo y TP normal: ¿qué sospechas?",
+        "a": "Hemofilia A (VIII) o B (IX)",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Antídoto de la heparina?",
+        "a": "Sulfato de protamina",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#043"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s4",
+      "n": 4,
+      "ubicacion": "Placa conmemorativa"
+    }
+  },
+  "fibrinogeno": {
+    "id": "fibrinogeno",
+    "parametro": "Fibrinógeno",
+    "grupo": "Inflamación y coagulación",
+    "tipo_info": "rango",
+    "dato_a_recordar": "200-400 mg/dL (concepto); Guyton Cap 37: 100-700 mg/dL. Sube: reactante de fase aguda (IL-6); hace que los GR sedimenten rápido (VSG alta). Baja: hipofibrinogenemia por consumo en CID. CID: TP y TTPa largos + plaquetas ↓ + fibrinógeno ↓ + dímero D ↑.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-conceptos",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango → sistema mayor de 3 dígitos (200 = nueces, 400 = rosas). Revisar: la fuente trae dos rangos distintos (200-400 en el concepto y 100-700 en Guyton Cap 37); se fija 200-400 y el de Guyton va solo en preguntas. La regla de CID es literatura (lit: true).",
+    "codigo": [
+      {
+        "numero": "200",
+        "letras": "N-C-S",
+        "palabra": "nueces"
+      },
+      {
+        "numero": "400",
+        "letras": "R-S-S",
+        "palabra": "rosas"
+      }
+    ],
+    "escena": "En el mirador detrás del arco, Las Plaquetas albañiles tejen una red de hilos de fibrina amarrada entre un saco de nueces y un ramo de rosas: entre ellas está el fibrinógeno normal. Cuando hay inflamación, Chef Hepa recibe la orden de la IL-6 y saca más y más hilos: los glóbulos rojos se enredan y caen en pilas al lago (VSG alta). En la CID, todo el mirador se pone a coagular a la vez: se gastan las nueces, las rosas y los albañiles, y de los coágulos rotos llueven dímeros D.",
+    "ancla": "Red de fibrina entre nueces (200) y rosas (400); en la CID se gasta todo.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: plaquetas con casco amarillo de albañil tejiendo una gran red de hilos blancos pegajosos amarrada entre un saco de nueces y un ramo de rosas rojas. Acción: glóbulos rojos caricaturescos quedan atrapados en la red y caen en pilas. Elementos secundarios: un hígado granate con gorro de chef lanzando más hilos desde una olla. Escenario: mirador de piedra con vista a un lago azul de altura. Composición: red al centro, blanco, rojo y azul. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Fibrinógeno normal?",
+        "a": "200-400 mg/dL (Guyton Cap 37: 100-700 mg/dL)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Por qué el fibrinógeno alto sube la VSG?",
+        "a": "Hace que los GR sedimenten rápido (reactante de fase aguda)",
+        "tipo": "explica"
+      },
+      {
+        "q": "TP y TTPa largos, plaquetas bajas, fibrinógeno bajo y dímero D alto: ¿diagnóstico?",
+        "a": "CID (hipofibrinogenemia por consumo)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#043"
+    ],
+    "revisar": true,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s4",
+      "n": 5,
+      "ubicacion": "Mirador detrás del arco"
+    }
+  },
+  "tiempo-de-sangria-coagulacion": {
+    "id": "tiempo-de-sangria-coagulacion",
+    "parametro": "Tiempo de sangría / coagulación",
+    "grupo": "Inflamación y coagulación",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Sangría 1-6 min; coagulación 6-10 min. Sangría larga: trombocitopenia o déficit de factores; coagulación larga: heparina (de 6 a ≥30 min). Sangría = plaquetas y vaso (hemostasia primaria) · coagulación = factores (hemostasia secundaria).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-conceptos",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Dos rangos que comparten el 6 → sistema mayor (1 = té, 6 = ajo, 10 = taza, 30 = mesa), uno detrás del otro como dos turnos. Qué mide cada uno es literatura (lit: true).",
+    "codigo": [
+      {
+        "numero": "1",
+        "letras": "T",
+        "palabra": "té"
+      },
+      {
+        "numero": "6",
+        "letras": "J",
+        "palabra": "ajo"
+      },
+      {
+        "numero": "10",
+        "letras": "T-S",
+        "palabra": "taza"
+      },
+      {
+        "numero": "30",
+        "letras": "M-S",
+        "palabra": "mesa"
+      }
+    ],
+    "escena": "En la banca del costado del arco, un paciente con la nariz sangrando (epistaxis) espera. Primer turno, la sangría: Las Plaquetas albañiles tapan el vaso roto entre un té y un ajo (1-6 min); si faltan albañiles, el té se enfría y sigue goteando. Segundo turno, la coagulación: los factores cocinan el coágulo desde ese mismo ajo hasta llenar una taza (6-10 min). Si llega la heparina, la sangre no cuaja y la taza termina rodando hasta una mesa: 30 minutos o más.",
+    "ancla": "Sangría té-ajo (1-6) = plaquetas · coagulación ajo-taza (6-10) = factores; heparina la lleva a la mesa (≥30).",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: plaquetas caricaturescas con casco amarillo de albañil tapando con cemento un tubo rojo roto, junto a un paciente sentado en una banca de piedra con la nariz goteando. Acción: a su lado, una taza de té humeante y una cabeza de ajo gigante, y más allá una taza rueda hacia una mesa de madera. Escenario: banca al costado de un arco colonial de piedra. Composición: plaquetas al centro, objetos ordenados de izquierda a derecha, rojos y amarillos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Tiempo de sangría y de coagulación normales?",
+        "a": "Sangría 1-6 min; coagulación 6-10 min",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Qué evalúa el tiempo de sangría y qué el de coagulación? (literatura)",
+        "a": "Sangría: plaquetas y vaso (hemostasia primaria) · coagulación: factores (secundaria)",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Epistaxis recurrente sin causa local: ¿qué pides?",
+        "a": "Plaquetas, tiempo de coagulación y de sangría",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#043"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s4",
+      "n": 6,
+      "ubicacion": "Banca del costado"
+    }
+  }
+}

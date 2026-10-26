@@ -1,0 +1,1364 @@
+{
+  "escala-de-coma-de-glasgow": {
+    "id": "escala-de-coma-de-glasgow",
+    "parametro": "Escala de coma de Glasgow",
+    "grupo": "Escalas · Neuro",
+    "tipo_info": "escala",
+    "dato_a_recordar": "Ocular 4 (espontánea, al sonido/orden, al dolor, ninguna) · Verbal 5 (orientado, confuso, palabras inapropiadas, sonidos incomprensibles, ninguna) · Motora 6 (obedece, localiza dolor, retira, flexión anormal-decorticación, extensión-decerebración, nula). Rango 3-15. 15 lúcido · 13-14 leve · 9-12 moderado · 3-8 grave → asegurar vía aérea (intubar). Registrar por componentes (O2 V3 M5 = 10).",
+    "tecnicas": [
+      "mnemotecnia",
+      "memorizar-numeros",
+      "palacio-memoria",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Escala con 15 descriptores y cortes que se preguntan exactos: OVM 4-5-6 como una sola palabra (reloj), cortes con sistema mayor y cada componente en un pilar de la puerta. El 3 se deduce (cada componente vale al menos 1); el moderado 9-12 se deduce entre el leve y el grave. Cortes 13-14 / 9-12 / ≤8 e indicación de intubar: literatura (Teasdale-Jennett), según el atlas.",
+    "codigo": [
+      {
+        "numero": "456",
+        "letras": "R-L-J",
+        "palabra": "reloj"
+      },
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      },
+      {
+        "numero": "13",
+        "letras": "D-M",
+        "palabra": "dama"
+      },
+      {
+        "numero": "14",
+        "letras": "T-R",
+        "palabra": "toro"
+      },
+      {
+        "numero": "8",
+        "letras": "V",
+        "palabra": "uva"
+      }
+    ],
+    "escena": "En la puerta principal de la UNA, el Profe Neuro cuelga del arco un RELOJ de vidrio gigante (glass → Glasgow) con tres manecillas: un ojo que marca las 4, una boca que marca las 5 y una mano que marca las 6. La esfera es una TELE encendida donde un estudiante lúcido saluda: el máximo, 15. Por debajo cruza una DAMA montada en un TORO que se tambalea mareada: TEC leve. Y al paciente que cae a la UVA se le atora la uva en la garganta, ronca, y el Profe Neuro le mete un tubo de un tirón: 8 o menos, grave, asegura la vía aérea.",
+    "ancla": "Glasgow: reloj 4-5-6, tele 15, dama y toro leve, uva ≤8 → tubo.",
+    "acronimo": "OVM = Ocular 4 · Verbal 5 · Motora 6 (de menos a más: 4-5-6). Truco: deCORticación = brazos flexionados hacia el CORazón (M3); descerebración = brazos extendidos (M2).",
+    "ruta_palacio": [
+      {
+        "lugar": "Puerta principal de la UNA > pilar izquierdo (4 bloques: ocular)",
+        "imagen": "De arriba abajo: 4 unos ojos enormes se abren solos (espontánea) · 3 se abren cuando el vigilante grita (al sonido/orden) · 2 solo se abren si los pellizcas (al dolor) · 1 ojos de piedra cerrados (ninguna)."
+      },
+      {
+        "lugar": "Puerta principal de la UNA > arco (5 piedras: verbal)",
+        "imagen": "5 una piedra dice la fecha y dónde está (orientado) · 4 otra se equivoca de año (confuso) · 3 otra grita palabras sueltas (inapropiadas) · 2 otra solo gime (incomprensibles) · 1 una piedra muda."
+      },
+      {
+        "lugar": "Puerta principal de la UNA > pilar derecho (6 bloques: motora)",
+        "imagen": "6 el bloque hace lo que le pides (obedece) · 5 una mano va directo al pellizco (localiza) · 4 la mano huye (retira) · 3 brazos doblados hacia el corazón (decorticación) · 2 brazos estirados rígidos (descerebración) · 1 bloque inerte (nula)."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete y puntero, con cara de urgencia. Acción: cuelga de un arco de piedra universitario un reloj de vidrio gigante cuyas tres manecillas son un ojo, una boca y una mano; la esfera del reloj es un televisor encendido con un estudiante sonriente. Elementos secundarios: una dama elegante montada sobre un toro que se tambalea; un paciente con una uva atorada en la garganta al que el cerebro le acerca un tubo de plástico. Escenario: portada de una universidad andina con cielo azul de altura. Composición: reloj centrado y grande, líneas de movimiento. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Puntaje máximo de cada componente de Glasgow (O, V, M)?",
+        "a": "Ocular 4, verbal 5, motora 6 (total 3-15)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Glasgow de 8 o menos indica…",
+        "a": "TCE grave → asegurar la vía aérea (intubar)",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Flexión anormal de los brazos (decorticación) vale en la motora…",
+        "a": "M3 (la extensión-descerebración vale M2)",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Caso: abre los ojos al dolor, dice palabras inapropiadas y localiza el dolor. ¿Puntaje y gravedad?",
+        "a": "O2 V3 M5 = 10 → moderado (9-12)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#132",
+      "#143"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 0,
+      "ubicacion": "Puerta principal de la UNA"
+    }
+  },
+  "grados-de-coma": {
+    "id": "grados-de-coma",
+    "parametro": "Grados de coma",
+    "grupo": "Escalas · Neuro",
+    "tipo_info": "clasificacion",
+    "dato_a_recordar": "I leve: atiende órdenes simples (abre/cierra ojos, levanta brazos, responde preguntas) · II moderado: responde apenas al dolor enérgico, deglución difícil, reflejos tendinosos, cutáneos y pupilares conservados · III profundo: sin respuesta a estímulos, no deglute, arreflexia total, relajación muscular, incontinencia · IV: apnea con respirador, EEG en silencio eléctrico, casi siempre irreversible (muerte encefálica). Secuencia previa: lúcido → obnubilación → confusión → somnolencia → delirio → estupor → coma.",
+    "tecnicas": [
+      "memorizar-listas",
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Clasificación ordenada de 4 grados sin cifras: un pasajero por grado en la banca del paradero, cada uno más apagado; la secuencia previa de 7 estados va en un acróstico. Todo del vault.",
+    "codigo": [],
+    "escena": "En el paradero de la universidad, el Profe Neuro hace de cobrador y grita ¡sube, sube! a cuatro pasajeros sentados en fila. El primero levanta el brazo y abre los ojos cuando se lo pide: grado I. El segundo solo hace una mueca si le pisas fuerte el pie, se atora con su caramelo, pero sus pupilas se encogen con el flash del celular: grado II, reflejos conservados. El tercero cuelga como trapo, no traga nada y moja la banca: grado III. El cuarto respira solo porque un fuelle gigante le sopla aire, y su monitor muestra una línea plana sin una sola onda: grado IV, casi siempre sin regreso.",
+    "ancla": "Paradero: brazo arriba (I), solo al pisotón (II), trapo mojado (III), fuelle y línea plana (IV).",
+    "acronimo": "Secuencia previa (acróstico): Lucho Obstinado Come Sopa Durante El Coma = Lúcido, Obnubilación, Confusión, Somnolencia, Delirio, Estupor, Coma.",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete y puntero vestido de cobrador de combi, gritando con la boca enorme. Acción: señala a cuatro pasajeros sentados en fila en la banca de un paradero: el primero levanta el brazo despierto, el segundo hace una mueca porque le pisan el pie, el tercero cuelga flácido como un trapo, el cuarto está conectado a un fuelle gigante que le sopla aire junto a un monitor con una línea totalmente plana. Escenario: paradero junto a una universidad andina. Composición: fila de izquierda a derecha, cada pasajero más apagado y gris. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Cuántos grados de coma hay y qué define el grado I?",
+        "a": "Cuatro; el I atiende órdenes simples (abre/cierra ojos, levanta brazos, responde)",
+        "tipo": "lista"
+      },
+      {
+        "q": "¿Qué diferencia el grado II del III?",
+        "a": "En el II responde apenas al dolor enérgico y conserva reflejos; en el III no responde, no deglute y hay arreflexia total con incontinencia",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Apnea con respirador y EEG en silencio eléctrico corresponde a…",
+        "a": "Coma grado IV, casi siempre irreversible (muerte encefálica)",
+        "tipo": "inversa"
+      },
+      {
+        "q": "Ordena: estupor, obnubilación, delirio, confusión, somnolencia",
+        "a": "Obnubilación → confusión → somnolencia → delirio → estupor (antes del coma)",
+        "tipo": "lista"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#137",
+      "#143",
+      "#067"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 1,
+      "ubicacion": "Paradero de la universidad"
+    }
+  },
+  "encefalopatia-hepatica-west-haven": {
+    "id": "encefalopatia-hepatica-west-haven",
+    "parametro": "Encefalopatía hepática (West Haven)",
+    "grupo": "Escalas · Abdomen",
+    "tipo_info": "clasificacion",
+    "dato_a_recordar": "I: confusión leve, atención disminuida, inversión del ritmo sueño-vigilia, reversible si deja de beber · II: letargia, desorientación en tiempo, conducta inapropiada, asterixis (flapping) evidente · III: somnolencia-estupor, responde a estímulos, desorientación marcada, habla incoherente · IV: coma, sin respuesta al dolor (si sigue bebiendo progresa hasta IV y fallece). Pródromo: asterixis y fetor hepático; HDA es desencadenante clásico.",
+    "tecnicas": [
+      "memorizar-listas",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Clasificación de 4 grados: una noche de fiesta del Chef Hepa que empeora por grado. Ojo: la descripción de II y III y el nombre West Haven son literatura (el vault solo describe I y IV), según el atlas.",
+    "codigo": [],
+    "escena": "En la explanada, el Chef Hepa da una fiesta y con cada copa sube un grado. Grado I: duerme todo el día sobre el pasto y baila despierto toda la noche, algo distraído, pero si suelta la copa se recupera. Grado II: ya no sabe qué día es, se quita el gorro en plena ceremonia y sus manos aletean como alas de pájaro (asterixis). Grado III: se cabecea dormido, solo abre los ojos si lo sacuden y balbucea frases sin sentido. Grado IV: cae en coma sobre la explanada y ni un pellizco lo despierta, mientras un aliento dulzón (fetor hepático) flota sobre él.",
+    "ancla": "Chef Hepa de fiesta: noche al revés (I), alas en las manos (II), balbucea dormido (III), coma (IV).",
+    "acronimo": "Grado II = alas: el aleteo (flapping/asterixis) aparece claro en el II.",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hígado granate con gorro de chef, con ojos desorientados y espirales de mareo sobre la cabeza. Acción: tiene los brazos extendidos y las manos aleteando como alas de pájaro, con líneas de temblor, mientras sostiene una copa que se le cae. Elementos secundarios: una luna y un sol intercambiados de lugar en el cielo; una nube verdosa de aliento que flota a su alrededor. Escenario: explanada de césped de una universidad andina, de noche con guirnaldas. Composición: hígado centrado y grande. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Qué caracteriza el grado I de encefalopatía hepática?",
+        "a": "Confusión leve, atención disminuida, inversión del ritmo sueño-vigilia; reversible",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿En qué grado la asterixis (flapping) es evidente?",
+        "a": "Grado II (con letargia y desorientación en tiempo)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Cirrótico en coma sin respuesta al dolor: grado…",
+        "a": "IV (coma hepático)",
+        "tipo": "inversa"
+      },
+      {
+        "q": "Desencadenante clásico de encefalopatía en el cirrótico",
+        "a": "Hemorragia digestiva alta (HDA)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#137",
+      "#143"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 2,
+      "ubicacion": "Explanada"
+    }
+  },
+  "fuerza-muscular-mrc-daniels": {
+    "id": "fuerza-muscular-mrc-daniels",
+    "parametro": "Fuerza muscular (MRC / Daniels)",
+    "grupo": "Escalas · Neuro",
+    "tipo_info": "escala",
+    "dato_a_recordar": "0 sin contracción · 1 contracción visible o palpable sin movimiento · 2 mueve eliminando la gravedad · 3 vence la gravedad, no la resistencia · 4 vence resistencia parcial · 5 fuerza normal contra resistencia plena. 5/5 normal · 4/5 paresia leve · 2-3/5 moderada · 0-1/5 plejía/paresia grave. Pérdida completa = plejía; incompleta = paresia. Comparar lados y proximal vs distal.",
+    "tecnicas": [
+      "mnemotecnia",
+      "memorizar-listas",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Escala ordenada 0-5 cuya bisagra es el 3 (gravedad): historia de un libro levantado, grado por grado, con el gancho Tierra = tercer planeta = gravedad. La descripción de cada grado y la interpretación son literatura (MRC); el vault solo dice 0 a 5.",
+    "codigo": [],
+    "escena": "En la biblioteca, el Profe Neuro intenta levantar un libro gordísimo de neurología. En 0, su brazo ni se inmuta. En 1, el bíceps tiembla bajo tu dedo, pero el libro no se mueve. En 2, lo arrastra sobre la mesa pulida, de lado, sin levantarlo: sin gravedad. En 3, ¡lo sube al aire!, venció a la Tierra, el tercer planeta, el de la gravedad, pero la bibliotecaria le pone un dedo encima y se le cae. En 4 aguanta un poco el empujón de la bibliotecaria, y en 5 le gana el pulso y la sienta en su silla.",
+    "ancla": "MRC: 3 = vence la gravedad (la Tierra, tercer planeta); 4 y 5 = vencen a la bibliotecaria.",
+    "acronimo": "Nada · Tiembla · Arrastra · Levanta · Empuja algo · Gana (0 a 5).",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete, con un brazo musculoso de caricatura, sudando y con los dientes apretados. Acción: levanta en el aire un libro gigantesco mientras una bibliotecaria de lentes aplasta el libro hacia abajo con un solo dedo; ambos hacen fuerza con venas marcadas y líneas de tensión. Elementos secundarios: un pequeño planeta Tierra flotando sobre la mesa que tira del libro hacia abajo con una flecha de gravedad. Escenario: biblioteca universitaria con estantes de madera. Composición: duelo centrado, colores cálidos. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Qué define el grado 3 de fuerza muscular?",
+        "a": "Vence la gravedad pero no la resistencia",
+        "tipo": "directa"
+      },
+      {
+        "q": "Contracción palpable sin movimiento del segmento es grado…",
+        "a": "1",
+        "tipo": "inversa"
+      },
+      {
+        "q": "¿Diferencia entre grado 2 y grado 3?",
+        "a": "2 mueve solo eliminando la gravedad; 3 vence la gravedad",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Fuerza 4/5 en el brazo derecho se interpreta como…",
+        "a": "Paresia leve (vence resistencia parcial)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#137",
+      "#143",
+      "#139"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 3,
+      "ubicacion": "Biblioteca"
+    }
+  },
+  "reflejos-osteotendinosos": {
+    "id": "reflejos-osteotendinosos",
+    "parametro": "Reflejos osteotendinosos",
+    "grupo": "Escalas · Neuro",
+    "tipo_info": "escala",
+    "dato_a_recordar": "Escala 2020 (0-4+): 0 ausente · 1+ disminuido · 2+ normal · 3+ vivo/aumentado · 4+ exaltado con clonus. Escala 2018 (0-5): 0 ausente · 1 muy débil · 2 ligeramente débil · 3 normal · 4 exaltado · 5 exaltado con clonus. Se califica velocidad, duración de la contracción, rango y latencia. 0 = arreflexia (NMI, nervio, raíz); 4+ con clonus = piramidal (NMS). 3-10% de sanos carece de algún reflejo: la asimetría vale más que el número.",
+    "tecnicas": [
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Dos escalas que se confunden: regla única (el normal está en el medio y el tope siempre es clonus) y una escena con dos bandejas. El significado de cada cruz de la escala 0-4 es literatura (NINDS); las dos escalas son del vault.",
+    "codigo": [],
+    "escena": "En el comedor universitario, el Profe Neuro golpea con su martillo de reflejos la rodilla de cada comensal. Tiene dos bandejas: la de 2020, con 5 compartimentos (0 a 4), donde la sopa normal está en el del medio, el 2+; y la de 2018, con 6 compartimentos (0 a 5), donde la sopa normal también está en el centro, el 3. En el último compartimento de ambas, la pierna patea sin parar como un resorte, ¡tac-tac-tac!, y riega la sopa por todo el comedor: clonus, vía piramidal. En el primero, la pierna ni se mueve: arreflexia, nervio o raíz.",
+    "ancla": "ROT: el normal está en el medio (2+ de 4, 3 de 5); el tope es el resorte del clonus.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete que golpea con un martillo de reflejos de goma la rodilla de un estudiante sentado a la mesa. Acción: la pierna del estudiante patea sin parar como un resorte, con múltiples líneas de movimiento, y salpica sopa de una bandeja de comedor con compartimentos. Elementos secundarios: otra bandeja quieta al lado; gotas de sopa volando. Escenario: comedor universitario con mesas largas. Composición: martillo y rodilla al centro, colores cálidos. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "En la escala 0-4+ (2020), ¿qué valor es normal?",
+        "a": "2+",
+        "tipo": "directa"
+      },
+      {
+        "q": "En la escala 0-5 (2018), ¿qué valor es normal y cuál es exaltado con clonus?",
+        "a": "3 normal; 5 exaltado con clonus",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Reflejo 4+ con clonus orienta a lesión de…",
+        "a": "Vía piramidal (neurona motora superior)",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Un sano sin reflejo aquiliano bilateral: ¿qué vale más para interpretar?",
+        "a": "La asimetría; 3-10% de sanos carece de algún reflejo",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#137",
+      "#143"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 4,
+      "ubicacion": "Comedor universitario"
+    }
+  },
+  "mini-mental-mmse-folstein": {
+    "id": "mini-mental-mmse-folstein",
+    "parametro": "Mini-Mental (MMSE, Folstein)",
+    "grupo": "Escalas · Neuro",
+    "tipo_info": "escala",
+    "dato_a_recordar": "30 puntos. Orientación 10 (5 temporal: año, estación, mes, fecha, día · 5 espacial: país, ciudad, lugar, piso…) · Memoria y atención 11 (fijación 3 palabras 3 · cálculo 100-7 o deletreo inverso 5 · recuerdo diferido 3) · Lenguaje y praxis 9 (nombrar 2 · repetir frase 1 · orden de 3 pasos 3 · leer y obedecer 1 · escribir frase 1 · copiar pentágonos 1). 24-30 normal · 18-23 deterioro leve · 10-17 moderado · <10 grave. Validado en población urbana escolarizada: ajustar a la escolaridad del paciente rural.",
+    "tecnicas": [
+      "palacio-memoria",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Escala con muchos ítems (más de 6) y cortes exactos: los tres bloques en tres puntos del ingreso (pilar) y los cortes con sistema mayor. Ítems, puntajes y cortes son literatura (Folstein 1975), según el atlas; el vault da las funciones y la limitación por escolaridad.",
+    "codigo": [
+      {
+        "numero": "30",
+        "letras": "M-S",
+        "palabra": "mesa"
+      },
+      {
+        "numero": "24",
+        "letras": "N-R",
+        "palabra": "noria"
+      },
+      {
+        "numero": "18",
+        "letras": "T-F",
+        "palabra": "tofu"
+      },
+      {
+        "numero": "10",
+        "letras": "T-Z",
+        "palabra": "taza"
+      }
+    ],
+    "escena": "En el ingreso a Medicina hay una MESA de inscripción con 30 sellos. A la izquierda, un abuelo muestra sus dos manos abiertas: en una sostiene un calendario (5 de tiempo) y en la otra un mapa del Perú (5 de lugar). Al centro, repite 3 palabras, resta de 7 en 7 desde 100 cinco veces y luego recuerda las 3. A la derecha nombra un reloj y un lápiz, repite una frase, dobla el papel en 3 pasos, lee, escribe y copia dos pentágonos. Detrás gira una NORIA: de ella para arriba está normal; si cae a un plato de TOFU, deterioro leve; si se encoge hasta una TAZA, moderado, y por debajo de la taza, grave. Un comunero del campo que no fue a la escuela pide su propia mesa: ajustar a la escolaridad.",
+    "ancla": "MMSE: mesa de 30; noria 24 normal, tofu 18 leve, taza 10 moderado, debajo grave.",
+    "acronimo": "Bloques 10-11-9: Orientación · Memoria-atención · Lenguaje-praxis (OML). Memoria 3-5-3: fijar, calcular, recordar.",
+    "ruta_palacio": [
+      {
+        "lugar": "Ingreso a Medicina > izquierda (orientación 10)",
+        "imagen": "Manos abiertas del abuelo: calendario (año, estación, mes, fecha, día) y mapa (país, ciudad, lugar, piso…)."
+      },
+      {
+        "lugar": "Ingreso a Medicina > centro (memoria y atención 11)",
+        "imagen": "Tres palabras que entran a la cabeza (3), cinco restas de 7 desde 100 (5), las tres palabras que vuelven (3)."
+      },
+      {
+        "lugar": "Ingreso a Medicina > derecha (lenguaje y praxis 9)",
+        "imagen": "Nombra 2 objetos, repite 1 frase, orden de 3 pasos con el papel, lee y obedece 1, escribe 1 frase, copia 1 par de pentágonos."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un abuelo andino sonriente con chullo, sentado ante una mesa de inscripción enorme. Acción: muestra en una mano un calendario y en la otra un mapa, mientras dibuja dos pentágonos entrelazados en una hoja. Elementos secundarios: detrás gira una noria de feria colorida; sobre la mesa, un plato de tofu y una taza pequeña. Escenario: entrada de una facultad de medicina de ladrillo. Composición: abuelo centrado, noria al fondo. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Puntaje total del MMSE y sus tres bloques?",
+        "a": "30: orientación 10, memoria-atención 11, lenguaje-praxis 9",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Desde qué puntaje el MMSE se considera normal?",
+        "a": "24 (24-30)",
+        "tipo": "umbral"
+      },
+      {
+        "q": "MMSE de 15 indica…",
+        "a": "Deterioro moderado (10-17)",
+        "tipo": "inversa"
+      },
+      {
+        "q": "Comunera rural sin escolaridad saca 21. ¿Qué haces antes de rotular demencia?",
+        "a": "Ajustar el resultado a su escolaridad: el MMSE está validado en población urbana escolarizada",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#132",
+      "#139"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 5,
+      "ubicacion": "Ingreso a Medicina"
+    }
+  },
+  "soplos-freeman-levine": {
+    "id": "soplos-freeman-levine",
+    "parametro": "Soplos: Freeman-Levine",
+    "grupo": "Escalas · Cardio",
+    "tipo_info": "escala",
+    "dato_a_recordar": "I muy débil, solo con atención en silencio · II débil, se oye enseguida · III moderado, sin frémito · IV fuerte, con frémito palpable · V fortísimo, se oye con el borde del estetoscopio · VI se oye sin que el diafragma toque la piel. I-II leve (a menudo funcional) · III moderado · IV-VI intenso, con frémito → orgánico. El frémito se gradúa 1 a 4 cruces; algunos autores usan 4 grados.",
+    "tecnicas": [
+      "memorizar-listas",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Clasificación de 6 grados cuya bisagra es el IV (aparece el frémito): un aula donde el soplo es un viento que crece. Grados y frémito desde IV: vault; 'II se oye enseguida', 'V con el borde' e interpretación funcional/orgánico: literatura, según el atlas.",
+    "codigo": [],
+    "escena": "En el Aula 1, Cora la boxeadora sopla un viento por la ventana. Grado I: solo lo oyes si toda la clase se calla y contiene el aliento. Grado II: lo oyes apenas entras. Grado III: el viento ya se oye fuerte, pero las carpetas no tiemblan. Grado IV: ¡las carpetas vibran bajo tus manos como lavadora!, el frémito: desde aquí se toca y es orgánico. Grado V: lo escuchas apoyando apenas el borde del estetoscopio. Grado VI: el estetoscopio flota en el aire, sin tocar el pecho, y aun así ruge.",
+    "ancla": "Freeman-Levine: del IV para arriba se toca (frémito) → orgánico; el VI se oye sin tocar.",
+    "acronimo": "Pares: I-II se oye (silencio / enseguida) · III-IV se toca o no (sin / con frémito) · V-VI el estetoscopio se separa (borde / sin tocar).",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo con guantes de box y cinturón de campeón, inflando los cachetes y soplando un remolino de viento turquesa. Acción: el viento hace vibrar con fuerza las carpetas de un aula, con líneas de temblor, y un estudiante apoya la mano sobre una carpeta que tiembla. Elementos secundarios: un estetoscopio que flota en el aire separado del pecho del corazón, con ondas de sonido. Escenario: aula universitaria con pizarra verde. Composición: corazón centrado, remolino envolviendo la escena. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Desde qué grado de Freeman-Levine aparece el frémito?",
+        "a": "Grado IV",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Soplo que se oye sin que el estetoscopio toque la piel: grado…",
+        "a": "VI",
+        "tipo": "inversa"
+      },
+      {
+        "q": "¿Qué diferencia el grado III del IV?",
+        "a": "El III es moderado sin frémito; el IV es fuerte con frémito palpable",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Soplo grado II/VI en un joven asintomático sugiere…",
+        "a": "Soplo leve, a menudo funcional",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#137",
+      "#143"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 6,
+      "ubicacion": "Aula 1"
+    }
+  },
+  "clase-funcional-nyha": {
+    "id": "clase-funcional-nyha",
+    "parametro": "Clase funcional NYHA",
+    "grupo": "Escalas · Cardio",
+    "tipo_info": "clasificacion",
+    "dato_a_recordar": "I sin limitación de la actividad habitual (solo hallazgo, p. ej. soplo) · II limitación discreta: asintomático en reposo, síntomas con actividad habitual · III limitación acentuada: disnea/edema con actividad menor a la habitual · IV incapaz de cualquier actividad: síntomas en reposo, ortopnea permanente. Anamnesis: disnea de grandes esfuerzos ≈ II · medianos ≈ III · pequeños esfuerzos/reposo ≈ IV.",
+    "tecnicas": [
+      "memorizar-listas",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Clasificación ordenada de 4 clases: Cora sube al Aula 2 con esfuerzos cada vez menores. La equivalencia grandes/medianos/pequeños esfuerzos ↔ clase es orientativa (inferencia del atlas, no la da el docente).",
+    "codigo": [],
+    "escena": "Cora, la boxeadora, tiene que llegar al Aula 2. Clase I: sube las escaleras saltando la soga y ni suda; solo tiene un soplito. Clase II: si sube cargando la mochila llena de libros (su actividad de siempre, un gran esfuerzo) jadea, pero sentada está fresca. Clase III: con solo caminar hasta la pizarra (menos de lo habitual) se ahoga y se le hinchan los tobillos como globos. Clase IV: sentada en su carpeta, sin moverse, jadea y tiene que dormir sentada sobre una torre de almohadas: ortopnea permanente.",
+    "ancla": "NYHA: nada (I), grandes esfuerzos (II), medianos (III), reposo con almohadas (IV).",
+    "acronimo": "I nada · II grande · III mediano · IV reposo.",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo con guantes de box y cinturón de campeón, agotado, sudando a chorros. Acción: está sentado en una carpeta de aula sobre una torre altísima de almohadas, jadeando con la boca abierta y nubes de vapor, con los tobillos hinchados como globos. Elementos secundarios: al fondo, una escalera con huellas de saltos enérgicos y una mochila gigante de libros abandonada. Escenario: aula universitaria. Composición: corazón centrado y grande, tonos rojos y azules. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Qué define la clase III de la NYHA?",
+        "a": "Limitación acentuada: disnea/edema con actividad menor a la habitual",
+        "tipo": "directa"
+      },
+      {
+        "q": "Síntomas en reposo y ortopnea permanente: clase…",
+        "a": "IV",
+        "tipo": "inversa"
+      },
+      {
+        "q": "¿Diferencia entre clase I y II?",
+        "a": "I sin limitación; II asintomático en reposo pero con síntomas en la actividad habitual",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Paciente con IC que se ahoga al caminar dentro de su casa pero no en reposo: clase aproximada",
+        "a": "III (medianos esfuerzos, menos que la actividad habitual)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#137",
+      "#143"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 7,
+      "ubicacion": "Aula 2"
+    }
+  },
+  "edema-signo-de-godet-fovea": {
+    "id": "edema-signo-de-godet-fovea",
+    "parametro": "Edema: signo de Godet (fóvea)",
+    "grupo": "Escalas · Cardio",
+    "tipo_info": "escala",
+    "dato_a_recordar": "Técnica: presión firme y sostenida con el índice sobre tibia, maléolo o sacro (nunca pantorrilla). 1+ fóvea ~2 mm, desaparece rápido · 2+ ~4 mm, 10-15 s · 3+ ~6 mm, ~1 min, pierna engrosada · 4+ ~8 mm, 2-5 min, anasarca. 0 sin fóvea. Postural hasta 2+ y cede en decúbito; carencial (albúmina <2,5 g%) 2-3+. Frío en general; caliente en celulitis.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Escala de cruces con una regla (mm = cruces × 2) y tiempos: sistema mayor para 10-15 s y 2,5 / 2-5. Epónimo Godet → godete (molde) que se hunde. La escala 1-4 cruces y la técnica son del vault; los mm y tiempos son literatura, según el atlas.",
+    "codigo": [
+      {
+        "numero": "10",
+        "letras": "T-Z",
+        "palabra": "taza"
+      },
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      },
+      {
+        "numero": "25",
+        "letras": "N-LL",
+        "palabra": "anillo"
+      }
+    ],
+    "escena": "En el laboratorio de Anatomía, Cora hunde su guante de box en la tibia de una pierna de plastilina gigante (Godet suena a godete, el molde que deja marca), nunca en la pantorrilla blanda. Cada cruz hunde el doble: 2, 4, 6, 8 mm. En 1+ el hoyo se borra al instante; en 2+ tardas lo que tomas una TAZA de café mirando la TELE (10-15 s); en 3+ un minuto entero y la pierna está gorda; en 4+ el hoyo dura lo que un ANILLO tarda en girar 2 a 5 minutos, y todo el cuerpo es una esponja: anasarca. A un lado, un ANILLO flojo cae del dedo flaco de un desnutrido: albúmina menor de 2,5, edema 2-3+.",
+    "ancla": "Godet: cruces × 2 = mm; taza-tele 10-15 s (2+); anillo 2-5 min (4+, anasarca); anillo de albúmina 2,5.",
+    "acronimo": "Dónde presionar: TiMaSa = Tibia, Maléolo, Sacro (nunca pantorrilla).",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo con guantes de box y cinturón de campeón, concentrado. Acción: presiona con un dedo enorme la espinilla de una pierna gigante de plastilina rosada y deja un hoyo profundo que permanece marcado. Elementos secundarios: una taza de café humeante junto a un pequeño televisor; un anillo dorado girando sobre la mesa. Escenario: laboratorio de anatomía con modelos anatómicos de plástico. Composición: pierna en diagonal, dedo y hoyo al centro. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Dónde se busca el signo de Godet y dónde no?",
+        "a": "Tibia, maléolo o sacro; nunca en la pantorrilla",
+        "tipo": "directa"
+      },
+      {
+        "q": "Fóvea de ~4 mm que tarda 10-15 s en desaparecer: ¿cuántas cruces?",
+        "a": "2+",
+        "tipo": "inversa"
+      },
+      {
+        "q": "Edema 4+ equivale a…",
+        "a": "~8 mm, 2-5 min: anasarca",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Edema que llega a 2+ en la tarde y cede al acostarse sugiere…",
+        "a": "Edema postural (hasta 2+, cede en decúbito)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#137"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 8,
+      "ubicacion": "Laboratorio de Anatomía"
+    }
+  },
+  "score-de-wells-para-tvp": {
+    "id": "score-de-wells-para-tvp",
+    "parametro": "Score de Wells para TVP",
+    "grupo": "Escalas · Cardio",
+    "tipo_info": "escala",
+    "dato_a_recordar": "+1 cada uno. Riesgo: cáncer activo · parálisis/paresia o yeso en MMII · encamado >3 d o cirugía <12 sem · TVP previa. Examen: dolor en trayecto venoso profundo · edema de toda la pierna · pantorrilla >3 cm vs contralateral · edema con fóvea en la pierna sintomática · venas colaterales superficiales no varicosas. −2: diagnóstico alternativo igual o más probable. ≤0 baja → dímero D · 1-2 moderada · ≥3 alta → eco Doppler. Edema de TVP casi siempre unilateral.",
+    "tecnicas": [
+      "palacio-memoria",
+      "mnemotecnia",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Nueve criterios de +1 y uno de −2 (más de 6): pilar del anfiteatro con dos acrósticos; cortes y las 12 semanas con sistema mayor. Criterios y cortes ≥3 / ≤0: vault; puntaje de cada criterio, el moderado 1-2 y las 12 semanas: literatura, según el atlas.",
+    "codigo": [
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      }
+    ],
+    "escena": "En el anfiteatro, Los Glóbulos se apilan como soldados formando un coágulo gigante dentro de una sola pierna hinchada que ocupa el escenario. En las gradas altas se sientan los cuatro de riesgo: un enfermo de cáncer, uno con yeso y la pierna paralizada, uno acostado en una TINA de hospital tras su cirugía (menos de 12 semanas, más de 3 días en cama) y uno que ya tuvo TVP. Abajo, en el escenario, la pierna grita de dolor por el trayecto venoso, está entera hinchada, tres dedos más gruesa que la otra, con hoyos de fóvea y venitas nuevas que la rodean. Desde el telón, un detective con lupa ofrece otro culpable y se lleva dos puntos. Con tres o más, el ecógrafo entra en escena: Doppler.",
+    "ancla": "Wells TVP: gradas CaPETe (riesgo), escenario DE-PIE-FoCo (examen), telón −2; ≥3 → Doppler.",
+    "acronimo": "Riesgo CaPET = Cáncer · Parálisis/yeso · Encamado/cirugía · TVP previa. Examen DEPFC (Duele, Edema entero, Pantorrilla >3 cm, Fóvea, Colaterales) → 'DE PIE, FoCo'. Alternativo = −2.",
+    "ruta_palacio": [
+      {
+        "lugar": "Anfiteatro > gradas altas (riesgo, +1 c/u)",
+        "imagen": "Cáncer activo · yeso y parálisis en la pierna · paciente en una tina tras cirugía <12 sem o encamado >3 d · veterano de una TVP previa."
+      },
+      {
+        "lugar": "Anfiteatro > escenario (examen, +1 c/u)",
+        "imagen": "Pierna que grita en el trayecto venoso · pierna entera hinchada · pantorrilla >3 cm más gruesa · hoyos de fóvea · venas colaterales no varicosas."
+      },
+      {
+        "lugar": "Anfiteatro > telón (−2)",
+        "imagen": "Detective con lupa que propone un diagnóstico alternativo igual o más probable y resta dos puntos."
+      }
+    ],
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una pierna gigante hinchada y roja sobre un escenario de anfiteatro, con cara de dolor. Acción: dentro de la pierna, pequeños glóbulos rojos con casco de soldado se apilan formando un tapón, mientras la pierna se infla al doble que la pierna sana de al lado. Elementos secundarios: en las gradas, un paciente con yeso y otro acostado en una tina de hospital; un ecógrafo con ruedas entra en escena con su sonda. Escenario: anfiteatro universitario de gradas semicirculares. Composición: pierna centrada. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Cuántos criterios suman +1 en Wells TVP y cuál resta 2?",
+        "a": "Nueve suman +1; resta 2 el diagnóstico alternativo igual o más probable",
+        "tipo": "lista"
+      },
+      {
+        "q": "Wells TVP ≥3 significa y obliga a…",
+        "a": "Probabilidad alta → eco Doppler",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Con Wells ≤0, ¿qué examen pides?",
+        "a": "Dímero D (probabilidad baja)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Paciente con cáncer activo, pierna entera hinchada y pantorrilla 4 cm más gruesa, sin otro diagnóstico mejor. ¿Puntaje?",
+        "a": "3 → probabilidad alta → eco Doppler",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#132",
+      "#143",
+      "#189"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 9,
+      "ubicacion": "Anfiteatro"
+    }
+  },
+  "score-de-wells-para-tep": {
+    "id": "score-de-wells-para-tep",
+    "parametro": "Score de Wells para TEP",
+    "grupo": "Escalas · Respiratorio",
+    "tipo_info": "escala",
+    "dato_a_recordar": "3 puntos c/u: signos clínicos de TVP · TEP más probable que diagnóstico alternativo. 1,5 c/u: FC >100 lpm · inmovilización >3 d o cirugía <4 sem · TVP o TEP previo. 1 c/u: hemoptisis · cáncer activo. <2 baja → dímero D · 2-6 moderada · >6 alta → angiotomografía. Dímero D solo sirve para descartar (alto VPN) si la probabilidad es baja.",
+    "tecnicas": [
+      "mnemotecnia",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Siete criterios en tres pesos (3 / 1,5 / 1) y tres cortes: tres pisos de pesas en el laboratorio y sistema mayor para FC 100, 1,5 y el rango 2-6. Se memorizan los cortes <2 / 2-6 / >6 del atlas; el vault trae además otros cortes no estándar (≤4 / 5-6 / ≥7) y la literatura una versión dicotómica (≤4 improbable, >4 probable): no se codifican para no mezclar.",
+    "codigo": [
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      },
+      {
+        "numero": "100",
+        "letras": "T-Z-S",
+        "palabra": "tazas"
+      },
+      {
+        "numero": "26",
+        "letras": "N-CH",
+        "palabra": "nacho"
+      }
+    ],
+    "escena": "En el laboratorio de Fisiología, Pulmi el globo-pulmón está en una balanza de tres platos. En el plato pesado (3 puntos) caen una pierna hinchada con un coágulo (signos de TVP) y un detective que jura que el culpable es el TEP. En el plato mediano cae una TELE (1,5) que transmite: un corazón que corre rompiendo TAZAS (FC >100), un paciente en cama o recién operado, y un expediente de trombos previos. En el plato liviano caen un pañuelo con una mancha roja (hemoptisis) y un cangrejo (cáncer), un punto cada uno. Si la balanza marca menos de 2, el dímero D lo descarta; entre 2 y 6 te comes un NACHO de duda; por encima de 6, Pulmi entra al tomógrafo.",
+    "ancla": "Wells TEP: 3 (TVP, TEP probable) · tele 1,5 (tazas >100, cama/cirugía, previo) · 1 (sangre, cáncer); nacho 2-6, >6 angioTC.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo, nerviosos, sentados en una balanza de laboratorio de tres platos. Acción: sobre los platos caen una pierna hinchada, un pequeño televisor, un corazón corriendo que rompe tazas, un pañuelo con una mancha roja y un cangrejo; la aguja de la balanza se dispara. Elementos secundarios: al fondo, un tomógrafo circular con luz azul; un nacho en la mesa. Escenario: laboratorio de fisiología con frascos. Composición: balanza centrada. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Qué dos criterios valen 3 puntos en Wells TEP?",
+        "a": "Signos clínicos de TVP y TEP más probable que un diagnóstico alternativo",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Cuánto vale la FC >100 en Wells TEP?",
+        "a": "1,5 puntos",
+        "tipo": "directa"
+      },
+      {
+        "q": "Wells TEP >6 indica y se pide…",
+        "a": "Probabilidad alta → angiotomografía",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Wells TEP 1,5 y dímero D negativo: ¿conducta?",
+        "a": "Probabilidad baja (<2): el dímero D negativo descarta TEP (alto VPN)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#143"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 10,
+      "ubicacion": "Laboratorio de Fisiología"
+    }
+  },
+  "hemoptisis-por-volumen": {
+    "id": "hemoptisis-por-volumen",
+    "parametro": "Hemoptisis por volumen",
+    "grupo": "Escalas · Respiratorio",
+    "tipo_info": "escala",
+    "dato_a_recordar": "Pequeña <30 ml/24 h · moderada 30-200 ml/24 h · masiva >600 ml/24 h (riesgo de shock hipovolémico o asfixia por coágulos → urgencia). En la altura (Puno) la TBC pulmonar es la causa más frecuente.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Tres cortes en ml que se preguntan exactos: sistema mayor (mesa, nueces, chozas). Todo del vault. Marcado revisar: el apunte deja sin clasificar el tramo 200-600 ml; no se rellena.",
+    "codigo": [
+      {
+        "numero": "30",
+        "letras": "M-S",
+        "palabra": "mesa"
+      },
+      {
+        "numero": "200",
+        "letras": "N-C-S",
+        "palabra": "nueces"
+      },
+      {
+        "numero": "600",
+        "letras": "CH-Z-S",
+        "palabra": "chozas"
+      }
+    ],
+    "escena": "En la sala de simulación, Pulmi tose sobre el maniquí y le salen cintas rojas. Si las cintas no pasan del borde de la MESA, es pequeña. Si llenan un tazón de NUECES, moderada. Y si el rojo inunda la sala hasta tapar unas CHOZAS de totora, ¡masiva!: suena la alarma, el maniquí se pone pálido de shock y los coágulos le tapan la garganta. Por la ventana se ve Puno: aquí la culpable de siempre es la TBC.",
+    "ancla": "Hemoptisis: bajo la mesa (<30), nueces (30-200), chozas (>600) = masiva, urgencia; en Puno, TBC.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo tosiendo con fuerza, con ojos de susto. Acción: de su boca salen largas cintas rojas de tela, como serpentinas, que llenan un tazón de nueces y siguen hasta cubrir el techo de unas chozas de totora en miniatura. Elementos secundarios: una mesa de simulación con un maniquí médico pálido; una luz de alarma girando. Escenario: sala de simulación clínica. Composición: globos centrados, cintas en espiral. Formato cuadrado 1:1. Sin gore, sin sangre realista. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Desde qué volumen la hemoptisis es masiva?",
+        "a": ">600 ml en 24 h",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Hemoptisis de 100 ml/24 h se clasifica como…",
+        "a": "Moderada (30-200 ml)",
+        "tipo": "inversa"
+      },
+      {
+        "q": "¿Por qué la hemoptisis masiva es urgencia?",
+        "a": "Riesgo de shock hipovolémico o asfixia por coágulos",
+        "tipo": "directa"
+      },
+      {
+        "q": "Causa más frecuente de hemoptisis en Puno (altura)",
+        "a": "TBC pulmonar",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": true,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 11,
+      "ubicacion": "Sala de simulación"
+    }
+  },
+  "qsofa": {
+    "id": "qsofa",
+    "parametro": "qSOFA",
+    "grupo": "Escalas · General",
+    "tipo_info": "escala",
+    "dato_a_recordar": "1 punto c/u: FR ≥22/min · alteración del estado mental (Glasgow <15) · PAS ≤100 mmHg. 0-1 baja sospecha · ≥2 alta sospecha de sepsis → hemocultivos, lactato. Lactato >2 mmol/L indica hipoperfusión tisular.",
+    "tecnicas": [
+      "mnemotecnia",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Tres criterios con cortes exactos y un umbral de 2: acrónimo RAP + sistema mayor (niño 22, tele 15, tazas 100). 'Glasgow <15' es literatura (Sepsis-3), según el atlas. Personaje nuevo: Bacho, la bacteria villana (infección/sepsis).",
+    "codigo": [
+      {
+        "numero": "22",
+        "letras": "N-Ñ",
+        "palabra": "niño"
+      },
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      },
+      {
+        "numero": "100",
+        "letras": "T-Z-S",
+        "palabra": "tazas"
+      }
+    ],
+    "escena": "En el auditorio, Bacho la bacteria villana sube al escenario a cantar un RAP de tres versos. R, Respiración: un NIÑO sopla un pito a toda velocidad, 22 o más por minuto. A, Alteración mental: la TELE del Glasgow se apaga, ya no marca 15. P, Presión: una torre de TAZAS se derrumba hasta 100 o menos. Con solo dos versos el público ya grita ¡sepsis!, y entran las enfermeras corriendo con frascos de hemocultivo y a medir el lactato.",
+    "ancla": "qSOFA = RAP: niño 22 respira, tele <15, tazas ≤100; 2 versos = sepsis.",
+    "acronimo": "RAP = Respiración ≥22 · Alteración mental (Glasgow <15) · Presión sistólica ≤100. Con 2 de 3 → alta sospecha.",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una bacteria verde villana con antifaz y capa morada, cantando rap con micrófono sobre un escenario. Acción: a su lado un niño sopla un pito con las mejillas infladas y líneas de velocidad, un televisor se apaga con chispas y una torre de tazas se derrumba. Elementos secundarios: dos enfermeras corren hacia el escenario con frascos de cultivo. Escenario: auditorio universitario con butacas rojas y reflectores. Composición: bacteria centrada bajo un foco. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Cuáles son los tres criterios del qSOFA y sus cortes?",
+        "a": "FR ≥22/min, alteración mental (Glasgow <15), PAS ≤100 mmHg",
+        "tipo": "lista"
+      },
+      {
+        "q": "¿Con cuántos puntos de qSOFA hay alta sospecha de sepsis?",
+        "a": "≥2 → hemocultivos y lactato",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Lactato >2 mmol/L indica…",
+        "a": "Hipoperfusión tisular",
+        "tipo": "directa"
+      },
+      {
+        "q": "Paciente con neumonía: FR 24, PA 95/60, Glasgow 15. ¿qSOFA?",
+        "a": "2 → alta sospecha de sepsis",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#143",
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 12,
+      "ubicacion": "Auditorio"
+    }
+  },
+  "criterios-de-centor": {
+    "id": "criterios-de-centor",
+    "parametro": "Criterios de Centor",
+    "grupo": "Escalas · Otros",
+    "tipo_info": "escala",
+    "dato_a_recordar": "1 punto c/u: fiebre >38 °C · exudado amigdalino · adenopatía cervical anterior dolorosa · ausencia de tos. McIsaac (edad): +1 si 3-14 años · 0 si 15-44 · −1 si ≥45. 0-1 probable viral, sin antibiótico · 2 baja-intermedia → test rápido · 3 sugiere estreptococo · 4 alta probabilidad → test/tratar. Tratar el estreptococo previene fiebre reumática (y la valvulopatía).",
+    "tecnicas": [
+      "mnemotecnia",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Cuatro criterios en acrónimo (FEAST) y edades de McIsaac con sistema mayor (metro 3-14, rulo 45; 15-44 se deduce). Criterios y '≥3 sugiere estreptococo': vault; punto por criterio, McIsaac y conducta por rango: literatura, según el atlas. Usa a Bacho (personaje nuevo) como estreptococo en cadena.",
+    "codigo": [
+      {
+        "numero": "38",
+        "letras": "M-F",
+        "palabra": "mafia"
+      },
+      {
+        "numero": "314",
+        "letras": "M-T-R",
+        "palabra": "metro"
+      },
+      {
+        "numero": "45",
+        "letras": "R-L",
+        "palabra": "rulo"
+      }
+    ],
+    "escena": "En el decanato, Bacho y sus hermanos, encadenados como estreptococos, organizan un FEAST (banquete) dentro de una garganta gigante. F: la MAFIA trae la fiebre de más de 38 en una olla hirviendo. E: untan crema blanca sobre las amígdalas (exudado). A: los ganglios del cuello se inflan como pelotas y chillan al tocarlos (adenopatía dolorosa). ST: nadie tose, Sin Tos. Un niño baja del METRO (3-14 años) y suma un punto; una señora con RULOS (45 o más) resta uno. Con 4 platos el decano firma la receta de penicilina para salvar las válvulas del corazón de la fiebre reumática.",
+    "ancla": "Centor = FEAST (Fiebre, Exudado, Adenopatía, Sin Tos); metro +1, rulos −1; ≥3 estreptococo.",
+    "acronimo": "FEAST = Fiebre >38 · Exudado amigdalino · Adenopatía cervical anterior dolorosa · Sin Tos.",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una cadena de bacterias verdes villanas con antifaz y capa morada, unidas como un collar, celebrando un banquete. Acción: sobre unas amígdalas gigantes rojas untan crema blanca con espátulas, junto a una olla hirviendo con vapor de fiebre. Elementos secundarios: ganglios del cuello inflados como pelotas que hacen una mueca de dolor; un niño saliendo de un vagón de metro y una señora con rulos. Escenario: oficina elegante de decanato. Composición: garganta como escenario central. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Cuáles son los 4 criterios de Centor?",
+        "a": "Fiebre >38 °C, exudado amigdalino, adenopatía cervical anterior dolorosa, ausencia de tos",
+        "tipo": "lista"
+      },
+      {
+        "q": "¿Qué ajuste por edad agrega McIsaac?",
+        "a": "+1 si 3-14 años, 0 si 15-44, −1 si ≥45",
+        "tipo": "directa"
+      },
+      {
+        "q": "Centor 0-1 orienta a…",
+        "a": "Probable viral, sin antibiótico",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Niño de 8 años con fiebre 39 °C, exudado y sin tos. ¿Puntaje Centor-McIsaac?",
+        "a": "4 → alta probabilidad → test/tratar",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#143",
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 13,
+      "ubicacion": "Decanato"
+    }
+  },
+  "deshidratacion": {
+    "id": "deshidratacion",
+    "parametro": "Deshidratación",
+    "grupo": "Escalas · General",
+    "tipo_info": "escala",
+    "dato_a_recordar": "Signos: sed · pliegue cutáneo + · mucosas secas · ojos hundidos · fontanela deprimida · taquicardia · hipotensión postural. Intensidad: leve (1.er grado) ~5% · moderada (2.º) 5-10% · grave (3.er) >10% del peso. Osmolaridad: isotónica Na 135-145 · hipotónica Na <130 (2018: <135) · hipertónica Na >145 mEq/L. En el anciano tomar el pliegue en región frontal o esternal (en el dorso de la mano da falso positivo).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Dos clasificaciones con cortes exactos: % de peso (5 se deduce: una mano; taza 10) y Na sérico con sistema mayor (Tomás 130, tamal 135, toril 145). Todo del vault. Personaje nuevo: Gotita, la gota de agua (hidratación).",
+    "codigo": [
+      {
+        "numero": "10",
+        "letras": "T-Z",
+        "palabra": "taza"
+      },
+      {
+        "numero": "130",
+        "letras": "T-M-S",
+        "palabra": "Tomás"
+      },
+      {
+        "numero": "135",
+        "letras": "T-M-L",
+        "palabra": "tamal"
+      },
+      {
+        "numero": "145",
+        "letras": "T-R-L",
+        "palabra": "toril"
+      }
+    ],
+    "escena": "En las escaleras al segundo piso, Gotita sube jadeando y en cada escalón pierde gotas de su cuerpo. Al perder una mano de 5 dedos (5%) tiene sed y la boca seca: leve. Hasta llenar una TAZA (10%) se le hunden los ojos y el corazón le corre: moderada. Si derrama más que la taza, se marea al pararse: grave. Arriba la esperan tres porteros de sal: TOMÁS, que está aguado y por debajo de 130 (hipotónica); un TAMAL que va hasta un TORIL donde todo está en equilibrio, 135-145 (isotónica); y pasado el toril, el toro salado (hipertónica). A un abuelo le pellizcan la frente, no la mano.",
+    "ancla": "Deshidratación: 5% mano, taza 10%; Na: Tomás <130 hipo, tamal-toril 135-145 iso, >145 hiper.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una gota de agua azul con cantimplora vacía y ojos hundidos, sudando y jadeando. Acción: sube una escalera universitaria y en cada escalón se le escapan gotitas que caen en una taza. Elementos secundarios: en lo alto de la escalera, un tamal envuelto en hoja junto a la puerta de un corral de toros de madera; un salero gigante. Escenario: escaleras de concreto de una facultad con luz de mediodía andino. Composición: gota centrada en diagonal ascendente. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Qué porcentaje de peso perdido define la deshidratación grave?",
+        "a": ">10% del peso",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Rango de Na en la deshidratación isotónica?",
+        "a": "135-145 mEq/L",
+        "tipo": "directa"
+      },
+      {
+        "q": "Na de 150 mEq/L en un deshidratado: tipo…",
+        "a": "Hipertónica (>145)",
+        "tipo": "inversa"
+      },
+      {
+        "q": "¿Dónde tomas el pliegue cutáneo en un anciano y por qué?",
+        "a": "Región frontal o esternal: en el dorso de la mano da falso positivo",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 14,
+      "ubicacion": "Escaleras al segundo piso"
+    }
+  },
+  "desnutricion-criterios-de-gomez": {
+    "id": "desnutricion-criterios-de-gomez",
+    "parametro": "Desnutrición: criterios de Gómez",
+    "grupo": "Escalas · General",
+    "tipo_info": "escala",
+    "dato_a_recordar": "% déficit = (peso ideal para edad y sexo − peso real) / peso ideal × 100. <10% normal · I (leve): >10% (10-24%) · II (moderada): >25% (25-40%) · III (grave): >40% de déficit. Desnutrición proteica: cabello fino, seco, que se arranca fácil; sequedad conjuntival.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Tres cortes exactos con sistema mayor (taza 10, anillo 25, rosa 40) y Gómez como goma de borrar que le quita peso al niño. Cortes >10 / >25 / >40%: vault; fórmula del % de déficit y rótulo leve/moderada/grave: literatura, según el atlas.",
+    "codigo": [
+      {
+        "numero": "10",
+        "letras": "T-Z",
+        "palabra": "taza"
+      },
+      {
+        "numero": "25",
+        "letras": "N-LL",
+        "palabra": "anillo"
+      },
+      {
+        "numero": "40",
+        "letras": "R-S",
+        "palabra": "rosa"
+      }
+    ],
+    "escena": "En el Aula 3, una GOMA de borrar gigante (Gómez) borra pedazos de un niño parado sobre la balanza: lo que pesaría ideal menos lo que pesa, entre lo ideal. Si le borra más que una TAZA (10%), grado I; si le borra hasta que el ANILLO de su dedo se le cae (25%), grado II; si ya solo queda el tallo de una ROSA marchita (40%), grado III, grave. Al soplarle la cabeza, su cabello fino y seco se desprende como pelusa y sus ojos están secos.",
+    "ancla": "Gómez = la goma que borra peso: taza 10 (I), anillo 25 (II), rosa 40 (III).",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una goma de borrar gigante rosada con brazos y cara traviesa. Acción: borra con trazos enérgicos el contorno de un niño delgado parado sobre una balanza de consultorio, dejando migas de goma volando. Elementos secundarios: una taza, un anillo que cae rodando y una rosa marchita en el piso, en ese orden de izquierda a derecha; el cabello fino del niño se vuela como pelusa. Escenario: aula universitaria con pizarra. Composición: goma y niño al centro. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Cómo se calcula el % de déficit de peso de Gómez?",
+        "a": "(peso ideal para edad y sexo − peso real) / peso ideal × 100",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Cortes de los grados I, II y III de Gómez?",
+        "a": ">10%, >25% y >40% de déficit",
+        "tipo": "lista"
+      },
+      {
+        "q": "Déficit de 30%: grado…",
+        "a": "II (moderada, 25-40%)",
+        "tipo": "inversa"
+      },
+      {
+        "q": "Niño con peso ideal 20 kg que pesa 14 kg. ¿Grado?",
+        "a": "Déficit 30% → grado II (moderada)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 15,
+      "ubicacion": "Aula 3"
+    }
+  },
+  "escala-visual-analogica-del-dolor-eva": {
+    "id": "escala-visual-analogica-del-dolor-eva",
+    "parametro": "Escala visual analógica del dolor (EVA)",
+    "grupo": "Escalas · Dolor",
+    "tipo_info": "escala",
+    "dato_a_recordar": "0 sin dolor … 10 el peor dolor imaginable; el paciente marca o dice un número. Nominal: leve · moderado · severo. 0 sin dolor · 1-3 leve · 4-6 moderado · 7-10 severo. Guion del dolor (ALICIA): antigüedad · localización/irradiación · carácter · intensidad · agravantes/atenuantes. Cefalea: quien consulta suele tener EVA >4; con 1-3 en general no acude.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Tres tramos con sistema mayor (dama 1-3, rojo 4-6, gatos 7-10) más el acrónimo ALICIA. Cortes 1-3 / 4-6 / 7-10 y la sigla ALICIA: literatura; EVA 0-10, escala nominal y guion: vault, según el atlas.",
+    "codigo": [
+      {
+        "numero": "13",
+        "letras": "D-M",
+        "palabra": "dama"
+      },
+      {
+        "numero": "46",
+        "letras": "R-J",
+        "palabra": "rojo"
+      },
+      {
+        "numero": "710",
+        "letras": "G-T-S",
+        "palabra": "gatos"
+      }
+    ],
+    "escena": "En el Aula 4, el Profe Neuro despliega una regla larguísima del 0 al 10 y cada paciente señala su dolor. Una DAMA elegante apenas se queja con un abanico (1-3, leve) y no iría al médico por su dolor de cabeza. Un hombre se pone ROJO como tomate y aprieta los dientes (4-6, moderado): ese sí consulta. Al final, una jauría de GATOS furiosos le araña la espalda a otro, que grita y se retuerce (7-10, severo). Alicia, con su vestido azul, anota en su libreta cuándo empezó, dónde está, cómo es, cuánto duele y qué lo alivia.",
+    "ancla": "EVA: dama 1-3 leve, rojo 4-6 moderado, gatos 7-10 severo; ALICIA lo interroga.",
+    "acronimo": "ALICIA (guion del dolor) = Antigüedad · Localización/Irradiación · Carácter · Intensidad · Agravantes/Atenuantes.",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete que sostiene una regla larguísima de colores, del verde al rojo, sin marcas escritas. Acción: frente a la regla, una dama elegante se abanica tranquila, un hombre rojo como tomate aprieta los dientes y un tercero grita mientras varios gatos furiosos le arañan la espalda. Elementos secundarios: una niña rubia de vestido azul con libreta y estetoscopio anotando. Escenario: aula universitaria. Composición: los tres pacientes de izquierda a derecha, intensidad creciente. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Tramos leve, moderado y severo de la EVA?",
+        "a": "1-3 leve, 4-6 moderado, 7-10 severo",
+        "tipo": "lista"
+      },
+      {
+        "q": "EVA de 5 se interpreta como…",
+        "a": "Dolor moderado",
+        "tipo": "inversa"
+      },
+      {
+        "q": "¿Qué significa cada letra de ALICIA?",
+        "a": "Antigüedad, Localización/Irradiación, Carácter, Intensidad, Agravantes/Atenuantes",
+        "tipo": "directa"
+      },
+      {
+        "q": "Paciente con cefalea que consulta: ¿qué EVA suele tener?",
+        "a": "Más de 4 (con 1-3 en general no acude)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#143",
+      "#139"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 16,
+      "ubicacion": "Aula 4"
+    }
+  },
+  "ascitis-por-volumen-percusion": {
+    "id": "ascitis-por-volumen-percusion",
+    "parametro": "Ascitis por volumen (percusión)",
+    "grupo": "Escalas · Abdomen",
+    "tipo_info": "escala",
+    "dato_a_recordar": "Pequeño volumen <500 ml: percusión insuficiente → ecografía · Mediano 500-1500 ml: oleada negativa, matidez desplazable positiva · Gran volumen >1500 ml: oleada positiva, matidez en flancos de concavidad superior, a tensión → paracentesis. Tablero de ajedrez (matidez alternando con timpanismo) sugiere TBC peritoneal.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Dos cortes con sistema mayor: 500 = lazos y 1500 ml = 1,5 L = tele (la unidad en litros se deduce al ser el corte mayor). El signo de cada volumen va en la escena. Todo del vault.",
+    "codigo": [
+      {
+        "numero": "500",
+        "letras": "L-S-S",
+        "palabra": "losas"
+      },
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      }
+    ],
+    "escena": "En los baños, el Chef Hepa tiene la panza llena de agua como un bidón. Con poca agua, que apenas cubre unas LOSAS (menos de 500 ml), tu percusión no oye nada: hay que traer el ecógrafo. Con más agua, el sonido mate se corre cuando él se voltea de lado (matidez desplazable), pero aún no hay ola. Y cuando cabe una TELE entera nadando adentro (más de 1,5 L), le das un golpecito en un flanco y la ola llega al otro, ¡splash!, la panza tensa como tambor y el sonido mate dibuja una sonrisa hacia arriba: paracentesis. En el piso del baño, unas baldosas de ajedrez avisan: si la percusión suena así, piensa en TBC peritoneal.",
+    "ancla": "Ascitis: losas <500 (eco), entre losas y tele matidez desplazable, tele >1,5 L oleada y paracentesis.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hígado granate con gorro de chef y una barriga enorme transparente llena de agua, preocupado. Acción: una mano golpea un costado de la barriga y una ola azul recorre el agua de lado a lado, dentro flota un pequeño televisor. Elementos secundarios: unas losas de piedra apiladas a sus pies; el piso de baldosas blancas y negras como tablero de ajedrez. Escenario: baño universitario con azulejos. Composición: barriga al centro, ola con líneas de movimiento. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Desde qué volumen de ascitis la oleada es positiva?",
+        "a": ">1500 ml (gran volumen)",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Ascitis <500 ml: ¿cómo se detecta?",
+        "a": "Por ecografía; la percusión es insuficiente",
+        "tipo": "directa"
+      },
+      {
+        "q": "Matidez desplazable positiva con oleada negativa sugiere…",
+        "a": "Ascitis de mediano volumen (500-1500 ml)",
+        "tipo": "inversa"
+      },
+      {
+        "q": "Percusión abdominal en tablero de ajedrez sugiere…",
+        "a": "TBC peritoneal",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 17,
+      "ubicacion": "Baños"
+    }
+  },
+  "proteinuria-en-cruces-tira-reactiva": {
+    "id": "proteinuria-en-cruces-tira-reactiva",
+    "parametro": "Proteinuria en cruces (tira reactiva)",
+    "grupo": "Escalas · Otros",
+    "tipo_info": "escala",
+    "dato_a_recordar": "Normal ≤120-150 mg/24 h (por encima siempre es patológico renal). Cruces: trazas <0,5 g/L · + 1 g/L · ++ 3 g/L · +++ 5-10 g/L · ++++ >10 g/L. Negativa normal · trazas-+ leve · ++ moderada · +++/++++ intensa (rango nefrótico >3,5 g/24 h). Preferir proteinuria de 24 h; microalbuminuria para nefropatía diabética precoz. Orina espumosa + edema hasta anasarca = síndrome nefrótico.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Serie de cifras: sistema mayor con palabras de comida que encajan en el cafetín (tunas 120, tules 150, sol 0,5, tamal 1-3-5 para +/++/+++, taza 10, miel 3,5). Los decimales se ubican por contexto (0,5 trazas; 3,5 nefrótico). Todo del vault.",
+    "codigo": [
+      {
+        "numero": "120",
+        "letras": "T-N-S",
+        "palabra": "tunas"
+      },
+      {
+        "numero": "150",
+        "letras": "T-L-S",
+        "palabra": "telas"
+      },
+      {
+        "numero": "05",
+        "letras": "S-L",
+        "palabra": "sol"
+      },
+      {
+        "numero": "135",
+        "letras": "T-M-L",
+        "palabra": "tamal"
+      },
+      {
+        "numero": "10",
+        "letras": "T-Z",
+        "palabra": "taza"
+      },
+      {
+        "numero": "35",
+        "letras": "M-L",
+        "palabra": "miel"
+      }
+    ],
+    "escena": "En el cafetín, Frijo el frijol bombero pide su desayuno. En la vitrina, unas TUNAS envueltas en TELAS marcan lo normal: hasta 120-150 mg al día; si pasa de ahí, alarma renal. Moja la tira en su vaso: un rayito de SOL apenas la tiñe (trazas, <0,5 g/L). Luego llega un TAMAL que se abre en 1, 3 y 5 hojas, una por cruz (+, ++, +++); la tercera cruz llena una TAZA (hasta 10) y la cuarta la desborda (>10). Frijo le echa MIEL a su café, que se llena de espuma: pasó de 3,5 g, rango nefrótico, y se le hinchan hasta las orejas.",
+    "ancla": "Proteinuria: tunas-telas 120-150 normal; sol trazas; tamal 1-3-5 cruces; taza 10; miel 3,5 nefrótico.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un riñón café con casco de bombero y manguera, sentado en la barra de un cafetín. Acción: vierte miel en una taza de café que se desborda en espuma blanca abundante, mientras sus mejillas y tobillos se hinchan como globos. Elementos secundarios: un tamal abriéndose en hojas sobre el plato; tunas verdes envueltas en telas en la vitrina; un rayo de sol entrando por la ventana. Escenario: cafetín universitario. Composición: riñón centrado. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Proteinuria normal en 24 h?",
+        "a": "≤120-150 mg/24 h",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿A cuántos g/L equivalen +, ++ y +++ en la tira?",
+        "a": "+ 1 g/L · ++ 3 g/L · +++ 5-10 g/L",
+        "tipo": "lista"
+      },
+      {
+        "q": "¿Desde qué proteinuria se habla de rango nefrótico?",
+        "a": ">3,5 g/24 h",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Orina espumosa y edema hasta anasarca sugieren…",
+        "a": "Síndrome nefrótico",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 18,
+      "ubicacion": "Cafetín"
+    }
+  },
+  "funcion-renal-por-tfg": {
+    "id": "funcion-renal-por-tfg",
+    "parametro": "Función renal por TFG",
+    "grupo": "Escalas · Otros",
+    "tipo_info": "escala",
+    "dato_a_recordar": "Normal: TFG ≥100-150 ml/min · Reserva disminuida: <80-120 ml/min (2020) · 80-<100 ml/min (2018) · IRC leve 50-80 · moderada 10-50 · grave (terminal) <10 ml/min. Discrepancia docente 2020 vs 2018 en la reserva disminuida. No coincide con KDIGO G1-G5.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Escalera de cortes en ml/min con sistema mayor (tazas 100, tules 150, vaso 80, tunas 120, losa 50, taza 10); se codifica la versión que trae el atlas y se guardan las dos de la reserva. Todo del vault; el atlas advierte que no es KDIGO.",
+    "codigo": [
+      {
+        "numero": "100",
+        "letras": "T-Z-S",
+        "palabra": "tazas"
+      },
+      {
+        "numero": "150",
+        "letras": "T-L-S",
+        "palabra": "telas"
+      },
+      {
+        "numero": "80",
+        "letras": "V-S",
+        "palabra": "vaso"
+      },
+      {
+        "numero": "120",
+        "letras": "T-N-S",
+        "palabra": "tunas"
+      },
+      {
+        "numero": "50",
+        "letras": "L-S",
+        "palabra": "losa"
+      },
+      {
+        "numero": "10",
+        "letras": "T-Z",
+        "palabra": "taza"
+      }
+    ],
+    "escena": "En la salida a la avenida, Frijo el frijol bombero filtra el tráfico con su manguera-colador. Con buena función, por su colador pasan de 100 a 150 autos por minuto, cargados de TAZAS envueltas en TELAS. Si baja a la zona entre un VASO y unas TUNAS (80-120, la versión 2020), su reserva ya está disminuida. Si solo pasa entre una LOSA y un vaso (50-80), IRC leve; entre una TAZA y la losa (10-50), moderada; y con menos de una taza (menos de 10), el tráfico se paraliza: IRC terminal, Frijo cae rendido sobre la pista.",
+    "ancla": "TFG: tazas-telas normal (100-150); vaso-tunas reserva ↓; losa-vaso leve; taza-losa moderada; < taza terminal.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un riñón café con casco de bombero que sostiene un colador gigante en medio de una avenida. Acción: filtra una fila de autitos que pasan por el colador; los que salen llevan tazas envueltas en telas, mientras detrás el tráfico se atasca. Elementos secundarios: un vaso, una losa de piedra y una taza pequeña en la vereda, de mayor a menor. Escenario: salida de una universidad andina hacia una avenida con cerros al fondo. Composición: riñón centrado, líneas de movimiento en los autos. Formato cuadrado 1:1. Sin gore. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen": null,
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿TFG normal según el apunte?",
+        "a": "≥100-150 ml/min",
+        "tipo": "directa"
+      },
+      {
+        "q": "TFG de 30 ml/min corresponde a…",
+        "a": "IRC moderada (10-50 ml/min)",
+        "tipo": "inversa"
+      },
+      {
+        "q": "¿Desde qué TFG se habla de IRC grave (terminal)?",
+        "a": "<10 ml/min",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Qué discrepancia hay en la reserva disminuida?",
+        "a": "2020: <80-120 ml/min; 2018: 80-<100 ml/min (contrastar en clase; no es KDIGO)",
+        "tipo": "trampa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "estacion": {
+      "seccion": "escalas",
+      "n": 19,
+      "ubicacion": "Salida a la avenida"
+    }
+  }
+}

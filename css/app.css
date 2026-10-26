@@ -165,3 +165,8 @@ mark { background: #fde68a; color: inherit; border-radius: 3px; }
 .estaciones img, .estaciones .ph { width: 84px; height: 84px; border-radius: 10px; object-fit: cover; display: grid; place-items: center; font-size: 34px; background: var(--memo-bg); cursor: zoom-in; }
 .estaciones .ub { display: block; color: var(--memo); font-size: 12.5px; font-weight: 700; }
 .estaciones b { display: block; } .estaciones .an { display: block; font-size: 13px; color: var(--muted); }
+
+details.fmemo, details.sigm { margin-top: 6px; } details summary { cursor: pointer; }
+details.sigm { break-inside: avoid; padding: 3px 0; font-size: 13.5px; }
+details.sigm[open] { background: var(--memo-bg); border-radius: 8px; padding: 6px 8px; }
+details.fmemo summary { color: var(--memo); font-weight: 700; font-size: 13px; }

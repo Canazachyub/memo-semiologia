@@ -1,0 +1,1302 @@
+{
+  "volumen-urinario": {
+    "id": "volumen-urinario",
+    "parametro": "Volumen urinario",
+    "grupo": "Orina y deposiciones",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Volumen urinario normal 800-1800 mL/24h (media 1400). Poliuria >2000 mL/24h (DM descompensada, diabetes insípida, hipercalcemia, diuréticos). Oliguria <400 mL/24h (≈20 mL/h); anuria <100 mL/24h (obstrucción bilateral).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango y tres umbrales exactos que se preguntan tal cual → sistema mayor. Se codifica en CIENTOS de mL (los dos ceros finales se deducen): 08 = 800, 18 = 1800, 20 = 2000, 04 = 400, 01 = 100. Personaje: Frijo, el frijol bombero.",
+    "codigo": [
+      {
+        "numero": "08",
+        "letras": "S-F",
+        "palabra": "sofá"
+      },
+      {
+        "numero": "18",
+        "letras": "T-F",
+        "palabra": "tofu"
+      },
+      {
+        "numero": "20",
+        "letras": "N-S",
+        "palabra": "NASA"
+      },
+      {
+        "numero": "04",
+        "letras": "S-R",
+        "palabra": "zorro"
+      },
+      {
+        "numero": "01",
+        "letras": "S-T",
+        "palabra": "seta"
+      }
+    ],
+    "escena": "En la entrada del parque desde el Jr. Lima, Frijo el frijol bombero está echado en un SOFÁ (800) y su manguera llena tranquila un balde hasta un bloque de TOFU (1800): ese es el día normal. De pronto un cohete de la NASA (2000) le arranca la manguera hacia el cielo y llueve orina dulce por todo el Jr. Lima: poliuria de la diabetes descompensada. Cuando Frijo se deshidrata, un ZORRO (400) lame el hilito que apenas gotea (oliguria) y, por debajo, una SETA gigante (100) le tapona la manguera por los dos lados: anuria por obstrucción bilateral.",
+    "ancla": "Frijo del sofá al tofu; la NASA lo dispara, el zorro lame el goteo y la seta lo tapa.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un frijol café gigante con casco de bombero, recostado en un sofá rojo en la entrada de un parque, sosteniendo una manguera. Acción: un cohete espacial blanco arranca la manguera hacia el cielo y lanza un chorro amarillo enorme hacia arriba. Elementos secundarios: un bloque blanco de tofu junto al balde, un zorro naranja lamiendo unas gotas en el suelo, una seta gigante de sombrero rojo tapando la boca de la manguera. Escenario: parque andino de ciudad con pileta de piedra, pinos altos y una iglesia de piedra al fondo. Composición: el frijol centrado y grande, líneas de movimiento en el chorro. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Volumen urinario normal en 24 h?",
+        "a": "800-1800 mL/24h (media 1400)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Diuresis <400 mL/24h se llama… ¿y <100 mL/24h?",
+        "a": "Oliguria (<400, ≈20 mL/h); anuria (<100)",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Desde qué volumen se habla de poliuria? Nombra 2 causas",
+        "a": ">2000 mL/24h: DM descompensada, diabetes insípida (también hipercalcemia, diuréticos)",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Paciente con 60 mL de orina en 24 h y ecografía con hidronefrosis bilateral: ¿cómo se llama y qué sugiere?",
+        "a": "Anuria (<100 mL/24h): obstrucción bilateral",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s7",
+      "n": 0,
+      "ubicacion": "Entrada desde el Jr. Lima"
+    }
+  },
+  "densidad-urinaria": {
+    "id": "densidad-urinaria",
+    "parametro": "Densidad urinaria",
+    "grupo": "Orina y deposiciones",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Densidad urinaria normal 1.015-1.025. >1.020 en IRA prerrenal (el riñón concentra). <1.010 (isostenuria) en NTA / IRA parenquimatosa.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango con decimales: el '1.0' se deduce (toda densidad urinaria empieza en 1.0xx), así que solo se codifican 15, 25, 20 y 10. Personaje: Frijo.",
+    "codigo": [
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      },
+      {
+        "numero": "25",
+        "letras": "N-LL",
+        "palabra": "anillo"
+      },
+      {
+        "numero": "20",
+        "letras": "N-S",
+        "palabra": "NASA"
+      },
+      {
+        "numero": "10",
+        "letras": "T-Z",
+        "palabra": "taza"
+      }
+    ],
+    "escena": "En la pileta central, el agua es orina y en ella flotan una TELE (15) y un ANILLO de oro (25): mientras floten entre los dos, la densidad es normal. Frijo, sediento y sin agua (prerrenal), exprime la pileta hasta que el agua se vuelve tan espesa que un astronauta de la NASA (20) camina sobre ella sin hundirse: >1.020, el riñón concentra. Pero si los túbulos se rompen (NTA), el agua queda aguada y una TAZA (10) se hunde hasta el fondo con un glu-glu: <1.010, isostenuria, el riñón ya no concentra nada.",
+    "ancla": "Entre la tele y el anillo flota lo normal; la NASA camina en lo concentrado y la taza se hunde en la NTA.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un frijol café con casco de bombero exprimiendo con fuerza una pileta de piedra llena de agua amarilla espesa. Acción: un astronauta camina sobre la superficie espesa sin hundirse. Elementos secundarios: un televisor y un anillo dorado flotando, una taza blanca hundiéndose con burbujas. Escenario: parque andino de ciudad con pileta de piedra, pinos altos y una iglesia de piedra al fondo. Composición: la pileta centrada, el astronauta arriba, la taza abajo. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Densidad urinaria normal?",
+        "a": "1.015-1.025",
+        "tipo": "directa"
+      },
+      {
+        "q": "Densidad >1.020 con oliguria orienta a…",
+        "a": "IRA prerrenal (el riñón concentra)",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Densidad fija <1.010 se llama… y orienta a…",
+        "a": "Isostenuria: NTA / IRA parenquimatosa",
+        "tipo": "umbral"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s7",
+      "n": 1,
+      "ubicacion": "Pileta central"
+    }
+  },
+  "ph-urinario": {
+    "id": "ph-urinario",
+    "parametro": "pH urinario",
+    "grupo": "Orina y deposiciones",
+    "tipo_info": "rango",
+    "dato_a_recordar": "pH urinario normal ácido, 4.5-7. Alcalino: dieta o gérmenes productores de ureasa (urea → amoníaco); Proteus (ureasa) → orina alcalina → cálculos coraliformes de estruvita. Más ácida (<5): acidosis metabólica, dieta proteica, cetoacidosis; cálculos de ácido úrico.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango numérico (45 = rulo, 7 = oca, palabra de un solo dígito) + epónimo Proteus con persona conocida: Proteo, el dios marino que cambia de forma. La parte de 'más ácida <5' y la clave de Proteus vienen de literatura (lit). Personaje: Frijo.",
+    "codigo": [
+      {
+        "numero": "45",
+        "letras": "R-L",
+        "palabra": "rulo"
+      },
+      {
+        "numero": "7",
+        "letras": "C",
+        "palabra": "oca"
+      }
+    ],
+    "escena": "Bajo el pino más alto, una señora con RULOS (45) chupa un limón y baila con una OCA (7): entre los rulos y la oca, la orina es ácida, que es lo normal. Del charco sale PROTEO, el dios del mar, con un tridente de CORAL; escupe ureasa y la orina apesta a amoníaco como baño público sin limpiar, se vuelve jabonosa (alcalina) y en el riñón de Frijo crecen piedras con forma de coral (estruvita). En el otro lado, un diabético en cetoacidosis come carne y la orina se pone tan ácida que caen cristales de ácido úrico como granizo.",
+    "ancla": "Rulos y oca: orina ácida; Proteo trae amoníaco y corales de estruvita.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un dios marino barbudo con corona de algas saliendo de un charco amarillo al pie de un pino gigante, sosteniendo un tridente hecho de coral rosado. Acción: sopla nubes verdosas de olor que hacen taparse la nariz a todos. Elementos secundarios: una señora con rulos chupando un limón junto a una oca blanca, un riñón café con piedras de coral saliéndole. Escenario: parque andino de ciudad con pileta de piedra, pinos altos y una iglesia de piedra al fondo. Composición: el dios marino centrado, colores verde y rosado. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿pH urinario normal?",
+        "a": "Ácido, 4.5-7",
+        "tipo": "directa"
+      },
+      {
+        "q": "ITU por Proteus: ¿qué pH urinario y qué cálculos produce?",
+        "a": "Orina alcalina (ureasa: urea → amoníaco) → cálculos coraliformes de estruvita",
+        "tipo": "caso"
+      },
+      {
+        "q": "Orina muy ácida (<5): una causa y qué cálculo precipita",
+        "a": "Acidosis metabólica, dieta proteica o cetoacidosis; ácido úrico",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#124"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s7",
+      "n": 2,
+      "ubicacion": "Pino más alto"
+    }
+  },
+  "aspecto-y-color-de-orina": {
+    "id": "aspecto-y-color-de-orina",
+    "parametro": "Aspecto y color de orina",
+    "grupo": "Orina y deposiciones",
+    "tipo_info": "lista-causas",
+    "dato_a_recordar": "Normal: amarillo pálido a ámbar, límpida. Turbia: pus/ITU o cristales; roja: hematuria; castaña: coluria; espumosa: nefrótico; incolora: hiperhidratación. Orina 'coca-cola' = hematuria del síndrome nefrítico. Roja con hematíes = hematuria; tira + sin hematíes = hemoglobinuria o mioglobinuria.",
+    "tecnicas": [
+      "memorizar-listas",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Lista de colores → significado: una imagen por color en una fila de botellas (historia corta). La regla de hematíes/tira es literatura (lit). Personaje: Frijo.",
+    "codigo": [],
+    "escena": "En las bancas del lado de la iglesia, Frijo pone en fila seis botellas como un vendedor de jugos. La primera, amarilla clara y transparente como chicha de manzana, es la normal; la segunda, turbia como agua con leche, tiene pus nadando (ITU). La tercera es roja como fresco de fresa (hematuria) y su prima, negra como coca-cola, burbujea por el riñón nefrítico. La cuarta es castaña como té cargado (coluria, bilirrubina), la quinta hace espuma como cerveza recién servida (nefrótico, proteínas) y la última es agua pura del caño (hiperhidratación). Un detective agita la roja: si al microscopio no hay glóbulos rojos aunque la tira marque, es hemoglobina o mioglobina.",
+    "ancla": "Seis botellas en la banca: clara, turbia-pus, roja-sangre, castaña-bilis, espuma-proteína, agua-hidratación.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un frijol café con casco de bombero como vendedor sonriente detrás de una banca de parque, presentando una fila de botellas de vidrio. Acción: alza con orgullo las botellas mientras una hace espuma desbordada y otra burbujea oscura como gaseosa de cola. Elementos secundarios: botellas amarilla clara, turbia blanquecina, roja, castaña y otra transparente como agua. Escenario: parque andino de ciudad con pileta de piedra, pinos altos y una iglesia de piedra al fondo. Composición: botellas en fila de izquierda a derecha, el frijol al centro. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Aspecto y color normales de la orina?",
+        "a": "Amarillo pálido a ámbar; límpida",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Qué indica una orina turbia, roja, castaña y espumosa?",
+        "a": "Turbia: pus/ITU o cristales · roja: hematuria · castaña: coluria · espumosa: nefrótico",
+        "tipo": "lista"
+      },
+      {
+        "q": "Orina color coca-cola con edema y HTA: ¿qué síndrome?",
+        "a": "Síndrome nefrítico (hematuria)",
+        "tipo": "caso"
+      },
+      {
+        "q": "Orina roja, tira positiva para sangre, sedimento sin hematíes: ¿qué pensar?",
+        "a": "Hemoglobinuria o mioglobinuria (no hematuria)",
+        "tipo": "trampa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#137",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s7",
+      "n": 3,
+      "ubicacion": "Bancas del lado de la iglesia"
+    }
+  },
+  "leucocitos-sedimento": {
+    "id": "leucocitos-sedimento",
+    "parametro": "Leucocitos (sedimento)",
+    "grupo": "Orina y deposiciones",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "Leucocitos en sedimento: normal hasta 3 por campo; >10/campo = sospecha de ITU (piuria). Con cilindros leucocitarios → pielonefritis. Piuria estéril (cultivo negativo): TBC renal, nefritis intersticial, litiasis.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Cifra pequeña y un umbral: el 3 se ve como CANTIDAD (tres soldados), el 10 con el sistema mayor (taza). Piuria estéril es literatura (lit). Ojo: la nota de FISIOPATO da otro rango (0-5/campo; >5-10 piuria); aquí se memoriza el de la fila. Personaje: los Glóbulos (leucocitos con escudo).",
+    "codigo": [
+      {
+        "numero": "10",
+        "letras": "T-Z",
+        "palabra": "taza"
+      }
+    ],
+    "escena": "En la puerta de la Iglesia San Juan montan guardia solo TRES leucocitos con escudo: es lo normal, un templo tranquilo. De repente llegan bacterias y entra un ejército entero de soldados blancos; se amontonan tanto que no caben ni en una TAZA (10) gigante de mate y se rebalsan: más de 10 por campo es piuria, la iglesia está tomada por una ITU. Si los soldados salen marchando en fila dentro de tubos (cilindros), la batalla está en el riñón: pielonefritis. Y si el cura cultiva la taza y no crece nada, la piuria es estéril: busca TBC, nefritis intersticial o una piedra.",
+    "ancla": "Tres guardias normales; la taza rebalsada de soldados blancos es ITU.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un ejército de glóbulos blancos caricaturescos con escudos, desbordándose de una taza gigante de cerámica frente a la puerta de una iglesia de piedra. Acción: los soldados saltan y se amontonan fuera de la taza persiguiendo bacterias verdes que huyen. Elementos secundarios: tres soldados blancos tranquilos haciendo guardia en la puerta, un tubo transparente con soldados marchando en fila. Escenario: parque andino de ciudad con pileta de piedra, pinos altos y una iglesia de piedra al fondo. Composición: la taza centrada y desbordada. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Cuántos leucocitos por campo son normales en el sedimento?",
+        "a": "Hasta 3 por campo",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Desde cuántos leucocitos por campo se sospecha ITU?",
+        "a": ">10/campo (piuria)",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Piuria con cilindros leucocitarios y fiebre con dolor lumbar: ¿diagnóstico?",
+        "a": "Pielonefritis",
+        "tipo": "caso"
+      },
+      {
+        "q": "Piuria con urocultivo negativo: 2 causas",
+        "a": "TBC renal, nefritis intersticial, litiasis",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s7",
+      "n": 4,
+      "ubicacion": "Iglesia San Juan"
+    }
+  },
+  "hematies-sedimento": {
+    "id": "hematies-sedimento",
+    "parametro": "Hematíes (sedimento)",
+    "grupo": "Orina y deposiciones",
+    "tipo_info": "clasificacion",
+    "dato_a_recordar": "Hematíes en sedimento: normal hasta 2 por campo. Hematuria: glomerular (dismórficos), ITU, litiasis; fiebre/ejercicio sin lesión. Nunca debe ignorarse: obliga a estudio urológico completo. Prueba de 3 vasos: inicial = uretra · terminal = cuello vesical/trígono · total = riñón, uréter o vejiga.",
+    "tecnicas": [
+      "memorizar-listas",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "La cifra es pequeña (2 = dos soldados rojos, por cantidad) y lo preguntable es la prueba de los 3 vasos: lista ordenada → historia de tres vasos en orden. Personaje: los Glóbulos (rojos con casco).",
+    "codigo": [],
+    "escena": "El lustrabotas del parque tiene en su cajón solo DOS glóbulos rojos con casco sacándole brillo a los zapatos (eso es normal), y hoy sirve tres vasos de chicha a un paciente. Si solo el PRIMER vaso sale rojo, la sangre vino de la puerta de salida: la uretra. Si solo el ÚLTIMO vaso se tiñe, al final, cuando la vejiga se exprime, la culpa es del cuello vesical y del trígono (un triángulo rojo que se cierra). Si los TRES vasos salen rojos de principio a fin, la sangre baja desde arriba: riñón, uréter o vejiga. Los glóbulos deformes, con orejas y abolladuras (dismórficos), delatan al glomérulo.",
+    "ancla": "Tres vasos del lustrabotas: primero = uretra, último = trígono, todos = riñón-uréter-vejiga.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un lustrabotas andino sonriente con gorra, sentado con su cajón de lustrar, sirviendo tres vasos de vidrio en fila. Acción: el primer vaso brilla rojo, el último se tiñe de rojo y una flecha de líquido rojo cae desde arriba sobre los tres. Elementos secundarios: dos glóbulos rojos diminutos con casco puliendo un zapato, un triángulo rojo apretándose detrás del último vaso. Escenario: parque andino de ciudad con pileta de piedra, pinos altos y una iglesia de piedra al fondo. Composición: los tres vasos en fila de izquierda a derecha, el lustrabotas al centro. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Cuántos hematíes por campo son normales?",
+        "a": "Hasta 2 por campo",
+        "tipo": "directa"
+      },
+      {
+        "q": "Prueba de los 3 vasos: ¿qué indica hematuria inicial, terminal y total?",
+        "a": "Inicial = uretra · terminal = cuello vesical/trígono · total = riñón, uréter o vejiga",
+        "tipo": "lista"
+      },
+      {
+        "q": "Hematíes dismórficos sugieren origen…",
+        "a": "Glomerular",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Se puede ignorar una hematuria aislada en un adulto?",
+        "a": "No: obliga a estudio urológico completo",
+        "tipo": "trampa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#137",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s7",
+      "n": 5,
+      "ubicacion": "Lustrabotas"
+    }
+  },
+  "celulas-epiteliales-orina": {
+    "id": "celulas-epiteliales-orina",
+    "parametro": "Células epiteliales (orina)",
+    "grupo": "Orina y deposiciones",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Células epiteliales: normal escasas (descamación normal). Abundantes: contaminación o infección; tubulares en NTA. Tomar chorro medio tras aseo genital · muchas células escamosas = muestra contaminada, repetir.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Regla práctica que se explica (qué indica, por qué pasa, qué hacer) → interrogación + una escena. La regla del chorro medio es literatura (lit) y la fila solo figura en FISIOPATOLOGÍA. Personaje: Frijo.",
+    "codigo": [],
+    "escena": "En el puesto de golosinas, la vendedora te da un frasco de orina con UNAS POCAS escamas brillantes: normal, la piel se descama un poco. Pero el siguiente frasco viene LLENO de escamas de pescado plateadas, como si hubieran limpiado una trucha del lago adentro: la muestra se contaminó con la piel genital. La vendedora grita '¡repita!' y te enseña el truco: lávate, deja ir el primer chorro y atrapa el chorro del MEDIO como quien atrapa un caramelo al vuelo. Si en cambio salen ladrillitos cúbicos del túbulo de Frijo, es necrosis tubular aguda.",
+    "ancla": "Frasco lleno de escamas de trucha = contaminada: lávate y atrapa el chorro del medio.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una vendedora andina de golosinas con trenzas y sombrero, levantando un frasco de vidrio lleno de escamas plateadas de pescado con cara de asco. Acción: con la otra mano atrapa al vuelo un chorro de agua amarilla por la mitad, como quien atrapa un caramelo. Elementos secundarios: un frasco limpio con apenas unas escamas, un frijol café con casco de bombero que deja caer ladrillitos diminutos. Escenario: parque andino de ciudad con pileta de piedra, pinos altos y una iglesia de piedra al fondo. Composición: la vendedora centrada detrás de su puesto colorido. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Qué cantidad de células epiteliales es normal en orina?",
+        "a": "Escasas (descamación normal)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Sedimento con muchas células escamosas: ¿qué significa y qué haces?",
+        "a": "Muestra contaminada: repetir, con aseo genital y chorro medio",
+        "tipo": "caso"
+      },
+      {
+        "q": "Células epiteliales tubulares abundantes orientan a…",
+        "a": "NTA",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#134",
+      "#043"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s7",
+      "n": 6,
+      "ubicacion": "Puesto de golosinas"
+    }
+  },
+  "proteinas-en-orina": {
+    "id": "proteinas-en-orina",
+    "parametro": "Proteínas en orina",
+    "grupo": "Orina y deposiciones",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Proteínas en orina: normal ≤120-150 mg/24h. Glomerulopatía; nefrótico ≥3.5 g/24h; nefrítico leve-moderada. Microalbuminuria: nefropatía DM. Proteína/creatinina en orina aislada (g/g) ≈ g/24 h; >3.5 nefrótico.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Límite normal y umbral nefrótico exactos → sistema mayor: 120 = tenis, 150 = telas (palabras de 3 dígitos), 3.5 g = miel (el punto se deduce: los gramos del nefrótico). El índice proteína/creatinina es literatura (lit). Personaje: Frijo.",
+    "codigo": [
+      {
+        "numero": "120",
+        "letras": "T-N-S",
+        "palabra": "tunas"
+      },
+      {
+        "numero": "150",
+        "letras": "T-L-S",
+        "palabra": "telas"
+      },
+      {
+        "numero": "35",
+        "letras": "M-L",
+        "palabra": "miel"
+      }
+    ],
+    "escena": "En la glorieta, Frijo filtra la orina con un colador hecho de pencas de TUNAS (120) y TELAS finas (150): solo se escapa un hilito de clara de huevo, eso es lo normal. Cuando el glomérulo se rompe, la clara de huevo cae a chorros y la orina hace espuma como batido; en el síndrome nefrótico cae un río de MIEL (3.5 g) tan espeso que pega los zapatos al piso de la glorieta y al paciente se le hinchan los tobillos. En el nefrítico, en cambio, se escapa poca proteína pero mucha sangre.",
+    "ancla": "Colador de tunas y telas deja pasar poquito; el río de miel es nefrótico.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un frijol café con casco de bombero sosteniendo un colador gigante tejido con pencas de tunas y telas finas. Acción: por el colador se escapa una cascada espesa de miel dorada y espuma blanca que inunda el piso. Elementos secundarios: huevos rotos de los que sale clara, un pie con el tobillo hinchado pegado a la miel. Escenario: glorieta de hierro en un parque andino con pinos. Composición: el frijol centrado bajo la glorieta, colores dorado y blanco. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Proteinuria normal en 24 h?",
+        "a": "≤120-150 mg/24h",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Desde cuántos g/24h la proteinuria es de rango nefrótico?",
+        "a": "≥3.5 g/24h",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Para qué sirve el índice proteína/creatinina en orina aislada?",
+        "a": "Estima la proteinuria de 24 h (g/g ≈ g/24 h); >3.5 = nefrótico",
+        "tipo": "directa"
+      },
+      {
+        "q": "La microalbuminuria es marcador temprano de…",
+        "a": "Nefropatía diabética",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s7",
+      "n": 7,
+      "ubicacion": "Glorieta"
+    }
+  },
+  "glucosa-en-orina": {
+    "id": "glucosa-en-orina",
+    "parametro": "Glucosa en orina",
+    "grupo": "Orina y deposiciones",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "Glucosa en orina: normal ausente. Poca: IR avanzada o Fanconi; mucha: DM descompensada. Umbral renal de glucosa ≈180 mg/dL (FISIOPATO). Glucosuria con glucemia normal: tubulopatía (Fanconi), embarazo o gliflozinas.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Umbral renal exacto → sistema mayor (180 = tofus, plural de tofu 18) + epónimo Fanconi por sonido ('fan', ventilador). La glucosuria con glucemia normal es literatura (lit). Personaje: Don Azúcar.",
+    "codigo": [
+      {
+        "numero": "180",
+        "letras": "T-F-S",
+        "palabra": "tofus"
+      }
+    ],
+    "escena": "En la jardinera central hay un muro de bloques de TOFUS (180) que separa la sangre de la orina. Don Azúcar, el terrón con sombrero de copa, no puede saltarlo: por eso la orina normal no tiene glucosa. En la diabetes descompensada, miles de terrones se apilan, trepan por encima del muro de tofus y caen a la orina en avalancha dulce, atrayendo hormigas. Pero al lado, un VENTILADOR roto (FAN-coni) sopla un agujero en el muro: los terrones se escapan aunque en la sangre haya pocos. Lo mismo pasa con una embarazada que abre una puertita y con las gliflozinas, que serruchan el muro a propósito.",
+    "ancla": "Don Azúcar no salta el muro de tofus (180); el ventilador de Fanconi lo agujerea.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cubo de azúcar blanco con sombrero de copa y cara alegre, trepando un muro hecho de bloques blancos de tofu. Acción: una avalancha de cubos de azúcar salta por encima del muro hacia un charco amarillo mientras un ventilador roto abre un hueco en la base del muro. Elementos secundarios: hormigas corriendo hacia el charco dulce. Escenario: jardinera de flores en un parque andino. Composición: el muro cruza el cuadro, el cubo de azúcar arriba al centro. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Glucosa en orina normal?",
+        "a": "Ausente",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Umbral renal de glucosa aproximado?",
+        "a": "≈180 mg/dL",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Glucosuria con glucemia normal: 3 causas",
+        "a": "Tubulopatía (Fanconi), embarazo, gliflozinas",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#124"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s7",
+      "n": 8,
+      "ubicacion": "Jardinera central"
+    }
+  },
+  "cetonas-y-urobilinogeno-orina": {
+    "id": "cetonas-y-urobilinogeno-orina",
+    "parametro": "Cetonas y urobilinógeno (orina)",
+    "grupo": "Orina y deposiciones",
+    "tipo_info": "lista-causas",
+    "dato_a_recordar": "Cetonas y urobilinógeno en orina: normal ausentes. Cetonas: DM descompensada grave o ayuno. Urobilinógeno: ictericia hepatocelular. Obstructiva: coluria con bilirrubina pero sin urobilina. Cetoacidosis diabética: cetonas + glucosa >250 + pH <7.30 + HCO3 <18.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Dos marcadores con causas clave + criterios de CAD con cifras: 250 = anillos (plural de anillo 25), 30 = mesa (el 7 del pH se deduce: 7.30), 18 = tofu. Los criterios de CAD son literatura (lit). Personajes: Don Azúcar (cetonas) y Chef Hepa (urobilinógeno). REVISAR: la nota del atlas dice que 10b afirma que el urobilinógeno sube en obstructivas y 09a que falta; aquí se memoriza lo de la fila (falta en la obstructiva).",
+    "codigo": [
+      {
+        "numero": "250",
+        "letras": "N-LL-S",
+        "palabra": "anillos"
+      },
+      {
+        "numero": "30",
+        "letras": "M-S",
+        "palabra": "mesa"
+      },
+      {
+        "numero": "18",
+        "letras": "T-F",
+        "palabra": "tofu"
+      }
+    ],
+    "escena": "En los postes de luz, Don Azúcar, en ayunas y descompensado, quema grasa y los focos se llenan de humo con olor a manzana: son las cetonas. Para declarar cetoacidosis, se cuelgan del poste ANILLOS (250) de azúcar, debajo se rompe una MESA (7.30) ácida y el bicarbonato queda reducido a un TOFU (18) mordido. En el poste de enfrente, Chef Hepa con el hígado inflamado (hepatocelular) deja escapar urobilinógeno a la orina como salsa derramada; pero si el colédoco está tapado con un corcho (obstructiva), la orina sale castaña de bilirrubina y el urobilinógeno brilla por su ausencia.",
+    "ancla": "Poste con olor a manzana: anillos, mesa rota y tofu mordido = CAD.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cubo de azúcar con sombrero de copa abrazado a un poste de luz de parque, con humo que sale de los focos y manzanas flotando en el humo. Acción: del poste cuelgan anillos dorados mientras una mesa de madera se parte en dos a sus pies y un bloque de tofu mordido cae. Elementos secundarios: al fondo, un hígado granate con gorro de chef derramando una salsa dorada. Escenario: avenida de parque andino con postes de luz antiguos. Composición: poste y cubo de azúcar centrados. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Cetonas y urobilinógeno en orina normal?",
+        "a": "Ausentes",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Criterios de cetoacidosis diabética?",
+        "a": "Cetonas + glucosa >250 + pH <7.30 + HCO3 <18",
+        "tipo": "lista"
+      },
+      {
+        "q": "Ictericia con coluria y orina sin urobilina: ¿qué tipo de ictericia?",
+        "a": "Obstructiva",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Dos causas de cetonuria?",
+        "a": "DM descompensada grave y ayuno",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": true,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s7",
+      "n": 9,
+      "ubicacion": "Postes de luz"
+    }
+  },
+  "cilindros-urinarios": {
+    "id": "cilindros-urinarios",
+    "parametro": "Cilindros urinarios",
+    "grupo": "Orina y deposiciones",
+    "tipo_info": "clasificacion",
+    "dato_a_recordar": "Cilindro = molde del túbulo: prueba origen renal. Hialinos sin valor patológico aislado. Hemáticos: glomerular/nefrítico (glomerulonefritis hasta demostrar lo contrario). Leucocitarios: pielonefritis. Céreos: GN crónica. Granulosos: lesión renal inespecífica (NTA). Grasos: nefrótico.",
+    "tecnicas": [
+      "memorizar-listas",
+      "memorizar-conceptos",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Concepto (molde del túbulo = origen renal) + clasificación de 6 tipos → una imagen por tipo en una historia de mototaxis. 'Cilindro = molde' y 'hemático = GN hasta demostrar lo contrario' son literatura (lit); grasos y granulosos vienen de la perla. Personaje: Frijo.",
+    "codigo": [],
+    "escena": "En el paradero de mototaxis, todas las mototaxis salen de un MOLDE con forma de túbulo de Frijo: si ves una, viene sí o sí del riñón. La primera es de VIDRIO transparente (hialina) y nadie le hace caso; la segunda está pintada de ROJO, con glóbulos rojos de pasajeros y una sirena: glomerulonefritis hasta que se demuestre lo contrario. La tercera va llena de soldados BLANCOS con escudos (pielonefritis) y la cuarta es de CERA vieja derretida, como vela de iglesia, porque lleva años circulando (GN crónica). La quinta va cargada de GRAVA (granulosa, NTA) y la última chorrea ACEITE de fritura (grasa, nefrótico).",
+    "ancla": "Mototaxis del molde renal: vidrio-nada, roja-GN, blanca-pielo, cera-crónica, grava-NTA, aceite-nefrótico.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una fila de mototaxis caricaturescas saliendo de un molde gigante con forma de tubo, en un paradero. Acción: una mototaxi roja con sirena y pasajeros que son glóbulos rojos con casco acelera al frente; detrás salen una de vidrio transparente, una con soldados blancos con escudos, una de cera derretida, una cargada de grava y una que chorrea aceite. Elementos secundarios: un frijol café con casco de bombero vigilando el molde. Escenario: paradero junto a un parque andino. Composición: fila diagonal de mototaxis, la roja en primer plano. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Qué es un cilindro urinario y qué prueba?",
+        "a": "Un molde del túbulo: prueba que el origen es renal",
+        "tipo": "explica"
+      },
+      {
+        "q": "¿Qué indican los cilindros hemáticos, leucocitarios y céreos?",
+        "a": "Hemáticos: glomerular/nefrítico · leucocitarios: pielonefritis · céreos: GN crónica",
+        "tipo": "lista"
+      },
+      {
+        "q": "¿Los cilindros hialinos aislados son patológicos?",
+        "a": "No, no tienen valor patológico aislado",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Edema masivo, proteinuria ≥3.5 g/24h y cilindros grasos: ¿síndrome?",
+        "a": "Nefrótico",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#137",
+      "#134",
+      "#043"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s7",
+      "n": 10,
+      "ubicacion": "Paradero de mototaxis"
+    }
+  },
+  "nitritos-orina": {
+    "id": "nitritos-orina",
+    "parametro": "Nitritos (orina)",
+    "grupo": "Orina y deposiciones",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Nitritos en orina: normal negativo. Positivo: ITU por enterobacterias (E. coli). Falso negativo: Enterococo o orina <4 h en vejiga.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Concepto (las enterobacterias convierten nitratos en nitritos y necesitan tiempo) + una cifra: 4 h = oro (palabra de un solo dígito: R = 4). Toda la fila es literatura (lit). Personaje: Frijo.",
+    "codigo": [
+      {
+        "numero": "4",
+        "letras": "R",
+        "palabra": "oro"
+      }
+    ],
+    "escena": "En la esquina del Jr. Arequipa, unas bacterias E. coli con overol de mineros convierten piedras grises (nitratos) en pepitas de ORO (nitritos) dentro de la vejiga: si la tira brilla dorada, hay ITU por enterobacterias. Pero el trabajo necesita su tiempo: si el paciente orina antes de 4 horas de ORO, los mineros no alcanzan a producir nada y la tira sale negativa aunque haya infección. Y el Enterococo, que no sabe minar, pasea con las manos vacías: otro falso negativo.",
+    "ancla": "Las E. coli mineras hacen oro en 4 horas; sin tiempo o con Enterococo, no hay oro.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una bacteria con forma de bastón vestida de minero con casco y linterna, picando piedras grises que se vuelven pepitas de oro brillante. Acción: lanza las pepitas doradas a un charco amarillo que resplandece. Elementos secundarios: un reloj de arena casi lleno, una bacteria redonda en cadena con las manos vacías encogiéndose de hombros. Escenario: esquina de calle con casas coloniales junto a un parque andino. Composición: la bacteria minera centrada, brillo dorado. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Qué significa un nitrito positivo en orina?",
+        "a": "ITU por enterobacterias (E. coli)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Dos causas de nitritos falsamente negativos",
+        "a": "Enterococo y orina <4 h en vejiga",
+        "tipo": "trampa"
+      },
+      {
+        "q": "ITU clínica con nitritos negativos en una muestra tomada 1 h después de orinar: ¿qué pasó?",
+        "a": "Falso negativo: la orina estuvo <4 h en la vejiga",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#134",
+      "#189"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s7",
+      "n": 11,
+      "ubicacion": "Esquina del Jr. Arequipa"
+    }
+  },
+  "frecuencia-de-deposiciones": {
+    "id": "frecuencia-de-deposiciones",
+    "parametro": "Frecuencia de deposiciones",
+    "grupo": "Orina y deposiciones",
+    "tipo_info": "escala",
+    "dato_a_recordar": "Deposiciones normales: de 3 al día a 1 cada 3 días, sin esfuerzo y consistencia normal. Diarrea: alta hasta 10/día voluminosas; baja >10/día, poco volumen, moco/sangre. Constipación: <3 por semana o cada 3 días o más, con dificultad. Pseudodiarrea: fecaloma que deja escapar líquido fecaloideo. Bristol 1-7: tipos 1-2 estreñimiento · 3-4 normal · 5-7 diarrea.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Regla de los 3 (3 al día, 1 cada 3 días, <3 por semana) por cantidad + cortes de Bristol con sistema mayor: 12 = tina, 34 = muro, 57 = lago; 10 = taza para alta/baja. Bristol es literatura (lit). PERSONAJE NUEVO: Tripi, el intestino-acordeón (intestino rosado enrollado como un acordeón, con chullo andino), para deposiciones y aparato digestivo bajo.",
+    "codigo": [
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      },
+      {
+        "numero": "34",
+        "letras": "M-R",
+        "palabra": "muro"
+      },
+      {
+        "numero": "57",
+        "letras": "L-G",
+        "palabra": "lago"
+      },
+      {
+        "numero": "10",
+        "letras": "T-Z",
+        "palabra": "taza"
+      }
+    ],
+    "escena": "En el teléfono público, Tripi, el intestino-acordeón con chullo, llama a sus TRES amigos: puede ir al baño 3 veces al día o 1 vez cada 3 días, y está bien. Cuelga el teléfono y revisa la escala de Bristol: en la TINA (1-2) caen bolitas duras como piedras de río, estreñimiento; en el MURO (3-4) se pega una salchicha lisa y perfecta, normal; y en el LAGO (5-7) todo se vuelve sopa, diarrea. Si llena una TAZA (10) grande con poco esfuerzo, la diarrea es alta y voluminosa; si corre más de diez veces a sacar apenas una cucharadita con moco y sangre, es baja (colon).",
+    "ancla": "Regla de los 3; Bristol: tina dura, muro normal, lago líquido.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un intestino rosado enrollado como un acordeón, con chullo andino de colores, hablando por un teléfono público rojo. Acción: señala con entusiasmo tres escenas a su lado de izquierda a derecha: una tina con bolitas marrones duras rebotando, un muro de ladrillos con una salchicha marrón lisa pegada y un lago marrón chapoteando. Elementos secundarios: una taza grande desbordada. Escenario: esquina de parque andino con teléfono público. Composición: el intestino centrado, las tres escenas en fila. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Frecuencia normal de deposiciones?",
+        "a": "De 3 al día a 1 cada 3 días, sin esfuerzo y consistencia normal",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Cuándo se habla de constipación?",
+        "a": "<3 por semana (o cada 3 días o más), con dificultad",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Escala de Bristol: ¿qué tipos son estreñimiento, normal y diarrea?",
+        "a": "1-2 estreñimiento · 3-4 normal · 5-7 diarrea",
+        "tipo": "directa"
+      },
+      {
+        "q": "Anciano con 'diarrea' líquida escasa y en el tacto un fecaloma: ¿qué es?",
+        "a": "Pseudodiarrea",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#143"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s7",
+      "n": 12,
+      "ubicacion": "Teléfono público"
+    }
+  },
+  "diarrea-duracion": {
+    "id": "diarrea-duracion",
+    "parametro": "Diarrea (duración)",
+    "grupo": "Orina y deposiciones",
+    "tipo_info": "clasificacion",
+    "dato_a_recordar": "Diarrea aguda <2-3 semanas (infecciosa); crónica >4 semanas (no infecciosa). Complica con hipopotasemia, alcalosis/acidosis, IRA, desnutrición. Disentería = sangre + moco + pujo + tenesmo → diarrea invasiva (Shigella, ameba).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Cortes de tiempo (23 = Nemo para 2-3 semanas; 4 = oro) + acrónimo para los 4 componentes de la disentería. La definición de disentería es literatura (lit). Personaje: Tripi, el intestino-acordeón (nuevo).",
+    "codigo": [
+      {
+        "numero": "23",
+        "letras": "N-M",
+        "palabra": "Nemo"
+      },
+      {
+        "numero": "4",
+        "letras": "R",
+        "palabra": "oro"
+      }
+    ],
+    "escena": "En el baño público, Tripi se encuentra con NEMO (2-3 semanas), el pez payaso, nadando en el inodoro: es la diarrea aguda, infecciosa, que se va antes de que Nemo vuelva al mar. Si pasan más de 4 semanas y el inodoro ya tiene una corona de ORO de tanto uso, la diarrea es crónica y no infecciosa. De repente estalla una TeMPeStad dentro del baño: Tenesmo (ganas que no se van), Moco, Pujo y Sangre; una ameba y una chica (Shigella) invaden la pared del colon: disentería, diarrea invasiva.",
+    "ancla": "Nemo en el inodoro = aguda; corona de oro = crónica; TeMPeStad = disentería.",
+    "acronimo": {
+      "sigla": "TMPS (TeMPeStad)",
+      "desarrollo": "Tenesmo, Moco, Pujo, Sangre → disentería (diarrea invasiva: Shigella, ameba)"
+    },
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un intestino rosado enrollado como acordeón con chullo andino, asustado dentro de un baño público mientras una tormenta con rayos estalla en el techo. Acción: un pez payaso naranja salta fuera del inodoro y una corona dorada brilla sobre la tapa. Elementos secundarios: una ameba gelatinosa trepando la pared, gotas de moco verde volando con el viento. Escenario: baño público sencillo de azulejos. Composición: el intestino centrado, rayos arriba, el pez a un lado. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Duración de la diarrea aguda y de la crónica?",
+        "a": "Aguda <2-3 semanas (infecciosa); crónica >4 semanas (no infecciosa)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Qué 4 elementos definen la disentería?",
+        "a": "Sangre + moco + pujo + tenesmo (TMPS)",
+        "tipo": "lista"
+      },
+      {
+        "q": "Diarrea con sangre, moco y tenesmo desde hace 3 días: ¿tipo y 2 agentes?",
+        "a": "Disentería, diarrea invasiva: Shigella, ameba",
+        "tipo": "caso"
+      },
+      {
+        "q": "Nombra 2 complicaciones de la diarrea",
+        "a": "Hipopotasemia, alcalosis/acidosis, IRA, desnutrición",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#143"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s7",
+      "n": 13,
+      "ubicacion": "Baño público"
+    }
+  },
+  "rx-torax-indice-cardiotoracico": {
+    "id": "rx-torax-indice-cardiotoracico",
+    "parametro": "Rx tórax · Índice cardiotorácico",
+    "grupo": "Radiografía de tórax",
+    "tipo_info": "formula",
+    "dato_a_recordar": "ICT = (A+B)/C; normal hasta 0.50 (límite superior). >0.50: cardiomegalia (valvulopatía evolucionada, ICC). ICT pequeño («corazón en gota»): EPOC con hiperinsuflación, delgadez extrema. Válido solo en PA de pie e inspiración profunda; en AP o decúbito el corazón se magnifica. Residentes de altura: arco medio (AP) prominente por hipertensión pulmonar.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Fórmula + un umbral: el '0.' se deduce (es una fracción), se codifica 50 = losa. A y B = las dos mitades del corazón, C = el tórax. La regla de la proyección PA, el corazón en gota y el dato de altura son literatura (lit). Personaje: Cora, el corazón boxeador.",
+    "codigo": [
+      {
+        "numero": "50",
+        "letras": "L-S",
+        "palabra": "losa"
+      }
+    ],
+    "escena": "Al inicio de las escaleras del mirador, Cora el corazón boxeador abre los dos brazos (A a la derecha + B a la izquierda) y los compara con una LOSA de piedra que cubre todo el ancho del tórax (C): sus brazos sumados no deben pasar de la mitad de la losa. Si sus guantes sobresalen más allá de la mitad, Cora está inflado: cardiomegalia por una válvula vieja o insuficiencia cardíaca. Si un paciente con EPOC sopla tanto que Cora se estira y queda colgando como una GOTA, el ICT es pequeño. Ojo: la foto vale solo de pie, de espaldas a la cámara (PA) y con aire hasta arriba; acostado, Cora sale agrandado como en un espejo de feria. Y aquí, en Puno, por la altura, el arco de la pulmonar le sale abultado.",
+    "ancla": "Los brazos de Cora no pasan la mitad de la losa (0.50); en PA de pie.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo con guantes de box y cinturón de campeón, de pie sobre una gran losa de piedra al inicio de unas escaleras, con los brazos abiertos midiendo. Acción: sus guantes se estiran y sobrepasan la mitad de la losa mientras se infla como un globo. Elementos secundarios: una cinta métrica tendida a lo ancho de una caja torácica estilizada detrás de él, una gota de agua colgante a un lado. Escenario: mirador de piedra en lo alto de un cerro andino con una gran escultura de cóndor y vista a un lago azul de altura y a una ciudad de techos rojos. Composición: el corazón centrado y grande, la losa a sus pies. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Cómo se calcula el índice cardiotorácico y cuál es su límite normal?",
+        "a": "ICT = (A+B)/C; normal hasta 0.50",
+        "tipo": "directa"
+      },
+      {
+        "q": "ICT de 0.58 indica…",
+        "a": "Cardiomegalia (>0.50)",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Se puede medir el ICT en una Rx AP en decúbito?",
+        "a": "No: solo vale en PA de pie e inspiración profunda; en AP o decúbito el corazón se magnifica",
+        "tipo": "trampa"
+      },
+      {
+        "q": "EPOC hiperinsuflado con corazón estrecho y alargado: ¿cómo se describe?",
+        "a": "ICT pequeño, «corazón en gota»",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s10",
+      "n": 0,
+      "ubicacion": "Inicio de las escaleras"
+    }
+  },
+  "rx-torax-silueta-cardiaca": {
+    "id": "rx-torax-silueta-cardiaca",
+    "parametro": "Rx tórax · Silueta cardíaca",
+    "grupo": "Radiografía de tórax",
+    "tipo_info": "clasificacion",
+    "dato_a_recordar": "Silueta cardíaca en PA. Borde derecho: VCS y AD. Borde izquierdo: botón aórtico, arco medio (AP + orejuela AI), VI. Abombamiento del arco medio (orejuela AI): primer signo de patología mitral. Estenosis mitral: 4 arcos a la izquierda + doble contorno derecho (aurícula izquierda) + carina abierta. Proyección de rutina: postero-anterior.",
+    "tecnicas": [
+      "memorizar-listas",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Lista ordenada de arcos (de arriba hacia abajo: 2 a la derecha, 3 a la izquierda) → pilar arriba-medio-abajo con una imagen por arco. La tríada de la estenosis mitral es literatura (lit). Personaje: Cora.",
+    "codigo": [],
+    "escena": "En el primer descanso, Cora posa de espaldas para la foto (PA). A su derecha, de arriba abajo: una CAÑERÍA gruesa que baja del cielo (vena cava superior) y un balón (aurícula derecha). A su izquierda, de arriba abajo: un BOTÓN dorado en el hombro (botón aórtico), luego un ARCO de violín con una OREJITA pegada (arco medio: arteria pulmonar + orejuela de la AI) y abajo su gran barriga musculosa (ventrículo izquierdo). Llega un obispo con MITRA y la orejita se hincha como un chicle: primer signo de patología mitral. Si la mitral se estrecha, a la izquierda aparecen 4 arcos, a la derecha se dibuja un doble contorno y la carina se abre como tijera.",
+    "ancla": "Derecha: cañería y balón; izquierda: botón, arco con orejita, barriga. La mitra hincha la orejita.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo con guantes de box y cinturón de campeón, de espaldas, con un botón dorado en el hombro izquierdo, un pequeño arco de violín con una orejita en el costado izquierdo y una gran barriga musculosa abajo. Acción: un obispo caricaturesco con mitra le toca la orejita y esta se infla como un globo de chicle. Elementos secundarios: una cañería gruesa que baja del cielo por su lado derecho hasta un balón. Escenario: mirador de piedra en lo alto de un cerro andino con una gran escultura de cóndor y vista a un lago azul de altura y a una ciudad de techos rojos. Composición: el corazón centrado, el obispo a la izquierda. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Qué estructuras forman el borde derecho e izquierdo de la silueta cardíaca en PA?",
+        "a": "Derecho: VCS y AD · izquierdo: botón aórtico, arco medio (AP + orejuela AI), VI",
+        "tipo": "lista"
+      },
+      {
+        "q": "¿Cuál es el primer signo radiológico de patología mitral?",
+        "a": "Abombamiento del arco medio (orejuela AI)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Rx con 4 arcos a la izquierda, doble contorno derecho y carina abierta: ¿qué valvulopatía?",
+        "a": "Estenosis mitral",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#132",
+      "#137"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s10",
+      "n": 1,
+      "ubicacion": "Primer descanso"
+    }
+  },
+  "rx-torax-senos-costofrenicos": {
+    "id": "rx-torax-senos-costofrenicos",
+    "parametro": "Rx tórax · Senos costofrénicos",
+    "grupo": "Radiografía de tórax",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Seno costodiafragmático: ángulo agudo; cardiofrénico agudo der., obtuso izq. Seno borrado: derrame pleural. Seno borrado + menisco ascendente = derrame · seno romo sin menisco = engrosamiento pleural antiguo. Hemidiafragma derecho 2-3 cm más alto por el hígado.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Concepto que se explica (ángulo agudo = libre; borrado = algo lo rellena; menisco distingue líquido de cicatriz) + una cifra: 23 = Nemo (2-3 cm). La regla menisco/romo es literatura (lit). Personaje: Pulmi, el globo-pulmón.",
+    "codigo": [
+      {
+        "numero": "23",
+        "letras": "N-M",
+        "palabra": "Nemo"
+      }
+    ],
+    "escena": "A mitad de la subida, Pulmi el globo-pulmón apoya sus dos puntas inferiores como cuchillos AFILADOS clavados en el piso: ángulos agudos y libres. Si se llena de agua por abajo, la punta se esconde bajo un charco y sube una ola curvada como sonrisa hacia la axila: el menisco del derrame. Si la punta está roma y gastada pero seca, sin ola, es una cicatriz vieja de la pleura. Abajo a la derecha, el hígado empuja como un colchón y NEMO (2-3 cm) asoma la cabeza: el hemidiafragma derecho queda un poco más alto.",
+    "ancla": "Puntas afiladas = libre; charco con sonrisa = derrame; punta roma seca = cicatriz.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados unidos con lentes de buceo, cuyas puntas inferiores son afiladas como cuchillos clavados en el suelo de piedra. Acción: bajo uno de los globos sube un charco de agua azul que forma una ola curvada hacia arriba por el costado. Elementos secundarios: un pez payaso naranja asomando bajo el globo derecho levantado por un colchón granate. Escenario: mirador de piedra en lo alto de un cerro andino con una gran escultura de cóndor y vista a un lago azul de altura y a una ciudad de techos rojos. Composición: los globos centrados, el charco a un lado. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Cómo es normalmente el seno costodiafragmático en la Rx?",
+        "a": "Ángulo agudo (y libre)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Seno borrado con menisco vs seno romo sin menisco: ¿qué significa cada uno?",
+        "a": "Con menisco = derrame · romo sin menisco = engrosamiento pleural antiguo",
+        "tipo": "trampa"
+      },
+      {
+        "q": "¿Por qué el hemidiafragma derecho está más alto y cuánto?",
+        "a": "Por el hígado; 2-3 cm",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#134",
+      "#043",
+      "#189"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s10",
+      "n": 2,
+      "ubicacion": "Mitad de la subida"
+    }
+  },
+  "rx-torax-hilios": {
+    "id": "rx-torax-hilios",
+    "parametro": "Rx tórax · Hilios",
+    "grupo": "Radiografía de tórax",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Hilios: imagen vascular (arterias pulmonares); hilio izquierdo más alto que el derecho. Micronódulos perihiliares y basales: bronconeumonía. Trama vascular se afina a la periferia; tercio externo casi sin trama en joven. Hilios grandes bilaterales = hipertensión pulmonar o linfoma/sarcoidosis · unilateral = neoplasia o TBC.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Concepto (el hilio es un tronco de vasos) + regla de bilateral/unilateral → metáfora del árbol y escena. La regla bilateral/unilateral es literatura (lit). Personaje: Pulmi.",
+    "codigo": [],
+    "escena": "Al pie del cóndor brotan dos árboles rojos: sus troncos son las arterias pulmonares (los hilios) y sus ramas se afinan hacia afuera hasta casi desaparecer en el borde. El árbol izquierdo está parado sobre la pata IZQUIERDA del cóndor, que la tiene más ALTA. Si los dos troncos engordan a la vez, es que algo empuja desde adentro en ambos lados: hipertensión pulmonar, linfoma o sarcoidosis. Si engorda solo uno, sospecha de un intruso local: un tumor o la TBC. Y si se le pegan perlitas en la base y alrededor del tronco, es una bronconeumonía.",
+    "ancla": "Dos árboles al pie del cóndor: el izquierdo más alto; dos gordos = sistémico, uno gordo = tumor o TBC.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos árboles de troncos rojos con forma de vasos sanguíneos que brotan entre las enormes patas de piedra de una escultura de cóndor, con ramas que se afinan hacia afuera. Acción: el árbol izquierdo está más arriba, sobre la pata levantada del cóndor, y uno de los troncos se hincha como un globo. Elementos secundarios: perlitas blancas pegadas en la base de un tronco. Escenario: mirador de piedra en lo alto de un cerro andino con una gran escultura de cóndor y vista a un lago azul de altura y a una ciudad de techos rojos. Composición: las patas del cóndor y los árboles centrados. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿Qué forma la imagen de los hilios y cuál está más alto?",
+        "a": "Arterias pulmonares (imagen vascular); el izquierdo es más alto",
+        "tipo": "directa"
+      },
+      {
+        "q": "Hilios grandes bilaterales vs unilateral: ¿qué sugiere cada uno?",
+        "a": "Bilaterales: hipertensión pulmonar o linfoma/sarcoidosis · unilateral: neoplasia o TBC",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Micronódulos perihiliares y basales en un paciente febril: ¿qué sugiere?",
+        "a": "Bronconeumonía",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#134",
+      "#043"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s10",
+      "n": 3,
+      "ubicacion": "Pie del cóndor"
+    }
+  },
+  "rx-torax-condensacion": {
+    "id": "rx-torax-condensacion",
+    "parametro": "Rx tórax · Condensación",
+    "grupo": "Radiografía de tórax",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Normal: campos pulmonares radiotransparentes, sin opacidades. Opacidad homogénea con broncograma aéreo: neumonía. Atelectasia: opacidad con mediastino desviado HACIA la lesión. Signo de la silueta: borra borde cardíaco = lóbulo medio o língula · borra hemidiafragma = lóbulo inferior.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Tres conceptos de Rx que se explican (broncograma, desviación del mediastino, signo de la silueta) → interrogación: ¿qué se ve?, ¿por qué?, ¿para qué sirve? + una escena. Signo de la silueta: dos densidades agua en contacto no forman borde. El 'normal' y el signo de la silueta son literatura (lit). Personaje: Pulmi.",
+    "codigo": [],
+    "escena": "En el ala izquierda del cóndor, Pulmi, que normalmente es un globo transparente y oscuro de aire, se llena de leche blanca y espesa: la neumonía. Dentro de la leche se ven ramitas NEGRAS de aire, como un árbol sin hojas dibujado en tinta: el broncograma aéreo, bronquios con aire rodeados de alvéolos llenos. Pegada al corazón, la leche BORRA su borde como borrador en la pizarra (blanco sobre blanco no se ve): el lóbulo MEDIO levanta la mano a la derecha y una LENGUA (língula) lame el borde izquierdo; si se borra el piso, el culpable es el lóbulo INFERIOR. En cambio, si Pulmi se desinfla en una atelectasia, la soga del mediastino se va HACIA él, como si lo arrastrara un imán.",
+    "ancla": "Leche blanca con ramitas negras = neumonía; leche que borra el borde = signo de la silueta; atelectasia jala el mediastino.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo, uno de ellos lleno de leche blanca espesa en la que se ven ramitas negras como un árbol sin hojas. Acción: la leche se derrama sobre el borde de un corazón rojo dibujado con tiza y lo borra; una lengua gigante lame el otro borde del corazón. Elementos secundarios: una soga gruesa tirada hacia el globo desinflado del otro lado. Escenario: ala de piedra de una gran escultura de cóndor en un mirador andino con vista a un lago azul. Composición: el globo con leche centrado. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Qué imagen radiológica es típica de la neumonía?",
+        "a": "Opacidad homogénea con broncograma aéreo",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿En qué consiste el signo de la silueta y para qué sirve?",
+        "a": "Una opacidad en contacto con un borde (corazón, diafragma) lo borra; localiza la lesión: borde cardíaco = lóbulo medio o língula; hemidiafragma = lóbulo inferior",
+        "tipo": "explica"
+      },
+      {
+        "q": "¿Hacia dónde se desvía el mediastino en la atelectasia?",
+        "a": "HACIA la lesión",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Opacidad que borra el borde cardíaco derecho: ¿qué lóbulo?",
+        "a": "Lóbulo medio",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#134",
+      "#043"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s10",
+      "n": 4,
+      "ubicacion": "Ala izquierda del cóndor"
+    }
+  },
+  "rx-torax-derrame-pleural": {
+    "id": "rx-torax-derrame-pleural",
+    "parametro": "Rx tórax · Derrame pleural",
+    "grupo": "Radiografía de tórax",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Normal: senos costofrénicos agudos y libres; derrame visible desde ~200 ml en PA (~50 ml en lateral). Borra seno costodiafragmático y cúpula; si grande, mediastino al lado sano. <300 ml puede no verse de pie; se evidencia en decúbito lateral. En ICC predomina el derrame derecho. Signo del menisco: línea cóncava que sube hacia la axila (en la percusión: curva de Damoiseau).",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-nombres",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Signo del menisco (concepto) + epónimo Damoiseau por sonido ('damisela') + cifras de volumen con sistema mayor: 50 = losa, 200 = nasas (plural de NASA 20; la nasa es una trampa de pescar), 300 = mesas. El 'normal' con ~200/~50 ml es literatura (lit). Personaje: Pulmi.",
+    "codigo": [
+      {
+        "numero": "50",
+        "letras": "L-S",
+        "palabra": "losa"
+      },
+      {
+        "numero": "200",
+        "letras": "N-C-S",
+        "palabra": "nueces"
+      },
+      {
+        "numero": "300",
+        "letras": "M-S-S",
+        "palabra": "mesas"
+      }
+    ],
+    "escena": "En el ala DERECHA del cóndor (la del derrame de la insuficiencia cardíaca), Pulmi tiene agua en el fondo del pecho. Una DAMISELA (Damoiseau) con su abanico dibuja en el agua una curva que sube hacia la axila: el menisco, una sonrisa cóncava. Para verlo de frente hace falta un costal lleno de NUECES (200 ml); de perfil basta con lo que cabe en una LOSA (50 ml); y si el paciente está de pie con menos de unas MESAS de agua (300 ml), puede esconderse: acuéstalo de lado y el agua corre a la vista. Si el agua es enorme, empuja la soga del mediastino hacia el lado sano.",
+    "ancla": "La damisela traza la sonrisa del menisco; nueces de frente, losa de perfil, mesas de pie.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una damisela de época con vestido largo y abanico, de pie sobre el ala derecha de una gran escultura de cóndor de piedra, trazando con el abanico una curva de agua azul que sube como una sonrisa. Acción: el agua llena el fondo de un globo rosado con lentes de buceo y empuja una soga hacia el otro lado. Elementos secundarios: un costal de nueces, una losa de piedra y mesas de madera flotando. Escenario: mirador de piedra en lo alto de un cerro andino con una gran escultura de cóndor y vista a un lago azul de altura y a una ciudad de techos rojos. Composición: la damisela y el globo centrados, el agua curvada en primer plano. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Qué es el signo del menisco?",
+        "a": "Línea cóncava que sube hacia la axila: imagen del derrame pleural",
+        "tipo": "explica"
+      },
+      {
+        "q": "¿Desde qué volumen se ve un derrame en PA y en lateral?",
+        "a": "~200 ml en PA; ~50 ml en lateral",
+        "tipo": "directa"
+      },
+      {
+        "q": "Sospecha de derrame pequeño (<300 ml) con Rx de pie normal: ¿qué proyección pides?",
+        "a": "Decúbito lateral",
+        "tipo": "caso"
+      },
+      {
+        "q": "En la percusión, la curva que corresponde al menisco se llama…",
+        "a": "Curva de Damoiseau",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#134",
+      "#124",
+      "#189"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s10",
+      "n": 5,
+      "ubicacion": "Ala derecha del cóndor"
+    }
+  },
+  "rx-torax-neumotorax": {
+    "id": "rx-torax-neumotorax",
+    "parametro": "Rx tórax · Neumotórax",
+    "grupo": "Radiografía de tórax",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Normal: trama vascular llega hasta la pared costal. Neumotórax: borde pulmonar colapsado separado de la pared por claridad sin trama (aire). Hipertensivo: mediastino desviado, diafragma aplanado, EIC ensanchados; descomprimir sin esperar la Rx. Clínica: timpanismo + vibraciones y murmullo abolidos. El pectoral mayor puede simular un neumotórax enquistado.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Concepto visual (aire sin trama entre el pulmón y la pared) + conducta urgente → interrogación (qué se ve, por qué, qué hacer) y escena. 'Normal', clínica y conducta son literatura (lit). Personaje: Pulmi.",
+    "codigo": [],
+    "escena": "En el pico del cóndor, el pico de piedra pincha a Pulmi: ¡pssssss! El globo se encoge y se despega de la pared, y entre ambos queda un espacio NEGRO y vacío, sin una sola ramita de vasos, como cielo de noche sin estrellas: eso es el neumotórax. Al golpear el pecho suena como un tambor (timpanismo), y el estetoscopio no escucha nada: vibraciones y murmullo abolidos. Si el aire sigue entrando y no sale, el pecho se infla como llanta a presión, empuja la soga del mediastino al otro lado, aplasta el diafragma y separa las costillas: ¡hipertensivo! El cóndor no espera la foto: te clava una aguja para descomprimir YA.",
+    "ancla": "Pico del cóndor pincha a Pulmi: cielo negro sin ramas; si se infla como llanta, aguja sin esperar la Rx.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo, uno desinflándose y despegándose de una pared de costillas, pinchado por el pico afilado de una enorme escultura de cóndor. Acción: chorros de aire escapan con líneas de movimiento y entre el globo y las costillas queda un espacio negro y vacío sin ramas. Elementos secundarios: un tambor vibrando con ondas, una aguja gigante lista para pinchar. Escenario: mirador de piedra en lo alto de un cerro andino con una gran escultura de cóndor y vista a un lago azul de altura y a una ciudad de techos rojos. Composición: el pico del cóndor y el globo centrados, contraste fuerte entre negro y rosa. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "q": "¿Qué se ve en la Rx de un neumotórax?",
+        "a": "Borde pulmonar colapsado separado de la pared por una claridad sin trama (aire)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Qué signos radiológicos sugieren neumotórax hipertensivo?",
+        "a": "Mediastino desviado, diafragma aplanado, EIC ensanchados",
+        "tipo": "directa"
+      },
+      {
+        "q": "Trauma con disnea, hipotensión, timpanismo y murmullo abolido: ¿pides Rx?",
+        "a": "No: neumotórax hipertensivo, descomprimir sin esperar la Rx",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Qué estructura de partes blandas puede simular un neumotórax enquistado?",
+        "a": "El pectoral mayor",
+        "tipo": "trampa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#134",
+      "#043"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s10",
+      "n": 6,
+      "ubicacion": "Pico del cóndor"
+    }
+  },
+  "rx-torax-hiperinsuflacion": {
+    "id": "rx-torax-hiperinsuflacion",
+    "parametro": "Rx tórax · Hiperinsuflación",
+    "grupo": "Radiografía de tórax",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "Normal: diafragma a nivel del 6.º arco costal anterior (9-10 posterior), cúpulas convexas. Hiperinsuflación: hiperclaridad, costillas horizontales, EIC anchos, diafragma bajo (enfisema/asma). Más de 10 arcos costales posteriores por encima del diafragma = hiperinsuflación. Enfisema: silueta cardíaca alargada y estrecha.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Niveles exactos de arcos costales → sistema mayor con palabras de un dígito: 6 = ojo, 9 = pie, 10 = taza. Toda la fila salvo la perla es literatura (lit). Personaje: Pulmi.",
+    "codigo": [
+      {
+        "numero": "6",
+        "letras": "J",
+        "palabra": "ajo"
+      },
+      {
+        "numero": "9",
+        "letras": "P",
+        "palabra": "pie"
+      },
+      {
+        "numero": "10",
+        "letras": "T-Z",
+        "palabra": "taza"
+      }
+    ],
+    "escena": "En la vista al lago, Pulmi se apoya en el diafragma, una cúpula redonda como lomo de ballena. Por delante, la cúpula le llega a un AJO (6.º arco anterior); por detrás, le llega al PIE (9.º) y a la TAZA (10.º). Un asmático sopla sin poder sacar el aire y Pulmi se infla tanto que se pone negro de brillante (hiperclaridad), las costillas se acuestan horizontales como persianas abiertas, los espacios se ensanchan y la ballena se aplana hundiéndose en el lago: si por detrás asoman más arcos que la TAZA (más de 10), es hiperinsuflación. El corazón, apretado, queda largo y flaquito.",
+    "ancla": "Diafragma: ajo por delante, pie y taza por detrás; más allá de la taza, hiperinsuflado.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo inflados al máximo y brillantes, aplastando una cúpula con forma de lomo de ballena que se hunde en un lago azul. Acción: las costillas a su alrededor se abren horizontales como persianas. Elementos secundarios: un ajo gigante, un pie y una taza de cerámica colocados en escalones al costado del globo. Escenario: mirador de piedra en lo alto de un cerro andino con vista a un lago azul de altura. Composición: los globos centrados, el lago abajo. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "q": "¿A qué nivel está normalmente el diafragma en la Rx PA?",
+        "a": "6.º arco costal anterior (9-10 posterior), cúpulas convexas",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Cuántos arcos costales posteriores por encima del diafragma definen hiperinsuflación?",
+        "a": "Más de 10",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Nombra 4 signos radiológicos de hiperinsuflación",
+        "a": "Hiperclaridad, costillas horizontales, EIC anchos, diafragma bajo",
+        "tipo": "lista"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s10",
+      "n": 7,
+      "ubicacion": "Vista al lago"
+    }
+  }
+}

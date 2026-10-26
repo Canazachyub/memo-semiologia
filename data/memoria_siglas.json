@@ -1,0 +1,3144 @@
+{
+  "pa": {
+    "sigla": "PA",
+    "significado": "presión arterial",
+    "grupo": "Signos y examen",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "PAPÁ Apretado",
+    "escena": "Tu PAPÁ (P-A) se pone un manguito de tensiómetro y aprieta la pera hasta que el brazo se le pone morado; el reloj del manómetro hace tic-tic mientras escuchas los golpes de la sangre empujando la pared de la arteria.",
+    "ancla": "PA = Papá Apretado por el manguito: presión arterial.",
+    "confusiones": [
+      "PA posteroanterior (proyección de Rx): si la sigla aparece junto a «Rx» o «placa», es la proyección, no la presión.",
+      "PAS / PAD: la tercera letra dice cuál cifra es (S = sistólica, la alta; D = diastólica, la baja).",
+      "PAM (presión arterial media): lleva la M de Media y se calcula, no se mide directo."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla PA?",
+        "a": "presión arterial",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «presión arterial»?",
+        "a": "PA",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "pas": {
+    "sigla": "PAS",
+    "significado": "presión arterial sistólica",
+    "grupo": "Signos y examen",
+    "tecnica": "mini-historia",
+    "sustituta": "PAyaSo que Sube",
+    "escena": "Un PAYASO (PA-S) sale disparado de una caja sorpresa hasta golpear el techo cuando el corazón se contrae: es el pico más alto, la Sístole. Grita «¡Subo!» mientras la aguja del tensiómetro llega al máximo.",
+    "ancla": "PAS: la S de Sístole = Sube al techo (la cifra de arriba).",
+    "confusiones": [
+      "PAD: D de Diástole = Descanso, la cifra baja.",
+      "PAM: M de Media, valor intermedio calculado, no es la sistólica."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla PAS?",
+        "a": "presión arterial sistólica",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «presión arterial sistólica»?",
+        "a": "PAS",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "pad": {
+    "sigla": "PAD",
+    "significado": "presión arterial diastólica",
+    "grupo": "Signos y examen",
+    "tecnica": "mini-historia",
+    "sustituta": "PADre que Descansa",
+    "escena": "Un PADRE (PA-D) se tumba en una hamaca después de cada latido: el corazón se relaja y llena, la Diástole. Ronca suave mientras la aguja del tensiómetro baja al punto mínimo.",
+    "ancla": "PAD: la D de Diástole = Descanso (la cifra de abajo).",
+    "confusiones": [
+      "PAS: S = Sístole = Sube, la cifra alta.",
+      "PA de Rx (posteroanterior) no lleva tercera letra."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla PAD?",
+        "a": "presión arterial diastólica",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «presión arterial diastólica»?",
+        "a": "PAD",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "fc": {
+    "sigla": "FC",
+    "significado": "frecuencia cardiaca",
+    "grupo": "Signos y examen",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Fútbol Club del Corazón",
+    "escena": "En el estadio del FÚTBOL CLUB (F-C), la barra toca un bombo gigante con forma de corazón: cada golpe es un latido. Tú cuentas los golpes durante un minuto con el reloj en la mano.",
+    "ancla": "FC = el bombo del Fútbol Club: latidos por minuto.",
+    "confusiones": [
+      "FR: misma F de frecuencia, pero R de Respiración (cuentas respiraciones, no latidos).",
+      "FC (frecuencia cardiaca) no es lo mismo que pulso si hay déficit de pulso: la FC se cuenta en el corazón."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla FC?",
+        "a": "frecuencia cardiaca",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «frecuencia cardiaca»?",
+        "a": "FC",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "fr": {
+    "sigla": "FR",
+    "significado": "frecuencia respiratoria · fiebre reumática · factor reumatoide (según contexto)",
+    "grupo": "Signos y examen",
+    "tecnica": "mini-historia",
+    "sustituta": "FResa de tres caras",
+    "escena": "Una FRESA (F-R) gigante tiene tres caras: la primera jadea contando respiraciones (frecuencia respiratoria), la segunda tiene fiebre y un corazón vendado (fiebre reumática) y la tercera agita unas manos con nudillos hinchados y un anticuerpo en la mano (factor reumatoide). El contexto decide qué cara te mira.",
+    "ancla": "FR: la fresa de tres caras; mira dónde está escrita (signos vitales, cardiología o laboratorio).",
+    "confusiones": [
+      "En signos vitales FR = frecuencia respiratoria; en un examen de laboratorio FR = factor reumatoide; en un niño con artritis y carditis tras faringitis, FR = fiebre reumática.",
+      "FC: C de Corazón (latidos), no respiraciones.",
+      "CCP (anti-CCP): otro marcador de artritis reumatoide; no confundir con FR."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla FR?",
+        "a": "frecuencia respiratoria · fiebre reumática · factor reumatoide (según contexto)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «frecuencia respiratoria · fiebre reumática · factor reumatoide (según contexto)»?",
+        "a": "FR",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "sato2": {
+    "sigla": "SatO₂",
+    "significado": "saturación de oxígeno (pulsioxímetro)",
+    "grupo": "Signos y examen",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "SATélite de Oxígeno",
+    "escena": "Un pequeño SATÉLITE (SAT) con luz roja se pega en la punta de tu dedo como una pinza; lanza un rayo a través de la uña y en su pantalla aparece cuánta hemoglobina viaja cargada de O₂, sin pinchar.",
+    "ancla": "SatO₂ = el satélite-pinza del dedo: pulsioxímetro, porcentaje.",
+    "confusiones": [
+      "SaO2: saturación medida en sangre arterial (gasometría), con pinchazo.",
+      "PO2 / PaO2: son presiones en mmHg, no porcentajes."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla SatO₂?",
+        "a": "saturación de oxígeno (pulsioxímetro)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «saturación de oxígeno (pulsioxímetro)»?",
+        "a": "SatO₂",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "sao2": {
+    "sigla": "SaO2",
+    "significado": "saturación arterial de oxígeno",
+    "grupo": "Signos y examen",
+    "tecnica": "mini-historia",
+    "sustituta": "SAngre Arterial con O₂",
+    "escena": "Una jeringa con heparina pincha la arteria radial y la SAngre Arterial (Sa) sale roja brillante; en el analizador de gases ves qué porcentaje de la hemoglobina va cargada de oxígeno.",
+    "ancla": "SaO2: la «a» es de arterial, sale del pinchazo de la gasometría.",
+    "confusiones": [
+      "SatO₂: la del pulsioxímetro en el dedo, sin pinchar.",
+      "PaO2: presión (mmHg) del oxígeno disuelto, no porcentaje de saturación."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla SaO2?",
+        "a": "saturación arterial de oxígeno",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «saturación arterial de oxígeno»?",
+        "a": "SaO2",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "po2": {
+    "sigla": "PO2",
+    "significado": "presión parcial de oxígeno",
+    "grupo": "Signos y examen",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "POzo de O₂",
+    "escena": "Un POZO (PO) lleno de burbujas de oxígeno: cuanto más hondo es el pozo, más fuerte empuja el gas contra las paredes. Esa fuerza es la presión parcial del O₂.",
+    "ancla": "PO2: el pozo que empuja: presión parcial de oxígeno.",
+    "confusiones": [
+      "PaO2: la misma presión pero medida específicamente en sangre arterial (lleva la «a»).",
+      "SatO₂ / SaO2: porcentaje de saturación, no presión."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla PO2?",
+        "a": "presión parcial de oxígeno",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «presión parcial de oxígeno»?",
+        "a": "PO2",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "imc": {
+    "sigla": "IMC",
+    "significado": "índice de masa corporal",
+    "grupo": "Signos y examen",
+    "tecnica": "mini-historia",
+    "sustituta": "Índice que Mide Cuerpo",
+    "escena": "Un ELEFANTE (el peso en kilos) se sienta sobre una caja perfectamente CUADRADA hecha de cintas métricas (la talla al cuadrado); la caja cruje y sale volando un número: el Índice de Masa Corporal.",
+    "ancla": "IMC: el elefante sobre la caja cuadrada = peso / talla².",
+    "confusiones": [
+      "ICT (índice cardiotorácico): también es «índice», pero mide el corazón en la Rx.",
+      "IMC no mide grasa directamente: relaciona peso y talla."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla IMC?",
+        "a": "índice de masa corporal",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «índice de masa corporal»?",
+        "a": "IMC",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "beg": {
+    "sigla": "BEG",
+    "significado": "buen estado general",
+    "grupo": "Signos y examen",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "BEGonia en flor",
+    "escena": "Una BEGONIA (BEG) llena de flores sale caminando sola de la cama de hospital, sonriente, sana y colorida: el paciente está en Buen Estado General.",
+    "ancla": "BEG = la begonia florecida: Buen estado general.",
+    "confusiones": [
+      "REG / MEG: la «EG» es la misma (estado general); solo cambia la primera letra: Bueno → Regular → Malo.",
+      "Truco: B-R-M van en el orden de mejor a peor."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla BEG?",
+        "a": "buen estado general",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «buen estado general»?",
+        "a": "BEG",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "reg": {
+    "sigla": "REG",
+    "significado": "regular estado general",
+    "grupo": "Signos y examen",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "REGadera a medias",
+    "escena": "Una REGADERA (REG) medio vacía gotea con desgana sobre el paciente, que está pálido pero conversa: ni bien ni mal, Regular Estado General.",
+    "ancla": "REG = la regadera a medias: Regular estado general.",
+    "confusiones": [
+      "BEG (bueno) y MEG (malo) comparten «EG»: la primera letra es la que cambia.",
+      "No confundir con «reg» de regla (FUR)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla REG?",
+        "a": "regular estado general",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «regular estado general»?",
+        "a": "REG",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "meg": {
+    "sigla": "MEG",
+    "significado": "mal estado general",
+    "grupo": "Signos y examen",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "MEGáfono de alarma",
+    "escena": "Un MEGÁFONO (MEG) gigante grita «¡Código rojo!» junto a la cama: el paciente está sudoroso, decaído y apenas responde; está en Mal Estado General.",
+    "ancla": "MEG = el megáfono que da la alarma: Mal estado general.",
+    "confusiones": [
+      "BEG / REG: misma terminación «EG»; la M es de Malo.",
+      "M6 (Glasgow motor 6) no tiene nada que ver: lleva número."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla MEG?",
+        "a": "mal estado general",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «mal estado general»?",
+        "a": "MEG",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "eic": {
+    "sigla": "EIC",
+    "significado": "espacio intercostal",
+    "grupo": "Signos y examen",
+    "tecnica": "mini-historia",
+    "sustituta": "Entre Inmensas Costillas",
+    "escena": "Subes por una escalera hecha de COSTILLAS y metes la mano ENTRE dos peldaños: ese hueco es el Espacio InterCostal. En el 5.º hueco, sobre la línea medioclavicular izquierda, sientes el golpe del corazón.",
+    "ancla": "EIC = el hueco entre peldaños de la escalera de costillas.",
+    "confusiones": [
+      "ICT (índice cardiotorácico): también mira el tórax, pero es un cociente en la Rx.",
+      "Los EIC se numeran por la costilla de arriba: el 5.º EIC está bajo la 5.ª costilla."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla EIC?",
+        "a": "espacio intercostal",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «espacio intercostal»?",
+        "a": "EIC",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "hc": {
+    "sigla": "HC",
+    "significado": "historia clínica",
+    "grupo": "Signos y examen",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Hace Crónica",
+    "escena": "Un periodista HACE una CRÓNICA (H-C) gigante de la vida del paciente en un libro enorme: anamnesis, examen físico, diagnóstico y plan; si no está escrito ahí, no ocurrió.",
+    "ancla": "HC = el libro-crónica del paciente: historia clínica.",
+    "confusiones": [
+      "HCl: ácido clorhídrico (lleva la «l» de cloro).",
+      "HCM: hemoglobina corpuscular media (lleva la M)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla HC?",
+        "a": "historia clínica",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «historia clínica»?",
+        "a": "HC",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "rn": {
+    "sigla": "RN",
+    "significado": "recién nacido",
+    "grupo": "Signos y examen",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "RaNa bebé",
+    "escena": "Una RANITA (R-N) recién salida del huevo llora y patalea dentro de una incubadora, con el cordón umbilical todavía colgando: es un Recién Nacido.",
+    "ancla": "RN = la ranita recién salida del huevo.",
+    "confusiones": [
+      "RNA es la sigla en inglés del ARN (ácido ribonucleico), no de recién nacido.",
+      "Rx: radiografía, no tiene nada que ver aunque empiece con R."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla RN?",
+        "a": "recién nacido",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «recién nacido»?",
+        "a": "RN",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "o4": {
+    "sigla": "O4",
+    "significado": "Glasgow: apertura ocular 4",
+    "grupo": "Signos y examen",
+    "tecnica": "mini-historia",
+    "sustituta": "Cuatro Ojos",
+    "escena": "Un chico CUATRO OJOS (lentes gruesísimos) abre los ojos de par en par él solito, sin que nadie lo llame: la mejor respuesta ocular de Glasgow, O4.",
+    "ancla": "O4 = cuatro ojos abiertos solos: apertura ocular máxima.",
+    "confusiones": [
+      "O2 no es oxígeno aquí si está junto a V y M: en Glasgow, O2 sería apertura ocular al dolor.",
+      "Máximos de Glasgow: O4, V5, M6 (cuatro ojos, cinco vocales, motor V6)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla O4?",
+        "a": "Glasgow: apertura ocular 4",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «Glasgow: apertura ocular 4»?",
+        "a": "O4",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "m6": {
+    "sigla": "M6",
+    "significado": "Glasgow: respuesta motora 6",
+    "grupo": "Signos y examen",
+    "tecnica": "mini-historia",
+    "sustituta": "Motor V6",
+    "escena": "Un robot con un MOTOR V6 rugiente en el pecho obedece al instante cada orden que le das: «¡levanta el brazo!» y lo levanta. Es la mejor respuesta motora de Glasgow, M6.",
+    "ancla": "M6 = el robot motor V6 que obedece órdenes.",
+    "confusiones": [
+      "V5 / O4: los otros máximos; la Motora es la única que llega a 6.",
+      "MEG (mal estado general) también empieza por M, pero no lleva número."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla M6?",
+        "a": "Glasgow: respuesta motora 6",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «Glasgow: respuesta motora 6»?",
+        "a": "M6",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "v5": {
+    "sigla": "V5",
+    "significado": "Glasgow: respuesta verbal 5",
+    "grupo": "Signos y examen",
+    "tecnica": "mini-historia",
+    "sustituta": "Cinco Vocales",
+    "escena": "Un loro recita las CINCO VOCALES (A-E-I-O-U) y luego te dice tu nombre, la fecha y dónde está: conversa orientado, la mejor respuesta verbal de Glasgow, V5.",
+    "ancla": "V5 = el loro de las cinco vocales, orientado.",
+    "confusiones": [
+      "En el ECG, V5 es una derivación precordial: si aparece junto a O y M es Glasgow; si aparece junto a V1-V6, es ECG.",
+      "VD / VI: ventrículos, no respuesta verbal."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla V5?",
+        "a": "Glasgow: respuesta verbal 5",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «Glasgow: respuesta verbal 5»?",
+        "a": "V5",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "fur": {
+    "sigla": "FUR",
+    "significado": "fecha de última regla",
+    "grupo": "Signos y examen",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "FURia del calendario",
+    "escena": "Una mujer FURIOSA (FUR) arranca la hoja del calendario y la clava con un alfiler rojo en el día en que empezó su última regla: desde esa fecha cuentas la edad gestacional.",
+    "ancla": "FUR = la furia que marca el calendario: fecha de última regla.",
+    "confusiones": [
+      "FUR se anota como el primer día de la última menstruación.",
+      "G2P1: fórmula obstétrica; la FUR es una fecha, no un conteo."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla FUR?",
+        "a": "fecha de última regla",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «fecha de última regla»?",
+        "a": "FUR",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "g2p1": {
+    "sigla": "G2P1",
+    "significado": "fórmula obstétrica: 2 gestas, 1 parto",
+    "grupo": "Signos y examen",
+    "tecnica": "mini-historia",
+    "sustituta": "2 Gatas, 1 Perrito",
+    "escena": "Entran a consulta DOS GATAS embarazadas (G2 = 2 gestas) y detrás de ellas UN PERRITO recién parido (P1 = 1 parto): la mujer estuvo embarazada dos veces y tuvo un parto.",
+    "ancla": "G2P1 = 2 Gatas (gestas), 1 Perrito (parto).",
+    "confusiones": [
+      "G cuenta embarazos (gestas); P cuenta partos: G puede ser mayor que P.",
+      "FUR: es la fecha de la última regla, no parte de la fórmula."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla G2P1?",
+        "a": "fórmula obstétrica: 2 gestas, 1 parto",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «fórmula obstétrica: 2 gestas, 1 parto»?",
+        "a": "G2P1",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "hb": {
+    "sigla": "Hb",
+    "significado": "hemoglobina",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "HamBurguesa roja",
+    "escena": "Una HAMBURGUESA (H-b) roja gigante con pies corre por la arteria cargando cuatro burbujas de oxígeno en su pan; cuando le faltan hamburguesas, el paciente se pone pálido y se cansa (anemia).",
+    "ancla": "Hb = la hamburguesa roja que carga oxígeno.",
+    "confusiones": [
+      "Hto: porcentaje del volumen de sangre ocupado por glóbulos rojos, no concentración de Hb.",
+      "HbA1c: la misma Hb pero «azucarada» (glicosilada).",
+      "HCM / CHCM: Hb dentro de cada glóbulo, no la Hb total."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla Hb?",
+        "a": "hemoglobina",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «hemoglobina»?",
+        "a": "Hb",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "hto": {
+    "sigla": "Hto",
+    "significado": "hematocrito",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "HaTO de vacas rojas",
+    "escena": "Un HATO (Hto) de vacas rojas se mete en un corral con forma de tubo de ensayo: al centrifugar, las vacas se van al fondo y miras qué porcentaje del corral ocupan. Eso es el hematocrito.",
+    "ancla": "Hto = el hato que ocupa el tubo: porcentaje de glóbulos rojos.",
+    "confusiones": [
+      "Hb: concentración (g/dL) de hemoglobina; Hto: porcentaje de volumen.",
+      "HTA: hipertensión arterial (todas mayúsculas, con A)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla Hto?",
+        "a": "hematocrito",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «hematocrito»?",
+        "a": "Hto",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "gr": {
+    "sigla": "GR",
+    "significado": "glóbulos rojos",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "GRanada roja",
+    "escena": "Abres una GRANADA (GR) y caen miles de granitos rojos con forma de donas sin agujero: son los glóbulos rojos que ruedan por la sangre.",
+    "ancla": "GR = los granos rojos de la granada: glóbulos rojos.",
+    "confusiones": [
+      "GB serían glóbulos blancos (leucocitos).",
+      "GN: glomerulonefritis, nada que ver con la sangre."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla GR?",
+        "a": "glóbulos rojos",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «glóbulos rojos»?",
+        "a": "GR",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "vcm": {
+    "sigla": "VCM",
+    "significado": "volumen corpuscular medio",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "VaCa Mediana",
+    "escena": "Una VACA (V-C) se sube a una balanza de tamaños dentro del tubo de sangre: si es diminuta, la anemia es microcítica; si es gigantesca, macrocítica; la vaca Mediana es el tamaño promedio del glóbulo rojo.",
+    "ancla": "VCM = la vaca que mide el tamaño promedio del glóbulo rojo.",
+    "confusiones": [
+      "VPM: mismo «volumen medio», pero de Plaquetas (la P).",
+      "HCM / CHCM: miden hemoglobina, no tamaño.",
+      "ADE / RDW: miden cuánto varía el tamaño, no el promedio."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla VCM?",
+        "a": "volumen corpuscular medio",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «volumen corpuscular medio»?",
+        "a": "VCM",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "hcm": {
+    "sigla": "HCM",
+    "significado": "hemoglobina corpuscular media",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Hay Cuánta Mermelada",
+    "escena": "Cada glóbulo rojo es una dona rellena de mermelada roja; un panadero pregunta «¿HAY CUÁNTA MERMELADA (H-C-M) por dona?» y pesa el relleno: es la hemoglobina promedio dentro de cada glóbulo.",
+    "ancla": "HCM = cuánta mermelada (Hb) trae cada dona (glóbulo).",
+    "confusiones": [
+      "CHCM: la C extra al inicio es de Concentración (qué tan espesa está la mermelada respecto al tamaño de la dona).",
+      "HC: historia clínica; HCl: ácido clorhídrico."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla HCM?",
+        "a": "hemoglobina corpuscular media",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «hemoglobina corpuscular media»?",
+        "a": "HCM",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "chcm": {
+    "sigla": "CHCM",
+    "significado": "concentración de hemoglobina corpuscular media",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "C de Concentrado: la mermelada espesa",
+    "escena": "El mismo panadero ahora no pesa la mermelada, sino que mide qué tan ESPESA o CONCENTRADA está dentro de cada dona: esa C de más al inicio (C-HCM) es la concentración de hemoglobina corpuscular media.",
+    "ancla": "CHCM = HCM con una C de Concentración delante.",
+    "confusiones": [
+      "HCM: cantidad de Hb por glóbulo; CHCM: concentración (Hb respecto al volumen).",
+      "MCHC: es exactamente la misma, pero en inglés."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla CHCM?",
+        "a": "concentración de hemoglobina corpuscular media",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «concentración de hemoglobina corpuscular media»?",
+        "a": "CHCM",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "mchc": {
+    "sigla": "MCHC",
+    "significado": "= CHCM (sigla en inglés)",
+    "grupo": "Laboratorio",
+    "tecnica": "ancla-breve",
+    "sustituta": "La CHCM con la M adelante",
+    "escena": "La sigla CHCM toma un vuelo a Estados Unidos y al aterrizar la Media se pasa al frente: Mean Corpuscular Hemoglobin Concentration. Es la misma dona de mermelada espesa, ahora con pasaporte inglés.",
+    "ancla": "MCHC = CHCM en inglés (la Media va primero).",
+    "confusiones": [
+      "MCH (sin la C final) es la HCM en inglés.",
+      "MCV (en inglés) = VCM."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla MCHC?",
+        "a": "= CHCM (sigla en inglés)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Cuál es la sigla en inglés equivalente a la CHCM (concentración de hemoglobina corpuscular media)?",
+        "a": "MCHC",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ade": {
+    "sigla": "ADE",
+    "significado": "ancho de distribución eritrocitaria",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "HADA que mide tamaños",
+    "escena": "Un HADA (A-DE) vuela con una cinta métrica entre los glóbulos rojos y descubre que unos son enanos y otros gigantes; agita su varita alarmada: cuanto más ANCHA es la distribución de tamaños, más alto el ADE (anisocitosis).",
+    "ancla": "ADE = el hada que mide qué tan distintos son los tamaños de los glóbulos rojos.",
+    "confusiones": [
+      "VCM: tamaño promedio; ADE: cuánto varían los tamaños entre sí.",
+      "RDW: es el mismo índice, en inglés."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla ADE?",
+        "a": "ancho de distribución eritrocitaria",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «ancho de distribución eritrocitaria»?",
+        "a": "ADE",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "rdw": {
+    "sigla": "RDW",
+    "significado": "= ADE (en inglés)",
+    "grupo": "Laboratorio",
+    "tecnica": "ancla-breve",
+    "sustituta": "RoDeo de glóbulos (Red cell Distribution Width)",
+    "escena": "En un RODEO (R-D-W) de vaqueros, los glóbulos rojos de todos los tamaños corren mezclados por la arena: el locutor en inglés anuncia «Red cell Distribution Width». Es el ADE con sombrero de vaquero.",
+    "ancla": "RDW = ADE en inglés: el rodeo de glóbulos de distintos tamaños.",
+    "confusiones": [
+      "ADE: la misma medida en español.",
+      "No confundir con VCM (tamaño promedio)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla RDW?",
+        "a": "= ADE (en inglés)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Cuál es la sigla en inglés equivalente al ADE (ancho de distribución eritrocitaria)?",
+        "a": "RDW",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "vpm": {
+    "sigla": "VPM",
+    "significado": "volumen plaquetario medio",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Volumen del Plato Mediano",
+    "escena": "Las plaquetas son PLATITOS (la P) que tapan agujeros en el vaso; un mesero mide con una regla el tamaño promedio de cada plato: es el Volumen Plaquetario Medio.",
+    "ancla": "VPM = el tamaño promedio de los platitos (plaquetas).",
+    "confusiones": [
+      "VCM: misma idea pero de glóbulos rojos (C de Corpuscular).",
+      "PTI: enfermedad con plaquetas bajas; el VPM es solo su tamaño."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla VPM?",
+        "a": "volumen plaquetario medio",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «volumen plaquetario medio»?",
+        "a": "VPM",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "vsg": {
+    "sigla": "VSG",
+    "significado": "velocidad de sedimentación globular",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "VaSo donde los Glóbulos se hunden",
+    "escena": "En un VASO alto (V-S-G) lleno de sangre, los glóbulos rojos se hunden lentamente como piedras en el agua; con inflamación se pegan entre ellos y caen más rápido. Mides cuántos milímetros bajaron en una hora.",
+    "ancla": "VSG = el vaso donde los glóbulos se hunden: velocidad de sedimentación.",
+    "confusiones": [
+      "PCR: también marca inflamación, pero sube y baja más rápido que la VSG.",
+      "VCM: tamaño del glóbulo, no velocidad."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla VSG?",
+        "a": "velocidad de sedimentación globular",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «velocidad de sedimentación globular»?",
+        "a": "VSG",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "pcr": {
+    "sigla": "PCR",
+    "significado": "proteína C reactiva",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Policía Con Radio",
+    "escena": "Un POLICÍA CON RADIO (P-C-R) recibe el aviso de inflamación y llega en horas con la sirena encendida; apenas el incendio se apaga, se va igual de rápido. Es la proteína C reactiva, que el hígado fabrica en la fase aguda.",
+    "ancla": "PCR = el policía con radio que reacciona rápido a la inflamación.",
+    "confusiones": [
+      "En biología molecular, PCR (en inglés) es la reacción en cadena de la polimerasa (prueba de laboratorio molecular, no un marcador de inflamación).",
+      "VSG: sube y baja más lento.",
+      "LCR: líquido cefalorraquídeo (L, no P)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla PCR?",
+        "a": "proteína C reactiva",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «proteína C reactiva»?",
+        "a": "PCR",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "tp": {
+    "sigla": "TP",
+    "significado": "tiempo de protrombina",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "Tiempo del Profesor Trompetista",
+    "escena": "Un PROFESOR TROMPETISTA (PRO-TROMbina) toca hasta que la sangre del tubo se convierte en gelatina; tú lo cronometras: ese TIEMPO es el TP, la vía extrínseca, la que vigila a quien toma warfarina.",
+    "ancla": "TP = el cronómetro del trompetista: tiempo de protrombina (vía extrínseca).",
+    "confusiones": [
+      "PT (letras al revés): proteínas totales. Si empieza con T es Tiempo (coagulación); si empieza con P, Proteínas.",
+      "TTPa: otro tiempo (tromboplastina parcial activado), vía intrínseca y heparina NF.",
+      "INR: es el TP normalizado, para comparar entre laboratorios."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla TP?",
+        "a": "tiempo de protrombina",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «tiempo de protrombina»?",
+        "a": "TP",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "inr": {
+    "sigla": "INR",
+    "significado": "razón normalizada internacional (del TP)",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "La bandera INteRnacional",
+    "escena": "El cronómetro del TP sube al podio de la ONU y se envuelve en una bandera INTERNACIONAL (INR): así su tiempo vale igual en cualquier laboratorio del mundo y sirve para ajustar la warfarina.",
+    "ancla": "INR = el TP con bandera internacional.",
+    "confusiones": [
+      "TP: el tiempo en segundos; INR: el cociente normalizado del TP.",
+      "UI: unidades internacionales; la «internacional» no los hace iguales."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla INR?",
+        "a": "razón normalizada internacional (del TP)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «razón normalizada internacional (del TP)»?",
+        "a": "INR",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ttpa": {
+    "sigla": "TTPa",
+    "significado": "tiempo de tromboplastina parcial activado",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "TaTú PAtinador activado",
+    "escena": "Un TATÚ (armadillo) PATINADOR (T-T-Pa) se activa con un botón y patina por la vía intrínseca de la coagulación; cuando el paciente recibe heparina no fraccionada, el tatú se vuelve lento y el tiempo se alarga.",
+    "ancla": "TTPa = el tatú patinador activado: vía intrínseca y heparina NF.",
+    "confusiones": [
+      "TP: vía extrínseca y warfarina (INR).",
+      "PTI: púrpura trombocitopénica inmune (plaquetas), no un tiempo."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla TTPa?",
+        "a": "tiempo de tromboplastina parcial activado",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «tiempo de tromboplastina parcial activado»?",
+        "a": "TTPa",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "tgo": {
+    "sigla": "TGO",
+    "significado": "transaminasa glutámico oxalacética (= AST)",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "Tigre Gordo que viaja por el Océano (= AST)",
+    "escena": "Un TIGRE GORDO (T-G) se lanza al OCÉANO (la O de Oxalacética) y nada a todos lados: al corazón, al músculo, al hígado. Por eso, si sube solo, no te dice de dónde viene. Se pone un casco de ASTronauta: TGO = AST.",
+    "ancla": "TGO = el tigre del Océano que va a todos lados (AST, menos específica del hígado).",
+    "confusiones": [
+      "TGP (= ALT): la P de Pirúvica es la Propia del hígado.",
+      "Pareja química: Aspartato ↔ Oxalacetato (TGO/AST); Alanina ↔ Piruvato (TGP/ALT).",
+      "TG: triglicéridos, sin tercera letra."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla TGO?",
+        "a": "transaminasa glutámico oxalacética (= AST)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «transaminasa glutámico oxalacética (= AST)»?",
+        "a": "TGO",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "tgp": {
+    "sigla": "TGP",
+    "significado": "transaminasa glutámico pirúvica (= ALT)",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "Tigre Gordo Pescando en el hígado (= ALT)",
+    "escena": "Un TIGRE GORDO (T-G) se sienta PESCANDO (la P de Pirúvica) en un lago con forma de hígado y no se mueve de ahí: es la transaminasa más Propia del hígado. Pesca en lo ALTo de una roca: TGP = ALT.",
+    "ancla": "TGP = el tigre que pesca solo en el hígado (ALT, más específica del hígado).",
+    "confusiones": [
+      "TGO (= AST): la O de Oxalacética viaja a Otros órganos (corazón, músculo).",
+      "Pareja química: Alanina → Piruvato (ALT/TGP); Aspartato → Oxalacetato (AST/TGO)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla TGP?",
+        "a": "transaminasa glutámico pirúvica (= ALT)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «transaminasa glutámico pirúvica (= ALT)»?",
+        "a": "TGP",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ast": {
+    "sigla": "AST",
+    "significado": "aspartato aminotransferasa",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "ASTronauta (= TGO)",
+    "escena": "Un ASTRONAUTA (AST) despega y aterriza en cualquier planeta: corazón, músculo, hígado. Lleva en la mochila el ASparTato. Es la misma TGO con traje espacial.",
+    "ancla": "AST = el astronauta que va a todos los órganos (= TGO).",
+    "confusiones": [
+      "ALT (= TGP): más propia del hígado.",
+      "Química: ASpartato ↔ Oxalacetato (AST/TGO)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla AST?",
+        "a": "aspartato aminotransferasa",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «aspartato aminotransferasa»?",
+        "a": "AST",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "alt": {
+    "sigla": "ALT",
+    "significado": "alanina aminotransferasa",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "ALTar del hígado (= TGP)",
+    "escena": "En lo ALTo de un ALTAR (ALT) con forma de hígado, un sacerdote ofrece ALAnina y la convierte en piruvato: no sale nunca de ese templo hepático. Es la TGP con sotana.",
+    "ancla": "ALT = el altar del hígado (= TGP, más específica del hígado).",
+    "confusiones": [
+      "AST (= TGO): también en corazón y músculo.",
+      "Química: ALanina ↔ Piruvato (ALT/TGP)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla ALT?",
+        "a": "alanina aminotransferasa",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «alanina aminotransferasa»?",
+        "a": "ALT",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "fa": {
+    "sigla": "FA",
+    "significado": "fosfatasa alcalina",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "FAro alcalino",
+    "escena": "Un FARO (FA) gigante iluminado con luz azul alcalina se levanta donde se cruzan los conductos biliares y los huesos: se enciende fuerte cuando la bilis se estanca (colestasis) o cuando el hueso crece o se rompe.",
+    "ancla": "FA = el faro de la bilis y el hueso: fosfatasa alcalina.",
+    "confusiones": [
+      "En cardiología, FA = fibrilación auricular: mira si el contexto es laboratorio o ECG.",
+      "GGT: si la FA está alta y la GGT también, el origen es biliar; si la GGT es normal, piensa en hueso."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla FA?",
+        "a": "fosfatasa alcalina",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «fosfatasa alcalina»?",
+        "a": "FA",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ggt": {
+    "sigla": "GGT",
+    "significado": "gamma-glutamil transferasa",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "GárGaraTe de alcohol",
+    "escena": "Un borracho hace GÁRGARAS (G-G-T) con licor encima de los conductos biliares y la GGT se dispara: sube con el alcohol y con la colestasis.",
+    "ancla": "GGT = el gargarismo de alcohol: gamma-glutamil transferasa.",
+    "confusiones": [
+      "FA: acompaña a la GGT en la colestasis; la GGT normal con FA alta sugiere origen óseo.",
+      "TGP / TGO: transaminasas (daño del hepatocito), no enzimas de colestasis."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla GGT?",
+        "a": "gamma-glutamil transferasa",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «gamma-glutamil transferasa»?",
+        "a": "GGT",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "bt": {
+    "sigla": "BT",
+    "significado": "bilirrubina total",
+    "grupo": "Laboratorio",
+    "tecnica": "ancla-breve",
+    "sustituta": "Bote Total de bilis",
+    "escena": "Un BOTE (B-T) amarillo recoge toda la bilirrubina que hay: la directa más la indirecta. El bote lleno tiñe de amarillo la piel y los ojos (ictericia).",
+    "ancla": "BT = el bote total = BD + BI.",
+    "confusiones": [
+      "BD y BI son las dos partes de la BT.",
+      "PT: proteínas totales, otro «total»."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla BT?",
+        "a": "bilirrubina total",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «bilirrubina total»?",
+        "a": "BT",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "bd": {
+    "sigla": "BD",
+    "significado": "bilirrubina directa",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "Bilirrubina Directa, Bien Dirigida",
+    "escena": "Una bilirrubina con corbata, BIEN DIRIGIDA (B-D), ya pasó por el hígado y se conjugó: se disuelve en agua, se escapa por la orina y la tiñe de color coca-cola (coluria).",
+    "ancla": "BD = la bien dirigida: conjugada, sale por la orina.",
+    "confusiones": [
+      "BI: la indirecta, no conjugada, aumenta en la hemólisis y no aparece en la orina.",
+      "BT = BD + BI."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla BD?",
+        "a": "bilirrubina directa",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «bilirrubina directa»?",
+        "a": "BD",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "bi": {
+    "sigla": "BI",
+    "significado": "bilirrubina indirecta",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "Bilirrubina Indirecta, la que da rodeos",
+    "escena": "Una bilirrubina despeinada (B-I) da vueltas INDIRECTAS por la sangre, pegada a la albúmina, porque todavía no pasó por el hígado: abunda cuando se rompen muchos glóbulos rojos (hemólisis).",
+    "ancla": "BI = la que da rodeos: no conjugada, sube en la hemólisis.",
+    "confusiones": [
+      "BD: directa, conjugada, aparece en la orina.",
+      "No confundir la BI con «bilateral» u otras siglas de imagen."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla BI?",
+        "a": "bilirrubina indirecta",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «bilirrubina indirecta»?",
+        "a": "BI",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "pt": {
+    "sigla": "PT",
+    "significado": "proteínas totales",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "POTe de proteínas",
+    "escena": "Un POTE (P-T) gigante de proteína en polvo: al abrirlo salen la albúmina y las globulinas, todo junto. Es el total de proteínas del plasma.",
+    "ancla": "PT = el pote de proteínas: albúmina más globulinas.",
+    "confusiones": [
+      "TP (letras invertidas): tiempo de protrombina. P primero = Proteínas; T primero = Tiempo.",
+      "PTI: púrpura trombocitopénica inmune."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla PT?",
+        "a": "proteínas totales",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «proteínas totales»?",
+        "a": "PT",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ct": {
+    "sigla": "CT",
+    "significado": "colesterol total",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "CuarTo de mantequilla",
+    "escena": "Un CUARTO (C-T) entero lleno de mantequilla de techo a piso: todo el colesterol junto, el bueno y el malo, sin separar. Eso mide el colesterol total.",
+    "ancla": "CT = el cuarto lleno de toda la grasa: colesterol total.",
+    "confusiones": [
+      "En inglés, CT es la tomografía computarizada.",
+      "TG: triglicéridos, otra grasa distinta del colesterol.",
+      "HDL y LDL son fracciones del CT."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla CT?",
+        "a": "colesterol total",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «colesterol total»?",
+        "a": "CT",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "hdl": {
+    "sigla": "HDL",
+    "significado": "colesterol de lipoproteínas de alta densidad («bueno»)",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "Héroe De Limpieza («bueno»)",
+    "escena": "Un HÉROE DE LIMPIEZA (H-D-L) con escoba recorre las arterias y se lleva el colesterol de las paredes hacia el hígado: cuanto más alto, mejor. La H es de Héroe y de Alta (High).",
+    "ancla": "HDL = el héroe de limpieza: colesterol bueno, alta densidad.",
+    "confusiones": [
+      "LDL: la L es de Lodo (baja densidad, el malo que deposita placas).",
+      "LDH: enzima (lactato deshidrogenasa); cambia la última letra."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla HDL?",
+        "a": "colesterol de lipoproteínas de alta densidad («bueno»)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «colesterol de lipoproteínas de alta densidad («bueno»)»?",
+        "a": "HDL",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ldl": {
+    "sigla": "LDL",
+    "significado": "colesterol de lipoproteínas de baja densidad («malo»)",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "Lodo De Lento depósito («malo»)",
+    "escena": "Un camión de LODO (L-D-L) va descargando grasa pegajosa en las paredes de las arterias hasta taparlas con placas: es el colesterol malo, de baja densidad (Low).",
+    "ancla": "LDL = el camión de lodo: colesterol malo, baja densidad.",
+    "confusiones": [
+      "HDL: el héroe que limpia (bueno).",
+      "LDH: lactato deshidrogenasa (enzima), solo cambia una letra.",
+      "LPL: enzima que corta triglicéridos."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla LDL?",
+        "a": "colesterol de lipoproteínas de baja densidad («malo»)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «colesterol de lipoproteínas de baja densidad («malo»)»?",
+        "a": "LDL",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "tg": {
+    "sigla": "TG",
+    "significado": "triglicéridos",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "TriGo con tres colas",
+    "escena": "Una espiga de TRIGO (T-G) con TRES colas de grasa colgando de un mismo tallo de glicerol: es un triglicérido, la grasa que se dispara después de un banquete.",
+    "ancla": "TG = el trigo de tres colas: triglicéridos.",
+    "confusiones": [
+      "TGO / TGP: transaminasas; llevan una tercera letra.",
+      "CT: colesterol total, otra grasa."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla TG?",
+        "a": "triglicéridos",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «triglicéridos»?",
+        "a": "TG",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "bun": {
+    "sigla": "BUN",
+    "significado": "nitrógeno ureico en sangre",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "BUÑuelo de urea",
+    "escena": "Un BUÑUELO (BUN) relleno de nitrógeno se cocina en la sangre con los restos de las proteínas; el riñón debería sacarlo por la orina. Si el riñón se cansa, los buñuelos se acumulan.",
+    "ancla": "BUN = el buñuelo de nitrógeno ureico.",
+    "confusiones": [
+      "Cr: creatinina; viene del músculo y es mejor marcador de la filtración.",
+      "BUN y urea no son el mismo número: el BUN mide solo el nitrógeno de la urea."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla BUN?",
+        "a": "nitrógeno ureico en sangre",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «nitrógeno ureico en sangre»?",
+        "a": "BUN",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "cr": {
+    "sigla": "Cr",
+    "significado": "creatinina",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "CRoissant del músculo",
+    "escena": "Un CROISSANT (Cr) sale del músculo cada día casi en la misma cantidad y el riñón lo filtra; si el riñón falla, los croissants se amontonan en la sangre.",
+    "ancla": "Cr = el croissant que sale del músculo y filtra el riñón: creatinina.",
+    "confusiones": [
+      "BUN: nitrógeno ureico, cambia más con la dieta y la deshidratación.",
+      "Cr también es el símbolo químico del cromo: en laboratorio clínico es creatinina."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla Cr?",
+        "a": "creatinina",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «creatinina»?",
+        "a": "Cr",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "tfg": {
+    "sigla": "TFG",
+    "significado": "tasa de filtración glomerular",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Te FiltraGlomérulo",
+    "escena": "Un colador gigante (el glomérulo) dice «TE FILTRO» (T-F-G) y deja pasar el agua de la sangre gota a gota; cuentas cuántos mililitros pasan por minuto: es la tasa de filtración glomerular.",
+    "ancla": "TFG = el colador que te filtra: tasa de filtración glomerular.",
+    "confusiones": [
+      "Cr: se usa para estimar la TFG, pero no es la TFG.",
+      "GN: glomerulonefritis, la enfermedad del colador."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla TFG?",
+        "a": "tasa de filtración glomerular",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «tasa de filtración glomerular»?",
+        "a": "TFG",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ptog": {
+    "sigla": "PTOG",
+    "significado": "prueba de tolerancia oral a la glucosa",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "POTe de Glucosa Oral",
+    "escena": "Te dan a beber un POTE (PTOG) de jarabe dulce de glucosa por la boca (oral) y te pinchan antes y después: si el azúcar en sangre no baja, la prueba de tolerancia falló.",
+    "ancla": "PTOG = el pote de glucosa que bebes: prueba de tolerancia oral.",
+    "confusiones": [
+      "HbA1c: no requiere beber nada; refleja la glucosa de los últimos meses.",
+      "PT: proteínas totales."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla PTOG?",
+        "a": "prueba de tolerancia oral a la glucosa",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «prueba de tolerancia oral a la glucosa»?",
+        "a": "PTOG",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "hba1c": {
+    "sigla": "HbA1c",
+    "significado": "hemoglobina glicosilada",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "Hamburguesa azucarada",
+    "escena": "La HAMBURGUESA roja (Hb) se cae en un barril de azúcar y queda pegajosa, con la etiqueta A1c: como el glóbulo rojo vive unos tres meses, ese azúcar pegado cuenta el promedio de glucosa de los últimos meses.",
+    "ancla": "HbA1c = la hamburguesa azucarada: hemoglobina glicosilada.",
+    "confusiones": [
+      "Hb: hemoglobina sin azúcar.",
+      "PTOG: prueba en el momento, bebiendo glucosa."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla HbA1c?",
+        "a": "hemoglobina glicosilada",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «hemoglobina glicosilada»?",
+        "a": "HbA1c",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "epo": {
+    "sigla": "EPO",
+    "significado": "eritropoyetina",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "EPOpeya roja",
+    "escena": "Los riñones escriben una EPOPEYA (EPO) y se la envían a la médula ósea: «¡fabrica más glóbulos rojos!». Un ciclista tramposo se la inyecta para correr más.",
+    "ancla": "EPO = la epopeya del riñón a la médula: eritropoyetina.",
+    "confusiones": [
+      "EPOC: enfermedad pulmonar obstructiva crónica; lleva la C.",
+      "En la IRC falta EPO y aparece anemia."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla EPO?",
+        "a": "eritropoyetina",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «eritropoyetina»?",
+        "a": "EPO",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "il": {
+    "sigla": "IL",
+    "significado": "interleucina",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "ILusionista",
+    "escena": "Un ILUSIONISTA (IL) pasa mensajes secretos de un leucocito a otro sacando palomas del sombrero: son las interleucinas, mensajeras ENTRE leucocitos.",
+    "ancla": "IL = el ilusionista que pasa mensajes entre leucocitos: interleucina.",
+    "confusiones": [
+      "Ig: inmunoglobulinas (anticuerpos), no mensajeras.",
+      "IL siempre lleva número (IL-1, IL-6…)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla IL?",
+        "a": "interleucina",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «interleucina»?",
+        "a": "IL",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "igg": {
+    "sigla": "IgG",
+    "significado": "inmunoglobulina G",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "IgG, el Guardián de la memoria",
+    "escena": "Un GUARDIÁN (la G) veterano llega tarde a la batalla pero se queda para siempre en la muralla y recuerda al enemigo; además cruza el puente de la placenta para proteger al bebé.",
+    "ancla": "IgG = el Guardián tardío que recuerda (y cruza la placenta).",
+    "confusiones": [
+      "IgM: la M de priMera, la de la infección aguda.",
+      "IgG positiva sola suele hablar de infección pasada o inmunidad."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla IgG?",
+        "a": "inmunoglobulina G",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «inmunoglobulina G»?",
+        "a": "IgG",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "igm": {
+    "sigla": "IgM",
+    "significado": "inmunoglobulina M",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "IgM, la priMera en llegar",
+    "escena": "Un pentágono de soldados MADRUGADORES (la M) llega primero a la infección, gritando en grupo de cinco: es la primera inmunoglobulina de la respuesta aguda.",
+    "ancla": "IgM = la priMera en llegar: infección aguda.",
+    "confusiones": [
+      "IgG: la tardía, la de la memoria.",
+      "IgM positiva sugiere infección reciente."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla IgM?",
+        "a": "inmunoglobulina M",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «inmunoglobulina M»?",
+        "a": "IgM",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "cd3": {
+    "sigla": "CD3",
+    "significado": "marcador de linfocitos T",
+    "grupo": "Laboratorio",
+    "tecnica": "mini-historia",
+    "sustituta": "Un CD con 3 canciones de la T",
+    "escena": "Un CD que solo tiene 3 canciones, todas de bandas que empiezan con T: lo llevan colgado todos los linfocitos T como identificación. Es el marcador de linfocitos T.",
+    "ancla": "CD3 = el CD de las 3 canciones T: marcador de linfocitos T.",
+    "confusiones": [
+      "CD4 y CD8: subgrupos de linfocitos T; el CD3 los marca a todos.",
+      "CCP: péptido cíclico citrulinado (artritis reumatoide)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla CD3?",
+        "a": "marcador de linfocitos T",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «marcador de linfocitos T»?",
+        "a": "CD3",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ccp": {
+    "sigla": "CCP",
+    "significado": "péptido cíclico citrulinado (anti-CCP)",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "CÍCLoPe citrulinado",
+    "escena": "Un CÍCLOPE (CCP) con un anillo cíclico en la frente y un traje de cáscara de citrón ataca las articulaciones pequeñas de las manos: los anticuerpos anti-CCP son muy específicos de la artritis reumatoide.",
+    "ancla": "CCP = el cíclope citrulinado que ataca las manos (anti-CCP, artritis reumatoide).",
+    "confusiones": [
+      "CPC: cor pulmonale crónico (corazón y pulmón); mismas letras en otro orden.",
+      "FR (factor reumatoide): el otro marcador de AR, menos específico."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla CCP?",
+        "a": "péptido cíclico citrulinado (anti-CCP)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «péptido cíclico citrulinado (anti-CCP)»?",
+        "a": "CCP",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "lpl": {
+    "sigla": "LPL",
+    "significado": "lipoproteína lipasa",
+    "grupo": "Laboratorio",
+    "tecnica": "ancla-breve",
+    "sustituta": "Las tijeras de ida y vuelta (L-P-L)",
+    "escena": "Unas tijeras capicúa (L-P-L se lee igual al revés) cortan los triglicéridos de los camiones de lipoproteínas para que los tejidos coman la grasa: es la lipoproteína lipasa.",
+    "ancla": "LPL = las tijeras capicúa que cortan triglicéridos: lipoproteína lipasa.",
+    "confusiones": [
+      "LDL: lipoproteína de baja densidad (colesterol malo).",
+      "LDH: lactato deshidrogenasa."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla LPL?",
+        "a": "lipoproteína lipasa",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «lipoproteína lipasa»?",
+        "a": "LPL",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "b12": {
+    "sigla": "B12",
+    "significado": "vitamina B12 (cobalamina)",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Bici de 12 cambios con cobalto",
+    "escena": "Una BICI (B) azul de COBALTO con 12 cambios: si te falta, tus glóbulos rojos se vuelven gigantes y tus nervios se duermen (hormigueos). La vitamina B12 es la cobalamina.",
+    "ancla": "B12 = la bici azul cobalto: cobalamina.",
+    "confusiones": [
+      "El ácido fólico es otra vitamina B; su déficit también da glóbulos grandes.",
+      "B12 no es un ítem de Glasgow ni una derivación."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla B12?",
+        "a": "vitamina B12 (cobalamina)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «vitamina B12 (cobalamina)»?",
+        "a": "B12",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "hcl": {
+    "sigla": "HCl",
+    "significado": "ácido clorhídrico",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Hace CLoro en el estómago",
+    "escena": "El estómago es una piscina que HACE CLORO (H-Cl): las células parietales echan ácido clorhídrico tan fuerte que derrite una moneda.",
+    "ancla": "HCl = el cloro de la piscina estomacal: ácido clorhídrico.",
+    "confusiones": [
+      "HCO3: bicarbonato, la base que neutraliza el ácido.",
+      "HC: historia clínica; HCM: hemoglobina corpuscular media."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla HCl?",
+        "a": "ácido clorhídrico",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «ácido clorhídrico»?",
+        "a": "HCl",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "lsn": {
+    "sigla": "LSN",
+    "significado": "límite superior de lo normal",
+    "grupo": "Laboratorio",
+    "tecnica": "ancla-breve",
+    "sustituta": "El techo del rango (Límite Superior)",
+    "escena": "Un termómetro de laboratorio tiene una raya roja en lo alto: es el techo, el Límite Superior de lo Normal. «Tres veces el LSN» es haber saltado tres techos.",
+    "ancla": "LSN = el techo del rango normal.",
+    "confusiones": [
+      "VN: todo el rango normal; LSN: solo el borde superior.",
+      "Se usa como múltiplo: «x veces el LSN»."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla LSN?",
+        "a": "límite superior de lo normal",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «límite superior de lo normal»?",
+        "a": "LSN",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "vn": {
+    "sigla": "VN",
+    "significado": "valor normal",
+    "grupo": "Laboratorio",
+    "tecnica": "ancla-breve",
+    "sustituta": "Ventana Normal",
+    "escena": "Una VENTANA (V-N) con marco verde: si el valor del paciente cabe dentro del marco, está en el Valor Normal; si se asoma por encima o por debajo, está alterado.",
+    "ancla": "VN = la ventana verde: valor normal.",
+    "confusiones": [
+      "LSN: solo el borde superior de esa ventana.",
+      "VD / VI: ventrículos, no valores."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla VN?",
+        "a": "valor normal",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «valor normal»?",
+        "a": "VN",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ui": {
+    "sigla": "UI",
+    "significado": "unidades internacionales",
+    "grupo": "Laboratorio",
+    "tecnica": "ancla-breve",
+    "sustituta": "¡Uy! Internacional",
+    "escena": "Un viajero grita «¡UI!» al ver que el frasco de vitamina se mide igual en todos los países: son unidades internacionales, definidas por su actividad biológica.",
+    "ancla": "UI = el «¡uy!» del viajero: unidades internacionales.",
+    "confusiones": [
+      "UA: unidades de amilasa.",
+      "INR: también «internacional», pero es un cociente de coagulación."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla UI?",
+        "a": "unidades internacionales",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «unidades internacionales»?",
+        "a": "UI",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ua": {
+    "sigla": "UA",
+    "significado": "unidades de amilasa",
+    "grupo": "Laboratorio",
+    "tecnica": "ancla-breve",
+    "sustituta": "UA de Amilasa",
+    "escena": "Un páncreas inflamado lanza un grito «¡UA!» mientras escupe almidón partido: así se cuentan las unidades de amilasa.",
+    "ancla": "UA = el grito del páncreas: unidades de amilasa.",
+    "confusiones": [
+      "UI: unidades internacionales.",
+      "En textos en inglés UA puede ser urianálisis o ácido úrico: aquí, en este atlas, es unidades de amilasa."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla UA?",
+        "a": "unidades de amilasa",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «unidades de amilasa»?",
+        "a": "UA",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "meq": {
+    "sigla": "mEq",
+    "significado": "miliequivalentes",
+    "grupo": "Laboratorio",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Mil Equilibristas",
+    "escena": "MIL EQUILIBRISTAS (m-Eq) cargan iones de sodio y potasio en la cuerda floja: cuentan cuántas cargas eléctricas llevan, no cuánto pesan.",
+    "ancla": "mEq = mil equilibristas de cargas: miliequivalentes.",
+    "confusiones": [
+      "mg cuenta peso; mEq cuenta carga eléctrica.",
+      "UI: unidades por actividad biológica, no por carga."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla mEq?",
+        "a": "miliequivalentes",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «miliequivalentes»?",
+        "a": "mEq",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ph": {
+    "sigla": "pH",
+    "significado": "grado de acidez",
+    "grupo": "Laboratorio",
+    "tecnica": "ancla-breve",
+    "sustituta": "Potencia del Hidrógeno",
+    "escena": "Un HIDRÓGENO forzudo levanta pesas: cuanto más forzudo y abundante es, más ácido el medio y MÁS BAJO baja el número del pH (la escala va al revés).",
+    "ancla": "pH = la potencia del hidrógeno: más ácido, número más bajo.",
+    "confusiones": [
+      "PaCO2 y HCO3 son los que mueven el pH; no son el pH.",
+      "pH bajo = acidez; pH alto = alcalino."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla pH?",
+        "a": "grado de acidez",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «grado de acidez»?",
+        "a": "pH",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ecg": {
+    "sigla": "ECG",
+    "significado": "electrocardiograma",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "ancla-breve",
+    "sustituta": "Electro-Cardio-Grama",
+    "escena": "Un CARDIÓLOGO enchufa cables eléctricos al pecho y el corazón dibuja con su chispa una montaña de picos (P-QRS-T) sobre un papel milimetrado.",
+    "ancla": "ECG = Electro (cables) + Cardio (corazón) + Grama (dibujo).",
+    "confusiones": [
+      "EEG: electroencefalograma (cerebro).",
+      "Ecocardiograma: imagen por ultrasonido, no actividad eléctrica."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla ECG?",
+        "a": "electrocardiograma",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «electrocardiograma»?",
+        "a": "ECG",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "rx": {
+    "sigla": "Rx",
+    "significado": "radiografía",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "ancla-breve",
+    "sustituta": "Rayos X",
+    "escena": "Un superhéroe con visión de RAYOS X (Rx) te mira y ve tus huesos blancos y tus pulmones negros sobre una placa.",
+    "ancla": "Rx = rayos X: radiografía.",
+    "confusiones": [
+      "En recetas, el símbolo ℞ significa tratamiento o prescripción.",
+      "PA / AP: proyecciones de la Rx."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla Rx?",
+        "a": "radiografía",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «radiografía»?",
+        "a": "Rx",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ict": {
+    "sigla": "ICT",
+    "significado": "índice cardiotorácico",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "mini-historia",
+    "sustituta": "Índice del Corazón en el Tórax",
+    "escena": "En la Rx de tórax, un corazón gordito quiere ocupar más de la mitad del ancho del pecho; tú lo mides con una regla: ancho del corazón dividido entre ancho del tórax. Si pasa de la mitad, hay cardiomegalia.",
+    "ancla": "ICT = corazón entre tórax en la Rx.",
+    "confusiones": [
+      "IC: insuficiencia cardiaca (la enfermedad).",
+      "EIC: espacio intercostal.",
+      "El ICT se mide en Rx PA; en AP el corazón se ve más grande."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla ICT?",
+        "a": "índice cardiotorácico",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «índice cardiotorácico»?",
+        "a": "ICT",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "vd": {
+    "sigla": "VD",
+    "significado": "ventrículo derecho",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "mini-historia",
+    "sustituta": "Ventrículo Derecho: el que manda al pulmón",
+    "escena": "El VENTRÍCULO DERECHO es un bombero que con la mano derecha empuja una manguera azul (sangre sin oxígeno) hacia los pulmones por la arteria pulmonar.",
+    "ancla": "VD = la cámara derecha que bombea al pulmón.",
+    "confusiones": [
+      "VI: ventrículo izquierdo, bombea a la aorta (todo el cuerpo).",
+      "AD: aurícula derecha, la que recibe la sangre de las cavas antes del VD."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla VD?",
+        "a": "ventrículo derecho",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «ventrículo derecho»?",
+        "a": "VD",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "vi": {
+    "sigla": "VI",
+    "significado": "ventrículo izquierdo",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "mini-historia",
+    "sustituta": "Ventrículo Izquierdo: el forzudo",
+    "escena": "El VENTRÍCULO IZQUIERDO es un fisicoculturista con la pared más gruesa del corazón: con la mano izquierda lanza la sangre roja por la aorta a todo el cuerpo.",
+    "ancla": "VI = el forzudo de pared gruesa que bombea a la aorta.",
+    "confusiones": [
+      "VD: bombea al pulmón, pared más delgada.",
+      "V5 / V6 son derivaciones del ECG que miran al VI; no son el ventrículo."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla VI?",
+        "a": "ventrículo izquierdo",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «ventrículo izquierdo»?",
+        "a": "VI",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ad": {
+    "sigla": "AD",
+    "significado": "aurícula derecha",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "mini-historia",
+    "sustituta": "Aurícula Derecha: la recepción",
+    "escena": "La AURÍCULA DERECHA es la recepcionista de un hotel: recibe a los huéspedes azules que llegan por las dos venas cavas y los manda al cuarto de abajo, el VD.",
+    "ancla": "AD = la recepción del corazón derecho.",
+    "confusiones": [
+      "VD: el cuarto de abajo, que bombea al pulmón.",
+      "ADE: ancho de distribución eritrocitaria (laboratorio)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla AD?",
+        "a": "aurícula derecha",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «aurícula derecha»?",
+        "a": "AD",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ap": {
+    "sigla": "AP",
+    "significado": "arteria pulmonar",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "mini-historia",
+    "sustituta": "Arteria Pulmonar: la manguera azul",
+    "escena": "Una MANGUERA AZUL sale del ventrículo derecho y riega los dos pulmones con sangre sin oxígeno: es la única arteria que lleva sangre venosa.",
+    "ancla": "AP = la manguera azul al pulmón.",
+    "confusiones": [
+      "En Rx, AP también es la proyección anteroposterior (la inversa de PA).",
+      "PA: presión arterial o posteroanterior.",
+      "HTP: hipertensión pulmonar, la presión alta en esta manguera."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla AP?",
+        "a": "arteria pulmonar",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «arteria pulmonar»?",
+        "a": "AP",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "vcs": {
+    "sigla": "VCS",
+    "significado": "vena cava superior",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "mini-historia",
+    "sustituta": "Vena Cava Superior: el tobogán de arriba",
+    "escena": "Un TOBOGÁN gigante baja desde la cabeza y los brazos y desemboca en la aurícula derecha: es la vena cava superior.",
+    "ancla": "VCS = el tobogán de arriba hacia la AD.",
+    "confusiones": [
+      "La VCI (inferior) trae la sangre de la mitad inferior del cuerpo.",
+      "VCM: volumen corpuscular medio (laboratorio)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla VCS?",
+        "a": "vena cava superior",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «vena cava superior»?",
+        "a": "VCS",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "pao2": {
+    "sigla": "PaO2",
+    "significado": "presión arterial de oxígeno",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "mini-historia",
+    "sustituta": "Presión del oxígeno en la arteria (a minúscula)",
+    "escena": "Una burbuja de oxígeno empuja las paredes de una ARTERIA roja: la «a» minúscula es de arterial. La gasometría mide con qué fuerza (mmHg) el oxígeno está disuelto. En la altura, como en Puno, esa fuerza baja.",
+    "ancla": "PaO2: presión de O₂ en sangre arterial (mmHg).",
+    "confusiones": [
+      "PAO2 (A mayúscula) es la presión alveolar, no arterial.",
+      "SaO2: porcentaje de saturación, no presión.",
+      "PaCO2: el CO₂, no el oxígeno."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla PaO2?",
+        "a": "presión arterial de oxígeno",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «presión arterial de oxígeno»?",
+        "a": "PaO2",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "paco2": {
+    "sigla": "PaCO2",
+    "significado": "presión arterial de CO2",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "mini-historia",
+    "sustituta": "Presión del CO₂: el humo que se exhala",
+    "escena": "Una chimenea de CO₂ dentro de la arteria echa humo ácido: si respiras poco, el humo se acumula y el pH baja (acidosis respiratoria); si hiperventilas, el humo se va.",
+    "ancla": "PaCO2 = el humo ácido que regula la respiración.",
+    "confusiones": [
+      "PaO2: el oxígeno.",
+      "HCO3: el componente metabólico (riñón), no respiratorio."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla PaCO2?",
+        "a": "presión arterial de CO2",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «presión arterial de CO2»?",
+        "a": "PaCO2",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "hco3": {
+    "sigla": "HCO3",
+    "significado": "bicarbonato",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "mini-historia",
+    "sustituta": "Bicarbonato: el antiácido del riñón",
+    "escena": "El riñón lanza tabletas efervescentes de BICARBONATO a la sangre para apagar el ácido: es la base, el componente metabólico del equilibrio ácido-base.",
+    "ancla": "HCO3 = el antiácido efervescente del riñón.",
+    "confusiones": [
+      "HCl: ácido clorhídrico, lo contrario (un ácido).",
+      "PaCO2: componente respiratorio."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla HCO3?",
+        "a": "bicarbonato",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «bicarbonato»?",
+        "a": "HCO3",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ag": {
+    "sigla": "AG",
+    "significado": "anión gap (brecha aniónica)",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "mini-historia",
+    "sustituta": "Anión Gap: el hueco de la balanza",
+    "escena": "En una balanza pones el sodio de un lado y el cloro más el bicarbonato del otro: queda un HUECO (gap) de aniones que no mediste. Si el hueco crece, hay un ácido escondido.",
+    "ancla": "AG = el hueco de la balanza: Na − (Cl + HCO3).",
+    "confusiones": [
+      "Ag es el símbolo químico de la plata.",
+      "GASA: gradiente albúmina suero-ascitis; también es una resta, pero en ascitis."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla AG?",
+        "a": "anión gap (brecha aniónica)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «anión gap (brecha aniónica)»?",
+        "a": "AG",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ldh": {
+    "sigla": "LDH",
+    "significado": "lactato deshidrogenasa",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "mini-historia",
+    "sustituta": "LaDrón de la Hemólisis",
+    "escena": "Un LADRÓN (L-D-H) rompe las células y huye con la enzima de los tejidos dañados; cuando se rompen glóbulos rojos, sus huellas suben en la sangre. También sirve para ver si un líquido es exudado.",
+    "ancla": "LDH = el ladrón que aparece cuando se rompen células: lactato deshidrogenasa.",
+    "confusiones": [
+      "LDL: colesterol malo (solo cambia una letra).",
+      "LPL: lipoproteína lipasa."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla LDH?",
+        "a": "lactato deshidrogenasa",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «lactato deshidrogenasa»?",
+        "a": "LDH",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "lcr": {
+    "sigla": "LCR",
+    "significado": "líquido cefalorraquídeo",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "LiCoR del cerebro",
+    "escena": "Un LICOR (L-C-R) transparente como el agua baña el cerebro y la médula y amortigua los golpes; lo sacas por punción lumbar gota a gota.",
+    "ancla": "LCR = el licor transparente del cerebro: líquido cefalorraquídeo.",
+    "confusiones": [
+      "PCR: proteína C reactiva.",
+      "Líquido ascítico (GASA, PMN, PBE): es del abdomen, no del cerebro."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla LCR?",
+        "a": "líquido cefalorraquídeo",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «líquido cefalorraquídeo»?",
+        "a": "LCR",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "gasa": {
+    "sigla": "GASA",
+    "significado": "gradiente de albúmina suero-ascitis",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "GASA empapada",
+    "escena": "Una GASA blanca (GASA) se empapa con el líquido de la ascitis; la exprimes y comparas la albúmina del suero con la de la gasa: si la diferencia es grande, el agua salió empujada por la hipertensión portal.",
+    "ancla": "GASA = la gasa de ascitis: gradiente albúmina suero-ascitis.",
+    "confusiones": [
+      "AG: anión gap, otra resta pero de electrolitos.",
+      "No es «gasometría»."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla GASA?",
+        "a": "gradiente de albúmina suero-ascitis",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «gradiente de albúmina suero-ascitis»?",
+        "a": "GASA",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "pmn": {
+    "sigla": "PMN",
+    "significado": "polimorfonucleares (neutrófilos)",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Pulpo Multi-Núcleo",
+    "escena": "Un PULPO (P-M-N) con un núcleo partido en varios lóbulos es el neutrófilo; llega primero a la infección bacteriana. Si en la ascitis hay muchos pulpos, piensa en PBE.",
+    "ancla": "PMN = el pulpo de núcleo multilobulado: neutrófilos.",
+    "confusiones": [
+      "PBE: la enfermedad que se diagnostica contando PMN en el líquido ascítico.",
+      "Mononucleares: linfocitos y monocitos (un solo núcleo)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla PMN?",
+        "a": "polimorfonucleares (neutrófilos)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «polimorfonucleares (neutrófilos)»?",
+        "a": "PMN",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "pbe": {
+    "sigla": "PBE",
+    "significado": "peritonitis bacteriana espontánea",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "mini-historia",
+    "sustituta": "Panza con Bacterias Espontáneas",
+    "escena": "Una PANZA llena de ascitis (P-B-E) se infecta sola, sin que nada la perfore: bacterias que aparecen de la nada en un cirrótico. En el líquido hay muchos PMN.",
+    "ancla": "PBE = la panza que se infecta sola: peritonitis bacteriana espontánea.",
+    "confusiones": [
+      "Peritonitis secundaria: hay perforación o foco quirúrgico; la PBE no.",
+      "PMN: el recuento que la diagnostica."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla PBE?",
+        "a": "peritonitis bacteriana espontánea",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «peritonitis bacteriana espontánea»?",
+        "a": "PBE",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "pa-rx": {
+    "sigla": "PA",
+    "significado": "posteroanterior (proyección de Rx) · presión arterial",
+    "grupo": "ECG, imagen, gases y líquidos",
+    "tecnica": "mini-historia",
+    "sustituta": "Pecho a la Placa (posteroanterior)",
+    "escena": "El paciente abraza la placa con el pecho y el tubo de rayos X le dispara por la espalda: el rayo entra Posterior y sale Anterior (PA). Así el corazón, pegado a la placa, no se agranda.",
+    "ancla": "PA de Rx = el rayo entra por la espalda y el pecho abraza la placa.",
+    "confusiones": [
+      "AP (anteroposterior): rayo de adelante hacia atrás, típico en paciente en cama; el corazón se ve más grande.",
+      "PA presión arterial: si la sigla va con mmHg es presión; si va con Rx, es la proyección."
+    ],
+    "preguntas": [
+      {
+        "q": "En el glosario de ECG, imagen, gases y líquidos, ¿qué significa la sigla PA?",
+        "a": "posteroanterior (proyección de Rx) · presión arterial",
+        "tipo": "directa"
+      },
+      {
+        "q": "En una radiografía de tórax, ¿qué sigla indica la proyección posteroanterior?",
+        "a": "PA",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "hta": {
+    "sigla": "HTA",
+    "significado": "hipertensión arterial",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "HTA: Hervidor de Té en la Arteria",
+    "escena": "Un HERVIDOR DE TÉ (H-T) está metido dentro de la ARTERIA (la A) y silba sin parar: la presión dentro de los vasos de todo el cuerpo está demasiado alta.",
+    "ancla": "HTA = el hervidor que silba en la arteria: hipertensión arterial.",
+    "confusiones": [
+      "HTP: la P es de Pulmonar (presión alta en la arteria pulmonar).",
+      "HT: hipertensión a secas; en el atlas, HT portal.",
+      "Hto: hematocrito."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla HTA?",
+        "a": "hipertensión arterial",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «hipertensión arterial»?",
+        "a": "HTA",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "htp": {
+    "sigla": "HTP",
+    "significado": "hipertensión pulmonar",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Hervidor de Té en el Pulmón",
+    "escena": "El mismo HERVIDOR silba ahora dentro de un PULMÓN (la P): la arteria pulmonar está a presión, y el ventrículo derecho suda empujando contra ella.",
+    "ancla": "HTP = el hervidor en el pulmón: hipertensión pulmonar.",
+    "confusiones": [
+      "HTA: la arterial sistémica.",
+      "HT portal: presión alta en la vena porta (hígado), no en el pulmón."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla HTP?",
+        "a": "hipertensión pulmonar",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «hipertensión pulmonar»?",
+        "a": "HTP",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ht": {
+    "sigla": "HT",
+    "significado": "hipertensión (HT portal)",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "ancla-breve",
+    "sustituta": "Hervidor de Té en la vena porta",
+    "escena": "El hervidor sin apellido (H-T) se pone en la PUERTA del hígado (la vena porta): la sangre se atasca, la panza se llena de ascitis y aparecen várices.",
+    "ancla": "HT = hipertensión; en el atlas, HT portal (la puerta del hígado).",
+    "confusiones": [
+      "HTA (arterial) y HTP (pulmonar) llevan apellido en la sigla; la HT portal lo lleva escrito al lado.",
+      "GASA ≥ 1,1 g/dL orienta a ascitis por hipertensión portal."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla HT?",
+        "a": "hipertensión (HT portal)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «hipertensión (HT portal)»?",
+        "a": "HT",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ic": {
+    "sigla": "IC",
+    "significado": "insuficiencia cardiaca",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Inflador Cansado",
+    "escena": "Un INFLADOR CANSADO (I-C) intenta bombear pero ya no puede: la sangre se le acumula atrás, los pulmones se llenan de agua y las piernas se hinchan. Es la insuficiencia cardiaca.",
+    "ancla": "IC = la bomba cansada: insuficiencia cardiaca.",
+    "confusiones": [
+      "ICT: índice cardiotorácico (medida en Rx).",
+      "IR: insuficiencia renal; la segunda letra dice el órgano.",
+      "En inglés, HF (heart failure) es la IC; en el atlas, HF es hipercolesterolemia familiar."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla IC?",
+        "a": "insuficiencia cardiaca",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «insuficiencia cardiaca»?",
+        "a": "IC",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "iam": {
+    "sigla": "IAM",
+    "significado": "infarto agudo de miocardio",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "¡Ay, Mamá!",
+    "escena": "Un hombre se agarra el pecho con el puño cerrado y grita «¡I-AY, MAMÁ!» (IAM): una arteria coronaria se tapó y un trozo del miocardio se muere de golpe.",
+    "ancla": "IAM = «¡ay, mamá!» con el puño en el pecho: infarto agudo de miocardio.",
+    "confusiones": [
+      "IAo: insuficiencia aórtica (válvula), no infarto.",
+      "IC: insuficiencia cardiaca, puede ser consecuencia del IAM."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla IAM?",
+        "a": "infarto agudo de miocardio",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «infarto agudo de miocardio»?",
+        "a": "IAM",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "iao": {
+    "sigla": "IAo",
+    "significado": "insuficiencia aórtica",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "La puerta de la Aorta que no cierra",
+    "escena": "La puerta de la AORTA (Ao) está rota y no cierra (insuficiencia): en cada diástole la sangre se regresa al ventrículo izquierdo con un soplo suave, como agua que se devuelve.",
+    "ancla": "IAo = la puerta aórtica que no cierra: insuficiencia aórtica.",
+    "confusiones": [
+      "EAo: E de Estrecha, la puerta que no abre bien (estenosis aórtica).",
+      "IAM: infarto, sin «o»."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla IAo?",
+        "a": "insuficiencia aórtica",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «insuficiencia aórtica»?",
+        "a": "IAo",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "eao": {
+    "sigla": "EAo",
+    "significado": "estenosis aórtica",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "La puerta de la Aorta Estrecha",
+    "escena": "La puerta de la AORTA está oxidada y ESTRECHA (E): el ventrículo izquierdo empuja con todas sus fuerzas para pasar la sangre por una rendija y suena un soplo áspero en la sístole.",
+    "ancla": "EAo = la puerta aórtica estrecha: estenosis aórtica.",
+    "confusiones": [
+      "IAo: la puerta que no cierra (insuficiencia).",
+      "EAP: edema agudo de pulmón."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla EAo?",
+        "a": "estenosis aórtica",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «estenosis aórtica»?",
+        "a": "EAo",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "av": {
+    "sigla": "AV",
+    "significado": "auriculoventricular (bloqueo AV)",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "De la Aurícula al Ventrículo",
+    "escena": "Un cartero lleva la chispa eléctrica de la AURÍCULA (A) al VENTRÍCULO (V) por un puente: en el bloqueo AV el puente se corta y la chispa llega tarde o no llega.",
+    "ancla": "AV = el puente aurícula → ventrículo (bloqueo AV).",
+    "confusiones": [
+      "En oftalmología AV es agudeza visual.",
+      "FV: fibrilación ventricular (arritmia), no conducción."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla AV?",
+        "a": "auriculoventricular (bloqueo AV)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «auriculoventricular (bloqueo AV)»?",
+        "a": "AV",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "fv": {
+    "sigla": "FV",
+    "significado": "fibrilación ventricular",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "Fideos que Vibran en el ventrículo",
+    "escena": "El ventrículo se convierte en un plato de FIDEOS que VIBRAN (F-V) sin orden: no bombea nada, el paciente cae en paro y solo el desfibrilador lo salva.",
+    "ancla": "FV = los fideos que tiemblan: fibrilación ventricular, paro.",
+    "confusiones": [
+      "Fibrilación auricular (en otros textos FA): el que tiembla es la aurícula, no hay paro; en este atlas FA es fosfatasa alcalina.",
+      "AV: bloqueo de conducción, no fibrilación."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla FV?",
+        "a": "fibrilación ventricular",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «fibrilación ventricular»?",
+        "a": "FV",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "cpc": {
+    "sigla": "CPC",
+    "significado": "cor pulmonale crónico",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "Corazón que Paga lo del pulmón Crónicamente",
+    "escena": "Un pulmón enfermo (EPOC) le pasa la cuenta al CORAZÓN DERECHO, que la PAGA Crónicamente (C-P-C) empujando contra la presión alta hasta agrandarse y cansarse.",
+    "ancla": "CPC = el corazón derecho que paga la cuenta del pulmón: cor pulmonale crónico.",
+    "confusiones": [
+      "CCP: péptido cíclico citrulinado (artritis reumatoide), mismas letras.",
+      "IC izquierda: la falla primero el VI; en el CPC falla el VD por el pulmón."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla CPC?",
+        "a": "cor pulmonale crónico",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «cor pulmonale crónico»?",
+        "a": "CPC",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "eap": {
+    "sigla": "EAP",
+    "significado": "edema agudo de pulmón",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "Estanque Agudo en el Pulmón",
+    "escena": "Los pulmones se convierten de golpe en un ESTANQUE (E-A-P): el paciente se ahoga sentado, se oyen burbujas (crepitantes) y escupe espuma rosada.",
+    "ancla": "EAP = el estanque agudo en el pulmón: edema agudo de pulmón.",
+    "confusiones": [
+      "EPOC: crónica y obstructiva, no inundación aguda.",
+      "EAo: estenosis aórtica."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla EAP?",
+        "a": "edema agudo de pulmón",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «edema agudo de pulmón»?",
+        "a": "EAP",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "tvp": {
+    "sigla": "TVP",
+    "significado": "trombosis venosa profunda",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "Tapón en la Vena Profunda",
+    "escena": "Un TAPÓN de chicle (T) se forma en una VENA PROFUNDA de la pantorrilla (V-P): la pierna se hincha, se pone roja, caliente y duele.",
+    "ancla": "TVP = el tapón en la vena profunda de la pierna.",
+    "confusiones": [
+      "TEP: el mismo tapón que viajó al pulmón.",
+      "TVP no es «trombosis arterial»."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla TVP?",
+        "a": "trombosis venosa profunda",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «trombosis venosa profunda»?",
+        "a": "TVP",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "tep": {
+    "sigla": "TEP",
+    "significado": "tromboembolia pulmonar",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "El Tapón Emigra al Pulmón",
+    "escena": "El TAPÓN de la pierna se suelta y EMIGRA en tobogán hasta el PULMÓN (T-E-P): tapa una arteria pulmonar y el paciente siente falta de aire súbita y dolor en el pecho.",
+    "ancla": "TEP = el tapón que emigra al pulmón: tromboembolia pulmonar.",
+    "confusiones": [
+      "TVP: el tapón todavía en la pierna.",
+      "EAP: el pulmón se llena de agua, no se tapa una arteria."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla TEP?",
+        "a": "tromboembolia pulmonar",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «tromboembolia pulmonar»?",
+        "a": "TEP",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "epoc": {
+    "sigla": "EPOC",
+    "significado": "enfermedad pulmonar obstructiva crónica",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "ÉPOCa de fumar",
+    "escena": "Un fumador de toda una ÉPOCA (EPOC) sopla por una pajita tapada: el aire entra pero no logra salir (obstrucción) y así lleva años (crónica).",
+    "ancla": "EPOC = la época fumando por una pajita tapada.",
+    "confusiones": [
+      "EPO: eritropoyetina (sin C).",
+      "EAP: edema agudo, no crónico.",
+      "CPC: complicación cardiaca de la EPOC."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla EPOC?",
+        "a": "enfermedad pulmonar obstructiva crónica",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «enfermedad pulmonar obstructiva crónica»?",
+        "a": "EPOC",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "tbc": {
+    "sigla": "TBC",
+    "significado": "tuberculosis",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "ancla-breve",
+    "sustituta": "TuBerCulosis",
+    "escena": "Un TUBO (T-B-C) de ensayo con un bacilo rojo que tose sangre por la noche, suda y adelgaza: la tuberculosis.",
+    "ancla": "TBC = TuBerCulosis: el tubo con el bacilo que tose.",
+    "confusiones": [
+      "TB es otra abreviatura frecuente de la misma enfermedad.",
+      "TEP: tromboembolia, también da tos y disnea, pero es aguda."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla TBC?",
+        "a": "tuberculosis",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «tuberculosis»?",
+        "a": "TBC",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "dm": {
+    "sigla": "DM",
+    "significado": "diabetes mellitus",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Dulce Miel",
+    "escena": "Un paciente orina MIEL DULCE (D-M; mellitus = miel) y las hormigas hacen fila hacia el baño: tiene diabetes mellitus.",
+    "ancla": "DM = la orina de dulce miel: diabetes mellitus.",
+    "confusiones": [
+      "HbA1c y PTOG son las pruebas que la diagnostican o vigilan.",
+      "DM no es «diabetes insípida» (esa no tiene glucosa)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla DM?",
+        "a": "diabetes mellitus",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «diabetes mellitus»?",
+        "a": "DM",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ira": {
+    "sigla": "IRA",
+    "significado": "insuficiencia renal aguda",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "IRA: el riñón con IRA aguda",
+    "escena": "Un riñón se pone furioso de repente (IRA = enojo súbito) y deja de filtrar en horas o días: la creatinina se dispara.",
+    "ancla": "IRA = el riñón que se enoja de golpe: insuficiencia renal aguda.",
+    "confusiones": [
+      "IRC: la misma falla pero Crónica (meses o años).",
+      "En pediatría, IRA también es infección respiratoria aguda: mira el contexto.",
+      "NTA: una causa de IRA."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla IRA?",
+        "a": "insuficiencia renal aguda",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «insuficiencia renal aguda»?",
+        "a": "IRA",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "irc": {
+    "sigla": "IRC",
+    "significado": "insuficiencia renal crónica",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "IRC: el riñón Cansado Crónico",
+    "escena": "Un riñón ancianito y CANSADO (la C de Crónica) filtra cada vez menos durante años, se encoge y deja de fabricar EPO: aparece anemia.",
+    "ancla": "IRC = el riñón cansado crónico: insuficiencia renal crónica.",
+    "confusiones": [
+      "IRA: aguda, de horas o días.",
+      "IR: sin apellido (ni aguda ni crónica)."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla IRC?",
+        "a": "insuficiencia renal crónica",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «insuficiencia renal crónica»?",
+        "a": "IRC",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ir": {
+    "sigla": "IR",
+    "significado": "insuficiencia renal",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "ancla-breve",
+    "sustituta": "Insuficiencia Renal sin apellido",
+    "escena": "Un riñón con un cartel de «cerrado» (I-R): no filtra bien, pero el cartel no dice si cerró de golpe o hace años.",
+    "ancla": "IR = riñón que no filtra; la tercera letra (A o C) dice desde cuándo.",
+    "confusiones": [
+      "IRA (aguda) e IRC (crónica) agregan el tiempo.",
+      "IC: insuficiencia cardiaca."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla IR?",
+        "a": "insuficiencia renal",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «insuficiencia renal»?",
+        "a": "IR",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "nta": {
+    "sigla": "NTA",
+    "significado": "necrosis tubular aguda",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "Necrosis: los Túbulos se mueren Agudamente",
+    "escena": "Una tubería de túbulos se queda sin sangre o recibe un tóxico y sus células se mueren (Necrosis) de golpe (Aguda): los túbulos se tapan con restos de células.",
+    "ancla": "NTA = los túbulos muertos de golpe: necrosis tubular aguda.",
+    "confusiones": [
+      "NTI: la N es de Nefritis (inflamación) y la I de Intersticial; suele ser por fármacos.",
+      "GN: el daño es en el glomérulo, no en el túbulo."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla NTA?",
+        "a": "necrosis tubular aguda",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «necrosis tubular aguda»?",
+        "a": "NTA",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "nti": {
+    "sigla": "NTI",
+    "significado": "nefritis tubulointersticial",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "Nefritis entre los Túbulos (Intersticial)",
+    "escena": "Un enjambre de abejas inflamatorias se mete en el espacio ENTRE los túbulos (intersticio) después de tomar un fármaco: el riñón se hincha, inflamado.",
+    "ancla": "NTI = la inflamación entre los túbulos: nefritis tubulointersticial.",
+    "confusiones": [
+      "NTA: necrosis (muerte celular), no inflamación.",
+      "ITU: infección urinaria (bacterias), no nefritis por fármacos."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla NTI?",
+        "a": "nefritis tubulointersticial",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «nefritis tubulointersticial»?",
+        "a": "NTI",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "gn": {
+    "sigla": "GN",
+    "significado": "glomerulonefritis",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Glomérulo iNflamado",
+    "escena": "Un colador (el glomérulo) se inflama y se agujerea: deja escapar glóbulos rojos (orina color coca-cola), retiene agua (edema) y sube la presión.",
+    "ancla": "GN = el colador inflamado: glomerulonefritis.",
+    "confusiones": [
+      "NTA / NTI: el daño es en los túbulos, no en el glomérulo.",
+      "GR: glóbulos rojos."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla GN?",
+        "a": "glomerulonefritis",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «glomerulonefritis»?",
+        "a": "GN",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "itu": {
+    "sigla": "ITU",
+    "significado": "infección del tracto urinario",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "¡Ay, Tú, me arde!",
+    "escena": "Una vejiga con cara de fuego grita «¡AY, TÚ!» (I-T-U) cada vez que orina: arde, quiere ir a cada rato y la orina huele fuerte. Hay bacterias en el tracto urinario.",
+    "ancla": "ITU = «¡ay, tú!» al orinar: infección del tracto urinario.",
+    "confusiones": [
+      "NTI: inflamación por fármacos, no por bacterias.",
+      "IRA: el riñón deja de filtrar."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla ITU?",
+        "a": "infección del tracto urinario",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «infección del tracto urinario»?",
+        "a": "ITU",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "hda": {
+    "sigla": "HDA",
+    "significado": "hemorragia digestiva alta",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "Hemorragia Digestiva Alta: sangre por Arriba",
+    "escena": "Un volcán en el estómago (por encima del ángulo de Treitz) erupciona sangre por la boca (hematemesis) y lava negra por el ano (melena).",
+    "ancla": "HDA = sangre que sale de arriba: hematemesis y melena.",
+    "confusiones": [
+      "Hemorragia digestiva baja: rectorragia o hematoquecia (sangre roja por abajo).",
+      "HDL: colesterol bueno, solo cambia una letra."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla HDA?",
+        "a": "hemorragia digestiva alta",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «hemorragia digestiva alta»?",
+        "a": "HDA",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ehna": {
+    "sigla": "EHNA",
+    "significado": "esteatohepatitis no alcohólica",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "Hígado Grasiento sin Alcohol",
+    "escena": "Un hígado redondo como una bola de mantequilla (esteatosis) bebe solo agua (no alcohólica) y aun así está inflamado y rojo (hepatitis).",
+    "ancla": "EHNA = el hígado de mantequilla que no bebe: esteatohepatitis no alcohólica.",
+    "confusiones": [
+      "En inglés se llama NASH.",
+      "La hepatitis alcohólica sí tiene el antecedente de alcohol."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla EHNA?",
+        "a": "esteatohepatitis no alcohólica",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «esteatohepatitis no alcohólica»?",
+        "a": "EHNA",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "cu": {
+    "sigla": "CU",
+    "significado": "colitis ulcerosa",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "CUlebra Ulcerosa",
+    "escena": "Una CULEBRA (CU) roja y ulcerada sube desde el recto por el colon sin dejar huecos sanos: da diarrea con sangre y moco.",
+    "ancla": "CU = la culebra continua desde el recto: colitis ulcerosa.",
+    "confusiones": [
+      "La enfermedad de Crohn salta por parches y puede afectar de la boca al ano.",
+      "CID: coagulación intravascular diseminada."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla CU?",
+        "a": "colitis ulcerosa",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «colitis ulcerosa»?",
+        "a": "CU",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "ar": {
+    "sigla": "AR",
+    "significado": "artritis reumatoide",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "Articulaciones Reumáticas de las manos",
+    "escena": "Unas MANOS de abuela con los nudillos hinchados y rígidos por la mañana se defienden de su propio sistema inmune, simétricamente, en ambas manos.",
+    "ancla": "AR = manos simétricas rígidas en la mañana: artritis reumatoide.",
+    "confusiones": [
+      "FR y anti-CCP son sus marcadores.",
+      "CASPAR: criterios de la artritis psoriásica, no de la AR.",
+      "AD: aurícula derecha."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla AR?",
+        "a": "artritis reumatoide",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «artritis reumatoide»?",
+        "a": "AR",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "les": {
+    "sigla": "LES",
+    "significado": "lupus eritematoso sistémico",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "LoBo (lupus) En la Sonrisa",
+    "escena": "Un LOBO (lupus) deja una mariposa roja en las mejillas de una mujer joven (eritema malar) y luego ataca su piel, articulaciones, riñón y sangre: todo el cuerpo (sistémico).",
+    "ancla": "LES = la mariposa del lobo: lupus eritematoso sistémico.",
+    "confusiones": [
+      "AR: también autoinmune, pero sobre todo articular.",
+      "PTI: puede parecerse por plaquetas bajas, pero es solo hematológica."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla LES?",
+        "a": "lupus eritematoso sistémico",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «lupus eritematoso sistémico»?",
+        "a": "LES",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "cid": {
+    "sigla": "CID",
+    "significado": "coagulación intravascular diseminada",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "Coágulos y sangrado, Ida y vuelta Diseminados",
+    "escena": "Por todos los vasos aparecen miles de mini coágulos al mismo tiempo; consumen todas las plaquetas y factores, y entonces el paciente sangra por todas partes.",
+    "ancla": "CID = coagula en todas partes y luego sangra: consumo.",
+    "confusiones": [
+      "PTI: solo plaquetas bajas por anticuerpos, sin consumo de factores.",
+      "CU: colitis ulcerosa."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla CID?",
+        "a": "coagulación intravascular diseminada",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «coagulación intravascular diseminada»?",
+        "a": "CID",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "pti": {
+    "sigla": "PTI",
+    "significado": "púrpura trombocitopénica inmune",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "Plaquetas Tiroteadas por el sistema Inmune",
+    "escena": "Los soldados del sistema INMUNE TIROTEAN a las PLAQUETAS (P-T-I): quedan pocas y aparecen puntitos rojos (petequias) y moretones (púrpura).",
+    "ancla": "PTI = las plaquetas tiroteadas: púrpura trombocitopénica inmune.",
+    "confusiones": [
+      "La PTT (púrpura trombótica trombocitopénica) es otra enfermedad con microtrombos.",
+      "PT: proteínas totales; TP: tiempo de protrombina."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla PTI?",
+        "a": "púrpura trombocitopénica inmune",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «púrpura trombocitopénica inmune»?",
+        "a": "PTI",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "hf": {
+    "sigla": "HF",
+    "significado": "hipercolesterolemia familiar",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "Herencia Familiar de grasa",
+    "escena": "Un árbol genealógico entero, de abuelos a nietos, tiene bultos de grasa en los tendones (xantomas) y LDL altísimo: la hipercolesterolemia viene de familia.",
+    "ancla": "HF = la grasa heredada por la familia: hipercolesterolemia familiar.",
+    "confusiones": [
+      "En inglés, HF (heart failure) es insuficiencia cardiaca: en este atlas no.",
+      "HDL: colesterol bueno."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla HF?",
+        "a": "hipercolesterolemia familiar",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «hipercolesterolemia familiar»?",
+        "a": "HF",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "gh": {
+    "sigla": "GH",
+    "significado": "hormona del crecimiento",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "Gigante Hormonal",
+    "escena": "Un GIGANTE (G) se toma un jarabe de HORMONA (H) y crece hasta romper el techo: la hormona del crecimiento, en inglés Growth Hormone.",
+    "ancla": "GH = el gigante que crece (Growth Hormone).",
+    "confusiones": [
+      "GN (glomerulonefritis) y GR (glóbulos rojos) también empiezan con G, pero no son hormonas.",
+      "En español a veces se escribe HC (hormona del crecimiento), pero en el atlas HC es historia clínica."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla GH?",
+        "a": "hormona del crecimiento",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «hormona del crecimiento»?",
+        "a": "GH",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "hellp": {
+    "sigla": "HELLP",
+    "significado": "hemólisis, enzimas hepáticas elevadas y plaquetas bajas (del embarazo)",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "ancla-breve",
+    "sustituta": "HELP!: el grito de la embarazada",
+    "escena": "Una embarazada grita «¡HELP!» (H-EL-LP): sus glóbulos rojos se rompen (Hemólisis), las enzimas del hígado suben (Elevated Liver enzymes) y las plaquetas caen (Low Platelets).",
+    "ancla": "HELLP = «¡help!»: hemólisis, enzimas hepáticas altas, plaquetas bajas.",
+    "confusiones": [
+      "Preeclampsia: puede acompañarla; HELLP es el cuadro de laboratorio.",
+      "CID: también baja plaquetas, pero consume factores de coagulación."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla HELLP?",
+        "a": "hemólisis, enzimas hepáticas elevadas y plaquetas bajas (del embarazo)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «hemólisis, enzimas hepáticas elevadas y plaquetas bajas (del embarazo)»?",
+        "a": "HELLP",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "caspar": {
+    "sigla": "CASPAR",
+    "significado": "criterios de clasificación de la artritis psoriásica",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "palabra-sustituta",
+    "sustituta": "CASPER el fantasma psoriásico",
+    "escena": "CASPER el fantasma (CASPAR) tiene placas plateadas de psoriasis en los codos y dedos hinchados como salchichas: con su lista de criterios clasifica la artritis psoriásica.",
+    "ancla": "CASPAR = Casper con psoriasis: criterios de artritis psoriásica.",
+    "confusiones": [
+      "AR: artritis reumatoide (FR y anti-CCP), otra enfermedad.",
+      "Son criterios de clasificación, no una prueba de laboratorio."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla CASPAR?",
+        "a": "criterios de clasificación de la artritis psoriásica",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «criterios de clasificación de la artritis psoriásica»?",
+        "a": "CASPAR",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "nf": {
+    "sigla": "NF",
+    "significado": "no fraccionada (heparina NF)",
+    "grupo": "Enfermedades y cuadros",
+    "tecnica": "mini-historia",
+    "sustituta": "Heparina No Fraccionada: el hilo entero",
+    "escena": "Un ovillo de hilo ENTERO, sin cortar (No Fraccionado): la heparina NF tiene cadenas largas y se vigila con el TTPa.",
+    "ancla": "NF = el hilo entero sin cortar: heparina no fraccionada (se vigila con TTPa).",
+    "confusiones": [
+      "Heparina de bajo peso molecular: es la «fraccionada» (cadenas cortas).",
+      "TTPa: la prueba que vigila la heparina NF."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla NF?",
+        "a": "no fraccionada (heparina NF)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «no fraccionada (heparina NF)»?",
+        "a": "NF",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "lit": {
+    "sigla": "lit.",
+    "significado": "texto gris azulado en cursiva: no está en tu teoría, completado con literatura médica estándar",
+    "grupo": "Marcas",
+    "tecnica": "ancla-breve",
+    "sustituta": "Libro de literatura en cursiva gris",
+    "escena": "Un libro de LITERATURA médica escribe en tu atlas con tinta gris azulada y letra inclinada: «esto no estaba en tu teoría, lo completé yo».",
+    "ancla": "lit. = cursiva gris azulada: dato de literatura, no de tu teoría.",
+    "confusiones": [
+      "No es una sigla médica: es una marca del atlas.",
+      "Si el docente exige solo la teoría del curso, revisa estos datos antes del examen."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué indica la marca «lit.» en el atlas?",
+        "a": "texto gris azulado en cursiva: no está en tu teoría, completado con literatura médica estándar",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué marca se señala en el atlas el texto gris azulado en cursiva que no está en tu teoría y se completó con literatura médica estándar?",
+        "a": "lit.",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "oms": {
+    "sigla": "OMS",
+    "significado": "Organización Mundial de la Salud",
+    "grupo": "Marcas",
+    "tecnica": "ancla-breve",
+    "sustituta": "OMS: el Organismo Mundial de la Salud",
+    "escena": "Un globo terráqueo con estetoscopio (OMS) da órdenes de salud a todos los países desde Ginebra; en inglés se llama WHO.",
+    "ancla": "OMS = el globo con estetoscopio: Organización Mundial de la Salud.",
+    "confusiones": [
+      "OPS: Organización Panamericana de la Salud (oficina regional de las Américas).",
+      "En inglés es WHO."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla OMS?",
+        "a": "Organización Mundial de la Salud",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «Organización Mundial de la Salud»?",
+        "a": "OMS",
+        "tipo": "inversa"
+      }
+    ]
+  },
+  "msnm": {
+    "sigla": "msnm",
+    "significado": "metros sobre el nivel del mar",
+    "grupo": "Marcas",
+    "tecnica": "ancla-breve",
+    "sustituta": "Metros Sobre el Nivel del Mar",
+    "escena": "Un andinista sube una montaña con una regla gigante desde la playa: en Puno, a unos 3800 msnm, el aire es más delgado y la PaO2 y la SatO₂ normales son más bajas.",
+    "ancla": "msnm = metros desde la playa hacia arriba.",
+    "confusiones": [
+      "La altitud cambia los valores normales de gases y de Hb: mira siempre a cuántos msnm se tomó la muestra.",
+      "mEq: miliequivalentes, otra unidad en minúscula."
+    ],
+    "preguntas": [
+      {
+        "q": "¿Qué significa la sigla msnm?",
+        "a": "metros sobre el nivel del mar",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Con qué sigla se abrevia «metros sobre el nivel del mar»?",
+        "a": "msnm",
+        "tipo": "inversa"
+      }
+    ]
+  }
+}

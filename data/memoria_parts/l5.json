@@ -1,0 +1,1611 @@
+{
+  "ecg-papel-y-cuadritos": {
+    "id": "ecg-papel-y-cuadritos",
+    "parametro": "ECG · Papel y cuadritos",
+    "grupo": "Electrocardiograma (ECG)",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "Papel a 25 mm/s; cuadradito = 0.04 s o 1 mm; cuadrado grande (5 cuadraditos) = 0.20 s o 5 mm. Horizontal mide tiempo; vertical mide amplitud. Calibración 10 mm = 1 mV; 5 cuadrados grandes = 1 segundo.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Constantes exactas que sostienen todo el cálculo del ECG → sistema mayor. El 0. de 0.04 y 0.20 s se deduce (todo intervalo del ECG es una fracción de segundo). La calibración 10 mm = 1 mV y 5 grandes = 1 s vienen de la clave marcada como literatura (lit). Cora (corazón boxeador) es el personaje del ECG.",
+    "codigo": [
+      {
+        "numero": "25",
+        "letras": "N-LL",
+        "palabra": "anillo"
+      },
+      {
+        "numero": "04",
+        "letras": "S-RR",
+        "palabra": "zorro"
+      },
+      {
+        "numero": "20",
+        "letras": "N-S",
+        "palabra": "NASA"
+      }
+    ],
+    "escena": "En la boletería del estadio, Cora el corazón boxeador imprime boletos en un rollo de papel cuadriculado rosado que sale disparado, empujado por un ANILLO de oro que rueda a toda velocidad (25 mm/s). Por cada cuadradito cruza corriendo de lado un ZORRO diminuto: es el tiempo que avanza en horizontal (0.04 s). Cada cinco zorros llegan a un cuadrado grande donde despega un cohete de la NASA hacia arriba, rugiendo (0.20 s). Cinco cohetes seguidos y suena la campana de un segundo; lo que sube en vertical ya no es tiempo, es voltaje.",
+    "ancla": "Anillo que rueda, zorro por cuadradito, cohete NASA por cuadrado grande.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s9",
+      "n": 0,
+      "ubicacion": "Boletería"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo boxeador con guantes de box y cinturón de campeón, detrás de la ventanilla de una boletería de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo, tirando de un rollo enorme de papel cuadriculado rosado que sale volando. Acción: un anillo dorado gigante rueda empujando el papel; zorros diminutos corren en fila de izquierda a derecha sobre los cuadraditos; en un cuadrado grande despega un pequeño cohete blanco con estela de fuego hacia arriba. Composición: corazón centrado, papel en diagonal con líneas de velocidad. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Cuánto vale en tiempo un cuadradito y un cuadrado grande del ECG a 25 mm/s?",
+        "a": "Cuadradito 0.04 s (1 mm); cuadrado grande 0.20 s (5 mm)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Qué mide el eje horizontal del papel y qué mide el vertical?",
+        "a": "Horizontal: tiempo; vertical: amplitud (voltaje)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Cuántos cuadrados grandes hacen 1 segundo?",
+        "a": "5 cuadrados grandes",
+        "tipo": "cloze"
+      },
+      {
+        "q": "0.04 s y 1 mm corresponden a…",
+        "a": "Un cuadradito del papel de ECG",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false
+  },
+  "ecg-frecuencia-cardiaca": {
+    "id": "ecg-frecuencia-cardiaca",
+    "parametro": "ECG · Frecuencia cardíaca",
+    "grupo": "Electrocardiograma (ECG)",
+    "tipo_info": "rango",
+    "dato_a_recordar": "FC 60-100 lpm; 1500/cuadraditos entre 2 R o 300/cuadrados grandes entre 2 R. >100 = taquicardia sinusal (fiebre, hipoxia, anemia, hipertiroidismo, shock); <60 = bradicardia sinusal (atletas, ancianos, betabloq., IAM inferior, HTE). Usar 1500 (más preciso); ambas fórmulas solo con ritmo regular.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango y constantes de cálculo exactos → sistema mayor. 60 = choza y 100 = tazas son las mismas palabras de la FC de signos vitales. El 1500 se deduce como 300 × 5 (5 cuadraditos por cuadrado grande), así que solo se codifica 300. La secuencia 300-150-100-75-60-50 y el dato de altura son literatura (lit) y quedan en preguntas.",
+    "codigo": [
+      {
+        "numero": "60",
+        "letras": "CH-Z",
+        "palabra": "choza"
+      },
+      {
+        "numero": "100",
+        "letras": "T-Z-S",
+        "palabra": "tazas"
+      },
+      {
+        "numero": "300",
+        "letras": "M-S-S",
+        "palabra": "mesas"
+      }
+    ],
+    "escena": "En la puerta de ingreso del estadio hay una CHOZA con el techo cubierto de TAZAS: ahí vive Cora el corazón boxeador. Para contar sus latidos, el portero apila 300 MESAS y las reparte entre los cuadrados grandes que hay entre dos ondas R; si cuenta cuadraditos, las mesas se parten en cinco (1500). Cuando Cora se agita por fiebre o anemia, rompe las tazas del techo y sale corriendo (>100, taquicardia); si se queda debajo de la choza, un perezoso con lentes de atleta se le cuelga y lo frena (<60, bradicardia).",
+    "ancla": "Cora en la choza con techo de tazas; 300 mesas entre las R.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s9",
+      "n": 1,
+      "ubicacion": "Puerta de ingreso"
+    },
+    "imagen_clave": true,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo boxeador con guantes de box y cinturón de campeón saliendo a toda carrera de una choza de adobe con el techo cubierto de tazas de cerámica que se rompen y vuelan en pedazos. Acción: corre con gotas de sudor y líneas de velocidad, mientras un perezoso con lentes deportivos intenta sujetarlo de un pie. Elementos secundarios: una torre de mesas de madera apiladas junto a la puerta. Escenario: puerta de ingreso de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo. Composición: corazón centrado y grande, rojo sobre cielo azul. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Rango normal de FC en el ECG?",
+        "a": "60-100 lpm",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Cómo calculas la FC con ritmo regular?",
+        "a": "1500 ÷ cuadraditos entre 2 R (más preciso) o 300 ÷ cuadrados grandes entre 2 R",
+        "tipo": "directa"
+      },
+      {
+        "q": "Hay 3 cuadrados grandes entre dos R: ¿FC?",
+        "a": "100 lpm (secuencia 300-150-100-75-60-50)",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Cómo estimas la FC si el ritmo es irregular?",
+        "a": "QRS en 6 s × 10",
+        "tipo": "trampa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false
+  },
+  "ecg-ritmo-sinusal": {
+    "id": "ecg-ritmo-sinusal",
+    "parametro": "ECG · Ritmo sinusal",
+    "grupo": "Electrocardiograma (ECG)",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Ritmo sinusal: P + en DI, DII, aVF y − en aVR; toda P precede al QRS; PR 0.12-0.20 s. Sin P, ondas f y RR irregular = fibrilación auricular (aurícula 400-600 lpm); ritmo «irregularmente irregular», clínica: déficit de pulso.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Criterio de ritmo sinusal que se explica por piezas (qué onda, dónde es positiva, qué orden) + cifras del PR y de la FA con sistema mayor. El PR usa las mismas palabras que la entrada del intervalo PR (tina-NASA). La nota de que otros autores citan 350-450 lpm auriculares se deja fuera de la escena.",
+    "codigo": [
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      },
+      {
+        "numero": "20",
+        "letras": "N-S",
+        "palabra": "NASA"
+      },
+      {
+        "numero": "400",
+        "letras": "R-S-S",
+        "palabra": "rosas"
+      },
+      {
+        "numero": "600",
+        "letras": "CH-Z-S",
+        "palabra": "chozas"
+      }
+    ],
+    "escena": "En la tribuna de occidente, cada vez que el equipo ataca, un hincha llamado Papá P se pone de pie PRIMERO y señala con los dos brazos hacia abajo y a la izquierda (positivo en DI, DII y aVF); solo después lo sigue la ola del público (el QRS). Entre él y la ola rueda una TINA que llega a un cohete de la NASA: ese es el PR. En la tribuna de enfrente, aVR, todos lo abuchean de espaldas (P negativa). Si Papá P desaparece y la tribuna entera tiembla tirando entre 400 ROSAS y 600 CHOZAS de juguete sin ningún orden, es fibrilación auricular: la ola sale cuando quiere, irregularmente irregular.",
+    "ancla": "Papá P se para antes de cada ola; si la tribuna tiembla sin P, es FA.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s9",
+      "n": 2,
+      "ubicacion": "Tribuna de occidente"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hincha gordito y alegre con camiseta roja, de pie en la tribuna de cemento de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo, levantando los brazos antes que nadie. Acción: detrás de él empieza una ola gigante del público levantándose en orden. Elementos secundarios: una tina de metal rodando por el pasillo hacia un cohete blanco pequeño. Composición: el hincha centrado en primer plano, público multicolor detrás con líneas de movimiento ondulantes. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Qué criterios de onda P definen el ritmo sinusal?",
+        "a": "P positiva en DI, DII y aVF, negativa en aVR, y toda P precede al QRS con PR 0.12-0.20 s",
+        "tipo": "directa"
+      },
+      {
+        "q": "ECG sin ondas P, con ondas f y RR irregular: ¿diagnóstico?",
+        "a": "Fibrilación auricular",
+        "tipo": "inversa"
+      },
+      {
+        "q": "¿Qué frecuencia auricular se describe en la fibrilación auricular?",
+        "a": "400-600 lpm",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Qué hallazgo clínico del pulso acompaña a la FA?",
+        "a": "Déficit de pulso (ritmo irregularmente irregular)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#043"
+    ],
+    "revisar": false
+  },
+  "ecg-eje-electrico": {
+    "id": "ecg-eje-electrico",
+    "parametro": "ECG · Eje eléctrico",
+    "grupo": "Electrocardiograma (ECG)",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Eje normal 0° a +90° (otros: −30° a +110°); DI y aVF positivos. Derecha (+90 a +180): HVD, BCRD, longilíneo, enfisema, inspiración. Izquierda (0 a −90): HVI, BCRI, obesidad, ascitis, embarazo, espiración. Mirar DI y aVF: ambos + normal · DI + aVF − izquierda · DI − aVF + derecha · ambos − extremo. En residentes de altura el eje tiende a la derecha (+90° a +120°) por hipertrofia VD.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "La regla de DI y aVF se entiende (dos pulgares arriba = normal) y se ancla con escena; los límites con sistema mayor. El 0° no se codifica: es la horizontal. El dato de altura +90 a +120 es literatura (lit), y el ~70-75% de desviación derecha en pobladores de altura es nota de clase.",
+    "codigo": [
+      {
+        "numero": "90",
+        "letras": "P-S",
+        "palabra": "peso"
+      },
+      {
+        "numero": "120",
+        "letras": "T-N-S",
+        "palabra": "tunas"
+      }
+    ],
+    "escena": "En la pista atlética, un lanzador de PESO gira como la aguja de una brújula. Lo normal es que lance entre la horizontal (0°) y la vertical hacia abajo, donde cae el peso (+90°): dos jueces, DI y aVF, levantan el pulgar arriba. Si DI baja el pulgar, el lanzamiento se fue a la derecha (HVD, enfisema); si lo baja aVF, se fue a la izquierda (HVI, obesidad, embarazo). En Puno, el lanzador tiene el brazo derecho musculoso de tanto empujar sangre al pulmón y su peso rueda un poco más allá, hasta un montón de TUNAS que revientan jugosas (+120°).",
+    "ancla": "Lanzador de peso entre la horizontal y el peso; en altura llega a las tunas.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s9",
+      "n": 3,
+      "ubicacion": "Pista atlética"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un atleta caricaturesco con brazo derecho enorme y musculoso girando para lanzar una bola de metal pesada sobre la pista roja de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo. Acción: la bola vuela en arco hacia abajo y a la derecha y aterriza sobre un montón de tunas verdes que revientan salpicando jugo rojo. Elementos secundarios: dos jueces con el pulgar levantado a un lado de la pista. Composición: el atleta centrado, estela de movimiento circular. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Cuál es el eje eléctrico normal?",
+        "a": "0° a +90° (otros autores: −30° a +110°)",
+        "tipo": "directa"
+      },
+      {
+        "q": "DI positivo y aVF negativo: ¿hacia dónde está el eje?",
+        "a": "Desviado a la izquierda",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Hacia dónde tiende el eje en el residente de altura y por qué?",
+        "a": "A la derecha (+90° a +120°) por hipertrofia del VD",
+        "tipo": "directa"
+      },
+      {
+        "q": "Nombra dos causas de eje desviado a la derecha",
+        "a": "HVD, BCRD, longilíneo, enfisema o inspiración",
+        "tipo": "umbral"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#043"
+    ],
+    "revisar": false
+  },
+  "ecg-onda-p": {
+    "id": "ecg-onda-p",
+    "parametro": "ECG · Onda P",
+    "grupo": "Electrocardiograma (ECG)",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Onda P 0.07-0.11 s; <2.5 mm en DII; redondeada, simétrica. >2.5 mm alta y picuda: HAD (P pulmonar); >0.12 s bimodal: HAI (P mitrale). Ausente, sustituida por ondas f: fibrilación auricular.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-conceptos",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Duración y amplitud exactas → sistema mayor; el 0. de los segundos se deduce. Para el 11 se usa 'dedo' porque 'tetera' (palabra de la tabla) decodifica 114 al contar todas sus consonantes y el validador la rechaza. Pulmi (respiratorio) infla la P pulmonale para ligarla al cor pulmonar. La duración 0.06-0.11 s de 2018 queda fuera; se usa la de 2020.",
+    "codigo": [
+      {
+        "numero": "07",
+        "letras": "S-C",
+        "palabra": "saco"
+      },
+      {
+        "numero": "11",
+        "letras": "D-D",
+        "palabra": "dedo"
+      },
+      {
+        "numero": "25",
+        "letras": "N-LL",
+        "palabra": "anillo"
+      },
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      }
+    ],
+    "escena": "En el arco norte, la onda P es una lomita suave y redonda de césped que va de un SACO de pelotas a un DEDO gigante clavado en la línea de gol: no puede ser más ancha (0.07-0.11 s). Arriba, del travesaño, cuelga un ANILLO: la lomita nunca lo toca (<2.5 mm en DII). Llega Pulmi, el globo-pulmón, sopla y la lomita se estira en un pico puntiagudo que atraviesa el anillo: P pulmonale, la aurícula derecha agrandada del cor pulmonar. Luego una mitra de obispo se sienta encima y la aplasta en dos jorobas, ancha hasta salirse de una TINA: P mitrale, aurícula izquierda.",
+    "ancla": "Lomita del saco al dedo bajo el anillo; Pulmi la pica, la mitra la parte en dos.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s9",
+      "n": 4,
+      "ubicacion": "Arco norte"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo, unidos como un par de pulmones, soplando con mejillas infladas sobre una pequeña loma de césped frente al arco de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo. Acción: la loma se estira en un pico puntiagudo que sube y atraviesa un anillo dorado colgado del travesaño. Elementos secundarios: un saco de pelotas a un lado y un dedo gigante de goma clavado al otro lado de la loma. Composición: globos centrados, césped verde brillante. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Duración y amplitud normales de la onda P?",
+        "a": "0.07-0.11 s y <2.5 mm en DII",
+        "tipo": "directa"
+      },
+      {
+        "q": "P >2.5 mm, alta y picuda en DII: ¿qué indica?",
+        "a": "Hipertrofia auricular derecha (P pulmonale), p. ej. cor pulmonar crónico",
+        "tipo": "umbral"
+      },
+      {
+        "q": "P >0.12 s bimodal en «M»: ¿nombre y cámara?",
+        "a": "P mitrale: hipertrofia auricular izquierda (estenosis/insuficiencia mitral)",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#043"
+    ],
+    "revisar": false
+  },
+  "ecg-intervalo-pr": {
+    "id": "ecg-intervalo-pr",
+    "parametro": "ECG · Intervalo PR",
+    "grupo": "Electrocardiograma (ECG)",
+    "tipo_info": "rango",
+    "dato_a_recordar": "PR 0.12-0.20 s (variable con edad y FC); segmento PR isoeléctrico (±0.5 mm). >0.20 s fijo: BAV 1.er grado; alargamiento progresivo: Mobitz I (Wenckebach). Acortado en taquicardia sinusal. PR corto <0.12 s + onda delta + QRS ancho = Wolff-Parkinson-White (vía accesoria).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango exacto con dos umbrales clínicos → sistema mayor (el 0. se deduce; 0.12-0.20 s = 3 a 5 cuadraditos). Epónimos con palabra sustituta: Wenckebach → 'vengo-bache' (cada vuelta cae más atrás hasta perder un latido en el bache); Wolff → lobo (wolf) que toma un atajo. El criterio de WPW es literatura (lit). BAV 3.er grado y Stokes-Adams quedan para preguntas.",
+    "codigo": [
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      },
+      {
+        "numero": "20",
+        "letras": "N-S",
+        "palabra": "NASA"
+      }
+    ],
+    "escena": "En el círculo central, el árbitro P corre en una TINA con ruedas hacia el cohete de la NASA donde espera el QRS: el trayecto normal dura de tina a cohete (0.12-0.20 s, de 3 a 5 cuadraditos). Si la tina siempre llega tarde, pasando el cohete, es un BAV de primer grado. Si cada vuelta llega más tarde hasta que cae en un bache y se pierde un latido, grita «¡vengo-bache!»: Wenckebach. Y si un lobo (Wolff) se cuela por un atajo en rampa triangular y llega antes que la tina, el PR se acorta, aparece la onda delta y el QRS sale ancho: Wolff-Parkinson-White.",
+    "ancla": "De la tina al cohete NASA; si llega tarde, bloqueo; si el lobo toma el atajo, WPW.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s9",
+      "n": 5,
+      "ubicacion": "Círculo central"
+    },
+    "imagen_clave": true,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un árbitro caricaturesco sentado dentro de una tina de metal con ruedas, avanzando a toda velocidad por el círculo central de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo hacia un cohete blanco. Acción: la tina derrapa con chispas; al costado, un lobo gris pícaro se adelanta trepando por una rampa triangular de madera como atajo. Elementos secundarios: un bache en el césped por delante. Composición: árbitro centrado, líneas de velocidad, césped verde y cohete al fondo. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Valor normal del intervalo PR?",
+        "a": "0.12-0.20 s (3 a 5 cuadraditos)",
+        "tipo": "directa"
+      },
+      {
+        "q": "PR >0.20 s fijo en todos los latidos: ¿diagnóstico?",
+        "a": "BAV de 1.er grado",
+        "tipo": "umbral"
+      },
+      {
+        "q": "PR que se alarga progresivamente hasta que una P no conduce: ¿nombre?",
+        "a": "Mobitz I (Wenckebach)",
+        "tipo": "inversa"
+      },
+      {
+        "q": "PR <0.12 s con onda delta y QRS ancho: ¿qué sospechas?",
+        "a": "Wolff-Parkinson-White (vía accesoria)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#124"
+    ],
+    "revisar": false
+  },
+  "ecg-complejo-qrs": {
+    "id": "ecg-complejo-qrs",
+    "parametro": "ECG · Complejo QRS",
+    "grupo": "Electrocardiograma (ECG)",
+    "tipo_info": "rango",
+    "dato_a_recordar": "QRS <0.12 s; R ≤15 mm estándar y ≤25 mm precordiales; S ≤17 mm en V1-V2. >0.12 s con M (RSR') en V1-V2: bloqueo de rama; Sokolow (S V1 + R V5-V6) ≥35 mm: HVI. Bloqueo de rama derecha: M en V1; izquierda: M en V6. Bajo voltaje (QRS <5 mm en frontales): derrame pericárdico, obesidad, EPOC, hipotiroidismo.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Umbrales de duración y voltaje exactos → sistema mayor; se eligen los dos que más se preguntan (ancho 0.12 s y Sokolow 35 mm) y los límites de R. S ≤17 mm queda en dato y preguntas. Sokolow y el bajo voltaje son literatura (lit). El 12 (tina) coincide con el límite del PR: el QRS 'cabe en la tina'. La errata del libro sobre BCRI se ignora.",
+    "codigo": [
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      },
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      },
+      {
+        "numero": "25",
+        "letras": "N-LL",
+        "palabra": "anillo"
+      },
+      {
+        "numero": "35",
+        "letras": "M-L",
+        "palabra": "miel"
+      }
+    ],
+    "escena": "En el arco sur, Cora el corazón boxeador dispara un rayo-patada (el QRS) tan angosto que cabe dentro de una TINA (<0.12 s). Su salto no pasa de una TELE en el campo (R ≤15 mm) ni de un ANILLO colgado en el travesaño de los precordiales (≤25 mm). Si el rayo se ensancha y se parte en orejas de conejo en forma de M, ya no cabe en la tina: bloqueo de rama, derecha si la M aparece en V1, izquierda si aparece en V6. Y si sumas la S de V1 con la R de V5 y el rayo llega hasta un frasco de MIEL (≥35 mm), el ventrículo izquierdo de Cora es un músculo gigante: HVI.",
+    "ancla": "El rayo de Cora cabe en la tina; si toca la miel, HVI; si sale en M, bloqueo.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s9",
+      "n": 6,
+      "ubicacion": "Arco sur"
+    },
+    "imagen_clave": true,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo boxeador con guantes de box y cinturón de campeón, con un brazo izquierdo hipermusculoso, pateando un balón que sale como un rayo eléctrico amarillo y angosto hacia el arco de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo. Acción: el rayo pasa justo dentro de una tina de metal colocada frente al arco y salpica un frasco de miel dorada colgado en lo alto. Elementos secundarios: un televisor viejo sobre el césped y un anillo dorado colgado del travesaño. Composición: corazón centrado y grande. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Duración normal del QRS?",
+        "a": "<0.12 s",
+        "tipo": "directa"
+      },
+      {
+        "q": "QRS >0.12 s con M (RSR') en V1: ¿diagnóstico?",
+        "a": "Bloqueo de rama derecha",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Qué es el índice de Sokolow y qué indica si es ≥35 mm?",
+        "a": "S de V1 + R de V5-V6; ≥35 mm = hipertrofia del VI",
+        "tipo": "umbral"
+      },
+      {
+        "q": "QRS <5 mm en derivaciones frontales: ¿cómo se llama y una causa?",
+        "a": "Bajo voltaje: derrame pericárdico, obesidad, EPOC o hipotiroidismo",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false
+  },
+  "ecg-onda-q-patologica": {
+    "id": "ecg-onda-q-patologica",
+    "parametro": "ECG · Onda Q patológica",
+    "grupo": "Electrocardiograma (ECG)",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "Q normal ≤3 mm de profundidad y ≤0.04 s de ancho (salvo DIII). Q profunda/ancha: necrosis (infarto transmural). La Q, una vez aparecida, persiste de por vida; infarto subendocárdico sin Q. Localiza el infarto: DII-DIII-aVF inferior · V1-V4 anteroseptal · DI-aVL-V5-V6 lateral.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Dos umbrales exactos → sistema mayor: 3 mm con 'humo' (un dígito, fuera de la tabla 00-99) y 0.04 s con 'zorro' (04, el mismo del cuadradito: la Q normal no pasa de un cuadradito). La regla de localización va en preguntas. El 'baja' de la fila es literatura y no aplica.",
+    "codigo": [
+      {
+        "numero": "3",
+        "letras": "M",
+        "palabra": "humo"
+      },
+      {
+        "numero": "04",
+        "letras": "S-RR",
+        "palabra": "zorro"
+      }
+    ],
+    "escena": "En la banca de suplentes, un ZORRO cava un hoyito en el césped: normal es que no sea más ancho que él mismo (0.04 s, un cuadradito) ni más hondo que una voluta de HUMO que sale de adentro (≤3 mm). Pero tras el infarto llega una excavadora y abre un pozo hondo y ancho que huele a tierra quemada: es la Q de necrosis, el músculo muerto. Le ponen una lápida al lado porque ese pozo ya no se tapa nunca: la Q persiste de por vida.",
+    "ancla": "Hoyito del zorro con humo = normal; pozo con lápida = necrosis para siempre.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s9",
+      "n": 7,
+      "ubicacion": "Banca de suplentes"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un zorro naranja con casco de minero junto a la banca de suplentes de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo, mirando con ojos enormes de susto un pozo profundo y ancho recién abierto en el césped. Acción: del pozo sale una columna de humo gris y una pequeña excavadora amarilla sigue cavando. Elementos secundarios: una lápida de piedra gris clavada al borde del pozo. Composición: zorro centrado en primer plano, banca azul detrás. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Hasta qué profundidad y ancho se considera normal la onda Q?",
+        "a": "≤3 mm de profundidad y ≤0.04 s de ancho (salvo DIII)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Q profunda y ancha en DII, DIII y aVF: ¿qué indica y dónde?",
+        "a": "Necrosis (infarto transmural) de cara inferior",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Desaparece la Q patológica con el tiempo?",
+        "a": "No, persiste de por vida",
+        "tipo": "trampa"
+      },
+      {
+        "q": "¿Qué derivaciones muestran el infarto anteroseptal?",
+        "a": "V1-V4",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false
+  },
+  "ecg-segmento-st": {
+    "id": "ecg-segmento-st",
+    "parametro": "ECG · Segmento ST",
+    "grupo": "Electrocardiograma (ECG)",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "ST isoeléctrico entre punto J e inicio de T; desnivel >0.5 mm es patológico. Supradesnivel: lesión subepicárdica (fase aguda del IAM, hasta 10 mm). Infradesnivel: lesión subendocárdica; imagen en espejo de IAM dorsal en V1-V3. Isquemia → T; lesión → ST; necrosis → Q (reversibles solo T y ST). IAM con ST elevado: ≥1 mm en 2 derivaciones contiguas (≥2 mm en V2-V3) → reperfundir ya.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Concepto clave del infarto: la línea sube o baja según la capa lesionada → escena de una barra que se mueve; el umbral 0.5 mm con sistema mayor (05 = sol). La tríada isquemia-lesión-necrosis va con acrónimo en orden de gravedad. El criterio de IAMCEST (≥1 / ≥2 mm) es literatura (lit) y queda en preguntas.",
+    "codigo": [
+      {
+        "numero": "05",
+        "letras": "S-L",
+        "palabra": "sol"
+      }
+    ],
+    "escena": "En el marcador del estadio, una barra luminosa marca la línea del ST: debe estar quieta a ras del suelo. Si el SOL de la tarde la levanta más de medio milímetro, ya es patológico (>0.5 mm). Cuando Cora recibe un golpe en la piel externa del corazón, la barra salta hacia arriba como bandera de alarma con sirena: supradesnivel, lesión subepicárdica, ¡reperfundir ya! Si el golpe es por dentro, la barra se hunde: infradesnivel, subendocárdica. Abajo, tres luces se encienden en orden: la T se enciende con la isquemia, el ST con la lesión y la Q con la necrosis, y solo las dos primeras pueden apagarse.",
+    "ancla": "Barra del marcador a ras; si el sol la sube, alarma: lesión. I-L-N = T-ST-Q.",
+    "acronimo": "ILN = Isquemia → T · Lesión → ST · Necrosis → Q (en orden de gravedad; reversibles solo T y ST)",
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s9",
+      "n": 8,
+      "ubicacion": "Marcador"
+    },
+    "imagen_clave": true,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo boxeador con guantes de box y cinturón de campeón, colgado del marcador gigante de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo, con un moretón en la pared externa y cara de alarma. Acción: una barra luminosa verde del marcador salta bruscamente hacia arriba como una bandera, con sirenas rojas girando. Elementos secundarios: un sol naranja intenso detrás del marcador y tres focos redondos en fila debajo. Composición: corazón y barra centrados, cielo de atardecer. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Desde cuántos mm de desnivel del ST es patológico?",
+        "a": ">0.5 mm",
+        "tipo": "directa"
+      },
+      {
+        "q": "Supradesnivel del ST: ¿qué capa está lesionada y en qué fase del IAM?",
+        "a": "Lesión subepicárdica, fase aguda del IAM",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Qué onda corresponde a isquemia, lesión y necrosis?",
+        "a": "Isquemia → T; lesión → ST; necrosis → Q",
+        "tipo": "lista"
+      },
+      {
+        "q": "¿Criterio de IAM con ST elevado?",
+        "a": "≥1 mm en 2 derivaciones contiguas (≥2 mm en V2-V3) → reperfundir",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#143",
+      "#043"
+    ],
+    "revisar": false
+  },
+  "ecg-onda-t": {
+    "id": "ecg-onda-t",
+    "parametro": "ECG · Onda T",
+    "grupo": "Electrocardiograma (ECG)",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Onda T 5-10 mm, asimétrica; + en DI, DII, aVF, V3-V6; − en aVR. Positiva, alta y simétrica: isquemia subendocárdica. Negativa, simétrica, puntiaguda: isquemia subepicárdica; T invertida en HVI/BCR. T sigue la dirección del QRS; T negativa aislada en aVR, V1 o DIII puede ser normal.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-conceptos",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Amplitud exacta con sistema mayor: 5 con 'ola' (un dígito, fuera de la tabla 00-99) y 10 con 'taza'. La clave de la T normal es su asimetría (sube lenta y baja rápida): se ancla con una toalla colgada (T = toalla). La regla 'T sigue al QRS' es literatura (lit). La nota de Fisiología sobre T picuda en hiperpotasemia queda fuera.",
+    "codigo": [
+      {
+        "numero": "5",
+        "letras": "L",
+        "palabra": "ola"
+      },
+      {
+        "numero": "10",
+        "letras": "T-S",
+        "palabra": "taza"
+      }
+    ],
+    "escena": "En los camerinos, Cora el corazón cuelga su TOALLA (la onda T) en el tendedero: sube despacio y cae rápido, torcida, asimétrica, y su altura queda entre una OLA de la ducha y una TAZA de mate en la repisa (5-10 mm). Si la toalla se pone tiesa, alta y perfectamente simétrica como carpa de circo, el corazón sufre por dentro: isquemia subendocárdica. Si se da vuelta hacia abajo, simétrica y puntiaguda como colmillo, la isquemia es subepicárdica. En aVR la toalla siempre cuelga al revés y es normal.",
+    "ancla": "Toalla torcida entre la ola y la taza; si se vuelve carpa o colmillo, isquemia.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s9",
+      "n": 9,
+      "ubicacion": "Camerinos"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un corazón rojo boxeador con guantes de box y cinturón de campeón en el camerino de un estadio, colgando una toalla roja en un tendedero. Acción: la toalla cuelga torcida, subiendo suave por un lado y cayendo de golpe por el otro, mientras salpica agua de una ducha que forma una ola. Elementos secundarios: una taza humeante sobre una repisa a la altura de la toalla. Composición: corazón centrado, azulejos blancos y bancas de madera. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Amplitud y forma normales de la onda T?",
+        "a": "5-10 mm, asimétrica",
+        "tipo": "directa"
+      },
+      {
+        "q": "T positiva, alta y simétrica: ¿qué indica?",
+        "a": "Isquemia subendocárdica",
+        "tipo": "umbral"
+      },
+      {
+        "q": "T negativa, simétrica y puntiaguda: ¿qué indica?",
+        "a": "Isquemia subepicárdica",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿En qué derivaciones una T negativa aislada puede ser normal?",
+        "a": "aVR, V1 o DIII",
+        "tipo": "trampa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#043"
+    ],
+    "revisar": false
+  },
+  "ecg-intervalo-qt": {
+    "id": "ecg-intervalo-qt",
+    "parametro": "ECG · Intervalo QT",
+    "grupo": "Electrocardiograma (ECG)",
+    "tipo_info": "rango",
+    "dato_a_recordar": "QT 0.34-0.44 s (inicio QRS a fin de T); inverso a la FC: a mayor FC, menor QT. QTc (Bazett) = QT ÷ √RR; largo >440 ms varón, >460 ms mujer; riesgo de torsades. Prolongan (Fisiología): hipoK, hipoMg, hipoCa, fármacos; acorta: hipercalcemia.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango y cortes de QTc exactos → sistema mayor (el 0. de 0.34-0.44 s se deduce). Coincidencia útil: 0.44 s = 440 ms, así que 'aurora' sirve para el límite normal y para el corte del varón; la mujer suma un poco más, 460 = rejas (3 dígitos, fuera de la tabla). Las causas de sube/baja son de Fisiología, no de Semiología, y van solo en preguntas. QT 0.25-0.40 s de 2018 queda fuera.",
+    "codigo": [
+      {
+        "numero": "34",
+        "letras": "M-R",
+        "palabra": "muro"
+      },
+      {
+        "numero": "44",
+        "letras": "R-R",
+        "palabra": "aurora"
+      },
+      {
+        "numero": "460",
+        "letras": "R-J-S",
+        "palabra": "rejas"
+      }
+    ],
+    "escena": "En la tribuna de oriente, el QT es una bandera larga que va de un MURO de piedra a una AURORA de luces de colores (0.34-0.44 s). Cuando Cora el corazón corre más rápido, la bandera se encoge, y cuando descansa se alarga: el QT va al revés de la FC. Si la bandera pasa la aurora en un varón (>440 ms) o pasa unas REJAS en una mujer (>460 ms), empieza a retorcerse como una bailarina girando sobre sus puntas: torsades de pointes, el peligro del QT largo.",
+    "ancla": "Bandera del muro a la aurora; si pasa las rejas, la bailarina se retuerce.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s9",
+      "n": 10,
+      "ubicacion": "Tribuna de oriente"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una bailarina de ballet caricaturesca girando sobre la punta de un pie en lo alto de la tribuna de estadio de fútbol andino de altura con tribunas de cemento y cerros secos al fondo, envuelta en una bandera larguísima que se retuerce en espiral. Acción: la bandera se estira desde un muro de piedra gris hasta un cielo nocturno con una aurora de luces verdes y violetas. Elementos secundarios: unas rejas de hierro detrás de la bailarina. Composición: bailarina centrada con espirales de movimiento. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Valor normal del intervalo QT?",
+        "a": "0.34-0.44 s",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Qué pasa con el QT cuando sube la FC?",
+        "a": "Se acorta (relación inversa)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Desde qué QTc se considera largo en varón y en mujer?",
+        "a": ">440 ms varón; >460 ms mujer",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Qué arritmia amenaza en el QT largo?",
+        "a": "Torsades de pointes",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false
+  },
+  "gases-ph-arterial": {
+    "id": "gases-ph-arterial",
+    "parametro": "Gases · pH arterial",
+    "grupo": "Gases arteriales y ácido-base",
+    "tipo_info": "rango",
+    "dato_a_recordar": "pH arterial 7.35 - 7.45. >7.45 = alcalosis; <7.35 = acidosis; acidosis metabólica grave <7.22. Aclimatado a la altura: pH normal o levemente alcalino (7.40-7.46). ROME: respiratorio opuesto (pH y PaCO2 en sentido contrario), metabólico igual (pH y HCO3 mismo sentido).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango con decimales: el 7 se deduce (todo pH compatible con la vida es 7,xx) y se codifican 35 y 45 (miel-rulo, como en el ejemplo del skill). El valor del aclimatado 7.40-7.46 viene del campo altura, que es literatura (lit): 40 = rosa, 46 = rojo. ROME (lit) va como acrónimo. Personaje: Balanza pH.",
+    "codigo": [
+      {
+        "numero": "35",
+        "letras": "M-L",
+        "palabra": "miel"
+      },
+      {
+        "numero": "45",
+        "letras": "R-L",
+        "palabra": "rulo"
+      },
+      {
+        "numero": "40",
+        "letras": "R-S",
+        "palabra": "rosa"
+      },
+      {
+        "numero": "46",
+        "letras": "R-J",
+        "palabra": "rojo"
+      }
+    ],
+    "escena": "En la lancha del muelle, Balanza pH, la balanza viva de dos platos con cara y ojos, viaja muy erguida: en el plato izquierdo lleva un frasco de MIEL y en el derecho a una señora con RULOS. Si la aguja cae por debajo de la miel, un limón gigante le escupe ácido en la cara (<7.35, acidosis); si sube por encima de los rulos, la señora resbala en jabón y espuma (>7.45, alcalosis). Cuando la lancha llega a Puno, el aire de altura la inclina apenas hacia el jabón: ahora se equilibra entre una ROSA y una flor ROJA (7.40-7.46 en el aclimatado). En el timón, un letrero de ROMA le recuerda: respiratorio opuesto, metabólico igual.",
+    "ancla": "Balanza pH entre la miel y los rulos; en Puno, entre la rosa y el rojo.",
+    "acronimo": "ROME = Respiratorio Opuesto (pH y PaCO2 en sentido contrario), Metabólico Igual (pH y HCO3 en el mismo sentido)",
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s11",
+      "n": 0,
+      "ubicacion": "Lancha en el muelle"
+    },
+    "imagen_clave": true,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una balanza de laboratorio de dos platos con cara, ojos grandes y brazos, de pie en la proa de una lancha de madera junto a un muelle de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: en el plato izquierdo sostiene un frasco de miel dorada que gotea y en el derecho una señora diminuta con rulos rosados que resbala sobre espuma de jabón. Elementos secundarios: un limón gigante con cara enojada escupiendo chorros desde el agua. Composición: balanza centrada y grande, lago azul y cielo limpio. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿pH arterial normal?",
+        "a": "7.35-7.45",
+        "tipo": "directa"
+      },
+      {
+        "q": "pH 7.30: ¿acidosis o alcalosis?",
+        "a": "Acidosis (<7.35)",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Qué pH tiene el residente aclimatado a la altura?",
+        "a": "Normal o levemente alcalino (7.40-7.46)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Qué significa ROME?",
+        "a": "Respiratorio opuesto (pH y PaCO2 contrarios), metabólico igual (pH y HCO3 en el mismo sentido)",
+        "tipo": "explica"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#143"
+    ],
+    "revisar": false
+  },
+  "gases-pao2": {
+    "id": "gases-pao2",
+    "parametro": "Gases · PaO2",
+    "grupo": "Gases arteriales y ácido-base",
+    "tipo_info": "rango",
+    "dato_a_recordar": "PaO2 80 - 100 mmHg (nivel del mar). <60 mmHg = hipoxemia (EAP de altura: PO2 <60 mmHg). Hiperoxemia: oxígeno suplementario, hiperventilación. Puno (barómetro ≈480 mmHg): PaO2 normal ≈50-60; alveolar = 0.21 × (480 − 47) − PaCO2 ÷ 0.8. Guyton: PO2 alveolar 67 mmHg a 3048 m (aclimatado 77).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango y umbral exactos → sistema mayor (80 = vaso, 100 = tazas, 60 = choza); el valor de Puno 50-60 se ancla con losa-choza. El dato de Puno viene de la clave, marcada como literatura (lit), mientras que el campo altura dice 'a 3800 m SIN DATO': por eso se marca revisar. Personaje: Pulmi (respiratorio), porque la PaO2 es la entrada de oxígeno.",
+    "codigo": [
+      {
+        "numero": "80",
+        "letras": "V-S",
+        "palabra": "vaso"
+      },
+      {
+        "numero": "100",
+        "letras": "T-Z-S",
+        "palabra": "tazas"
+      },
+      {
+        "numero": "60",
+        "letras": "CH-Z",
+        "palabra": "choza"
+      },
+      {
+        "numero": "50",
+        "letras": "L-S",
+        "palabra": "losa"
+      }
+    ],
+    "escena": "En el canal de totora, Pulmi el globo-pulmón rema en un caballito y va llenando de oxígeno burbujeante una fila de recipientes: a nivel del mar los llena de un VASO hasta una pila de TAZAS (80-100 mmHg). Si el oxígeno no alcanza ni para llenar la CHOZA de la orilla, Pulmi se pone azul y jadea: hipoxemia (<60). Pero aquí, en Puno, el aire es tan delgado que Pulmi solo llena desde una LOSA de piedra hasta la puerta de esa misma choza (≈50-60 mmHg), y aun así sigue remando tranquilo porque está aclimatado.",
+    "ancla": "Pulmi llena del vaso a las tazas; en Puno, de la losa a la choza.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s11",
+      "n": 1,
+      "ubicacion": "Canal de totora"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo, unidos como pulmones, remando en una balsa de totora por un canal entre juncos dorados de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: soplan burbujas de aire brillante que llenan un vaso de vidrio y una pila de tazas sobre la balsa. Elementos secundarios: en la orilla, una choza de totora con una losa de piedra plana en la entrada. Composición: globos centrados, agua azul con reflejos. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿PaO2 normal a nivel del mar?",
+        "a": "80-100 mmHg",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Desde qué PaO2 se habla de hipoxemia?",
+        "a": "<60 mmHg",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿PaO2 normal aproximada en Puno (barómetro ≈480 mmHg)?",
+        "a": "≈50-60 mmHg",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Cómo se calcula la PO2 alveolar en Puno?",
+        "a": "0.21 × (480 − 47) − PaCO2 ÷ 0.8",
+        "tipo": "explica"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": true
+  },
+  "gases-paco2": {
+    "id": "gases-paco2",
+    "parametro": "Gases · PaCO2",
+    "grupo": "Gases arteriales y ácido-base",
+    "tipo_info": "rango",
+    "dato_a_recordar": "PaCO2 40 mmHg (36-44). >45 mmHg = acidosis respiratoria (hipoventilación); <35 mmHg = alcalosis respiratoria; <20 baja flujo cerebral hasta 1/3. Hiperventilación de altura baja la PCO2 (EAP de altura <30). Cada 10 mmHg de cambio agudo en PaCO2 mueve el pH ≈0.08 (crónico ≈0.03).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Normal y umbrales exactos → sistema mayor. Truco: los umbrales 35 y 45 son los mismos dígitos del pH (miel y rulo), pero en mmHg y al revés: CO2 alto = ácido. 40 = rosa (media). El rango 36-44 queda en el dato y en preguntas. La regla de 0.08/0.03 es literatura (lit). Personaje: Balanza pH con Pulmi soplando el CO2.",
+    "codigo": [
+      {
+        "numero": "40",
+        "letras": "R-S",
+        "palabra": "rosa"
+      },
+      {
+        "numero": "35",
+        "letras": "M-L",
+        "palabra": "miel"
+      },
+      {
+        "numero": "45",
+        "letras": "R-L",
+        "palabra": "rulo"
+      }
+    ],
+    "escena": "Al llegar a la isla, Pulmi el globo-pulmón exhala humo gris de CO2 sobre una ROSA que sostiene Balanza pH: lo normal es que el humo la envuelva justo (40 mmHg). Si Pulmi se cansa y respira poco, el humo se acumula, chamusca los RULOS de la señora y el plato se hunde en ácido (>45, acidosis respiratoria). Si Pulmi sopla como loco, el humo desaparece, la MIEL queda al aire y la balanza se levanta hacia la alcalosis (<35). Ojo, al revés que el pH: aquí lo alto es ácido. Los isleños que llegan a la altura soplan tanto que el humo casi no se ve.",
+    "ancla": "Humo de Pulmi sobre la rosa; mucho humo quema los rulos (ácido), poco deja la miel (alcalino).",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s11",
+      "n": 2,
+      "ubicacion": "Llegada a la isla"
+    },
+    "imagen_clave": true,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo, unidos como pulmones, soplando con fuerza una nube de humo gris sobre la llegada a isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: el humo envuelve una rosa roja que sostiene una balanza de dos platos con cara y ojos; en un plato una señora diminuta con rulos tose con el pelo chamuscado. Elementos secundarios: un frasco de miel en el otro plato. Composición: Pulmi a la izquierda, balanza centrada, totora dorada y lago azul. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿PaCO2 normal?",
+        "a": "40 mmHg (36-44)",
+        "tipo": "directa"
+      },
+      {
+        "q": "PaCO2 >45 mmHg: ¿qué trastorno y por qué mecanismo?",
+        "a": "Acidosis respiratoria por hipoventilación",
+        "tipo": "umbral"
+      },
+      {
+        "q": "PaCO2 <35 mmHg: ¿qué trastorno?",
+        "a": "Alcalosis respiratoria",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Cuánto mueve el pH un cambio agudo de 10 mmHg de PaCO2?",
+        "a": "≈0.08 (crónico ≈0.03)",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false
+  },
+  "gases-hco3": {
+    "id": "gases-hco3",
+    "parametro": "Gases · HCO3−",
+    "grupo": "Gases arteriales y ácido-base",
+    "tipo_info": "rango",
+    "dato_a_recordar": "HCO3− 22 - 26 mEq/L (media 24). >26 = alcalosis metabólica; ↑ en acidosis respiratoria crónica. <24 = acidosis metabólica; grave <9-10. Puno: HCO3 aprox. 19-22 mEq/L (compensación renal de la alcalosis respiratoria); residente de altura: PaCO2 ≈30 por hiperventilación y HCO3 compensador más bajo (≈20-22). Déficit = 0.5 × peso (kg) × (24 − HCO3 actual); pasar en 3-4 h.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango, media y valor de Puno exactos → sistema mayor: 22 = niño, 26 = nacho (en singular, porque 'nachos' decodifica 260 al contar la S), 24 = noria, 19 = topo. El valor de Puno es literatura (lit). Se marca revisar porque la fila pone el umbral de acidosis metabólica en <24, por encima del límite inferior del rango (22); se copió tal cual.",
+    "codigo": [
+      {
+        "numero": "22",
+        "letras": "N-Ñ",
+        "palabra": "niño"
+      },
+      {
+        "numero": "26",
+        "letras": "N-CH",
+        "palabra": "nacho"
+      },
+      {
+        "numero": "24",
+        "letras": "N-R",
+        "palabra": "noria"
+      },
+      {
+        "numero": "19",
+        "letras": "T-P",
+        "palabra": "topo"
+      }
+    ],
+    "escena": "Sobre el piso esponjoso de totora, un NIÑO y un NACHO gigante saltan cada uno en una punta, y en el medio gira una NORIA de bicarbonato blanco (22-26, media 24). Si el nacho echa demasiado polvo de bicarbonato y hace espuma, la balanza se va a la alcalosis metabólica (>26); si la noria se frena y se vacía, la acidosis metabólica asoma. En Puno, Frijo el frijol bombero tira bicarbonato al lago para compensar la respiración agitada, y desde abajo un TOPO asoma por la totora hasta alcanzar los pies del niño: el HCO3 del puneño vive entre el topo y el niño (≈19-22).",
+    "ancla": "Niño, noria y nacho sobre la totora; en Puno, del topo al niño.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s11",
+      "n": 3,
+      "ubicacion": "Piso de totora"
+    },
+    "imagen_clave": true,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un niño alegre con chullo andino saltando sobre un piso esponjoso de totora en isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: frente a él, un nacho de maíz gigante con cara rebota soltando polvo blanco que hace espuma, y entre ambos gira una pequeña noria de feria. Elementos secundarios: un topo asoma la cabeza entre los juncos a los pies del niño, y un frijol café con manguera tira polvo blanco al agua. Composición: niño centrado, colores dorado y azul. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿HCO3− normal?",
+        "a": "22-26 mEq/L (media 24)",
+        "tipo": "directa"
+      },
+      {
+        "q": "HCO3 >26 mEq/L: ¿qué trastorno?",
+        "a": "Alcalosis metabólica (también sube en acidosis respiratoria crónica)",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿HCO3 aproximado del residente de Puno y por qué?",
+        "a": "≈19-22 mEq/L: compensación renal de la alcalosis respiratoria por hiperventilación",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Fórmula del déficit de bicarbonato?",
+        "a": "0.5 × peso (kg) × (24 − HCO3 actual); pasar en 3-4 h",
+        "tipo": "directa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": true
+  },
+  "gases-exceso-de-base": {
+    "id": "gases-exceso-de-base",
+    "parametro": "Gases · Exceso de base",
+    "grupo": "Gases arteriales y ácido-base",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Exceso de base +2.5 a −2.5. >+2.5: alcalosis metabólica (vómitos, diuréticos, bicarbonato); <−2.5: acidosis metabólica (cetoacidosis, láctica, diarrea, IRC). Déficit de HCO3 ≈ 0.3 × kg × EB.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Un solo número simétrico (±2.5) → sistema mayor con 25 = anillo; el signo se vuelve posición (arriba/abajo). Sube, baja y la fórmula del déficit son literatura (lit). La página de Fisiología que da −2 a +2 queda fuera.",
+    "codigo": [
+      {
+        "numero": "25",
+        "letras": "N-LL",
+        "palabra": "anillo"
+      }
+    ],
+    "escena": "En la casa de totora, Balanza pH lleva dos ANILLOS iguales: uno colgado del techo (+2.5) y otro enterrado en el piso (−2.5); entre ambos el exceso de base está tranquilo. Si alguien vomita en la casa o se toma un diurético, las bases suben, atraviesan el anillo del techo y salen como burbujas de jabón: alcalosis metabólica. Si un niño con diarrea o un diabético en cetoacidosis se sienta encima, las bases se hunden y pasan por el anillo del piso hacia el lago ácido: acidosis metabólica.",
+    "ancla": "Un anillo en el techo y otro en el piso: ±2.5.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s11",
+      "n": 4,
+      "ubicacion": "Casa de totora"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una balanza de dos platos con cara y ojos dentro de una casa de totora de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado, mirando hacia arriba con sorpresa. Acción: burbujas de jabón brillantes suben y atraviesan un anillo dorado colgado del techo, mientras otro anillo dorado igual brilla en el piso de juncos. Composición: balanza centrada entre los dos anillos, paredes doradas y luz cálida por la puerta. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Exceso de base normal?",
+        "a": "+2.5 a −2.5",
+        "tipo": "directa"
+      },
+      {
+        "q": "EB de −6: ¿qué trastorno sugiere?",
+        "a": "Acidosis metabólica (<−2.5)",
+        "tipo": "umbral"
+      },
+      {
+        "q": "EB >+2.5: nombra dos causas",
+        "a": "Vómitos, diuréticos o bicarbonato (alcalosis metabólica)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false
+  },
+  "gases-sato2-arterial": {
+    "id": "gases-sato2-arterial",
+    "parametro": "Gases · SatO2 arterial",
+    "grupo": "Gases arteriales y ácido-base",
+    "tipo_info": "rango",
+    "dato_a_recordar": "SatO2 arterial 95 - 98% a nivel del mar. Docente: 90% 'en nuestro medio'; Guyton 3048 m: 90% (aclimatado 92%). Cor pulmonale crónico en altura: <80% hasta 55%. SatO2 baja → EPO → eritrocitosis; si es desproporcionada, trombosis. Regla 40-50-60 → 70-80-90: PaO2 40 ≈ Sat 70% · 50 ≈ 80% · 60 ≈ 90%.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango y valor de altura exactos → sistema mayor: 95 = pala, 98 = pavo, 90 = peso, 80 = vaso. El 90% de 'nuestro medio' es del docente. La regla 40-50-60 → 70-80-90 es literatura (lit) y se pregunta aparte: se deduce sumando 30. Personaje: Los Glóbulos, porque la saturación es la hemoglobina cargada de oxígeno.",
+    "codigo": [
+      {
+        "numero": "95",
+        "letras": "P-L",
+        "palabra": "pala"
+      },
+      {
+        "numero": "98",
+        "letras": "P-V",
+        "palabra": "pavo"
+      },
+      {
+        "numero": "90",
+        "letras": "P-S",
+        "palabra": "peso"
+      },
+      {
+        "numero": "80",
+        "letras": "V-S",
+        "palabra": "vaso"
+      }
+    ],
+    "escena": "En la torre de vigía de la isla, Los Glóbulos, soldados rojos con casco, suben cargando oxígeno. A nivel del mar cada uno sube con una PALA llena y un PAVO bajo el brazo (95-98%). Aquí en Puno solo pueden con un PESO de bronce (90%), y como les falta aire, el riñón les manda más compañeros por la escalera: la EPO fabrica más glóbulos (eritrocitosis). Si alguno ya no puede ni con un VASO de agua y se pone morado (<80%), es el cor pulmonale crónico de altura.",
+    "ancla": "Glóbulos con pala y pavo al nivel del mar; en Puno, con el peso.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s11",
+      "n": 5,
+      "ubicacion": "Torre de vigía"
+    },
+    "imagen_clave": true,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un glóbulo rojo redondo con casco militar trepando la escalera de una torre de vigía de totora en isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado, sudando y cargando una pesa de bronce. Acción: detrás de él suben en fila muchos glóbulos rojos iguales, uno con una pala llena y otro abrazando un pavo. Elementos secundarios: un glóbulo morado y agotado sentado al pie de la torre con un vaso de agua. Composición: glóbulo centrado, cielo azul intenso. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿SatO2 arterial normal a nivel del mar?",
+        "a": "95-98%",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿SatO2 esperada 'en nuestro medio' (Puno) según el docente?",
+        "a": "90%",
+        "tipo": "directa"
+      },
+      {
+        "q": "Residente de altura con SatO2 de 70%: ¿qué cuadro sospechas?",
+        "a": "Cor pulmonale crónico de altura (<80%, hasta 55%)",
+        "tipo": "caso"
+      },
+      {
+        "q": "Según la regla 40-50-60, ¿qué SatO2 corresponde a una PaO2 de 60?",
+        "a": "≈90% (40 → 70, 50 → 80, 60 → 90)",
+        "tipo": "cloze"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false
+  },
+  "gases-anion-gap": {
+    "id": "gases-anion-gap",
+    "parametro": "Gases · Anión gap",
+    "grupo": "Gases arteriales y ácido-base",
+    "tipo_info": "formula",
+    "dato_a_recordar": "Anión gap 8 - 16 mEq/L; Na − (HCO3 + Cl) = 144 − 24 − 108 = 12. Sube: cetoacidosis, láctica, IRC, AAS, metanol/etilenglicol, ayuno. AG normal (hiperclorémica): diarrea, ATR, acetazolamida, Addison. AG bajo: hipoalbuminemia (cada 1 g/dL de albúmina baja ~2.5 el AG), mieloma. AG corregido = AG + 2.5 × (4 − albúmina).",
+    "tecnicas": [
+      "mnemotecnia",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Fórmula con rango: la operación se ancla con una escena (sodio menos sus dos compañeros = el hueco) y el rango con sistema mayor: 8 = uva (un dígito, como en el ejemplo de Glasgow del skill), 16 = teja, 12 = tina (el valor típico). Las 6 causas de AG alto van en acrónimo CALIMA (lista corta sin orden). Solo viene de Guyton (Fisiología); el AG bajo y el corregido son literatura (lit).",
+    "codigo": [
+      {
+        "numero": "8",
+        "letras": "V",
+        "palabra": "uva"
+      },
+      {
+        "numero": "16",
+        "letras": "T-J",
+        "palabra": "teja"
+      },
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      }
+    ],
+    "escena": "En el caballito de totora sube el gran Sodio, un salero gigante; con él suben sus dos amigos, el Bicarbonato y el Cloro, pero no ocupan todos los asientos. El hueco que queda (Na menos bicarbonato y cloro) es el anión gap: cabe desde una UVA hasta una TEJA (8-16), y lo típico es que quepa justo una TINA (12). Cuando el hueco crece, una CALIMA espesa cubre el lago: Cetoacidosis, AAS, Láctica, IRC, Metanol y Ayuno se cuelan entre los juncos. Si la albúmina se escapa nadando, el hueco parece pequeño y engaña.",
+    "ancla": "Sodio menos sus dos amigos = hueco de la uva a la teja; si crece, cae la CALIMA.",
+    "acronimo": "CALIMA = Cetoacidosis, AAS, Láctica, IRC, Metanol/etilenglicol, Ayuno (causas de anión gap alto)",
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s11",
+      "n": 6,
+      "ubicacion": "Balsa de totora (caballito)"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un salero gigante con cara orgullosa, sentado en la proa de una balsa de totora en forma de caballito sobre el lago de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: dos compañeros pequeños, una burbuja blanca y una gota verde, se sientan a su lado dejando un asiento vacío en el centro, donde hay una tina de metal. Elementos secundarios: una uva morada y una teja de barro flotando junto a la balsa; una neblina espesa se acerca desde el fondo. Composición: salero centrado, lago azul. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Fórmula y valor normal del anión gap?",
+        "a": "Na − (HCO3 + Cl); normal 8-16 mEq/L (típico 144 − 24 − 108 = 12)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Causas de acidosis con anión gap alto?",
+        "a": "CALIMA: cetoacidosis, AAS, láctica, IRC, metanol/etilenglicol, ayuno",
+        "tipo": "lista"
+      },
+      {
+        "q": "Acidosis metabólica por diarrea: ¿cómo está el anión gap?",
+        "a": "Normal (acidosis hiperclorémica)",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Cómo afecta la hipoalbuminemia al anión gap?",
+        "a": "Lo baja ~2.5 por cada 1 g/dL de albúmina; corregido = AG + 2.5 × (4 − albúmina)",
+        "tipo": "trampa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#143"
+    ],
+    "revisar": false
+  },
+  "gases-acidosis-metabolica": {
+    "id": "gases-acidosis-metabolica",
+    "parametro": "Gases · Acidosis metabólica",
+    "grupo": "Gases arteriales y ácido-base",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Acidosis metabólica: pH <7.35 + HCO3 <24; PaCO2 baja por compensación. Respiración de Kussmaul. Causas: cetoacidosis, láctica, alcohol, shock, diarrea, IRC, ATR, fármacos. Winter: PaCO2 esperada = 1.5 × HCO3 + 8 ± 2; si es mayor, hay acidosis respiratoria asociada. Puede dar hiperpotasemia y desmineralización ósea.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Patrón que se entiende con ROME (metabólico igual: pH y HCO3 bajan juntos) y se compensa con el pulmón. Cifras con sistema mayor: 35 = miel (pH), 24 = noria (HCO3), y las constantes de Winter 1.5 = tele, 8 = uva. Epónimo: Kussmaul → 'Kuss' (beso en alemán), beso profundo con aliento a manzana, como en el skill de nombres. Winter y el umbral HCO3 <24 se copian de la fila (Winter es lit). Se usa 'uva' (un dígito) igual que en el anión gap.",
+    "codigo": [
+      {
+        "numero": "35",
+        "letras": "M-L",
+        "palabra": "miel"
+      },
+      {
+        "numero": "24",
+        "letras": "N-R",
+        "palabra": "noria"
+      },
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      },
+      {
+        "numero": "8",
+        "letras": "V",
+        "palabra": "uva"
+      }
+    ],
+    "escena": "En el puesto de artesanías, Balanza pH se hunde por debajo del frasco de MIEL (pH <7.35) y la NORIA de bicarbonato se frena y se vacía (HCO3 <24): los dos bajan juntos, es metabólico. Para salvarla, Pulmi el globo-pulmón da besos profundos y rápidos, uno tras otro, con aliento a manzana: respiración de Kussmaul que bota CO2 y baja la PaCO2. En la vitrina, un muñeco de nieve (Winter) mira una TELE donde salta una UVA: así calcula cuánto CO2 debería quedar; si queda más, también falla el pulmón.",
+    "ancla": "Miel y noria se hunden juntas; Pulmi besa como Kussmaul; el muñeco de nieve mira la tele con la uva.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s11",
+      "n": 7,
+      "ubicacion": "Puesto de artesanías"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo, unidos como pulmones, lanzando besos enormes y rápidos con labios rojos y nubes de aliento verde manzana, en un puesto de artesanías de totora de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: a su lado, una balanza de dos platos con cara preocupada se hunde con un frasco de miel en el plato bajo. Elementos secundarios: un muñeco de nieve mirando un televisor pequeño donde rebota una uva morada. Composición: Pulmi centrado, tejidos de colores al fondo. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Qué gasometría define la acidosis metabólica?",
+        "a": "pH <7.35 + HCO3 <24, con PaCO2 baja por compensación",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Qué patrón respiratorio aparece y por qué?",
+        "a": "Kussmaul: respiración profunda y rápida para eliminar CO2",
+        "tipo": "explica"
+      },
+      {
+        "q": "¿Fórmula de Winter?",
+        "a": "PaCO2 esperada = 1.5 × HCO3 + 8 ± 2",
+        "tipo": "directa"
+      },
+      {
+        "q": "HCO3 10 y PaCO2 medida 30: ¿compensación adecuada?",
+        "a": "No: esperada 1.5 × 10 + 8 = 23 ± 2; 30 es mayor → acidosis respiratoria asociada",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#043",
+      "#124"
+    ],
+    "revisar": false
+  },
+  "gases-acidosis-respiratoria": {
+    "id": "gases-acidosis-respiratoria",
+    "parametro": "Gases · Acidosis respiratoria",
+    "grupo": "Gases arteriales y ácido-base",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Acidosis respiratoria: pH <7.32 + PaCO2 >45; HCO3 normal (aguda) o ↑ (crónica). Causas: EPOC, obstrucción, neumotórax, EAP, neumonía, depresión SNC, obesidad. Por cada 10 mmHg que sube la PaCO2: HCO3 +1 (aguda) o +3.5 (crónica, EPOC). Bicarbonato no indicado; solo si pH <7.10 refractario a ventilación.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Patrón ROME (respiratorio opuesto: PaCO2 sube y pH baja) + compensación renal lenta. Cifras: 32 = mono (el docente define pH <7.32, no 7.35; se copia de la fila), 45 = rulo (PaCO2), 10 = taza, 1 = té (un dígito) y 3.5 = miel. La regla +1/+3.5 es literatura (lit). Frijo (riñón) compensa.",
+    "codigo": [
+      {
+        "numero": "32",
+        "letras": "M-N",
+        "palabra": "mono"
+      },
+      {
+        "numero": "45",
+        "letras": "R-L",
+        "palabra": "rulo"
+      },
+      {
+        "numero": "10",
+        "letras": "T-S",
+        "palabra": "taza"
+      },
+      {
+        "numero": "1",
+        "letras": "T",
+        "palabra": "té"
+      },
+      {
+        "numero": "35",
+        "letras": "M-L",
+        "palabra": "miel"
+      }
+    ],
+    "escena": "En la cocina de la isla, el fogón de totora llena todo de humo de CO2 porque Pulmi, con EPOC, ya no puede soplarlo: el humo pasa los RULOS de la señora (PaCO2 >45) y un MONO tosiendo cae al piso ácido (pH <7.32). Frijo el frijol bombero corre a compensar: por cada TAZA de humo que se acumula, si la cosa es aguda solo alcanza a servir un TÉ de bicarbonato (+1); si lleva años, como en el EPOC, sirve un frasco entero de MIEL (+3.5).",
+    "ancla": "Humo sobre los rulos, el mono cae; por cada taza, un té (aguda) o miel (crónica).",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s11",
+      "n": 8,
+      "ubicacion": "Cocina de la isla"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un mono caricaturesco tosiendo con ojos llorosos dentro de una cocina de totora llena de humo gris en isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: un frijol café con manguera de bombero sirve apurado un té humeante y un frasco de miel dorada mientras el humo sale por el techo. Elementos secundarios: dos globos rosados con lentes de buceo, desinflados y cansados en un rincón, y unas tazas apiladas. Composición: mono centrado, fogón encendido al fondo. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Qué gasometría define la acidosis respiratoria según el docente?",
+        "a": "pH <7.32 + PaCO2 >45; HCO3 normal (aguda) o ↑ (crónica)",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Cuánto sube el HCO3 por cada 10 mmHg de PaCO2 en la forma aguda y en la crónica?",
+        "a": "+1 aguda; +3.5 crónica (EPOC)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Paciente con EPOC, PaCO2 60 y HCO3 31: ¿aguda o crónica?",
+        "a": "Crónica: subió 20 mmHg → esperado +7 (24 + 7 = 31)",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Se da bicarbonato en la acidosis respiratoria?",
+        "a": "No, solo si pH <7.10 refractario a ventilación",
+        "tipo": "trampa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#043"
+    ],
+    "revisar": false
+  },
+  "gases-alcalosis-metabolica": {
+    "id": "gases-alcalosis-metabolica",
+    "parametro": "Gases · Alcalosis metabólica",
+    "grupo": "Gases arteriales y ácido-base",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Alcalosis metabólica: pH >7.45 + HCO3 >26; PaCO2 normal o levemente ↑. Causas: vómitos (hipoclorémica), diuréticos, hiperaldosteronismo, hipoK, bicarbonato. PaCO2 esperada = 0.7 × HCO3 + 21 ± 2; cloro urinario <20 = responde a suero salino (vómitos). Clínica: hipoventilación, arritmias, tetania (↓Ca ionizado).",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Patrón ROME (metabólico igual: pH y HCO3 suben juntos) con compensación por hipoventilación. Cifras: 45 = rulo (pH), 26 = nacho (HCO3), y la fórmula 0.7 = saco (07) y 21 = nido. La fórmula y el cloro urinario son literatura (lit). Cloro urinario <20 queda en preguntas.",
+    "codigo": [
+      {
+        "numero": "45",
+        "letras": "R-L",
+        "palabra": "rulo"
+      },
+      {
+        "numero": "26",
+        "letras": "N-CH",
+        "palabra": "nacho"
+      },
+      {
+        "numero": "07",
+        "letras": "S-C",
+        "palabra": "saco"
+      },
+      {
+        "numero": "21",
+        "letras": "N-T",
+        "palabra": "nido"
+      }
+    ],
+    "escena": "En la escuela flotante, un alumno se comió tantos NACHOS que vomita por la ventana al lago: con el vómito se van el ácido y el cloro, y en su estómago solo queda bicarbonato (HCO3 >26). Balanza pH se eleva por encima de los RULOS de la profesora (pH >7.45), feliz y espumosa como jabón. Para frenarla, Pulmi respira lento y bajito (hipoventilación) y guarda su CO2 en un SACO que cuelga de un NIDO del techo: así calcula la PaCO2 esperada. Al alumno le tiemblan las manos en tetania.",
+    "ancla": "Vómito de nachos, balanza sobre los rulos, Pulmi guarda CO2 en el saco del nido.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s11",
+      "n": 9,
+      "ubicacion": "Escuela flotante"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una balanza de dos platos con cara y ojos, flotando eufórica por encima de una pizarra en una escuela de totora sobre el lago de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado, rodeada de espuma de jabón. Acción: junto a la ventana, un alumno caricaturesco con la cara verde se asoma al agua con un plato de nachos a medio comer. Elementos secundarios: dos globos rosados con lentes de buceo respirando despacio y guardando aire en un saco que cuelga de un nido de paja en el techo. Composición: balanza centrada. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Qué gasometría define la alcalosis metabólica?",
+        "a": "pH >7.45 + HCO3 >26; PaCO2 normal o levemente ↑",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿PaCO2 esperada en la alcalosis metabólica?",
+        "a": "0.7 × HCO3 + 21 ± 2",
+        "tipo": "directa"
+      },
+      {
+        "q": "Paciente con vómitos y cloro urinario <20: ¿cómo responde?",
+        "a": "Alcalosis que responde a suero salino",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Por qué da tetania?",
+        "a": "Porque baja el calcio ionizado",
+        "tipo": "explica"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#043"
+    ],
+    "revisar": false
+  },
+  "gases-alcalosis-respiratoria": {
+    "id": "gases-alcalosis-respiratoria",
+    "parametro": "Gases · Alcalosis respiratoria",
+    "grupo": "Gases arteriales y ácido-base",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Alcalosis respiratoria: pH >7.45 + PaCO2 <35; HCO3 normal o levemente ↓. Causas: ansiedad (la más frecuente), hipoxemia/altura, fiebre, sepsis, SNC, salicilatos. EAP de altura inicial: PO2 <60, PCO2 <30, alcalosis resp; tardía: acidosis mixta. Por cada 10 mmHg que baja la PaCO2: HCO3 −2 (aguda) o −5 (crónica, residente de altura). Chvostek, Trousseau; tratamiento leve: respirar en bolsa de papel.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Patrón ROME (respiratorio opuesto: PaCO2 baja y pH sube), central en Puno por la hiperventilación de altura. Cifras: 45 = rulo (pH), 35 = miel (PaCO2), 10 = taza, 2 = ñu y 5 = ola (un dígito cada uno). La regla −2/−5 es literatura (lit). La ansiedad como causa más frecuente y la bolsa de papel se anclan en la escena.",
+    "codigo": [
+      {
+        "numero": "45",
+        "letras": "R-L",
+        "palabra": "rulo"
+      },
+      {
+        "numero": "35",
+        "letras": "M-L",
+        "palabra": "miel"
+      },
+      {
+        "numero": "10",
+        "letras": "T-S",
+        "palabra": "taza"
+      },
+      {
+        "numero": "2",
+        "letras": "Ñ",
+        "palabra": "uña"
+      },
+      {
+        "numero": "5",
+        "letras": "L",
+        "palabra": "ola"
+      }
+    ],
+    "escena": "En la orilla de la isla, un turista ansioso recién llegado a la altura respira como fuelle: Pulmi sopla tanto CO2 que el humo baja de la MIEL (PaCO2 <35) y Balanza pH sube sobre los RULOS (pH >7.45). Le tiemblan la cara y la mano en garra (Chvostek y Trousseau), y un isleño le da una bolsa de papel para que respire dentro. Frijo el frijol bombero compensa: por cada TAZA de CO2 que se pierde, una UÑA rasca 2 de bicarbonato en un día (aguda), pero en el residente de altura una OLA entera se lleva 5 (crónica).",
+    "ancla": "Turista ansioso sopla bajo la miel, balanza sobre los rulos; la uña rasca 2, la ola se lleva 5.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s11",
+      "n": 10,
+      "ubicacion": "Orilla de la isla"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un turista caricaturesco con mochila y ojos de pánico respirando agitado dentro de una bolsa de papel café en la orilla de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado, con la mano en forma de garra. Acción: dos globos rosados con lentes de buceo soplan a su lado un viento fuerte que despeina los juncos. Elementos secundarios: una uña gigante rascando una carga blanca y una ola azul que arrastra más carga blanca hacia el lago. Composición: turista centrado, cielo andino intenso. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Qué gasometría define la alcalosis respiratoria?",
+        "a": "pH >7.45 + PaCO2 <35; HCO3 normal o levemente ↓",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Causa más frecuente de alcalosis respiratoria?",
+        "a": "La ansiedad",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Cuánto baja el HCO3 por cada 10 mmHg que baja la PaCO2?",
+        "a": "−2 aguda; −5 crónica (residente de altura)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Turista recién llegado a Puno con parestesias y mano en garra: ¿trastorno y manejo leve?",
+        "a": "Alcalosis respiratoria por hiperventilación; respirar en bolsa de papel",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#043"
+    ],
+    "revisar": false
+  },
+  "gases-compensacion-esperada": {
+    "id": "gases-compensacion-esperada",
+    "parametro": "Gases · Compensación esperada",
+    "grupo": "Gases arteriales y ácido-base",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Compensación: solo cualitativa, el sistema contrario corrige (tabla ↑/↓ de Guyton). Respiratoria completa en 6-12 h; renal en 3-5 días. La compensación nunca normaliza ni sobrepasa el pH; pH normal con PaCO2 y HCO3 alterados = mixto. Fórmulas cuantitativas SIN DATO EN VAULT; fuera de rango = mixto.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Concepto que se explica (quién compensa, cuánto tarda, hasta dónde) + tiempos con sistema mayor: 6 = ajo y 3 = humo y 5 = ola (un dígito cada uno), 12 = tina. La regla de que nunca normaliza es literatura (lit). Se construye sobre ROME: el sistema contrario empuja en sentido opuesto.",
+    "codigo": [
+      {
+        "numero": "6",
+        "letras": "J",
+        "palabra": "ajo"
+      },
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      },
+      {
+        "numero": "3",
+        "letras": "M",
+        "palabra": "humo"
+      },
+      {
+        "numero": "5",
+        "letras": "L",
+        "palabra": "ola"
+      }
+    ],
+    "escena": "En la lancha de regreso, Balanza pH va inclinada y dos remeros intentan enderezarla. Pulmi rema rápido, con una ristra de AJOS al cuello y una TINA como asiento: endereza en horas (respiratoria, 6-12 h). Frijo el frijol bombero rema lento entre el HUMO del motor y una OLA que lo moja: tarda días (renal, 3-5 días). Por más que remen, la balanza nunca llega del todo al centro ni se pasa al otro lado. Si la ves perfectamente derecha pero los dos remeros están agotados y torcidos, no es compensación: es un trastorno mixto.",
+    "ancla": "Pulmi rema de ajo a tina (horas), Frijo de humo a ola (días); nunca llegan al centro.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "estacion": {
+      "seccion": "s11",
+      "n": 11,
+      "ubicacion": "Regreso en lancha"
+    },
+    "imagen_clave": false,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una balanza de dos platos con cara y ojos, inclinada, sentada en el centro de una lancha de madera que vuelve de isla flotante de totora dorada en un lago azul intenso de altura, con casas de totora y cielo andino despejado. Acción: a un lado, dos globos rosados con lentes de buceo y una ristra de ajos al cuello reman muy rápido sentados en una tina; al otro, un frijol café con manguera rema despacio entre humo gris del motor mientras una ola lo salpica. Composición: balanza centrada, lago azul y estela blanca. Sin texto, sin letras, sin números, sin logotipos. Estilo: ilustración digital vibrante tipo cómic/caricatura educativa, colores saturados y alegres, contornos limpios, iluminación dramática, composición centrada con UN protagonista claro y acción exagerada (movimiento, expresiones grandes), fondo simple que no distraiga. Formato cuadrado 1:1. SIN texto, SIN letras, SIN números escritos, SIN logos dentro de la imagen. Apto para estudiantes de medicina: sin gore, sin desnudos.",
+    "imagen": null,
+    "preguntas": [
+      {
+        "q": "¿Cuánto tarda la compensación respiratoria y la renal?",
+        "a": "Respiratoria 6-12 h; renal 3-5 días",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Puede la compensación normalizar el pH?",
+        "a": "No, nunca lo normaliza ni lo sobrepasa",
+        "tipo": "trampa"
+      },
+      {
+        "q": "pH 7.40 con PaCO2 y HCO3 alterados: ¿qué piensas?",
+        "a": "Trastorno mixto",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#043"
+    ],
+    "revisar": false
+  }
+}

@@ -1,0 +1,1211 @@
+{
+  "pleural-volumen-normal": {
+    "id": "pleural-volumen-normal",
+    "parametro": "Pleural · Volumen normal",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "Volumen pleural normal 3-5 ml; por encima hay derrame (libre o tabicado). <300 ml puede no verse en placa de pie (sí en decúbito lateral). Derrame al examen: matidez + vibraciones ↓ + murmullo abolido. Toracocentesis: 8.º-9.º EIC tras línea axilar posterior, borde superior costal.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Cifras exactas (3-5 ml, 300 ml, 8.º-9.º EIC) → sistema mayor con palabras de un dígito (emú, ola, uva, pie) y 300 = mesas (familia de mesa = 30); la tríada del derrame va como acción en la escena. Personaje: Pulmi (respiratorio).",
+    "codigo": [
+      {
+        "numero": "3",
+        "letras": "M",
+        "palabra": "humo"
+      },
+      {
+        "numero": "5",
+        "letras": "L",
+        "palabra": "ola"
+      },
+      {
+        "numero": "300",
+        "letras": "M-S-S",
+        "palabra": "mesas"
+      },
+      {
+        "numero": "8",
+        "letras": "V",
+        "palabra": "uva"
+      },
+      {
+        "numero": "9",
+        "letras": "P",
+        "palabra": "pie"
+      }
+    ],
+    "escena": "En la entrada al muelle, Pulmi el globo-pulmón va envuelto en una bolsita transparente (la pleura) con apenas un chorrito de agua: solo caben una voluta de HUMO diminuta y una OLA chiquita (3-5 ml), lo justo para que resbale al respirar. Si entra más agua se forma el derrame: golpeas la bolsa y suena sordo como una pared (matidez), tus manos ya no sienten el zumbido (vibraciones ↓) y el viento de Pulmi se apaga (murmullo abolido). Si el agua solo llena unas MESAS (<300 ml), la cámara de rayos X no la ve con el paciente de pie: hay que acostarlo de lado. Para sacarla, clavas la aguja en la espalda entre una UVA y un PIE (8.º-9.º EIC), detrás de la axilar posterior, rozando el borde de arriba de la costilla.",
+    "ancla": "Pulmi en su bolsita: humo y ola (3-5 ml); bajo las mesas (300) no se ve de pie; aguja entre uva y pie, por encima de la costilla.",
+    "acronimo": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo (un pulmón caricaturesco) envueltos en una bolsa transparente con un chorrito de agua al fondo, donde flotan una voluta de humo diminuta y una ola pequeña. Acción: el pulmón resbala feliz dentro de la bolsa. Elementos secundarios: unas mesas de madera apiladas a un lado, una uva y un pie gigantes marcando el sitio donde una aguja se acerca por la espalda, sobre el borde superior de una costilla. Escenario: entrada de un muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: pulmón centrado, tonos rosa y azul. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "¿Volumen normal de líquido pleural?",
+        "a": "3-5 ml",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Bajo qué volumen un derrame puede no verse en la placa de pie y cómo se busca?",
+        "a": "<300 ml; en decúbito lateral",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Tríada del derrame pleural al examen físico?",
+        "a": "Matidez + vibraciones vocales ↓ + murmullo vesicular abolido",
+        "tipo": "directa"
+      },
+      {
+        "q": "Vas a hacer una toracocentesis: ¿dónde punzas?",
+        "a": "8.º-9.º EIC por detrás de la línea axilar posterior, por el borde superior de la costilla",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#137"
+    ],
+    "imagen_clave": false,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 0,
+      "ubicacion": "Entrada al muelle"
+    }
+  },
+  "pleural-trasudado": {
+    "id": "pleural-trasudado",
+    "parametro": "Pleural · Trasudado",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Trasudado: claro, amarillo pálido, sin coágulos. Pleura sana, falla de presiones (hidrostática ↑ u oncótica ↓); no cumple ningún criterio de Light. Causas: IC derecha/congestiva, cirrosis, nefrótico, hipoproteinemia, mixedema, Meigs.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Concepto (por qué se forma) + lista corta de 6 causas sin orden → acróstico (#139) y escena del mecanismo. La regla 'pleura sana, falla de presiones, ningún criterio de Light' viene marcada como literatura (lit: true) en la fila. Personaje: Pulmi.",
+    "codigo": null,
+    "escena": "En la boletería de lanchas, la ventanilla es una pleura SANA de vidrio intacto: el agua no la rompe, se TRAS-pasa (TRASudado) empujada por presión, y gotea clara, amarilla pálida, sin un solo grumo. Dos mangueras lo explican: una empuja con demasiada fuerza (hidrostática ↑, el corazón que falla) y la otra ya no chupa porque se quedó sin proteína (oncótica ↓). Detrás del vidrio, la boletera grita su frase mientras su helado se derrite en agua clara: '¡Mi Mamá No Come Helado Industrial!'. Arriba, el faro de Light está completamente apagado.",
+    "ancla": "Trasudado: vidrio sano, agua que se TRAS-pasa por presión; 'Mi Mamá No Come Helado Industrial'; Light apagado.",
+    "acronimo": "Mi Mamá No Come Helado Industrial = Meigs, Mixedema, Nefrótico, Cirrosis, Hipoproteinemia, IC derecha/congestiva",
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una ventanilla de boletería de vidrio impecable por la que se filtran gotas de agua clara amarillo pálido, sin romperse. Acción: una manguera gruesa empuja agua con fuerza contra el vidrio y otra manguera flaca y desinflada cuelga sin succionar. Elementos secundarios: una señora boletera detrás del vidrio con un helado que se derrite en agua transparente; un faro pequeño apagado arriba. Escenario: caseta de boletos de lanchas en un muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: ventanilla centrada, tonos amarillo pálido y azul. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "¿Aspecto del trasudado pleural?",
+        "a": "Claro, amarillo pálido, sin coágulos",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Por qué se forma un trasudado?",
+        "a": "Pleura sana con falla de presiones: hidrostática ↑ u oncótica ↓; no cumple ningún criterio de Light",
+        "tipo": "explica"
+      },
+      {
+        "q": "Nombra las 6 causas de trasudado del atlas",
+        "a": "IC derecha/congestiva, cirrosis, nefrótico, hipoproteinemia, mixedema, Meigs",
+        "tipo": "lista"
+      },
+      {
+        "q": "Cirrótico con derrame claro y ningún criterio de Light: ¿trasudado o exudado?",
+        "a": "Trasudado",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#139",
+      "#043",
+      "#137"
+    ],
+    "imagen_clave": false,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 1,
+      "ubicacion": "Boletería de lanchas"
+    }
+  },
+  "pleural-exudado": {
+    "id": "pleural-exudado",
+    "parametro": "Pleural · Exudado",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Exudado: opaco, color variable, forma coágulos. Pleura enferma (inflamación, tumor, TBC); basta 1 criterio de Light. Lesión pleural directa: TBC, neumonía mal tratada, neoplasia, embolia pulmonar.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Concepto opuesto al trasudado + 4 causas → acrónimo TENN(is) y escena de pleura rota. 'Basta 1 criterio de Light' viene marcado como literatura (lit: true). Personaje: Pulmi.",
+    "codigo": null,
+    "escena": "La primera lancha está agujereada y humeando: la pleura ENFERMA EX-pulsa (EXudado) un líquido turbio y opaco, de colores raros, que se cuaja en grumos como gelatina (forma coágulos). Cuatro tripulantes juegan TENiS en la cubierta: T, un tosedor con mascarilla (TBC); E, un coágulo que rebota como pelota (Embolia pulmonar); N, Pulmi con fiebre y el jarabe a medio tomar (Neumonía mal tratada); N, un cangrejo que pellizca la vela (Neoplasia). En el bote vecino basta que se prenda UNA sola luz del faro de Light para gritar ¡exudado!",
+    "ancla": "Exudado = pleura EX-plotada, turbio y con grumos; juegan TENNis (TBC, Embolia, Neumonía, Neoplasia); basta una luz de Light.",
+    "acronimo": "TENN(is) = TBC, Embolia pulmonar, Neumonía mal tratada, Neoplasia",
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una lancha agujereada y humeante de la que brota un líquido turbio y opaco que se cuaja en grumos gelatinosos. Acción: en la cubierta, cuatro personajes juegan tenis con furia: un señor tosiendo con mascarilla, un coágulo rojo que rebota como pelota, un pulmón rosado con termómetro en la boca y un cangrejo rojo con raqueta. Escenario: muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: lancha centrada inclinada, líneas de movimiento en la pelota, tonos ocre y rojo. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "¿Aspecto del exudado pleural?",
+        "a": "Opaco, color variable, forma coágulos",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Cuántos criterios de Light hacen falta para llamarlo exudado?",
+        "a": "Basta 1",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Causas de exudado del atlas (4)",
+        "a": "TBC, neumonía mal tratada, neoplasia, embolia pulmonar",
+        "tipo": "lista"
+      },
+      {
+        "q": "¿Qué diferencia de fondo separa exudado de trasudado?",
+        "a": "Exudado: pleura enferma (lesión directa); trasudado: pleura sana con falla de presiones",
+        "tipo": "trampa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#139",
+      "#043",
+      "#137"
+    ],
+    "imagen_clave": false,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 2,
+      "ubicacion": "Primera lancha"
+    }
+  },
+  "pleural-criterios-de-light": {
+    "id": "pleural-criterios-de-light",
+    "parametro": "Pleural · Criterios de Light",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "clasificacion",
+    "dato_a_recordar": "Criterios de Light: exudado si cumple ≥1: proteína pleura/suero >0.5; LDH pleura/suero >0.6; LDH pleural >2/3 del LSN sérico. Cumple ≥1: exudado (neumonía, TBC, cáncer, TEP). No cumple ninguno: trasudado (IC, cirrosis, nefrótico).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Los 3 cortes se preguntan exactos → sistema mayor con el 0 inicial codificado (0.5 = 05 sol, 0.6 = 06 ceja, regla del skill) y 2/3 = 23 Nemo, cuyo rasgo (3 franjas, 2 encendidas) muestra la fracción. Epónimo Light → faro/luz (regla de la lengua, #124). Truco extra: los cortes suben en escalera 0.5 → 0.6 → 0.67. Toda la fila está marcada como literatura (lit: true). LDH = lechuza (sustituta, no es código numérico).",
+    "codigo": [
+      {
+        "numero": "0.5",
+        "letras": "S-L",
+        "palabra": "sol"
+      },
+      {
+        "numero": "0.6",
+        "letras": "S-J",
+        "palabra": "ceja"
+      },
+      {
+        "numero": "2/3",
+        "letras": "N-M",
+        "palabra": "Nemo"
+      }
+    ],
+    "escena": "En el bote a pedal, en vez de remo, hay un FARO gigante (Light = luz) que lanza tres rayos, cada uno un poco más alto que el anterior. El primer rayo fríe un huevo y su yema se vuelve un SOL ardiente (0.5): la proteína del pleural pasa de la mitad de la del suero. El segundo despierta a una LECHUZA (LDH) que arquea unas CEJAS enormes (0.6): LDH pleura/suero >0.6. El tercero ilumina a NEMO, que tiene tres franjas blancas y se le encienden dos (2/3): LDH pleural >2/3 del límite superior sérico. Con UN solo rayo encendido el bote se llena de agua turbia (exudado); con los tres apagados, el agua queda clara (trasudado).",
+    "ancla": "Faro de Light: sol (0.5 proteína), ceja de lechuza (0.6 LDH), Nemo con 2 de 3 franjas (2/3 LDH); con una luz basta = exudado.",
+    "acronimo": "P-L-L = Proteína cociente, LDH cociente, LDH absoluta (orden de los rayos, de menor a mayor corte)",
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un bote a pedal con un faro gigante en la proa que dispara tres rayos de luz en abanico, de abajo hacia arriba. Acción: el primer rayo fríe un huevo cuya yema es un sol ardiente con cara; el segundo despierta a una lechuza con cejas enormes y arqueadas; el tercero ilumina a un pez payaso naranja con tres franjas blancas, dos de ellas brillando. Escenario: muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: bote centrado, rayos amarillos sobre cielo azul profundo, de izquierda a derecha en orden. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "¿Cuáles son los 3 criterios de Light y sus cortes?",
+        "a": "Proteína pleura/suero >0.5; LDH pleura/suero >0.6; LDH pleural >2/3 del LSN sérico",
+        "tipo": "lista"
+      },
+      {
+        "q": "¿Cuántos criterios bastan para exudado?",
+        "a": "≥1",
+        "tipo": "umbral"
+      },
+      {
+        "q": ">0.6 es el corte de qué cociente en Light",
+        "a": "LDH pleura/suero",
+        "tipo": "inversa"
+      },
+      {
+        "q": "Proteína pleura/suero 0.55, LDH pleura/suero 0.4, LDH pleural <2/3 del LSN: ¿qué es?",
+        "a": "Exudado (cumple el criterio de proteínas)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#124",
+      "#137"
+    ],
+    "imagen_clave": true,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 3,
+      "ubicacion": "Bote a pedal"
+    }
+  },
+  "pleural-aspecto": {
+    "id": "pleural-aspecto",
+    "parametro": "Pleural · Aspecto",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "lista-causas",
+    "dato_a_recordar": "Citrino: IC, cirrosis o síndrome nefrótico. Sanguinolento >60 años: neoplasia; achocolatado: amebiano; purulento: empiema. Quilotórax: lechoso, TG >110 mg/dL; hemotórax: Hto pleural >50% del sanguíneo.",
+    "tecnicas": [
+      "mnemotecnia",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "6 aspectos con su causa → una botella por aspecto en fila (historia corta, #139) y 3 cortes con sistema mayor (60 choza, 110 dados de la tabla de 3 dígitos, 50 losa). Los cortes de quilotórax y hemotórax están marcados como literatura (lit: true). Personaje: Pulmi.",
+    "codigo": [
+      {
+        "numero": "50",
+        "letras": "L-S",
+        "palabra": "losa"
+      },
+      {
+        "numero": "60",
+        "letras": "CH-Z",
+        "palabra": "choza"
+      },
+      {
+        "numero": "110",
+        "letras": "D-D-S",
+        "palabra": "dados"
+      }
+    ],
+    "escena": "En las barandas del muelle cuelgan seis botellas y Pulmi las va tocando una por una. La primera es limonada CITRINA: la beben un corazón cansado, un hígado arrugado y un riñón hinchado (IC, cirrosis, nefrótico). La segunda, roja, gotea sobre una CHOZA donde un abuelo de más de 60 pelea con un cangrejo (sanguinolento: neoplasia). La tercera es chocolate caliente con una ameba nadando (amebiano) y la cuarta es pus verde que apesta (empiema). En la quinta, leche espesa, caen DADOS que la salpican (quilotórax, TG >110); la sexta es sangre tan espesa que, vaciada sobre una LOSA, más de la mitad son glóbulos (hemotórax, Hto >50%).",
+    "ancla": "Baranda de botellas: limonada (IC-cirrosis-nefrótico), roja en la choza (>60 neoplasia), chocolate (ameba), pus (empiema), leche con dados (TG >110), sangre en la losa (Hto >50%).",
+    "acronimo": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: dos globos rosados con lentes de buceo recorriendo una baranda de madera de la que cuelgan seis botellas de colores en fila: amarillo limón, rojo, chocolate, verde pus, blanco lechoso y rojo oscuro. Acción: de la botella roja gotea sobre una choza diminuta con un abuelo luchando contra un cangrejo; en la botella blanca caen dados que salpican; la última se vacía sobre una losa de piedra. Escenario: muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: botellas de izquierda a derecha en ese orden. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "Líquido pleural sanguinolento en >60 años sugiere…",
+        "a": "Neoplasia",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Corte de triglicéridos que define quilotórax?",
+        "a": "TG >110 mg/dL (aspecto lechoso)",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Cuándo un derrame hemático es hemotórax?",
+        "a": "Hto pleural >50% del sanguíneo",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Líquido pleural achocolatado: ¿qué causa?",
+        "a": "Amebiana",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#137"
+    ],
+    "imagen_clave": false,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 4,
+      "ubicacion": "Barandas"
+    }
+  },
+  "pleural-glucosa-ph-y-ldh": {
+    "id": "pleural-glucosa-ph-y-ldh",
+    "parametro": "Pleural · Glucosa, pH y LDH",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Normal: glucosa ≈ sérica (>60 mg/dL); pH 7.60-7.64; LDH <50 % de la sérica. Empiema: glucosa y pH bajos, LDH alta. pH <7.2 o glucosa <60 o LDH >1000 = paraneumónico complicado/empiema → tubo de drenaje.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Varios cortes exactos → sistema mayor. En el pH el 7 se deduce: 7.60-7.64 = choza-jarra y 7.2 = 7.20 = NASA. Glucosa 60 también es choza (mismo número, misma palabra). LDH >1000 se codifica por significado (milpiés = mil patas, atajo de números con significado, #189), no con el sistema mayor. Los valores normales y los cortes de empiema están marcados como literatura (lit: true) y la nota de la fila aclara que vienen de una página auto-expand, no del docente. Personajes: Don Azúcar (glucosa) y la lechuza (LDH).",
+    "codigo": [
+      {
+        "numero": "20",
+        "letras": "N-S",
+        "palabra": "NASA"
+      },
+      {
+        "numero": "50",
+        "letras": "L-S",
+        "palabra": "losa"
+      },
+      {
+        "numero": "60",
+        "letras": "CH-Z",
+        "palabra": "choza"
+      },
+      {
+        "numero": "64",
+        "letras": "J-RR",
+        "palabra": "jarra"
+      }
+    ],
+    "escena": "Entre la totora flota una CHOZA de totora donde vive Don Azúcar: el pleural sano es tan dulce como la sangre (glucosa >60) y tan alcalino que las paredes van de la CHOZA a una JARRA azul de jabón (pH 7.60-7.64). Una LECHUZA (LDH) duerme acurrucada sin pasar la mitad de la LOSA del piso (<50% de la sérica). De pronto entra el pus del empiema: Don Azúcar se derrite por debajo de la choza (<60), el pH se estrella como un cohete de la NASA que cae al agua (<7.2) y un MILPIÉS de mil patas (LDH >1000) pisotea todo. Suena la sirena: ¡tubo de drenaje ya!",
+    "ancla": "Choza-jarra (pH 7.60-7.64) con Don Azúcar >60; empiema: azúcar bajo la choza, NASA estrellada (<7.2), milpiés (>1000) → tubo.",
+    "acronimo": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cubo de azúcar con sombrero de copa dentro de una choza de totora flotante, derritiéndose con cara de pánico mientras entra un líquido verde espeso. Acción: un cohete blanco cae en picada al agua junto a la choza y un milpiés gigante de muchísimas patas pisotea el techo. Elementos secundarios: una jarra azul con espuma de jabón y una lechuza dormida sobre una losa de piedra. Escenario: totorales en un muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: choza centrada, tonos verde y azul. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "¿pH normal del líquido pleural?",
+        "a": "7.60-7.64",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Qué tres cortes indican paraneumónico complicado/empiema?",
+        "a": "pH <7.2, glucosa <60 mg/dL o LDH >1000",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Derrame paraneumónico con pH 7.1: ¿conducta?",
+        "a": "Tubo de drenaje (paraneumónico complicado/empiema)",
+        "tipo": "caso"
+      },
+      {
+        "q": "Glucosa pleural ≈ sérica (>60) y LDH <50% de la sérica describen…",
+        "a": "Líquido pleural normal",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#137"
+    ],
+    "imagen_clave": true,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 5,
+      "ubicacion": "Totora en el agua"
+    }
+  },
+  "pleural-celulas": {
+    "id": "pleural-celulas",
+    "parametro": "Pleural · Células",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "<1000 células/µL, predominio mononuclear (macrófagos, linfocitos). Neutrófilos: exudado inflamatorio; linfocitos: TBC o neoplasia. Linfocitos >50% = TBC o neoplasia; ADA >40 U/L = TBC pleural (dato de oro en Perú).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Cortes exactos (50%, ADA 40) → sistema mayor (losa, rosa); 1000 por significado (milpiés, igual que en la LDH). ADA → 'hada' (regla de la lengua), imagen fija para ADA en todo el lote. El normal y el corte de ADA están marcados como literatura (lit: true); la nota dice que el predominio celular solo está en página auto. Personaje: Los Glóbulos (células).",
+    "codigo": [
+      {
+        "numero": "40",
+        "letras": "R-S",
+        "palabra": "rosa"
+      },
+      {
+        "numero": "50",
+        "letras": "L-S",
+        "palabra": "losa"
+      }
+    ],
+    "escena": "Las aves del lago son las células del líquido: normalmente hay menos que las patas de un MILPIÉS (<1000) y casi todas son patos redondos y tranquilos (mononucleares: macrófagos y linfocitos). Si baja una bandada de neutrófilos-soldados con escudo y lanza, hay un exudado inflamatorio. Si los linfocitos llenan más de la mitad de la LOSA del muelle (>50%), piensa en TBC o cáncer. Entonces aparece el HADA ADA, con una ROSA roja en la varita, y la posa sobre un pescador que tose: ADA >40 U/L = TBC pleural, el dato de oro en Perú.",
+    "ancla": "Aves bajo el milpiés (<1000), linfocitos sobre media losa (>50%) = TBC/cáncer; el hada ADA con su rosa (>40) = TBC.",
+    "acronimo": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hada brillante con una varita que termina en una rosa roja, tocando la cabeza de un pescador que tose bajo una manta. Acción: alrededor, una bandada de patos redondos y tranquilos nada en el agua y, encima, soldaditos con escudo bajan en picada. Elementos secundarios: un milpiés en la orilla y una losa de piedra cubierta por la mitad de patitos redondos. Escenario: muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: hada centrada, destellos dorados, tonos azul y rojo. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "¿Celularidad normal del líquido pleural?",
+        "a": "<1000 células/µL, predominio mononuclear",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Valor de ADA pleural que apoya TBC?",
+        "a": ">40 U/L",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Derrame exudativo con 70% de linfocitos: ¿qué sospechas?",
+        "a": "TBC o neoplasia (linfocitos >50%)",
+        "tipo": "caso"
+      },
+      {
+        "q": "Predominio de neutrófilos en líquido pleural indica…",
+        "a": "Exudado inflamatorio",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#137"
+    ],
+    "imagen_clave": true,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 6,
+      "ubicacion": "Aves del lago"
+    }
+  },
+  "ascitis-gasa": {
+    "id": "ascitis-gasa",
+    "parametro": "Ascitis · GASA",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "formula",
+    "dato_a_recordar": "GASA = albúmina sérica − albúmina ascítica. ≥1.1 g/dL = origen portal (hipertensión portal: cirrosis, IC); <1.1 = peritoneal (TBC, cáncer). (El campo normal dice >1.1 = origen portal.)",
+    "tecnicas": [
+      "mnemotecnia",
+      "memorizar-numeros",
+      "memorizar-conceptos"
+    ],
+    "por_que": "Fórmula + un corte exacto → la sigla ya es imagen (GASA = gasa de curación) + escena que hace la resta (#139) + 1.1 = 11. 11 = dado: la tabla trae 'tetera' (video) pero el validador cuenta todas las consonantes y tetera da 114; uso dado (D-D) por la misma familia que dados = 110. La fórmula y los cortes están marcados como literatura (lit: true, Robbins); el campo normal dice '>1.1' y la clave '≥1.1', se copió la clave. Personaje: Chef Hepa (hígado).",
+    "codigo": [
+      {
+        "numero": "1.1",
+        "letras": "D-D",
+        "palabra": "dedo"
+      }
+    ],
+    "escena": "En el faro del muelle, Chef Hepa venda la PUERTA (portal) con una GASA gigante. En una balanza de cocina pone dos claras de huevo (albúmina): la del suero en un plato y la del líquido ascítico en el otro, y resta la segunda de la primera. Si la diferencia pesa un DEDO o más (≥1.1), el agua salió empujada a presión por la puerta portal sin llevarse albúmina: cirrosis o corazón que falla. Si pesa menos que el dedo (<1.1), el peritoneo está roto y la albúmina se fuga con el agua: un tosedor (TBC) y un cangrejo (cáncer) asoman por la grieta.",
+    "ancla": "GASA: suero menos ascitis; ≥ un dedo (1.1) = puerta portal (cirrosis, IC); < dedo = peritoneo roto (TBC, cáncer).",
+    "acronimo": "GASA = Gradiente de Albúmina Suero-Ascitis (suero − ascitis, en ese orden)",
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un hígado granate con gorro de chef vendando con una gasa blanca enorme la puerta de un faro. Acción: con la otra mano sostiene una balanza de dos platos con una clara de huevo en cada uno; en el plato más pesado descansa un dedo rojo gigante. Elementos secundarios: chorros de agua saliendo a presión por la rendija de la puerta; a un lado, una grieta en la pared con un cangrejo asomándose. Escenario: faro de un muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: chef centrado, tonos granate, blanco y azul. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "¿Cómo se calcula el GASA?",
+        "a": "Albúmina sérica − albúmina ascítica",
+        "tipo": "directa"
+      },
+      {
+        "q": "GASA ≥1.1 g/dL indica…",
+        "a": "Origen portal (hipertensión portal: cirrosis, IC)",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Albúmina sérica 3.0 y ascítica 2.4 g/dL: ¿GASA y origen?",
+        "a": "0.6 → <1.1, origen peritoneal (TBC, cáncer)",
+        "tipo": "caso"
+      },
+      {
+        "q": "Ascitis por TBC peritoneal: ¿GASA alto o bajo?",
+        "a": "Bajo (<1.1)",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#139",
+      "#189",
+      "#043"
+    ],
+    "imagen_clave": true,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 7,
+      "ubicacion": "Faro del muelle"
+    }
+  },
+  "ascitis-pmn-pbe": {
+    "id": "ascitis-pmn-pbe",
+    "parametro": "Ascitis · PMN / PBE",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "PMN en líquido ascítico <250/mm³ normal. PMN ≥250/mm³ = peritonitis bacteriana espontánea (PBE) → antibiótico (cefotaxima) sin esperar cultivo. PBE = cirrótico ascítico con fiebre.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Corte exacto muy preguntado → 250 = anillos (familia de anillo = 25). Cefotaxima → 'taxi' (regla de la lengua) que además muestra 'tratar ya, sin esperar'. Normal, umbral y clave están marcados como literatura (lit: true). Personajes: Chef Hepa (cirrótico), Termo (fiebre) y Los Glóbulos (neutrófilos).",
+    "codigo": [
+      {
+        "numero": "250",
+        "letras": "N-LL-S",
+        "palabra": "anillos"
+      }
+    ],
+    "escena": "En el puesto de chicharrón, la olla hirviendo es la panza llena de ascitis de un cirrótico (Chef Hepa) con Termo sudando a su lado por la fiebre. Cuentas los neutrófilos-soldados que nadan en el caldo: mientras sean menos de los ANILLOS de la vitrina, todo bien. Pero cuando caen a la olla 250 ANILLOS de oro (≥250/mm³), ¡plof!, la olla burbujea y huele a podrido: peritonitis bacteriana espontánea. No esperas al cultivo: silbas y llega un TAXI (cefo-TAXI-ma) a toda velocidad con el antibiótico.",
+    "ancla": "Olla del cirrótico con fiebre: 250 anillos de neutrófilos = PBE → el taxi de cefotaxima sin esperar cultivo.",
+    "acronimo": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una olla enorme de chicharrón hirviendo con forma de barriga hinchada, con un hígado granate con gorro de chef asomado, sudando, y un termómetro con casco de bombero a su lado. Acción: una lluvia de anillos dorados cae dentro de la olla y salpica; soldaditos con escudo nadan en el caldo. Elementos secundarios: un taxi amarillo llega derrapando con una jeringa gigante en el techo. Escenario: puesto de comida en un muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: olla centrada, tonos dorado y rojo. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "¿Corte de PMN en líquido ascítico para diagnosticar PBE?",
+        "a": "≥250/mm³",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Cirrótico con ascitis y fiebre; PMN 400/mm³ en paracentesis. ¿Diagnóstico y conducta?",
+        "a": "PBE; antibiótico (cefotaxima) sin esperar cultivo",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿Se espera el cultivo para tratar la PBE?",
+        "a": "No",
+        "tipo": "trampa"
+      },
+      {
+        "q": "PMN <250/mm³ en líquido ascítico es…",
+        "a": "Normal",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#124"
+    ],
+    "imagen_clave": true,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 8,
+      "ubicacion": "Puesto de chicharrón"
+    }
+  },
+  "ascitis-aspecto-y-estudio": {
+    "id": "ascitis-aspecto-y-estudio",
+    "parametro": "Ascitis · Aspecto y estudio",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "lista-causas",
+    "dato_a_recordar": "Ascitis: seroso, quiloso o hemorrágico; en paracentesis cetrino o hemorrágico. ~100 ml: físico, fisicoquímico (proteínas, densidad), citológico, bacteriológico. Quiloso: TG >200 mg/dL; turbio: infección; hemorrágico: neoplasia o trauma; ADA alto: TBC.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Volumen y corte exactos → 100 = tazas (tabla) y 200 = nasas (familia de NASA = 20; la nasa es la trampa de pesca, encaja en el lago). Aspectos con su causa como historia corta. ADA = hada, como en el pleural. La clave está marcada como literatura (lit: true). Trampa: TG quiloso 200 en ascitis vs 110 en pleura.",
+    "codigo": [
+      {
+        "numero": "100",
+        "letras": "T-Z-S",
+        "palabra": "tazas"
+      },
+      {
+        "numero": "200",
+        "letras": "N-C-S",
+        "palabra": "nueces"
+      }
+    ],
+    "escena": "En las bancas del muelle sirves el líquido ascítico en TAZAS (~100 ml) para cuatro jueces sentados: el físico, el químico (que mide proteínas y densidad), el citólogo y el bacteriólogo. La primera taza sale lechosa y un pescador la reconoce al instante: leche de NUECES (quiloso, TG >200). La segunda está turbia y huele a podrido (infección); la tercera, roja, trae un cangrejo y un martillo (hemorrágico: neoplasia o trauma). De la última sale volando el HADA ADA (ADA alto: TBC).",
+    "ancla": "Tazas de 100 ml para 4 jueces; lechosa = leche de nueces (TG >200), turbia = infección, roja = cangrejo/martillo, hada ADA = TBC.",
+    "acronimo": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un pescador andino en una banca del muelle levantando una red de pesca llena de nueces que gotea líquido blanco lechoso. Acción: a su lado, cuatro jueces con lupa y bata prueban tazas de líquido: una turbia que despide vapor verde maloliente, una roja de la que sale un cangrejo con un martillo y otra de la que sale volando un hada brillante. Escenario: bancas de madera en un muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: pescador centrado, tazas en fila de izquierda a derecha. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "¿Cuánto líquido ascítico se extrae para estudio y qué estudios se piden?",
+        "a": "~100 ml: físico, fisicoquímico (proteínas, densidad), citológico, bacteriológico",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿Corte de TG para ascitis quilosa?",
+        "a": "TG >200 mg/dL",
+        "tipo": "umbral"
+      },
+      {
+        "q": "Quiloso: ¿corte de TG en ascitis vs en pleura?",
+        "a": "Ascitis >200 mg/dL; quilotórax >110 mg/dL",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Ascitis hemorrágica sugiere…",
+        "a": "Neoplasia o trauma",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#137"
+    ],
+    "imagen_clave": false,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 9,
+      "ubicacion": "Bancas"
+    }
+  },
+  "ascitis-deteccion-y-puncion": {
+    "id": "ascitis-deteccion-y-puncion",
+    "parametro": "Ascitis · Detección y punción",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "Ascitis clínica si >500 ml; matidez desplazable (moderada), oleada (a tensión). Signo del charco ≈120 mL · matidez desplazable ≈500 mL · oleada >1 litro (ascitis a tensión). Punción: tercio externo de la línea ombligo-EIAS izquierda, sobre zona mate.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Escalera de 3 volúmenes que se pregunta en orden → 120 = tinas (familia de tina = 12), 500 = losas (familia de losa = 50); 1 litro se recuerda por su objeto (una botella de litro), sin código. Los umbrales de la clave son literatura (lit: true) y el de 500 ml viene de Robbins (nota de la fila).",
+    "codigo": [
+      {
+        "numero": "120",
+        "letras": "T-N-S",
+        "palabra": "tunas"
+      },
+      {
+        "numero": "500",
+        "letras": "L-S-S",
+        "palabra": "losas"
+      }
+    ],
+    "escena": "En la capitanía, el capitán examina una panza con forma de casco de barco. Con apenas el jugo de unas TUNAS (≈120 mL) solo se forma un charquito escondido que tiene que buscar a gatas (signo del charco). Cuando el agua cubre unas LOSAS (≈500 mL) la ascitis ya se ve en la clínica: al girar al paciente, el sonido mate se corre de lado como agua en el casco (matidez desplazable). Con más de una botella de litro, la panza está tensa como tambor y un golpecito manda una ola que choca al otro lado (oleada). Para punzar, el capitán estira una cuerda del ombligo a la cadera izquierda y clava en el tercio de afuera, donde suena mate.",
+    "ancla": "Tunas (120) = charco; losas (500) = matidez desplazable y clínica; más de un litro = oleada; punción en el tercio externo ombligo-EIAS izquierda.",
+    "acronimo": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un capitán de barco con gorra examinando a un paciente acostado cuya barriga enorme parece el casco de un barco lleno de agua. Acción: el capitán da un golpecito a un lado de la barriga y una ola visible cruza hasta el otro lado. Elementos secundarios: tunas y losas de piedra en el suelo con agua; una cuerda tendida del ombligo a la cadera izquierda con una aguja en su tercio externo. Escenario: oficina de capitanía junto a un muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: barriga centrada, tonos azul y madera. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "Ordena signo del charco, matidez desplazable y oleada con su volumen",
+        "a": "Charco ≈120 mL; matidez desplazable ≈500 mL; oleada >1 litro",
+        "tipo": "lista"
+      },
+      {
+        "q": "¿Desde qué volumen la ascitis es clínica?",
+        "a": ">500 ml",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Dónde se punza una paracentesis?",
+        "a": "Tercio externo de la línea ombligo-EIAS izquierda, sobre zona mate",
+        "tipo": "directa"
+      },
+      {
+        "q": "Abdomen tenso con oleada positiva: ¿cuánto líquido calculas?",
+        "a": ">1 litro (ascitis a tensión)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#137"
+    ],
+    "imagen_clave": false,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 10,
+      "ubicacion": "Capitanía"
+    }
+  },
+  "lcr-presion": {
+    "id": "lcr-presion",
+    "parametro": "LCR · Presión",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "Presión de LCR <180 mmH2O (docente: hasta 20 cm de agua). Aumentada en meningitis bacteriana. Medir en decúbito lateral relajado; TAC antes de punzar si hay papiledema, focalidad o coma (precaución por herniación).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Corte exacto con dos versiones de la fuente → 180 = tofus (familia de tofu = 18) y 20 cm = NASA (tabla, video). La regla de la TAC está marcada como literatura (lit: true). Personaje: Profe Neuro.",
+    "codigo": [
+      {
+        "numero": "20",
+        "letras": "N-S",
+        "palabra": "NASA"
+      },
+      {
+        "numero": "180",
+        "letras": "T-F-S",
+        "palabra": "tofus"
+      }
+    ],
+    "escena": "En la lancha grande, Profe Neuro está acostado de lado y relajado (decúbito lateral), con una manguerita en la espalda por la que sube una columna de agua. La columna debe quedar por debajo de una torre de TOFUS (<180 mmH2O); el docente lo dice a su modo: no debe pasar la punta de un cohete de la NASA (20 cm de agua). En la meningitis bacteriana el chorro sale disparado y derriba los tofus. Pero antes de punzar le miras el ojo: si el disco óptico está hinchado (papiledema), si un brazo no le responde (focalidad) o si está en coma, primero TAC, porque al punzar el cerebro podría colarse por el agujero (herniación).",
+    "ancla": "Profe Neuro de lado: columna bajo la torre de tofus (180) o bajo el cohete NASA (20 cm); papiledema, focalidad o coma → TAC primero.",
+    "acronimo": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete acostado de lado sobre la cubierta de una lancha grande, con una manguera fina saliendo de su espalda por la que sube una columna de agua transparente. Acción: la columna llega casi a la cima de una torre de cubos de tofu apilados; junto a ella, un pequeño cohete blanco sirve de regla. Elementos secundarios: un escáner médico circular esperando en la proa. Escenario: lancha en un muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: columna de agua centrada, tonos rosa y celeste. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "¿Presión normal del LCR?",
+        "a": "<180 mmH2O (docente: hasta 20 cm de agua)",
+        "tipo": "directa"
+      },
+      {
+        "q": "Paciente con papiledema y sospecha de meningitis: ¿qué haces antes de la punción lumbar?",
+        "a": "TAC (riesgo de herniación)",
+        "tipo": "caso"
+      },
+      {
+        "q": "¿En qué posición se mide la presión del LCR?",
+        "a": "Decúbito lateral relajado",
+        "tipo": "directa"
+      },
+      {
+        "q": "Presión de LCR aumentada con neutrófilos sugiere…",
+        "a": "Meningitis bacteriana",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#137"
+    ],
+    "imagen_clave": false,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 11,
+      "ubicacion": "Lancha grande"
+    }
+  },
+  "lcr-aspecto": {
+    "id": "lcr-aspecto",
+    "parametro": "LCR · Aspecto",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "LCR normal transparente. Xantocrómico = hemorragia subaracnoidea (>12 h); la punción traumática aclara del 1.º al 3.er tubo. Meningococo: LCR purulento + púrpura + diplococos gramnegativos.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Concepto (cómo distinguir sangre real de punción traumática) + un corte (12 h = tina). Xanto → 'santo' dorado (regla de la lengua) para el amarillo. La clave está marcada como literatura (lit: true); la nota de la fila dice 'Turbio/xantocrómico: SIN DATO EN VAULT' para el campo normal. Personaje: Profe Neuro.",
+    "codigo": [
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      }
+    ],
+    "escena": "En la plataforma del fondo, el LCR normal es agua de roca transparente: a través de ella ves el fondo del lago. Si Profe Neuro sangró por dentro hace más de 12 horas, el agua de su TINA se vuelve amarilla como la aureola de un SANTO dorado (XANTOcrómico = hemorragia subaracnoidea). Si la que sangró fue la aguja (punción traumática), llenas tres tubos y se van aclarando uno tras otro: rojo, rosado, transparente. Y si el agua sale como pus, el paciente tiene manchas moradas en la piel y en el microscopio bailan parejitas de granos rosados (diplococos gramnegativos): meningococo.",
+    "ancla": "Transparente normal; tina amarilla de santo (>12 h) = HSA; tubos que se aclaran = punción traumática; pus + púrpura + parejitas = meningococo.",
+    "acronimo": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete sentado en una tina llena de agua amarilla dorada brillante, con una aureola dorada flotando sobre él. Acción: a su lado, tres tubos de ensayo en fila pasan de rojo intenso a rosado y luego a transparente. Elementos secundarios: parejas de bolitas rosadas bailando dentro de una lupa gigante. Escenario: plataforma de madera al fondo de un muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: tina centrada, tubos de izquierda a derecha, tonos dorado y rojo. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "¿Aspecto normal del LCR?",
+        "a": "Transparente",
+        "tipo": "directa"
+      },
+      {
+        "q": "LCR xantocrómico indica…",
+        "a": "Hemorragia subaracnoidea (>12 h)",
+        "tipo": "directa"
+      },
+      {
+        "q": "LCR con sangre que se aclara del 1.º al 3.er tubo: ¿qué es?",
+        "a": "Punción traumática",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Fiebre, púrpura y LCR purulento con diplococos gramnegativos: ¿agente?",
+        "a": "Meningococo",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#043",
+      "#189",
+      "#139",
+      "#137"
+    ],
+    "imagen_clave": false,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 12,
+      "ubicacion": "Plataforma del fondo"
+    }
+  },
+  "lcr-celulas": {
+    "id": "lcr-celulas",
+    "parametro": "LCR · Células",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "LCR normal: <5 linfocitos/ml; ningún eritrocito. Bacteriana: neutrófilos; viral: linfocitos; TBC: mononucleares o mixtas. Punción traumática: restar 1 leucocito por cada 500-1000 eritrocitos del LCR.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Corte exacto → 5 = ola (palabra de un dígito, L) y 500 = losas; 1000 por significado (milpiés, igual que en el pleural). Patrón celular por tipo de meningitis como acción de los soldados. La fórmula de corrección está marcada como literatura (lit: true). Duda: la fila dice '/ml'; lo habitual es expresarlo por mm³ (µL). Personaje: Los Glóbulos.",
+    "codigo": [
+      {
+        "numero": "5",
+        "letras": "L",
+        "palabra": "ola"
+      },
+      {
+        "numero": "500",
+        "letras": "L-S-S",
+        "palabra": "losas"
+      }
+    ],
+    "escena": "En el agua profunda, el LCR está casi vacío: sobre una sola OLA surfean menos de cinco linfocitos redonditos (<5) y no hay ni un glóbulo rojo. Si llegan soldados con escudo y lanza (neutrófilos), atacaron las bacterias; si llegan más linfocitos redonditos de la mano, es un virus; si llega una tropa mezclada, piensa en TBC. Si la aguja metió glóbulos rojos de contrabando (punción traumática), por cada montón que va de unas LOSAS a las patas de un MILPIÉS (500-1000 eritrocitos) borras un leucocito de la cuenta.",
+    "ancla": "Una ola con menos de 5 linfocitos y cero rojos; neutrófilos = bacteria, linfocitos = virus, mixto = TBC; restar 1 blanco por cada losas-milpiés (500-1000) rojos.",
+    "acronimo": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: una ola azul transparente sobre la que surfean cuatro células blancas redonditas y sonrientes. Acción: desde abajo emergen soldaditos con escudo y lanza y, a la derecha, un grupo mezclado de células de distintas formas. Elementos secundarios: un montón de glóbulos rojos apilados sobre losas de piedra junto a un milpiés, y una mano que borra una célula blanca con una goma. Escenario: aguas profundas de un muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: ola centrada, tonos azul profundo y blanco. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "¿Celularidad normal del LCR?",
+        "a": "<5 linfocitos/ml (según la fila) y ningún eritrocito",
+        "tipo": "directa"
+      },
+      {
+        "q": "Predominio de neutrófilos en el LCR sugiere…",
+        "a": "Meningitis bacteriana",
+        "tipo": "inversa"
+      },
+      {
+        "q": "¿Cómo se corrige el conteo de leucocitos en una punción traumática?",
+        "a": "Restar 1 leucocito por cada 500-1000 eritrocitos del LCR",
+        "tipo": "directa"
+      },
+      {
+        "q": "LCR con linfocitos y celularidad mixta, proteínas muy altas: ¿qué patrón?",
+        "a": "Tuberculoso (mononucleares o mixtas)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#137"
+    ],
+    "imagen_clave": false,
+    "revisar": true,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 13,
+      "ubicacion": "Agua profunda"
+    }
+  },
+  "lcr-proteinas": {
+    "id": "lcr-proteinas",
+    "parametro": "LCR · Proteínas",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Proteínas en LCR 20-40 mg/100 ml; albúmina > globulina; gammaglobulina <10%. Bacteriana ↑; viral moderadamente ↑; TBC ↑ llamativo. Disociación albúmino-citológica (proteínas ↑ con células normales) = Guillain-Barré.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango exacto → 20 = NASA y 40 = rosa (tabla), gamma <10% = taza. Guillain-Barré → 'guillotina' + 'barre' (regla de la lengua, #124). La clave está marcada como literatura (lit: true). Personaje: Profe Neuro.",
+    "codigo": [
+      {
+        "numero": "10",
+        "letras": "T-S",
+        "palabra": "taza"
+      },
+      {
+        "numero": "20",
+        "letras": "N-S",
+        "palabra": "NASA"
+      },
+      {
+        "numero": "40",
+        "letras": "R-S",
+        "palabra": "rosa"
+      }
+    ],
+    "escena": "En el reflejo del cerro sobre el agua flota un cohete de la NASA cargado de ROSAS: las proteínas del LCR van de la NASA a las rosas (20-40 mg/100 ml). Adentro, la clara de huevo (albúmina) es más grande que los globos (globulina) y la gammaglobulina cabe en una TAZA chiquita (<10%). En la meningitis bacteriana el cohete se llena de rosas, en la viral solo un poco más y en la TBC revienta de rosas por todas partes. Y si el cohete viene repleto de rosas pero sin un solo pasajero-célula, aparece un verdugo con GUILLotina que lo BARRE con una escoba: disociación albúmino-citológica, Guillain-Barré.",
+    "ancla": "Cohete NASA con rosas (20-40); gamma en una taza (<10%); muchas rosas sin pasajeros = guillotina que barre (Guillain-Barré).",
+    "acronimo": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cohete blanco flotando sobre el reflejo de un cerro en el agua, con la escotilla abierta desbordando rosas rojas y sin ningún pasajero. Acción: un verdugo caricaturesco con capucha barre las rosas con una escoba gigante junto a una guillotina de juguete. Elementos secundarios: dentro del cohete, una clara de huevo grande junto a unos globos pequeños y una taza diminuta. Escenario: muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: cohete centrado, tonos rojo y blanco sobre azul. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "¿Proteínas normales en LCR?",
+        "a": "20-40 mg/100 ml",
+        "tipo": "directa"
+      },
+      {
+        "q": "Proteínas ↑ en LCR con células normales: ¿cómo se llama y qué sugiere?",
+        "a": "Disociación albúmino-citológica; Guillain-Barré",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿En qué meningitis el aumento de proteínas es más llamativo: bacteriana, viral o TBC?",
+        "a": "TBC (viral solo moderado)",
+        "tipo": "trampa"
+      },
+      {
+        "q": "La gammaglobulina en LCR es {{<10%}} y la albúmina es {{mayor}} que la globulina",
+        "a": "<10%; mayor",
+        "tipo": "cloze"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#124"
+    ],
+    "imagen_clave": false,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 14,
+      "ubicacion": "Reflejo del cerro"
+    }
+  },
+  "lcr-glucosa": {
+    "id": "lcr-glucosa",
+    "parametro": "LCR · Glucosa",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Glucosa en LCR 50-60% de la glucemia. Bacteriana ↓; TBC ↓ o normal (viral: normal). Relación glucosa LCR/sangre <0.4 = bacteriana; pedir glucemia simultánea siempre.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango y corte exactos → 50 = losa, 60 = choza (tabla), 0.4 = 04 zorro (el 0 inicial se codifica, regla del skill). La regla de la relación <0.4 está marcada como literatura (lit: true). Personajes: Don Azúcar y Profe Neuro.",
+    "codigo": [
+      {
+        "numero": "0.4",
+        "letras": "Z-RR",
+        "palabra": "zorro"
+      },
+      {
+        "numero": "50",
+        "letras": "L-S",
+        "palabra": "losa"
+      },
+      {
+        "numero": "60",
+        "letras": "CH-Z",
+        "palabra": "choza"
+      }
+    ],
+    "escena": "Las gaviotas del lago roban la mitad del azúcar: Don Azúcar sale de la sangre hacia el LCR y llega encogido, entre el tamaño de una LOSA y el de una CHOZA (50-60% de la glucemia). Si aparece un ZORRO bacteriano y se lo come hasta dejarlo en menos de 0.4 del azúcar de la sangre, es meningitis bacteriana. El virus pasa de largo y no lo toca (normal); la TBC a veces le da un mordisco. Por eso siempre pinchas el dedo al mismo tiempo (glucemia simultánea): sin el azúcar de la sangre no hay proporción que calcular.",
+    "ancla": "Don Azúcar llega entre losa y choza (50-60%); el zorro (<0.4) = bacteriana; siempre glucemia simultánea.",
+    "acronimo": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cubo de azúcar con sombrero de copa, encogido y asustado, corriendo por el muelle mientras gaviotas le arrancan pedazos. Acción: un zorro naranja con colmillos lo persigue para morderlo. Elementos secundarios: una losa de piedra y una choza pequeña marcando su tamaño, y una mano con un pinchazo de glucómetro en el dedo. Escenario: muelle de un muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: azúcar centrado, tonos blanco, naranja y azul, líneas de movimiento. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "¿Glucosa normal del LCR?",
+        "a": "50-60% de la glucemia",
+        "tipo": "directa"
+      },
+      {
+        "q": "Relación glucosa LCR/sangre <0.4 sugiere…",
+        "a": "Meningitis bacteriana",
+        "tipo": "umbral"
+      },
+      {
+        "q": "¿Cómo está la glucosa del LCR en la meningitis viral?",
+        "a": "Normal",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Vas a puncionar para estudiar LCR: ¿qué examen de sangre pides a la vez?",
+        "a": "Glucemia simultánea",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139",
+      "#137"
+    ],
+    "imagen_clave": true,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 15,
+      "ubicacion": "Gaviotas"
+    }
+  },
+  "lcr-patron-bacteriano-piogeno": {
+    "id": "lcr-patron-bacteriano-piogeno",
+    "parametro": "LCR · Patrón bacteriano (piógeno)",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Patrón bacteriano (piógeno): presión ↑, neutrófilos abundantes, proteínas ↑, glucosa ↓. Clínica meníngea: fiebre + rigidez de nuca + alteración de conciencia; Kernig y Brudzinski positivos. Sin tratamiento suele ser mortal.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Patrón de 4 piezas → regla 'todo sube menos el azúcar' + escena; tríada clínica como acciones; epónimos Kernig → rana (suena a Kermit) y Brudzinski → bruja (regla de la lengua, #124). Personajes: Profe Neuro, Termo, Los Glóbulos y Don Azúcar.",
+    "codigo": null,
+    "escena": "En el muelle secundario, una banda de bacterias-piratas toma el LCR: la presión sube como olla a punto de explotar, llegan en tropel los neutrófilos-soldados con escudo, las proteínas espesan el agua como sopa y los piratas se comen a Don Azúcar: todo sube menos el azúcar. Profe Neuro arde de fiebre (Termo hace sonar la sirena), tiene la nuca tiesa como un remo y no sabe ni dónde está. Una rana (Kernig, como Kermit) y una bruja (Brudzinski) lo examinan y las dos levantan la bandera de positivo. Si nadie lo trata, la banda pirata hunde el barco.",
+    "ancla": "Bacteriana: todo sube (presión, neutrófilos, proteínas) menos el azúcar; fiebre + nuca tiesa + confusión; la rana Kernig y la bruja Brudzinski positivas.",
+    "acronimo": "Todo sube menos el azúcar = Presión ↑, Neutrófilos ↑, Proteínas ↑, Glucosa ↓",
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete, con fiebre y cuello rígido como un remo, rodeado de bacterias piratas con parche que asaltan el muelle. Acción: los piratas devoran un cubo de azúcar mientras una olla a presión silba a punto de explotar. Elementos secundarios: soldaditos con escudo llegando en tropel; una rana verde y una bruja simpática levantando banderas; un termómetro con casco de bombero con sirena. Escenario: muelle secundario de un muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: cerebro centrado, tonos rojo y verde. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "Patrón de LCR en meningitis bacteriana",
+        "a": "Presión ↑, neutrófilos abundantes, proteínas ↑, glucosa ↓",
+        "tipo": "directa"
+      },
+      {
+        "q": "Tríada clínica meníngea",
+        "a": "Fiebre + rigidez de nuca + alteración de conciencia",
+        "tipo": "lista"
+      },
+      {
+        "q": "Fiebre, rigidez de nuca, confusión; LCR con 93% PMN y glucosa baja: ¿patrón?",
+        "a": "Bacteriano (piógeno)",
+        "tipo": "caso"
+      },
+      {
+        "q": "Kernig y Brudzinski positivos indican…",
+        "a": "Irritación meníngea (clínica meníngea)",
+        "tipo": "inversa"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#043",
+      "#124",
+      "#137"
+    ],
+    "imagen_clave": true,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 16,
+      "ubicacion": "Muelle secundario"
+    }
+  },
+  "lcr-patron-viral-aseptico": {
+    "id": "lcr-patron-viral-aseptico",
+    "parametro": "LCR · Patrón viral (aséptico)",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Patrón viral (aséptico): linfocitosis, proteínas moderadamente ↑, glucosa normal. Linfocitos + glucosa normal = viral; linfocitos + glucosa baja = TBC u hongos. Evolución menos fulminante; agente a menudo no identificado.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Patrón de 3 piezas que se contrasta con el bacteriano y el TBC → escena con Don Azúcar como marcador (intacto = viral, mordido = TBC/hongos). La regla de la clave está marcada como literatura (lit: true). Personajes: Los Glóbulos (linfocitos) y Don Azúcar.",
+    "codigo": null,
+    "escena": "Por la escalera de bajada desciende sin apuro un virus-turista con corona: lo siguen muchos linfocitos redonditos tomados de la mano (linfocitosis), carga solo una mochilita de proteínas (moderadamente ↑) y Don Azúcar baja a su lado, intacto y sonriendo (glucosa normal). Nadie sabe bien de dónde vino el turista (agente a menudo no identificado) y el paseo es tranquilo, nada fulminante. Pero si en el último escalón Don Azúcar aparece mordido, mira detrás: hay un bacilo tosedor o un champiñón (linfocitos + glucosa baja = TBC u hongos).",
+    "ancla": "Viral: turista tranquilo con linfocitos de la mano, mochilita de proteínas y Don Azúcar intacto; azúcar mordido = TBC u hongos.",
+    "acronimo": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un virus caricaturesco con corona y cámara de turista bajando tranquilo una escalera de piedra hacia el agua. Acción: detrás lo siguen muchas células blancas redonditas tomadas de la mano y, a su lado, un cubo de azúcar con sombrero de copa baja sonriendo, intacto. Elementos secundarios: una mochila pequeña en la espalda del virus; al pie de la escalera, un champiñón y un bastoncito que tose escondidos. Escenario: escalera de un muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: virus centrado, tonos pastel. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "Patrón de LCR en meningitis viral (aséptica)",
+        "a": "Linfocitosis, proteínas moderadamente ↑, glucosa normal",
+        "tipo": "directa"
+      },
+      {
+        "q": "LCR con linfocitos y glucosa baja: ¿viral?",
+        "a": "No: pensar en TBC u hongos",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Meningitis de evolución tranquila, LCR linfocitario, glucosa normal: ¿patrón?",
+        "a": "Viral (aséptico)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#043",
+      "#137"
+    ],
+    "imagen_clave": false,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 17,
+      "ubicacion": "Escalera de bajada"
+    }
+  },
+  "lcr-patron-tuberculoso": {
+    "id": "lcr-patron-tuberculoso",
+    "parametro": "LCR · Patrón tuberculoso",
+    "grupo": "Líquidos: pleural, ascítico y LCR",
+    "tipo_info": "concepto",
+    "dato_a_recordar": "Patrón tuberculoso: celularidad moderada mononuclear o mixta, proteínas muy ↑, glucosa ↓ o normal. ADA en LCR >10 U/L apoya TBC. Exudado gelatinoso basal que atrapa pares craneales (VI) y causa hidrocefalia.",
+    "tecnicas": [
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Patrón + 2 cifras → 10 = taza (tabla) y par VI = 6 = ojo (palabra de un dígito, J; además el VI par mueve el ojo). ADA = hada, como en pleural y ascitis. Trampa clave: ADA >40 en pleura vs >10 en LCR. La clave está marcada como literatura (lit: true). Personaje: Profe Neuro.",
+    "codigo": [
+      {
+        "numero": "6",
+        "letras": "J",
+        "palabra": "ajo"
+      },
+      {
+        "numero": "10",
+        "letras": "T-S",
+        "palabra": "taza"
+      }
+    ],
+    "escena": "En el agua de la orilla, una gelatina espesa y gris se pega a la base del cerebro de Profe Neuro (exudado gelatinoso basal) y atrapa sus cables: un AJO (VI par) le tapona el ojo, que se queda torcido sin poder mirar hacia afuera, y la cabeza se le infla como un globo de agua (hidrocefalia). En el agua hay una tropa moderada y mezclada de células, montañas de proteína y a Don Azúcar a medio morder (↓ o normal). Entonces llega el HADA ADA sentada en una TAZA chiquita: aquí, en el LCR, le basta pasar de la taza (>10 U/L) para apoyar TBC, mucho menos que la rosa del pleural.",
+    "ancla": "TBC del LCR: gelatina en la base, ajo en el ojo torcido (VI) e hidrocefalia; mucha proteína; hada ADA en la taza (>10), no en la rosa (>40, pleura).",
+    "acronimo": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos. Protagonista: un cerebro rosado con birrete y la cabeza inflada como un globo de agua, con una gelatina gris pegada en su base que enreda unos cables y le deja un ojo torcido con un ajo pegado. Acción: un hada brillante sentada dentro de una taza diminuta le toca la frente con su varita. Elementos secundarios: a su lado, un cubo de azúcar a medio morder y montañas de claras de huevo. Escenario: orilla de un muelle de madera junto a un lago andino azul de altura, con totora y cerros secos al fondo. Composición: cerebro centrado, tonos gris, rosa y dorado. Sin texto, sin letras, sin números, sin logotipos.",
+    "preguntas": [
+      {
+        "q": "Patrón de LCR en meningitis tuberculosa",
+        "a": "Celularidad moderada mononuclear o mixta, proteínas muy ↑, glucosa ↓ o normal",
+        "tipo": "directa"
+      },
+      {
+        "q": "¿ADA en LCR que apoya TBC?",
+        "a": ">10 U/L",
+        "tipo": "umbral"
+      },
+      {
+        "q": "ADA que apoya TBC: ¿en pleura y en LCR?",
+        "a": "Pleura >40 U/L; LCR >10 U/L",
+        "tipo": "trampa"
+      },
+      {
+        "q": "Meningitis con parálisis del VI par e hidrocefalia: ¿qué etiología piensas?",
+        "a": "Tuberculosa (exudado basal)",
+        "tipo": "caso"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#043",
+      "#189",
+      "#139"
+    ],
+    "imagen_clave": false,
+    "revisar": false,
+    "ruta_palacio": null,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s12",
+      "n": 18,
+      "ubicacion": "Agua de la orilla"
+    }
+  }
+}

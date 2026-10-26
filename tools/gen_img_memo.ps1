@@ -1,8 +1,8 @@
-param([Parameter(Mandatory)][string]$Id, [Parameter(Mandatory)][string]$PromptFile)
+param([Parameter(Mandatory)][string]$Id, [Parameter(Mandatory)][string]$PromptFile, [string]$Sub = "memo", [string]$Formato = "cuadrado 1:1 (1024x1024)")
 # Genera una imagen de memoria con Codex image_gen → img/memo/<Id>.png
 # Trampas de Codex en esta máquina: bypass del sandbox, prompt por STDIN, forzar la generación, PNG en %APPDATA%\orca\...
 $raiz = Split-Path $PSScriptRoot -Parent
-$out = Join-Path $raiz "img\memo\$Id.png"
+$out = Join-Path $raiz "img\$Sub\$Id.png"
 if ((Test-Path $out) -or (Test-Path ($out -replace '\.png$', '.webp'))) { Write-Output "SKIP $Id"; exit 0 }
 New-Item -ItemType Directory -Force (Split-Path $out) | Out-Null
 
@@ -17,7 +17,7 @@ $escena
 
 Estilo: ilustracion digital vibrante tipo comic/caricatura educativa, colores saturados y alegres, contornos limpios,
 iluminacion dramatica, composicion centrada con UN protagonista claro y accion exagerada (movimiento, expresiones grandes),
-fondo simple que no distraiga. Formato cuadrado 1:1 (1024x1024).
+fondo simple que no distraiga. Formato $Formato.
 SIN texto, SIN letras, SIN numeros escritos, SIN logos dentro de la imagen. Sin gore, sin desnudos.
 
 Genera AHORA con image_gen.

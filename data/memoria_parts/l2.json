@@ -1,0 +1,1636 @@
+{
+  "hemoglobina": {
+    "id": "hemoglobina",
+    "parametro": "Hemoglobina",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Hb normal: varón ~15 g/dL, mujer ~14 g/dL (Guyton). Anemia OMS: <13 varón, <12 mujer. Palidez clínica si Hb <7 g/dL. En altura (OMS 2011, lit): Puno anemia si mujer <14.7, varón <15.7.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Cifras exactas por sexo + corte de anemia → sistema mayor; la pareja de soldados (varón/mujer) separa los dos valores. El corte de Puno es literatura (lit) y se deja solo como pregunta.",
+    "codigo": [
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      },
+      {
+        "numero": "14",
+        "letras": "T-R",
+        "palabra": "toro"
+      },
+      {
+        "numero": "13",
+        "letras": "D-M",
+        "palabra": "dama"
+      },
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      }
+    ],
+    "escena": "Bajo el arco de entrada desde la Plaza al Jirón Lima desfilan Los Glóbulos, soldados rojos cargando mochilas de hemoglobina roja brillante. El soldado VARÓN lleva una TELE gigante encendida sobre la cabeza (15) y la soldado MUJER entra montada en un TORO que resopla (14). Justo debajo del arco, una DAMA elegante (13) le tapa el paso al varón y una TINA de agua fría (12) a la mujer: quien cae por debajo de ellas se pone pálido como papel y tiembla, ¡anemia! Al fondo, un soldado casi transparente que apenas camina: tan pálido solo se ve en la piel con menos de 7.",
+    "ancla": "Hb: varón con tele (15), mujer en toro (14); bajo la dama (13) o la tina (12), anemia.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un soldado glóbulo rojo con casco y mochila roja llena, sosteniendo una televisión gigante encendida sobre la cabeza, desfilando bajo un arco colonial de piedra a la entrada de una calle peatonal andina. A su lado una soldado glóbulo roja con casco monta un toro que resopla vapor. Elementos secundarios: una dama elegante con vestido largo bloqueando el paso y una bañera de agua fría donde un glóbulo pálido tiembla. Composición: desfile centrado, rojos intensos contra piedra gris, líneas de movimiento. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Hb normal en varón y en mujer (Guyton)?",
+        "a": "Varón ~15 g/dL, mujer ~14 g/dL"
+      },
+      {
+        "tipo": "umbral",
+        "q": "¿Bajo qué Hb hay anemia según la OMS?",
+        "a": "<13 g/dL en varón y <12 g/dL en mujer"
+      },
+      {
+        "tipo": "caso",
+        "q": "Mujer puneña con Hb 14 g/dL: ¿anemia según el corte de altura (OMS 2011)?",
+        "a": "Sí: en Puno la mujer tiene anemia con Hb <14.7 g/dL"
+      },
+      {
+        "tipo": "umbral",
+        "q": "¿Desde qué Hb se ve palidez clínica?",
+        "a": "Hb <7 g/dL"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 0,
+      "ubicacion": "Arco de entrada desde la Plaza"
+    }
+  },
+  "eritrocitosis-de-altura-hb": {
+    "id": "eritrocitosis-de-altura-hb",
+    "parametro": "Eritrocitosis de altura (Hb)",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Costa: Hb hasta 16 g/dL. Puno (3820 msnm): común 24-26 g/dL → HTP → cor pulmonale crónico. Monge (mal de montaña crónico): Hb ≥21 varón / ≥19 mujer (Qinghai) · Hto >60-65%.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Umbrales de altura muy preguntados en Puno → sistema mayor; la cadena causal (hipoxia → EPO → sangre espesa → corazón derecho) se cuenta en la escena.",
+    "codigo": [
+      {
+        "numero": "16",
+        "letras": "T-J",
+        "palabra": "teja"
+      },
+      {
+        "numero": "24",
+        "letras": "N-R",
+        "palabra": "noria"
+      },
+      {
+        "numero": "26",
+        "letras": "N-CH",
+        "palabra": "nacho"
+      },
+      {
+        "numero": "21",
+        "letras": "N-D",
+        "palabra": "nido"
+      },
+      {
+        "numero": "19",
+        "letras": "T-P",
+        "palabra": "topo"
+      }
+    ],
+    "escena": "En la primera banca del Jirón Lima, un soldado glóbulo llegado de la costa duerme bajo una TEJA (16): hasta ahí llega su Hb. Pero aquí, a 3820 metros, los soldados se multiplican tanto que montan una NORIA gigante (24) que gira cargada de NACHOS (26) y la sangre se vuelve espesa como mazamorra: el corazón derecho empuja jadeando, ¡cor pulmonale! En el respaldar, el varón con mal de Monge tiene un NIDO rebalsado (21) y la mujer un TOPO que asoma (19): de ahí para arriba ya es enfermedad.",
+    "ancla": "Costa teja (16); Puno noria con nachos (24-26); Monge: nido (21) él, topo (19) ella.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: una noria de feria gigante instalada junto a una banca de una calle peatonal andina, cargada de soldados glóbulos rojos con casco amontonados y espesos como mazamorra. Acción: la noria gira lenta y pesada mientras un corazón boxeador rojo con guantes la empuja sudando y jadeando. Elementos secundarios: canastas de nachos colgando de la noria, un nido rebalsado de glóbulos en el respaldar de la banca, un topo asomando del suelo. Composición: noria centrada, rojo oscuro, cielo azul de altura, montañas al fondo. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Hb que define mal de montaña crónico (Monge, Qinghai)?",
+        "a": "≥21 g/dL varón y ≥19 g/dL mujer"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Hb habitual en Puno según el profesor y su consecuencia?",
+        "a": "24-26 g/dL → hipertensión pulmonar → cor pulmonale crónico"
+      },
+      {
+        "tipo": "inversa",
+        "q": "Hb de hasta 16 g/dL es lo normal de…",
+        "a": "La costa (nivel del mar)"
+      },
+      {
+        "tipo": "explica",
+        "q": "¿Por qué la altura sube la Hb?",
+        "a": "SaO2 baja → eritropoyetina → poliglobulia; si es desproporcionada favorece trombosis"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 1,
+      "ubicacion": "Primera banca"
+    }
+  },
+  "hematocrito": {
+    "id": "hematocrito",
+    "parametro": "Hematocrito",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Hto normal 40-45% (Guyton). Policitemia >52% V, >48% M. Altura: aclimatado ~60%, andino 50-55%, Monge >60-65%. CPC con Hto >60% y Hb >20 g%: sangría ANTES de diuréticos. Regla (lit): Hto ≈ Hb × 3.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango y umbral de sangría exactos → sistema mayor. La regla ×3 (literatura) se ve como tres frascos.",
+    "codigo": [
+      {
+        "numero": "40",
+        "letras": "R-S",
+        "palabra": "rosa"
+      },
+      {
+        "numero": "45",
+        "letras": "R-L",
+        "palabra": "rulo"
+      },
+      {
+        "numero": "60",
+        "letras": "CH-Z",
+        "palabra": "choza"
+      },
+      {
+        "numero": "20",
+        "letras": "N-S",
+        "palabra": "Nasa"
+      }
+    ],
+    "escena": "En la farmacia del Jirón Lima, la farmacéutica centrifuga un tubo de sangre que zumba como licuadora: abajo queda la columna roja de soldados. La raya roja llega exactamente entre una ROSA (40) y un RULO (45) pegados al vidrio. Al lado, un tubo de Puno se ha llenado hasta el techo de una CHOZA (60) y despega un cohete de la NASA (20, la Hb): el farmacéutico grita «¡sangría primero, el diurético después!» y abre el grifo rojo. En el mostrador, tres frascos iguales: el Hto vale tres veces la Hb.",
+    "ancla": "Hto entre rosa y rulo (40-45); choza (60) + Nasa (20) = sangría antes del diurético.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: una farmacéutica caricaturesca sosteniendo un tubo de ensayo gigante con sangre centrifugada, columna roja abajo y plasma amarillo arriba, con una rosa y un rulo de peluquería pegados al vidrio a la altura de la raya roja. Acción: a su lado otro tubo desborda hasta el techo de una pequeña choza de paja y de él despega un cohete espacial. Elementos secundarios: tres frascos iguales en el mostrador. Escenario: farmacia de calle andina. Composición: tubos centrados, rojo y amarillo intensos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Hematocrito normal (Guyton)?",
+        "a": "40-45% en ambos sexos"
+      },
+      {
+        "tipo": "umbral",
+        "q": "¿Cuándo se hace sangría en el cor pulmonale crónico?",
+        "a": "Hto >60% o Hb >20 g%, antes del diurético"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Hb 13 g/dL y Hto 52%: ¿qué sospechas?",
+        "a": "No cumple Hto ≈ Hb × 3 (≈39%): error o hipocromía"
+      },
+      {
+        "tipo": "umbral",
+        "q": "¿Hto que define policitemia por sexo?",
+        "a": ">52% varón, >48% mujer"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 2,
+      "ubicacion": "Farmacia"
+    }
+  },
+  "globulos-rojos-hematies": {
+    "id": "globulos-rojos-hematies",
+    "parametro": "Glóbulos rojos (hematíes)",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "GR: varón 5,2 millones/mm³, mujer 4,7 millones/mm³ (±300.000). Altura 14.000-17.000 pies: 6-7 millones/mm³. Vida media 120 días; se destruyen en el bazo. Mentzer (lit) = VCM ÷ GR: <13 talasemia, >13 ferropenia.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Cifras por sexo y vida media exactas → sistema mayor. Mentzer es literatura, se fija con la dama (13) que separa dos platos.",
+    "codigo": [
+      {
+        "numero": "52",
+        "letras": "L-N",
+        "palabra": "luna"
+      },
+      {
+        "numero": "47",
+        "letras": "R-C",
+        "palabra": "roca"
+      },
+      {
+        "numero": "120",
+        "letras": "T-N-S",
+        "palabra": "tunas"
+      },
+      {
+        "numero": "13",
+        "letras": "D-M",
+        "palabra": "dama"
+      }
+    ],
+    "escena": "En la vitrina del restaurante de trucha cuentas a Los Glóbulos uno por uno como si fueran millones de huevitos de trucha. El soldado varón cuelga de una LUNA llena (5,2) y la soldado mujer descansa sobre una ROCA (4,7). Cada uno lleva en la mochila una canasta de TUNAS (120): son sus días de vida; cuando se acaban, ruedan hasta el bazo, que los tritura. En la mesa, una DAMA (13) reparte: a un lado los platos de talasemia (por debajo), al otro los de falta de hierro (por encima).",
+    "ancla": "GR: luna (5,2) él, roca (4,7) ella; viven una canasta de tunas (120 días).",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un soldado glóbulo rojo con casco colgado de una luna llena brillante dentro de la vitrina iluminada de un restaurante de trucha, junto a una soldado glóbulo roja sentada sobre una roca. Acción: ambos cargan canastas desbordantes de tunas verdes y rojas mientras otros glóbulos viejos ruedan hacia un órgano morado que los tritura. Elementos secundarios: truchas frescas en la vitrina, una dama elegante sirviendo platos. Composición: vitrina centrada, rojos y morados, luz cálida. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Recuento normal de GR en varón y mujer?",
+        "a": "5,2 y 4,7 millones/mm³ (±300.000)"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Vida media del glóbulo rojo y dónde se destruye?",
+        "a": "120 días; en el bazo"
+      },
+      {
+        "tipo": "caso",
+        "q": "VCM 65 fL y GR 6 millones: Mentzer ≈ 11. ¿Qué sugiere?",
+        "a": "<13: talasemia"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 3,
+      "ubicacion": "Restaurante con trucha en la vitrina"
+    }
+  },
+  "vcm": {
+    "id": "vcm",
+    "parametro": "VCM",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "VCM 80-100 fL = normocítica. >100 fL macrocítica: déficit B12/folato, alcoholismo, mielodisplasia. <80 fL microcítica: ferropenia por pérdida crónica, talasemia.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango exacto → sistema mayor. Para no confundir los tres índices: VCM = TAMAÑO del soldado (volumen, se mide con recipientes), HCM = PESO de su mochila, CHCM = INTENSIDAD del color.",
+    "codigo": [
+      {
+        "numero": "80",
+        "letras": "V-S",
+        "palabra": "vaso"
+      },
+      {
+        "numero": "100",
+        "letras": "T-S-S",
+        "palabra": "tazas"
+      }
+    ],
+    "escena": "En la agencia de turismo los soldados glóbulos se prueban el traje de viaje según su TAMAÑO: el normal cabe justo entre un VASO (80) y una torre de TAZAS (100). Uno enano y oxidado, sin hierro, se hunde dentro del vaso y desaparece: microcítico. Otro gigante, inflado como globo, revienta las tazas con estrépito y huele a cerveza y a falta de vitamina B12: macrocítico.",
+    "ancla": "VCM = talla: entre vaso (80) y tazas (100); enano sin hierro, gigante sin B12.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un soldado glóbulo rojo de tamaño normal con casco, de pie entre un vaso de vidrio y una torre de tazas, en el mostrador de una agencia de turismo con mapas de un lago andino. Acción: a la izquierda un glóbulo enano y oxidado cae dentro del vaso; a la derecha un glóbulo gigante inflado como globo revienta la torre de tazas en pedazos. Composición: tres tamaños de glóbulo de izquierda a derecha, rojo intenso, líneas de impacto. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿VCM normal?",
+        "a": "80-100 fL (normocítica)"
+      },
+      {
+        "tipo": "umbral",
+        "q": "VCM 123 fL se llama… y ¿qué buscas?",
+        "a": "Macrocitosis (>100): déficit de B12/folato, alcohol, mielodisplasia"
+      },
+      {
+        "tipo": "trampa",
+        "q": "¿Qué índice mide el TAMAÑO del GR: VCM, HCM o CHCM?",
+        "a": "El VCM (volumen, en fL)"
+      },
+      {
+        "tipo": "umbral",
+        "q": "VCM <80 fL: ¿causas principales?",
+        "a": "Ferropenia por pérdida crónica y talasemia"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 4,
+      "ubicacion": "Agencia de turismo"
+    }
+  },
+  "hcm": {
+    "id": "hcm",
+    "parametro": "HCM",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "HCM 27-33 pg (lit). <27 pg hipocromía: anemia microcítica hipocrómica (ferropenia). Sube (lit): macrocitosis por déficit de B12 o folato, alcohol, hepatopatía.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango exacto (literatura) → sistema mayor. HCM = cuánta Hb CARGA cada glóbulo (masa en picogramos): la mochila. Se separa del VCM (talla) y del CHCM (color).",
+    "codigo": [
+      {
+        "numero": "27",
+        "letras": "N-C",
+        "palabra": "nuca"
+      },
+      {
+        "numero": "33",
+        "letras": "M-M",
+        "palabra": "momia"
+      }
+    ],
+    "escena": "En la tienda de chompas de alpaca, cada soldado glóbulo se pesa su MOCHILA de hemoglobina antes de salir al frío. La mochila normal se apoya en la NUCA (27) y no puede pesar más que la MOMIA andina (33) que cuelga del perchero. Un soldado sin hierro tiene la mochila casi vacía y la nuca le queda desnuda y helada: hipocromía.",
+    "ancla": "HCM = peso de la mochila: de la nuca (27) a la momia (33).",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un soldado glóbulo rojo con casco y chompa de alpaca colorida, cargando sobre la nuca una mochila roja pesada, de pie sobre una balanza antigua dentro de una tienda de chompas andina. Acción: la balanza se equilibra con una momia andina envuelta en telas que cuelga del perchero. Elemento secundario: un glóbulo pálido con mochila vacía temblando de frío. Composición: protagonista centrado, rojos y tejidos de colores vivos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿HCM normal?",
+        "a": "27-33 pg"
+      },
+      {
+        "tipo": "umbral",
+        "q": "HCM <27 pg indica…",
+        "a": "Hipocromía: anemia microcítica hipocrómica, casi siempre ferropenia"
+      },
+      {
+        "tipo": "trampa",
+        "q": "¿Cuál se mide en picogramos y cuál en g/dL: HCM o CHCM?",
+        "a": "HCM en pg (Hb por célula); CHCM en g/dL (concentración)"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 5,
+      "ubicacion": "Tienda de chompas de alpaca"
+    }
+  },
+  "chcm": {
+    "id": "chcm",
+    "parametro": "CHCM",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "CHCM 32-36 g/dL (lit). <32 g/dL hipocromía: ferropenia (GR pálidos, palidez central aumentada). >36: esferocitos hipercrómicos sin palidez central (esferocitosis hereditaria).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango exacto (literatura) → sistema mayor. CHCM = qué tan CONCENTRADO es el rojo dentro del glóbulo: la intensidad del color. Trampa: el 33 del HCM y el 32 del CHCM están pegados.",
+    "codigo": [
+      {
+        "numero": "32",
+        "letras": "M-N",
+        "palabra": "mono"
+      },
+      {
+        "numero": "36",
+        "letras": "M-CH",
+        "palabra": "mecha"
+      }
+    ],
+    "escena": "Junto al músico callejero, un MONO pintor (32) tiñe a los soldados glóbulos con pintura roja: si pone poca, quedan pálidos con un hueco blanco enorme al centro (ferropenia). El músico enciende una MECHA (36) como tope: el que se pasa de la mecha se encoge en una bolita roja oscurísima, sin centro pálido, que rebota con la música: el esferocito.",
+    "ancla": "CHCM = color: del mono pintor (32) a la mecha (36); más allá, solo el esferocito.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un mono pintor con boina y brocha pintando de rojo a soldados glóbulos rojos con forma de disco junto a un músico callejero con charango en una calle peatonal andina. Acción: algunos glóbulos quedan pálidos con un gran centro blanco; el músico enciende una mecha y un glóbulo se encoge en una bolita roja muy oscura y redonda que rebota. Composición: mono centrado, gradiente de rojo pálido a rojo intenso, notas musicales dibujadas como ondas. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿CHCM normal?",
+        "a": "32-36 g/dL"
+      },
+      {
+        "tipo": "umbral",
+        "q": "CHCM >36 g/dL casi solo se ve en…",
+        "a": "Esferocitosis hereditaria (esferocitos hipercrómicos sin palidez central)"
+      },
+      {
+        "tipo": "trampa",
+        "q": "HCM 30 pg y CHCM 30 g/dL: ¿cuál está bajo?",
+        "a": "Solo el CHCM (<32); el HCM 30 está dentro de 27-33"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 6,
+      "ubicacion": "Músico callejero"
+    }
+  },
+  "reticulocitos": {
+    "id": "reticulocitos",
+    "parametro": "Reticulocitos",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Reticulocitos 0,5-1,5% de los GR (concepto); Guyton: <1%. Reticulocitosis: hemólisis o hemorragia (la médula compensa a los 5-7 días). Reticulocitopenia: anemia arregenerativa (ferropenia, aplasia, talasemia). Índice reticulocitario (lit) >2 regenerativa, <2 arregenerativa.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango con decimales: se codifican 05 (0,5) y 15 (1,5); la coma se deduce porque es un porcentaje pequeño (décimas). Hay discrepancia entre fuentes (0,5-1,5% vs <1% de Guyton).",
+    "codigo": [
+      {
+        "numero": "05",
+        "letras": "S-L",
+        "palabra": "sol"
+      },
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      }
+    ],
+    "escena": "En la heladería, los reticulocitos son glóbulos bebé que todavía llevan una redecilla en el pelo (el retículo). Salen de la médula en conos de helado: el puesto se abre cuando sale el SOL (0,5) y cierra cuando empieza la TELE (1,5). Si hay una hemorragia o una hemólisis, la heladería se desborda de conos con redecilla una semana después; si la médula está seca (sin hierro, aplasia), la vitrina queda vacía y fría.",
+    "ancla": "Reticulocitos: bebés con redecilla, del sol (0,5) a la tele (1,5).",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un glóbulo rojo bebé con una redecilla en la cabeza saliendo de un cono de helado gigante en el mostrador de una heladería de calle andina. Acción: decenas de bebés con redecilla saltan de los conos como palomitas. Elementos secundarios: un sol radiante en la ventana a la izquierda y una televisión encendida a la derecha. Composición: protagonista centrado, rosados y rojos sobre colores pastel, líneas de movimiento. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Reticulocitos normales?",
+        "a": "0,5-1,5% de los GR (Guyton: <1%)"
+      },
+      {
+        "tipo": "caso",
+        "q": "Anemia con reticulocitos altos: ¿qué piensas?",
+        "a": "Regenerativa: hemólisis o hemorragia"
+      },
+      {
+        "tipo": "inversa",
+        "q": "¿Cuál es el indicador más sensible de actividad eritropoyética?",
+        "a": "Los reticulocitos"
+      },
+      {
+        "tipo": "umbral",
+        "q": "Índice reticulocitario <2 significa…",
+        "a": "Anemia arregenerativa (ferropenia, aplasia, talasemia)"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": true,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 7,
+      "ubicacion": "Heladería"
+    }
+  },
+  "leucocitos-totales": {
+    "id": "leucocitos-totales",
+    "parametro": "Leucocitos totales",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Leucocitos adulto 4.000-10.000/µL (lit; según laboratorio hasta 11.000). Leucopenia <4.000/µL. Infección 15-20.000/µL; reacción leucemoide 40-100.000/µL. Fórmula (lit): N > L > M > E > B ≈ 60-30-6-3-1% («Nunca Los Maltrates, Eres Bueno»).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango en miles → sistema mayor sobre 4 y 10 (los miles se deducen). El orden de la fórmula va con el acróstico que trae la fila (literatura).",
+    "codigo": [
+      {
+        "numero": "4",
+        "letras": "R",
+        "palabra": "oro"
+      },
+      {
+        "numero": "10",
+        "letras": "T-S",
+        "palabra": "taza"
+      }
+    ],
+    "escena": "El cajero automático del Jirón Lima escupe leucocitos-soldados con escudo en vez de billetes. Lo normal: entre una moneda de ORO (4 mil) y una TAZA llena (10 mil). Si el cajero solo suelta menos que la moneda de oro, la calle queda sin guardias: leucopenia. Al salir, los soldados forman en fila gritando el orden de mayor a menor: «¡Nunca Los Maltrates, Eres Bueno!»: neutrófilos, linfocitos, monocitos, eosinófilos y basófilos.",
+    "ancla": "Leucocitos: del oro (4 mil) a la taza (10 mil); «Nunca Los Maltrates, Eres Bueno».",
+    "acronimo": "NLMEB: «Nunca Los Maltrates, Eres Bueno» (neutrófilos > linfocitos > monocitos > eosinófilos > basófilos)",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un cajero automático antropomórfico en una calle peatonal andina escupiendo pequeños soldados glóbulos blancos con escudos en lugar de billetes. Acción: los soldados salen volando y forman una fila de cinco tipos, del más grande al más pequeño grupo. Elementos secundarios: una moneda de oro gigante a la izquierda y una taza humeante a la derecha. Composición: cajero centrado, blancos brillantes con azul y dorado, líneas de movimiento. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Leucocitos normales en el adulto?",
+        "a": "4.000-10.000/µL (según laboratorio hasta 11.000)"
+      },
+      {
+        "tipo": "umbral",
+        "q": "¿Leucopenia es menos de…?",
+        "a": "<4.000/µL"
+      },
+      {
+        "tipo": "lista",
+        "q": "¿Orden de la fórmula leucocitaria de mayor a menor?",
+        "a": "N > L > M > E > B ≈ 60-30-6-3-1%"
+      },
+      {
+        "tipo": "caso",
+        "q": "Abdomen agudo con 17.000 leucocitos y >80% neutrófilos: ¿qué temes?",
+        "a": "Perforación (apendicitis: >15.000 + >80%)"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 8,
+      "ubicacion": "Cajero automático"
+    }
+  },
+  "neutrofilos-segmentados": {
+    "id": "neutrofilos-segmentados",
+    "parametro": "Neutrófilos segmentados",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Neutrófilos segmentados 55-70% de leucocitos (2.500-7.500/µL). Neutrofilia: infección bacteriana, inflamación, estrés, epinefrina. Neutropenia <1.500-2.000/µL: quimioterapia, aplasia, fármacos; AR (Felty). Absolutos (lit) <500 grave, riesgo de sepsis.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Porcentaje y umbral de neutropenia exactos → sistema mayor. Neutrófilo = infantería contra bacterias, el núcleo segmentado como cadena de salchichas.",
+    "codigo": [
+      {
+        "numero": "55",
+        "letras": "L-L",
+        "palabra": "lila"
+      },
+      {
+        "numero": "70",
+        "letras": "C-S",
+        "palabra": "casa"
+      },
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      }
+    ],
+    "escena": "En la pizzería, una plaga de bacterias verdes invade las pizzas. Entra corriendo la infantería: neutrófilos con escudo y un núcleo en cadena de salchichas, tantos que llenan el local desde la pared LILA (55) hasta el techo de la CASA (70). Si hay infección bacteriana, se multiplican y se comen las bacterias a mordiscos. Pero si el horno de la médula se apaga por quimioterapia y quedan menos que los que caben frente a la TELE (1.500), las bacterias se adueñan de la pizzería.",
+    "ancla": "Neutrófilos: de la pared lila (55%) al techo de la casa (70%); menos que la tele (1.500) = neutropenia.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un soldado glóbulo blanco con escudo y un núcleo visible en forma de cadena de tres lóbulos, mordiendo una bacteria verde sobre una pizza gigante dentro de una pizzería de calle andina con paredes lilas. Acción: decenas de soldados iguales entran en tropel y devoran bacterias. Elementos secundarios: una televisión vieja en la esquina y un horno de leña apagándose. Composición: protagonista centrado, blanco y lila con verde ácido, líneas de velocidad. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Neutrófilos segmentados normales?",
+        "a": "55-70% (2.500-7.500/µL)"
+      },
+      {
+        "tipo": "umbral",
+        "q": "¿Neutropenia es menos de…?",
+        "a": "<1.500-2.000/µL; <500 absolutos = grave, riesgo de sepsis"
+      },
+      {
+        "tipo": "caso",
+        "q": "Fiebre, leucocitosis y neutrofilia: ¿qué tipo de infección sugiere?",
+        "a": "Bacteriana"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 9,
+      "ubicacion": "Pizzería"
+    }
+  },
+  "abastonados-cayados": {
+    "id": "abastonados-cayados",
+    "parametro": "Abastonados (cayados)",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Abastonados 0-5% (hasta ~500/µL) (lit). >5% = desviación a la izquierda: infección bacteriana aguda (peritonitis). Desviación izquierda con leucopenia (lit) = sepsis grave, peor pronóstico.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "El rango 0-5 cabe en una sola palabra (sol = 05). Abastonado = neutrófilo joven con núcleo en bastón: se ve como un cayado de pastor.",
+    "codigo": [
+      {
+        "numero": "05",
+        "letras": "S-L",
+        "palabra": "sol"
+      }
+    ],
+    "escena": "En la tienda de artesanía, neutrófilos jovencitos con un BASTÓN de pastor tallado (el núcleo en cayado) toman el SOL (0 a 5) en la puerta: unos pocos, tranquilos. Cuando estalla una infección bacteriana aguda, la médula los suelta antes de tiempo y salen en estampida hacia la IZQUIERDA, golpeando el piso con sus bastones: desviación a la izquierda. Si además casi no hay soldados en la calle, el artesano grita «¡sepsis!».",
+    "ancla": "Cayados: pocos tomando el sol (0-5%); si corren a la izquierda, infección aguda.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un neutrófilo joven caricaturesco con escudo y un núcleo en forma de bastón curvo, apoyado en un cayado de pastor tallado, en la puerta de una tienda de artesanía andina con textiles colgados. Acción: muchos neutrófilos iguales corren en estampida hacia la izquierda del cuadro golpeando el piso con sus bastones. Elemento secundario: un sol radiante en el cielo. Composición: estampida de derecha a izquierda, blancos y ocres con colores de artesanía. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Abastonados normales?",
+        "a": "0-5% (hasta ~500/µL)"
+      },
+      {
+        "tipo": "umbral",
+        "q": "Abastonados >5% se llama…",
+        "a": "Desviación a la izquierda: infección bacteriana aguda"
+      },
+      {
+        "tipo": "caso",
+        "q": "Desviación izquierda con leucopenia: ¿qué significa?",
+        "a": "Sepsis grave, peor pronóstico que con leucocitosis"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 10,
+      "ubicacion": "Tienda de artesanía"
+    }
+  },
+  "linfocitos": {
+    "id": "linfocitos",
+    "parametro": "Linfocitos",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Linfocitos 20-40% (1.000-4.000/µL) (lit). Linfocitosis >4.000 adulto: virus (mononucleosis, parotiditis, rubéola). Linfopenia <1.000/mm³: deficiencia de inmunidad celular. Mononucleosis (lit): linfocitos atípicos >10% + faringitis + adenopatías cervicales posteriores + esplenomegalia.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango exacto → sistema mayor. Linfocito = la inteligencia del ejército, el que atiende las llamadas de los virus (cabina telefónica).",
+    "codigo": [
+      {
+        "numero": "20",
+        "letras": "N-S",
+        "palabra": "Nasa"
+      },
+      {
+        "numero": "40",
+        "letras": "R-S",
+        "palabra": "rosa"
+      }
+    ],
+    "escena": "En la cabina telefónica, el linfocito es el espía del ejército: núcleo enorme, casi sin citoplasma, auriculares puestos. Recibe llamadas de la NASA (20) y anota en una ROSA (40): ese es su rango. Cuando llaman los virus (el beso de la mononucleosis, las paperas de la parotiditis), la cabina se llena de linfocitos apretujados; si casi no queda ninguno, nadie contesta y la inmunidad celular se cae.",
+    "ancla": "Linfocitos: espía de la cabina, de la Nasa (20%) a la rosa (40%); virus = cabina llena.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un linfocito caricaturesco con núcleo enorme y casi sin borde, con casco de espía y auriculares, apretado dentro de una cabina telefónica roja en una calle peatonal andina. Acción: contesta el teléfono con cara de alerta mientras pequeños virus verdes con coronas de púas golpean el vidrio. Elementos secundarios: un cohete espacial de juguete a la izquierda y una rosa roja a la derecha. Composición: cabina centrada, azul y rojo intensos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Linfocitos normales?",
+        "a": "20-40% (1.000-4.000/µL)"
+      },
+      {
+        "tipo": "caso",
+        "q": "Joven con faringitis, adenopatías cervicales posteriores, esplenomegalia y linfocitos atípicos >10%: ¿diagnóstico?",
+        "a": "Mononucleosis"
+      },
+      {
+        "tipo": "umbral",
+        "q": "Linfopenia <1.000/mm³ indica…",
+        "a": "Deficiencia de la inmunidad celular"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 11,
+      "ubicacion": "Cabina telefónica"
+    }
+  },
+  "monocitos": {
+    "id": "monocitos",
+    "parametro": "Monocitos",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Monocitos 2-8% (200-800/µL) (lit). Monocitosis >500 adulto, >750 niño: TBC, endocarditis subaguda, Hodgkin, AR, LES, CU. Regla (lit): monocitosis = inflamación o infección CRÓNICA; pensar TBC y endocarditis subaguda antes que leucemia.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "El rango 2-8 cabe en una sola palabra (nave = 28). Monocito = el soldado más grande y lento, que se queda en lo crónico.",
+    "codigo": [
+      {
+        "numero": "28",
+        "letras": "N-V",
+        "palabra": "nave"
+      }
+    ],
+    "escena": "Entre las macetas con flores aterriza una NAVE espacial (2 a 8) y de ella baja el monocito: el soldado más grande del ejército, con núcleo en forma de frijol y una boca de aspiradora. No corre: se instala para quedarse, como las plantas que crecen despacio. Llega cuando la pelea es CRÓNICA: tose sangre un enfermo de TBC y un corazón con la válvula infectada late lento a su lado (endocarditis subaguda).",
+    "ancla": "Monocitos: la nave (2-8%) del soldado gigante y lento de lo crónico.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un monocito gigante caricaturesco con escudo, núcleo en forma de frijol y boca de aspiradora, bajando con calma de una pequeña nave espacial aterrizada entre macetas con flores en una calle peatonal andina. Acción: aspira bacterias lentas mientras echa raíces como una planta. Elemento secundario: un corazón boxeador cansado con una válvula hinchada sentado a su lado. Composición: monocito centrado, grises plateados con verdes y flores de colores. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Monocitos normales?",
+        "a": "2-8% (200-800/µL)"
+      },
+      {
+        "tipo": "caso",
+        "q": "Monocitosis en un adulto: ¿qué dos causas piensas primero?",
+        "a": "TBC y endocarditis bacteriana subaguda (infección/inflamación crónica)"
+      },
+      {
+        "tipo": "umbral",
+        "q": "¿Monocitosis en el adulto es más de…?",
+        "a": ">500/µL (>750 en el niño)"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 12,
+      "ubicacion": "Macetas con flores"
+    }
+  },
+  "eosinofilos": {
+    "id": "eosinofilos",
+    "parametro": "Eosinófilos",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Eosinófilos 1-4% (hasta 500/µL) (lit). Eosinofilia: parásitos tisulares (triquinosis), alergia, asma, fiebre del heno. Causas (lit) NAACP: neoplasia, alergia-asma, Addison, colagenosis, parásitos tisulares. Eosinopenia (lit): estrés agudo, corticoides, Cushing, infección aguda.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "mnemotecnia",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "El rango 1-4 cabe en una palabra (toro = 14). Las causas van con el acrónimo NAACP que trae la fila (literatura).",
+    "codigo": [
+      {
+        "numero": "14",
+        "letras": "T-R",
+        "palabra": "toro"
+      }
+    ],
+    "escena": "Frente al banco del Jirón Lima, un TORO (1 a 4) bravo con gránulos naranja brillante en el lomo, como confites, embiste a unos gusanos gigantes que salen de las veredas: el eosinófilo caza parásitos. Detrás de él, la fila del banco estornuda y silba de asma y alergia. En la puerta, el cartel invisible del banco te recuerda a la NAACP: neoplasia, alergia-asma, Addison, colagenosis, parásitos.",
+    "ancla": "Eosinófilo = toro naranja (1-4%) que embiste gusanos y alergias: NAACP.",
+    "acronimo": "NAACP: Neoplasia, Alergia-asma, Addison, Colagenosis, Parásitos tisulares",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un toro bravo caricaturesco con escudo de soldado y el lomo cubierto de gránulos naranja brillante como confites, embistiendo a gusanos gigantes que salen de la vereda frente a un banco en una calle peatonal andina. Acción: los gusanos salen volando mientras el toro resopla. Elemento secundario: personas en la fila del banco estornudando con nubes de polen. Composición: toro centrado, naranja intenso y rosado sobre piedra gris. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Eosinófilos normales?",
+        "a": "1-4% (hasta 500/µL)"
+      },
+      {
+        "tipo": "lista",
+        "q": "¿Causas de eosinofilia (NAACP)?",
+        "a": "Neoplasia, alergia-asma, Addison, colagenosis, parásitos tisulares"
+      },
+      {
+        "tipo": "trampa",
+        "q": "¿Corticoides y Cushing suben o bajan los eosinófilos?",
+        "a": "Los bajan (eosinopenia)"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 13,
+      "ubicacion": "Banco del Jr. Lima"
+    }
+  },
+  "basofilos": {
+    "id": "basofilos",
+    "parametro": "Basófilos",
+    "grupo": "Hemograma",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "Basófilos <1% de los leucocitos. Basofilia: rara, ligada a hipersensibilidad. Basofilia persistente (lit) = pensar en leucemia mieloide crónica (síndrome mieloproliferativo).",
+    "tecnicas": [
+      "visualizacion-imagenes",
+      "memorizar-conceptos"
+    ],
+    "por_que": "El valor es mínimo y fácil (<1%: el más escaso, el último del «Eres Bueno»); no necesita código, basta la escena del soldado solitario con granos azules de histamina.",
+    "codigo": [],
+    "escena": "En el cruce con el Jirón Libertad hay UN solo soldado, y ni siquiera completo: el basófilo, el más escaso de todos (menos de 1%). Va cubierto de gránulos azul oscuro que revientan como globos de agua llenos de histamina y hacen estornudar a todo el cruce: hipersensibilidad. Si ese soldado se multiplica y se queda para siempre, el semáforo se pone en rojo: leucemia mieloide crónica.",
+    "ancla": "Basófilo: el soldado solitario (<1%) de granos azules que hace estornudar; si se queda, LMC.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un único soldado glóbulo blanco pequeño cubierto de gránulos azul oscuro brillantes, de pie solo en un cruce de calles andinas vacío. Acción: sus gránulos revientan como globos de agua azules y los transeúntes alrededor estornudan con fuerza. Elemento secundario: un semáforo que cambia a rojo detrás de él. Composición: soldado centrado y pequeño en un espacio amplio, azul marino intenso sobre fondo claro. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Basófilos normales?",
+        "a": "<1% de los leucocitos"
+      },
+      {
+        "tipo": "caso",
+        "q": "Basofilia persistente: ¿qué enfermedad sospechas?",
+        "a": "Leucemia mieloide crónica (síndrome mieloproliferativo)"
+      },
+      {
+        "tipo": "inversa",
+        "q": "El leucocito más escaso de la fórmula es…",
+        "a": "El basófilo"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#137",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 14,
+      "ubicacion": "Cruce con el Jr. Libertad"
+    }
+  },
+  "plaquetas": {
+    "id": "plaquetas",
+    "parametro": "Plaquetas",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Plaquetas 150.000-450.000/µL (Guyton). Trombocitopenia <150.000: menor producción, PTI, secuestro esplénico, CID, dilución. <30.000 riesgo de sangrado quirúrgico/espontáneo; <10.000 potencialmente letal. Plaquetas bajas (lit): petequias y sangrado de mucosas.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango y dos umbrales de riesgo exactos → sistema mayor (los miles se deducen). Telas = 150 y rulos = 450 extienden tele (15) y rulo (45) de la tabla.",
+    "codigo": [
+      {
+        "numero": "150",
+        "letras": "T-L-S",
+        "palabra": "telas"
+      },
+      {
+        "numero": "450",
+        "letras": "R-L-S",
+        "palabra": "rulos"
+      },
+      {
+        "numero": "30",
+        "letras": "M-S",
+        "palabra": "mesa"
+      },
+      {
+        "numero": "10",
+        "letras": "T-S",
+        "palabra": "taza"
+      }
+    ],
+    "escena": "En el hotel, las plaquetas son camareras diminutas que tapan cada fuga de las cañerías con parches. Tienden TELAS (150 mil) desde el piso y se suben hasta el techo con RULOS en la cabeza (450 mil). Si quedan menos que las telas, aparecen puntitos rojos en las sábanas (petequias); por debajo de la MESA (30 mil) las cañerías gotean solas, y si apenas llenan una TAZA (10 mil), el hotel entero se inunda.",
+    "ancla": "Plaquetas: de las telas (150 mil) a los rulos (450 mil); bajo la mesa (30 mil) sangra, bajo la taza (10 mil) peligra la vida.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: una plaqueta diminuta caricaturesca vestida de camarera de hotel, con rulos en la cabeza, pegando parches sobre una cañería que gotea dentro de un pasillo de hotel andino. Acción: decenas de plaquetas camareras tienden largas telas de colores para tapar fugas. Elementos secundarios: una sábana blanca con puntitos rojos, una mesa y una taza bajo las goteras. Composición: protagonista centrada, morados y amarillos intensos, gotas con brillo. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Plaquetas normales (Guyton)?",
+        "a": "150.000-450.000/µL"
+      },
+      {
+        "tipo": "umbral",
+        "q": "¿Bajo qué recuento hay riesgo de sangrado espontáneo/quirúrgico y bajo cuál es potencialmente letal?",
+        "a": "<30.000/µL y <10.000/µL"
+      },
+      {
+        "tipo": "trampa",
+        "q": "Petequias y sangrado de mucosas vs hematomas y hemartrosis: ¿cuál es de plaquetas?",
+        "a": "Petequias y mucosas = plaquetas; hematomas y hemartrosis = factores"
+      },
+      {
+        "tipo": "inversa",
+        "q": "Recuento <150.000/µL se llama…",
+        "a": "Trombocitopenia"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 15,
+      "ubicacion": "Hotel"
+    }
+  },
+  "ade-rdw": {
+    "id": "ade-rdw",
+    "parametro": "ADE / RDW",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "ADE/RDW 11,5-14,5% (lit). Alto = anisocitosis: ferropenia temprana, déficit B12/folato, anemia mixta. Regla (lit): microcitosis + RDW alto = ferropenia; microcitosis + RDW normal = talasemia.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango con decimales: 11,5 y 14,5 se codifican como tríos (la coma va antes del último dígito). RDW = qué tan DISTINTOS de tamaño son los GR entre sí: panes desiguales.",
+    "codigo": [
+      {
+        "numero": "115",
+        "letras": "D-D-L",
+        "palabra": "dedal"
+      },
+      {
+        "numero": "145",
+        "letras": "T-R-L",
+        "palabra": "toril"
+      }
+    ],
+    "escena": "En la panadería, el panadero mide con un DEDAL (11,5) y un TORIL (14,5) qué tan parejos salen los panes-glóbulos. Lo normal: todos casi del mismo tamaño. Pero hoy la masa no tiene hierro y salen panes enanos y gigantes mezclados en la misma lata: el toro del toril rompe la puerta y se escapa furioso de tanta desigualdad (anisocitosis, ferropenia). En la mesa de al lado, unos panecillos todos chiquitos pero idénticos: esos son talasemia.",
+    "ancla": "RDW = panes desiguales, del dedal (11,5) al toril (14,5); micro + RDW alto = hierro.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un panadero caricaturesco con gorro blanco sacando del horno una lata con panes rojos en forma de glóbulo de tamaños muy distintos, enanos y gigantes mezclados, en una panadería andina. Acción: un toro furioso sale embistiendo de su toril de madera al ver la desigualdad mientras el panadero mide un pan con un dedal en el dedo. Elemento secundario: en otra mesa una fila de panecillos diminutos e idénticos. Composición: lata centrada, rojos y dorados cálidos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿ADE/RDW normal?",
+        "a": "11,5-14,5%"
+      },
+      {
+        "tipo": "caso",
+        "q": "Anemia microcítica con RDW alto vs con RDW normal: ¿qué sugiere cada una?",
+        "a": "RDW alto = ferropenia; RDW normal = talasemia"
+      },
+      {
+        "tipo": "inversa",
+        "q": "La variación del tamaño de los GR (anisocitosis) se mide con…",
+        "a": "El ADE/RDW"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 16,
+      "ubicacion": "Panadería"
+    }
+  },
+  "vpm-volumen-plaquetario-medio": {
+    "id": "vpm-volumen-plaquetario-medio",
+    "parametro": "VPM (volumen plaquetario medio)",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "VPM 7,5-11,5 fL (lit). Sube: plaquetas jóvenes por destrucción periférica (PTI), recuperación medular. Baja: hipoproducción medular, aplasia, hiperesplenismo.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango con decimales: 7,5 (par) y 11,5 (trío). Es el «VCM de las plaquetas»: tamaño de la plaqueta. Comparte el dedal (11,5) con el RDW; la trampa es que ambos terminan en 11,5 pero uno es en % y el otro en fL.",
+    "codigo": [
+      {
+        "numero": "75",
+        "letras": "G-LL",
+        "palabra": "gallo"
+      },
+      {
+        "numero": "115",
+        "letras": "D-D-L",
+        "palabra": "dedal"
+      }
+    ],
+    "escena": "En el puesto de jugos, las plaquetas se miden el tamaño en vasitos: van desde un GALLO (7,5) que se toma un jugo hasta un DEDAL de costurera (11,5) que hace de copa. Cuando el bazo o los anticuerpos destruyen plaquetas (PTI), la médula manda plaquetas jóvenes enormes, gordas como mandarinas, y el VPM sube. Si la médula está seca, solo salen plaquetas enanas y arrugadas como pasas.",
+    "ancla": "VPM = talla de la plaqueta: del gallo (7,5) al dedal (11,5); PTI = plaquetas jóvenes gordas.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un gallo caricaturesco tomando jugo con pajita en un puesto de jugos de calle andina, rodeado de plaquetas pequeñas con cara. Acción: desde una licuadora saltan plaquetas jóvenes enormes y redondas como mandarinas, mientras unas plaquetas arrugadas como pasas se esconden. Elemento secundario: un dedal plateado usado como copa sobre el mostrador. Composición: gallo centrado, naranjas y morados vibrantes, frutas de colores. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿VPM normal?",
+        "a": "7,5-11,5 fL"
+      },
+      {
+        "tipo": "caso",
+        "q": "Trombocitopenia con VPM alto: ¿qué mecanismo sugiere?",
+        "a": "Destrucción periférica (PTI): la médula libera plaquetas jóvenes grandes"
+      },
+      {
+        "tipo": "trampa",
+        "q": "¿Qué dos índices terminan en 11,5 y en qué unidades?",
+        "a": "RDW 11,5-14,5% y VPM 7,5-11,5 fL"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 17,
+      "ubicacion": "Puesto de jugos"
+    }
+  },
+  "plaquetocrito": {
+    "id": "plaquetocrito",
+    "parametro": "Plaquetocrito",
+    "grupo": "Hemograma",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Plaquetocrito 0,15-0,40% (lit). Sube: trombocitosis. Baja: trombocitopenia (va paralelo al recuento).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Rango con decimales: el «0,» se deduce (las plaquetas ocupan una fracción mínima de la sangre); se codifican 15 y 40. Es el «hematocrito de las plaquetas»: el 40 coincide con el inicio del hematocrito (rosa), pero en centésimas.",
+    "codigo": [
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      },
+      {
+        "numero": "40",
+        "letras": "R-S",
+        "palabra": "rosa"
+      }
+    ],
+    "escena": "Llegando al Parque Pino, un tubo centrifugado gigante igual al de la farmacia, pero de plaquetas: la capa que ocupan es tan delgadita que tienes que mirarla con lupa. Entre una TELE (0,15) y una ROSA (0,40) cabe todo el plaquetocrito, una rosa en miniatura comparada con la del hematocrito. Si las plaquetas suben, la capita engorda; si bajan, casi desaparece: va de la mano del recuento.",
+    "ancla": "Plaquetocrito: el hematocrito enano de las plaquetas, de la tele (0,15) a la rosa (0,40).",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un tubo de ensayo gigante clavado a la entrada de un parque andino con pinos, con una capa delgadísima de plaquetas con cara apretadas en el centro. Acción: un niño mira la capa con una lupa enorme y se sorprende. Elementos secundarios: una televisión vieja a la izquierda del tubo y una rosa diminuta a la derecha. Composición: tubo centrado, verdes del parque y morado de las plaquetas. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Plaquetocrito normal?",
+        "a": "0,15-0,40%"
+      },
+      {
+        "tipo": "inversa",
+        "q": "¿Qué parámetro va paralelo al recuento de plaquetas y expresa el % de volumen que ocupan?",
+        "a": "El plaquetocrito"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s3",
+      "n": 18,
+      "ubicacion": "Llegada al Parque Pino"
+    }
+  },
+  "higado-examen-clinico-ecografia": {
+    "id": "higado-examen-clinico-ecografia",
+    "parametro": "Hígado (examen clínico; ecografía)",
+    "grupo": "Ecografía y otros datos de la HC",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Hígado normal: borde no palpable; submatidez superior desde 5º EIC derecho. Hepatomegalia: pequeña hasta 2 traveses, mediana hasta 4, grande >4. Hepatometría (lit) por percusión en LMC derecha: 10-12 cm; lóbulo derecho en eco <15 cm (lit).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Cifras de exploración → sistema mayor: hepatometría (10-12) y los traveses de dedo (2 y 4 en una sola palabra: noria). Personaje: Chef Hepa.",
+    "codigo": [
+      {
+        "numero": "10",
+        "letras": "T-S",
+        "palabra": "taza"
+      },
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      },
+      {
+        "numero": "24",
+        "letras": "N-R",
+        "palabra": "noria"
+      }
+    ],
+    "escena": "En la portada de la Catedral, Chef Hepa se esconde detrás de las costillas: su borde no asoma (no palpable). Para medirlo, percutes por la línea medioclavicular derecha bajando de un escalón al quinto: su altura va de una TAZA (10) a una TINA (12) de sopa. Cuando enferma se hincha y su barriga gira hacia abajo como una NORIA: dos dedos de travesía es pequeña, cuatro mediana y más de cuatro, grande.",
+    "ancla": "Hígado: de la taza a la tina (10-12 cm); la noria de traveses (2 y 4).",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un hígado granate caricaturesco con gorro de chef asomándose tímido detrás de una reja en forma de costillas, frente a la portada de piedra tallada de una catedral andina. Acción: una mano de médico percute con dos dedos sobre su costado y salen ondas de sonido. Elementos secundarios: una taza y una tina de sopa a sus pies, una pequeña noria girando a su lado. Composición: chef centrado, granate y piedra dorada. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Hepatometría normal por percusión en LMC derecha?",
+        "a": "10-12 cm"
+      },
+      {
+        "tipo": "lista",
+        "q": "¿Cómo se gradúa la hepatomegalia por traveses de dedo?",
+        "a": "Pequeña hasta 2, mediana hasta 4, grande >4"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Desde dónde empieza la submatidez hepática superior?",
+        "a": "Desde el 5º EIC derecho"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s8",
+      "n": 0,
+      "ubicacion": "Portada"
+    }
+  },
+  "coledoco-ecografia": {
+    "id": "coledoco-ecografia",
+    "parametro": "Colédoco (ecografía)",
+    "grupo": "Ecografía y otros datos de la HC",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Colédoco en eco: ≤6 mm (<60 años); ≤8 mm (>60 años o poscolecistectomía). Dilatado: coledocolitiasis / obstrucción extrahepática. Charcot (lit): fiebre + ictericia + dolor = colangitis; Reynolds: + shock + confusión.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "El par 6→8 cabe en una palabra (jefe = 68) y la edad de corte es 60 (choza). Las tríadas epónimas se cuentan en la escena con el objeto de cada síntoma.",
+    "codigo": [
+      {
+        "numero": "68",
+        "letras": "J-F",
+        "palabra": "jefe"
+      },
+      {
+        "numero": "60",
+        "letras": "CH-Z",
+        "palabra": "choza"
+      }
+    ],
+    "escena": "En la puerta principal de la Catedral, la manguera verde de Chef Hepa (el colédoco) pasa por debajo. El JEFE (6→8) de la cocina la revisa: a los jóvenes les permite hasta 6 mm, pero a los que ya viven en la CHOZA de los mayores de 60 (o a quien le sacaron la vesícula), hasta 8. Hoy una piedra la tapa y la manguera se infla como serpiente: el jefe arde en fiebre, se pone amarillo y se dobla de dolor (Charcot); si además se desmaya y se confunde, es Reynolds.",
+    "ancla": "Colédoco: el jefe (6→8 mm) y la choza de los 60.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un jefe de cocina caricaturesco con bigote, de piel amarilla y sudando de fiebre, doblado de dolor sujetando una manguera verde inflada como serpiente con una piedra atascada dentro, frente a la gran puerta de madera de una catedral andina. Elementos secundarios: un hígado granate con gorro de chef sosteniendo el otro extremo de la manguera, una pequeña choza de paja al costado. Composición: jefe centrado, verde, amarillo y granate intensos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Colédoco normal en ecografía?",
+        "a": "≤6 mm (<60 años); ≤8 mm (>60 años o poscolecistectomía)"
+      },
+      {
+        "tipo": "caso",
+        "q": "Fiebre, ictericia y dolor en hipocondrio derecho: ¿tríada y diagnóstico?",
+        "a": "Tríada de Charcot: colangitis"
+      },
+      {
+        "tipo": "lista",
+        "q": "¿Qué agrega la péntada de Reynolds a Charcot?",
+        "a": "Shock y confusión"
+      },
+      {
+        "tipo": "inversa",
+        "q": "Colédoco de 12 mm con cálculo indica…",
+        "a": "Coledocolitiasis / obstrucción extrahepática"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s8",
+      "n": 1,
+      "ubicacion": "Puerta principal"
+    }
+  },
+  "vena-porta-ecografia": {
+    "id": "vena-porta-ecografia",
+    "parametro": "Vena porta (ecografía)",
+    "grupo": "Ecografía y otros datos de la HC",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "Vena porta en eco: diámetro ≤13 mm (lit). >13 mm: hipertensión portal (+ esplenomegalia + ascitis). Porta fina o no visible: trombosis portal (buscar con Doppler).",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Un solo umbral exacto → sistema mayor (dama = 13). La tríada de hipertensión portal se ve en la escena.",
+    "codigo": [
+      {
+        "numero": "13",
+        "letras": "D-M",
+        "palabra": "dama"
+      }
+    ],
+    "escena": "En la pila de agua bendita, una DAMA (13) elegante sostiene un tubo azul: la vena porta, que lleva agua del intestino a Chef Hepa. Mientras no pase del ancho de su collar (13 mm), el agua corre bendita. Pero el hígado está cirrótico, el agua se represa, el tubo se hincha como un neumático, la pila se desborda inundando la nave (ascitis) y al lado se infla un bazo morado gigante.",
+    "ancla": "Porta: la dama de la pila (13 mm); si se ensancha, rebalsa la ascitis.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: una dama elegante caricaturesca con collar de perlas sosteniendo un tubo azul hinchado como neumático junto a una pila de agua bendita de piedra dentro de una catedral andina. Acción: el agua se desborda de la pila e inunda el piso. Elementos secundarios: un hígado granate con gorro de chef arrugado y pálido al extremo del tubo, un bazo morado gigante inflándose a un costado. Composición: dama centrada, azules y morados intensos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Diámetro normal de la vena porta en eco?",
+        "a": "≤13 mm"
+      },
+      {
+        "tipo": "caso",
+        "q": "Porta de 16 mm, esplenomegalia y ascitis: ¿diagnóstico?",
+        "a": "Hipertensión portal"
+      },
+      {
+        "tipo": "umbral",
+        "q": "Porta fina o no visible sugiere… y ¿con qué la buscas?",
+        "a": "Trombosis portal; con Doppler"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s8",
+      "n": 2,
+      "ubicacion": "Pila de agua bendita"
+    }
+  },
+  "bazo-ecografia-examen": {
+    "id": "bazo-ecografia-examen",
+    "parametro": "Bazo (ecografía / examen)",
+    "grupo": "Ecografía y otros datos de la HC",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Bazo normal: no palpable. Eco (lit): eje largo >12-13 cm = esplenomegalia. Palpar con maniobra de Schuster (decúbito lateral derecho). Esplenomegalia: HT portal, infecciones, leucemias, cirrosis, hemólisis.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Umbral ecográfico (literatura) → sistema mayor (tina 12, dama 13). Personaje nuevo: «Bazuca», bazo morado con una bazuca al hombro (palabra sustituta bazo → bazuca). Schuster → «zapatero» (shoe), que lo acuesta de lado.",
+    "codigo": [
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      },
+      {
+        "numero": "13",
+        "letras": "D-M",
+        "palabra": "dama"
+      }
+    ],
+    "escena": "En las bancas de la nave duerme Bazuca, el bazo morado con su bazuca al hombro, escondido bajo las costillas izquierdas: no se palpa. Cuando crece, ya no entra en su TINA (12) ni cabe detrás de la DAMA (13) de la banca: más de 12-13 cm en la eco es esplenomegalia. Un zapatero, el señor Schuster, lo voltea sobre su lado derecho y por fin asoma la punta bajo las costillas.",
+    "ancla": "Bazuca: si no cabe en la tina ni tras la dama (12-13 cm), esplenomegalia; Schuster lo acuesta a la derecha.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un bazo morado caricaturesco con forma de frijol alargado, con una bazuca de juguete al hombro, tan hinchado que desborda una tina sobre una banca de madera dentro de la nave de una catedral andina. Acción: un zapatero con mandil de cuero lo voltea sobre su lado derecho. Elemento secundario: una dama elegante sentada en la banca apretada por el bazo. Composición: bazo centrado, morado intenso y madera cálida. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "umbral",
+        "q": "¿Eje largo del bazo en eco que define esplenomegalia?",
+        "a": ">12-13 cm"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿En qué posición se palpa el bazo con la maniobra de Schuster?",
+        "a": "Decúbito lateral derecho"
+      },
+      {
+        "tipo": "lista",
+        "q": "Causas de esplenomegalia del atlas",
+        "a": "HT portal, infecciones, leucemias, cirrosis, hemólisis"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s8",
+      "n": 3,
+      "ubicacion": "Bancas de la nave"
+    }
+  },
+  "pancreas-ecografia": {
+    "id": "pancreas-ecografia",
+    "parametro": "Páncreas (ecografía)",
+    "grupo": "Ecografía y otros datos de la HC",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Páncreas en eco (lit): cabeza ≤3 cm, cuerpo y cola ≤2,5 cm; Wirsung ≤3 mm. Aumentado e hipoecoico: pancreatitis aguda. Wirsung >3 mm = dilatado: obstrucción (cálculo, neoplasia) o pancreatitis crónica. Atrofia con calcificaciones: pancreatitis crónica.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Tres medidas en orden cabeza → cuerpo-cola en una sola palabra (Manolo = 3-2,5). El Wirsung repite el 3 de la cabeza (pero en mm). Personaje: Don Azúcar (páncreas).",
+    "codigo": [
+      {
+        "numero": "325",
+        "letras": "M-N-L",
+        "palabra": "Manolo"
+      }
+    ],
+    "escena": "Desde el púlpito predica MANOLO, que es Don Azúcar, el terrón con sombrero de copa: su cabeza mide 3 y su cuerpo y su cola 2,5 (Ma-No-Lo). Por dentro le corre un hilito, el Wirsung, tan fino como la cabeza pero en milímetros (3 mm). Si se le atasca una piedra, el hilito se infla como manguera; si está inflamado de golpe, Manolo se hincha oscuro y lloroso (pancreatitis aguda); y si es viejo y crónico, se arruga lleno de piedritas blancas.",
+    "ancla": "Páncreas: Manolo (3-2,5 cm) con Wirsung de 3 mm.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un terrón de azúcar caricaturesco con sombrero de copa y cuerpo alargado de páncreas, predicando apasionado desde un púlpito de madera tallada en una catedral andina. Acción: por dentro de su cuerpo transparente corre un hilo fino que se infla donde se atasca una piedrita. Elemento secundario: piedritas blancas cayendo del púlpito. Composición: protagonista centrado, blanco y dorado sobre madera oscura. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Medidas ecográficas normales del páncreas?",
+        "a": "Cabeza ≤3 cm, cuerpo y cola ≤2,5 cm"
+      },
+      {
+        "tipo": "umbral",
+        "q": "Wirsung >3 mm indica…",
+        "a": "Dilatado: obstrucción (cálculo, neoplasia) o pancreatitis crónica"
+      },
+      {
+        "tipo": "caso",
+        "q": "Páncreas aumentado e hipoecoico en eco: ¿qué sugiere?",
+        "a": "Pancreatitis aguda"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s8",
+      "n": 4,
+      "ubicacion": "Púlpito"
+    }
+  },
+  "vesicula-pared-calculos": {
+    "id": "vesicula-pared-calculos",
+    "parametro": "Vesícula (pared, cálculos)",
+    "grupo": "Ecografía y otros datos de la HC",
+    "tipo_info": "cifra",
+    "dato_a_recordar": "Vesícula: pared normal <3 mm. Pared >3-4 mm = colecistitis; cálculos hiperecoicos; distendida = hidrops. Murphy: palpar punto cístico en inspiración → dolor que corta la respiración = colecistitis aguda. Courvoisier-Terrier: vesícula distendida indolora + ictericia → neo de cabeza de páncreas.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "memorizar-nombres",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "El corte 3-4 de la PARED cabe en «muro» (34), y muro suena a MUR-phy: la misma imagen une el umbral ecográfico con el signo.",
+    "codigo": [
+      {
+        "numero": "34",
+        "letras": "M-R",
+        "palabra": "muro"
+      }
+    ],
+    "escena": "En el altar mayor, la vesícula es la bolsa verde de Chef Hepa, y su pared es un MURO (3-4): normal, una tapia delgada de menos de 3. Cuando se inflama, el muro engorda más de 3-4 y aparece MUR-PHY, un monaguillo que te hunde el dedo bajo las costillas derechas mientras inspiras: el dolor te corta el aire de golpe. Dentro de la bolsa brillan piedras blancas como focos (hiperecoicas). Al lado, otra bolsa gigante, amarilla y feliz, sin dolor: Courvoisier, que avisa del páncreas.",
+    "ancla": "Vesícula: pared de muro (3-4 mm); si engorda, Mur-phy te corta el aire.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: una bolsa verde caricaturesca con cara de dolor, con pared gruesa de ladrillos como un muro, colgada del gorro de un hígado granate cocinero frente a un altar dorado de catedral andina. Acción: un monaguillo travieso le hunde el dedo bajo la costilla mientras el chef inspira y se queda sin aire con los ojos enormes. Elemento secundario: piedras blancas brillantes como focos dentro de la bolsa. Composición: bolsa centrada, verde, granate y dorado. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": true,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Grosor normal de la pared vesicular?",
+        "a": "<3 mm"
+      },
+      {
+        "tipo": "umbral",
+        "q": "Pared vesicular >3-4 mm sugiere…",
+        "a": "Colecistitis"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Cómo se busca el signo de Murphy y qué indica?",
+        "a": "Palpar el punto cístico en inspiración: dolor que corta la respiración = colecistitis aguda"
+      },
+      {
+        "tipo": "caso",
+        "q": "Vesícula distendida indolora con ictericia: ¿signo y sospecha?",
+        "a": "Courvoisier-Terrier: neoplasia de cabeza de páncreas"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s8",
+      "n": 5,
+      "ubicacion": "Altar mayor"
+    }
+  },
+  "menarquia": {
+    "id": "menarquia",
+    "parametro": "Menarquia",
+    "grupo": "Ecografía y otros datos de la HC",
+    "tipo_info": "rango",
+    "dato_a_recordar": "Menarquia 10-14 años (promedio 12). Tardía (lit) >15-16 años: hipogonadismo, desnutrición, deporte intenso. Precoz (lit) <8-9 años: pubertad precoz. Regla (lit): <9 años = precoz; sin menarquia a los 15 = amenorrea primaria.",
+    "tecnicas": [
+      "memorizar-numeros",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Tres edades en orden (10-12-14) → sistema mayor; 15 marca amenorrea primaria. Personaje nuevo: «Ovi», ovario-flor con corona de flores, para ginecología y obstetricia.",
+    "codigo": [
+      {
+        "numero": "10",
+        "letras": "T-S",
+        "palabra": "taza"
+      },
+      {
+        "numero": "12",
+        "letras": "T-N",
+        "palabra": "tina"
+      },
+      {
+        "numero": "14",
+        "letras": "T-R",
+        "palabra": "toro"
+      },
+      {
+        "numero": "15",
+        "letras": "T-L",
+        "palabra": "tele"
+      }
+    ],
+    "escena": "En el campanario, Ovi, la ovario-flor con su corona, toca la campana de su primera regla. Puede sonar entre la TAZA (10) y el TORO (14) que se sube por la escalera, y lo más común es que suene en la TINA (12) del medio. Si suena antes de los 9, la campana se adelanta loca (pubertad precoz). Si llega la TELE (15) y la campana sigue muda, el sacristán grita: «¡amenorrea primaria!».",
+    "ancla": "Menarquia: taza-tina-toro (10-12-14); tele muda (15) = amenorrea primaria.",
+    "acronimo": null,
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un ovario caricaturesco con corona de flores rosadas, tocando con entusiasmo una gran campana de bronce en lo alto del campanario de una catedral andina. Acción: la campana suena con ondas visibles y salen pétalos volando. Elementos secundarios: una taza, una tina y un toro subiendo por la escalera del campanario, y una televisión apagada en un rincón. Composición: ovario centrado, rosa intenso y bronce, cielo azul de altura. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "directa",
+        "q": "¿Edad normal de la menarquia y su promedio?",
+        "a": "10-14 años, promedio 12"
+      },
+      {
+        "tipo": "umbral",
+        "q": "¿A qué edad la ausencia de menarquia es amenorrea primaria?",
+        "a": "A los 15 años"
+      },
+      {
+        "tipo": "umbral",
+        "q": "Menarquia antes de los 9 años se considera…",
+        "a": "Precoz (pubertad precoz)"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#189",
+      "#139"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s8",
+      "n": 6,
+      "ubicacion": "Campanario"
+    }
+  },
+  "formula-obstetrica-g-p": {
+    "id": "formula-obstetrica-g-p",
+    "parametro": "Fórmula obstétrica (G P)",
+    "grupo": "Ecografía y otros datos de la HC",
+    "tipo_info": "clasificacion",
+    "dato_a_recordar": "Fórmula obstétrica (lit): G = gestaciones, P = partos; ampliada P a-b-c-d = a término, prematuros, abortos, hijos vivos. Ej.: G3 P2012.",
+    "tecnicas": [
+      "mnemotecnia",
+      "memorizar-listas",
+      "visualizacion-imagenes"
+    ],
+    "por_que": "Lista corta CON ORDEN obligatorio (4 dígitos de la P) → acróstico T-P-A-V en el confesionario. El ejemplo P2012 se ancla con el atajo del #189 (2012 = fin del mundo).",
+    "codigo": [],
+    "escena": "En el confesionario, Ovi se confiesa y el cura anota su fórmula: primero las G, las gestas, como globos inflados. Luego la P y sus cuatro casillas en orden, que el cura recita con su acróstico: «Todos Pecamos, Ahora Vivimos»: a Término, Prematuros, Abortos, hijos Vivos. El ejemplo, G3 P2012, es el fin del mundo: tres globos, dos bebés a término, ningún prematuro, un aborto y dos hijos vivos saliendo de la iglesia.",
+    "ancla": "P abcd: «Todos Pecamos, Ahora Vivimos» (término, prematuros, abortos, vivos).",
+    "acronimo": "TPAV: «Todos Pecamos, Ahora Vivimos» = a Término · Prematuros · Abortos · hijos Vivos",
+    "ruta_palacio": null,
+    "imagen_prompt": "Ilustración vívida estilo cómic, caricatura exagerada, colores intensos y saturados, contornos marcados, un protagonista claro en primer plano. Protagonista: un ovario caricaturesco con corona de flores arrodillado en un confesionario de madera tallada de una catedral andina, sosteniendo tres globos inflados. Acción: tras la rejilla, un cura sonriente cuenta con los dedos, y a la salida dos bebés felices caminan de la mano. Elemento secundario: un meteorito cómico cayendo a lo lejos por la ventana. Composición: confesionario centrado, madera oscura con rosa y celeste vivos. Sin texto, sin letras, sin números, sin logotipos.",
+    "imagen_clave": false,
+    "preguntas": [
+      {
+        "tipo": "lista",
+        "q": "¿Qué significan las cuatro cifras de P en la fórmula ampliada, en orden?",
+        "a": "A término, prematuros, abortos, hijos vivos"
+      },
+      {
+        "tipo": "caso",
+        "q": "G3 P2012: ¿cuántos abortos y cuántos hijos vivos?",
+        "a": "1 aborto y 2 hijos vivos"
+      },
+      {
+        "tipo": "directa",
+        "q": "¿Qué indican G y P?",
+        "a": "G = gestaciones, P = partos"
+      }
+    ],
+    "fuentes_tecnica": [
+      "#139",
+      "#189"
+    ],
+    "revisar": false,
+    "imagen": null,
+    "estacion": {
+      "seccion": "s8",
+      "n": 7,
+      "ubicacion": "Confesionario"
+    }
+  }
+}

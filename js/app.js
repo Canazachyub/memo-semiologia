@@ -6,8 +6,8 @@ const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const esc = (t) => String(t ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const norm = (t) => String(t ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 
-const [ATLAS, MEMO, METODOS, PALACIOS] = await Promise.all(
-  ['data/atlas.json', 'data/memoria.json', 'data/metodos.json', 'data/palacios.json'].map((u) => fetch(u).then((r) => r.json()).catch(() => ({}))),
+const [ATLAS, MEMO, METODOS, PALACIOS, SIGLAS, FACIES] = await Promise.all(
+  ['data/atlas.json', 'data/memoria.json', 'data/metodos.json', 'data/palacios.json', 'data/memoria_siglas.json', 'data/memoria_facies.json'].map((u) => fetch(u, { cache: 'no-cache' }).then((r) => r.json()).catch(() => ({}))),
 );
 const FILAS = ATLAS.secciones.flatMap((s) => s.filas.map((f) => ({ ...f, sec: s })));
 const nombreMetodo = (k) => METODOS[k]?.nombre || k;
@@ -111,7 +111,8 @@ function pintarFacies() {
   const q = norm($('#buscar').value);
   $('#facies').innerHTML = ATLAS.facies.filter((f) => !q || norm(JSON.stringify(f)).includes(q)).map((f) =>
     `<article class="fac">${f.imagen ? `<img src="${esc(f.imagen)}" alt="Facies ${esc(f.nombre)}" loading="lazy" data-zoom>` : ''}
-     <div><b>${esc(f.nombre)}</b>${esc(f.rasgo)}<p class="o">→ ${esc(f.orienta)}</p></div></article>`).join('');
+     <div><b>${esc(f.nombre)}</b>${esc(f.rasgo)}<p class="o">→ ${esc(f.orienta)}</p>
+     ${FACIES[f.id] ? `<details class="fmemo"><summary>🧠 Cómo recordarla</summary><p class="ancla">⚓ ${esc(FACIES[f.id].ancla)}</p><p class="escena">🎬 ${esc(FACIES[f.id].escena)}</p></details>` : ''}</div></article>`).join('');
 }
 
 // ---------- tarjetas de repaso ----------
@@ -126,6 +127,8 @@ function construirTarjetas() {
     const m = MEMO[e.id];
     if (m?.preguntas?.length) m.preguntas.forEach((p, i) => t.push({ id: `${e.id}#${i}`, ref: e.id, sec: 'escalas', q: p.q, a: p.a, m, nombre: e.nombre }));
   }
+  for (const [id, s] of Object.entries(SIGLAS)) (s.preguntas || []).forEach((p, i) => t.push({ id: `sig:${id}#${i}`, ref: id, sec: 'siglas', q: p.q, a: p.a, m: { ancla: s.ancla, escena: s.escena }, nombre: s.sigla }));
+  for (const f of ATLAS.facies) { const fm = FACIES[f.id]; (fm?.preguntas || []).forEach((p, i) => t.push({ id: `fac:${f.id}#${i}`, ref: f.id, sec: 'facies', q: p.q, a: p.a, m: { ...fm, imagen: f.imagen }, nombre: f.nombre })); }
   return t;
 }
 const TARJETAS = construirTarjetas();
@@ -144,7 +147,9 @@ function pendientes() {
 }
 function pintarRepaso() {
   const opciones = [`<option value="">Todo</option>`, ...ATLAS.secciones.map((s) => `<option value="${s.id}" ${repSec === s.id ? 'selected' : ''}>${s.icono} ${esc(s.titulo)}</option>`),
-    `<option value="escalas" ${repSec === 'escalas' ? 'selected' : ''}>📏 Escalas</option>`].join('');
+    `<option value="escalas" ${repSec === 'escalas' ? 'selected' : ''}>📏 Escalas</option>`,
+    `<option value="siglas" ${repSec === 'siglas' ? 'selected' : ''}>🔤 Siglas</option>`,
+    `<option value="facies" ${repSec === 'facies' ? 'selected' : ''}>🙂 Facies</option>`].join('');
   if (!actual) { armarCola(); actual = cola.shift() || null; }
   const top = `<div class="rep-top"><label>Repasar: <select id="rep-sec">${opciones}</select></label>
     <label class="toggle"><input type="checkbox" id="rep-memo" ${soloConMemo ? 'checked' : ''}> <span>Solo con técnica</span></label>
@@ -191,7 +196,7 @@ document.addEventListener('keydown', (e) => {
 
 // ---------- progreso ----------
 function pintarProgreso() {
-  const grupos = [...ATLAS.secciones.map((s) => ({ id: s.id, t: `${s.icono} ${s.titulo}`, c: s.color })), { id: 'escalas', t: '📏 Escalas', c: '#455a64' }];
+  const grupos = [...ATLAS.secciones.map((s) => ({ id: s.id, t: `${s.icono} ${s.titulo}`, c: s.color })), { id: 'escalas', t: '📏 Escalas', c: '#455a64' }, { id: 'siglas', t: '🔤 Siglas', c: '#455a64' }, { id: 'facies', t: '🙂 Facies', c: '#455a64' }];
   const cuenta = (lista) => lista.reduce((a, t) => (a[srs.nivel(t.id)]++, a), { nueva: 0, aprendiendo: 0, dominada: 0 });
   const total = cuenta(TARJETAS);
   const conMemo = Object.keys(MEMO).length;
@@ -221,8 +226,14 @@ function pintarSiglas() {
   const q = norm($('#buscar').value);
   $('#siglas').innerHTML = `<div class="sig">${ATLAS.glosario.map((g) => {
     const it = g.items.filter((i) => !q || norm(i.sigla + ' ' + i.significado).includes(q));
-    return it.length ? `<h3>${esc(g.titulo)}</h3>${it.map((i) => `<div><b>${esc(i.sigla)}</b> ${esc(i.significado)}</div>`).join('')}` : '';
+    return it.length ? `<h3>${esc(g.titulo)}</h3>${it.map((i) => { const s = siglaMemo(i.sigla, g.titulo);
+      return `<details class="sigm"><summary><b>${esc(i.sigla)}</b> ${esc(i.significado)}</summary>${s ? `<p class="ancla">⚓ ${esc(s.ancla)}</p><p>🎬 ${esc(s.escena)}</p>${(s.confusiones || []).length ? `<p class="vacio">⚠️ ${s.confusiones.map((c) => esc(typeof c === 'string' ? c : `${c.sigla || ''} ${c.clave || c.diferencia || ''}`)).join(' · ')}</p>` : ''}` : ''}</details>`; }).join('')}` : '';
   }).join('')}</div>`;
+}
+
+function siglaMemo(sigla, grupo) {
+  const lista = Object.values(SIGLAS).filter((s) => s.sigla === sigla);
+  return lista.find((s) => s.grupo === grupo) || lista[0];
 }
 
 // ---------- navegación y eventos ----------
