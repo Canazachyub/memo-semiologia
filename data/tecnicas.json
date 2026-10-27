@@ -17,7 +17,8 @@
     "Repasa la historia y decodifica cada imagen a sus dígitos."
    ],
    "recuerda": "Tina-mono-lupa-rana-foto = 12 32 59 42 81.",
-   "imagen_prompt": "Un baño luminoso con una tina blanca llena de espuma. Dentro se baña un mono muy contento que sostiene una lupa gigante frente a su ojo, agrandándolo de forma cómica. A través de la lupa descubre una rana verde sentada en el fondo de la tina, sorprendida. El mono abraza a la rana y con la otra mano levanta una cámara instantánea para tomarse una foto juntos; el flash ilumina toda la escena y salpica agua por todas partes."
+   "imagen_prompt": "Un baño luminoso con una tina blanca llena de espuma. Dentro se baña un mono muy contento que sostiene una lupa gigante frente a su ojo, agrandándolo de forma cómica. A través de la lupa descubre una rana verde sentada en el fondo de la tina, sorprendida. El mono abraza a la rana y con la otra mano levanta una cámara instantánea para tomarse una foto juntos; el flash ilumina toda la escena y salpica agua por todas partes.",
+   "imagen": "img/tecnicas/num-telefono-pares.webp"
   },
   {
    "id": "num-dragon-ball-fecha",
@@ -35,7 +36,8 @@
     "Une las tres imágenes en una escena y agrégale algo del tema que estás memorizando."
    ],
    "recuerda": "Nachos (26) en la puerta (abril) y entra el FBI (89) = 26/04/1989.",
-   "imagen_prompt": "Una puerta de madera de una casa cubierta por completo de nachos crujientes con queso derretido que gotea. La puerta se abre de golpe y entra un agente federal de traje oscuro, gafas negras y placa dorada, apuntando con una linterna, sorprendido por los nachos. Detrás de él, un guerrero de anime musculoso con traje naranja lanza una enorme bola de energía azul brillante que ilumina el pasillo y hace volar los nachos por el aire."
+   "imagen_prompt": "Una puerta de madera de una casa cubierta por completo de nachos crujientes con queso derretido que gotea. La puerta se abre de golpe y entra un agente federal de traje oscuro, gafas negras y placa dorada, apuntando con una linterna, sorprendido por los nachos. Detrás de él, un guerrero de anime musculoso con traje naranja lanza una enorme bola de energía azul brillante que ilumina el pasillo y hace volar los nachos por el aire.",
+   "imagen": "img/tecnicas/num-dragon-ball-fecha.webp"
   },
   {
    "id": "num-fc-choza-tazas",
@@ -54,7 +56,8 @@
     "Pregúntate: ¿cómo se llama una FC menor de 60?"
    ],
    "recuerda": "Corazón en la choza (60) con techo de tazas (100): arriba corre, abajo se arrastra.",
-   "imagen_prompt": "Una choza de paja pequeña con un techo hecho de tazas de porcelana apiladas en una torre. Dentro vive un corazón rojo con piernas y guantes de boxeo. En una mitad de la escena el corazón, emocionado y sudando, salta tan alto que rompe las tazas del techo y salen volando pedazos mientras corre a toda velocidad. En la otra mitad, el mismo corazón está en el suelo de la choza con un perezoso abrazado a su espalda que lo hace arrastrarse lentamente."
+   "imagen_prompt": "Una choza de paja pequeña con un techo hecho de tazas de porcelana apiladas en una torre. Dentro vive un corazón rojo con piernas y guantes de boxeo. En una mitad de la escena el corazón, emocionado y sudando, salta tan alto que rompe las tazas del techo y salen volando pedazos mientras corre a toda velocidad. En la otra mitad, el mismo corazón está en el suelo de la choza con un perezoso abrazado a su espalda que lo hace arrastrarse lentamente.",
+   "imagen": "img/tecnicas/num-fc-choza-tazas.webp"
   },
   {
    "id": "num-ph-miel-rulo",
@@ -73,7 +76,8 @@
     "Reutiliza las mismas palabras si otro parámetro comparte cifras (PaCO₂ 35–45)."
    ],
    "recuerda": "Miel (35) y rulo (45) en la balanza = pH 7,35–7,45.",
-   "imagen_prompt": "Una gran balanza de laboratorio de bronce en un laboratorio blanco. En el platillo izquierdo, un frasco de miel dorada que burbujea; en el derecho, una señora sonriente con la cabeza llena de rulos rosados. La aguja tiembla en el centro. Debajo del platillo de la miel, un limón gigante con cara enojada escupe un chorro de jugo ácido; sobre el lado de los rulos, la señora resbala sobre una pastilla de jabón que hace muchas burbujas."
+   "imagen_prompt": "Una gran balanza de laboratorio de bronce en un laboratorio blanco. En el platillo izquierdo, un frasco de miel dorada que burbujea; en el derecho, una señora sonriente con la cabeza llena de rulos rosados. La aguja tiembla en el centro. Debajo del platillo de la miel, un limón gigante con cara enojada escupe un chorro de jugo ácido; sobre el lado de los rulos, la señora resbala sobre una pastilla de jabón que hace muchas burbujas.",
+   "imagen": "img/tecnicas/num-ph-miel-rulo.webp"
   },
   {
    "id": "pal-casa-35",
@@ -92,7 +96,8 @@
     "Repasa de la 1 a la 10 y de la 10 a la 1."
    ],
    "recuerda": "Cuadro-brócoli, piano-aguacate, ventilador-nueces, escritorio-almendras, mesa-espinaca, buró-salmón, librero-arándanos, mueble-té verde, tele-chocolate, escritorio-coco.",
-   "imagen_prompt": "Comedor y sala de una casa vistos desde arriba en diagonal, como una maqueta abierta. De un cuadro en la pared salen volando brócolis con caritas felices; un piano tiene aguacates partidos en lugar de teclas y un estudiante los presiona con fuerza; un ventilador de techo tritura nueces que le lanzan y suelta lluvia de trocitos; el mismo estudiante muerde un escritorio hecho de almendras; sobre la mesa del comedor, hojas de espinaca sentadas muy derechas como invitados educados. Al fondo, un salmón enorme salta sobre un buró."
+   "imagen_prompt": "Comedor y sala de una casa vistos desde arriba en diagonal, como una maqueta abierta. De un cuadro en la pared salen volando brócolis con caritas felices; un piano tiene aguacates partidos en lugar de teclas y un estudiante los presiona con fuerza; un ventilador de techo tritura nueces que le lanzan y suelta lluvia de trocitos; el mismo estudiante muerde un escritorio hecho de almendras; sobre la mesa del comedor, hojas de espinaca sentadas muy derechas como invitados educados. Al fondo, un salmón enorme salta sobre un buró.",
+   "imagen": "img/tecnicas/pal-casa-35.webp"
   },
   {
    "id": "pal-cuerpo-10",
@@ -110,7 +115,8 @@
     "Pregúntate parte por parte \"¿qué había en los pies?\" y responde antes de mirar."
    ],
    "recuerda": "Pies-tenis, rodillas-almohada, cintura-cinturón de vitaminas, estómago-monje, brazos-espadas, hombros-amigos, boca-carcajada, nariz-aire, ojos-láseres, cabeza-tú enseñando.",
-   "imagen_prompt": "Un estudiante de pie, de cuerpo entero, convertido en un mapa de escenas absurdas de abajo arriba: en sus pies unos tenis que corren solos tirando de él; en sus rodillas una almohada esponjosa; en la cintura un cinturón lleno de frascos de vitaminas y frutas; sobre el estómago un pequeño monje medita; en los brazos dos espadas brillantes; en los hombros sus mejores amigos sentados y riendo; la boca suelta una carcajada enorme; la nariz aspira un remolino de aire; de los ojos salen rayos láser rojos que deshacen nubes grises; en la cabeza, una versión diminuta de él da clase frente a un pizarrón."
+   "imagen_prompt": "Un estudiante de pie, de cuerpo entero, convertido en un mapa de escenas absurdas de abajo arriba: en sus pies unos tenis que corren solos tirando de él; en sus rodillas una almohada esponjosa; en la cintura un cinturón lleno de frascos de vitaminas y frutas; sobre el estómago un pequeño monje medita; en los brazos dos espadas brillantes; en los hombros sus mejores amigos sentados y riendo; la boca suelta una carcajada enorme; la nariz aspira un remolino de aire; de los ojos salen rayos láser rojos que deshacen nubes grises; en la cabeza, una versión diminuta de él da clase frente a un pizarrón.",
+   "imagen": "img/tecnicas/pal-cuerpo-10.webp"
   },
   {
    "id": "pal-signos-vitales-sala",
@@ -129,7 +135,8 @@
     "Pregúntate en desorden: \"¿qué hay en la estación 3?\"."
    ],
    "recuerda": "Puerta choza-tazas (FC 60–100), ventana tina-NASA (FR 12–20), sofá tunas/vaso (PA < 120/80), tele mafia (fiebre ≥ 38).",
-   "imagen_prompt": "Sala de una casa familiar en perspectiva, recorrida como un circuito. En la puerta de entrada cuelga una pequeña choza de paja que late como un corazón, con una torre de tazas tambaleándose en su techo. En la ventana, una tina de baño se infla y desinfla respirando y empieza a despegar como un cohete espacial rompiendo el vidrio. En el sofá, el respaldo está cubierto de tunas que chorrean jugo apretadas por un manguito de presión y en el cojín un vaso se llena con ese jugo. Del televisor salen mafiosos de traje sudando con un termómetro humeante en la boca."
+   "imagen_prompt": "Sala de una casa familiar en perspectiva, recorrida como un circuito. En la puerta de entrada cuelga una pequeña choza de paja que late como un corazón, con una torre de tazas tambaleándose en su techo. En la ventana, una tina de baño se infla y desinfla respirando y empieza a despegar como un cohete espacial rompiendo el vidrio. En el sofá, el respaldo está cubierto de tunas que chorrean jugo apretadas por un manguito de presión y en el cojín un vaso se llena con ese jugo. Del televisor salen mafiosos de traje sudando con un termómetro humeante en la boca.",
+   "imagen": "img/tecnicas/pal-signos-vitales-sala.webp"
   },
   {
    "id": "pal-glasgow-pilar",
@@ -147,7 +154,8 @@
     "Pregúntate por niveles salteados: \"¿qué hay en el tercer cajón desde abajo?\" → flexión anormal, M3."
    ],
    "recuerda": "Ventana de 4 niveles (ojos), librero de 5 estantes (voz), cajonera de 6 cajones (movimiento); total de 3 a 15.",
-   "imagen_prompt": "Sala de emergencia de un hospital con tres muebles en fila. Una ventana dividida en cuatro franjas: arriba unos ojos enormes se abren solos, debajo unos ojos se abren cuando alguien grita, más abajo unos ojos se abren porque los pellizcan, y en la franja inferior ojos pintados de negro cerrados. Al lado, un librero de cinco estantes con libros que tienen boca: el de arriba habla tranquilo, los de abajo balbucean, gimen y el último está sellado con cinta. Una cajonera de seis cajones: del de arriba sale una mano que saluda obediente; en los de abajo, brazos rígidos doblados o estirados; el último cajón vacío."
+   "imagen_prompt": "Sala de emergencia de un hospital con tres muebles en fila. Una ventana dividida en cuatro franjas: arriba unos ojos enormes se abren solos, debajo unos ojos se abren cuando alguien grita, más abajo unos ojos se abren porque los pellizcan, y en la franja inferior ojos pintados de negro cerrados. Al lado, un librero de cinco estantes con libros que tienen boca: el de arriba habla tranquilo, los de abajo balbucean, gimen y el último está sellado con cinta. Una cajonera de seis cajones: del de arriba sale una mano que saluda obediente; en los de abajo, brazos rígidos doblados o estirados; el último cajón vacío.",
+   "imagen": "img/tecnicas/pal-glasgow-pilar.webp"
   },
   {
    "id": "mne-alicia-dolor",
@@ -166,7 +174,8 @@
     "Repasa diciendo los seis puntos solo a partir de la imagen de Alicia."
    ],
    "recuerda": "Aparición, Localización, Irradiación, Características, Intensidad, Agravantes.",
-   "imagen_prompt": "Una niña rubia con vestido azul de cuento, bata blanca y estetoscopio, examina con una lupa gigante a un paciente que se sujeta el abdomen con cara de dolor. Desde el punto que señala la lupa nace un rayo rojo brillante que se extiende hacia la espalda del paciente. De su bolsillo cuelga un reloj de bolsillo antiguo que oscila, y en la otra mano sostiene un termómetro enorme cuyo líquido rojo sube hasta arriba. Junto al paciente, un yunque pesado aplasta una almohada para mostrar que algo empeora el dolor. Consultorio de colores vivos."
+   "imagen_prompt": "Una niña rubia con vestido azul de cuento, bata blanca y estetoscopio, examina con una lupa gigante a un paciente que se sujeta el abdomen con cara de dolor. Desde el punto que señala la lupa nace un rayo rojo brillante que se extiende hacia la espalda del paciente. De su bolsillo cuelga un reloj de bolsillo antiguo que oscila, y en la otra mano sostiene un termómetro enorme cuyo líquido rojo sube hasta arriba. Junto al paciente, un yunque pesado aplasta una almohada para mostrar que algo empeora el dolor. Consultorio de colores vivos.",
+   "imagen": "img/tecnicas/mne-alicia-dolor.webp"
   },
   {
    "id": "mne-metales-alcalinos",
@@ -185,7 +194,8 @@
     "Comprueba que de la frase salen los seis metales en orden."
    ],
    "recuerda": "Litio, sodio, potasio, rubidio, cesio, francio.",
-   "imagen_prompt": "Una chica traviesa de puntillas intenta sacar del pecho de un elegante caballero francés con boina, bigote y baguette un corazón rojo brillante que late. Para distraerlo, ella le ofrece una lata de soda burbujeante y un plátano pelado, mientras en su otra mano chisporrotea una pila eléctrica que lanza rayos azules. Detrás de ella espera un amigo de pelo rubio muy brillante que sostiene un cerebro de gelatina rosada que tiembla. Escena en una plaza de París con colores intensos."
+   "imagen_prompt": "Una chica traviesa de puntillas intenta sacar del pecho de un elegante caballero francés con boina, bigote y baguette un corazón rojo brillante que late. Para distraerlo, ella le ofrece una lata de soda burbujeante y un plátano pelado, mientras en su otra mano chisporrotea una pila eléctrica que lanza rayos azules. Detrás de ella espera un amigo de pelo rubio muy brillante que sostiene un cerebro de gelatina rosada que tiembla. Escena en una plaza de París con colores intensos.",
+   "imagen": "img/tecnicas/mne-metales-alcalinos.webp"
   },
   {
    "id": "mne-cushing-mnemotecnograma",
@@ -204,7 +214,8 @@
     "Al día siguiente y a la semana, redibújalo de memoria en hoja en blanco y compáralo con el original."
    ],
    "recuerda": "Cara de luna, giba, obesidad central con extremidades delgadas, estrías violáceas, HTA, hiperglucemia, osteoporosis, hematomas, debilidad proximal, hirsutismo, cambios del ánimo.",
-   "imagen_prompt": "Dibujo mnemotécnico simple: una figura humana con íconos pegados en partes del cuerpo. El tronco es redondo como una pelota y la cara es una luna llena sonriente; en la nuca lleva una joroba como la de un búfalo; brazos y piernas son delgados como palillos. Sobre la barriga hay rayas moradas anchas. Del brazo cuelga un manómetro con la aguja al máximo y una mano sostiene un glucómetro que destella. Se apoya en un bastón, tiene moretones azules en los brazos, vello en las mejillas y una pequeña nube gris de lluvia sobre la cabeza. Intenta subir un escalón y las piernas le tiemblan."
+   "imagen_prompt": "Dibujo mnemotécnico simple: una figura humana con íconos pegados en partes del cuerpo. El tronco es redondo como una pelota y la cara es una luna llena sonriente; en la nuca lleva una joroba como la de un búfalo; brazos y piernas son delgados como palillos. Sobre la barriga hay rayas moradas anchas. Del brazo cuelga un manómetro con la aguja al máximo y una mano sostiene un glucómetro que destella. Se apoya en un bastón, tiene moretones azules en los brazos, vello en las mejillas y una pequeña nube gris de lluvia sobre la cabeza. Intenta subir un escalón y las piernas le tiemblan.",
+   "imagen": "img/tecnicas/mne-cushing-mnemotecnograma.webp"
   },
   {
    "id": "mne-taquicardia-hipopotamos",
@@ -223,7 +234,8 @@
     "Practica con el caso: \"FC 120 en reposo, ¿qué buscas?\" y responde desde la escena."
    ],
    "recuerda": "Hipovolemia, hipoxemia, hipertiroidismo, anemia, dolor/ansiedad y fiebre.",
-   "imagen_prompt": "Tres hipopótamos muy pálidos corren a toda velocidad por la sabana, cada uno con un corazón rojo que salta fuera del pecho. El primero va desinflado y arrugado como un globo vacío; el segundo carga a la espalda una bombona de oxígeno vacía y jadea con la lengua afuera; el tercero lleva un moño gigante en forma de mariposa en el cuello y suda a chorros. Los tres llevan termómetros humeantes en la boca y lloran porque tienen espinas clavadas en las patas. Líneas de velocidad y polvo detrás de ellos."
+   "imagen_prompt": "Tres hipopótamos muy pálidos corren a toda velocidad por la sabana, cada uno con un corazón rojo que salta fuera del pecho. El primero va desinflado y arrugado como un globo vacío; el segundo carga a la espalda una bombona de oxígeno vacía y jadea con la lengua afuera; el tercero lleva un moño gigante en forma de mariposa en el cuello y suda a chorros. Los tres llevan termómetros humeantes en la boca y lloran porque tienen espinas clavadas en las patas. Líneas de velocidad y polvo detrás de ellos.",
+   "imagen": "img/tecnicas/mne-taquicardia-hipopotamos.webp"
   },
   {
    "id": "vis-alejandra-salamandra",
@@ -242,7 +254,8 @@
     "Al volver a verla, deja que la cara te devuelva la salamandra y el nombre."
    ],
    "recuerda": "Alejandra.",
-   "imagen_prompt": "Una joven sonriente con vestido de oficina estrecha la mano de quien la mira, pero toda su cabeza es una salamandra naranja con manchas negras, brillante y empapada, con gotas de agua cayendo de su piel. La mano que extiende tiene textura rugosa de reptil y al apretarla salpica agua. Se ve en primer plano la mano del observador que siente la piel áspera, con pequeñas líneas de vibración. Fondo de una sala de reuniones luminosa con colores intensos."
+   "imagen_prompt": "Una joven sonriente con vestido de oficina estrecha la mano de quien la mira, pero toda su cabeza es una salamandra naranja con manchas negras, brillante y empapada, con gotas de agua cayendo de su piel. La mano que extiende tiene textura rugosa de reptil y al apretarla salpica agua. Se ve en primer plano la mano del observador que siente la piel áspera, con pequeñas líneas de vibración. Fondo de una sala de reuniones luminosa con colores intensos.",
+   "imagen": "img/tecnicas/vis-alejandra-salamandra.webp"
   },
   {
    "id": "vis-supraespinoso",
@@ -260,7 +273,8 @@
     "Prueba de calidad: desde la imagen di de dónde sale, a dónde llega y qué hace."
    ],
    "recuerda": "Supraespinoso: origen en la escápula, inserción en el húmero, eleva el brazo.",
-   "imagen_prompt": "Una espátula de cocina gigante y plateada, clavada en el suelo, de la que brota una espina verde enorme y musculosa, con capa de superhéroe. La espina se estira y se engancha a una columna de humo gris que sube desde el brazo de un hombre sorprendido. Al tensarse la espina, el brazo del hombre se levanta hacia un lado y despega del suelo como si volara, con líneas de movimiento y plumas alrededor. Cielo azul intenso detrás."
+   "imagen_prompt": "Una espátula de cocina gigante y plateada, clavada en el suelo, de la que brota una espina verde enorme y musculosa, con capa de superhéroe. La espina se estira y se engancha a una columna de humo gris que sube desde el brazo de un hombre sorprendido. Al tensarse la espina, el brazo del hombre se levanta hacia un lado y despega del suelo como si volara, con líneas de movimiento y plumas alrededor. Cielo azul intenso detrás.",
+   "imagen": "img/tecnicas/vis-supraespinoso.webp"
   },
   {
    "id": "vis-pares-craneales-cara",
@@ -279,7 +293,8 @@
     "Redibújala de memoria al día siguiente y a la semana, diciendo número, nombre y función de cada uno."
    ],
    "recuerda": "Olfatorio, óptico, motor ocular común, troclear, trigémino, abducens, facial, vestibulococlear, glosofaríngeo, vago, accesorio, hipogloso.",
-   "imagen_prompt": "Dibujo mnemotécnico simple: una figura humana con íconos pegados en partes del cuerpo, vista de frente hasta los hombros. En la nariz, un pequeño triángulo; dos ojos muy grandes; junto a un ojo, un motorcito con engranajes que levanta el párpado; sobre el otro ojo, una polea con cuerda; en la mejilla, tres bebés gemelos idénticos, uno mordiendo una manzana; un imán que jala un ojo hacia afuera; media cara cubierta por una máscara de teatro sonriente; en la oreja, un caracol haciendo equilibrio; en la garganta, un globo inflándose; un vagabundo con mochila bajando por el cuello hacia el pecho; hombreras doradas en los hombros encogidos; bajo el mentón, un hipopótamo diminuto sacando la lengua."
+   "imagen_prompt": "Dibujo mnemotécnico simple: una figura humana con íconos pegados en partes del cuerpo, vista de frente hasta los hombros. En la nariz, un pequeño triángulo; dos ojos muy grandes; junto a un ojo, un motorcito con engranajes que levanta el párpado; sobre el otro ojo, una polea con cuerda; en la mejilla, tres bebés gemelos idénticos, uno mordiendo una manzana; un imán que jala un ojo hacia afuera; media cara cubierta por una máscara de teatro sonriente; en la oreja, un caracol haciendo equilibrio; en la garganta, un globo inflándose; un vagabundo con mochila bajando por el cuello hacia el pecho; hombreras doradas en los hombros encogidos; bajo el mentón, un hipopótamo diminuto sacando la lengua.",
+   "imagen": "img/tecnicas/vis-pares-craneales-cara.webp"
   },
   {
    "id": "vis-babinski-bebe-ski",
@@ -298,7 +313,8 @@
     "Prueba de calidad: desde la imagen explica la maniobra, la respuesta y qué indica."
    ],
    "recuerda": "Extensión del dedo gordo con abanico de los demás: lesión piramidal en el adulto, normal en el lactante.",
-   "imagen_prompt": "Un bebé sonriente con casco y esquís baja por una ladera nevada que tiene la forma de la planta de un pie gigante. Una mano adulta pasa la punta de una llave por el borde externo de esa planta y, de golpe, el dedo gordo gigante se levanta hacia el cielo como la punta curvada de un esquí mientras los otros cuatro dedos se abren en abanico. Al fondo, una pirámide de piedra se agrieta y suelta trozos. Nieve brillante y cielo azul intenso."
+   "imagen_prompt": "Un bebé sonriente con casco y esquís baja por una ladera nevada que tiene la forma de la planta de un pie gigante. Una mano adulta pasa la punta de una llave por el borde externo de esa planta y, de golpe, el dedo gordo gigante se levanta hacia el cielo como la punta curvada de un esquí mientras los otros cuatro dedos se abren en abanico. Al fondo, una pirámide de piedra se agrieta y suelta trozos. Nieve brillante y cielo azul intenso.",
+   "imagen": "img/tecnicas/vis-babinski-bebe-ski.webp"
   },
   {
    "id": "con-pce-procrastinacion",
@@ -317,7 +333,8 @@
     "Si sale 9 o menos, marca lo que faltó y vuelve a la fuente solo por eso."
    ],
    "recuerda": "Pregunta: ¿qué es? · Conclusión: postergar tareas y perder tiempo · Evidencia: examen en 20 días estudiado el último día.",
-   "imagen_prompt": "Un estudiante tumbado en un sofá juega con el celular mientras un calendario de pared gigante deja caer sus hojas una tras otra como lluvia. Sobre su escritorio, una pila de libros cubiertos de telarañas espera. En la última escena del mismo cuadro, el mismo estudiante, despeinado y con ojeras enormes, estudia frenéticamente de noche bajo una lámpara rodeado de tazas de café, mientras un reloj de arena casi vacío brilla en la mesa. Colores intensos, contraste entre la calma y el pánico."
+   "imagen_prompt": "Un estudiante tumbado en un sofá juega con el celular mientras un calendario de pared gigante deja caer sus hojas una tras otra como lluvia. Sobre su escritorio, una pila de libros cubiertos de telarañas espera. En la última escena del mismo cuadro, el mismo estudiante, despeinado y con ojeras enormes, estudia frenéticamente de noche bajo una lámpara rodeado de tazas de café, mientras un reloj de arena casi vacío brilla en la mesa. Colores intensos, contraste entre la calma y el pánico.",
+   "imagen": "img/tecnicas/con-pce-procrastinacion.webp"
   },
   {
    "id": "con-porque-triangulo",
@@ -336,7 +353,8 @@
     "Al resolver un ejercicio, escribe la conclusión con tus palabras: qué significa el resultado."
    ],
    "recuerda": "Base × altura cuenta los cuadros; el triángulo es la mitad: base × altura / 2.",
-   "imagen_prompt": "Un rectángulo hecho de baldosas cuadradas de colores sobre el suelo de un patio, cinco de largo y tres de alto. Un carpintero sonriente con una sierra gigante lo corta en diagonal de una esquina a la otra, y las dos mitades triangulares se separan y quedan una junto a la otra, idénticas, como dos rebanadas de pastel. Un niño mira con la boca abierta y señala que las dos piezas son iguales. Colores vivos y polvo de aserrín en el aire."
+   "imagen_prompt": "Un rectángulo hecho de baldosas cuadradas de colores sobre el suelo de un patio, cinco de largo y tres de alto. Un carpintero sonriente con una sierra gigante lo corta en diagonal de una esquina a la otra, y las dos mitades triangulares se separan y quedan una junto a la otra, idénticas, como dos rebanadas de pastel. Un niño mira con la boca abierta y señala que las dos piezas son iguales. Colores vivos y polvo de aserrín en el aire.",
+   "imagen": "img/tecnicas/con-porque-triangulo.webp"
   },
   {
    "id": "con-pulso-paradojico",
@@ -355,7 +373,8 @@
     "Ponte una pregunta al revés: \"caída de la PAS > 10 mmHg al inspirar, ¿cómo se llama?\""
    ],
    "recuerda": "PAS cae > 10 mmHg en la inspiración; pensar en taponamiento cardiaco (también asma grave, EPOC).",
-   "imagen_prompt": "Un paciente toma una gran bocanada de aire con el pecho inflado. Dentro de su tórax, visto como en una ventana, un corazón está encerrado en una caja de cartón apretada. La mitad derecha del corazón se infla como un globo azul y aplasta a la mitad izquierda, roja y pequeña, contra la pared de la caja. En el brazo del paciente, el manguito del tensiómetro se desinfla de golpe y la aguja del reloj cae bruscamente con líneas de movimiento. Colores intensos."
+   "imagen_prompt": "Un paciente toma una gran bocanada de aire con el pecho inflado. Dentro de su tórax, visto como en una ventana, un corazón está encerrado en una caja de cartón apretada. La mitad derecha del corazón se infla como un globo azul y aplasta a la mitad izquierda, roja y pequeña, contra la pared de la caja. En el brazo del paciente, el manguito del tensiómetro se desinfla de golpe y la aguja del reloj cae bruscamente con líneas de movimiento. Colores intensos.",
+   "imagen": "img/tecnicas/con-pulso-paradojico.webp"
   },
   {
    "id": "con-pam-reloj-arena",
@@ -374,7 +393,8 @@
     "Ancla la idea en el reloj de arena de dos partes azules y una roja."
    ],
    "recuerda": "PAM = (PAS + 2·PAD) / 3; con 120/80 ≈ 93; menos de 65 = mala perfusión.",
-   "imagen_prompt": "Un reloj de arena gigante de cristal dividido en tres compartimentos iguales: dos llenos de arena azul que cae tranquila y lenta, y uno con arena roja que salta y burbujea. Una enfermera sonriente gira el reloj con ambas manos, y junto a él un tensiómetro antiguo de aguja se queda quieto apuntando cerca de la zona azul. Al fondo, órganos caricaturizados como riñón, cerebro y corazón beben felices de una fuente. Colores intensos sobre fondo claro."
+   "imagen_prompt": "Un reloj de arena gigante de cristal dividido en tres compartimentos iguales: dos llenos de arena azul que cae tranquila y lenta, y uno con arena roja que salta y burbujea. Una enfermera sonriente gira el reloj con ambas manos, y junto a él un tensiómetro antiguo de aguja se queda quieto apuntando cerca de la zona azul. Al fondo, órganos caricaturizados como riñón, cerebro y corazón beben felices de una fuente. Colores intensos sobre fondo claro.",
+   "imagen": "img/tecnicas/con-pam-reloj-arena.webp"
   },
   {
    "id": "lis-dormir-7",
@@ -393,7 +413,8 @@
     "Repásala también en reversa."
    ],
    "recuerda": "Teléfono que explota → monje → brisa → burbuja con candado → cueva oscura → cama-reloj → despertar con ejercicio.",
-   "imagen_prompt": "Una habitación de noche convertida en una secuencia de izquierda a derecha. Sobre la cama, un teléfono se infla y explota en una nube de humo; del humo sale un monje sentado meditando sereno; el monje sopla una brisa azul que entra por la nariz de un joven; de la boca del joven sale una gran burbuja llena de pensamientos revueltos cerrada con un candado; dentro de la burbuja se ve una cueva completamente oscura; al final, el joven duerme acostado sobre un reloj gigante mientras un guerrero de anime con traje naranja lo sacude para que salga a correr."
+   "imagen_prompt": "Una habitación de noche convertida en una secuencia de izquierda a derecha. Sobre la cama, un teléfono se infla y explota en una nube de humo; del humo sale un monje sentado meditando sereno; el monje sopla una brisa azul que entra por la nariz de un joven; de la boca del joven sale una gran burbuja llena de pensamientos revueltos cerrada con un candado; dentro de la burbuja se ve una cueva completamente oscura; al final, el joven duerme acostado sobre un reloj gigante mientras un guerrero de anime con traje naranja lo sacude para que salga a correr.",
+   "imagen": "img/tecnicas/lis-dormir-7.webp"
   },
   {
    "id": "lis-soberbia-4-reglas",
@@ -411,7 +432,8 @@
     "Prueba de calidad: tapa la palabra y mira si la imagen te la devuelve."
    ],
    "recuerda": "Cerebro = villano, corazón = recuerdo propio, espejo = serpiente, lengua = sorber en la vía.",
-   "imagen_prompt": "Una escena dividida en cuatro cuadrantes que muestran la misma idea de arrogancia de cuatro formas. Arriba a la izquierda, un villano alienígena pálido y presumido flota de brazos cruzados mirando a todos desde arriba. Arriba a la derecha, un niño enojado con los brazos cruzados da la espalda a sus padres. Abajo a la izquierda, una serpiente erguida con la cabeza muy alta y una corona. Abajo a la derecha, una persona sorbe con un popote enorme un charco en medio de una vía de tren. En el centro, un gato naranja gordo devora una lasaña."
+   "imagen_prompt": "Una escena dividida en cuatro cuadrantes que muestran la misma idea de arrogancia de cuatro formas. Arriba a la izquierda, un villano alienígena pálido y presumido flota de brazos cruzados mirando a todos desde arriba. Arriba a la derecha, un niño enojado con los brazos cruzados da la espalda a sus padres. Abajo a la izquierda, una serpiente erguida con la cabeza muy alta y una corona. Abajo a la derecha, una persona sorbe con un popote enorme un charco en medio de una vía de tren. En el centro, un gato naranja gordo devora una lasaña.",
+   "imagen": "img/tecnicas/lis-soberbia-4-reglas.webp"
   },
   {
    "id": "lis-curvas-febriles",
@@ -429,7 +451,8 @@
     "Pregúntate: ¿qué diferencia la remitente de la intermitente?"
    ],
    "recuerda": "Tren continuo → cartero remitente en montaña rusa → túnel con luz intermitente → visitante recurrente.",
-   "imagen_prompt": "Un termómetro gigante con cara viaja sentado en un tren que avanza sin detenerse por un paisaje. Por la ventana se ve a un cartero lanzando cartas desde una montaña rusa que sube y baja sin tocar nunca el suelo. Más adelante el tren entra en un túnel con una lámpara que parpadea y se apaga por completo. Al salir del túnel, en el andén, espera un viajero con maleta y sombrero que saluda contento porque siempre vuelve."
+   "imagen_prompt": "Un termómetro gigante con cara viaja sentado en un tren que avanza sin detenerse por un paisaje. Por la ventana se ve a un cartero lanzando cartas desde una montaña rusa que sube y baja sin tocar nunca el suelo. Más adelante el tren entra en un túnel con una lámpara que parpadea y se apaga por completo. Al salir del túnel, en el andén, espera un viajero con maleta y sombrero que saluda contento porque siempre vuelve.",
+   "imagen": "img/tecnicas/lis-curvas-febriles.webp"
   },
   {
    "id": "lis-ippa-hipopotamo",
@@ -447,7 +470,8 @@
     "Agrega la excepción como un giro llamativo de la misma escena."
    ],
    "recuerda": "Hipopótamo: mirar, tocar, golpear, escuchar; en la panza, escuchar va antes.",
-   "imagen_prompt": "Un médico con bata blanca examina a un hipopótamo gris sentado en una camilla de consultorio. La escena muestra cuatro momentos alrededor del animal: el médico lo observa con una lupa, le palpa el lomo con ambas manos, le golpea el costado como si fuera un tambor y le apoya el estetoscopio. En primer plano, cuando el médico acerca las manos a la enorme panza, el hipopótamo levanta una pata alarmado y le señala el estetoscopio, mientras dentro de su barriga se ven tripas asustadas escondiéndose."
+   "imagen_prompt": "Un médico con bata blanca examina a un hipopótamo gris sentado en una camilla de consultorio. La escena muestra cuatro momentos alrededor del animal: el médico lo observa con una lupa, le palpa el lomo con ambas manos, le golpea el costado como si fuera un tambor y le apoya el estetoscopio. En primer plano, cuando el médico acerca las manos a la enorme panza, el hipopótamo levanta una pata alarmado y le señala el estetoscopio, mientras dentro de su barriga se ven tripas asustadas escondiéndose.",
+   "imagen": "img/tecnicas/lis-ippa-hipopotamo.webp"
   },
   {
    "id": "lit-la-rama-paz",
@@ -466,7 +490,8 @@
     "Recorre la casa diciendo las palabras exactas y anota las que fallas."
    ],
    "recuerda": "Lavabo: pino con pájaro cantando · estufa: pájaro entre rejas · refrigerador: tres mulas en trineo · puerta: pájaro erguido con flecha · bañera: ave que se desvanece · retrete: música que se derrama. Cada imagen devuelve una línea del poema.",
-   "imagen_prompt": "Corte de una casa con seis rincones vistos a la vez. En el lavabo del baño crece un pino con un pájaro cantando en la punta. Sobre la estufa, un pájaro tras unas rejas de cárcel. Frente al refrigerador abierto, tres mulas temblorosas montadas en un trineo. En la puerta, un pájaro muy erguido junto a un arco con flecha sobre una rama. En la bañera, un ave enorme se desvanece entre sus propias alas. Del retrete brotan notas musicales que se derraman como agua."
+   "imagen_prompt": "Corte de una casa con seis rincones vistos a la vez. En el lavabo del baño crece un pino con un pájaro cantando en la punta. Sobre la estufa, un pájaro tras unas rejas de cárcel. Frente al refrigerador abierto, tres mulas temblorosas montadas en un trineo. En la puerta, un pájaro muy erguido junto a un arco con flecha sobre una rama. En la bañera, un ave enorme se desvanece entre sus propias alas. Del retrete brotan notas musicales que se derraman como agua.",
+   "imagen": "img/tecnicas/lit-la-rama-paz.webp"
   },
   {
    "id": "lit-nocturno-acuna",
@@ -485,7 +510,8 @@
     "Repaso acumulativo: lo de ayer, lo de hoy y al final todo; luego en tiempos muertos."
    ],
    "recuerda": "Escritorio-luna con almohada = \"De noche, cuando pongo mis sienes en la almohada\"; planeta tras la ventana = \"y hacia otro mundo quiero mi espíritu volver\".",
-   "imagen_prompt": "Una habitación de estudio de noche, iluminada por la luz de la luna. El escritorio tiene forma de media luna plateada y sobre él un joven poeta apoya la cabeza en una almohada blanca. Tras la ventana flota un planeta azul con anillos, hacia el cual se eleva una figura translúcida que sale del cuerpo del joven. En la pared, un cuadro muestra un camino larguísimo que termina en una meta. Junto al librero, una silueta de mujer se pierde en la sombra del rincón."
+   "imagen_prompt": "Una habitación de estudio de noche, iluminada por la luz de la luna. El escritorio tiene forma de media luna plateada y sobre él un joven poeta apoya la cabeza en una almohada blanca. Tras la ventana flota un planeta azul con anillos, hacia el cual se eleva una figura translúcida que sale del cuerpo del joven. En la pared, un cuadro muestra un camino larguísimo que termina en una meta. Junto al librero, una silueta de mujer se pierde en la sombra del rincón.",
+   "imagen": "img/tecnicas/lit-nocturno-acuna.webp"
   },
   {
    "id": "lit-oms-salud",
@@ -504,7 +530,8 @@
     "Sube de nivel: orden de frases, orden exacto, conectoras, 70-80 % y 90-100 %."
    ],
    "recuerda": "Puerta: brindis sobre el mapa de un estado · sofá: rompecabezas completo de físico, mental y social · ventana: cama vacía y un señor que grita \"¡no solamente eso!\".",
-   "imagen_prompt": "Un recibidor con tres puntos. En la puerta, dos personas chocan copas gigantes sobre un mapa de un estado. En el sofá, un rompecabezas completo de tres piezas que encajan: un fisicoculturista levantando pesas, un monje meditando con los ojos cerrados y un grupo de amigos de fiesta, todos dentro de una tina llena de espuma. Junto a la ventana, una cama de hospital vacía y un señor que levanta la mano con gesto de \"no\" mientras sostiene un virus verde esposado."
+   "imagen_prompt": "Un recibidor con tres puntos. En la puerta, dos personas chocan copas gigantes sobre un mapa de un estado. En el sofá, un rompecabezas completo de tres piezas que encajan: un fisicoculturista levantando pesas, un monje meditando con los ojos cerrados y un grupo de amigos de fiesta, todos dentro de una tina llena de espuma. Junto a la ventana, una cama de hospital vacía y un señor que levanta la mano con gesto de \"no\" mientras sostiene un virus verde esposado.",
+   "imagen": "img/tecnicas/lit-oms-salud.webp"
   },
   {
    "id": "lit-iasp-dolor-escalera",
@@ -523,7 +550,8 @@
     "Repasa en voz alta con audio y vigila la parte nueva de 2020: \"o similar a la asociada\"."
    ],
    "recuerda": "Pinchazo y llanto · mueca de asco · gemelo que imita la mueca · tejido cortado y tejido amenazado.",
-   "imagen_prompt": "Un científico con bata mete la mano en una caja misteriosa y salta de dolor por un pinchazo, con lágrimas y una mueca de asco. A su lado, su hermano gemelo idéntico, con las manos en los bolsillos, pone exactamente la misma mueca sin haber tocado nada. Sobre la mesa del laboratorio hay dos trozos de tejido rosado: uno ya cortado por la mitad y otro al que apunta una tijera enorme a punto de cortarlo. Laboratorio luminoso con colores intensos."
+   "imagen_prompt": "Un científico con bata mete la mano en una caja misteriosa y salta de dolor por un pinchazo, con lágrimas y una mueca de asco. A su lado, su hermano gemelo idéntico, con las manos en los bolsillos, pone exactamente la misma mueca sin haber tocado nada. Sobre la mesa del laboratorio hay dos trozos de tejido rosado: uno ya cortado por la mitad y otro al que apunta una tijera enorme a punto de cortarlo. Laboratorio luminoso con colores intensos.",
+   "imagen": "img/tecnicas/lit-iasp-dolor-escalera.webp"
   },
   {
    "id": "nom-ramon-ramo",
@@ -542,7 +570,8 @@
     "Al verla de nuevo, ve del rasgo a la imagen y de ahí al nombre."
    ],
    "recuerda": "Copete → rosas → ramo → Ramón.",
-   "imagen_prompt": "Retrato de un hombre joven y simpático con un copete enorme y alto peinado hacia arriba. Su copete es un frondoso ramo de rosas rojas con tallos verdes y espinas que brotan en todas direcciones, con algunos pétalos cayendo sobre sus hombros. Él sonríe orgulloso mientras una abeja curiosa se acerca a oler las flores. Fondo sencillo de una reunión con otras personas desenfocadas."
+   "imagen_prompt": "Retrato de un hombre joven y simpático con un copete enorme y alto peinado hacia arriba. Su copete es un frondoso ramo de rosas rojas con tallos verdes y espinas que brotan en todas direcciones, con algunos pétalos cayendo sobre sus hombros. Él sonríe orgulloso mientras una abeja curiosa se acerca a oler las flores. Fondo sencillo de una reunión con otras personas desenfocadas.",
+   "imagen": "img/tecnicas/nom-ramon-ramo.webp"
   },
   {
    "id": "nom-alejandra-salamandra",
@@ -560,7 +589,8 @@
     "Fíjate en 4 detalles de la persona y repásalos al despedirte."
    ],
    "recuerda": "Cara mojada de salamandra y mano áspera → salamandra → Alejandra.",
-   "imagen_prompt": "Una mujer joven estrecha la mano de otra persona en una reunión. Su rostro se transforma en el de una salamandra brillante, naranja con manchas negras, cubierta de gotas de agua que escurren por su cuello. Su sonrisa es la boca ancha de la salamandra. La mano que saluda tiene la piel rugosa y húmeda del anfibio y la otra persona hace un gesto de sorpresa al sentir la textura. Alrededor, pequeñas salpicaduras de agua."
+   "imagen_prompt": "Una mujer joven estrecha la mano de otra persona en una reunión. Su rostro se transforma en el de una salamandra brillante, naranja con manchas negras, cubierta de gotas de agua que escurren por su cuello. Su sonrisa es la boca ancha de la salamandra. La mano que saluda tiene la piel rugosa y húmeda del anfibio y la otra persona hace un gesto de sorpresa al sentir la textura. Alrededor, pequeñas salpicaduras de agua.",
+   "imagen": "img/tecnicas/nom-alejandra-salamandra.webp"
   },
   {
    "id": "nom-murphy-robocop",
@@ -578,7 +608,8 @@
     "Pregúntate en los dos sentidos: nombre → hallazgo y hallazgo → nombre."
    ],
    "recuerda": "Mano de acero bajo la costilla derecha → se corta el aire → Murphy → vesícula.",
-   "imagen_prompt": "Sala de urgencias. Un policía robot de armadura plateada y visor oscuro se inclina sobre un paciente acostado en una camilla y hunde su mano metálica bajo las costillas del lado derecho del abdomen. El paciente está congelado con la boca abierta a mitad de una inhalación, los ojos muy abiertos y el pecho inflado a medias, como en pausa. Bajo la mano del robot asoma una vesícula verde, hinchada, que echa humo. Chispas y vapor alrededor."
+   "imagen_prompt": "Sala de urgencias. Un policía robot de armadura plateada y visor oscuro se inclina sobre un paciente acostado en una camilla y hunde su mano metálica bajo las costillas del lado derecho del abdomen. El paciente está congelado con la boca abierta a mitad de una inhalación, los ojos muy abiertos y el pecho inflado a medias, como en pausa. Bajo la mano del robot asoma una vesícula verde, hinchada, que echa humo. Chispas y vapor alrededor.",
+   "imagen": "img/tecnicas/nom-murphy-robocop.webp"
   },
   {
    "id": "nom-giordano-jordan",
@@ -596,7 +627,8 @@
     "Repasa desde el hallazgo: dolor al percutir el ángulo costovertebral → ¿nombre?"
    ],
    "recuerda": "Puño que bota en la espalda baja → riñón que grita → Jordan → Giordano.",
-   "imagen_prompt": "Un basquetbolista alto con camiseta roja y muñequeras está detrás de un paciente sentado en el borde de una camilla. En lugar de un balón, bota su puño cerrado contra la parte baja de la espalda del paciente con un movimiento de dribleo, dejando ondas de impacto. Dentro de la espalda se ve un riñón rojo con forma de frijol que salta y grita con la boca abierta, y una piedrita gris sale rebotando por el suelo como un balón."
+   "imagen_prompt": "Un basquetbolista alto con camiseta roja y muñequeras está detrás de un paciente sentado en el borde de una camilla. En lugar de un balón, bota su puño cerrado contra la parte baja de la espalda del paciente con un movimiento de dribleo, dejando ondas de impacto. Dentro de la espalda se ve un riñón rojo con forma de frijol que salta y grita con la boca abierta, y una piedrita gris sale rebotando por el suelo como un balón.",
+   "imagen": "img/tecnicas/nom-giordano-jordan.webp"
   },
   {
    "id": "ra-cornell-rondas",
@@ -615,7 +647,8 @@
     "Si una pregunta falla 3 rondas seguidas, edítala: sintetízala, explícala o agrégale una mnemotecnia."
    ],
    "recuerda": "Ronda 1: 20 → ronda 2: 10 → ronda 3: 5 → cero errores.",
-   "imagen_prompt": "Una estudiante sentada en un escritorio tapa con una hoja de papel la mitad derecha de su cuaderno abierto y mira hacia el techo con los ojos entrecerrados, esforzándose por recordar. A su lado hay tres montones de tarjetas: uno alto con tarjetas verdes, uno mediano con tarjetas amarillas y uno pequeño con tarjetas rojas. Una mano gigante toma solo las tarjetas rojas y amarillas y las lanza por un embudo que se hace cada vez más angosto, de donde sale al final una sola tarjeta verde brillante. Sin texto ni letras en ninguna tarjeta."
+   "imagen_prompt": "Una estudiante sentada en un escritorio tapa con una hoja de papel la mitad derecha de su cuaderno abierto y mira hacia el techo con los ojos entrecerrados, esforzándose por recordar. A su lado hay tres montones de tarjetas: uno alto con tarjetas verdes, uno mediano con tarjetas amarillas y uno pequeño con tarjetas rojas. Una mano gigante toma solo las tarjetas rojas y amarillas y las lanza por un embudo que se hace cada vez más angosto, de donde sale al final una sola tarjeta verde brillante. Sin texto ni letras en ninguna tarjeta.",
+   "imagen": "img/tecnicas/ra-cornell-rondas.webp"
   },
   {
    "id": "ra-conclusion-evidencia",
@@ -633,7 +666,8 @@
     "Destapa, compara y califica: completa en verde; sin evidencia o incompleta en amarillo."
    ],
    "recuerda": "Conducta repetida hasta volverse automática · p. ej., lavarte los dientes después de desayunar.",
-   "imagen_prompt": "Un estudiante de pie frente a un espejo del baño habla en voz alta con gesto seguro, mientras sostiene con una mano una tarjeta boca abajo que no mira. Detrás de él, como un recuerdo flotante, aparece una escena luminosa de sí mismo lavándose los dientes con mucha espuma justo después de desayunar, con un plato vacío y una taza al lado. Una flecha de luz une su boca abierta con esa escena flotante, como si su explicación trajera el ejemplo. Sin texto, letras ni números en la imagen."
+   "imagen_prompt": "Un estudiante de pie frente a un espejo del baño habla en voz alta con gesto seguro, mientras sostiene con una mano una tarjeta boca abajo que no mira. Detrás de él, como un recuerdo flotante, aparece una escena luminosa de sí mismo lavándose los dientes con mucha espuma justo después de desayunar, con un plato vacío y una taza al lado. Una flecha de luz une su boca abierta con esa escena flotante, como si su explicación trajera el ejemplo. Sin texto, letras ni números en la imagen.",
+   "imagen": "img/tecnicas/ra-conclusion-evidencia.webp"
   },
   {
    "id": "ra-fc-guia",
@@ -652,7 +686,8 @@
     "Repite en rondas solo las que salgan en rojo o amarillo."
    ],
    "recuerda": "60-100 lpm · más de 100 taquicardia · menos de 60 bradicardia.",
-   "imagen_prompt": "Un estudiante de medicina con bata blanca está sentado frente a cuatro puertas de colores dispuestas en semicírculo; de cada puerta sale una mano que le ofrece una tarjeta boca abajo. Él se toma el pulso en la muñeca con dos dedos mientras mira un corazón rojo que late fuerte sobre la mesa. Detrás de una de las puertas asoma un pulmón con cara pícara que intenta colarse entre las tarjetas, como una trampa. Sin texto, números ni letras en ninguna parte de la imagen."
+   "imagen_prompt": "Un estudiante de medicina con bata blanca está sentado frente a cuatro puertas de colores dispuestas en semicírculo; de cada puerta sale una mano que le ofrece una tarjeta boca abajo. Él se toma el pulso en la muñeca con dos dedos mientras mira un corazón rojo que late fuerte sobre la mesa. Detrás de una de las puertas asoma un pulmón con cara pícara que intenta colarse entre las tarjetas, como una trampa. Sin texto, números ni letras en ninguna parte de la imagen.",
+   "imagen": "img/tecnicas/ra-fc-guia.webp"
   },
   {
    "id": "ra-murphy-elaborativa",
@@ -671,7 +706,8 @@
     "Responde cada una sin ver y marca con el semáforo."
    ],
    "recuerda": "Palpo el hipocondrio derecho, inspira, se corta la inspiración por dolor: Murphy, colecistitis aguda.",
-   "imagen_prompt": "Un médico presiona con los dedos bajo las costillas del lado derecho de un paciente acostado en una camilla, mientras el paciente toma aire profundo y de golpe se queda congelado con las mejillas infladas y cara de dolor, como si una vesícula verde inflamada con cara enojada lo pinchara desde dentro. Al lado, una estudiante con la mano sobre una tarjeta tapada responde mirando al techo, y tres pequeños focos de colores verde, amarillo y rojo esperan encenderse sobre la mesa. Sin texto ni letras."
+   "imagen_prompt": "Un médico presiona con los dedos bajo las costillas del lado derecho de un paciente acostado en una camilla, mientras el paciente toma aire profundo y de golpe se queda congelado con las mejillas infladas y cara de dolor, como si una vesícula verde inflamada con cara enojada lo pinchara desde dentro. Al lado, una estudiante con la mano sobre una tarjeta tapada responde mirando al techo, y tres pequeños focos de colores verde, amarillo y rojo esperan encenderse sobre la mesa. Sin texto ni letras.",
+   "imagen": "img/tecnicas/ra-murphy-elaborativa.webp"
   },
   {
    "id": "esp-cajas-leitner",
@@ -690,7 +726,8 @@
     "Cuando todas llegan a la caja 5, dominas el tema; guarda cada caja con una liga."
    ],
    "recuerda": "Diario → 1-2 días → 3-4 días → semanal → antes del examen; fallo = caja 1.",
-   "imagen_prompt": "Una fila de cinco cajas de madera abiertas, cada una un poco más grande y más lejos que la anterior, como escalones que suben hacia una montaña. Pequeñas tarjetas con piernitas saltan alegres de una caja a la siguiente, mientras una tarjeta triste resbala por un tobogán desde la cuarta caja de vuelta a la primera. Un estudiante sonriente sostiene un fajo de tarjetas atado con una liga de goma. Sobre cada caja flota un reloj de arena de tamaño creciente. Sin texto, números ni letras."
+   "imagen_prompt": "Una fila de cinco cajas de madera abiertas, cada una un poco más grande y más lejos que la anterior, como escalones que suben hacia una montaña. Pequeñas tarjetas con piernitas saltan alegres de una caja a la siguiente, mientras una tarjeta triste resbala por un tobogán desde la cuarta caja de vuelta a la primera. Un estudiante sonriente sostiene un fajo de tarjetas atado con una liga de goma. Sobre cada caja flota un reloj de arena de tamaño creciente. Sin texto, números ni letras.",
+   "imagen": "img/tecnicas/esp-cajas-leitner.webp"
   },
   {
    "id": "esp-calendario-8020",
@@ -709,7 +746,8 @@
     "En el último 20 %, repasos acumulados y simulacros con cronómetro."
    ],
    "recuerda": "80 % del tiempo para avanzar, 20 % para repasar y simular; mismo día → día siguiente → fin de semana → 15 días → mes.",
-   "imagen_prompt": "Un enorme calendario de pared convertido en un camino de baldosas: la mayor parte de las baldosas son de color azul y un estudiante con mochila avanza por ellas cargando libros; al final del camino, un tramo corto de baldosas doradas lleva a una meta con una bandera, y en ese tramo el estudiante ya no carga libros sino que se examina con tarjetas y un cronómetro grande. A un lado del camino, un gorila dormido sobre una hamaca representa al que deja todo para el final. Sin texto ni números."
+   "imagen_prompt": "Un enorme calendario de pared convertido en un camino de baldosas: la mayor parte de las baldosas son de color azul y un estudiante con mochila avanza por ellas cargando libros; al final del camino, un tramo corto de baldosas doradas lleva a una meta con una bandera, y en ese tramo el estudiante ya no carga libros sino que se examina con tarjetas y un cronómetro grande. A un lado del camino, un gorila dormido sobre una hamaca representa al que deja todo para el final. Sin texto ni números.",
+   "imagen": "img/tecnicas/esp-calendario-8020.webp"
   },
   {
    "id": "esp-fc-escalera",
@@ -728,7 +766,8 @@
     "Si fallas (Otra vez), vuelve al escalón 0; si falla 3 veces seguidas, se marca para editar."
    ],
    "recuerda": "60-100 lpm · repasos a 1, 3, 7 y 15 días; un fallo la regresa al primer escalón.",
-   "imagen_prompt": "Una escalera de piedra con siete escalones que se van separando cada vez más, el último perdido entre nubes. Sobre los escalones sube un corazón rojo con piernas y un estetoscopio colgado del cuello, latiendo con calma; a cada escalón que sube, un sol y una luna giran más veces en el cielo para mostrar que pasa más tiempo. En el tercer escalón el corazón celebra con una medalla dorada. Abajo, un corazón despistado que se confundió con un pulmón cae por un tobogán al primer escalón. Sin texto ni números."
+   "imagen_prompt": "Una escalera de piedra con siete escalones que se van separando cada vez más, el último perdido entre nubes. Sobre los escalones sube un corazón rojo con piernas y un estetoscopio colgado del cuello, latiendo con calma; a cada escalón que sube, un sol y una luna giran más veces en el cielo para mostrar que pasa más tiempo. En el tercer escalón el corazón celebra con una medalla dorada. Abajo, un corazón despistado que se confundió con un pulmón cae por un tobogán al primer escalón. Sin texto ni números.",
+   "imagen": "img/tecnicas/esp-fc-escalera.webp"
   },
   {
    "id": "esp-cushing-redibujo",
@@ -747,7 +786,8 @@
     "Si sale completo, sigue con los repasos a 15 y 30 días."
    ],
    "recuerda": "Luna llena, giba, barriga grande, estrías violáceas, presión alta y azúcar alta.",
-   "imagen_prompt": "Un estudiante dibuja con lápiz en una hoja en blanco, sin mirar, un muñeco sencillo, mientras a su lado tiene boca abajo el dibujo original. El muñeco tiene la cara redonda como una luna llena, una joroba en la espalda alta, una barriga grande con rayas moradas, un manómetro de presión inflado en el brazo y un glucómetro pegado a la mano. Sobre el escritorio, tres hojas iguales ordenadas en fila, la primera con huecos marcados en rojo y la última completa. Sin texto ni letras."
+   "imagen_prompt": "Un estudiante dibuja con lápiz en una hoja en blanco, sin mirar, un muñeco sencillo, mientras a su lado tiene boca abajo el dibujo original. El muñeco tiene la cara redonda como una luna llena, una joroba en la espalda alta, una barriga grande con rayas moradas, un manómetro de presión inflado en el brazo y un glucómetro pegado a la mano. Sobre el escritorio, tres hojas iguales ordenadas en fila, la primera con huecos marcados en rojo y la última completa. Sin texto ni letras.",
+   "imagen": "img/tecnicas/esp-cushing-redibujo.webp"
   },
   {
    "id": "fla-notion-tablero",
@@ -766,7 +806,8 @@
     "Rondas con las incorrectas hasta que todas queden en Correcta."
    ],
    "recuerda": "Respuesta oculta hasta marcar Mostrar; Nueva → Incorrecta → Correcta, en rondas.",
-   "imagen_prompt": "Un tablero de corcho enorme dividido en tres columnas de colores, gris, rojo y verde, con tarjetas blancas boca abajo clavadas con chinchetas. Una estudiante sostiene una tarjeta y con la otra mano levanta una pequeña persiana de madera pegada a la tarjeta que esconde la respuesta. Otras tarjetas tienen piernitas y suben una pequeña escalera de la columna roja a la verde, celebrando al llegar. Sin texto, letras ni números en las tarjetas ni en el tablero."
+   "imagen_prompt": "Un tablero de corcho enorme dividido en tres columnas de colores, gris, rojo y verde, con tarjetas blancas boca abajo clavadas con chinchetas. Una estudiante sostiene una tarjeta y con la otra mano levanta una pequeña persiana de madera pegada a la tarjeta que esconde la respuesta. Otras tarjetas tienen piernitas y suben una pequeña escalera de la columna roja a la verde, celebrando al llegar. Sin texto, letras ni números en las tarjetas ni en el tablero.",
+   "imagen": "img/tecnicas/fla-notion-tablero.webp"
   },
   {
    "id": "fla-cloze-habitos",
@@ -784,7 +825,8 @@
     "Cuando ya salgan sueltos, crea otra con el mismo número en los tres para decirlos juntos."
    ],
    "recuerda": "Hábito regular → hábito necesitado → hábito deseado.",
-   "imagen_prompt": "Una tira de tren de juguete con tres vagones unidos en fila sobre una mesa de estudio: el primero lleva una taza de café de la rutina de la mañana, el segundo un vaso de agua y el tercero unas zapatillas de correr brillantes. Cada vagón está tapado por una lona de color distinta, azul, naranja y morada, y una mano levanta solo la lona del vagón del medio para ver qué hay. Al fondo, un teléfono muestra una tarjeta con la misma escena. Sin texto ni letras."
+   "imagen_prompt": "Una tira de tren de juguete con tres vagones unidos en fila sobre una mesa de estudio: el primero lleva una taza de café de la rutina de la mañana, el segundo un vaso de agua y el tercero unas zapatillas de correr brillantes. Cada vagón está tapado por una lona de color distinta, azul, naranja y morada, y una mano levanta solo la lona del vagón del medio para ver qué hay. Al fondo, un teléfono muestra una tarjeta con la misma escena. Sin texto ni letras.",
+   "imagen": "img/tecnicas/fla-cloze-habitos.webp"
   },
   {
    "id": "fla-glasgow-cloze",
@@ -802,7 +844,8 @@
     "Cuando salgan sueltos, una cloze con c1 en los tres huecos para decirlos juntos."
    ],
    "recuerda": "Ojos 4, verbal 5, motor 6; total 3 a 15.",
-   "imagen_prompt": "Una camilla de urgencias con un paciente de cómic dormido; sobre él flotan tres cofres de colores: uno con forma de ojo, otro con forma de boca y otro con forma de mano. Cada cofre está cerrado con un candado distinto y un estudiante con bata sostiene un llavero, abriendo solo uno de los cofres a la vez. Del cofre del ojo salen cuatro canicas, del de la boca cinco y del de la mano seis, que ruedan hasta un frasco. Sin texto, letras ni números escritos."
+   "imagen_prompt": "Una camilla de urgencias con un paciente de cómic dormido; sobre él flotan tres cofres de colores: uno con forma de ojo, otro con forma de boca y otro con forma de mano. Cada cofre está cerrado con un candado distinto y un estudiante con bata sostiene un llavero, abriendo solo uno de los cofres a la vez. Del cofre del ojo salen cuatro canicas, del de la boca cinco y del de la mano seis, que ruedan hasta un frasco. Sin texto, letras ni números escritos.",
+   "imagen": "img/tecnicas/fla-glasgow-cloze.webp"
   },
   {
    "id": "fla-focos-oclusion",
@@ -821,7 +864,8 @@
     "Agrega una inversa: de la ubicación al nombre del foco."
    ],
    "recuerda": "Aórtico 2.º EIC derecho · pulmonar 2.º EIC izquierdo · tricuspídeo borde esternal izquierdo bajo · mitral 5.º EIC medioclavicular.",
-   "imagen_prompt": "Un torso de maniquí de anatomía visto de frente, de pie sobre un escritorio, con cuatro parches adhesivos de colores pegados en el pecho: dos arriba a cada lado del esternón, uno abajo junto al borde izquierdo del esternón y uno abajo a la izquierda bajo la tetilla. Tres parches son grises y uno brilla en rojo intenso. Un estudiante con estetoscopio apoya la campana justo sobre el parche rojo y escucha con los ojos cerrados. Sin texto, letras ni números."
+   "imagen_prompt": "Un torso de maniquí de anatomía visto de frente, de pie sobre un escritorio, con cuatro parches adhesivos de colores pegados en el pecho: dos arriba a cada lado del esternón, uno abajo junto al borde izquierdo del esternón y uno abajo a la izquierda bajo la tetilla. Tres parches son grises y uno brilla en rojo intenso. Un estudiante con estetoscopio apoya la campana justo sobre el parche rojo y escucha con los ojos cerrados. Sin texto, letras ni números.",
+   "imagen": "img/tecnicas/fla-focos-oclusion.webp"
   }
  ]
 }
