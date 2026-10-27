@@ -249,3 +249,53 @@ textarea.met-in { min-height: 70px; resize: vertical; font-size: 1rem; }
   .met-vista *, .met-vista *::before, .met-vista *::after { animation: none !important; transition: none !important; }
 }
 :root.sin-mov .met-vista *, :root.sin-mov .met-vista *::before, :root.sin-mov .met-vista *::after { animation: none !important; transition: none !important; }
+
+/* ---------- Atlas de técnicas (galería + lámina) ---------- */
+.met-tec { margin: 8px 0 18px; }
+.met-tec-cab h3 { font-family: var(--font-display); margin: 0 0 4px; }
+.met-tec-cab .ds-sub { margin: 0 0 10px; }
+.tec-chips { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 10px; scrollbar-width: thin; }
+.tec-chips .chip { flex: none; min-height: 40px; }
+.tec-chips small { opacity: .7; margin-left: 2px; }
+.tec-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+@media (min-width: 700px) { .tec-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
+.tec-card { display: flex; flex-direction: column; text-align: left; padding: 0; border: 1px solid var(--line); background: var(--card); color: var(--ink);
+  border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow); cursor: pointer; transition: transform .18s var(--ease), box-shadow .18s var(--ease); }
+.tec-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.tec-card:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.tec-img { position: relative; display: block; aspect-ratio: 1; background: var(--grad-suave, var(--card-2)); }
+.tec-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tec-ph { display: grid; place-items: center; width: 100%; height: 100%; font-size: 2.6rem; }
+.tec-ph.grande { font-size: 5rem; aspect-ratio: 1; background: var(--grad-suave, var(--card-2)); border-radius: var(--r); }
+.tec-badge { position: absolute; left: 8px; bottom: 8px; font-size: .72rem; font-weight: 700; padding: 3px 8px; border-radius: 999px;
+  background: rgba(15, 15, 30, .72); color: #fff; backdrop-filter: blur(4px); }
+.tec-badge.apl { background: rgba(5, 120, 90, .85); }
+.tec-lam .tec-badge { position: static; display: inline-block; margin-left: 4px; vertical-align: middle; }
+.tec-tx { display: flex; flex-direction: column; gap: 3px; padding: 10px 12px 12px; }
+.tec-tec { font-size: .78rem; color: var(--muted); font-weight: 600; }
+.tec-tit { font-weight: 700; line-height: 1.25; font-size: .95rem; }
+
+.tec-lamina { border: 0; padding: 0; background: transparent; max-width: min(920px, 100vw - 24px); width: 100%; max-height: 100dvh; }
+.tec-lamina::backdrop { background: rgba(10, 8, 25, .62); backdrop-filter: blur(3px); }
+.tec-lam { position: relative; background: var(--bg); color: var(--ink); border-radius: var(--r-lg); box-shadow: var(--shadow-lg);
+  max-height: calc(100dvh - 24px); overflow-y: auto; display: grid; grid-template-columns: 1fr; }
+@media (min-width: 800px) { .tec-lam { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); } .tec-fig { position: sticky; top: 0; align-self: start; } .tec-nav { grid-column: 1 / -1; } }
+.tec-fig { margin: 0; padding: 14px; }
+.tec-fig img { width: 100%; border-radius: var(--r); display: block; box-shadow: var(--shadow); }
+.tec-cuerpo { padding: 6px 18px 14px; }
+.tec-cuerpo h3 { font-family: var(--font-display); font-size: 1.3rem; margin: 4px 0 12px; }
+.tec-cuerpo h4 { margin: 14px 0 4px; font-size: .95rem; }
+.tec-cuerpo p { margin: 0; line-height: 1.5; }
+.tec-recuerda { margin-top: 12px !important; padding: 10px 12px; border-radius: 12px; background: var(--ok-bg, var(--card-2)); border-left: 4px solid var(--ok, var(--accent)); }
+.tec-pasos { margin: 0; padding-left: 20px; line-height: 1.5; }
+.tec-prueba { display: flex; flex-wrap: wrap; gap: 8px; }
+.tec-prueba .btn { min-height: 44px; }
+.tec-prueba [data-tec-revelar] { display: none; }
+.tec-lam.tapado .tec-oculta { display: none; }
+.tec-lam.tapado [data-tec-tapar] { display: none; }
+.tec-lam.tapado [data-tec-revelar] { display: inline-flex; }
+.tec-pie { margin-top: 14px; }
+.tec-x { position: absolute; top: 10px; right: 10px; z-index: 2; width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(15, 15, 30, .65); color: #fff; font-size: 1.1rem; cursor: pointer; }
+.tec-nav { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 10px 14px 14px; border-top: 1px solid var(--line); position: sticky; bottom: 0; background: var(--bg); }
+.tec-nav .btn { min-height: 44px; }
+@media (max-width: 760px) { .tec-lamina { max-width: 100vw; margin: auto 0 0; } .tec-lam { border-radius: var(--r-lg) var(--r-lg) 0 0; max-height: 92dvh; } }

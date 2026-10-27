@@ -1,0 +1,62 @@
+{
+  "memorizar-nombres": {
+    "icono": "👤",
+    "nombre": "Nombres (epónimos)",
+    "resumen": "Atención total, el nombre se vuelve una palabra o persona sustituta (¿a qué me suena?) y se pega a un rasgo llamativo: en clínica, el rasgo es el signo mismo.",
+    "que": "Cinco técnicas para nombres de personas, autores y personajes (#124): repetición mental con atención total, asociación con una persona conocida, los cinco sentidos con 4 detalles, mnemotecnia visual (sustituta + rasgo + decodificación) y práctica con registro. [complemento] En el atlas se aplica a los epónimos: signos, maniobras, puntos, respiraciones y facies.",
+    "como_funciona": "El nombre se olvida \"porque es una pieza de información intangible que no representa nada visual\". Asociarlo a algo conocido lo vuelve visible, y pegarlo a un rasgo llamativo permite decodificar: rasgo → imagen → nombre. Los apodos nunca se olvidan porque dan risa: \"una emoción fuerte enlazada al nombre\" lo fija, y cada sentido extra es una carretera alternativa de recuerdo.",
+    "pasos": [
+      "Prestar atención al nombre al 100 %: apagar los demás pensamientos y repetirlo en tu mente (#124).",
+      "Preguntarte \"¿a qué me recuerda o a qué me suena?\": una palabra que suene o rime (Alejandra → salamandra) o una persona conocida con ese nombre (#124, #139).",
+      "Buscar el rasgo más llamativo (el copete, la sonrisa); en un epónimo, el rasgo es el hallazgo del signo (#124, #157). [complemento]",
+      "Asociar la sustituta con ese rasgo con muchos detalles y más de dos sentidos: el tono de voz, el aroma, el tacto del saludo, algo gracioso (#124, #140, #209).",
+      "Capturar al menos 4 detalles (cabello, ropa, accesorios, rasgos de la cara) y repasarlos al despedirte; en una facies, sus 4 rasgos visibles (#209). [complemento]",
+      "Decodificar: rasgo → imagen asociada → nombre, y también del nombre al hallazgo (#124).",
+      "Probarte: mira las caras (o los hallazgos) en desorden, sin el nombre, con 3 a 5 segundos para recordarlo, y cuenta aciertos (#124).",
+      "Practicar cada vez que conozcas a alguien y llevar un registro de las asociaciones para reutilizarlas (#124)."
+    ],
+    "cuando": [
+      "Nombres de personas que conoces, y de autores o personajes que estudias (#124).",
+      "Epónimos clínicos: signos (Murphy, Blumberg), maniobras (Giordano), puntos (McBurney), respiraciones (Kussmaul, Cheyne-Stokes, Biot) y facies. [complemento]",
+      "Cuando lo que se olvida es qué nombre va con qué hallazgo.",
+      "Muchos nombres a la vez, colocados en un palacio (Ron White, 2400 soldados) (#073)."
+    ],
+    "cuando_no": [
+      "Si lo que hay que saber es el mecanismo del signo: memorizar conceptos.",
+      "Si hay que memorizar el orden de varios epónimos o los pasos de una maniobra: memorizar listas o palacio.",
+      "Si el epónimo incluye cifras (un umbral): sistema mayor.",
+      "Sin practicar: \"¿te quedó claro el procedimiento? Pues no, porque no has practicado\" (#124)."
+    ],
+    "ejemplo_video": "Alejandra → salamandra: imaginas que toda su cara es una salamandra bañada en agua y, al darle la mano, sientes su piel áspera. Usa tres sentidos: oído (el nombre), vista (la salamandra) y tacto (el saludo) (#140; en #157 la salamandra va en su sonrisa).",
+    "ejemplo_atlas": {
+      "id": "frecuencia-respiratoria",
+      "texto": "Tres epónimos con palabra sustituta junto a Pulmi, el globo-pulmón: un diabético da besos profundos (Kuss = beso → Kussmaul, acidosis), una cadena sube y baja y se para (chain → Cheyne-Stokes, crece-decrece-apnea) y un bote rema sin orden (Biot, respiración anárquica por daño cerebral). La pregunta inversa del atlas parte del hallazgo para llegar al nombre."
+    },
+    "errores": [
+      "No prestar atención en el momento: es la primera causa de olvido (#124).",
+      "Escuchar el nombre \"en segundo plano\" y repetirlo muchas veces: se queda en rostro y nombre (#209).",
+      "Depender de un solo sentido, el oído: si se olvida, no hay ruta alternativa (#124).",
+      "No fijarse en ningún detalle de la persona, o no repasarlos después (#209).",
+      "No practicar ni llevar registro de asociaciones (#124).",
+      "Asociar el epónimo solo a la imagen y no al hallazgo: recuerdas \"RoboCop\" pero no qué hace. [complemento]"
+    ],
+    "consejos": [
+      "\"Entre más detalles, mejor\": el copete de Ramón está lleno de rosas con espinas (#124).",
+      "Si nadie cercano tiene ese nombre, busca personajes o famosos (Fredy → Freddie Mercury; Murphy → RoboCop, Alex Murphy) (#124).",
+      "Que la sustituta sea lo más parecida posible al nombre original (Elena = melena, Mónica = armónica) (#139).",
+      "Un nombre es memoria semántica: refuérzalo con la sensorial, al menos más de dos sentidos (#140).",
+      "Si un apellido tiene varios signos (Kussmaul: respiración y signo yugular), usa la misma sustituta con un rasgo distinto para cada signo. [complemento]",
+      "Pregúntate en los dos sentidos: nombre → hallazgo y hallazgo → nombre (#124).",
+      "Muchos nombres a la vez: colócalos en un palacio, como Simónides con los invitados del banquete (#073, #195)."
+    ],
+    "combina_con": [
+      "memorizar-conceptos",
+      "palacio-memoria",
+      "memorizar-listas",
+      "recuerdo-activo",
+      "visualizacion-imagenes"
+    ],
+    "fuentes": "#124, #140, #157, #209, #139, #073, #195, #137",
+    "version_skill": "2"
+  }
+}

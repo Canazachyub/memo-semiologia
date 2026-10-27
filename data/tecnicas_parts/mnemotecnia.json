@@ -1,0 +1,78 @@
+[
+  {
+    "id": "mne-alicia-dolor",
+    "metodo": "mnemotecnia",
+    "tecnica": "Acrónimo con imagen",
+    "titulo": "ALICIA: los 6 puntos para evaluar un dolor",
+    "origen": "video",
+    "fuente": "#143",
+    "dato": "Semiología del dolor: Aparición, Localización, Irradiación, Características, Intensidad y Agravantes.",
+    "como": "Las iniciales de los seis puntos forman ALICIA, y el acrónimo funciona como anzuelo: recuerdas un solo bloque y el cerebro reconstruye el resto. La sigla sola no basta, así que se vuelve escena: \"Alicia te hace un estudio del dolor\", con cada punto convertido en un objeto que ella usa.",
+    "pasos": [
+      "Comprende qué se pregunta en cada punto del dolor antes de memorizar.",
+      "Toma la inicial de cada punto en el orden de la exploración: A-L-I-C-I-A.",
+      "Imagina a Alicia vestida de doctora examinando a un paciente con dolor.",
+      "Dale un objeto a cada letra: reloj (aparición), lupa sobre el punto (localización), rayo que se extiende (irradiación), termómetro de dolor (intensidad).",
+      "Repasa diciendo los seis puntos solo a partir de la imagen de Alicia."
+    ],
+    "recuerda": "Aparición, Localización, Irradiación, Características, Intensidad, Agravantes.",
+    "imagen_prompt": "Una niña rubia con vestido azul de cuento, bata blanca y estetoscopio, examina con una lupa gigante a un paciente que se sujeta el abdomen con cara de dolor. Desde el punto que señala la lupa nace un rayo rojo brillante que se extiende hacia la espalda del paciente. De su bolsillo cuelga un reloj de bolsillo antiguo que oscila, y en la otra mano sostiene un termómetro enorme cuyo líquido rojo sube hasta arriba. Junto al paciente, un yunque pesado aplasta una almohada para mostrar que algo empeora el dolor. Consultorio de colores vivos."
+  },
+  {
+    "id": "mne-metales-alcalinos",
+    "metodo": "mnemotecnia",
+    "tecnica": "Acróstico + sustitutas con varios sentidos",
+    "titulo": "Lina quiere robarle el corazón a Francisco",
+    "origen": "video",
+    "fuente": "#140",
+    "dato": "Metales alcalinos, en orden: litio (Li), sodio (Na), potasio (K), rubidio (Rb), cesio (Cs) y francio (Fr).",
+    "como": "Para sostener la lista en la memoria de trabajo sin repetirla \"como gorila\", el video da dos caminos. El rápido es el acróstico \"Lina quiere robarle el corazón a Francisco\" (Li-Na, K = quiere, Rb, Cs, Fr). El sólido son las palabras sustitutas con más de dos sentidos: una pila que da toques (litio), una soda (sodio), el sabor del plátano (potasio), alguien rubio (rubidio), unos sesos (cesio) y un francés (francio).",
+    "pasos": [
+      "Toma los símbolos en orden: Li, Na, K, Rb, Cs, Fr.",
+      "Arma una frase cuyas palabras empiecen o suenen como cada símbolo: Lina, quiere, robarle, corazón, Francisco.",
+      "Para fijarlo mejor, convierte cada metal en un objeto que se vea, se pruebe o se toque.",
+      "Une las dos versiones en una escena: Lina usa los objetos para conquistar a Francisco.",
+      "Comprueba que de la frase salen los seis metales en orden."
+    ],
+    "recuerda": "Litio, sodio, potasio, rubidio, cesio, francio.",
+    "imagen_prompt": "Una chica traviesa de puntillas intenta sacar del pecho de un elegante caballero francés con boina, bigote y baguette un corazón rojo brillante que late. Para distraerlo, ella le ofrece una lata de soda burbujeante y un plátano pelado, mientras en su otra mano chisporrotea una pila eléctrica que lanza rayos azules. Detrás de ella espera un amigo de pelo rubio muy brillante que sostiene un cerebro de gelatina rosada que tiembla. Escena en una plaza de París con colores intensos."
+  },
+  {
+    "id": "mne-cushing-mnemotecnograma",
+    "metodo": "mnemotecnia",
+    "tecnica": "Mnemotecnograma",
+    "titulo": "El muñeco luna del síndrome de Cushing",
+    "origen": "aplicacion",
+    "fuente": "#168, #139",
+    "dato": "Síndrome de Cushing (exceso crónico de glucocorticoides): obesidad central con cara de luna llena y giba dorsal, extremidades delgadas, estrías rojo-vinosas anchas, hipertensión arterial, hiperglucemia o diabetes, osteoporosis, hematomas fáciles, debilidad muscular proximal, hirsutismo y alteraciones psiquiátricas.",
+    "como": "En vez de repetir la lista, se dibuja un muñeco con un ícono por signo, como hace el Dr. Sanagustín (#168). Los íconos son fijos: el manómetro es siempre hipertensión y el glucómetro, glucosa, en este y en cualquier otro dibujo del atlas. Antes hay que poder explicar por qué el cortisol produce cada signo; el muñeco solo sostiene la lista.",
+    "pasos": [
+      "Entiende primero qué hace el exceso de cortisol (grasa central, catabolismo de proteína y hueso, sube la glucosa).",
+      "Dibuja rápido un muñeco con cuerpo redondo, cara de luna, joroba y brazos y piernas de palillo.",
+      "Pega un ícono por signo: rayas moradas, manómetro, glucómetro, bastón, moretones, vello, nube gris.",
+      "No lo satures: si la lista crece, haz un segundo dibujo.",
+      "Al día siguiente y a la semana, redibújalo de memoria en hoja en blanco y compáralo con el original."
+    ],
+    "recuerda": "Cara de luna, giba, obesidad central con extremidades delgadas, estrías violáceas, HTA, hiperglucemia, osteoporosis, hematomas, debilidad proximal, hirsutismo, cambios del ánimo.",
+    "imagen_prompt": "Dibujo mnemotécnico simple: una figura humana con íconos pegados en partes del cuerpo. El tronco es redondo como una pelota y la cara es una luna llena sonriente; en la nuca lleva una joroba como la de un búfalo; brazos y piernas son delgados como palillos. Sobre la barriga hay rayas moradas anchas. Del brazo cuelga un manómetro con la aguja al máximo y una mano sostiene un glucómetro que destella. Se apoya en un bastón, tiene moretones azules en los brazos, vello en las mejillas y una pequeña nube gris de lluvia sobre la cabeza. Intenta subir un escalón y las piernas le tiemblan."
+  },
+  {
+    "id": "mne-taquicardia-hipopotamos",
+    "metodo": "mnemotecnia",
+    "tecnica": "Acróstico + historia",
+    "titulo": "Si el corazón corre: tres hipopótamos anémicos, dolidos y febriles",
+    "origen": "aplicacion",
+    "fuente": "#139, #137",
+    "dato": "Causas frecuentes de taquicardia sinusal (FC > 100 lpm en reposo): fiebre, anemia, hipovolemia, hipoxemia, hipertiroidismo, dolor o ansiedad. La lista no es exhaustiva (también fármacos, ejercicio, embarazo).",
+    "como": "Es una lista corta sin orden obligatorio, así que va en acróstico: \"Tres Hipopótamos Anémicos, Dolidos y Febriles\" = 3 H (hipovolemia, hipoxemia, hipertiroidismo) + anemia + dolor/ansiedad + fiebre. La escena muestra el efecto clínico: los hipopótamos corren con el corazón desbocado, y cada uno lleva la señal de su causa.",
+    "pasos": [
+      "Entiende por qué cada causa acelera el corazón (compensar volumen, oxígeno o metabolismo, o descarga simpática).",
+      "Agrupa las que empiezan igual: las tres H.",
+      "Forma la frase con las iniciales restantes: anémicos, dolidos, febriles.",
+      "Dale a cada hipopótamo una señal visible de su causa y ponlos a correr.",
+      "Practica con el caso: \"FC 120 en reposo, ¿qué buscas?\" y responde desde la escena."
+    ],
+    "recuerda": "Hipovolemia, hipoxemia, hipertiroidismo, anemia, dolor/ansiedad y fiebre.",
+    "imagen_prompt": "Tres hipopótamos muy pálidos corren a toda velocidad por la sabana, cada uno con un corazón rojo que salta fuera del pecho. El primero va desinflado y arrugado como un globo vacío; el segundo carga a la espalda una bombona de oxígeno vacía y jadea con la lengua afuera; el tercero lleva un moño gigante en forma de mariposa en el cuello y suda a chorros. Los tres llevan termómetros humeantes en la boca y lloran porque tienen espinas clavadas en las patas. Líneas de velocidad y polvo detrás de ellos."
+  }
+]

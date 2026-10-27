@@ -1,0 +1,79 @@
+{
+  "palacio-memoria": {
+    "icono": "🏰",
+    "nombre": "Palacio de la memoria",
+    "resumen": "Una imagen exagerada en cada ubicación de un lugar que ya conoces; para recordar, lo recorres con la mente.",
+    "que": "El método loci (plural de locus, \"lugar\"): cada dato se vuelve una imagen viva y exagerada que se coloca, en orden, en una ubicación de un lugar que conoces de memoria. Viene de Simónides de Ceos, que identificó a los muertos de un banquete por el lugar donde estaba sentado cada uno. Pablo también lo llama \"almacén mental\": amplía la memoria de trabajo.",
+    "como_funciona": "La memoria espacial es la más fuerte que tenemos y el palacio la aprovecha: recorres el lugar y \"ves\" lo que dejaste en cada parada. A diferencia de una historia larga, que falla si se rompe una asociación, el palacio permite ir directo a cualquier elemento sin pasar por los anteriores. El orden lo da el recorrido, así que la lista sale en orden, al revés y en desorden.",
+    "pasos": [
+      "Comprender el tema y empezar por el final: decidir cómo te lo van a preguntar y quedarte solo con lo imprescindible (#132, #148).",
+      "Contar los datos y reducir cada uno a su palabra clave: 20 datos = 20 ubicaciones, un dato por ubicación (#132, #189).",
+      "Elegir el lugar según la información: cerrados para el detalle, abiertos y rutas para lo general. Lo más probable, tu casa; si tiene varios pisos, uno solo (#129, #191).",
+      "Trazarlo en papel: contorno, habitaciones numeradas en el orden en que las recorrerías (sentido horario) y puertas como un rectángulo relleno (#191).",
+      "Cinco micro-ubicaciones por habitación (4 esquinas + centro), el mismo número en todas y numeradas de 5 en 5; si falta mueble, lo más cercano (#191, #073).",
+      "Repasar el palacio vacío dos veces: por escrito tapando el dibujo (marca con asterisco lo que falle) y luego en voz alta, adelante y atrás (#191).",
+      "Convertir cada dato en una imagen exagerada que actúa sobre el mueble y en la que tú participas: muerdes el escritorio de almendras (#195, #191).",
+      "Si una idea tiene varias partes, usar el pilar de información: arriba, en medio y abajo de la misma ubicación (#132).",
+      "Repasar hacia adelante y hacia atrás con repaso activo: aparta la vista, di el dato y después comprueba (#195, #134).",
+      "Repaso en desorden: pregúntate por ubicaciones salteadas, unos 3 segundos cada una, y di qué había (#204).",
+      "Arreglar las imágenes que fallan (\"falta exagerar un poquito más\") y espaciar: al terminar, al día siguiente, a la semana y al mes (#196, #197, #148)."
+    ],
+    "cuando": [
+      "Listas en orden sin importar el tamaño, y la estructura de un tema (sus partes, pasos o puntos clave) (#139).",
+      "Listas de causas de más de 6 elementos y clasificaciones donde importa el orden (#067).",
+      "Escalas con varios componentes: un componente por ubicación y sus puntajes en niveles del pilar.",
+      "Muchas cifras de un mismo grupo (signos vitales, hemograma, gasometría): una imagen del sistema mayor por ubicación (#189).",
+      "Una guía de preguntas de examen como \"acordeón mental\": una ubicación por pregunta, con una imagen que guarda pregunta y respuesta (#100).",
+      "Las ideas clave de una exposición, en orden: 20 ideas = 20 ubicaciones; las recorres mientras hablas (#090).",
+      "Listas cortas de 7 a 10 conceptos: palacio corporal de los pies a la cabeza o un solo lugar por habitación (#214, #196, #197)."
+    ],
+    "cuando_no": [
+      "Antes de estudiar y comprender el tema: \"nunca lo utilices cuando todavía no hayas estudiado el tema\". Única excepción: la emergencia de un día con la guía ya hecha (#100).",
+      "Para todo: solo lo imprescindible y lo que se va a preguntar (#148).",
+      "Para textos enteros demasiado grandes o páginas completas de apuntes: se revuelven los lugares (#139, #148).",
+      "Para listas pequeñas (3 a 6 datos): basta un acrónimo, un acróstico o una historia corta (#139, #067).",
+      "En lugares abiertos o rutas que no conoces a la perfección: te pierdes y olvidas las estaciones (#129, #073).",
+      "En un palacio que ya guarda algo que no quieres olvidar: no lo reemplaces, destínalo a esa información (#191)."
+    ],
+    "ejemplo_video": "Palacio desde cero en una casa de 7 habitaciones × 5 = 35 ubicaciones con 10 alimentos: del cuadro salen volando brócolis, el piano tiene aguacates por teclas, le avientas nueces al ventilador y muerdes el escritorio de almendras. Se repasa de la 1 a la 10 y de la 10 a la 1 (#191).",
+    "ejemplo_atlas": {
+      "id": "presion-arterial",
+      "texto": "Estación 1 del palacio del Hospital Regional (Ventanilla de admisión), con pilar de información: arriba van las sistólicas apiladas (tunas = 120, Tomás = 130, torres = 140) y abajo, en el asiento, las diastólicas (vaso = 80, vela = 85, peso = 90). Arriba la cifra alta y abajo la baja, como se escribe la PA."
+    },
+    "errores": [
+      "Usar el palacio sin haber estudiado, o para memorizar textos enteros (#139, #148).",
+      "Elegir un lugar que no conoces a la perfección, o usar lugares abiertos para información a detalle (#129, #073).",
+      "Poner un número distinto de ubicaciones en cada habitación (#073).",
+      "Usarlo sin saberte \"de pies a cabeza\" el orden de las micro-ubicaciones: si lo olvidas, es que no lo repasaste vacío (#191, #073).",
+      "Reutilizar un palacio que guarda algo que no quieres olvidar (#191).",
+      "En el acordeón mental, meter una respuesta larga en una sola ubicación: pártela en micro-preguntas (#100).",
+      "Memorizar literal toda una exposición en vez de sus ideas clave (#090).",
+      "Palacios desorganizados, sin un sentido fijo de recorrido (#190).",
+      "Imágenes sosas o que no se conectan con el dato: se recuerdan a medias (#139, #196).",
+      "Repasar solo mirando las notas (recuerdo pasivo) o querer usar todas las técnicas a la vez (#073, #139)."
+    ],
+    "consejos": [
+      "Las tres cualidades de un buen palacio: lo conoces sin memorizarlo, sus ubicaciones son obvias y recorres el orden rápido. \"Si tienes que memorizar las ubicaciones, no es un palacio.\" (#129, #132)",
+      "Ponle nombre a tu libreta de palacios y ten una biblioteca creada por adelantado (por contexto o por abecedario); anota qué palacio usaste en cada tema (#191, #132).",
+      "Todos tus palacios con la misma estructura: 5 micro-ubicaciones por habitación (#191).",
+      "Si el examen es en un salón concreto, usa ese salón como palacio: el acordeón queda frente a ti (#129).",
+      "Tu cuerpo también es un palacio (\"el acordeón eres tú\"): pies, rodillas, cintura, estómago, brazos, hombros, boca, nariz, ojos y cabeza (#214, #129).",
+      "Personajes conocidos y tú como protagonista hacen que la escena destaque: Hulk no te deja trabajar en tu escritorio (#204, #191).",
+      "Numera las estaciones de forma continua (1–5 sala, 6–10 cocina) para poder preguntarte \"¿qué hay en la 7?\" (#139).",
+      "Un parámetro por estación; su mínimo y máximo en dos niveles del pilar. [complemento]",
+      "Dibújalo, aunque sea simple: trazarlo en una hoja hace que \"tenga peso\" (#139, #197)."
+    ],
+    "combina_con": [
+      "memorizar-numeros",
+      "visualizacion-imagenes",
+      "mnemotecnia",
+      "memorizar-conceptos",
+      "memorizar-listas",
+      "memorizar-textos-literal",
+      "recuerdo-activo",
+      "repeticion-espaciada"
+    ],
+    "fuentes": "#191, #100, #195, #129, #139, #132, #190, #134, #067, #073, #148, #128, #189, #143, #185, #099, #090, #196, #197, #214, #204, #140",
+    "version_skill": "2"
+  }
+}

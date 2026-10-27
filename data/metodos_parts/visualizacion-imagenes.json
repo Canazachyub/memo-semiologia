@@ -1,0 +1,71 @@
+{
+  "visualizacion-imagenes": {
+    "icono": "🖼️",
+    "nombre": "Visualización",
+    "resumen": "Convertir cualquier dato, también lo abstracto, en una imagen exagerada, con movimiento, más de dos sentidos y emoción, ligada a su significado; y en medicina, en mnemotecnogramas con íconos fijos.",
+    "que": "El dato se sustituye por algo tangible que sí se puede imaginar y que, al recordarlo, devuelve el dato original. La palabra o imagen sustituta es \"la técnica más importante que debes aprender antes de todas las demás\": está dentro del acrónimo, la historia, el palacio y el dibujo (#139). Su versión en papel es el mnemotecnograma: un dibujo con pocos elementos donde cada elemento es la imagen sustitutiva de un dato (#168). Es la base con la que se construye cada escena del atlas.",
+    "como_funciona": "Lo abstracto se olvida porque no se puede ver. Una imagen exagerada, con movimiento, sentidos y emoción, abre varios caminos de recuerdo: \"si involucras más de dos sentidos lo recordarás mucho más fácil\" y el dato semántico se pega a un evento emocional imaginado (#140). Las memorias más fuertes son la espacial, la visual y la sensorial (#205, #196). La acción debe mostrar qué hace el concepto: \"nunca pierdas de vista el significado\" (#043). No sirve para estudiar un tema la primera vez; al repasar lo ya entendido memoriza más que la sola repetición (#127).",
+    "pasos": [
+      "Comprender el dato y reducirlo a sus piezas o palabras clave, quitando lo que se repite (#137, #134).",
+      "Buscar la imagen sustituta con una sola de las 4 reglas: cerebro (¿a qué me recuerda?), corazón (¿qué significa para mí?), espejo (¿a qué se parece?) o lengua (¿a qué suena?) (#137).",
+      "Si no sale nada: \"¿qué es lo primero que viene a mi mente?\"; si sigue sin salir, busca imágenes del concepto en internet y vuelve a preguntarte (#186).",
+      "Conectar la imagen con el significado: la acción muestra qué hace el concepto, no solo cómo suena (#043).",
+      "Intensificar: exageración, movimiento, emoción, absurdo; a cada pieza un verbo de acción y una emoción exagerada (#137, #143).",
+      "Vivirla en primera persona y meter a propósito más de dos sentidos (vista, tacto, sonido…) (#196, #140).",
+      "Si hay varias piezas, hacer que interactúen en una misma escena, una historia o un palacio (#132, #191).",
+      "Prueba de calidad: piensa solo en la imagen; si reconstruyes el dato, está bien hecha; si no, fortalécela (#137).",
+      "Para signos de una enfermedad: mnemotecnograma, un muñeco con pocos íconos y siempre el mismo ícono para el mismo dato (manómetro = HTA) (#168).",
+      "Repasar redibujando de memoria en hoja en blanco y comparar con el original al día siguiente y a la semana (#134, #168)."
+    ],
+    "cuando": [
+      "Siempre que otro método necesite una escena: historia, palacio, sistema mayor o acrónimo con imagen (#139, #137).",
+      "Términos difíciles o abstractos que se olvidan una y otra vez: fármacos, estructuras, síntomas, definiciones (#139, #043).",
+      "Signos y síntomas de una enfermedad (Cushing, Addison) o estructuras numeradas (pares craneales): mnemotecnograma (#168).",
+      "Conceptos que cuestan entender: con ejemplo cotidiano, metáfora o analogía visual (\"la memoria de trabajo es un pizarrón\") (#043, #199).",
+      "Esquemas con partes que hay que nombrar: dibujo dentro del mismo esquema, u oclusión de imagen en flashcards (#071, #174).",
+      "Notas y exposiciones: un dibujo rápido por idea; cada imagen de la diapositiva detona su contenido (#096, #090)."
+    ],
+    "cuando_no": [
+      "Antes de comprender: la imagen ancla algo que ya entendiste y no sirve para ver un tema la primera vez (#137, #127).",
+      "Datos que ya usas a diario o que tienen lógica: el andamio ya no hace falta (#168).",
+      "Una imagen por palabra en textos largos: tarda una eternidad; va una por frase o línea (#190).",
+      "Cuando cuesta mucho visualizar o la idea es muy compleja: basta con que te haga sentido y la enlaces (#072, #096)."
+    ],
+    "ejemplo_video": "Alejandra = salamandra: toda su cara es una salamandra mojada y al darle la mano sientes su piel áspera (oído, vista y tacto a la vez) (#140). En medicina, el nervio olfatorio (I) es un triangulito porque está en la nariz y el óptico (II) son dos ojos, por el número 2 (#168).",
+    "ejemplo_atlas": {
+      "id": "temperatura",
+      "texto": "Protagonista: Termo, el termómetro bombero, en la camilla de triaje. Bajo la axila ve una mecha encendida a la que le cae una ola (36,5); en la boca lo espera un mago (37); en el recto el mismo mago surfea una ola (37,5). La mafia con puros encendidos es la fiebre elevada y la miel congelada, la hipotermia: cada pieza hace una acción con calor, humo o frío."
+    },
+    "errores": [
+      "Creer que \"no tengo imaginación\": con práctica se vuelve automático (#137, #148).",
+      "Usar varias reglas para el mismo concepto (#137).",
+      "Perder de vista el significado: la imagen suena igual pero no explica nada (#043).",
+      "Cambiar de imagen para el mismo dato en cada dibujo en vez de usar un ícono fijo (#168).",
+      "Saturar el mnemotecnograma, o preocuparse por dibujar bonito (#168, #134).",
+      "Repasar mirando la imagen en lugar de reconstruirla: da la falsa sensación de \"ya me lo sé\" (#168).",
+      "Una imagen por palabra en textos largos (#190).",
+      "Esperar resultados sin práctica: la visualización \"requiere mucha práctica\" (#127)."
+    ],
+    "consejos": [
+      "Checklist obligatoria: conecta con el significado, protagonista claro, pasa la prueba de reconstrucción, es breve y es tuya.",
+      "Potenciadores (al menos 3): exageración, movimiento, sentidos, primera persona, emoción, absurdo, interacción, lugar conocido y color [el color como código es complemento].",
+      "Conviértela en un evento: \"allanamiento\" = tú, agente del FBI, entrando a investigar una casa (#140).",
+      "6 vías para lo abstracto: sonido, significado propio o cultural, forma, ejemplo cotidiano, metáfora y símbolo.",
+      "Íconos fijos en todo el atlas: el mismo dato, la misma imagen (manómetro = HTA, glucómetro = glucosa) (#168).",
+      "Al tomar notas dibuja \"sin pensar\": \"la fealdad también te asegura el éxito\" (#096).",
+      "Señales de escena débil: el objeto está quieto, usa la palabra original sin transformarla o tiene más de 4 elementos sin acción."
+    ],
+    "combina_con": [
+      "mnemotecnia",
+      "memorizar-numeros",
+      "palacio-memoria",
+      "memorizar-nombres",
+      "memorizar-conceptos",
+      "flashcards",
+      "recuerdo-activo",
+      "repeticion-espaciada"
+    ],
+    "fuentes": "#137, #139, #168, #140, #043, #134, #196, #186, #127, #132, #124, #143, #071, #190, #195, #044, #041, #074, #067, #072, #098, #187, #185, #090, #096, #162, #173, #174, #191, #194, #199, #204, #205, #161, #188, #207, #209, #211",
+    "version_skill": "2"
+  }
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "esp-cajas-leitner",
+    "metodo": "repeticion-espaciada",
+    "tecnica": "Cajas de Leitner",
+    "titulo": "Cinco cajas: acierto avanza, fallo vuelve a la 1",
+    "origen": "video",
+    "fuente": "#175",
+    "dato": "Sistema de Sebastian Leitner con tarjetas físicas: la versión en papel del algoritmo de repetición espaciada.",
+    "como": "Cinco cajas con su intervalo: 1) todos los días, 2) cada 1-2 días, 3) cada 3-4 días, 4) una vez por semana, 5) antes del examen. Todas las tarjetas empiezan en la caja 1; la que aciertas pasa a la siguiente y la que fallas regresa a la 1 aunque ya hubiera avanzado. Es la misma lógica que la escalera corta [1, 2, 4, 7] que usa la app cuando el examen está a 2 semanas o menos.",
+    "pasos": [
+      "Escribe cada pregunta al frente de una tarjeta y la respuesta atrás.",
+      "Arma cinco cajas y anota su intervalo: diario, 1-2 días, 3-4 días, semanal, antes del examen.",
+      "Mete todas en la caja 1 y repásala cada día.",
+      "Acierto: la tarjeta pasa a la caja siguiente. Fallo: vuelve a la caja 1.",
+      "Cuando todas llegan a la caja 5, dominas el tema; guarda cada caja con una liga."
+    ],
+    "recuerda": "Diario → 1-2 días → 3-4 días → semanal → antes del examen; fallo = caja 1.",
+    "imagen_prompt": "Una fila de cinco cajas de madera abiertas, cada una un poco más grande y más lejos que la anterior, como escalones que suben hacia una montaña. Pequeñas tarjetas con piernitas saltan alegres de una caja a la siguiente, mientras una tarjeta triste resbala por un tobogán desde la cuarta caja de vuelta a la primera. Un estudiante sonriente sostiene un fajo de tarjetas atado con una liga de goma. Sobre cada caja flota un reloj de arena de tamaño creciente. Sin texto, números ni letras."
+  },
+  {
+    "id": "esp-calendario-8020",
+    "metodo": "repeticion-espaciada",
+    "tecnica": "Calendario 80/20",
+    "titulo": "Terminar el temario en el 80 % y repasar en el 20 %",
+    "origen": "video",
+    "fuente": "#035, #031",
+    "dato": "Modelo 80/20 de Pablo: terminar el temario en el primer 80 % del tiempo y dejar el último 20 % para repasos acumulados y simulacros; cada tema se repasa el mismo día, al día siguiente, el fin de semana y, si el examen está lejos, a los 15 días y al mes.",
+    "como": "Con 30 días hasta el examen, el temario se reparte en los primeros 24 y los últimos 6 quedan libres para repasos acumulados y simulacros. Mientras tanto, cada tema sigue su propio calendario de repasos con recuerdo activo. Así se evita la \"técnica gorila\": procrastinar el 80 % y estudiar todo en el 20 %.",
+    "pasos": [
+      "Cuenta los días hasta el examen y separa el último 20 % (en 30 días, los últimos 6).",
+      "Reparte los temas en el primer 80 %.",
+      "Repasa cada tema el mismo día, al día siguiente y el fin de semana; si hay tiempo, a los 15 días y al mes.",
+      "Deja un día a la semana sin contenido nuevo, solo para repasar.",
+      "En el último 20 %, repasos acumulados y simulacros con cronómetro."
+    ],
+    "recuerda": "80 % del tiempo para avanzar, 20 % para repasar y simular; mismo día → día siguiente → fin de semana → 15 días → mes.",
+    "imagen_prompt": "Un enorme calendario de pared convertido en un camino de baldosas: la mayor parte de las baldosas son de color azul y un estudiante con mochila avanza por ellas cargando libros; al final del camino, un tramo corto de baldosas doradas lleva a una meta con una bandera, y en ese tramo el estudiante ya no carga libros sino que se examina con tarjetas y un cronómetro grande. A un lado del camino, un gorila dormido sobre una hamaca representa al que deja todo para el final. Sin texto ni números."
+  },
+  {
+    "id": "esp-fc-escalera",
+    "metodo": "repeticion-espaciada",
+    "tecnica": "Escalera de intervalos de la app",
+    "titulo": "FC 60-100 lpm: de nueva a dominada",
+    "origen": "aplicacion",
+    "fuente": "#031, #035, #038",
+    "dato": "Frecuencia cardiaca normal del adulto en reposo: 60-100 lpm, programada con la escalera [1, 3, 7, 15, 30, 60, 120] días.",
+    "como": "La tarjeta entra el día que se estudia el tema (día 1). Con Bien sube un escalón: vuelve al día siguiente (día 2), luego a los 3 días (día 5), a los 7 (día 12) y, con otro Bien ese día, salta a 15 días y queda dominada (próximo repaso el día 27). Si un día la confundes con la FR y marcas Otra vez, vuelve al escalón 0: toca mañana y reaparece en la misma sesión hasta acertar.",
+    "pasos": [
+      "Día 1: estudias el tema, respondes la tarjeta y marcas Bien → vuelve mañana.",
+      "Día 2: Bien → +3 días (día 5).",
+      "Día 5: Bien → +7 días (día 12).",
+      "Día 12: Bien → +15 días (día 27): dominada.",
+      "Si fallas (Otra vez), vuelve al escalón 0; si falla 3 veces seguidas, se marca para editar."
+    ],
+    "recuerda": "60-100 lpm · repasos a 1, 3, 7 y 15 días; un fallo la regresa al primer escalón.",
+    "imagen_prompt": "Una escalera de piedra con siete escalones que se van separando cada vez más, el último perdido entre nubes. Sobre los escalones sube un corazón rojo con piernas y un estetoscopio colgado del cuello, latiendo con calma; a cada escalón que sube, un sol y una luna giran más veces en el cielo para mostrar que pasa más tiempo. En el tercer escalón el corazón celebra con una medalla dorada. Abajo, un corazón despistado que se confundió con un pulmón cae por un tobogán al primer escalón. Sin texto ni números."
+  },
+  {
+    "id": "esp-cushing-redibujo",
+    "metodo": "repeticion-espaciada",
+    "tecnica": "Redibujar de memoria espaciado",
+    "titulo": "Mnemotecnograma de Cushing en hoja en blanco",
+    "origen": "aplicacion",
+    "fuente": "#168",
+    "dato": "Síndrome de Cushing: obesidad central, cara de luna llena, giba dorsal, estrías violáceas, hipertensión arterial e hiperglucemia.",
+    "como": "Un dibujo mnemotécnico no se repasa mirándolo: se redibuja de memoria en hoja en blanco y se compara con el original. Se hace al día siguiente y otra vez a la semana; lo que faltó se marca en rojo. Si sale completo, pasa a repasos cada vez más espaciados (15 días, 30 días), porque \"aun las mejores mnemotecnias se olvidan\".",
+    "pasos": [
+      "Día 1: dibuja el muñeco con un ícono por signo (luna en la cara, joroba, rayas moradas en el abdomen, manómetro, glucómetro).",
+      "Día 2: hoja en blanco, redibújalo de memoria y compáralo con el original.",
+      "Marca en rojo lo que faltó y repásalo ese mismo día.",
+      "A la semana, redibújalo otra vez sin mirar.",
+      "Si sale completo, sigue con los repasos a 15 y 30 días."
+    ],
+    "recuerda": "Luna llena, giba, barriga grande, estrías violáceas, presión alta y azúcar alta.",
+    "imagen_prompt": "Un estudiante dibuja con lápiz en una hoja en blanco, sin mirar, un muñeco sencillo, mientras a su lado tiene boca abajo el dibujo original. El muñeco tiene la cara redonda como una luna llena, una joroba en la espalda alta, una barriga grande con rayas moradas, un manómetro de presión inflado en el brazo y un glucómetro pegado a la mano. Sobre el escritorio, tres hojas iguales ordenadas en fila, la primera con huecos marcados en rojo y la última completa. Sin texto ni letras."
+  }
+]

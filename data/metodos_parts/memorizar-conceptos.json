@@ -1,0 +1,73 @@
+{
+  "memorizar-conceptos": {
+    "icono": "💡",
+    "nombre": "Memorizar conceptos",
+    "resumen": "Contexto → comprender la esencia con preguntas (qué, cómo, por qué, para qué) o PCE → comprensiómetro → solo si cuesta, fijar su estructura; siempre con repaso activo.",
+    "que": "La estrategia \"aniquilando conceptos\": un concepto no se aprende repitiéndolo, se comprende y después, solo si hace falta, se fija su estructura (#134). Tiene tres momentos: encontrar el contexto, comprender la esencia desarmándolo en piezas (interrogación elaborativa o PCE: pregunta, conclusión, evidencia, antes llamada PECS) y memorizar y repasar. Para un examen: 80 % del tiempo a razonar y 20 % a datos duros (#113).",
+    "como_funciona": "Comprender es \"crear una conexión entre lo que no conoces y lo que ya conoces\", y esa unión debe tener un significado que te haga sentido (#044). Al desarmar el concepto en piezas solo tienes que recordar unas pocas cosas (\"solo tienes que recordar cinco cosas\", #134), y explicarlo sin notas desenmascara la ilusión de competencia. Quien solo memorizó falla si la pregunta viene al revés o le cambian un dato (#113). En medicina, todo lo que tiene lógica se aprende así; la mnemotecnia queda para lo puramente memorístico (#168).",
+    "pasos": [
+      "Paso 0: saber cómo te lo van a preguntar: de qué trata, explicarlo con precisión o literal (#148).",
+      "Construir contexto: glosario del tema, conceptos básicos primero (\"no se puede aprender un nivel sin dominar el anterior\") y ejemplos, metáforas o pacientes reales (#043, #095, #168).",
+      "\"Piénsalo en chiquito\": si un procedimiento no se entiende, resuelve primero una versión pequeña (#095).",
+      "Desarmar el concepto con interrogación elaborativa: qué, cómo, por qué y para qué; en medicina, qué significa, por qué ocurre (causas) y qué produce (consecuencias) (#043, #168).",
+      "O usar PCE: conviértelo en pregunta, responde la conclusión de forma fácil y agrega evidencias (ejemplos, datos) (#194).",
+      "Fórmulas: el porqué antes que la fórmula (el triángulo es la mitad del rectángulo) y luego una conclusión escrita del ejercicio (#095, #167).",
+      "Contar las piezas, descartar el relleno y aterrizarlo en un caso práctico (#134, #046).",
+      "Comprobar: explícalo con notas, luego de memoria y luego a un lego; marca en otro color lo que falló y vuelve a la fuente solo por eso (#043, #194).",
+      "Comprensiómetro: califica del 1 al 10; con 9 o menos sigues en la ilusión del conocimiento (#194).",
+      "Solo si cuesta, memorizar la estructura por idea (no por página): historia, palacio, pilar de información, dibujo o evento imaginado (#134, #132, #199, #140).",
+      "Repaso activo: después de cada técnica y al final del tema, explicar de memoria, corregir y volver a repasar (#134)."
+    ],
+    "cuando": [
+      "Definiciones, teoría, mecanismos, leyes o principios y signos clínicos que hay que saber explicar (#134, #043).",
+      "Cuando el examen pide explicar o aplicar (pregunta abierta, caso clínico), no recitar (#028).",
+      "Fórmulas y procedimientos: primero por qué la fórmula es así y solo después memorizarla (#095, #167).",
+      "En medicina, todo lo que tiene lógica: fisiopatología, causas y consecuencias (#168).",
+      "Cuando sientes que \"ya lo entendiste\" pero no lo puedes explicar (ilusión de competencia) (#044, #194)."
+    ],
+    "cuando_no": [
+      "Texto que se exige palabra por palabra: textos literales (que empieza aquí, con la estructura) (#148).",
+      "Cifras exactas dentro del concepto: sistema mayor.",
+      "Listas o clasificaciones con orden: memorizar listas.",
+      "El nombre propio de un signo o maniobra: memorizar nombres.",
+      "Lo que ya entendiste y retienes: \"no memorizamos aquello que no es imprescindible\" (#148).",
+      "Si no entiendes algo, no te apoyes en la memorización: vuelve a las bases (#148)."
+    ],
+    "ejemplo_video": "Procrastinación con PCE: pregunta \"¿qué es la procrastinación?\"; conclusión \"un mal hábito que nos hace postergar o dejar para después nuestras tareas, haciéndonos perder tiempo\"; evidencia: tienes un examen en 20 días y terminas estudiando uno o dos días antes (#194).",
+    "ejemplo_atlas": {
+      "id": "cianosis",
+      "texto": "Piezas del concepto: ¿qué? la piel se tiñe de azul en labios, nariz, lóbulos y pulpejos; ¿por qué? cuenta la Hb sin oxígeno (>5 g/dl), no la que falta, por eso un anémico grave no se pone azul; ¿cómo se distingue? central (lengua tibia) frente a periférica (dedos fríos que mejoran al calentar). La escena: una ola de sangre azul sube las escaleras de la Catedral y Pulmi frota con una chompa de alpaca los dedos helados hasta que vuelven al rosado."
+    },
+    "errores": [
+      "Repetir, releer y subrayar \"a lo bestia\": repetirlo 20 veces \"te dura tres días en la cabeza\" (#134, #046).",
+      "Recitar la definición textual y creer que la entiendes, o quedarte en un 9 del comprensiómetro (#194).",
+      "Memorizar respuestas recitando en vez de razonarlas: fallan ante la pregunta al revés o capciosa (#113).",
+      "Mecanizar una fórmula sin entender su porqué: si cambian el orden de los datos, \"se quiebra\" (#095).",
+      "Memorizar por página o párrafo en vez de por idea, o transcribir las palabras del autor en las notas (#199, #177).",
+      "Memorizar \"como loro\" en medicina sin preguntarse causas y consecuencias (#168).",
+      "Estudiar puro texto sin contexto, \"como contarte un chisme a medias\" (#044).",
+      "Explicar solo a gente del mismo campo (#046)."
+    ],
+    "consejos": [
+      "Las cuatro mejores preguntas son qué, cómo, por qué y para qué: usa solo las que apliquen (#043).",
+      "Numera las piezas: saber cuántas son es la mitad del recuerdo (#134).",
+      "La prueba más dura: explicárselo a un lego, \"como si fueras un niño\" o a tu abuela (o a un peluche, o graba un audio) (#046, #194).",
+      "Cuatro indicadores de que ya se fijó: lo dices con tus palabras, das tus propios ejemplos, lo enseñas fácil y llega solo al repasar (#199).",
+      "Al leer, empieza por el final del capítulo (lectura en reversa) y anota la PCE de cada sección en los márgenes (#179).",
+      "En notas, la pregunta va en el primer nivel, debajo la conclusión y luego las evidencias, cada parte con su color (#177).",
+      "Regla de cantidad: entre más difícil el dato, más asociaciones; si es fácil, basta una o dos (#043)."
+    ],
+    "combina_con": [
+      "memorizar-numeros",
+      "memorizar-textos-literal",
+      "memorizar-listas",
+      "palacio-memoria",
+      "mnemotecnia",
+      "visualizacion-imagenes",
+      "recuerdo-activo",
+      "repeticion-espaciada"
+    ],
+    "fuentes": "#134, #194, #168, #095, #132, #043, #044, #046, #028, #148, #199, #179, #177, #167, #140, #113",
+    "version_skill": "2"
+  }
+}

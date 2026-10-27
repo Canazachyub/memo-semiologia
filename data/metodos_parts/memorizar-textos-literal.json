@@ -1,0 +1,70 @@
+{
+  "memorizar-textos-literal": {
+    "icono": "📜",
+    "nombre": "Textos literales",
+    "resumen": "Primero la estructura, luego rellenarla con la literalidad: fragmentar, una imagen por frase, escalera o primera letra, y repasar en voz alta por 5 niveles de exactitud. Para discursos, solo las ideas clave.",
+    "que": "Método para memorizar palabra por palabra (memoria verborum o verbatim) definiciones que el docente pide literales, artículos de ley, normas, juramentos, poemas o guiones. Es \"el nivel más alto de dificultad de memorización\" (#128); en la mayoría de los casos basta la memoria rerum, la de las ideas (#190): \"se memoriza por idea\" y \"hay muy pocas ocasiones\" en que hace falta palabra por palabra (#199).",
+    "como_funciona": "A fuerza bruta es lento y satura, y la repetición masiva da un recuerdo a corto plazo que se olvida rapidísimo (#128). Al comprender primero y sacar la estructura, la memoria solo necesita disparadores (Cicerón, #073); al fragmentar, la memoria de trabajo maneja grupos pequeños (\"memorizar cuatro grupos es mucho más fácil que las 54 palabras\", #128). El audio y la repetición espaciada por niveles suben la exactitud sin saturar (#148).",
+    "pasos": [
+      "Decidir el nivel de exactitud: ¿de verdad hay que memorizarlo literal o basta saber de qué trata? (#190, #148)",
+      "Comprender y sacar la estructura: leerlo un par de veces (Cicerón: 3 o 4) para captar la idea general, \"como el contorno de un rompecabezas\" (#190, #073).",
+      "Fragmentar: por ideas lógicas cortas (5-7 palabras clave), por preguntas (qué, quién, cómo), en bloques de líneas o en partes del 10 % (#128, #190, #073).",
+      "Codificar con uno de tres métodos: A) una imagen por frase en un palacio o historia; B) escalera; C) pistas de primera letra (#128).",
+      "Método A: la imagen cubre todas las palabras de la frase; para lo abstracto, palabra sustituta (trémulo = tres mulas); una frase por mueble, en sentido horario (#128, #190, #073).",
+      "Escalera: memoriza 2 líneas y recítalas; agrega la 3.ª y recita todo; no avanzas al siguiente escalón si te equivocas (#128).",
+      "Primera letra: oculta el texto y deja visible solo la primera letra de cada palabra o línea; si falla, revela rápido y vuelve a ocultar (#128, #073).",
+      "Repaso activo en voz alta y con audio, intentando adelantarte a la grabación; anota las palabras que fallas y repasa al revés (#148, #190).",
+      "Repetición espaciada por 5 niveles: 1) orden de las frases, 2) orden exacto, 3) palabras conectoras, 4) 70-80 %, 5) 90-100 % (#128).",
+      "Dominar al 100 % repasando en los tiempos muertos, con el texto en el teléfono para comprobar (#190, #073).",
+      "Discurso o exposición: no literal; marca y cuenta las ideas clave y ponlas en un palacio (20 ideas = 20 ubicaciones); ensaya 3-5 veces con cronómetro (#199, #090)."
+    ],
+    "cuando": [
+      "Cuando lo exige el profesor, la materia o la carrera (#128).",
+      "Cuando lo preguntan tal cual en el examen o la presentación (#128).",
+      "Por gusto personal (#128).",
+      "Definiciones (OMS de salud, IASP de dolor), artículos de ley, normas, juramentos, poemas y guiones (#128, #190, #073).",
+      "Exámenes que preguntan \"¿en qué artículo viene esto?\" y oposiciones (#046, #148)."
+    ],
+    "cuando_no": [
+      "En la gran mayoría de los casos no hace falta: si basta con explicarlo, memorizar conceptos (#128, #199).",
+      "Discursos, charlas y exposiciones: \"solo memoriza las ideas clave\" (#090).",
+      "Nunca antes de comprender ni de tener la estructura (#148).",
+      "Textos enormes enteros: cuestan muchísimo tiempo, energía y estrés (#190).",
+      "Cifras dentro del texto (número de artículo, umbrales): sistema mayor."
+    ],
+    "ejemplo_video": "\"La rama\", de Octavio Paz, en un hogar: en el lavabo un pino con un pájaro cantando en la punta (\"canta en la punta del pino\"); en el refrigerador tres mulas sobre un trineo (\"trémulo sobre su trino\") (#128).",
+    "ejemplo_atlas": {
+      "id": null,
+      "texto": "Ningún dato del atlas usa todavía esta técnica: los valores de la historia clínica se piden con tus palabras, no literales. Ejemplo de aplicación del skill: la definición de salud de la OMS (1946) en 3 frases y 3 ubicaciones, con la pista de primera letra \"L s e u e / d c b f, m y s, / y n s l a d a o e\" y atención a la conectora \"y no solamente\"."
+    },
+    "errores": [
+      "Repetir a lo bestia: \"perdí cinco años de vida en ese examen\" (#148).",
+      "Pasar directo a la literalidad sin estructura ni comprensión (#148, #128).",
+      "Esperar recordarlo todo a la primera (#128).",
+      "Avanzar en la escalera con errores (#128).",
+      "Memorizar muchísimo tiempo de corrido: se vuelve repetitivo y fatiga (#190).",
+      "Hacer una imagen por palabra (#190).",
+      "Recuerdo pasivo: seguir mirando el libro y \"solo reconocerlo\" (#073).",
+      "Memorizar literal toda una exposición o un discurso cuando bastan las ideas clave (#090, #199)."
+    ],
+    "consejos": [
+      "\"Primero la estructura, luego rellenarla con la literalidad\" (#148).",
+      "\"Más literales sean las imágenes, más fácil memorizar\": en una sola imagen intenta cubrir todas las palabras de la frase (#128).",
+      "Para palabras abstractas usa una sustituta: \"trémulo\" = tres mulas; \"dicha\" = ducha (#128, #190).",
+      "Graba el texto: en la memorización literal \"el sonido funciona muy bien\"; prueba tarjetas de audio con pausas (#148, #073).",
+      "Ponte en la emoción del texto, como hacen los actores con su guion (#190).",
+      "Copia el texto tal cual de la fuente del docente: un solo cambio de palabra invalida la respuesta.",
+      "Registra el nivel de exactitud de cada texto (1 a 5) y en qué palabras fallas (#128, #190)."
+    ],
+    "combina_con": [
+      "memorizar-conceptos",
+      "palacio-memoria",
+      "memorizar-numeros",
+      "mnemotecnia",
+      "repeticion-espaciada",
+      "recuerdo-activo"
+    ],
+    "fuentes": "#128, #190, #148, #073, #046, #028, #199, #090, #157, #209",
+    "version_skill": "2"
+  }
+}

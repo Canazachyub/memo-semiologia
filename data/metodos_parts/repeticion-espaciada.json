@@ -1,0 +1,72 @@
+{
+  "repeticion-espaciada": {
+    "icono": "🔁",
+    "nombre": "Repetición espaciada",
+    "resumen": "Repartir los repasos en el tiempo con intervalos crecientes (mismo día → día siguiente → semana → 15 días → mes) para romper la curva del olvido.",
+    "que": "Repartir el estudio y los repasos a lo largo del tiempo, dejando \"tiempo considerable entre cada sesión de práctica o repaso\". Lo contrario es la repetición masiva: repetir todo a última hora y de corrido, que da la sensación de haber aprendido pero \"después del examen toda esa información se empieza a olvidar\". El espaciado empieza dentro del mismo día, con repasos al final de cada bloque (#116).",
+    "como_funciona": "Si no haces nada, la información decae (curva del olvido de Ebbinghaus): según los videos, hasta la mitad en horas o un día y 70-80 % en una semana. Cada repaso hecho a tiempo devuelve la retención a más del 90 % y deja la curva más estable, \"hasta que dejas de olvidar\". En su experimento con 2300 sílabas, Ebbinghaus recordaba más del 70 % con repasos espaciados, y con menos repeticiones (#175). Conviene permitir un poco de olvido: olvidar \"significa que la curva del olvido está funcionando\" (#201).",
+    "pasos": [
+      "Calcular el tiempo total: fecha límite, temario repartido entre los días y lo que de verdad tarda un tema (cronometra 3-5). Suma un 50 % por la falacia de la planeación (#035, #063, #156).",
+      "Elegir el modelo de intervalo: 10-20 % del tiempo, exacto, u 80/20 (terminar el temario en el primer 80 % y dejar el último 20 % para repasos acumulados y simulacros) (#035, #031).",
+      "Fragmentar la sesión en bloques y repasar al terminar cada uno, con la información fresca (#115, #116).",
+      "Repaso acumulado del día: 10-15 minutos antes de cerrar una sesión de 2 horas (#118).",
+      "Programar los repasos: mismo día → día siguiente → una semana → 15 días → un mes (y luego 1-2 y 2-4 meses). Al día siguiente, solo los errores (#031, #035, #116).",
+      "Hacer cada repaso con recuerdo activo, no releyendo; dentro de la sesión, repetir solo los errores hasta cero (#035, #039).",
+      "Repasos acumulativos: uno cada 2 temas, otro cada 4 y uno global; y un día a la semana sin contenido nuevo (#156, #015, #201).",
+      "Ajustar el intervalo a la dificultad y a la fecha del examen: lo que se falla vuelve a empezar (#038, #042).",
+      "Usar herramientas: Anki o RemNote automatizan; en Notion o en papel, fechas de último y próximo repaso, o cajas de Leitner (#024, #175).",
+      "Anotar la retención 1-5 del tema en cada repaso; al llegar a 5 queda dominado (#130, #152, #156).",
+      "En el último 20 %, simulacros cronometrados con todo el temario mezclado, cuando ya viste casi todo (#148, #105, #174)."
+    ],
+    "cuando": [
+      "Siempre que quieras recordar a largo plazo: exámenes, carrera, información con valor para tu vida (#035, #058).",
+      "Con lo ya estudiado y comprendido: \"practicar la información que ya estudiaste y ya comprendiste con el paso del tiempo\" (#085).",
+      "Para que una mnemotecnia no se olvide: \"aun las mejores mnemotecnias se olvidan\" sin repasos cada vez más espaciados (#168).",
+      "Para textos literales y vocabulario: subir de exactitud por niveles, o mecanizar palabras, en sesiones espaciadas (#128, #094).",
+      "En vacaciones, 30 minutos al día de guías o Anki para no perder lo del ciclo (#093).",
+      "Para programar el modo Repaso de una app según \"otra vez / difícil / bien / fácil\"."
+    ],
+    "cuando_no": [
+      "No exageres para ninguno de los dos lados: ni todo masivo ni espaciar demasiado (una clase al mes) (#035, #047).",
+      "El modelo de 10-20 % falla con mucha información: todo se acumula (#035).",
+      "Si el examen es mañana: extrae las ideas más importantes, bloques de 2 h con descanso y preguntas; \"con que domines el 70-80 %\" basta (#035, #057).",
+      "No acumules demasiado material nuevo: \"de 250 o 150 palabras al día quizá te acuerdas de 50\" (#094).",
+      "No hace falta llegar a 3 repasos en todos los temas: basta responder la mayoría de las preguntas en nivel 4-5 (#116).",
+      "No sirve repasar releyendo (#035, #055)."
+    ],
+    "ejemplo_video": "Cajas de Leitner (#175): cinco cajas con su intervalo (todos los días, cada 1-2 días, cada 3-4 días, una vez por semana y antes del examen). La tarjeta que aciertas pasa a la siguiente caja; la que fallas regresa a la 1. Calendario de #031: mismo día → día siguiente → fin de semana → 15 días → un mes.",
+    "ejemplo_atlas": {
+      "id": "frecuencia-cardiaca-pulso",
+      "texto": "La pregunta \"¿Rango normal de FC en el adulto en reposo?\" (60-100 lpm) entra al modo Repaso con la escalera de srs.js [1, 3, 7, 15, 30, 60, 120] días: Bien el día que se estudia → mañana; Bien → 3 días; Bien → 7 días; Bien → 15 días y queda dominada. Si un día la confundes con la FR (Otra vez), vuelve al escalón 0 y reaparece en la misma sesión hasta acertar. [regla de intervalos: complemento del skill]"
+    },
+    "errores": [
+      "Repetición masiva: procrastinar el 80 % y estudiar todo en el último 20 % (\"técnica gorila\") (#035, #031).",
+      "Las tres razones de la repetición masiva: flojera, ignorancia y, la más grave, miedo a olvidar (#035).",
+      "Esperar 4-5 días a terminar un tema largo para repasar: el repaso se vuelve reaprendizaje (#118, #116).",
+      "Las cuatro formas tóxicas de repetir: darle vueltas al mismo tema, releer, subrayar \"a lo bestia\" y transcribir todo (#083).",
+      "Estudiar exactamente hasta el día del examen: lo del principio ya se olvidó (#020).",
+      "Acumular repasos: 50-60 tarjetas al día y tres días sin repasar juntan 300 pendientes y se abandona (#094).",
+      "Creer que hacer notas, preguntas y flashcards ya asegura recordarlo sin repasarlas (#107, #083)."
+    ],
+    "consejos": [
+      "Coinciden todos los videos: primer repaso el mismo día, segundo al día siguiente, luego una semana y luego 15 a 30 días (#031, #042, #058).",
+      "Fórmula sencilla de José María Bea: al día, a la semana y al mes (#148).",
+      "Mismo tiempo, mejor repartido: 4 horas rinden más en cuatro sesiones de una hora; repasos de 30 a 60 minutos (#175, #180).",
+      "Tope diario: unas 50 tarjetas de repaso, o 20 si son nuevas; empieza con una al día y sube poco a poco (#094).",
+      "Flexibiliza las fechas: si un día no repasas, al siguiente empieza por las más atrasadas (#118).",
+      "Los dibujos del atlas se repasan redibujándolos de memoria en hoja en blanco: al día siguiente y a la semana (#168).",
+      "Dormir consolida: estudia, duerme o toma una siesta y repasa al despertar (#047).",
+      "Si una tarjeta vuelve una y otra vez a \"otra vez\", espaciarla no la arregla: recodifícala o edita la pregunta (#040, #038).",
+      "Bitácora por tema: estudiado, guía, repasos 1-2-3, examen de prueba, tiempo y retención 1-5 (#031, #067, #152)."
+    ],
+    "combina_con": [
+      "recuerdo-activo",
+      "flashcards",
+      "memorizar-numeros",
+      "palacio-memoria",
+      "mnemotecnia"
+    ],
+    "fuentes": "#035, #031, #038, #042, #058, #047, #148, #026, #063, #067, #015, #128, #175, #094, #116, #118, #156, #105, #107, #115, #152, #168, #174, #180, #201",
+    "version_skill": "2"
+  }
+}

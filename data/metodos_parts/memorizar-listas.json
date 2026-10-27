@@ -1,0 +1,70 @@
+{
+  "memorizar-listas": {
+    "icono": "📋",
+    "nombre": "Memorizar listas",
+    "resumen": "Cada elemento se vuelve una imagen con la palabra sustituta y las imágenes se unen en una historia, un acrónimo o un palacio según el tamaño de la lista.",
+    "que": "Método para listas, clasificaciones ordenadas (grados, tipos, estadios), pasos y vocabulario técnico o de un idioma. Se cuentan las piezas exactas, cada una se convierte en una imagen (4 reglas de la palabra sustituta) y se encadenan; el vocabulario nuevo del tema va en un glosario que se repasa a diario.",
+    "como_funciona": "Una lista se olvida porque sus piezas son datos duros o abstractos: sin técnica solo se recuerdan el principio, el final y algo llamativo del medio. Al volver cada pieza una imagen y unirla con la siguiente mediante algo emocional, chistoso o llamativo, la lista se recorre como una película. Con solo recordar cada imagen se reconstruye la pieza original.",
+    "pasos": [
+      "Seleccionar las piezas: contar el número exacto, comprender cada una, quitar lo que se repite y prestar atención total (#137, #187).",
+      "Crear una imagen por pieza con la regla que mejor aplique: cerebro (¿a qué me recuerda?), corazón (¿qué significa para mí?), espejo (¿a qué se parece?) o lengua (¿a qué suena?) (#137).",
+      "Prueba de calidad: si al ver la imagen deduces el concepto (Garfield → gula), sirve; si no, fortalécela (#137).",
+      "Elegir cómo unirlas: acrónimo o acróstico para pocos datos (hasta ~4–6), historia para una lista corta con orden, palacio para una lista larga (#139, #067).",
+      "Historia: a cada imagen agrégale un verbo de acción y una emoción exagerada que lleve a la siguiente, siempre hacia adelante (#137, #139).",
+      "Acrónimo o acróstico: toma las iniciales, forma una palabra o frase divertida y dale una imagen ligada al significado (#139).",
+      "Palacio: repásalo vacío antes de usarlo; elemento 1 en la ubicación 1, con una imagen que actúa sobre el mueble y en la que tú participas (#191).",
+      "Repasar: verificar que cada imagen devuelve su pieza y repasar también en reversa, del último al primero (#137, #187, #191).",
+      "Glosario: marcar los términos nuevos, escribir su significado en fácil (con ejemplo e imagen si es difícil) y repasarlo una vez al día hasta dominarlo (#067, #072).",
+      "Vocabulario de idioma: lo más común para ti, en dosis pequeñas, aprendido en contexto real y con palabra sustituta solo para lo que se resiste (#015, #094, #108)."
+    ],
+    "cuando": [
+      "Clasificaciones con orden: grados, tipos, estadios, clases (HTA grados 1-3, tipos de fiebre) (#067).",
+      "Listas de elementos o pasos: hábitos, consecuencias, componentes, la estructura de un discurso (#137, #187).",
+      "Vocabulario técnico nuevo del tema (glosario de semiología) (#067, #072).",
+      "Vocabulario de un idioma, empezando por lo más común (#015, #094)."
+    ],
+    "cuando_no": [
+      "Antes de comprender cada pieza: \"no memorices algo que no entiendes, la comprensión es primero\" (#137, #139).",
+      "Si las piezas son cifras (los umbrales de cada grado): sistema mayor; aquí va el orden y el nombre de las categorías.",
+      "Si es un texto que se exige palabra por palabra: textos literales.",
+      "Con una cadena para listas muy grandes: se rompe si falla un eslabón; usa palacio (#139, #148).",
+      "No uses todas las técnicas a la vez (#139)."
+    ],
+    "ejemplo_video": "7 hábitos para dormir mejor: tu teléfono crece y explota → del humo sale un monje meditando → sopla una brisa que entra a tu cuerpo → sale una burbuja de pensamientos que cierras con candado → dentro hay una cueva oscura → te acuestas sobre un reloj → Goku te despierta para hacer ejercicio (#137).",
+    "ejemplo_atlas": {
+      "id": "cilindros-urinarios",
+      "texto": "Clasificación de 6 tipos en una historia de mototaxis que salen de un molde con forma de túbulo (origen renal): vidrio transparente = hialino (nadie le hace caso), roja con sirena = hemático (glomerulonefritis), soldados blancos = leucocitario (pielonefritis), cera vieja = céreo (GN crónica), grava = granuloso (NTA) y aceite de fritura = graso (nefrótico)."
+    },
+    "errores": [
+      "Repetir la lista una y otra vez \"con mucho dolor, con mucho estrés\" (#137, #187).",
+      "Memorizar sin entender cada pieza, o memorizar piezas repetidas o innecesarias (#137).",
+      "Usar varias reglas de palabra sustituta para el mismo concepto (#137).",
+      "Hacer asociaciones largas, o usar una cadena para listas muy grandes (#137, #139).",
+      "Usar un palacio sin haberlo repasado vacío antes (#191).",
+      "Detenerse a buscar cada palabra en el diccionario durante la lectura (#043, #072).",
+      "Saturarse con cientos de palabras al día: de 150 o 250 quizá recuerdas 50 (#094).",
+      "Usar mnemotecnias de otra persona o de un libro, o recitar listas aisladas \"como un gorila\" sin usarlas (#094, #108).",
+      "Creer que no tienes imaginación: con práctica, formar imágenes se vuelve automático (#137)."
+    ],
+    "consejos": [
+      "Escribe siempre la n: cuántos elementos tiene la lista (#137, #067).",
+      "Elimina lo que se repite: \"la palabra sociedad se repite en todas, no es necesario memorizarla\" (#137).",
+      "Relaciones \"breves y exageradas al mismo tiempo\" (#137).",
+      "Si la lista pasa de ~6 elementos y te preguntan \"¿cuál es el 5.º?\", pásala a un palacio (#139, #148).",
+      "\"Una mnemotecnia no funciona hasta que la haces tú\": se basa en tu conocimiento previo (#094).",
+      "Minado de oraciones: aprende la palabra nueva dentro de una oración de una serie donde ya reconoces las demás (#094).",
+      "El glosario es solo para el principio del tema: cuando dominas las palabras, ya cumplió su función (#067, #072)."
+    ],
+    "combina_con": [
+      "palacio-memoria",
+      "memorizar-numeros",
+      "memorizar-conceptos",
+      "mnemotecnia",
+      "flashcards",
+      "recuerdo-activo",
+      "repeticion-espaciada"
+    ],
+    "fuentes": "#137, #187, #139, #195, #067, #072, #015, #191, #094, #108, #157, #185",
+    "version_skill": "2"
+  }
+}

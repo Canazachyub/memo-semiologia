@@ -1,0 +1,73 @@
+{
+  "flashcards": {
+    "icono": "🃏",
+    "nombre": "Flashcards",
+    "resumen": "Una pregunta al frente y la respuesta oculta atrás, en papel o en apps, para aplicar recuerdo activo y repetición espaciada a la vez.",
+    "que": "Una tarjeta con una pregunta sobre un concepto o tema y su respuesta, que queda oculta hasta que intentas recordarla: \"si tuviéramos la respuesta a la vista nos podemos engañar\". Tipos: básica, hueco (cloze), oclusión de imagen, inversa, con imagen y título → texto. Se hacen en papel (con cajas de Leitner) o en apps como Anki, Quizlet, Notion, RemNote o NotebookLM.",
+    "como_funciona": "Une dos técnicas: el recuerdo activo (te haces la pregunta y la respondes sin ver) y el efecto espaciado (repartir el material en el tiempo hasta codificarlo en la memoria a largo plazo). Las apps con algoritmo, como Anki, programan solas cuándo vuelve cada tarjeta según cómo la calificaste; en papel, las cajas de Leitner hacen lo mismo (#175). Anki es \"muy buena para médicos\" que estudian muchos esquemas, figuras y procesos (#174).",
+    "pasos": [
+      "Estudiar y comprender el tema, con lectura activa y apunte (#010, #021).",
+      "Crear la guía en preguntas, a mano o con IA pidiendo por sección, y revisarla contra el apunte (#021, #087).",
+      "Convertir la guía en tarjetas: IA → tabla de dos columnas → CSV UTF-8 → Anki o Quizlet; NotebookLM; Notion → HTML → Anki; Cornell → Anki; o fichas a mano (#021, #008, #141, #177).",
+      "Preguntas cortas: si la respuesta es enorme, pártela en mini tarjetas (#174, #038).",
+      "Elegir el tipo: básica, hueco con {{c1::…}}, oclusión de imagen (\"Hide All, Guess One\" una sola vez), inversa o con imagen (#039, #174).",
+      "Un mazo por examen, con etiquetas por tema; a Anki pasan solo las preguntas que más cuestan (#174, #118, #024).",
+      "Repasar: lee la pregunta y responde de memoria, con tus palabras, antes de pulsar \"Mostrar\"; luego compara (#174, #038).",
+      "Calificar con honestidad: Otra vez, Difícil, Bien o Fácil. Nada de \"la tenía en la punta de la lengua\" (#039, #174).",
+      "Sin algoritmo: tres montones (incorrectas, regulares, correctas) o cajas de Leitner, con nuevas rondas solo de las que no salieron (#039, #175).",
+      "Llegar a cero errores en la sesión y espaciar las siguientes (#038, #008).",
+      "Editar las que fallan 2 o 3 veces en la tercera ronda: está mal diseñada; agrégale algo en el reverso, como una mnemotecnia (#038, #040).",
+      "Al terminar el mazo, simulacro: Estudio personalizado → todas las tarjetas en orden aleatorio (#174)."
+    ],
+    "cuando": [
+      "Cualquier información que se pueda formular como pregunta → respuesta: conceptos, definiciones, datos duros, listas, procesos, vocabulario (#024, #174).",
+      "Información visual con oclusión de imagen: anatomía, esquemas, focos, dibujos (#039, #174).",
+      "Cuando ya hay una guía de preguntas: se convierte en mazo y se repasa con algoritmo (#021, #010).",
+      "Vocabulario de un idioma o de la carrera, con minado de oraciones (#094).",
+      "Para volver lúdico un tema aburrido y practicar 5-20 minutos al día en el teléfono, \"como te metes a redes sociales\" (#068, #174)."
+    ],
+    "cuando_no": [
+      "Antes de estudiar el tema: las tarjetas sintetizan solo la idea clave y no sabrás qué faltó (#010, #014).",
+      "Respuestas largas: \"no pongas un texto demasiado gigante\"; divídelas en micro-preguntas (#038).",
+      "Si el tiempo no alcanza: las tarjetas son el último paso, no uno obligatorio (#116).",
+      "No vacíes todas las preguntas en Anki: si mandas todo no alcanzas a repasarlo (#118).",
+      "Sin revisar las generadas por IA: \"no te bases al 100 %\" (#014, #007).",
+      "Problemas de matemáticas y textos literales: en Anki solo la teoría y las fórmulas; el texto, como título → texto ya memorizado (#174, #128)."
+    ],
+    "ejemplo_video": "Anki en 7 pasos (#174): la fórmula de agrupación de hábitos (\"después de [hábito regular] realizaré el hábito [necesitado] y después el hábito [deseado]\") en una tarjeta de hueco con c1, c2 y c3, que se desbloquean uno por uno; con el mismo número se ocultan todos a la vez.",
+    "ejemplo_atlas": {
+      "id": "lcr-proteinas",
+      "texto": "La ficha de proteínas del LCR mezcla una tarjeta básica (\"¿Proteínas normales en LCR?\" → 20-40 mg/100 ml), una trampa (bacteriana, viral o TBC → TBC) y una de hueco: \"La gammaglobulina en LCR es ___ y la albúmina es ___ que la globulina\" (<10 %; mayor). En el reverso va la ancla como gancho: cohete de la NASA con rosas (20-40)."
+    },
+    "errores": [
+      "Dejar la respuesta visible: da una falsa sensación de que sabes (#038).",
+      "Marcar la tarjeta sin intentar recordar primero, o hacerte trampa al calificar (#010, #174).",
+      "Respuestas gigantes (#038).",
+      "Crear tarjetas antes de estudiar, o depender de la IA sin revisarlas ni editarlas (#010, #007).",
+      "Repasar sin espaciar, o repetir tarjetas falladas sin editarlas (#038, #040).",
+      "Un solo mazo para todo o mazos desorganizados: mejor uno por examen, por bloques (#174, #024).",
+      "Descargar muchos mazos y acumular repasos hasta abandonar (#094).",
+      "Usar mnemotecnias ajenas: \"no funciona hasta que la haces tú\" (#094).",
+      "Pulsar \"Hide All, Guess One\" más de una vez: genera tarjetas de más (#174)."
+    ],
+    "consejos": [
+      "Una idea por tarjeta y respuesta corta y concreta (#038).",
+      "Mezcla tarjetas de concepto, aplicación, datos duros y preguntas trampa (#007).",
+      "Mnemotecnias en la respuesta: la ancla, la escena o el código van al reverso, nunca al frente (#038).",
+      "Tarjetas inversas para las cifras exactas: la misma tarjeta al derecho y al revés (#174, #167).",
+      "Pon una imagen siempre que la pregunta lo permita: activa la memoria visual (#174).",
+      "Minado de oraciones: una frase en la que conoces todo menos una palabra (#094).",
+      "Recomendación de Pablo: Notion para apuntes y guías, y Anki para las preguntas que más cuestan; si Anki te desorganiza, Quizlet (#024, #010).",
+      "Para llevarlas a cualquier app: CSV UTF-8 de dos columnas (frente, reverso) (#021)."
+    ],
+    "combina_con": [
+      "recuerdo-activo",
+      "repeticion-espaciada",
+      "memorizar-numeros",
+      "palacio-memoria",
+      "visualizacion-imagenes"
+    ],
+    "fuentes": "#038, #024, #039, #021, #007, #008, #010, #014, #128, #174, #175, #094, #087, #093, #116, #118, #141, #162, #166, #167, #170, #177",
+    "version_skill": "2"
+  }
+}

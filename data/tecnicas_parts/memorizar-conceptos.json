@@ -1,0 +1,78 @@
+[
+  {
+    "id": "con-pce-procrastinacion",
+    "metodo": "memorizar-conceptos",
+    "tecnica": "PCE (pregunta, conclusión, evidencia)",
+    "titulo": "Procrastinación en tres piezas: pregunta, conclusión y evidencia",
+    "origen": "video",
+    "fuente": "#194, #134",
+    "dato": "Procrastinación: \"un mal hábito que nos hace postergar o dejar para después nuestras tareas o actividades, haciéndonos perder tiempo en vez de hacerlos en este momento\".",
+    "como": "El concepto se convierte en pregunta (\"¿qué es la procrastinación?\"), porque \"el cerebro aprende más rápido cuando le haces preguntas\". Luego se responde la conclusión de forma fácil y al final se agrega una evidencia concreta: tienes un examen en 20 días y terminas estudiando uno o dos días antes. Explicarlo así en tres partes muestra si lo entendiste o solo lo recitas.",
+    "pasos": [
+      "Convierte el concepto en pregunta: ¿qué es…?",
+      "Responde la conclusión con palabras fáciles, en una o dos frases.",
+      "Agrega una evidencia: un ejemplo o hecho que demuestre que es verdad.",
+      "Explícalo de memoria en ese orden y califícate con el comprensiómetro del 1 al 10.",
+      "Si sale 9 o menos, marca lo que faltó y vuelve a la fuente solo por eso."
+    ],
+    "recuerda": "Pregunta: ¿qué es? · Conclusión: postergar tareas y perder tiempo · Evidencia: examen en 20 días estudiado el último día.",
+    "imagen_prompt": "Un estudiante tumbado en un sofá juega con el celular mientras un calendario de pared gigante deja caer sus hojas una tras otra como lluvia. Sobre su escritorio, una pila de libros cubiertos de telarañas espera. En la última escena del mismo cuadro, el mismo estudiante, despeinado y con ojeras enormes, estudia frenéticamente de noche bajo una lámpara rodeado de tazas de café, mientras un reloj de arena casi vacío brilla en la mesa. Colores intensos, contraste entre la calma y el pánico."
+  },
+  {
+    "id": "con-porque-triangulo",
+    "metodo": "memorizar-conceptos",
+    "tecnica": "El porqué antes que la fórmula",
+    "titulo": "El triángulo es la mitad del rectángulo",
+    "origen": "video",
+    "fuente": "#095, #167",
+    "dato": "Área del cuadrado o rectángulo = base × altura; área del triángulo = base × altura / 2.",
+    "como": "Daniel Carreón no memoriza la fórmula: primero entiende por qué es así. Base por altura cuenta cuántos cuadros caben en la figura, y el triángulo se divide entre dos \"porque el triángulo siempre va a ser la mitad de un cuadrado o rectángulo\". Ya entendida, la fórmula se dice de memoria y, si se olvida, se reconstruye. \"La mecanización es buena siempre y cuando venga después de la comprensión\".",
+    "pasos": [
+      "Antes de la fórmula, pregúntate por qué es así.",
+      "Piénsalo en chiquito: cuenta los cuadros de un rectángulo de 5 × 3.",
+      "Corta el rectángulo por la diagonal y comprueba que salen dos triángulos iguales.",
+      "Ahora sí, di la fórmula de memoria.",
+      "Al resolver un ejercicio, escribe la conclusión con tus palabras: qué significa el resultado."
+    ],
+    "recuerda": "Base × altura cuenta los cuadros; el triángulo es la mitad: base × altura / 2.",
+    "imagen_prompt": "Un rectángulo hecho de baldosas cuadradas de colores sobre el suelo de un patio, cinco de largo y tres de alto. Un carpintero sonriente con una sierra gigante lo corta en diagonal de una esquina a la otra, y las dos mitades triangulares se separan y quedan una junto a la otra, idénticas, como dos rebanadas de pastel. Un niño mira con la boca abierta y señala que las dos piezas son iguales. Colores vivos y polvo de aserrín en el aire."
+  },
+  {
+    "id": "con-pulso-paradojico",
+    "metodo": "memorizar-conceptos",
+    "tecnica": "Interrogación elaborativa + asociación memorable",
+    "titulo": "Pulso paradójico: el corazón en la caja de cartón",
+    "origen": "aplicacion",
+    "fuente": "#043, #134, #168",
+    "dato": "Pulso paradójico: caída de la presión arterial sistólica mayor de 10 mmHg durante la inspiración; es la exageración del descenso inspiratorio normal. Causas típicas: taponamiento cardiaco, asma grave o EPOC exacerbada.",
+    "como": "Se desarma con las preguntas qué, por qué y para qué. ¿Qué? La sistólica cae más de 10 al inspirar. ¿Por qué? En el taponamiento el corazón no puede expandirse: al inspirar llega más sangre al ventrículo derecho, el tabique empuja al izquierdo y este expulsa menos. ¿Para qué? Para sospechar taponamiento. La escena actúa ese mecanismo: el corazón encerrado en una caja donde el derecho, al inflarse, aplasta al izquierdo.",
+    "pasos": [
+      "Responde qué es, por qué ocurre y para qué sirve detectarlo.",
+      "Explica el mecanismo con tus palabras sin mirar las notas.",
+      "Ancla el mecanismo en una imagen que lo actúe (caja, globo que aplasta, aguja que cae).",
+      "Fija la cifra (> 10 mmHg) con el sistema mayor si se te olvida.",
+      "Ponte una pregunta al revés: \"caída de la PAS > 10 mmHg al inspirar, ¿cómo se llama?\""
+    ],
+    "recuerda": "PAS cae > 10 mmHg en la inspiración; pensar en taponamiento cardiaco (también asma grave, EPOC).",
+    "imagen_prompt": "Un paciente toma una gran bocanada de aire con el pecho inflado. Dentro de su tórax, visto como en una ventana, un corazón está encerrado en una caja de cartón apretada. La mitad derecha del corazón se infla como un globo azul y aplasta a la mitad izquierda, roja y pequeña, contra la pared de la caja. En el brazo del paciente, el manguito del tensiómetro se desinfla de golpe y la aguja del reloj cae bruscamente con líneas de movimiento. Colores intensos."
+  },
+  {
+    "id": "con-pam-reloj-arena",
+    "metodo": "memorizar-conceptos",
+    "tecnica": "El porqué de la fórmula + PCE",
+    "titulo": "PAM: la diastólica pesa doble porque dura el doble",
+    "origen": "aplicacion",
+    "fuente": "#095, #194, #167",
+    "dato": "Presión arterial media: PAM ≈ (PAS + 2 × PAD) / 3, equivalente a PAD + (PAS − PAD) / 3. Normal aproximada en el adulto: 70-100 mmHg; por debajo de 65 mmHg se compromete la perfusión de los órganos.",
+    "como": "Antes de la fórmula, su porqué: el corazón pasa cerca de dos tercios del ciclo en diástole y un tercio en sístole, así que la PAM es un promedio ponderado por el tiempo. Pensado en chiquito: con 120/80 la media simple daría 100, pero (120 + 160) / 3 ≈ 93, más cerca de la diastólica. En PCE: ¿qué presión perfunde los órganos? La PAM; evidencia: si baja de 65, los órganos se perfunden mal.",
+    "pasos": [
+      "Pregunta por qué la PAD se multiplica por 2.",
+      "Responde: la diástole dura cerca de dos tercios del ciclo.",
+      "Haz el cálculo en chiquito con 120/80 y compáralo con la media simple.",
+      "Escribe la conclusión: qué significa el número para la perfusión.",
+      "Ancla la idea en el reloj de arena de dos partes azules y una roja."
+    ],
+    "recuerda": "PAM = (PAS + 2·PAD) / 3; con 120/80 ≈ 93; menos de 65 = mala perfusión.",
+    "imagen_prompt": "Un reloj de arena gigante de cristal dividido en tres compartimentos iguales: dos llenos de arena azul que cae tranquila y lenta, y uno con arena roja que salta y burbujea. Una enfermera sonriente gira el reloj con ambas manos, y junto a él un tensiómetro antiguo de aguja se queda quieto apuntando cerca de la zona azul. Al fondo, órganos caricaturizados como riñón, cerebro y corazón beben felices de una fuente. Colores intensos sobre fondo claro."
+  }
+]

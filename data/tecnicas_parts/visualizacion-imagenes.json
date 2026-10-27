@@ -1,0 +1,77 @@
+[
+  {
+    "id": "vis-alejandra-salamandra",
+    "metodo": "visualizacion-imagenes",
+    "tecnica": "Imagen con más de dos sentidos",
+    "titulo": "Alejandra = salamandra mojada y áspera",
+    "origen": "video",
+    "fuente": "#140",
+    "dato": "El nombre de una persona que acabas de conocer: Alejandra.",
+    "como": "El nombre se convierte en algo que suena parecido (salamandra) y se pega a la cara de la persona. Se involucran a propósito tres sentidos: oyes el nombre, ves su cara convertida en una salamandra bañada en agua y, al darle la mano, sientes la piel áspera del animal. \"Si involucras más de dos sentidos lo recordarás mucho más fácil\".",
+    "pasos": [
+      "Escucha el nombre con atención total.",
+      "Busca a qué suena o con qué rima: Alejandra → salamandra.",
+      "Pega la imagen a la cara de la persona: toda su cara es una salamandra mojada.",
+      "Agrega otro sentido al saludarla: la mano áspera y fría.",
+      "Al volver a verla, deja que la cara te devuelva la salamandra y el nombre."
+    ],
+    "recuerda": "Alejandra.",
+    "imagen_prompt": "Una joven sonriente con vestido de oficina estrecha la mano de quien la mira, pero toda su cabeza es una salamandra naranja con manchas negras, brillante y empapada, con gotas de agua cayendo de su piel. La mano que extiende tiene textura rugosa de reptil y al apretarla salpica agua. Se ve en primer plano la mano del observador que siente la piel áspera, con pequeñas líneas de vibración. Fondo de una sala de reuniones luminosa con colores intensos."
+  },
+  {
+    "id": "vis-supraespinoso",
+    "metodo": "visualizacion-imagenes",
+    "tecnica": "Asociación memorable (forma + sonido + acción)",
+    "titulo": "Supraespinoso: la súper espina que sale de la espátula y vuela al humo",
+    "origen": "video",
+    "fuente": "#043",
+    "dato": "Músculo supraespinoso: forma alargada, origen en la escápula, inserción en el húmero, y su acción sobre el brazo.",
+    "como": "Se divide el dato en partes y cada parte se vuelve una imagen que suena o se parece: \"supraespinoso\" es una súper espina gigante (la forma), la escápula es una espátula de la que sale la espina y el húmero es humo hacia donde llega. La acción se representa como volar: cuando se activa la súper espina, el brazo se eleva. Las imágenes se unen con acciones que reflejan el significado.",
+    "pasos": [
+      "Divide el dato: nombre, origen, inserción y acción.",
+      "Convierte cada parte en imagen por forma o sonido: súper espina, espátula, humo.",
+      "Únelas con una acción que muestre la función: la espina sale de la espátula, llega al humo y el brazo vuela.",
+      "Prueba de calidad: desde la imagen di de dónde sale, a dónde llega y qué hace."
+    ],
+    "recuerda": "Supraespinoso: origen en la escápula, inserción en el húmero, eleva el brazo.",
+    "imagen_prompt": "Una espátula de cocina gigante y plateada, clavada en el suelo, de la que brota una espina verde enorme y musculosa, con capa de superhéroe. La espina se estira y se engancha a una columna de humo gris que sube desde el brazo de un hombre sorprendido. Al tensarse la espina, el brazo del hombre se levanta hacia un lado y despega del suelo como si volara, con líneas de movimiento y plumas alrededor. Cielo azul intenso detrás."
+  },
+  {
+    "id": "vis-pares-craneales-cara",
+    "metodo": "visualizacion-imagenes",
+    "tecnica": "Mnemotecnograma",
+    "titulo": "Los 12 pares craneales dibujados en una cara",
+    "origen": "aplicacion",
+    "fuente": "#168, #139",
+    "dato": "Pares craneales: I olfatorio (olfato), II óptico (visión), III motor ocular común (mueve el ojo, eleva el párpado, contrae la pupila), IV troclear (oblicuo superior), V trigémino (sensibilidad de la cara y masticación), VI motor ocular externo o abducens (lleva el ojo hacia afuera), VII facial (mímica facial), VIII vestibulococlear (audición y equilibrio), IX glosofaríngeo (gusto del tercio posterior de la lengua, deglución), X vago (vísceras de tórax y abdomen), XI accesorio (esternocleidomastoideo y trapecio), XII hipogloso (motor de la lengua).",
+    "como": "Siguiendo al Dr. Sanagustín, cada par es un ícono dibujado dentro de una cara, en la zona donde actúa: el olfatorio es un triangulito en la nariz y el óptico son dos ojos, por el número 2 (los dos del video). Los demás se arman igual, por sonido y función: un motor que mueve el ojo, una polea (tróclea), trillizos (tri-gémino), un imán que lo jala hacia afuera (abduce), una máscara de gestos, un caracol en la oreja (cóclea), un globo en la garganta, un vagabundo que baja al vientre, hombreras y un hipopótamo con la lengua afuera.",
+    "pasos": [
+      "Entiende primero qué hace cada nervio y en qué zona actúa.",
+      "Dibuja una cara con cuello y hombros, rápido y sin buscar que quede bonita.",
+      "Coloca cada ícono en su zona, en orden de arriba abajo: nariz, ojos, mejilla, oreja, garganta, cuello, hombros, lengua.",
+      "Usa siempre el mismo ícono para el mismo nervio en todos tus dibujos.",
+      "Redibújala de memoria al día siguiente y a la semana, diciendo número, nombre y función de cada uno."
+    ],
+    "recuerda": "Olfatorio, óptico, motor ocular común, troclear, trigémino, abducens, facial, vestibulococlear, glosofaríngeo, vago, accesorio, hipogloso.",
+    "imagen_prompt": "Dibujo mnemotécnico simple: una figura humana con íconos pegados en partes del cuerpo, vista de frente hasta los hombros. En la nariz, un pequeño triángulo; dos ojos muy grandes; junto a un ojo, un motorcito con engranajes que levanta el párpado; sobre el otro ojo, una polea con cuerda; en la mejilla, tres bebés gemelos idénticos, uno mordiendo una manzana; un imán que jala un ojo hacia afuera; media cara cubierta por una máscara de teatro sonriente; en la oreja, un caracol haciendo equilibrio; en la garganta, un globo inflándose; un vagabundo con mochila bajando por el cuello hacia el pecho; hombreras doradas en los hombros encogidos; bajo el mentón, un hipopótamo diminuto sacando la lengua."
+  },
+  {
+    "id": "vis-babinski-bebe-ski",
+    "metodo": "visualizacion-imagenes",
+    "tecnica": "Palabra sustituta + significado",
+    "titulo": "Babinski: el bebé esquiador con el dedo gordo hacia el cielo",
+    "origen": "aplicacion",
+    "fuente": "#137, #043",
+    "dato": "Signo de Babinski: al estimular el borde externo de la planta, el primer dedo hace extensión (dorsiflexión) y los demás se abren en abanico. En el adulto indica lesión de la vía piramidal (motoneurona superior); en el lactante es normal.",
+    "como": "Por la regla de la lengua, Babinski suena a \"bebé-ski\": un bebé esquiador. La acción muestra el signo exacto: el dedo gordo se levanta como la punta de un esquí y los otros se abren en abanico. Para el significado clínico, una pirámide que se agrieta al fondo (vía piramidal); al bebé le hace gracia porque en él es normal.",
+    "pasos": [
+      "Entiende cómo se explora y qué indica antes de visualizar.",
+      "Busca a qué suena el epónimo: Babinski → bebé-ski.",
+      "Haz que la escena actúe el signo: llave por el borde externo, dedo gordo arriba, dedos en abanico.",
+      "Agrega el significado: una pirámide que se rompe en el adulto.",
+      "Prueba de calidad: desde la imagen explica la maniobra, la respuesta y qué indica."
+    ],
+    "recuerda": "Extensión del dedo gordo con abanico de los demás: lesión piramidal en el adulto, normal en el lactante.",
+    "imagen_prompt": "Un bebé sonriente con casco y esquís baja por una ladera nevada que tiene la forma de la planta de un pie gigante. Una mano adulta pasa la punta de una llave por el borde externo de esa planta y, de golpe, el dedo gordo gigante se levanta hacia el cielo como la punta curvada de un esquí mientras los otros cuatro dedos se abren en abanico. Al fondo, una pirámide de piedra se agrieta y suelta trozos. Nieve brillante y cielo azul intenso."
+  }
+]

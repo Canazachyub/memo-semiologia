@@ -1,0 +1,77 @@
+[
+  {
+    "id": "num-telefono-pares",
+    "metodo": "memorizar-numeros",
+    "tecnica": "Sistema mayor en pares + historia",
+    "titulo": "Un teléfono de 10 dígitos en cinco imágenes",
+    "origen": "video",
+    "fuente": "#189",
+    "dato": "Teléfono 12 32 59 42 81.",
+    "como": "El número se parte en pares y cada par se convierte en palabra con sus consonantes: 12 T-N = tina, 32 M-N = mono, 59 L-P = lupa, 42 R-N = rana, 81 F-T = foto. Las cinco imágenes se encadenan en una historia que siempre avanza: en una tina se baña un mono que saca una lupa, ve una rana en el fondo y se toman una foto.",
+    "pasos": [
+      "Aprende la tabla 0–9 del sistema mayor hasta que salga sola.",
+      "Parte el número en pares.",
+      "Convierte cada par en su palabra fija de la tabla 00–99.",
+      "Únelas en una historia absurda con acción, en orden.",
+      "Repasa la historia y decodifica cada imagen a sus dígitos."
+    ],
+    "recuerda": "Tina-mono-lupa-rana-foto = 12 32 59 42 81.",
+    "imagen_prompt": "Un baño luminoso con una tina blanca llena de espuma. Dentro se baña un mono muy contento que sostiene una lupa gigante frente a su ojo, agrandándolo de forma cómica. A través de la lupa descubre una rana verde sentada en el fondo de la tina, sorprendida. El mono abraza a la rana y con la otra mano levanta una cámara instantánea para tomarse una foto juntos; el flash ilumina toda la escena y salpica agua por todas partes."
+  },
+  {
+    "id": "num-dragon-ball-fecha",
+    "metodo": "memorizar-numeros",
+    "tecnica": "Fecha: día y año con sistema mayor, mes con imagen",
+    "titulo": "Estreno de Dragon Ball Z: 26/04/89",
+    "origen": "video",
+    "fuente": "#143, #139, #148",
+    "dato": "Dragon Ball Z se estrenó el 26 de abril de 1989.",
+    "como": "El día 26 (N-CH) es nacho; el mes no se codifica: abril = una puerta que se abre; el 19 del año se deduce y el 89 (F-B) es un agente del FBI. Historia: hay unos nachos en una puerta y entra el FBI. Para volverla más memorable se agrega al guerrero de la serie lanzando su ataque de energía.",
+    "pasos": [
+      "Quita lo deducible: el 19 del año no se memoriza.",
+      "Convierte el día y los dos últimos dígitos del año con tu tabla.",
+      "Representa el mes con una imagen fija (abril = abrir la puerta).",
+      "Une las tres imágenes en una escena y agrégale algo del tema que estás memorizando."
+    ],
+    "recuerda": "Nachos (26) en la puerta (abril) y entra el FBI (89) = 26/04/1989.",
+    "imagen_prompt": "Una puerta de madera de una casa cubierta por completo de nachos crujientes con queso derretido que gotea. La puerta se abre de golpe y entra un agente federal de traje oscuro, gafas negras y placa dorada, apuntando con una linterna, sorprendido por los nachos. Detrás de él, un guerrero de anime musculoso con traje naranja lanza una enorme bola de energía azul brillante que ilumina el pasillo y hace volar los nachos por el aire."
+  },
+  {
+    "id": "num-fc-choza-tazas",
+    "metodo": "memorizar-numeros",
+    "tecnica": "Rango con umbrales",
+    "titulo": "Frecuencia cardiaca del adulto: la choza con techo de tazas",
+    "origen": "aplicacion",
+    "fuente": "#189, #139",
+    "dato": "FC normal del adulto en reposo: 60–100 lpm. Más de 100 = taquicardia; menos de 60 = bradicardia.",
+    "como": "60 = CH-Z → choza y 100 = T-Z-S → tazas (palabras fijas de la tabla). El rango va de menor a mayor: abajo la choza, arriba el techo de tazas. El umbral se vuelve movimiento: si el corazón sube por encima de las tazas, las rompe y sale corriendo (taquicardia); si baja al piso de la choza, un perezoso lo frena (bradicardia, Bradypus).",
+    "pasos": [
+      "Codifica el límite inferior y el superior con tu tabla 00–99.",
+      "Coloca la imagen menor abajo y la mayor arriba.",
+      "Haz que el parámetro (un corazón) viva entre las dos imágenes.",
+      "Convierte cada umbral en una acción con el significado clínico.",
+      "Pregúntate: ¿cómo se llama una FC menor de 60?"
+    ],
+    "recuerda": "Corazón en la choza (60) con techo de tazas (100): arriba corre, abajo se arrastra.",
+    "imagen_prompt": "Una choza de paja pequeña con un techo hecho de tazas de porcelana apiladas en una torre. Dentro vive un corazón rojo con piernas y guantes de boxeo. En una mitad de la escena el corazón, emocionado y sudando, salta tan alto que rompe las tazas del techo y salen volando pedazos mientras corre a toda velocidad. En la otra mitad, el mismo corazón está en el suelo de la choza con un perezoso abrazado a su espalda que lo hace arrastrarse lentamente."
+  },
+  {
+    "id": "num-ph-miel-rulo",
+    "metodo": "memorizar-numeros",
+    "tecnica": "Decimales con dígito deducido",
+    "titulo": "pH arterial: la balanza de miel y rulos",
+    "origen": "aplicacion",
+    "fuente": "#148, #139, #189",
+    "dato": "pH arterial normal: 7,35–7,45. Menos de 7,35 = acidemia; más de 7,45 = alcalemia.",
+    "como": "El 7 se deduce, porque todo pH compatible con la vida empieza en 7,xx (como el 19 de 1989); solo se codifican 35 (M-L) = miel y 45 (R-L) = rulo. Una balanza sostiene la miel a la izquierda (límite bajo) y una señora con rulos a la derecha (límite alto). Si la aguja cae por debajo de la miel, un limón escupe ácido; si sube por encima de los rulos, la señora resbala en jabón (alcalino).",
+    "pasos": [
+      "Quita la parte que se deduce (el 7 y la coma).",
+      "Codifica solo los decimales: 35 y 45.",
+      "Pon la imagen menor a la izquierda y la mayor a la derecha de una balanza.",
+      "Asocia lo ácido a lo que cae y lo alcalino a lo que sube.",
+      "Reutiliza las mismas palabras si otro parámetro comparte cifras (PaCO₂ 35–45)."
+    ],
+    "recuerda": "Miel (35) y rulo (45) en la balanza = pH 7,35–7,45.",
+    "imagen_prompt": "Una gran balanza de laboratorio de bronce en un laboratorio blanco. En el platillo izquierdo, un frasco de miel dorada que burbujea; en el derecho, una señora sonriente con la cabeza llena de rulos rosados. La aguja tiembla en el centro. Debajo del platillo de la miel, un limón gigante con cara enojada escupe un chorro de jugo ácido; sobre el lado de los rulos, la señora resbala sobre una pastilla de jabón que hace muchas burbujas."
+  }
+]

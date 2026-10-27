@@ -1,0 +1,76 @@
+[
+  {
+    "id": "fla-notion-tablero",
+    "metodo": "flashcards",
+    "tecnica": "Tablero de flashcards en Notion",
+    "titulo": "Base de datos con casilla Mostrar y columnas por estado",
+    "origen": "video",
+    "fuente": "#038",
+    "dato": "Tablero de Notion con Pregunta, Respuesta, Estado, Categoría, una casilla Mostrar y la fórmula if(prop(\"Mostrar\"), prop(\"Respuesta\"), \"\").",
+    "como": "La fórmula deja la respuesta en blanco hasta que marcas la casilla Mostrar, así no te engañas. En vista de tablero agrupada por estado, cada tarjeta se arrastra a Correcta o Incorrecta, y se hacen rondas solo con las incorrectas \"como si fuera una pequeña escalera\", hasta que todas quedan en Correcta.",
+    "pasos": [
+      "Crea una base de datos con Pregunta, Respuesta, Estado, Categoría y una casilla Mostrar.",
+      "Agrega una fórmula: if(prop(\"Mostrar\"), prop(\"Respuesta\"), \"\").",
+      "Abre una vista de tablero agrupada por Estado que muestre solo Pregunta, Fórmula y Mostrar.",
+      "Lee, recuerda, marca Mostrar, compara y arrastra la tarjeta a Correcta o Incorrecta.",
+      "Rondas con las incorrectas hasta que todas queden en Correcta."
+    ],
+    "recuerda": "Respuesta oculta hasta marcar Mostrar; Nueva → Incorrecta → Correcta, en rondas.",
+    "imagen_prompt": "Un tablero de corcho enorme dividido en tres columnas de colores, gris, rojo y verde, con tarjetas blancas boca abajo clavadas con chinchetas. Una estudiante sostiene una tarjeta y con la otra mano levanta una pequeña persiana de madera pegada a la tarjeta que esconde la respuesta. Otras tarjetas tienen piernitas y suben una pequeña escalera de la columna roja a la verde, celebrando al llegar. Sin texto, letras ni números en las tarjetas ni en el tablero."
+  },
+  {
+    "id": "fla-cloze-habitos",
+    "metodo": "flashcards",
+    "tecnica": "Tarjeta de hueco (cloze) en Anki",
+    "titulo": "Agrupación de hábitos con c1, c2 y c3",
+    "origen": "video",
+    "fuente": "#174",
+    "dato": "Fórmula de agrupación de hábitos: \"después de [hábito regular] realizaré el hábito [necesitado] y después el hábito [deseado]\".",
+    "como": "Se selecciona cada palabra y se pulsa el botón [...] de Anki, que escribe {{c1::palabra}}. Con c1, c2 y c3 salen tres tarjetas y los huecos se desbloquean uno por uno; con el mismo número en todos, se ocultan a la vez en una sola tarjeta; con c1 y c2 en pares, de dos en dos.",
+    "pasos": [
+      "Escribe la frase completa en una nota de tipo hueco (cloze).",
+      "Selecciona \"regular\" y pulsa [...] para crear c1; luego \"necesitado\" (c2) y \"deseado\" (c3).",
+      "Repasa: cada tarjeta oculta un hueco distinto.",
+      "Cuando ya salgan sueltos, crea otra con el mismo número en los tres para decirlos juntos."
+    ],
+    "recuerda": "Hábito regular → hábito necesitado → hábito deseado.",
+    "imagen_prompt": "Una tira de tren de juguete con tres vagones unidos en fila sobre una mesa de estudio: el primero lleva una taza de café de la rutina de la mañana, el segundo un vaso de agua y el tercero unas zapatillas de correr brillantes. Cada vagón está tapado por una lona de color distinta, azul, naranja y morada, y una mano levanta solo la lona del vagón del medio para ver qué hay. Al fondo, un teléfono muestra una tarjeta con la misma escena. Sin texto ni letras."
+  },
+  {
+    "id": "fla-glasgow-cloze",
+    "metodo": "flashcards",
+    "tecnica": "Cloze por componente + tarjeta de caso",
+    "titulo": "Escala de Glasgow: O4, V5, M6",
+    "origen": "aplicacion",
+    "fuente": "#174, #007",
+    "dato": "Escala de coma de Glasgow: ocular hasta 4, verbal hasta 5, motora hasta 6; total de 3 a 15.",
+    "como": "Una tarjeta de hueco con c1, c2 y c3 oculta un componente por tarjeta, así no se pide la escala entera de golpe. Se suma una tarjeta de caso que obliga a aplicarla: abre los ojos al dolor (O2), emite sonidos incomprensibles (V2) y retira al dolor (M4) = 8. Cuando ya salen por separado, otra con el mismo número en los tres huecos.",
+    "pasos": [
+      "Cloze: \"La respuesta ocular puntúa hasta {{c1::4}}, la verbal hasta {{c2::5}} y la motora hasta {{c3::6}}\".",
+      "Básica: ¿rango total de la escala de Glasgow? → 3 a 15.",
+      "Caso: abre los ojos al dolor, sonidos incomprensibles, retira al dolor → O2 + V2 + M4 = 8.",
+      "Cuando salgan sueltos, una cloze con c1 en los tres huecos para decirlos juntos."
+    ],
+    "recuerda": "Ojos 4, verbal 5, motor 6; total 3 a 15.",
+    "imagen_prompt": "Una camilla de urgencias con un paciente de cómic dormido; sobre él flotan tres cofres de colores: uno con forma de ojo, otro con forma de boca y otro con forma de mano. Cada cofre está cerrado con un candado distinto y un estudiante con bata sostiene un llavero, abriendo solo uno de los cofres a la vez. Del cofre del ojo salen cuatro canicas, del de la boca cinco y del de la mano seis, que ruedan hasta un frasco. Sin texto, letras ni números escritos."
+  },
+  {
+    "id": "fla-focos-oclusion",
+    "metodo": "flashcards",
+    "tecnica": "Oclusión de imagen",
+    "titulo": "Focos de auscultación cardiaca tapados uno a uno",
+    "origen": "aplicacion",
+    "fuente": "#174, #039",
+    "dato": "Focos: aórtico (2.º espacio intercostal derecho, borde esternal), pulmonar (2.º espacio intercostal izquierdo, borde esternal), tricuspídeo (borde esternal izquierdo inferior, 4.º-5.º espacio) y mitral (5.º espacio intercostal izquierdo, línea medioclavicular).",
+    "como": "Sobre una imagen del tórax se dibujan cuatro cajas, una por foco, y se pulsa \"Hide All, Guess One\" una sola vez: salen 4 tarjetas. En cada una se ven todas las cajas tapadas y la que toca recordar en rojo; la ubicación se aprende en su lugar real del cuerpo. Se completa con una inversa básica: \"5.º EIC izquierdo, línea medioclavicular: ¿qué foco es?\" → mitral.",
+    "pasos": [
+      "Pega una imagen del tórax en una nota de oclusión de imagen.",
+      "Dibuja una caja sobre cada foco: aórtico, pulmonar, tricuspídeo y mitral.",
+      "Pulsa \"Hide All, Guess One\" una sola vez (si no, genera tarjetas de más).",
+      "Repasa diciendo el nombre del foco marcado en rojo antes de destaparlo.",
+      "Agrega una inversa: de la ubicación al nombre del foco."
+    ],
+    "recuerda": "Aórtico 2.º EIC derecho · pulmonar 2.º EIC izquierdo · tricuspídeo borde esternal izquierdo bajo · mitral 5.º EIC medioclavicular.",
+    "imagen_prompt": "Un torso de maniquí de anatomía visto de frente, de pie sobre un escritorio, con cuatro parches adhesivos de colores pegados en el pecho: dos arriba a cada lado del esternón, uno abajo junto al borde izquierdo del esternón y uno abajo a la izquierda bajo la tetilla. Tres parches son grises y uno brilla en rojo intenso. Un estudiante con estetoscopio apoya la campana justo sobre el parche rojo y escucha con los ojos cerrados. Sin texto, letras ni números."
+  }
+]

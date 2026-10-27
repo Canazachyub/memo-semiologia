@@ -1,0 +1,76 @@
+[
+  {
+    "id": "pal-casa-35",
+    "metodo": "palacio-memoria",
+    "tecnica": "Palacio desde cero en papel",
+    "titulo": "Una casa de 7 habitaciones × 5 lugares = 35 ubicaciones",
+    "origen": "video",
+    "fuente": "#191",
+    "dato": "10 alimentos para el cerebro en orden: brócoli, aguacate, nueces, almendras, espinaca, salmón, arándanos, té verde, chocolate negro y aceite de coco.",
+    "como": "Se traza el primer piso de la casa, se numeran las habitaciones en sentido horario (comedor, sala, habitación 1, habitación 2, bodega, baño, cocina) y en cada una se marcan 4 esquinas + centro, de 5 en 5. Después de repasarlo vacío, cada alimento actúa sobre su mueble: del cuadro salen volando brócolis, el piano tiene aguacates por teclas, le avientas nueces al ventilador, muerdes el escritorio de almendras, en la mesa se sientan hojas de espinaca bien portadas.",
+    "pasos": [
+      "Dibuja el contorno de un piso, numera las habitaciones en el orden en que las recorrerías y marca las puertas.",
+      "En cada habitación elige las 4 esquinas y el centro (lo más cercano si no hay mueble) y numéralas de 5 en 5.",
+      "Repasa el palacio vacío: primero por escrito tapando el dibujo, luego en voz alta, adelante y atrás.",
+      "Coloca el dato 1 en la ubicación 1, el 2 en la 2…, con una imagen exagerada en la que tú participas.",
+      "Repasa de la 1 a la 10 y de la 10 a la 1."
+    ],
+    "recuerda": "Cuadro-brócoli, piano-aguacate, ventilador-nueces, escritorio-almendras, mesa-espinaca, buró-salmón, librero-arándanos, mueble-té verde, tele-chocolate, escritorio-coco.",
+    "imagen_prompt": "Comedor y sala de una casa vistos desde arriba en diagonal, como una maqueta abierta. De un cuadro en la pared salen volando brócolis con caritas felices; un piano tiene aguacates partidos en lugar de teclas y un estudiante los presiona con fuerza; un ventilador de techo tritura nueces que le lanzan y suelta lluvia de trocitos; el mismo estudiante muerde un escritorio hecho de almendras; sobre la mesa del comedor, hojas de espinaca sentadas muy derechas como invitados educados. Al fondo, un salmón enorme salta sobre un buró."
+  },
+  {
+    "id": "pal-cuerpo-10",
+    "metodo": "palacio-memoria",
+    "tecnica": "Palacio corporal",
+    "titulo": "10 hábitos para la memoria de los pies a la cabeza",
+    "origen": "video",
+    "fuente": "#214, #196",
+    "dato": "10 hábitos: ejercicio, sueño adecuado, nutrir el cerebro, relajar la mente, aprender algo nuevo cada día, relaciones positivas, buen humor, respiración profunda, eliminar pensamientos negativos y enseñar lo que sabes.",
+    "como": "Tu cuerpo es un palacio que siempre llevas contigo. Se recorre de los pies a la cabeza (pies, rodillas, cintura, estómago, brazos, hombros, boca, nariz, ojos, cabeza) y en cada parte va una imagen literal o simbólica ligada al significado: tenis que se mueven solos = ejercicio; láseres de cíclope en los ojos = eliminar pensamientos negativos.",
+    "pasos": [
+      "Fija la ruta del cuerpo de los pies a la cabeza y señala cada parte en voz alta.",
+      "Pon en cada parte una imagen ligada al significado del concepto.",
+      "Exagera cada escena hasta que te dé risa o sorpresa.",
+      "Pregúntate parte por parte \"¿qué había en los pies?\" y responde antes de mirar."
+    ],
+    "recuerda": "Pies-tenis, rodillas-almohada, cintura-cinturón de vitaminas, estómago-monje, brazos-espadas, hombros-amigos, boca-carcajada, nariz-aire, ojos-láseres, cabeza-tú enseñando.",
+    "imagen_prompt": "Un estudiante de pie, de cuerpo entero, convertido en un mapa de escenas absurdas de abajo arriba: en sus pies unos tenis que corren solos tirando de él; en sus rodillas una almohada esponjosa; en la cintura un cinturón lleno de frascos de vitaminas y frutas; sobre el estómago un pequeño monje medita; en los brazos dos espadas brillantes; en los hombros sus mejores amigos sentados y riendo; la boca suelta una carcajada enorme; la nariz aspira un remolino de aire; de los ojos salen rayos láser rojos que deshacen nubes grises; en la cabeza, una versión diminuta de él da clase frente a un pizarrón."
+  },
+  {
+    "id": "pal-signos-vitales-sala",
+    "metodo": "palacio-memoria",
+    "tecnica": "Palacio temático con sistema mayor",
+    "titulo": "Signos vitales del adulto en la sala de tu casa",
+    "origen": "aplicacion",
+    "fuente": "#195, #132, #189",
+    "dato": "FC 60–100 lpm · FR 12–20 rpm · PA normal < 120/80 mmHg · fiebre ≥ 38 °C.",
+    "como": "Un parámetro por estación, recorrido en sentido horario. Cada cifra es su palabra fija del sistema mayor (60 choza, 100 tazas, 12 tina, 20 NASA, 120 tunas, 80 vaso, 38 mafia) y en la PA se usa el pilar: arriba la sistólica, abajo la diastólica, como se escribe. La acción de cada imagen es el significado clínico: lo que rebasa el límite se acelera o explota.",
+    "pasos": [
+      "Elige la sala (5 estaciones) y asigna puerta = FC, ventana = FR, sofá = PA, televisor = temperatura.",
+      "Codifica cada cifra con tu tabla 00–99, siempre con la misma palabra.",
+      "En la puerta, una choza con techo de tazas; en la ventana, una tina que respira y despega como cohete de la NASA.",
+      "En el sofá, tunas en el respaldo y un vaso en el cojín; en el televisor, la mafia sudando con termómetro hirviendo.",
+      "Pregúntate en desorden: \"¿qué hay en la estación 3?\"."
+    ],
+    "recuerda": "Puerta choza-tazas (FC 60–100), ventana tina-NASA (FR 12–20), sofá tunas/vaso (PA < 120/80), tele mafia (fiebre ≥ 38).",
+    "imagen_prompt": "Sala de una casa familiar en perspectiva, recorrida como un circuito. En la puerta de entrada cuelga una pequeña choza de paja que late como un corazón, con una torre de tazas tambaleándose en su techo. En la ventana, una tina de baño se infla y desinfla respirando y empieza a despegar como un cohete espacial rompiendo el vidrio. En el sofá, el respaldo está cubierto de tunas que chorrean jugo apretadas por un manguito de presión y en el cojín un vaso se llena con ese jugo. Del televisor salen mafiosos de traje sudando con un termómetro humeante en la boca."
+  },
+  {
+    "id": "pal-glasgow-pilar",
+    "metodo": "palacio-memoria",
+    "tecnica": "Pilar de información",
+    "titulo": "Escala de Glasgow en tres muebles de emergencia",
+    "origen": "aplicacion",
+    "fuente": "#132, #195",
+    "dato": "Glasgow: ocular 1–4 (espontánea, a la voz, al dolor, ninguna), verbal 1–5 (orientado, confuso, palabras inapropiadas, sonidos incomprensibles, ninguna), motora 1–6 (obedece, localiza, retira, flexión anormal, extensión, ninguna). Total 3–15.",
+    "como": "Cada componente ocupa una ubicación y sus puntajes son los niveles del pilar: el número de niveles es el puntaje máximo y el nivel de más arriba vale más. Ventana con 4 niveles (ocular), librero con 5 estantes (verbal) y cajonera con 6 cajones (motora).",
+    "pasos": [
+      "Elige tres muebles de la sala de emergencia que conozcas: ventana, librero y cajonera.",
+      "Divide cada mueble en tantos niveles como el puntaje máximo del componente.",
+      "Pon arriba la mejor respuesta y abajo la ausencia de respuesta.",
+      "Pregúntate por niveles salteados: \"¿qué hay en el tercer cajón desde abajo?\" → flexión anormal, M3."
+    ],
+    "recuerda": "Ventana de 4 niveles (ojos), librero de 5 estantes (voz), cajonera de 6 cajones (movimiento); total de 3 a 15.",
+    "imagen_prompt": "Sala de emergencia de un hospital con tres muebles en fila. Una ventana dividida en cuatro franjas: arriba unos ojos enormes se abren solos, debajo unos ojos se abren cuando alguien grita, más abajo unos ojos se abren porque los pellizcan, y en la franja inferior ojos pintados de negro cerrados. Al lado, un librero de cinco estantes con libros que tienen boca: el de arriba habla tranquilo, los de abajo balbucean, gimen y el último está sellado con cinta. Una cajonera de seis cajones: del de arriba sale una mano que saluda obediente; en los de abajo, brazos rígidos doblados o estirados; el último cajón vacío."
+  }
+]

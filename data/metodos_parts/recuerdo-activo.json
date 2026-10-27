@@ -1,0 +1,74 @@
+{
+  "recuerdo-activo": {
+    "icono": "🧠",
+    "nombre": "Recuerdo activo",
+    "resumen": "Hacerte preguntas y responderlas de memoria sin ver la respuesta, calificarte con semáforo y repetir solo los errores por rondas hasta cero.",
+    "que": "Active recall: estudiar y entender una vez, y después hacerte preguntas y responderlas sin ver la respuesta, \"sin hacer trampa\". Lo contrario es el recuerdo pasivo: leer, releer o ver la pregunta y la respuesta y decir \"me hace sentido, creo que sí me la sé\". Te convierte en \"juez\" de lo que dominas y lo que no (#201).",
+    "como_funciona": "Releer solo hace que reconozcas la información y creas que la sabes: la ilusión de competencia, que Pablo explica con el efecto Dunning-Kruger (#083). Recuperarla de memoria la fortalece: \"entre más trabajo te cueste recordar y lo logres, mayor es el beneficio\". La ciencia la clasifica como técnica de utilidad muy alta; en un estudio que cita el video, a los 10 minutos se recordó el 53 % con recuerdo activo frente al 36 % sin él (#039). Según #180, un grupo sin evaluarse recordaba el 28 % a la semana y otro con tres evaluaciones en esa semana, casi todo.",
+    "pasos": [
+      "Estudiar y entender el tema, de preferencia ya con apunte o ideas clave seleccionadas (#039, #021).",
+      "Crear la guía: cada idea clave se vuelve una pregunta numerada con respuesta corta y oculta. Pregúntate \"si yo fuera mi profesor, ¿qué preguntaría?\" (#039, #102).",
+      "Atajo: copia tus notas ordenadas por ideas, borra el contenido y deja solo las preguntas. Hacer la guía ya es una primera vuelta de repaso (#116, #100).",
+      "Examinarte: tapa la respuesta, aparta la mirada y respóndela de memoria. Decirla en voz alta basta, no hace falta reescribirla (#039, #152, #105).",
+      "Responder exacto, con tus palabras y con evidencia: la conclusión y un ejemplo o dato que la respalde (#162, #175).",
+      "Evaluarte con el semáforo, sin engañarte: 🟢 correcta, 🟡 regular (faltaron datos o costó mucho), 🔴 incorrecta; 🔵 aprendida, opcional (#039, #012).",
+      "Corregir los errores volviendo a la fuente para entender por qué fallaste, no solo para leer la respuesta (#039, #038).",
+      "Rondas hasta cero errores: todo el tema → solo los errores → los errores de los errores. Descansa entre una ronda y otra (#031, #118, #175).",
+      "Repaso intermitente al terminar cada bloque, y 10-15 minutos de repaso acumulado antes de cerrar la sesión (#058, #116, #118).",
+      "Al día siguiente, solo los errores; después espacia los repasos y anota la retención 1-5 del tema hasta llegar a 5 (#116, #130, #156).",
+      "Simulacro en el formato real del examen y con cronómetro, cuando ya domines más del 80-90 % del tema (#031, #118, #105)."
+    ],
+    "cuando": [
+      "Siempre que haya que retener algo ya comprendido: teoría, datos duros, listas, escalas, definiciones, vocabulario (#039).",
+      "Cada vez que estudias, con la regla 80/20: 80 % del tiempo para estudiar y 20 % para recordar, expresar y enseñar. Con 2 h: 1 h 30 + 30 min (#201).",
+      "Al final de cada fragmento o bloque, al terminar el tema, al final del día y en un día de repaso semanal (#058, #116, #201).",
+      "En tiempos muertos (transporte, filas, huecos entre clases), solo con lo ya estudiado (#020, #142).",
+      "Para comprobar si de verdad entendiste: \"uno nunca sabe lo que sabe hasta que lo compruebas\" (#007)."
+    ],
+    "cuando_no": [
+      "Antes de comprender el tema: \"no puedes hacer preguntas sin antes haber entendido el tema\" (#021, #039).",
+      "Con respuestas demasiado largas: divídelas en micro-preguntas (#039, #102).",
+      "Repitiendo \"como gorila\" una pregunta que falla 2 o 3 veces: está mal diseñada, edítala (#038, #040).",
+      "No uses el 100 % de las técnicas en el 100 % de los casos: encadenar resumen → guía → Anki deja sin tiempo para repasar (#116, #118).",
+      "Para objetivos de bajo valor basta una guía rápida; las rondas hasta el 100 % son para los de alto valor (#048).",
+      "Los retos de recitar lo vivido o leído entrenan la memoria del día a día; no sirven para datos exactos (#209)."
+    ],
+    "ejemplo_video": "Guía de 46 preguntas de Atomic Habits: ronda 1, 25 perfectas; ronda 2, 10 de las 21 restantes; ronda 3, 8 más; ronda 4, el resto. En el examen de prueba en Anki solo 5 le costaron trabajo (#175). El mismo embudo con 20 preguntas: 20 → 10 → 5 → 0 (#031, #040).",
+    "ejemplo_atlas": {
+      "id": "presion-arterial",
+      "texto": "Todas las fichas del atlas traen preguntas con su tipo para mezclarlas. En la PA: directa (\"¿PA ideal y normal según el docente?\" → <120/80 y <130/85), umbral (\"¿desde qué cifra se diagnostica HTA y con cuántas tomas?\" → ≥140/90 en ≥2 tomas) y caso (\"PA 165/95: ¿qué grado?\" → grado II, decide la cifra más alta). El modo Repaso las muestra con la respuesta oculta hasta el intento."
+    },
+    "errores": [
+      "Mostrar la respuesta, leerla y decir \"ah sí, me acuerdo\": \"eso es lo peor que puedes hacer\" (#039).",
+      "Releer y repetir en lugar de recuperar: es recuerdo pasivo (#031, #055).",
+      "Repetir masivamente las mismas preguntas sin cambiarlas, o memorizarte el cuestionario: genera cuestionarios nuevos (#040, #008).",
+      "Repetir lo que ya tuviste correcto en lugar de solo los errores (#056, #118).",
+      "No editar una pregunta que falla 2 o 3 veces: sintetízala, explícala mejor o agrégale un ejemplo, una mnemotecnia o algo visual (#040, #038).",
+      "Esperar 4-5 días a terminar el tema para repasar: \"no está repasando, está repitiendo el tema desde cero\" (#118, #116).",
+      "Guía sin numerar o con respuestas enormes (#102).",
+      "Aceptar sin revisar las preguntas hechas por la IA (#021, #022).",
+      "Engañarte al calificarte, o dejar el repaso para el último día (#030, #029)."
+    ],
+    "consejos": [
+      "Una idea por pregunta; respuesta breve de 1 a 3 líneas, \"muy específica, idealmente corta o recordable\" (#102).",
+      "Mezcla tipos: concepto, aplicación (caso clínico), dato duro y pregunta trampa (#007, #006).",
+      "Abiertas antes que opción múltiple: \"ver opciones te va a hacer reconocer\" (#007).",
+      "De fácil a difícil, un poco más difícil que el examen real (#006, #030).",
+      "Repasa algunas veces \"al revés\": la definición primero y el concepto como respuesta (#174).",
+      "Si el tema es muy visual, la respuesta puede ser una imagen; y un dibujo se repasa rehaciéndolo de memoria en hoja en blanco (#102, #168).",
+      "Ya se fijó cuando lo explicas con tus palabras, lo conectas con ejemplos, lo enseñas y llega solo al repasar (#199).",
+      "Con IA: \"tú no le haces preguntas a la IA, tú le pides que te haga preguntas a ti\", y por secciones (#007, #087).",
+      "La ancla de la ficha sirve de pista en la ronda 2, nunca antes del intento (#039, #038)."
+    ],
+    "combina_con": [
+      "repeticion-espaciada",
+      "flashcards",
+      "memorizar-conceptos",
+      "memorizar-numeros",
+      "palacio-memoria",
+      "mnemotecnia"
+    ],
+    "fuentes": "#039, #021, #035, #007, #005, #031, #040, #038, #012, #010, #134, #137, #083, #087, #102, #105, #116, #118, #127, #130, #152, #156, #162, #168, #175, #180, #199, #201, #209",
+    "version_skill": "2"
+  }
+}

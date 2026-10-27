@@ -91,6 +91,11 @@ export function crearMetodos({ METODOS = {}, MEMO = {}, ATLAS = {}, raiz }) {
             ${DEMOS[k] ? `<button type="button" class="met-probar" data-probar="${esc(k)}">▶ Probar</button>` : ''}</div>
           ${u.n && !u.capa ? `<button type="button" class="met-ver" data-vista="tabla" data-tec="${esc(k)}">Ver los ${u.n} datos que la usan →</button>` : u.capa ? '<button type="button" class="met-ver" data-vista="repaso">Ir a Repaso →</button>' : ''}
         </article>`; }).join('')}</div>
+      <section class="met-tec ds-entra" aria-labelledby="met-tec-t">
+        <div class="met-tec-cab"><h3 id="met-tec-t">🖼️ Atlas de técnicas</h3>
+          <p class="ds-sub">Ejemplos ilustrados de cada técnica: los de los videos (🎬) y aplicados a Medicina (🩺). Toca uno, mira la imagen y ponte a prueba.</p></div>
+        <div data-tec-galeria=""></div>
+      </section>
       <section class="met-tipos" aria-labelledby="met-tipos-t">
         <h3 id="met-tipos-t">¿Qué técnica uso? · según el tipo de dato</h3>
         ${POR_TIPO.map(([t, nom, ks]) => `<div class="met-fila"><span>${esc(nom)}${tipos[t] ? ` <small>(${tipos[t]})</small>` : ''}</span>${ks.map(chip).join('')}</div>`).join('')}
@@ -223,6 +228,7 @@ export function crearMetodos({ METODOS = {}, MEMO = {}, ATLAS = {}, raiz }) {
       ${seccion('que', '📖 Qué es', `<p>${fmt(m.que)}</p>`)}
       ${seccion('como', '⚙️ Cómo funciona', `<p>${fmt(m.como_funciona || '')}</p>`)}
       ${k === 'memorizar-numeros' ? seccion('mitabla', '🔢 Mi tabla 00–99', '<div data-mitabla></div>', { extra: 'por decenas' }) : ''}
+      ${seccion('tecnicas', '🖼️ Ejemplos ilustrados', `<div data-tec-galeria="${esc(k)}"></div>`, { abierta: true, extra: '…' })}
       ${seccion('atlas', '🗺️ Ejemplo en tu atlas', ejAtlas, { abierta: true })}
       ${seccion('video', '🎬 Ejemplo del video', `<p class="met-cita">${fmt(m.ejemplo_video || '')}</p>`)}
       ${u.ids.length ? seccion('usan', u.capa ? '🗂️ Fichas que se repasan' : '🗂️ Datos que la usan', `<div class="met-usan">${u.ids.map((id) => `<button type="button" data-ir-ficha="${esc(id)}">${esc(iconoDato(id))} ${esc(nombreDato(id))}</button>`).join('')}</div>`, { extra: `${u.n}` }) : ''}
@@ -246,6 +252,10 @@ export function crearMetodos({ METODOS = {}, MEMO = {}, ATLAS = {}, raiz }) {
 
   // ---------- eventos (delegados en raiz) ----------
   raiz.addEventListener('click', (e) => {
+    const tf = e.target.closest('[data-tec-filtro]');
+    if (tf) { tecFiltro = tf.dataset.tecFiltro; haptico('toque'); const g = tf.closest('[data-tec-galeria]'); if (g) pintarGaleria(g); return; }
+    const ta = e.target.closest('[data-tec-abrir]');
+    if (ta) { const g = ta.closest('[data-tec-galeria]'); if (g) { const fijo = g.dataset.tecGaleria; const fl = fijo || tecFiltro; tecVista = fl === 'todos' ? TEC : TEC.filter((t) => t.metodo === fl); } haptico('toque'); abrirLamina(ta.dataset.tecAbrir); return; }
     const f = e.target.closest('[data-ir-ficha]'); if (f) { irFicha(f.dataset.irFicha); return; }
     const pr = e.target.closest('[data-probar]'); if (pr) { haptico('toque'); abrir(pr.dataset.probar); irDemo(); return; }
     if (e.target.closest('[data-ir-demo]')) { irDemo(); return; }
@@ -274,6 +284,70 @@ export function crearMetodos({ METODOS = {}, MEMO = {}, ATLAS = {}, raiz }) {
   function pintar(clave) {
     if (typeof clave === 'string' && METODOS[clave]) { abierto = clave; grabar('memo-semio-metodo', abierto); }
     if (abierto && METODOS[abierto]) pintarDetalle(abierto); else pintarIndice();
+    galerias();
+  }
+
+  // ---------- Atlas de técnicas: ejemplos ilustrados (data/tecnicas.json) + lámina con autoprueba ----------
+  let tecP = null; let TEC = []; let tecFiltro = 'todos'; let tecVista = [];
+  const cargarTec = () => (tecP ||= fetch('data/tecnicas.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null)
+    .then((d) => { TEC = (d?.lista || []).filter((t) => METODOS[t.metodo]); return TEC; }));
+  const icMet = (k) => METODOS[k]?.icono || '🧠';
+  const badge = (t) => (t.origen === 'video' ? `<span class="tec-badge video">🎬 ${esc(t.fuente || 'video')}</span>` : '<span class="tec-badge apl">🩺 Medicina</span>');
+  const tarjetaTec = (t, i) => `<button type="button" class="tec-card ds-entra" style="--i:${Math.min(i, 12)}" data-tec-abrir="${esc(t.id)}" aria-label="${esc(t.tecnica)}: ${esc(t.titulo)}">
+      <span class="tec-img">${t.imagen ? `<img src="${esc(t.imagen)}" alt="" loading="lazy" decoding="async">` : `<span class="tec-ph" aria-hidden="true">${esc(icMet(t.metodo))}</span>`}${badge(t)}</span>
+      <span class="tec-tx"><span class="tec-tec">${esc(icMet(t.metodo))} ${esc(t.tecnica)}</span><span class="tec-tit">${esc(t.titulo)}</span></span></button>`;
+  function galerias() {
+    const els = raiz.querySelectorAll('[data-tec-galeria]'); if (!els.length) return;
+    cargarTec().then(() => els.forEach((el) => { if (el.isConnected) pintarGaleria(el); }));
+  }
+  function pintarGaleria(el) {
+    const fijo = el.dataset.tecGaleria;   // '' = índice con filtros; clave = solo ese método
+    const sec = el.closest('[data-sec="tecnicas"]');
+    if (!TEC.length) { el.innerHTML = '<p class="met-ayuda">Los ejemplos ilustrados todavía se están preparando.</p>'; return; }
+    const filtro = fijo || tecFiltro;
+    tecVista = filtro === 'todos' ? TEC : TEC.filter((t) => t.metodo === filtro);
+    if (fijo && !tecVista.length) { (sec || el).remove(); return; }
+    const cuenta = (k) => TEC.filter((t) => t.metodo === k).length;
+    const chips = fijo ? '' : `<div class="tec-chips" role="group" aria-label="Filtrar por método">
+      <button type="button" class="chip ${filtro === 'todos' ? 'on' : ''}" data-tec-filtro="todos" aria-pressed="${filtro === 'todos'}">Todos <small>${TEC.length}</small></button>
+      ${CLAVES.filter(cuenta).map((k) => `<button type="button" class="chip ${filtro === k ? 'on' : ''}" data-tec-filtro="${esc(k)}" aria-pressed="${filtro === k}">${esc(icMet(k))} ${esc(METODOS[k].nombre)} <small>${cuenta(k)}</small></button>`).join('')}</div>`;
+    el.innerHTML = `${chips}<div class="tec-grid">${tecVista.map(tarjetaTec).join('')}</div>`;
+    if (sec) { const n = sec.querySelector('.met-n'); if (n) n.textContent = tecVista.length; }
+  }
+  function abrirLamina(id) {
+    const i = tecVista.findIndex((x) => x.id === id); const t = tecVista[i] || TEC.find((x) => x.id === id); if (!t) return;
+    let dlg = document.getElementById('tec-lamina');
+    if (!dlg) {
+      dlg = Object.assign(document.createElement('dialog'), { id: 'tec-lamina', className: 'tec-lamina' });
+      document.body.appendChild(dlg);
+      dlg.addEventListener('click', (e) => {
+        if (e.target === dlg || e.target.closest('[data-tec-cerrar]')) { dlg.close(); return; }
+        if (e.target.closest('[data-tec-tapar]')) { dlg.querySelector('.tec-lam').classList.add('tapado'); haptico('toque'); dlg.querySelector('[data-tec-revelar]')?.focus(); return; }
+        if (e.target.closest('[data-tec-revelar]')) { dlg.querySelector('.tec-lam').classList.remove('tapado'); haptico('bien'); return; }
+        const n = e.target.closest('[data-tec-nav]'); if (n) { haptico('toque'); abrirLamina(n.dataset.tecNav); return; }
+        const m = e.target.closest('[data-tec-met]'); if (m) { dlg.close(); abrir(m.dataset.tecMet); }
+      });
+    }
+    const ant = tecVista[(i - 1 + tecVista.length) % tecVista.length]; const sig = tecVista[(i + 1) % tecVista.length];
+    const nav = i >= 0 && tecVista.length > 1;
+    dlg.innerHTML = `<article class="tec-lam" aria-labelledby="tec-lam-t">
+      <button type="button" class="tec-x" data-tec-cerrar aria-label="Cerrar">✕</button>
+      <figure class="tec-fig">${t.imagen ? `<img src="${esc(t.imagen)}" alt="Escena: ${esc(t.titulo)}">` : `<span class="tec-ph grande" aria-hidden="true">${esc(icMet(t.metodo))}</span>`}</figure>
+      <div class="tec-cuerpo">
+        <p class="tec-tec">${esc(icMet(t.metodo))} ${esc(METODOS[t.metodo].nombre)} · ${esc(t.tecnica)} ${badge(t)}</p>
+        <h3 id="tec-lam-t">${esc(t.titulo)}</h3>
+        <div class="tec-prueba"><button type="button" class="btn" data-tec-tapar>🙈 Taparlo y ponerme a prueba</button>
+          <button type="button" class="btn pri" data-tec-revelar>👁 Mira la imagen, di qué recuerdas… y revela</button></div>
+        <section class="tec-oculta"><h4>📌 Qué hay que recordar</h4><p>${fmt(t.dato)}</p></section>
+        <section class="tec-oculta"><h4>🧩 Cómo se arma</h4><p>${fmt(t.como)}</p></section>
+        ${t.recuerda ? `<p class="tec-recuerda tec-oculta"><b>La imagen te devuelve:</b> ${fmt(t.recuerda)}</p>` : ''}
+        ${(t.pasos || []).length ? `<section><h4>🪜 Hazlo tú</h4><ol class="tec-pasos">${t.pasos.map((p) => `<li>${fmt(p)}</li>`).join('')}</ol></section>` : ''}
+        <div class="tec-pie"><button type="button" class="link" data-tec-met="${esc(t.metodo)}">Ver el método completo →</button></div>
+      </div>
+      ${nav ? `<nav class="tec-nav" aria-label="Otros ejemplos"><button type="button" class="btn" data-tec-nav="${esc(ant.id)}">← Anterior</button><span>${i + 1} / ${tecVista.length}</span><button type="button" class="btn" data-tec-nav="${esc(sig.id)}">Siguiente →</button></nav>` : ''}
+    </article>`;
+    if (!dlg.open) dlg.showModal();
+    dlg.querySelector('.tec-lam').scrollTop = 0;
   }
 
   // =====================================================================================

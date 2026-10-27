@@ -1,0 +1,70 @@
+{
+  "memorizar-numeros": {
+    "icono": "🔢",
+    "nombre": "Sistema mayor (números)",
+    "resumen": "Cada dígito es una consonante: el número se vuelve una palabra-imagen que actúa en una escena ligada al dato.",
+    "que": "Un código fijo convierte los dígitos en consonantes: 0 = S (Z, C suave), 1 = T/D, 2 = N/Ñ, 3 = M, 4 = R, 5 = L, 6 = J/CH/G suave, 7 = G/C dura/K/Q, 8 = F/V, 9 = P/B. Las vocales (y la H) son comodines que no valen nada. Así cada par de dígitos se vuelve una palabra que se puede ver: 32 = M-N = mono. Es \"la técnica más avanzada de todas\": conviene dominar antes la palabra sustituta y las historias.",
+    "como_funciona": "Los números se olvidan porque son información abstracta: no se pueden visualizar, y repetirlos no funciona (\"después de repetirlo muchas veces parece que se te borra\"). El sistema mayor los vuelve imágenes concretas que se encadenan en una historia o se colocan en un palacio. La escena se conecta con el significado del dato, no solo con los dígitos, y al repasar se decodifica cada imagen de vuelta a sus cifras.",
+    "pasos": [
+      "Diagnóstico: saber cómo lo van a preguntar (el número exacto, el rango o solo si sube o baja) y marcar solo las cifras imprescindibles (#148, #067).",
+      "Quitar los dígitos deducibles por lógica: el 19 de 1989, el 7 de todo pH 7,xx (#148).",
+      "Elegir un solo sistema (Pablo usa el mayor) y aprender la tabla 0–9 hasta que salga automática: cierra los ojos, visualiza cada dígito y di su letra (#189, #139).",
+      "Atajo: antes de codificar, revisar si el número ya significa algo (23 = Michael Jordan, 911 = emergencias, 007 = James Bond, 18 = la credencial de mayor de edad) (#189, #126, #196).",
+      "Partir el número en pares (o en tríos si sale una palabra fácil): \"lo más fácil siempre es memorizar en pares\" (#139).",
+      "Convertir cada grupo en palabra-imagen con tu tabla fija 00–99 (32 = mono, 35 = miel), siempre la misma palabra para el mismo par (#189, #139).",
+      "Ligar la imagen al contenido: la palabra del número interactúa con algo que represente el parámetro, la norma o el artículo (#139, #067).",
+      "Encadenar las imágenes en una historia absurda que siempre avance, o colocarlas en un palacio, una por micro-ubicación (#139, #189).",
+      "Repasar: primero la secuencia de imágenes y después decodificar cada una a sus dígitos; si un solo dígito falla, toda la serie es incorrecta (#189).",
+      "Entrenar con la prueba de los pares dictados: alguien dicta pares del 00 al 99 al azar, tú los conviertes en imágenes y los recitas (#196, #126)."
+    ],
+    "cuando": [
+      "Cifras que el examen exige exactas: valores normales, rangos, umbrales, dosis, puntajes de escalas, fechas, números de artículo o norma (#139, #067).",
+      "\"Números como normas o cantidades → sistema numérico\" (regla de elección) (#067).",
+      "Series largas (teléfonos, decimales), combinado con el palacio de la memoria (#189).",
+      "Fechas: el día y el año con su imagen, el mes con una imagen que lo represente (julio = playa, abril = abrir la puerta) (#139, #143).",
+      "En una escala: los máximos, mínimos y puntos de corte; en una fórmula: solo sus constantes."
+    ],
+    "cuando_no": [
+      "Antes de comprender el dato: la mnemotecnia es un atajo para retener, no reemplaza la comprensión (#143, #139).",
+      "Lo que no es imprescindible: el error típico es querer memorizarlo todo (#148).",
+      "Cuando basta el orden de magnitud o la tendencia (sube o baja): ahí sirve más un esquema. [complemento]",
+      "Junto con todas las demás técnicas sobre el mismo dato: elegir la que aplica (#139, #143).",
+      "Para listas de causas, clasificaciones o conceptos sin cifras: usar listas, palacio o conceptos.",
+      "Rimas para números largos: desde el 21 se vuelven muy complicadas (#189)."
+    ],
+    "ejemplo_video": "Serie 23 · 2012 · 911 · 0601 · 50 · 007: Michael Jordan llega por la puerta y te dice que es el fin del mundo, llamas al 911, llega una camioneta con los Reyes Magos y te dan 50 dólares para tu muñeco de James Bond. El voluntario la decodifica número por número sin ver la pantalla (#126, #189).",
+    "ejemplo_atlas": {
+      "id": "frecuencia-cardiaca-pulso",
+      "texto": "FC del adulto 60-100 lpm: 60 = CH-Z → choza y 100 = T-Z-S → tazas. En la puerta de emergencia hay una choza con una torre de cien tazas en el techo; Cora, el corazón boxeador, salta la soga entre ambas. Con fiebre rebasa las tazas y las hace estallar (taquisfigmia); con betabloqueante se hunde bajo el piso de la choza como un perezoso (bradisfigmia)."
+    },
+    "errores": [
+      "Repetir el número en voz alta en lugar de visualizarlo (#189, #143).",
+      "Mezclar el sistema mayor con el casillero mental, o copiar ejemplos hechos con otro sistema (las bolitas de anís = 26 de José María no cuadran con el mayor) (#189, #148).",
+      "Inventar la imagen en el momento en lugar de tener la lista 00–99 preparada (#189, #139).",
+      "Memorizar la cifra sin haber entendido el concepto, o memorizar lo que no es imprescindible (#143, #148).",
+      "Escenas sosas: deben ser exageradas, absurdas y con movimiento (#139).",
+      "No verificar al decodificar: si un solo dígito está mal, toda la serie es incorrecta (#189).",
+      "Usar plurales sin querer: la S final suma un 0 (nacho = 26, nachos = 260). [complemento]",
+      "No repasar las asociaciones después de crearlas (#139)."
+    ],
+    "consejos": [
+      "Elige un solo sistema y no lo cambies: usar dos \"te va a confundir\". Pablo recomienda el mayor (#189, #067).",
+      "Para medicina basta la tabla del 00 al 99; del 1 al 1000 es para competición (#168).",
+      "Usa siempre la misma palabra para el mismo par: si 35 = miel en el pH, también es miel en la PaCO₂ y la ubicación del palacio las distingue. [complemento]",
+      "Rango a–b: dos imágenes, siempre en orden menor → mayor dentro de la escena. [complemento]",
+      "Umbral (> o <): lo que está por encima se eleva o acelera; lo de abajo se hunde o se frena. [complemento]",
+      "Decimales: si la posición del punto es obvia, codifica solo los dígitos; si no, una imagen para la parte entera y otra para la decimal (toro + James Bond) (#139).",
+      "Escenas sin censura ni perfeccionismo: \"como si tuvieras tu propio Steven Spielberg\" en el cerebro (#148)."
+    ],
+    "combina_con": [
+      "palacio-memoria",
+      "visualizacion-imagenes",
+      "memorizar-listas",
+      "memorizar-conceptos",
+      "recuerdo-activo",
+      "repeticion-espaciada"
+    ],
+    "fuentes": "#189, #139, #143, #148, #067, #126, #196, #073, #168",
+    "version_skill": "4"
+  }
+}

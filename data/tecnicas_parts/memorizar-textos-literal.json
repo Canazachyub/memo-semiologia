@@ -1,0 +1,78 @@
+[
+ {
+  "id": "lit-la-rama-paz",
+  "metodo": "memorizar-textos-literal",
+  "tecnica": "Una imagen por frase en un palacio",
+  "titulo": "\"La rama\" de Octavio Paz en seis lugares de la casa",
+  "origen": "video",
+  "fuente": "#128",
+  "dato": "Las primeras seis líneas de \"La rama\" de Octavio Paz (un pájaro que canta en la punta de un pino, tiembla sobre su trino, se yergue y se deshace en música). El texto exacto, de tu libro: el poema tiene derechos de autor y aquí no se copia.",
+  "como": "Cada línea se convierte en una imagen que intenta cubrir todas sus palabras (\"más literales sean las imágenes, más fácil memorizar\"), y para las palabras abstractas se usa una sustituta: una palabra que suena a \"tres mulas\" se vuelve tres mulas y otra que suena a \"trineo\", un trineo. Las seis imágenes van en orden en un hogar: lavabo, estufa, refrigerador, puerta, bañera y retrete.",
+  "pasos": [
+   "Lee el poema un par de veces para entender de qué trata.",
+   "Divídelo en líneas cortas.",
+   "Haz una imagen por línea que cubra sus palabras; usa sustitutas para lo abstracto.",
+   "Coloca cada imagen en un lugar de tu casa, en orden.",
+   "Recorre la casa diciendo las palabras exactas y anota las que fallas."
+  ],
+  "recuerda": "Lavabo: pino con pájaro cantando · estufa: pájaro entre rejas · refrigerador: tres mulas en trineo · puerta: pájaro erguido con flecha · bañera: ave que se desvanece · retrete: música que se derrama. Cada imagen devuelve una línea del poema.",
+  "imagen_prompt": "Corte de una casa con seis rincones vistos a la vez. En el lavabo del baño crece un pino con un pájaro cantando en la punta. Sobre la estufa, un pájaro tras unas rejas de cárcel. Frente al refrigerador abierto, tres mulas temblorosas montadas en un trineo. En la puerta, un pájaro muy erguido junto a un arco con flecha sobre una rama. En la bañera, un ave enorme se desvanece entre sus propias alas. Del retrete brotan notas musicales que se derraman como agua."
+ },
+ {
+  "id": "lit-nocturno-acuna",
+  "metodo": "memorizar-textos-literal",
+  "tecnica": "Bloques de líneas + palacio de micro-ubicaciones",
+  "titulo": "\"Nocturno\" de Acuña: 100 líneas en 50 micro-ubicaciones",
+  "origen": "video",
+  "fuente": "#190",
+  "dato": "Poema \"Nocturno\" (a Rosario) de Manuel Acuña: 100 líneas en 10 estrofas. Ejemplo de la estrofa 3: \"De noche, cuando pongo mis sienes en la almohada / y hacia otro mundo quiero mi espíritu volver…\".",
+  "como": "El poema se fragmenta en 10 estrofas, una por sesión. El palacio es una casa de dos pisos con 10 habitaciones (una por estrofa) y 5 micro-estaciones en cada una, en sentido horario: 50 ubicaciones, una imagen cada dos líneas porque son cortas. En la estrofa 3, el escritorio tiene forma de luna y ahí acuestas la cabeza en una almohada; tras la ventana, un planeta al que vuelve tu espíritu.",
+  "pasos": [
+   "Lee el poema completo para captar el contexto y la emoción.",
+   "Divídelo en bloques: una estrofa por sesión.",
+   "Prepara un palacio con suficientes micro-ubicaciones, ordenadas en sentido horario.",
+   "Haz una imagen por línea (o cada dos si son cortas) y colócala en su ubicación.",
+   "Repaso acumulativo: lo de ayer, lo de hoy y al final todo; luego en tiempos muertos."
+  ],
+  "recuerda": "Escritorio-luna con almohada = \"De noche, cuando pongo mis sienes en la almohada\"; planeta tras la ventana = \"y hacia otro mundo quiero mi espíritu volver\".",
+  "imagen_prompt": "Una habitación de estudio de noche, iluminada por la luz de la luna. El escritorio tiene forma de media luna plateada y sobre él un joven poeta apoya la cabeza en una almohada blanca. Tras la ventana flota un planeta azul con anillos, hacia el cual se eleva una figura translúcida que sale del cuerpo del joven. En la pared, un cuadro muestra un camino larguísimo que termina en una meta. Junto al librero, una silueta de mujer se pierde en la sombra del rincón."
+ },
+ {
+  "id": "lit-oms-salud",
+  "metodo": "memorizar-textos-literal",
+  "tecnica": "Imagen por frase + pistas de primera letra",
+  "titulo": "Definición de salud de la OMS en tres ubicaciones",
+  "origen": "aplicacion",
+  "fuente": "#128, #073, #190",
+  "dato": "Constitución de la OMS (1946): \"La salud es un estado de completo bienestar físico, mental y social, y no solamente la ausencia de afecciones o enfermedades.\"",
+  "como": "Se fragmenta por ideas lógicas en tres frases y cada una va a una ubicación: puerta, sofá y ventana. Cada imagen cubre todas las palabras de su frase. Para el repaso se usan las pistas de primera letra (\"L s e u e / d c b f, m y s, / y n s l a d a o e\") y se vigila la conectora que más falla: \"y no solamente\".",
+  "pasos": [
+   "Copia la definición tal cual de la fuente del docente.",
+   "Divídela en tres frases lógicas.",
+   "Haz una imagen por frase que cubra todas sus palabras y colócala en una ubicación.",
+   "Repasa con las pistas de primera letra, en voz alta.",
+   "Sube de nivel: orden de frases, orden exacto, conectoras, 70-80 % y 90-100 %."
+  ],
+  "recuerda": "Puerta: brindis sobre el mapa de un estado · sofá: rompecabezas completo de físico, mental y social · ventana: cama vacía y un señor que grita \"¡no solamente eso!\".",
+  "imagen_prompt": "Un recibidor con tres puntos. En la puerta, dos personas chocan copas gigantes sobre un mapa de un estado. En el sofá, un rompecabezas completo de tres piezas que encajan: un fisicoculturista levantando pesas, un monje meditando con los ojos cerrados y un grupo de amigos de fiesta, todos dentro de una tina llena de espuma. Junto a la ventana, una cama de hospital vacía y un señor que levanta la mano con gesto de \"no\" mientras sostiene un virus verde esposado."
+ },
+ {
+  "id": "lit-iasp-dolor-escalera",
+  "metodo": "memorizar-textos-literal",
+  "tecnica": "Escalera + imagen por línea",
+  "titulo": "Definición de dolor de la IASP (2020) en cuatro escalones",
+  "origen": "aplicacion",
+  "fuente": "#128, #190",
+  "dato": "IASP, revisión de 2020 (traducción de uso frecuente en español): \"Una experiencia sensorial y emocional desagradable asociada, o similar a la asociada, a una lesión tisular real o potencial.\" Hay varias traducciones: copia la que usa tu docente.",
+  "como": "Se divide en cuatro líneas cortas y se sube por escalera: recita la 1 y la 2, luego de la 1 a la 3, luego de la 1 a la 4; si te equivocas, no subes. Cada línea tiene su imagen en una mini historia: un científico siente un pinchazo y llora (sensorial y emocional), hace mueca de asco (desagradable), su gemelo hace la misma mueca sin tocar nada (similar a la asociada) y en la mesa hay un tejido cortado y otro con una tijera apuntándole (real o potencial).",
+  "pasos": [
+   "Copia la traducción exacta que pide tu docente.",
+   "Divide en 4 líneas: experiencia sensorial y emocional / desagradable / asociada, o similar a la asociada, / a una lesión tisular real o potencial.",
+   "Memoriza las dos primeras, aparta la vista y recítalas exactas.",
+   "Suma una línea cada vez y recita desde el principio; si fallas, no avanzas.",
+   "Repasa en voz alta con audio y vigila la parte nueva de 2020: \"o similar a la asociada\"."
+  ],
+  "recuerda": "Pinchazo y llanto · mueca de asco · gemelo que imita la mueca · tejido cortado y tejido amenazado.",
+  "imagen_prompt": "Un científico con bata mete la mano en una caja misteriosa y salta de dolor por un pinchazo, con lágrimas y una mueca de asco. A su lado, su hermano gemelo idéntico, con las manos en los bolsillos, pone exactamente la misma mueca sin haber tocado nada. Sobre la mesa del laboratorio hay dos trozos de tejido rosado: uno ya cortado por la mitad y otro al que apunta una tijera enorme a punto de cortarlo. Laboratorio luminoso con colores intensos."
+ }
+]

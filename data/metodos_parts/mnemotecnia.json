@@ -1,0 +1,74 @@
+{
+  "mnemotecnia": {
+    "icono": "🔗",
+    "nombre": "Mnemotecnia (acrónimos, historias)",
+    "resumen": "Andamio temporal para datos duros ya comprendidos: acrónimo o acróstico siempre con escena, historia encadenada, palabra sustituta, palabras clave para fórmulas y mnemotecnogramas.",
+    "que": "\"Un atajo mental para recordar nueva información sin repetirla tantas veces\" (#143). No es una técnica para comprender, sino \"una herramienta para recordar datos que te cuestan trabajo\" (#127): \"como las ruedecitas de la bici, un andamio\" (#168). Se elige la técnica según el dato: acrónimo o acróstico para listas cortas, historia encadenada para secuencias, palabra sustituta para términos raros, rimas, palabras clave para fórmulas y mnemotecnogramas (un muñeco con un ícono por signo) para síndromes y pares craneales.",
+    "como_funciona": "Funciona por asociación: conectar lo nuevo con algo que ya conoces \"de forma ridícula\" (Harry Lorayne, #143). El acrónimo funciona por fragmentación: se recuerda un bloque y el cerebro reconstruye el resto (#139), y alivia la memoria de trabajo, que sostiene unos 7 datos (#140). La versión solo verbal es la peor calificada (\"muy mala\", no perdura); la visual es \"regular\" y con práctica pasa a utilidad alta (#127). Por eso toda sigla va con su escena y se repasa con recuerdo activo y espaciado.",
+    "pasos": [
+      "Comprender primero: si no puedes explicarlo con tus palabras, no lo memorices (\"no seas gorila\") (#143, #137).",
+      "Seleccionar las piezas: contar el número exacto, comprender cada una y quitar las palabras que se repiten en todas (#137).",
+      "Crear una imagen por pieza con la palabra sustituta (reglas del cerebro, corazón, espejo y lengua) (#137).",
+      "Elegir la técnica según el dato: acróstico para 3-7 piezas, historia para una secuencia, palabras clave para fórmulas, mnemotecnograma para signos de un síndrome (#139, #168).",
+      "Acrónimo: tomar iniciales, sílabas o letras clave y formar una palabra o frase divertida; si no sale palabra, pasar a frase o a sílabas (#139).",
+      "Agregarle una imagen ligada al significado: la sigla sola no se recuerda (#139, #127).",
+      "Historia: unir cada imagen con la siguiente con un verbo de acción y una emoción exagerada, siempre hacia adelante y vivida en primera persona (#137, #196).",
+      "Fórmula: entender su porqué y luego una imagen por término en una escena que reproduzca la operación (#095, #139).",
+      "Mnemotecnograma: dibujar rápido un muñeco con pocos íconos, uno por signo, usando siempre el mismo ícono para el mismo dato (manómetro = HTA) (#168).",
+      "Repasar reconstruyendo: enumerar los datos en orden (y al revés) o redibujar el muñeco en hoja en blanco al día siguiente y a la semana (#196, #168)."
+    ],
+    "cuando": [
+      "Información pura o abstracta (datos duros): lo que no se deduce con lógica y se olvida fácil (#137).",
+      "Listas pequeñas de elementos relacionados: síntomas, causas (\"si sube, piensa en…\"), componentes, pasos (#139).",
+      "Signos y síntomas de un síndrome (Cushing, Addison) y pares craneales: mnemotecnograma (#168).",
+      "Componentes de una escala y su orden (Glasgow O-V-M) y fórmulas cuyos términos se confunden (PAM, IMC) (#139).",
+      "Términos difíciles (fármacos, estructuras, nombres) o datos que hay que sostener al momento en la memoria de trabajo (#139, #140).",
+      "Las ideas clave de una exposición: cada diapositiva funciona como mnemotecnia (#090)."
+    ],
+    "cuando_no": [
+      "Antes de comprender: \"jamás memorices un dato sin antes comprender\" (#143); la mecanización va después de la comprensión (#095).",
+      "Como método de estudio en sí (\"mnemotecnia mal dirigida\") o para información muy avanzada desde el principio (#180).",
+      "Lo que ya usas a diario o lo que se deduce con lógica: \"no le hace falta ninguna mnemotecnia porque asocia\" (#168, #057).",
+      "Mnemotecnias ajenas tal cual: \"no funciona hasta que la haces tú\" (#094, #168).",
+      "Listas largas en acrónimo o historia: la cadena se rompe; ahí va el palacio (#139, #148).",
+      "Cifras y rangos (sistema mayor) o definiciones literales (textos literales)."
+    ],
+    "ejemplo_video": "Mnemotecnograma del Dr. Sanagustín: en vez de repetir la lista del Cushing (obesidad, HTA, osteoporosis, hematomas, debilidad muscular…) se dibuja un muñeco con un ícono por signo; el manómetro es siempre la hipertensión y el glucómetro la glucosa (#168). Y para los metales alcalinos: \"Lina quiere robarle el corazón a Francisco\" (#140).",
+    "ejemplo_atlas": {
+      "id": "escala-de-glasgow",
+      "texto": "Acrónimo O-V-M = 4-5-6: CUATRO OJOS, CINCO VOCALES, MOTOR V6. En el lavadero, el Profe Neuro mira un reloj de vidrio (glass → Glasgow) con tres manecillas: un ojo que marca las 4, una boca que canta las 5 vocales y una mano con motor V6 que marca las 6; la esfera es una tele (15, el máximo)."
+    },
+    "errores": [
+      "Repetir \"modo gorila\" en vez de asociar: leer, releer y repetir es la peor forma de memorizar (#143, #057).",
+      "Memorizar sin comprender, o \"enamorarse de la mnemotecnia\" y gastar más tiempo creando claves que estudiando (#127, #180).",
+      "Querer usar todas las técnicas a la vez, o memorizarlo todo (#143, #148).",
+      "Acrónimos para listas largas; historias largas o que se desvían (#139, #137).",
+      "Copiar mnemotecnias de libros o de otros sin adaptarlas (#094).",
+      "Impresionarse, usarla una vez y no repasar: \"lo que no utilizas lo olvidas\" (#168).",
+      "Mirar el dibujo en vez de reconstruirlo de memoria, o saturarlo de información (#168).",
+      "Usar trucos de redes sin verificar que el dato sea correcto (#095)."
+    ],
+    "consejos": [
+      "La sigla sola no se recuerda: \"agrégale una imagen para visualizarlo\" (#139).",
+      "Tu frase puede ser distinta: la que te venga primero y te haga sentido (#139).",
+      "Involucra a propósito más de dos sentidos: pila con electricidad (litio), soda (sodio), sabor del plátano (potasio) (#140).",
+      "Exagera más: \"falta exagerar un poquito más\" es la corrección más frecuente (#196).",
+      "Mnemotecnograma: no hace falta una obra de arte; feo pero sistemático, \"al mes te sirve\" (#168).",
+      "Si la lista tiene orden (pasos, escala), respétalo; si no, reordénala para que salga una palabra. [complemento]",
+      "Practica primero con información conocida y controlable; luego sube la dificultad (#042, #180).",
+      "En el atlas, primero el dato tal como está en la fuente y debajo la mnemotecnia: nunca lo reemplaza."
+    ],
+    "combina_con": [
+      "visualizacion-imagenes",
+      "memorizar-numeros",
+      "palacio-memoria",
+      "memorizar-listas",
+      "memorizar-conceptos",
+      "memorizar-textos-literal",
+      "recuerdo-activo",
+      "repeticion-espaciada"
+    ],
+    "fuentes": "#139, #143, #137, #168, #127, #140, #196, #090, #187, #134, #148, #067, #132, #042, #043, #057, #019, #124, #073, #071, #094, #095, #126, #173, #180, #204, #068, #128, #136, #185, #189, #190, #195, #083, #085, #099, #100, #105, #108, #116, #131, #157, #167, #186, #209, #214",
+    "version_skill": "2"
+  }
+}

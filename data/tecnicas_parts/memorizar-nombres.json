@@ -1,0 +1,75 @@
+[
+  {
+    "id": "nom-ramon-ramo",
+    "metodo": "memorizar-nombres",
+    "tecnica": "Mnemotecnia visual: sustituta + rasgo",
+    "titulo": "Ramón y su copete lleno de rosas",
+    "origen": "video",
+    "fuente": "#124",
+    "dato": "Recordar el nombre de una persona nueva: Ramón.",
+    "como": "Se presta atención total, se pregunta \"¿a qué me suena?\" (Ramón → ramo de rosas) y se busca el rasgo más llamativo de su figura: el copete. Las dos cosas se pegan con detalles: el copete está lleno de rosas con espinas. Al volver a verlo se decodifica: copete → rosas → ramo → Ramón.",
+    "pasos": [
+      "Escucha el nombre al 100 % y repítelo en tu mente.",
+      "Pregúntate a qué te suena o con qué rima.",
+      "Elige el rasgo más llamativo de la persona.",
+      "Pega la imagen al rasgo con muchos detalles y algo gracioso.",
+      "Al verla de nuevo, ve del rasgo a la imagen y de ahí al nombre."
+    ],
+    "recuerda": "Copete → rosas → ramo → Ramón.",
+    "imagen_prompt": "Retrato de un hombre joven y simpático con un copete enorme y alto peinado hacia arriba. Su copete es un frondoso ramo de rosas rojas con tallos verdes y espinas que brotan en todas direcciones, con algunos pétalos cayendo sobre sus hombros. Él sonríe orgulloso mientras una abeja curiosa se acerca a oler las flores. Fondo sencillo de una reunión con otras personas desenfocadas."
+  },
+  {
+    "id": "nom-alejandra-salamandra",
+    "metodo": "memorizar-nombres",
+    "tecnica": "Rima + cinco sentidos",
+    "titulo": "Alejandra, la salamandra que se siente al saludar",
+    "origen": "video",
+    "fuente": "#140, #157, #209",
+    "dato": "Recordar el nombre Alejandra usando varios sentidos a la vez.",
+    "como": "Alejandra rima con salamandra. Se imagina que toda su cara es una salamandra bañada en agua y, al darle la mano, se siente la piel áspera del animal: oído (el nombre), vista (la salamandra) y tacto (el saludo). En la versión de Jim Kwik la salamandra va pegada a su sonrisa, lo más llamativo. Cada sentido extra es un camino alternativo para recordar.",
+    "pasos": [
+      "Busca una palabra que rime con el nombre.",
+      "Pégala a la cara o al rasgo más llamativo (la sonrisa).",
+      "Agrega al menos dos sentidos más: tono de voz, aroma, textura del saludo.",
+      "Fíjate en 4 detalles de la persona y repásalos al despedirte."
+    ],
+    "recuerda": "Cara mojada de salamandra y mano áspera → salamandra → Alejandra.",
+    "imagen_prompt": "Una mujer joven estrecha la mano de otra persona en una reunión. Su rostro se transforma en el de una salamandra brillante, naranja con manchas negras, cubierta de gotas de agua que escurren por su cuello. Su sonrisa es la boca ancha de la salamandra. La mano que saluda tiene la piel rugosa y húmeda del anfibio y la otra persona hace un gesto de sorpresa al sentir la textura. Alrededor, pequeñas salpicaduras de agua."
+  },
+  {
+    "id": "nom-murphy-robocop",
+    "metodo": "memorizar-nombres",
+    "tecnica": "Persona conocida + rasgo = el signo",
+    "titulo": "Signo de Murphy: el policía robot que corta el aire",
+    "origen": "aplicacion",
+    "fuente": "#124",
+    "dato": "Signo de Murphy: al palpar profundamente el punto cístico (bajo el reborde costal derecho, en el borde externo del recto) el paciente detiene bruscamente la inspiración por dolor. Sugiere colecistitis aguda.",
+    "como": "Técnica de la persona conocida: Murphy = Alex Murphy, el policía robot del cine. El rasgo llamativo no es su cara sino el hallazgo: la inspiración que se corta. El policía robot mete su mano de acero bajo las costillas derechas, pide \"respire hondo\" y el paciente se congela a mitad de inspirar mientras la vesícula, verde e inflamada, echa humo.",
+    "pasos": [
+      "Busca a alguien famoso con ese apellido.",
+      "Haz que esa persona ejecute el signo sobre el paciente.",
+      "Exagera el hallazgo (la respiración congelada) y agrega sonido y olor.",
+      "Pregúntate en los dos sentidos: nombre → hallazgo y hallazgo → nombre."
+    ],
+    "recuerda": "Mano de acero bajo la costilla derecha → se corta el aire → Murphy → vesícula.",
+    "imagen_prompt": "Sala de urgencias. Un policía robot de armadura plateada y visor oscuro se inclina sobre un paciente acostado en una camilla y hunde su mano metálica bajo las costillas del lado derecho del abdomen. El paciente está congelado con la boca abierta a mitad de una inhalación, los ojos muy abiertos y el pecho inflado a medias, como en pausa. Bajo la mano del robot asoma una vesícula verde, hinchada, que echa humo. Chispas y vapor alrededor."
+  },
+  {
+    "id": "nom-giordano-jordan",
+    "metodo": "memorizar-nombres",
+    "tecnica": "Sustituta por sonido + rasgo = la maniobra",
+    "titulo": "Maniobra de Giordano: el basquetbolista que bota su puño",
+    "origen": "aplicacion",
+    "fuente": "#124, #137",
+    "dato": "Maniobra de Giordano: percutir con el puño (o el borde cubital de la mano) la fosa lumbar o el ángulo costovertebral. Es positiva si provoca dolor; orienta a patología renal como pielonefritis o litiasis.",
+    "como": "Regla de la lengua (¿a qué suena?): Giordano → Jordan, el basquetbolista. La escena es la propia maniobra: en lugar del balón, bota su puño contra la espalda baja del paciente, ¡pum, pum!, y en cada bote el riñón, con forma de frijol rojo, salta y grita; de él sale una piedrita que rebota como balón.",
+    "pasos": [
+      "Di el epónimo en voz alta y busca a qué te suena.",
+      "Convierte el rasgo en la técnica de la maniobra (golpe con el puño en la fosa lumbar).",
+      "Agrega el resultado positivo (dolor) y lo que indica (riñón, piedra).",
+      "Repasa desde el hallazgo: dolor al percutir el ángulo costovertebral → ¿nombre?"
+    ],
+    "recuerda": "Puño que bota en la espalda baja → riñón que grita → Jordan → Giordano.",
+    "imagen_prompt": "Un basquetbolista alto con camiseta roja y muñequeras está detrás de un paciente sentado en el borde de una camilla. En lugar de un balón, bota su puño cerrado contra la parte baja de la espalda del paciente con un movimiento de dribleo, dejando ondas de impacto. Dentro de la espalda se ve un riñón rojo con forma de frijol que salta y grita con la boca abierta, y una piedrita gris sale rebotando por el suelo como un balón."
+  }
+]

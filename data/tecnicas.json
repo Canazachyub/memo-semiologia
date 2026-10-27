@@ -1,0 +1,827 @@
+{
+ "lista": [
+  {
+   "id": "num-telefono-pares",
+   "metodo": "memorizar-numeros",
+   "tecnica": "Sistema mayor en pares + historia",
+   "titulo": "Un teléfono de 10 dígitos en cinco imágenes",
+   "origen": "video",
+   "fuente": "#189",
+   "dato": "Teléfono 12 32 59 42 81.",
+   "como": "El número se parte en pares y cada par se convierte en palabra con sus consonantes: 12 T-N = tina, 32 M-N = mono, 59 L-P = lupa, 42 R-N = rana, 81 F-T = foto. Las cinco imágenes se encadenan en una historia que siempre avanza: en una tina se baña un mono que saca una lupa, ve una rana en el fondo y se toman una foto.",
+   "pasos": [
+    "Aprende la tabla 0–9 del sistema mayor hasta que salga sola.",
+    "Parte el número en pares.",
+    "Convierte cada par en su palabra fija de la tabla 00–99.",
+    "Únelas en una historia absurda con acción, en orden.",
+    "Repasa la historia y decodifica cada imagen a sus dígitos."
+   ],
+   "recuerda": "Tina-mono-lupa-rana-foto = 12 32 59 42 81.",
+   "imagen_prompt": "Un baño luminoso con una tina blanca llena de espuma. Dentro se baña un mono muy contento que sostiene una lupa gigante frente a su ojo, agrandándolo de forma cómica. A través de la lupa descubre una rana verde sentada en el fondo de la tina, sorprendida. El mono abraza a la rana y con la otra mano levanta una cámara instantánea para tomarse una foto juntos; el flash ilumina toda la escena y salpica agua por todas partes."
+  },
+  {
+   "id": "num-dragon-ball-fecha",
+   "metodo": "memorizar-numeros",
+   "tecnica": "Fecha: día y año con sistema mayor, mes con imagen",
+   "titulo": "Estreno de Dragon Ball Z: 26/04/89",
+   "origen": "video",
+   "fuente": "#143, #139, #148",
+   "dato": "Dragon Ball Z se estrenó el 26 de abril de 1989.",
+   "como": "El día 26 (N-CH) es nacho; el mes no se codifica: abril = una puerta que se abre; el 19 del año se deduce y el 89 (F-B) es un agente del FBI. Historia: hay unos nachos en una puerta y entra el FBI. Para volverla más memorable se agrega al guerrero de la serie lanzando su ataque de energía.",
+   "pasos": [
+    "Quita lo deducible: el 19 del año no se memoriza.",
+    "Convierte el día y los dos últimos dígitos del año con tu tabla.",
+    "Representa el mes con una imagen fija (abril = abrir la puerta).",
+    "Une las tres imágenes en una escena y agrégale algo del tema que estás memorizando."
+   ],
+   "recuerda": "Nachos (26) en la puerta (abril) y entra el FBI (89) = 26/04/1989.",
+   "imagen_prompt": "Una puerta de madera de una casa cubierta por completo de nachos crujientes con queso derretido que gotea. La puerta se abre de golpe y entra un agente federal de traje oscuro, gafas negras y placa dorada, apuntando con una linterna, sorprendido por los nachos. Detrás de él, un guerrero de anime musculoso con traje naranja lanza una enorme bola de energía azul brillante que ilumina el pasillo y hace volar los nachos por el aire."
+  },
+  {
+   "id": "num-fc-choza-tazas",
+   "metodo": "memorizar-numeros",
+   "tecnica": "Rango con umbrales",
+   "titulo": "Frecuencia cardiaca del adulto: la choza con techo de tazas",
+   "origen": "aplicacion",
+   "fuente": "#189, #139",
+   "dato": "FC normal del adulto en reposo: 60–100 lpm. Más de 100 = taquicardia; menos de 60 = bradicardia.",
+   "como": "60 = CH-Z → choza y 100 = T-Z-S → tazas (palabras fijas de la tabla). El rango va de menor a mayor: abajo la choza, arriba el techo de tazas. El umbral se vuelve movimiento: si el corazón sube por encima de las tazas, las rompe y sale corriendo (taquicardia); si baja al piso de la choza, un perezoso lo frena (bradicardia, Bradypus).",
+   "pasos": [
+    "Codifica el límite inferior y el superior con tu tabla 00–99.",
+    "Coloca la imagen menor abajo y la mayor arriba.",
+    "Haz que el parámetro (un corazón) viva entre las dos imágenes.",
+    "Convierte cada umbral en una acción con el significado clínico.",
+    "Pregúntate: ¿cómo se llama una FC menor de 60?"
+   ],
+   "recuerda": "Corazón en la choza (60) con techo de tazas (100): arriba corre, abajo se arrastra.",
+   "imagen_prompt": "Una choza de paja pequeña con un techo hecho de tazas de porcelana apiladas en una torre. Dentro vive un corazón rojo con piernas y guantes de boxeo. En una mitad de la escena el corazón, emocionado y sudando, salta tan alto que rompe las tazas del techo y salen volando pedazos mientras corre a toda velocidad. En la otra mitad, el mismo corazón está en el suelo de la choza con un perezoso abrazado a su espalda que lo hace arrastrarse lentamente."
+  },
+  {
+   "id": "num-ph-miel-rulo",
+   "metodo": "memorizar-numeros",
+   "tecnica": "Decimales con dígito deducido",
+   "titulo": "pH arterial: la balanza de miel y rulos",
+   "origen": "aplicacion",
+   "fuente": "#148, #139, #189",
+   "dato": "pH arterial normal: 7,35–7,45. Menos de 7,35 = acidemia; más de 7,45 = alcalemia.",
+   "como": "El 7 se deduce, porque todo pH compatible con la vida empieza en 7,xx (como el 19 de 1989); solo se codifican 35 (M-L) = miel y 45 (R-L) = rulo. Una balanza sostiene la miel a la izquierda (límite bajo) y una señora con rulos a la derecha (límite alto). Si la aguja cae por debajo de la miel, un limón escupe ácido; si sube por encima de los rulos, la señora resbala en jabón (alcalino).",
+   "pasos": [
+    "Quita la parte que se deduce (el 7 y la coma).",
+    "Codifica solo los decimales: 35 y 45.",
+    "Pon la imagen menor a la izquierda y la mayor a la derecha de una balanza.",
+    "Asocia lo ácido a lo que cae y lo alcalino a lo que sube.",
+    "Reutiliza las mismas palabras si otro parámetro comparte cifras (PaCO₂ 35–45)."
+   ],
+   "recuerda": "Miel (35) y rulo (45) en la balanza = pH 7,35–7,45.",
+   "imagen_prompt": "Una gran balanza de laboratorio de bronce en un laboratorio blanco. En el platillo izquierdo, un frasco de miel dorada que burbujea; en el derecho, una señora sonriente con la cabeza llena de rulos rosados. La aguja tiembla en el centro. Debajo del platillo de la miel, un limón gigante con cara enojada escupe un chorro de jugo ácido; sobre el lado de los rulos, la señora resbala sobre una pastilla de jabón que hace muchas burbujas."
+  },
+  {
+   "id": "pal-casa-35",
+   "metodo": "palacio-memoria",
+   "tecnica": "Palacio desde cero en papel",
+   "titulo": "Una casa de 7 habitaciones × 5 lugares = 35 ubicaciones",
+   "origen": "video",
+   "fuente": "#191",
+   "dato": "10 alimentos para el cerebro en orden: brócoli, aguacate, nueces, almendras, espinaca, salmón, arándanos, té verde, chocolate negro y aceite de coco.",
+   "como": "Se traza el primer piso de la casa, se numeran las habitaciones en sentido horario (comedor, sala, habitación 1, habitación 2, bodega, baño, cocina) y en cada una se marcan 4 esquinas + centro, de 5 en 5. Después de repasarlo vacío, cada alimento actúa sobre su mueble: del cuadro salen volando brócolis, el piano tiene aguacates por teclas, le avientas nueces al ventilador, muerdes el escritorio de almendras, en la mesa se sientan hojas de espinaca bien portadas.",
+   "pasos": [
+    "Dibuja el contorno de un piso, numera las habitaciones en el orden en que las recorrerías y marca las puertas.",
+    "En cada habitación elige las 4 esquinas y el centro (lo más cercano si no hay mueble) y numéralas de 5 en 5.",
+    "Repasa el palacio vacío: primero por escrito tapando el dibujo, luego en voz alta, adelante y atrás.",
+    "Coloca el dato 1 en la ubicación 1, el 2 en la 2…, con una imagen exagerada en la que tú participas.",
+    "Repasa de la 1 a la 10 y de la 10 a la 1."
+   ],
+   "recuerda": "Cuadro-brócoli, piano-aguacate, ventilador-nueces, escritorio-almendras, mesa-espinaca, buró-salmón, librero-arándanos, mueble-té verde, tele-chocolate, escritorio-coco.",
+   "imagen_prompt": "Comedor y sala de una casa vistos desde arriba en diagonal, como una maqueta abierta. De un cuadro en la pared salen volando brócolis con caritas felices; un piano tiene aguacates partidos en lugar de teclas y un estudiante los presiona con fuerza; un ventilador de techo tritura nueces que le lanzan y suelta lluvia de trocitos; el mismo estudiante muerde un escritorio hecho de almendras; sobre la mesa del comedor, hojas de espinaca sentadas muy derechas como invitados educados. Al fondo, un salmón enorme salta sobre un buró."
+  },
+  {
+   "id": "pal-cuerpo-10",
+   "metodo": "palacio-memoria",
+   "tecnica": "Palacio corporal",
+   "titulo": "10 hábitos para la memoria de los pies a la cabeza",
+   "origen": "video",
+   "fuente": "#214, #196",
+   "dato": "10 hábitos: ejercicio, sueño adecuado, nutrir el cerebro, relajar la mente, aprender algo nuevo cada día, relaciones positivas, buen humor, respiración profunda, eliminar pensamientos negativos y enseñar lo que sabes.",
+   "como": "Tu cuerpo es un palacio que siempre llevas contigo. Se recorre de los pies a la cabeza (pies, rodillas, cintura, estómago, brazos, hombros, boca, nariz, ojos, cabeza) y en cada parte va una imagen literal o simbólica ligada al significado: tenis que se mueven solos = ejercicio; láseres de cíclope en los ojos = eliminar pensamientos negativos.",
+   "pasos": [
+    "Fija la ruta del cuerpo de los pies a la cabeza y señala cada parte en voz alta.",
+    "Pon en cada parte una imagen ligada al significado del concepto.",
+    "Exagera cada escena hasta que te dé risa o sorpresa.",
+    "Pregúntate parte por parte \"¿qué había en los pies?\" y responde antes de mirar."
+   ],
+   "recuerda": "Pies-tenis, rodillas-almohada, cintura-cinturón de vitaminas, estómago-monje, brazos-espadas, hombros-amigos, boca-carcajada, nariz-aire, ojos-láseres, cabeza-tú enseñando.",
+   "imagen_prompt": "Un estudiante de pie, de cuerpo entero, convertido en un mapa de escenas absurdas de abajo arriba: en sus pies unos tenis que corren solos tirando de él; en sus rodillas una almohada esponjosa; en la cintura un cinturón lleno de frascos de vitaminas y frutas; sobre el estómago un pequeño monje medita; en los brazos dos espadas brillantes; en los hombros sus mejores amigos sentados y riendo; la boca suelta una carcajada enorme; la nariz aspira un remolino de aire; de los ojos salen rayos láser rojos que deshacen nubes grises; en la cabeza, una versión diminuta de él da clase frente a un pizarrón."
+  },
+  {
+   "id": "pal-signos-vitales-sala",
+   "metodo": "palacio-memoria",
+   "tecnica": "Palacio temático con sistema mayor",
+   "titulo": "Signos vitales del adulto en la sala de tu casa",
+   "origen": "aplicacion",
+   "fuente": "#195, #132, #189",
+   "dato": "FC 60–100 lpm · FR 12–20 rpm · PA normal < 120/80 mmHg · fiebre ≥ 38 °C.",
+   "como": "Un parámetro por estación, recorrido en sentido horario. Cada cifra es su palabra fija del sistema mayor (60 choza, 100 tazas, 12 tina, 20 NASA, 120 tunas, 80 vaso, 38 mafia) y en la PA se usa el pilar: arriba la sistólica, abajo la diastólica, como se escribe. La acción de cada imagen es el significado clínico: lo que rebasa el límite se acelera o explota.",
+   "pasos": [
+    "Elige la sala (5 estaciones) y asigna puerta = FC, ventana = FR, sofá = PA, televisor = temperatura.",
+    "Codifica cada cifra con tu tabla 00–99, siempre con la misma palabra.",
+    "En la puerta, una choza con techo de tazas; en la ventana, una tina que respira y despega como cohete de la NASA.",
+    "En el sofá, tunas en el respaldo y un vaso en el cojín; en el televisor, la mafia sudando con termómetro hirviendo.",
+    "Pregúntate en desorden: \"¿qué hay en la estación 3?\"."
+   ],
+   "recuerda": "Puerta choza-tazas (FC 60–100), ventana tina-NASA (FR 12–20), sofá tunas/vaso (PA < 120/80), tele mafia (fiebre ≥ 38).",
+   "imagen_prompt": "Sala de una casa familiar en perspectiva, recorrida como un circuito. En la puerta de entrada cuelga una pequeña choza de paja que late como un corazón, con una torre de tazas tambaleándose en su techo. En la ventana, una tina de baño se infla y desinfla respirando y empieza a despegar como un cohete espacial rompiendo el vidrio. En el sofá, el respaldo está cubierto de tunas que chorrean jugo apretadas por un manguito de presión y en el cojín un vaso se llena con ese jugo. Del televisor salen mafiosos de traje sudando con un termómetro humeante en la boca."
+  },
+  {
+   "id": "pal-glasgow-pilar",
+   "metodo": "palacio-memoria",
+   "tecnica": "Pilar de información",
+   "titulo": "Escala de Glasgow en tres muebles de emergencia",
+   "origen": "aplicacion",
+   "fuente": "#132, #195",
+   "dato": "Glasgow: ocular 1–4 (espontánea, a la voz, al dolor, ninguna), verbal 1–5 (orientado, confuso, palabras inapropiadas, sonidos incomprensibles, ninguna), motora 1–6 (obedece, localiza, retira, flexión anormal, extensión, ninguna). Total 3–15.",
+   "como": "Cada componente ocupa una ubicación y sus puntajes son los niveles del pilar: el número de niveles es el puntaje máximo y el nivel de más arriba vale más. Ventana con 4 niveles (ocular), librero con 5 estantes (verbal) y cajonera con 6 cajones (motora).",
+   "pasos": [
+    "Elige tres muebles de la sala de emergencia que conozcas: ventana, librero y cajonera.",
+    "Divide cada mueble en tantos niveles como el puntaje máximo del componente.",
+    "Pon arriba la mejor respuesta y abajo la ausencia de respuesta.",
+    "Pregúntate por niveles salteados: \"¿qué hay en el tercer cajón desde abajo?\" → flexión anormal, M3."
+   ],
+   "recuerda": "Ventana de 4 niveles (ojos), librero de 5 estantes (voz), cajonera de 6 cajones (movimiento); total de 3 a 15.",
+   "imagen_prompt": "Sala de emergencia de un hospital con tres muebles en fila. Una ventana dividida en cuatro franjas: arriba unos ojos enormes se abren solos, debajo unos ojos se abren cuando alguien grita, más abajo unos ojos se abren porque los pellizcan, y en la franja inferior ojos pintados de negro cerrados. Al lado, un librero de cinco estantes con libros que tienen boca: el de arriba habla tranquilo, los de abajo balbucean, gimen y el último está sellado con cinta. Una cajonera de seis cajones: del de arriba sale una mano que saluda obediente; en los de abajo, brazos rígidos doblados o estirados; el último cajón vacío."
+  },
+  {
+   "id": "mne-alicia-dolor",
+   "metodo": "mnemotecnia",
+   "tecnica": "Acrónimo con imagen",
+   "titulo": "ALICIA: los 6 puntos para evaluar un dolor",
+   "origen": "video",
+   "fuente": "#143",
+   "dato": "Semiología del dolor: Aparición, Localización, Irradiación, Características, Intensidad y Agravantes.",
+   "como": "Las iniciales de los seis puntos forman ALICIA, y el acrónimo funciona como anzuelo: recuerdas un solo bloque y el cerebro reconstruye el resto. La sigla sola no basta, así que se vuelve escena: \"Alicia te hace un estudio del dolor\", con cada punto convertido en un objeto que ella usa.",
+   "pasos": [
+    "Comprende qué se pregunta en cada punto del dolor antes de memorizar.",
+    "Toma la inicial de cada punto en el orden de la exploración: A-L-I-C-I-A.",
+    "Imagina a Alicia vestida de doctora examinando a un paciente con dolor.",
+    "Dale un objeto a cada letra: reloj (aparición), lupa sobre el punto (localización), rayo que se extiende (irradiación), termómetro de dolor (intensidad).",
+    "Repasa diciendo los seis puntos solo a partir de la imagen de Alicia."
+   ],
+   "recuerda": "Aparición, Localización, Irradiación, Características, Intensidad, Agravantes.",
+   "imagen_prompt": "Una niña rubia con vestido azul de cuento, bata blanca y estetoscopio, examina con una lupa gigante a un paciente que se sujeta el abdomen con cara de dolor. Desde el punto que señala la lupa nace un rayo rojo brillante que se extiende hacia la espalda del paciente. De su bolsillo cuelga un reloj de bolsillo antiguo que oscila, y en la otra mano sostiene un termómetro enorme cuyo líquido rojo sube hasta arriba. Junto al paciente, un yunque pesado aplasta una almohada para mostrar que algo empeora el dolor. Consultorio de colores vivos."
+  },
+  {
+   "id": "mne-metales-alcalinos",
+   "metodo": "mnemotecnia",
+   "tecnica": "Acróstico + sustitutas con varios sentidos",
+   "titulo": "Lina quiere robarle el corazón a Francisco",
+   "origen": "video",
+   "fuente": "#140",
+   "dato": "Metales alcalinos, en orden: litio (Li), sodio (Na), potasio (K), rubidio (Rb), cesio (Cs) y francio (Fr).",
+   "como": "Para sostener la lista en la memoria de trabajo sin repetirla \"como gorila\", el video da dos caminos. El rápido es el acróstico \"Lina quiere robarle el corazón a Francisco\" (Li-Na, K = quiere, Rb, Cs, Fr). El sólido son las palabras sustitutas con más de dos sentidos: una pila que da toques (litio), una soda (sodio), el sabor del plátano (potasio), alguien rubio (rubidio), unos sesos (cesio) y un francés (francio).",
+   "pasos": [
+    "Toma los símbolos en orden: Li, Na, K, Rb, Cs, Fr.",
+    "Arma una frase cuyas palabras empiecen o suenen como cada símbolo: Lina, quiere, robarle, corazón, Francisco.",
+    "Para fijarlo mejor, convierte cada metal en un objeto que se vea, se pruebe o se toque.",
+    "Une las dos versiones en una escena: Lina usa los objetos para conquistar a Francisco.",
+    "Comprueba que de la frase salen los seis metales en orden."
+   ],
+   "recuerda": "Litio, sodio, potasio, rubidio, cesio, francio.",
+   "imagen_prompt": "Una chica traviesa de puntillas intenta sacar del pecho de un elegante caballero francés con boina, bigote y baguette un corazón rojo brillante que late. Para distraerlo, ella le ofrece una lata de soda burbujeante y un plátano pelado, mientras en su otra mano chisporrotea una pila eléctrica que lanza rayos azules. Detrás de ella espera un amigo de pelo rubio muy brillante que sostiene un cerebro de gelatina rosada que tiembla. Escena en una plaza de París con colores intensos."
+  },
+  {
+   "id": "mne-cushing-mnemotecnograma",
+   "metodo": "mnemotecnia",
+   "tecnica": "Mnemotecnograma",
+   "titulo": "El muñeco luna del síndrome de Cushing",
+   "origen": "aplicacion",
+   "fuente": "#168, #139",
+   "dato": "Síndrome de Cushing (exceso crónico de glucocorticoides): obesidad central con cara de luna llena y giba dorsal, extremidades delgadas, estrías rojo-vinosas anchas, hipertensión arterial, hiperglucemia o diabetes, osteoporosis, hematomas fáciles, debilidad muscular proximal, hirsutismo y alteraciones psiquiátricas.",
+   "como": "En vez de repetir la lista, se dibuja un muñeco con un ícono por signo, como hace el Dr. Sanagustín (#168). Los íconos son fijos: el manómetro es siempre hipertensión y el glucómetro, glucosa, en este y en cualquier otro dibujo del atlas. Antes hay que poder explicar por qué el cortisol produce cada signo; el muñeco solo sostiene la lista.",
+   "pasos": [
+    "Entiende primero qué hace el exceso de cortisol (grasa central, catabolismo de proteína y hueso, sube la glucosa).",
+    "Dibuja rápido un muñeco con cuerpo redondo, cara de luna, joroba y brazos y piernas de palillo.",
+    "Pega un ícono por signo: rayas moradas, manómetro, glucómetro, bastón, moretones, vello, nube gris.",
+    "No lo satures: si la lista crece, haz un segundo dibujo.",
+    "Al día siguiente y a la semana, redibújalo de memoria en hoja en blanco y compáralo con el original."
+   ],
+   "recuerda": "Cara de luna, giba, obesidad central con extremidades delgadas, estrías violáceas, HTA, hiperglucemia, osteoporosis, hematomas, debilidad proximal, hirsutismo, cambios del ánimo.",
+   "imagen_prompt": "Dibujo mnemotécnico simple: una figura humana con íconos pegados en partes del cuerpo. El tronco es redondo como una pelota y la cara es una luna llena sonriente; en la nuca lleva una joroba como la de un búfalo; brazos y piernas son delgados como palillos. Sobre la barriga hay rayas moradas anchas. Del brazo cuelga un manómetro con la aguja al máximo y una mano sostiene un glucómetro que destella. Se apoya en un bastón, tiene moretones azules en los brazos, vello en las mejillas y una pequeña nube gris de lluvia sobre la cabeza. Intenta subir un escalón y las piernas le tiemblan."
+  },
+  {
+   "id": "mne-taquicardia-hipopotamos",
+   "metodo": "mnemotecnia",
+   "tecnica": "Acróstico + historia",
+   "titulo": "Si el corazón corre: tres hipopótamos anémicos, dolidos y febriles",
+   "origen": "aplicacion",
+   "fuente": "#139, #137",
+   "dato": "Causas frecuentes de taquicardia sinusal (FC > 100 lpm en reposo): fiebre, anemia, hipovolemia, hipoxemia, hipertiroidismo, dolor o ansiedad. La lista no es exhaustiva (también fármacos, ejercicio, embarazo).",
+   "como": "Es una lista corta sin orden obligatorio, así que va en acróstico: \"Tres Hipopótamos Anémicos, Dolidos y Febriles\" = 3 H (hipovolemia, hipoxemia, hipertiroidismo) + anemia + dolor/ansiedad + fiebre. La escena muestra el efecto clínico: los hipopótamos corren con el corazón desbocado, y cada uno lleva la señal de su causa.",
+   "pasos": [
+    "Entiende por qué cada causa acelera el corazón (compensar volumen, oxígeno o metabolismo, o descarga simpática).",
+    "Agrupa las que empiezan igual: las tres H.",
+    "Forma la frase con las iniciales restantes: anémicos, dolidos, febriles.",
+    "Dale a cada hipopótamo una señal visible de su causa y ponlos a correr.",
+    "Practica con el caso: \"FC 120 en reposo, ¿qué buscas?\" y responde desde la escena."
+   ],
+   "recuerda": "Hipovolemia, hipoxemia, hipertiroidismo, anemia, dolor/ansiedad y fiebre.",
+   "imagen_prompt": "Tres hipopótamos muy pálidos corren a toda velocidad por la sabana, cada uno con un corazón rojo que salta fuera del pecho. El primero va desinflado y arrugado como un globo vacío; el segundo carga a la espalda una bombona de oxígeno vacía y jadea con la lengua afuera; el tercero lleva un moño gigante en forma de mariposa en el cuello y suda a chorros. Los tres llevan termómetros humeantes en la boca y lloran porque tienen espinas clavadas en las patas. Líneas de velocidad y polvo detrás de ellos."
+  },
+  {
+   "id": "vis-alejandra-salamandra",
+   "metodo": "visualizacion-imagenes",
+   "tecnica": "Imagen con más de dos sentidos",
+   "titulo": "Alejandra = salamandra mojada y áspera",
+   "origen": "video",
+   "fuente": "#140",
+   "dato": "El nombre de una persona que acabas de conocer: Alejandra.",
+   "como": "El nombre se convierte en algo que suena parecido (salamandra) y se pega a la cara de la persona. Se involucran a propósito tres sentidos: oyes el nombre, ves su cara convertida en una salamandra bañada en agua y, al darle la mano, sientes la piel áspera del animal. \"Si involucras más de dos sentidos lo recordarás mucho más fácil\".",
+   "pasos": [
+    "Escucha el nombre con atención total.",
+    "Busca a qué suena o con qué rima: Alejandra → salamandra.",
+    "Pega la imagen a la cara de la persona: toda su cara es una salamandra mojada.",
+    "Agrega otro sentido al saludarla: la mano áspera y fría.",
+    "Al volver a verla, deja que la cara te devuelva la salamandra y el nombre."
+   ],
+   "recuerda": "Alejandra.",
+   "imagen_prompt": "Una joven sonriente con vestido de oficina estrecha la mano de quien la mira, pero toda su cabeza es una salamandra naranja con manchas negras, brillante y empapada, con gotas de agua cayendo de su piel. La mano que extiende tiene textura rugosa de reptil y al apretarla salpica agua. Se ve en primer plano la mano del observador que siente la piel áspera, con pequeñas líneas de vibración. Fondo de una sala de reuniones luminosa con colores intensos."
+  },
+  {
+   "id": "vis-supraespinoso",
+   "metodo": "visualizacion-imagenes",
+   "tecnica": "Asociación memorable (forma + sonido + acción)",
+   "titulo": "Supraespinoso: la súper espina que sale de la espátula y vuela al humo",
+   "origen": "video",
+   "fuente": "#043",
+   "dato": "Músculo supraespinoso: forma alargada, origen en la escápula, inserción en el húmero, y su acción sobre el brazo.",
+   "como": "Se divide el dato en partes y cada parte se vuelve una imagen que suena o se parece: \"supraespinoso\" es una súper espina gigante (la forma), la escápula es una espátula de la que sale la espina y el húmero es humo hacia donde llega. La acción se representa como volar: cuando se activa la súper espina, el brazo se eleva. Las imágenes se unen con acciones que reflejan el significado.",
+   "pasos": [
+    "Divide el dato: nombre, origen, inserción y acción.",
+    "Convierte cada parte en imagen por forma o sonido: súper espina, espátula, humo.",
+    "Únelas con una acción que muestre la función: la espina sale de la espátula, llega al humo y el brazo vuela.",
+    "Prueba de calidad: desde la imagen di de dónde sale, a dónde llega y qué hace."
+   ],
+   "recuerda": "Supraespinoso: origen en la escápula, inserción en el húmero, eleva el brazo.",
+   "imagen_prompt": "Una espátula de cocina gigante y plateada, clavada en el suelo, de la que brota una espina verde enorme y musculosa, con capa de superhéroe. La espina se estira y se engancha a una columna de humo gris que sube desde el brazo de un hombre sorprendido. Al tensarse la espina, el brazo del hombre se levanta hacia un lado y despega del suelo como si volara, con líneas de movimiento y plumas alrededor. Cielo azul intenso detrás."
+  },
+  {
+   "id": "vis-pares-craneales-cara",
+   "metodo": "visualizacion-imagenes",
+   "tecnica": "Mnemotecnograma",
+   "titulo": "Los 12 pares craneales dibujados en una cara",
+   "origen": "aplicacion",
+   "fuente": "#168, #139",
+   "dato": "Pares craneales: I olfatorio (olfato), II óptico (visión), III motor ocular común (mueve el ojo, eleva el párpado, contrae la pupila), IV troclear (oblicuo superior), V trigémino (sensibilidad de la cara y masticación), VI motor ocular externo o abducens (lleva el ojo hacia afuera), VII facial (mímica facial), VIII vestibulococlear (audición y equilibrio), IX glosofaríngeo (gusto del tercio posterior de la lengua, deglución), X vago (vísceras de tórax y abdomen), XI accesorio (esternocleidomastoideo y trapecio), XII hipogloso (motor de la lengua).",
+   "como": "Siguiendo al Dr. Sanagustín, cada par es un ícono dibujado dentro de una cara, en la zona donde actúa: el olfatorio es un triangulito en la nariz y el óptico son dos ojos, por el número 2 (los dos del video). Los demás se arman igual, por sonido y función: un motor que mueve el ojo, una polea (tróclea), trillizos (tri-gémino), un imán que lo jala hacia afuera (abduce), una máscara de gestos, un caracol en la oreja (cóclea), un globo en la garganta, un vagabundo que baja al vientre, hombreras y un hipopótamo con la lengua afuera.",
+   "pasos": [
+    "Entiende primero qué hace cada nervio y en qué zona actúa.",
+    "Dibuja una cara con cuello y hombros, rápido y sin buscar que quede bonita.",
+    "Coloca cada ícono en su zona, en orden de arriba abajo: nariz, ojos, mejilla, oreja, garganta, cuello, hombros, lengua.",
+    "Usa siempre el mismo ícono para el mismo nervio en todos tus dibujos.",
+    "Redibújala de memoria al día siguiente y a la semana, diciendo número, nombre y función de cada uno."
+   ],
+   "recuerda": "Olfatorio, óptico, motor ocular común, troclear, trigémino, abducens, facial, vestibulococlear, glosofaríngeo, vago, accesorio, hipogloso.",
+   "imagen_prompt": "Dibujo mnemotécnico simple: una figura humana con íconos pegados en partes del cuerpo, vista de frente hasta los hombros. En la nariz, un pequeño triángulo; dos ojos muy grandes; junto a un ojo, un motorcito con engranajes que levanta el párpado; sobre el otro ojo, una polea con cuerda; en la mejilla, tres bebés gemelos idénticos, uno mordiendo una manzana; un imán que jala un ojo hacia afuera; media cara cubierta por una máscara de teatro sonriente; en la oreja, un caracol haciendo equilibrio; en la garganta, un globo inflándose; un vagabundo con mochila bajando por el cuello hacia el pecho; hombreras doradas en los hombros encogidos; bajo el mentón, un hipopótamo diminuto sacando la lengua."
+  },
+  {
+   "id": "vis-babinski-bebe-ski",
+   "metodo": "visualizacion-imagenes",
+   "tecnica": "Palabra sustituta + significado",
+   "titulo": "Babinski: el bebé esquiador con el dedo gordo hacia el cielo",
+   "origen": "aplicacion",
+   "fuente": "#137, #043",
+   "dato": "Signo de Babinski: al estimular el borde externo de la planta, el primer dedo hace extensión (dorsiflexión) y los demás se abren en abanico. En el adulto indica lesión de la vía piramidal (motoneurona superior); en el lactante es normal.",
+   "como": "Por la regla de la lengua, Babinski suena a \"bebé-ski\": un bebé esquiador. La acción muestra el signo exacto: el dedo gordo se levanta como la punta de un esquí y los otros se abren en abanico. Para el significado clínico, una pirámide que se agrieta al fondo (vía piramidal); al bebé le hace gracia porque en él es normal.",
+   "pasos": [
+    "Entiende cómo se explora y qué indica antes de visualizar.",
+    "Busca a qué suena el epónimo: Babinski → bebé-ski.",
+    "Haz que la escena actúe el signo: llave por el borde externo, dedo gordo arriba, dedos en abanico.",
+    "Agrega el significado: una pirámide que se rompe en el adulto.",
+    "Prueba de calidad: desde la imagen explica la maniobra, la respuesta y qué indica."
+   ],
+   "recuerda": "Extensión del dedo gordo con abanico de los demás: lesión piramidal en el adulto, normal en el lactante.",
+   "imagen_prompt": "Un bebé sonriente con casco y esquís baja por una ladera nevada que tiene la forma de la planta de un pie gigante. Una mano adulta pasa la punta de una llave por el borde externo de esa planta y, de golpe, el dedo gordo gigante se levanta hacia el cielo como la punta curvada de un esquí mientras los otros cuatro dedos se abren en abanico. Al fondo, una pirámide de piedra se agrieta y suelta trozos. Nieve brillante y cielo azul intenso."
+  },
+  {
+   "id": "con-pce-procrastinacion",
+   "metodo": "memorizar-conceptos",
+   "tecnica": "PCE (pregunta, conclusión, evidencia)",
+   "titulo": "Procrastinación en tres piezas: pregunta, conclusión y evidencia",
+   "origen": "video",
+   "fuente": "#194, #134",
+   "dato": "Procrastinación: \"un mal hábito que nos hace postergar o dejar para después nuestras tareas o actividades, haciéndonos perder tiempo en vez de hacerlos en este momento\".",
+   "como": "El concepto se convierte en pregunta (\"¿qué es la procrastinación?\"), porque \"el cerebro aprende más rápido cuando le haces preguntas\". Luego se responde la conclusión de forma fácil y al final se agrega una evidencia concreta: tienes un examen en 20 días y terminas estudiando uno o dos días antes. Explicarlo así en tres partes muestra si lo entendiste o solo lo recitas.",
+   "pasos": [
+    "Convierte el concepto en pregunta: ¿qué es…?",
+    "Responde la conclusión con palabras fáciles, en una o dos frases.",
+    "Agrega una evidencia: un ejemplo o hecho que demuestre que es verdad.",
+    "Explícalo de memoria en ese orden y califícate con el comprensiómetro del 1 al 10.",
+    "Si sale 9 o menos, marca lo que faltó y vuelve a la fuente solo por eso."
+   ],
+   "recuerda": "Pregunta: ¿qué es? · Conclusión: postergar tareas y perder tiempo · Evidencia: examen en 20 días estudiado el último día.",
+   "imagen_prompt": "Un estudiante tumbado en un sofá juega con el celular mientras un calendario de pared gigante deja caer sus hojas una tras otra como lluvia. Sobre su escritorio, una pila de libros cubiertos de telarañas espera. En la última escena del mismo cuadro, el mismo estudiante, despeinado y con ojeras enormes, estudia frenéticamente de noche bajo una lámpara rodeado de tazas de café, mientras un reloj de arena casi vacío brilla en la mesa. Colores intensos, contraste entre la calma y el pánico."
+  },
+  {
+   "id": "con-porque-triangulo",
+   "metodo": "memorizar-conceptos",
+   "tecnica": "El porqué antes que la fórmula",
+   "titulo": "El triángulo es la mitad del rectángulo",
+   "origen": "video",
+   "fuente": "#095, #167",
+   "dato": "Área del cuadrado o rectángulo = base × altura; área del triángulo = base × altura / 2.",
+   "como": "Daniel Carreón no memoriza la fórmula: primero entiende por qué es así. Base por altura cuenta cuántos cuadros caben en la figura, y el triángulo se divide entre dos \"porque el triángulo siempre va a ser la mitad de un cuadrado o rectángulo\". Ya entendida, la fórmula se dice de memoria y, si se olvida, se reconstruye. \"La mecanización es buena siempre y cuando venga después de la comprensión\".",
+   "pasos": [
+    "Antes de la fórmula, pregúntate por qué es así.",
+    "Piénsalo en chiquito: cuenta los cuadros de un rectángulo de 5 × 3.",
+    "Corta el rectángulo por la diagonal y comprueba que salen dos triángulos iguales.",
+    "Ahora sí, di la fórmula de memoria.",
+    "Al resolver un ejercicio, escribe la conclusión con tus palabras: qué significa el resultado."
+   ],
+   "recuerda": "Base × altura cuenta los cuadros; el triángulo es la mitad: base × altura / 2.",
+   "imagen_prompt": "Un rectángulo hecho de baldosas cuadradas de colores sobre el suelo de un patio, cinco de largo y tres de alto. Un carpintero sonriente con una sierra gigante lo corta en diagonal de una esquina a la otra, y las dos mitades triangulares se separan y quedan una junto a la otra, idénticas, como dos rebanadas de pastel. Un niño mira con la boca abierta y señala que las dos piezas son iguales. Colores vivos y polvo de aserrín en el aire."
+  },
+  {
+   "id": "con-pulso-paradojico",
+   "metodo": "memorizar-conceptos",
+   "tecnica": "Interrogación elaborativa + asociación memorable",
+   "titulo": "Pulso paradójico: el corazón en la caja de cartón",
+   "origen": "aplicacion",
+   "fuente": "#043, #134, #168",
+   "dato": "Pulso paradójico: caída de la presión arterial sistólica mayor de 10 mmHg durante la inspiración; es la exageración del descenso inspiratorio normal. Causas típicas: taponamiento cardiaco, asma grave o EPOC exacerbada.",
+   "como": "Se desarma con las preguntas qué, por qué y para qué. ¿Qué? La sistólica cae más de 10 al inspirar. ¿Por qué? En el taponamiento el corazón no puede expandirse: al inspirar llega más sangre al ventrículo derecho, el tabique empuja al izquierdo y este expulsa menos. ¿Para qué? Para sospechar taponamiento. La escena actúa ese mecanismo: el corazón encerrado en una caja donde el derecho, al inflarse, aplasta al izquierdo.",
+   "pasos": [
+    "Responde qué es, por qué ocurre y para qué sirve detectarlo.",
+    "Explica el mecanismo con tus palabras sin mirar las notas.",
+    "Ancla el mecanismo en una imagen que lo actúe (caja, globo que aplasta, aguja que cae).",
+    "Fija la cifra (> 10 mmHg) con el sistema mayor si se te olvida.",
+    "Ponte una pregunta al revés: \"caída de la PAS > 10 mmHg al inspirar, ¿cómo se llama?\""
+   ],
+   "recuerda": "PAS cae > 10 mmHg en la inspiración; pensar en taponamiento cardiaco (también asma grave, EPOC).",
+   "imagen_prompt": "Un paciente toma una gran bocanada de aire con el pecho inflado. Dentro de su tórax, visto como en una ventana, un corazón está encerrado en una caja de cartón apretada. La mitad derecha del corazón se infla como un globo azul y aplasta a la mitad izquierda, roja y pequeña, contra la pared de la caja. En el brazo del paciente, el manguito del tensiómetro se desinfla de golpe y la aguja del reloj cae bruscamente con líneas de movimiento. Colores intensos."
+  },
+  {
+   "id": "con-pam-reloj-arena",
+   "metodo": "memorizar-conceptos",
+   "tecnica": "El porqué de la fórmula + PCE",
+   "titulo": "PAM: la diastólica pesa doble porque dura el doble",
+   "origen": "aplicacion",
+   "fuente": "#095, #194, #167",
+   "dato": "Presión arterial media: PAM ≈ (PAS + 2 × PAD) / 3, equivalente a PAD + (PAS − PAD) / 3. Normal aproximada en el adulto: 70-100 mmHg; por debajo de 65 mmHg se compromete la perfusión de los órganos.",
+   "como": "Antes de la fórmula, su porqué: el corazón pasa cerca de dos tercios del ciclo en diástole y un tercio en sístole, así que la PAM es un promedio ponderado por el tiempo. Pensado en chiquito: con 120/80 la media simple daría 100, pero (120 + 160) / 3 ≈ 93, más cerca de la diastólica. En PCE: ¿qué presión perfunde los órganos? La PAM; evidencia: si baja de 65, los órganos se perfunden mal.",
+   "pasos": [
+    "Pregunta por qué la PAD se multiplica por 2.",
+    "Responde: la diástole dura cerca de dos tercios del ciclo.",
+    "Haz el cálculo en chiquito con 120/80 y compáralo con la media simple.",
+    "Escribe la conclusión: qué significa el número para la perfusión.",
+    "Ancla la idea en el reloj de arena de dos partes azules y una roja."
+   ],
+   "recuerda": "PAM = (PAS + 2·PAD) / 3; con 120/80 ≈ 93; menos de 65 = mala perfusión.",
+   "imagen_prompt": "Un reloj de arena gigante de cristal dividido en tres compartimentos iguales: dos llenos de arena azul que cae tranquila y lenta, y uno con arena roja que salta y burbujea. Una enfermera sonriente gira el reloj con ambas manos, y junto a él un tensiómetro antiguo de aguja se queda quieto apuntando cerca de la zona azul. Al fondo, órganos caricaturizados como riñón, cerebro y corazón beben felices de una fuente. Colores intensos sobre fondo claro."
+  },
+  {
+   "id": "lis-dormir-7",
+   "metodo": "memorizar-listas",
+   "tecnica": "Historia en cadena (asociaciones ninja)",
+   "titulo": "7 hábitos para dormir mejor en una sola historia",
+   "origen": "video",
+   "fuente": "#137",
+   "dato": "Eliminar dispositivos, meditar, respirar profundo, bloquear pensamientos, oscuridad total, dormir a la misma hora y hacer ejercicio en la mañana.",
+   "como": "Cada hábito se vuelve una imagen y se une con la siguiente con un verbo de acción y una emoción exagerada: tu teléfono en la cama se agranda y explota, del humo sale un monje meditando, sopla una brisa que entra a tu cuerpo, al sacar el aire sale una burbuja de pensamientos que cierras con candado, dentro hay una cueva oscura, te acuestas sobre un reloj y el guerrero de anime te despierta para hacer ejercicio.",
+   "pasos": [
+    "Cuenta las piezas (n = 7) y comprende cada una.",
+    "Crea una imagen por hábito con la regla que mejor aplique.",
+    "Une cada imagen con la siguiente: verbo de acción + emoción, siempre hacia adelante.",
+    "Recorre la historia y comprueba que cada imagen te devuelve su hábito.",
+    "Repásala también en reversa."
+   ],
+   "recuerda": "Teléfono que explota → monje → brisa → burbuja con candado → cueva oscura → cama-reloj → despertar con ejercicio.",
+   "imagen_prompt": "Una habitación de noche convertida en una secuencia de izquierda a derecha. Sobre la cama, un teléfono se infla y explota en una nube de humo; del humo sale un monje sentado meditando sereno; el monje sopla una brisa azul que entra por la nariz de un joven; de la boca del joven sale una gran burbuja llena de pensamientos revueltos cerrada con un candado; dentro de la burbuja se ve una cueva completamente oscura; al final, el joven duerme acostado sobre un reloj gigante mientras un guerrero de anime con traje naranja lo sacude para que salga a correr."
+  },
+  {
+   "id": "lis-soberbia-4-reglas",
+   "metodo": "memorizar-listas",
+   "tecnica": "Palabra sustituta: las 4 reglas",
+   "titulo": "Una palabra abstracta, cuatro caminos para verla",
+   "origen": "video",
+   "fuente": "#137, #139",
+   "dato": "Convertir en imagen un concepto abstracto (soberbia) eligiendo una sola de las 4 reglas; prueba de calidad con gula = Garfield.",
+   "como": "Regla del cerebro (¿a qué me recuerda?): soberbia = Freezer, el villano. Del corazón (¿qué significa para mí?): un recuerdo de niño enojado con tus padres. Del espejo (¿a qué se parece?): una serpiente. De la lengua (¿a qué suena?): \"sorber en la vía\"; atropina = la propina. Se usa la que mejor aplique, no las cuatro. La imagen sirve si al verla deduces el concepto: Garfield → gula.",
+   "pasos": [
+    "Toma el concepto y hazte las 4 preguntas: ¿a qué me recuerda?, ¿qué significa para mí?, ¿a qué se parece?, ¿a qué suena?",
+    "Quédate con la respuesta más rápida y más visual.",
+    "Hazla lo más parecida posible a la palabra original.",
+    "Prueba de calidad: tapa la palabra y mira si la imagen te la devuelve."
+   ],
+   "recuerda": "Cerebro = villano, corazón = recuerdo propio, espejo = serpiente, lengua = sorber en la vía.",
+   "imagen_prompt": "Una escena dividida en cuatro cuadrantes que muestran la misma idea de arrogancia de cuatro formas. Arriba a la izquierda, un villano alienígena pálido y presumido flota de brazos cruzados mirando a todos desde arriba. Arriba a la derecha, un niño enojado con los brazos cruzados da la espalda a sus padres. Abajo a la izquierda, una serpiente erguida con la cabeza muy alta y una corona. Abajo a la derecha, una persona sorbe con un popote enorme un charco en medio de una vía de tren. En el centro, un gato naranja gordo devora una lasaña."
+  },
+  {
+   "id": "lis-curvas-febriles",
+   "metodo": "memorizar-listas",
+   "tecnica": "Palabra sustituta + historia",
+   "titulo": "Los 4 tipos de curva febril en un viaje en tren",
+   "origen": "aplicacion",
+   "fuente": "#137, #139",
+   "dato": "Continua: oscila menos de 1 °C al día y no se normaliza. Remitente: oscila más de 1 °C sin llegar a la normalidad. Intermitente: picos con regreso a la temperatura normal en el mismo día. Recurrente: días de fiebre que alternan con días sin fiebre.",
+   "como": "Regla de la lengua y del espejo: continua = un tren continuo que nunca para; remitente = un cartero que remite cartas desde una montaña rusa que sube y baja sin tocar el suelo; intermitente = una luz intermitente que se apaga del todo una vez al día; recurrente = el visitante que se va unos días y vuelve. Todo en una sola historia lineal con un termómetro de pasajero.",
+   "pasos": [
+    "Cuenta los tipos (n = 4) y entiende qué los diferencia: si baja o no a la normalidad.",
+    "Da a cada tipo una sustituta que suene igual y muestre su forma.",
+    "Encadénalas en el orden de la fuente con un mismo protagonista.",
+    "Pregúntate: ¿qué diferencia la remitente de la intermitente?"
+   ],
+   "recuerda": "Tren continuo → cartero remitente en montaña rusa → túnel con luz intermitente → visitante recurrente.",
+   "imagen_prompt": "Un termómetro gigante con cara viaja sentado en un tren que avanza sin detenerse por un paisaje. Por la ventana se ve a un cartero lanzando cartas desde una montaña rusa que sube y baja sin tocar nunca el suelo. Más adelante el tren entra en un túnel con una lámpara que parpadea y se apaga por completo. Al salir del túnel, en el andén, espera un viajero con maleta y sombrero que saluda contento porque siempre vuelve."
+  },
+  {
+   "id": "lis-ippa-hipopotamo",
+   "metodo": "memorizar-listas",
+   "tecnica": "Acrónimo con imagen",
+   "titulo": "IPPA y la excepción del abdomen: el hipopótamo",
+   "origen": "aplicacion",
+   "fuente": "#139, #067",
+   "dato": "Orden del examen físico: inspección, palpación, percusión, auscultación (IPPA). En el abdomen: inspección, auscultación, percusión, palpación, para no alterar los ruidos intestinales.",
+   "como": "Lista breve, así que va con acrónimo convertido en imagen ligada al significado: un hipopótamo (\"IPPA-pótamo\") al que el médico primero mira, luego toca, golpea como tambor y al final ausculta. Cuando llega a la panza, el hipopótamo grita \"¡antes escucha!\": la auscultación salta al segundo lugar porque si lo tocas primero sus tripas se callan del susto.",
+   "pasos": [
+    "Comprende el orden y por qué cambia en el abdomen.",
+    "Toma las iniciales y busca una palabra que suene parecido (IPPA → hipopótamo).",
+    "Dale a la palabra una imagen que haga cada paso en orden.",
+    "Agrega la excepción como un giro llamativo de la misma escena."
+   ],
+   "recuerda": "Hipopótamo: mirar, tocar, golpear, escuchar; en la panza, escuchar va antes.",
+   "imagen_prompt": "Un médico con bata blanca examina a un hipopótamo gris sentado en una camilla de consultorio. La escena muestra cuatro momentos alrededor del animal: el médico lo observa con una lupa, le palpa el lomo con ambas manos, le golpea el costado como si fuera un tambor y le apoya el estetoscopio. En primer plano, cuando el médico acerca las manos a la enorme panza, el hipopótamo levanta una pata alarmado y le señala el estetoscopio, mientras dentro de su barriga se ven tripas asustadas escondiéndose."
+  },
+  {
+   "id": "lit-la-rama-paz",
+   "metodo": "memorizar-textos-literal",
+   "tecnica": "Una imagen por frase en un palacio",
+   "titulo": "\"La rama\" de Octavio Paz en seis lugares de la casa",
+   "origen": "video",
+   "fuente": "#128",
+   "dato": "Las primeras seis líneas de \"La rama\" de Octavio Paz (un pájaro que canta en la punta de un pino, tiembla sobre su trino, se yergue y se deshace en música). El texto exacto, de tu libro: el poema tiene derechos de autor y aquí no se copia.",
+   "como": "Cada línea se convierte en una imagen que intenta cubrir todas sus palabras (\"más literales sean las imágenes, más fácil memorizar\"), y para las palabras abstractas se usa una sustituta: una palabra que suena a \"tres mulas\" se vuelve tres mulas y otra que suena a \"trineo\", un trineo. Las seis imágenes van en orden en un hogar: lavabo, estufa, refrigerador, puerta, bañera y retrete.",
+   "pasos": [
+    "Lee el poema un par de veces para entender de qué trata.",
+    "Divídelo en líneas cortas.",
+    "Haz una imagen por línea que cubra sus palabras; usa sustitutas para lo abstracto.",
+    "Coloca cada imagen en un lugar de tu casa, en orden.",
+    "Recorre la casa diciendo las palabras exactas y anota las que fallas."
+   ],
+   "recuerda": "Lavabo: pino con pájaro cantando · estufa: pájaro entre rejas · refrigerador: tres mulas en trineo · puerta: pájaro erguido con flecha · bañera: ave que se desvanece · retrete: música que se derrama. Cada imagen devuelve una línea del poema.",
+   "imagen_prompt": "Corte de una casa con seis rincones vistos a la vez. En el lavabo del baño crece un pino con un pájaro cantando en la punta. Sobre la estufa, un pájaro tras unas rejas de cárcel. Frente al refrigerador abierto, tres mulas temblorosas montadas en un trineo. En la puerta, un pájaro muy erguido junto a un arco con flecha sobre una rama. En la bañera, un ave enorme se desvanece entre sus propias alas. Del retrete brotan notas musicales que se derraman como agua."
+  },
+  {
+   "id": "lit-nocturno-acuna",
+   "metodo": "memorizar-textos-literal",
+   "tecnica": "Bloques de líneas + palacio de micro-ubicaciones",
+   "titulo": "\"Nocturno\" de Acuña: 100 líneas en 50 micro-ubicaciones",
+   "origen": "video",
+   "fuente": "#190",
+   "dato": "Poema \"Nocturno\" (a Rosario) de Manuel Acuña: 100 líneas en 10 estrofas. Ejemplo de la estrofa 3: \"De noche, cuando pongo mis sienes en la almohada / y hacia otro mundo quiero mi espíritu volver…\".",
+   "como": "El poema se fragmenta en 10 estrofas, una por sesión. El palacio es una casa de dos pisos con 10 habitaciones (una por estrofa) y 5 micro-estaciones en cada una, en sentido horario: 50 ubicaciones, una imagen cada dos líneas porque son cortas. En la estrofa 3, el escritorio tiene forma de luna y ahí acuestas la cabeza en una almohada; tras la ventana, un planeta al que vuelve tu espíritu.",
+   "pasos": [
+    "Lee el poema completo para captar el contexto y la emoción.",
+    "Divídelo en bloques: una estrofa por sesión.",
+    "Prepara un palacio con suficientes micro-ubicaciones, ordenadas en sentido horario.",
+    "Haz una imagen por línea (o cada dos si son cortas) y colócala en su ubicación.",
+    "Repaso acumulativo: lo de ayer, lo de hoy y al final todo; luego en tiempos muertos."
+   ],
+   "recuerda": "Escritorio-luna con almohada = \"De noche, cuando pongo mis sienes en la almohada\"; planeta tras la ventana = \"y hacia otro mundo quiero mi espíritu volver\".",
+   "imagen_prompt": "Una habitación de estudio de noche, iluminada por la luz de la luna. El escritorio tiene forma de media luna plateada y sobre él un joven poeta apoya la cabeza en una almohada blanca. Tras la ventana flota un planeta azul con anillos, hacia el cual se eleva una figura translúcida que sale del cuerpo del joven. En la pared, un cuadro muestra un camino larguísimo que termina en una meta. Junto al librero, una silueta de mujer se pierde en la sombra del rincón."
+  },
+  {
+   "id": "lit-oms-salud",
+   "metodo": "memorizar-textos-literal",
+   "tecnica": "Imagen por frase + pistas de primera letra",
+   "titulo": "Definición de salud de la OMS en tres ubicaciones",
+   "origen": "aplicacion",
+   "fuente": "#128, #073, #190",
+   "dato": "Constitución de la OMS (1946): \"La salud es un estado de completo bienestar físico, mental y social, y no solamente la ausencia de afecciones o enfermedades.\"",
+   "como": "Se fragmenta por ideas lógicas en tres frases y cada una va a una ubicación: puerta, sofá y ventana. Cada imagen cubre todas las palabras de su frase. Para el repaso se usan las pistas de primera letra (\"L s e u e / d c b f, m y s, / y n s l a d a o e\") y se vigila la conectora que más falla: \"y no solamente\".",
+   "pasos": [
+    "Copia la definición tal cual de la fuente del docente.",
+    "Divídela en tres frases lógicas.",
+    "Haz una imagen por frase que cubra todas sus palabras y colócala en una ubicación.",
+    "Repasa con las pistas de primera letra, en voz alta.",
+    "Sube de nivel: orden de frases, orden exacto, conectoras, 70-80 % y 90-100 %."
+   ],
+   "recuerda": "Puerta: brindis sobre el mapa de un estado · sofá: rompecabezas completo de físico, mental y social · ventana: cama vacía y un señor que grita \"¡no solamente eso!\".",
+   "imagen_prompt": "Un recibidor con tres puntos. En la puerta, dos personas chocan copas gigantes sobre un mapa de un estado. En el sofá, un rompecabezas completo de tres piezas que encajan: un fisicoculturista levantando pesas, un monje meditando con los ojos cerrados y un grupo de amigos de fiesta, todos dentro de una tina llena de espuma. Junto a la ventana, una cama de hospital vacía y un señor que levanta la mano con gesto de \"no\" mientras sostiene un virus verde esposado."
+  },
+  {
+   "id": "lit-iasp-dolor-escalera",
+   "metodo": "memorizar-textos-literal",
+   "tecnica": "Escalera + imagen por línea",
+   "titulo": "Definición de dolor de la IASP (2020) en cuatro escalones",
+   "origen": "aplicacion",
+   "fuente": "#128, #190",
+   "dato": "IASP, revisión de 2020 (traducción de uso frecuente en español): \"Una experiencia sensorial y emocional desagradable asociada, o similar a la asociada, a una lesión tisular real o potencial.\" Hay varias traducciones: copia la que usa tu docente.",
+   "como": "Se divide en cuatro líneas cortas y se sube por escalera: recita la 1 y la 2, luego de la 1 a la 3, luego de la 1 a la 4; si te equivocas, no subes. Cada línea tiene su imagen en una mini historia: un científico siente un pinchazo y llora (sensorial y emocional), hace mueca de asco (desagradable), su gemelo hace la misma mueca sin tocar nada (similar a la asociada) y en la mesa hay un tejido cortado y otro con una tijera apuntándole (real o potencial).",
+   "pasos": [
+    "Copia la traducción exacta que pide tu docente.",
+    "Divide en 4 líneas: experiencia sensorial y emocional / desagradable / asociada, o similar a la asociada, / a una lesión tisular real o potencial.",
+    "Memoriza las dos primeras, aparta la vista y recítalas exactas.",
+    "Suma una línea cada vez y recita desde el principio; si fallas, no avanzas.",
+    "Repasa en voz alta con audio y vigila la parte nueva de 2020: \"o similar a la asociada\"."
+   ],
+   "recuerda": "Pinchazo y llanto · mueca de asco · gemelo que imita la mueca · tejido cortado y tejido amenazado.",
+   "imagen_prompt": "Un científico con bata mete la mano en una caja misteriosa y salta de dolor por un pinchazo, con lágrimas y una mueca de asco. A su lado, su hermano gemelo idéntico, con las manos en los bolsillos, pone exactamente la misma mueca sin haber tocado nada. Sobre la mesa del laboratorio hay dos trozos de tejido rosado: uno ya cortado por la mitad y otro al que apunta una tijera enorme a punto de cortarlo. Laboratorio luminoso con colores intensos."
+  },
+  {
+   "id": "nom-ramon-ramo",
+   "metodo": "memorizar-nombres",
+   "tecnica": "Mnemotecnia visual: sustituta + rasgo",
+   "titulo": "Ramón y su copete lleno de rosas",
+   "origen": "video",
+   "fuente": "#124",
+   "dato": "Recordar el nombre de una persona nueva: Ramón.",
+   "como": "Se presta atención total, se pregunta \"¿a qué me suena?\" (Ramón → ramo de rosas) y se busca el rasgo más llamativo de su figura: el copete. Las dos cosas se pegan con detalles: el copete está lleno de rosas con espinas. Al volver a verlo se decodifica: copete → rosas → ramo → Ramón.",
+   "pasos": [
+    "Escucha el nombre al 100 % y repítelo en tu mente.",
+    "Pregúntate a qué te suena o con qué rima.",
+    "Elige el rasgo más llamativo de la persona.",
+    "Pega la imagen al rasgo con muchos detalles y algo gracioso.",
+    "Al verla de nuevo, ve del rasgo a la imagen y de ahí al nombre."
+   ],
+   "recuerda": "Copete → rosas → ramo → Ramón.",
+   "imagen_prompt": "Retrato de un hombre joven y simpático con un copete enorme y alto peinado hacia arriba. Su copete es un frondoso ramo de rosas rojas con tallos verdes y espinas que brotan en todas direcciones, con algunos pétalos cayendo sobre sus hombros. Él sonríe orgulloso mientras una abeja curiosa se acerca a oler las flores. Fondo sencillo de una reunión con otras personas desenfocadas."
+  },
+  {
+   "id": "nom-alejandra-salamandra",
+   "metodo": "memorizar-nombres",
+   "tecnica": "Rima + cinco sentidos",
+   "titulo": "Alejandra, la salamandra que se siente al saludar",
+   "origen": "video",
+   "fuente": "#140, #157, #209",
+   "dato": "Recordar el nombre Alejandra usando varios sentidos a la vez.",
+   "como": "Alejandra rima con salamandra. Se imagina que toda su cara es una salamandra bañada en agua y, al darle la mano, se siente la piel áspera del animal: oído (el nombre), vista (la salamandra) y tacto (el saludo). En la versión de Jim Kwik la salamandra va pegada a su sonrisa, lo más llamativo. Cada sentido extra es un camino alternativo para recordar.",
+   "pasos": [
+    "Busca una palabra que rime con el nombre.",
+    "Pégala a la cara o al rasgo más llamativo (la sonrisa).",
+    "Agrega al menos dos sentidos más: tono de voz, aroma, textura del saludo.",
+    "Fíjate en 4 detalles de la persona y repásalos al despedirte."
+   ],
+   "recuerda": "Cara mojada de salamandra y mano áspera → salamandra → Alejandra.",
+   "imagen_prompt": "Una mujer joven estrecha la mano de otra persona en una reunión. Su rostro se transforma en el de una salamandra brillante, naranja con manchas negras, cubierta de gotas de agua que escurren por su cuello. Su sonrisa es la boca ancha de la salamandra. La mano que saluda tiene la piel rugosa y húmeda del anfibio y la otra persona hace un gesto de sorpresa al sentir la textura. Alrededor, pequeñas salpicaduras de agua."
+  },
+  {
+   "id": "nom-murphy-robocop",
+   "metodo": "memorizar-nombres",
+   "tecnica": "Persona conocida + rasgo = el signo",
+   "titulo": "Signo de Murphy: el policía robot que corta el aire",
+   "origen": "aplicacion",
+   "fuente": "#124",
+   "dato": "Signo de Murphy: al palpar profundamente el punto cístico (bajo el reborde costal derecho, en el borde externo del recto) el paciente detiene bruscamente la inspiración por dolor. Sugiere colecistitis aguda.",
+   "como": "Técnica de la persona conocida: Murphy = Alex Murphy, el policía robot del cine. El rasgo llamativo no es su cara sino el hallazgo: la inspiración que se corta. El policía robot mete su mano de acero bajo las costillas derechas, pide \"respire hondo\" y el paciente se congela a mitad de inspirar mientras la vesícula, verde e inflamada, echa humo.",
+   "pasos": [
+    "Busca a alguien famoso con ese apellido.",
+    "Haz que esa persona ejecute el signo sobre el paciente.",
+    "Exagera el hallazgo (la respiración congelada) y agrega sonido y olor.",
+    "Pregúntate en los dos sentidos: nombre → hallazgo y hallazgo → nombre."
+   ],
+   "recuerda": "Mano de acero bajo la costilla derecha → se corta el aire → Murphy → vesícula.",
+   "imagen_prompt": "Sala de urgencias. Un policía robot de armadura plateada y visor oscuro se inclina sobre un paciente acostado en una camilla y hunde su mano metálica bajo las costillas del lado derecho del abdomen. El paciente está congelado con la boca abierta a mitad de una inhalación, los ojos muy abiertos y el pecho inflado a medias, como en pausa. Bajo la mano del robot asoma una vesícula verde, hinchada, que echa humo. Chispas y vapor alrededor."
+  },
+  {
+   "id": "nom-giordano-jordan",
+   "metodo": "memorizar-nombres",
+   "tecnica": "Sustituta por sonido + rasgo = la maniobra",
+   "titulo": "Maniobra de Giordano: el basquetbolista que bota su puño",
+   "origen": "aplicacion",
+   "fuente": "#124, #137",
+   "dato": "Maniobra de Giordano: percutir con el puño (o el borde cubital de la mano) la fosa lumbar o el ángulo costovertebral. Es positiva si provoca dolor; orienta a patología renal como pielonefritis o litiasis.",
+   "como": "Regla de la lengua (¿a qué suena?): Giordano → Jordan, el basquetbolista. La escena es la propia maniobra: en lugar del balón, bota su puño contra la espalda baja del paciente, ¡pum, pum!, y en cada bote el riñón, con forma de frijol rojo, salta y grita; de él sale una piedrita que rebota como balón.",
+   "pasos": [
+    "Di el epónimo en voz alta y busca a qué te suena.",
+    "Convierte el rasgo en la técnica de la maniobra (golpe con el puño en la fosa lumbar).",
+    "Agrega el resultado positivo (dolor) y lo que indica (riñón, piedra).",
+    "Repasa desde el hallazgo: dolor al percutir el ángulo costovertebral → ¿nombre?"
+   ],
+   "recuerda": "Puño que bota en la espalda baja → riñón que grita → Jordan → Giordano.",
+   "imagen_prompt": "Un basquetbolista alto con camiseta roja y muñequeras está detrás de un paciente sentado en el borde de una camilla. En lugar de un balón, bota su puño cerrado contra la parte baja de la espalda del paciente con un movimiento de dribleo, dejando ondas de impacto. Dentro de la espalda se ve un riñón rojo con forma de frijol que salta y grita con la boca abierta, y una piedrita gris sale rebotando por el suelo como un balón."
+  },
+  {
+   "id": "ra-cornell-rondas",
+   "metodo": "recuerdo-activo",
+   "tecnica": "Rondas hasta cero errores",
+   "titulo": "20 preguntas: 50 % → 75 % → 100 %",
+   "origen": "video",
+   "fuente": "#031, #040, #039",
+   "dato": "Una guía de 20 preguntas de un tema que hay que dominar al 100 %.",
+   "como": "Se tapa la columna de respuestas (Cornell) y se responde de memoria. En la ronda 1 salen 10 bien y 10 mal; la ronda 2 solo repite las 10 falladas y fallas 5; la ronda 3 solo esas 5, hasta cero errores. Lo correcto no se repasa en esa sesión: el esfuerzo se concentra donde está el olvido.",
+   "pasos": [
+    "Tapa la columna de respuestas con una hoja y responde cada pregunta en voz alta o con lápiz.",
+    "Marca con el semáforo: verde correcta, amarillo regular, rojo incorrecta.",
+    "Revisa en la fuente por qué fallaste las rojas y amarillas.",
+    "Nueva ronda solo con las rojas y amarillas; repite hasta que no quede ninguna.",
+    "Si una pregunta falla 3 rondas seguidas, edítala: sintetízala, explícala o agrégale una mnemotecnia."
+   ],
+   "recuerda": "Ronda 1: 20 → ronda 2: 10 → ronda 3: 5 → cero errores.",
+   "imagen_prompt": "Una estudiante sentada en un escritorio tapa con una hoja de papel la mitad derecha de su cuaderno abierto y mira hacia el techo con los ojos entrecerrados, esforzándose por recordar. A su lado hay tres montones de tarjetas: uno alto con tarjetas verdes, uno mediano con tarjetas amarillas y uno pequeño con tarjetas rojas. Una mano gigante toma solo las tarjetas rojas y amarillas y las lanza por un embudo que se hace cada vez más angosto, de donde sale al final una sola tarjeta verde brillante. Sin texto ni letras en ninguna tarjeta."
+  },
+  {
+   "id": "ra-conclusion-evidencia",
+   "metodo": "recuerdo-activo",
+   "tecnica": "Responder con conclusión + evidencia",
+   "titulo": "¿Qué es un hábito? Conclusión y ejemplo",
+   "origen": "video",
+   "fuente": "#175, #162",
+   "dato": "Pregunta de la guía de Atomic Habits: ¿Qué es un hábito?",
+   "como": "No basta con reconocer la respuesta: se dice exacta, en voz alta y con tus palabras (conclusión) y al final se agrega de memoria un ejemplo que la respalde (evidencia). Si solo sale la definición sin ejemplo, la pregunta queda en amarillo.",
+   "pasos": [
+    "Lee la pregunta y tapa la respuesta.",
+    "Di la conclusión exacta con tus palabras, en voz alta.",
+    "Agrega un ejemplo o dato que la respalde, sin mirar.",
+    "Destapa, compara y califica: completa en verde; sin evidencia o incompleta en amarillo."
+   ],
+   "recuerda": "Conducta repetida hasta volverse automática · p. ej., lavarte los dientes después de desayunar.",
+   "imagen_prompt": "Un estudiante de pie frente a un espejo del baño habla en voz alta con gesto seguro, mientras sostiene con una mano una tarjeta boca abajo que no mira. Detrás de él, como un recuerdo flotante, aparece una escena luminosa de sí mismo lavándose los dientes con mucha espuma justo después de desayunar, con un plato vacío y una taza al lado. Una flecha de luz une su boca abierta con esa escena flotante, como si su explicación trajera el ejemplo. Sin texto, letras ni números en la imagen."
+  },
+  {
+   "id": "ra-fc-guia",
+   "metodo": "recuerdo-activo",
+   "tecnica": "Guía con directa, inversa y trampa",
+   "titulo": "Frecuencia cardiaca: cuatro preguntas que se cruzan",
+   "origen": "aplicacion",
+   "fuente": "#039, #007, #006",
+   "dato": "FC normal del adulto en reposo: 60-100 lpm; > 100 lpm = taquicardia; < 60 lpm = bradicardia.",
+   "como": "Un mismo dato se pregunta desde cuatro lados: directa (¿rango normal?), inversa (60-100 lpm es el normal de…), umbral (FC > 100 se llama…) y una trampa que mezcla la FC con la FR para no confundir taquicardia con taquipnea. Así no basta con reconocer la cifra: hay que recuperarla en cualquier dirección.",
+   "pasos": [
+    "Directa: ¿Rango normal de FC en el adulto en reposo? → 60-100 lpm.",
+    "Inversa: 60-100 lpm, ¿es el rango normal de qué signo vital? → frecuencia cardiaca.",
+    "Umbral: FC > 100 lpm se llama… ¿y < 60? → taquicardia · bradicardia.",
+    "Trampa: adulto con FC de 112 lpm y FR de 16 rpm, ¿qué está alterado? → solo la FC: taquicardia.",
+    "Repite en rondas solo las que salgan en rojo o amarillo."
+   ],
+   "recuerda": "60-100 lpm · más de 100 taquicardia · menos de 60 bradicardia.",
+   "imagen_prompt": "Un estudiante de medicina con bata blanca está sentado frente a cuatro puertas de colores dispuestas en semicírculo; de cada puerta sale una mano que le ofrece una tarjeta boca abajo. Él se toma el pulso en la muñeca con dos dedos mientras mira un corazón rojo que late fuerte sobre la mesa. Detrás de una de las puertas asoma un pulmón con cara pícara que intenta colarse entre las tarjetas, como una trampa. Sin texto, números ni letras en ninguna parte de la imagen."
+  },
+  {
+   "id": "ra-murphy-elaborativa",
+   "metodo": "recuerdo-activo",
+   "tecnica": "Interrogación elaborativa",
+   "titulo": "Signo de Murphy: qué, cómo, qué sugiere",
+   "origen": "aplicacion",
+   "fuente": "#134, #039",
+   "dato": "Signo de Murphy: al palpar el hipocondrio derecho bajo el reborde costal mientras el paciente inspira profundo, este detiene la inspiración por dolor; sugiere colecistitis aguda.",
+   "como": "Un signo se desarma con preguntas qué, cómo y para qué, cada una con respuesta corta, más una inversa que parte de la descripción y pide el nombre. Con un concepto bien comprendido, estas preguntas suelen bastar sin mnemotecnia.",
+   "pasos": [
+    "¿Cómo se busca? → palpando el hipocondrio derecho bajo el reborde costal durante una inspiración profunda.",
+    "¿Qué se considera positivo? → el paciente detiene la inspiración por dolor.",
+    "¿Qué sugiere? → colecistitis aguda.",
+    "Inversa: detención de la inspiración al palpar el hipocondrio derecho, ¿qué signo es? → Murphy.",
+    "Responde cada una sin ver y marca con el semáforo."
+   ],
+   "recuerda": "Palpo el hipocondrio derecho, inspira, se corta la inspiración por dolor: Murphy, colecistitis aguda.",
+   "imagen_prompt": "Un médico presiona con los dedos bajo las costillas del lado derecho de un paciente acostado en una camilla, mientras el paciente toma aire profundo y de golpe se queda congelado con las mejillas infladas y cara de dolor, como si una vesícula verde inflamada con cara enojada lo pinchara desde dentro. Al lado, una estudiante con la mano sobre una tarjeta tapada responde mirando al techo, y tres pequeños focos de colores verde, amarillo y rojo esperan encenderse sobre la mesa. Sin texto ni letras."
+  },
+  {
+   "id": "esp-cajas-leitner",
+   "metodo": "repeticion-espaciada",
+   "tecnica": "Cajas de Leitner",
+   "titulo": "Cinco cajas: acierto avanza, fallo vuelve a la 1",
+   "origen": "video",
+   "fuente": "#175",
+   "dato": "Sistema de Sebastian Leitner con tarjetas físicas: la versión en papel del algoritmo de repetición espaciada.",
+   "como": "Cinco cajas con su intervalo: 1) todos los días, 2) cada 1-2 días, 3) cada 3-4 días, 4) una vez por semana, 5) antes del examen. Todas las tarjetas empiezan en la caja 1; la que aciertas pasa a la siguiente y la que fallas regresa a la 1 aunque ya hubiera avanzado. Es la misma lógica que la escalera corta [1, 2, 4, 7] que usa la app cuando el examen está a 2 semanas o menos.",
+   "pasos": [
+    "Escribe cada pregunta al frente de una tarjeta y la respuesta atrás.",
+    "Arma cinco cajas y anota su intervalo: diario, 1-2 días, 3-4 días, semanal, antes del examen.",
+    "Mete todas en la caja 1 y repásala cada día.",
+    "Acierto: la tarjeta pasa a la caja siguiente. Fallo: vuelve a la caja 1.",
+    "Cuando todas llegan a la caja 5, dominas el tema; guarda cada caja con una liga."
+   ],
+   "recuerda": "Diario → 1-2 días → 3-4 días → semanal → antes del examen; fallo = caja 1.",
+   "imagen_prompt": "Una fila de cinco cajas de madera abiertas, cada una un poco más grande y más lejos que la anterior, como escalones que suben hacia una montaña. Pequeñas tarjetas con piernitas saltan alegres de una caja a la siguiente, mientras una tarjeta triste resbala por un tobogán desde la cuarta caja de vuelta a la primera. Un estudiante sonriente sostiene un fajo de tarjetas atado con una liga de goma. Sobre cada caja flota un reloj de arena de tamaño creciente. Sin texto, números ni letras."
+  },
+  {
+   "id": "esp-calendario-8020",
+   "metodo": "repeticion-espaciada",
+   "tecnica": "Calendario 80/20",
+   "titulo": "Terminar el temario en el 80 % y repasar en el 20 %",
+   "origen": "video",
+   "fuente": "#035, #031",
+   "dato": "Modelo 80/20 de Pablo: terminar el temario en el primer 80 % del tiempo y dejar el último 20 % para repasos acumulados y simulacros; cada tema se repasa el mismo día, al día siguiente, el fin de semana y, si el examen está lejos, a los 15 días y al mes.",
+   "como": "Con 30 días hasta el examen, el temario se reparte en los primeros 24 y los últimos 6 quedan libres para repasos acumulados y simulacros. Mientras tanto, cada tema sigue su propio calendario de repasos con recuerdo activo. Así se evita la \"técnica gorila\": procrastinar el 80 % y estudiar todo en el 20 %.",
+   "pasos": [
+    "Cuenta los días hasta el examen y separa el último 20 % (en 30 días, los últimos 6).",
+    "Reparte los temas en el primer 80 %.",
+    "Repasa cada tema el mismo día, al día siguiente y el fin de semana; si hay tiempo, a los 15 días y al mes.",
+    "Deja un día a la semana sin contenido nuevo, solo para repasar.",
+    "En el último 20 %, repasos acumulados y simulacros con cronómetro."
+   ],
+   "recuerda": "80 % del tiempo para avanzar, 20 % para repasar y simular; mismo día → día siguiente → fin de semana → 15 días → mes.",
+   "imagen_prompt": "Un enorme calendario de pared convertido en un camino de baldosas: la mayor parte de las baldosas son de color azul y un estudiante con mochila avanza por ellas cargando libros; al final del camino, un tramo corto de baldosas doradas lleva a una meta con una bandera, y en ese tramo el estudiante ya no carga libros sino que se examina con tarjetas y un cronómetro grande. A un lado del camino, un gorila dormido sobre una hamaca representa al que deja todo para el final. Sin texto ni números."
+  },
+  {
+   "id": "esp-fc-escalera",
+   "metodo": "repeticion-espaciada",
+   "tecnica": "Escalera de intervalos de la app",
+   "titulo": "FC 60-100 lpm: de nueva a dominada",
+   "origen": "aplicacion",
+   "fuente": "#031, #035, #038",
+   "dato": "Frecuencia cardiaca normal del adulto en reposo: 60-100 lpm, programada con la escalera [1, 3, 7, 15, 30, 60, 120] días.",
+   "como": "La tarjeta entra el día que se estudia el tema (día 1). Con Bien sube un escalón: vuelve al día siguiente (día 2), luego a los 3 días (día 5), a los 7 (día 12) y, con otro Bien ese día, salta a 15 días y queda dominada (próximo repaso el día 27). Si un día la confundes con la FR y marcas Otra vez, vuelve al escalón 0: toca mañana y reaparece en la misma sesión hasta acertar.",
+   "pasos": [
+    "Día 1: estudias el tema, respondes la tarjeta y marcas Bien → vuelve mañana.",
+    "Día 2: Bien → +3 días (día 5).",
+    "Día 5: Bien → +7 días (día 12).",
+    "Día 12: Bien → +15 días (día 27): dominada.",
+    "Si fallas (Otra vez), vuelve al escalón 0; si falla 3 veces seguidas, se marca para editar."
+   ],
+   "recuerda": "60-100 lpm · repasos a 1, 3, 7 y 15 días; un fallo la regresa al primer escalón.",
+   "imagen_prompt": "Una escalera de piedra con siete escalones que se van separando cada vez más, el último perdido entre nubes. Sobre los escalones sube un corazón rojo con piernas y un estetoscopio colgado del cuello, latiendo con calma; a cada escalón que sube, un sol y una luna giran más veces en el cielo para mostrar que pasa más tiempo. En el tercer escalón el corazón celebra con una medalla dorada. Abajo, un corazón despistado que se confundió con un pulmón cae por un tobogán al primer escalón. Sin texto ni números."
+  },
+  {
+   "id": "esp-cushing-redibujo",
+   "metodo": "repeticion-espaciada",
+   "tecnica": "Redibujar de memoria espaciado",
+   "titulo": "Mnemotecnograma de Cushing en hoja en blanco",
+   "origen": "aplicacion",
+   "fuente": "#168",
+   "dato": "Síndrome de Cushing: obesidad central, cara de luna llena, giba dorsal, estrías violáceas, hipertensión arterial e hiperglucemia.",
+   "como": "Un dibujo mnemotécnico no se repasa mirándolo: se redibuja de memoria en hoja en blanco y se compara con el original. Se hace al día siguiente y otra vez a la semana; lo que faltó se marca en rojo. Si sale completo, pasa a repasos cada vez más espaciados (15 días, 30 días), porque \"aun las mejores mnemotecnias se olvidan\".",
+   "pasos": [
+    "Día 1: dibuja el muñeco con un ícono por signo (luna en la cara, joroba, rayas moradas en el abdomen, manómetro, glucómetro).",
+    "Día 2: hoja en blanco, redibújalo de memoria y compáralo con el original.",
+    "Marca en rojo lo que faltó y repásalo ese mismo día.",
+    "A la semana, redibújalo otra vez sin mirar.",
+    "Si sale completo, sigue con los repasos a 15 y 30 días."
+   ],
+   "recuerda": "Luna llena, giba, barriga grande, estrías violáceas, presión alta y azúcar alta.",
+   "imagen_prompt": "Un estudiante dibuja con lápiz en una hoja en blanco, sin mirar, un muñeco sencillo, mientras a su lado tiene boca abajo el dibujo original. El muñeco tiene la cara redonda como una luna llena, una joroba en la espalda alta, una barriga grande con rayas moradas, un manómetro de presión inflado en el brazo y un glucómetro pegado a la mano. Sobre el escritorio, tres hojas iguales ordenadas en fila, la primera con huecos marcados en rojo y la última completa. Sin texto ni letras."
+  },
+  {
+   "id": "fla-notion-tablero",
+   "metodo": "flashcards",
+   "tecnica": "Tablero de flashcards en Notion",
+   "titulo": "Base de datos con casilla Mostrar y columnas por estado",
+   "origen": "video",
+   "fuente": "#038",
+   "dato": "Tablero de Notion con Pregunta, Respuesta, Estado, Categoría, una casilla Mostrar y la fórmula if(prop(\"Mostrar\"), prop(\"Respuesta\"), \"\").",
+   "como": "La fórmula deja la respuesta en blanco hasta que marcas la casilla Mostrar, así no te engañas. En vista de tablero agrupada por estado, cada tarjeta se arrastra a Correcta o Incorrecta, y se hacen rondas solo con las incorrectas \"como si fuera una pequeña escalera\", hasta que todas quedan en Correcta.",
+   "pasos": [
+    "Crea una base de datos con Pregunta, Respuesta, Estado, Categoría y una casilla Mostrar.",
+    "Agrega una fórmula: if(prop(\"Mostrar\"), prop(\"Respuesta\"), \"\").",
+    "Abre una vista de tablero agrupada por Estado que muestre solo Pregunta, Fórmula y Mostrar.",
+    "Lee, recuerda, marca Mostrar, compara y arrastra la tarjeta a Correcta o Incorrecta.",
+    "Rondas con las incorrectas hasta que todas queden en Correcta."
+   ],
+   "recuerda": "Respuesta oculta hasta marcar Mostrar; Nueva → Incorrecta → Correcta, en rondas.",
+   "imagen_prompt": "Un tablero de corcho enorme dividido en tres columnas de colores, gris, rojo y verde, con tarjetas blancas boca abajo clavadas con chinchetas. Una estudiante sostiene una tarjeta y con la otra mano levanta una pequeña persiana de madera pegada a la tarjeta que esconde la respuesta. Otras tarjetas tienen piernitas y suben una pequeña escalera de la columna roja a la verde, celebrando al llegar. Sin texto, letras ni números en las tarjetas ni en el tablero."
+  },
+  {
+   "id": "fla-cloze-habitos",
+   "metodo": "flashcards",
+   "tecnica": "Tarjeta de hueco (cloze) en Anki",
+   "titulo": "Agrupación de hábitos con c1, c2 y c3",
+   "origen": "video",
+   "fuente": "#174",
+   "dato": "Fórmula de agrupación de hábitos: \"después de [hábito regular] realizaré el hábito [necesitado] y después el hábito [deseado]\".",
+   "como": "Se selecciona cada palabra y se pulsa el botón [...] de Anki, que escribe {{c1::palabra}}. Con c1, c2 y c3 salen tres tarjetas y los huecos se desbloquean uno por uno; con el mismo número en todos, se ocultan a la vez en una sola tarjeta; con c1 y c2 en pares, de dos en dos.",
+   "pasos": [
+    "Escribe la frase completa en una nota de tipo hueco (cloze).",
+    "Selecciona \"regular\" y pulsa [...] para crear c1; luego \"necesitado\" (c2) y \"deseado\" (c3).",
+    "Repasa: cada tarjeta oculta un hueco distinto.",
+    "Cuando ya salgan sueltos, crea otra con el mismo número en los tres para decirlos juntos."
+   ],
+   "recuerda": "Hábito regular → hábito necesitado → hábito deseado.",
+   "imagen_prompt": "Una tira de tren de juguete con tres vagones unidos en fila sobre una mesa de estudio: el primero lleva una taza de café de la rutina de la mañana, el segundo un vaso de agua y el tercero unas zapatillas de correr brillantes. Cada vagón está tapado por una lona de color distinta, azul, naranja y morada, y una mano levanta solo la lona del vagón del medio para ver qué hay. Al fondo, un teléfono muestra una tarjeta con la misma escena. Sin texto ni letras."
+  },
+  {
+   "id": "fla-glasgow-cloze",
+   "metodo": "flashcards",
+   "tecnica": "Cloze por componente + tarjeta de caso",
+   "titulo": "Escala de Glasgow: O4, V5, M6",
+   "origen": "aplicacion",
+   "fuente": "#174, #007",
+   "dato": "Escala de coma de Glasgow: ocular hasta 4, verbal hasta 5, motora hasta 6; total de 3 a 15.",
+   "como": "Una tarjeta de hueco con c1, c2 y c3 oculta un componente por tarjeta, así no se pide la escala entera de golpe. Se suma una tarjeta de caso que obliga a aplicarla: abre los ojos al dolor (O2), emite sonidos incomprensibles (V2) y retira al dolor (M4) = 8. Cuando ya salen por separado, otra con el mismo número en los tres huecos.",
+   "pasos": [
+    "Cloze: \"La respuesta ocular puntúa hasta {{c1::4}}, la verbal hasta {{c2::5}} y la motora hasta {{c3::6}}\".",
+    "Básica: ¿rango total de la escala de Glasgow? → 3 a 15.",
+    "Caso: abre los ojos al dolor, sonidos incomprensibles, retira al dolor → O2 + V2 + M4 = 8.",
+    "Cuando salgan sueltos, una cloze con c1 en los tres huecos para decirlos juntos."
+   ],
+   "recuerda": "Ojos 4, verbal 5, motor 6; total 3 a 15.",
+   "imagen_prompt": "Una camilla de urgencias con un paciente de cómic dormido; sobre él flotan tres cofres de colores: uno con forma de ojo, otro con forma de boca y otro con forma de mano. Cada cofre está cerrado con un candado distinto y un estudiante con bata sostiene un llavero, abriendo solo uno de los cofres a la vez. Del cofre del ojo salen cuatro canicas, del de la boca cinco y del de la mano seis, que ruedan hasta un frasco. Sin texto, letras ni números escritos."
+  },
+  {
+   "id": "fla-focos-oclusion",
+   "metodo": "flashcards",
+   "tecnica": "Oclusión de imagen",
+   "titulo": "Focos de auscultación cardiaca tapados uno a uno",
+   "origen": "aplicacion",
+   "fuente": "#174, #039",
+   "dato": "Focos: aórtico (2.º espacio intercostal derecho, borde esternal), pulmonar (2.º espacio intercostal izquierdo, borde esternal), tricuspídeo (borde esternal izquierdo inferior, 4.º-5.º espacio) y mitral (5.º espacio intercostal izquierdo, línea medioclavicular).",
+   "como": "Sobre una imagen del tórax se dibujan cuatro cajas, una por foco, y se pulsa \"Hide All, Guess One\" una sola vez: salen 4 tarjetas. En cada una se ven todas las cajas tapadas y la que toca recordar en rojo; la ubicación se aprende en su lugar real del cuerpo. Se completa con una inversa básica: \"5.º EIC izquierdo, línea medioclavicular: ¿qué foco es?\" → mitral.",
+   "pasos": [
+    "Pega una imagen del tórax en una nota de oclusión de imagen.",
+    "Dibuja una caja sobre cada foco: aórtico, pulmonar, tricuspídeo y mitral.",
+    "Pulsa \"Hide All, Guess One\" una sola vez (si no, genera tarjetas de más).",
+    "Repasa diciendo el nombre del foco marcado en rojo antes de destaparlo.",
+    "Agrega una inversa: de la ubicación al nombre del foco."
+   ],
+   "recuerda": "Aórtico 2.º EIC derecho · pulmonar 2.º EIC izquierdo · tricuspídeo borde esternal izquierdo bajo · mitral 5.º EIC medioclavicular.",
+   "imagen_prompt": "Un torso de maniquí de anatomía visto de frente, de pie sobre un escritorio, con cuatro parches adhesivos de colores pegados en el pecho: dos arriba a cada lado del esternón, uno abajo junto al borde izquierdo del esternón y uno abajo a la izquierda bajo la tetilla. Tres parches son grises y uno brilla en rojo intenso. Un estudiante con estetoscopio apoya la campana justo sobre el parche rojo y escucha con los ojos cerrados. Sin texto, letras ni números."
+  }
+ ]
+}

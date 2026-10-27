@@ -1,0 +1,75 @@
+[
+  {
+    "id": "lis-dormir-7",
+    "metodo": "memorizar-listas",
+    "tecnica": "Historia en cadena (asociaciones ninja)",
+    "titulo": "7 hábitos para dormir mejor en una sola historia",
+    "origen": "video",
+    "fuente": "#137",
+    "dato": "Eliminar dispositivos, meditar, respirar profundo, bloquear pensamientos, oscuridad total, dormir a la misma hora y hacer ejercicio en la mañana.",
+    "como": "Cada hábito se vuelve una imagen y se une con la siguiente con un verbo de acción y una emoción exagerada: tu teléfono en la cama se agranda y explota, del humo sale un monje meditando, sopla una brisa que entra a tu cuerpo, al sacar el aire sale una burbuja de pensamientos que cierras con candado, dentro hay una cueva oscura, te acuestas sobre un reloj y el guerrero de anime te despierta para hacer ejercicio.",
+    "pasos": [
+      "Cuenta las piezas (n = 7) y comprende cada una.",
+      "Crea una imagen por hábito con la regla que mejor aplique.",
+      "Une cada imagen con la siguiente: verbo de acción + emoción, siempre hacia adelante.",
+      "Recorre la historia y comprueba que cada imagen te devuelve su hábito.",
+      "Repásala también en reversa."
+    ],
+    "recuerda": "Teléfono que explota → monje → brisa → burbuja con candado → cueva oscura → cama-reloj → despertar con ejercicio.",
+    "imagen_prompt": "Una habitación de noche convertida en una secuencia de izquierda a derecha. Sobre la cama, un teléfono se infla y explota en una nube de humo; del humo sale un monje sentado meditando sereno; el monje sopla una brisa azul que entra por la nariz de un joven; de la boca del joven sale una gran burbuja llena de pensamientos revueltos cerrada con un candado; dentro de la burbuja se ve una cueva completamente oscura; al final, el joven duerme acostado sobre un reloj gigante mientras un guerrero de anime con traje naranja lo sacude para que salga a correr."
+  },
+  {
+    "id": "lis-soberbia-4-reglas",
+    "metodo": "memorizar-listas",
+    "tecnica": "Palabra sustituta: las 4 reglas",
+    "titulo": "Una palabra abstracta, cuatro caminos para verla",
+    "origen": "video",
+    "fuente": "#137, #139",
+    "dato": "Convertir en imagen un concepto abstracto (soberbia) eligiendo una sola de las 4 reglas; prueba de calidad con gula = Garfield.",
+    "como": "Regla del cerebro (¿a qué me recuerda?): soberbia = Freezer, el villano. Del corazón (¿qué significa para mí?): un recuerdo de niño enojado con tus padres. Del espejo (¿a qué se parece?): una serpiente. De la lengua (¿a qué suena?): \"sorber en la vía\"; atropina = la propina. Se usa la que mejor aplique, no las cuatro. La imagen sirve si al verla deduces el concepto: Garfield → gula.",
+    "pasos": [
+      "Toma el concepto y hazte las 4 preguntas: ¿a qué me recuerda?, ¿qué significa para mí?, ¿a qué se parece?, ¿a qué suena?",
+      "Quédate con la respuesta más rápida y más visual.",
+      "Hazla lo más parecida posible a la palabra original.",
+      "Prueba de calidad: tapa la palabra y mira si la imagen te la devuelve."
+    ],
+    "recuerda": "Cerebro = villano, corazón = recuerdo propio, espejo = serpiente, lengua = sorber en la vía.",
+    "imagen_prompt": "Una escena dividida en cuatro cuadrantes que muestran la misma idea de arrogancia de cuatro formas. Arriba a la izquierda, un villano alienígena pálido y presumido flota de brazos cruzados mirando a todos desde arriba. Arriba a la derecha, un niño enojado con los brazos cruzados da la espalda a sus padres. Abajo a la izquierda, una serpiente erguida con la cabeza muy alta y una corona. Abajo a la derecha, una persona sorbe con un popote enorme un charco en medio de una vía de tren. En el centro, un gato naranja gordo devora una lasaña."
+  },
+  {
+    "id": "lis-curvas-febriles",
+    "metodo": "memorizar-listas",
+    "tecnica": "Palabra sustituta + historia",
+    "titulo": "Los 4 tipos de curva febril en un viaje en tren",
+    "origen": "aplicacion",
+    "fuente": "#137, #139",
+    "dato": "Continua: oscila menos de 1 °C al día y no se normaliza. Remitente: oscila más de 1 °C sin llegar a la normalidad. Intermitente: picos con regreso a la temperatura normal en el mismo día. Recurrente: días de fiebre que alternan con días sin fiebre.",
+    "como": "Regla de la lengua y del espejo: continua = un tren continuo que nunca para; remitente = un cartero que remite cartas desde una montaña rusa que sube y baja sin tocar el suelo; intermitente = una luz intermitente que se apaga del todo una vez al día; recurrente = el visitante que se va unos días y vuelve. Todo en una sola historia lineal con un termómetro de pasajero.",
+    "pasos": [
+      "Cuenta los tipos (n = 4) y entiende qué los diferencia: si baja o no a la normalidad.",
+      "Da a cada tipo una sustituta que suene igual y muestre su forma.",
+      "Encadénalas en el orden de la fuente con un mismo protagonista.",
+      "Pregúntate: ¿qué diferencia la remitente de la intermitente?"
+    ],
+    "recuerda": "Tren continuo → cartero remitente en montaña rusa → túnel con luz intermitente → visitante recurrente.",
+    "imagen_prompt": "Un termómetro gigante con cara viaja sentado en un tren que avanza sin detenerse por un paisaje. Por la ventana se ve a un cartero lanzando cartas desde una montaña rusa que sube y baja sin tocar nunca el suelo. Más adelante el tren entra en un túnel con una lámpara que parpadea y se apaga por completo. Al salir del túnel, en el andén, espera un viajero con maleta y sombrero que saluda contento porque siempre vuelve."
+  },
+  {
+    "id": "lis-ippa-hipopotamo",
+    "metodo": "memorizar-listas",
+    "tecnica": "Acrónimo con imagen",
+    "titulo": "IPPA y la excepción del abdomen: el hipopótamo",
+    "origen": "aplicacion",
+    "fuente": "#139, #067",
+    "dato": "Orden del examen físico: inspección, palpación, percusión, auscultación (IPPA). En el abdomen: inspección, auscultación, percusión, palpación, para no alterar los ruidos intestinales.",
+    "como": "Lista breve, así que va con acrónimo convertido en imagen ligada al significado: un hipopótamo (\"IPPA-pótamo\") al que el médico primero mira, luego toca, golpea como tambor y al final ausculta. Cuando llega a la panza, el hipopótamo grita \"¡antes escucha!\": la auscultación salta al segundo lugar porque si lo tocas primero sus tripas se callan del susto.",
+    "pasos": [
+      "Comprende el orden y por qué cambia en el abdomen.",
+      "Toma las iniciales y busca una palabra que suene parecido (IPPA → hipopótamo).",
+      "Dale a la palabra una imagen que haga cada paso en orden.",
+      "Agrega la excepción como un giro llamativo de la misma escena."
+    ],
+    "recuerda": "Hipopótamo: mirar, tocar, golpear, escuchar; en la panza, escuchar va antes.",
+    "imagen_prompt": "Un médico con bata blanca examina a un hipopótamo gris sentado en una camilla de consultorio. La escena muestra cuatro momentos alrededor del animal: el médico lo observa con una lupa, le palpa el lomo con ambas manos, le golpea el costado como si fuera un tambor y le apoya el estetoscopio. En primer plano, cuando el médico acerca las manos a la enorme panza, el hipopótamo levanta una pata alarmado y le señala el estetoscopio, mientras dentro de su barriga se ven tripas asustadas escondiéndose."
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "ra-cornell-rondas",
+    "metodo": "recuerdo-activo",
+    "tecnica": "Rondas hasta cero errores",
+    "titulo": "20 preguntas: 50 % → 75 % → 100 %",
+    "origen": "video",
+    "fuente": "#031, #040, #039",
+    "dato": "Una guía de 20 preguntas de un tema que hay que dominar al 100 %.",
+    "como": "Se tapa la columna de respuestas (Cornell) y se responde de memoria. En la ronda 1 salen 10 bien y 10 mal; la ronda 2 solo repite las 10 falladas y fallas 5; la ronda 3 solo esas 5, hasta cero errores. Lo correcto no se repasa en esa sesión: el esfuerzo se concentra donde está el olvido.",
+    "pasos": [
+      "Tapa la columna de respuestas con una hoja y responde cada pregunta en voz alta o con lápiz.",
+      "Marca con el semáforo: verde correcta, amarillo regular, rojo incorrecta.",
+      "Revisa en la fuente por qué fallaste las rojas y amarillas.",
+      "Nueva ronda solo con las rojas y amarillas; repite hasta que no quede ninguna.",
+      "Si una pregunta falla 3 rondas seguidas, edítala: sintetízala, explícala o agrégale una mnemotecnia."
+    ],
+    "recuerda": "Ronda 1: 20 → ronda 2: 10 → ronda 3: 5 → cero errores.",
+    "imagen_prompt": "Una estudiante sentada en un escritorio tapa con una hoja de papel la mitad derecha de su cuaderno abierto y mira hacia el techo con los ojos entrecerrados, esforzándose por recordar. A su lado hay tres montones de tarjetas: uno alto con tarjetas verdes, uno mediano con tarjetas amarillas y uno pequeño con tarjetas rojas. Una mano gigante toma solo las tarjetas rojas y amarillas y las lanza por un embudo que se hace cada vez más angosto, de donde sale al final una sola tarjeta verde brillante. Sin texto ni letras en ninguna tarjeta."
+  },
+  {
+    "id": "ra-conclusion-evidencia",
+    "metodo": "recuerdo-activo",
+    "tecnica": "Responder con conclusión + evidencia",
+    "titulo": "¿Qué es un hábito? Conclusión y ejemplo",
+    "origen": "video",
+    "fuente": "#175, #162",
+    "dato": "Pregunta de la guía de Atomic Habits: ¿Qué es un hábito?",
+    "como": "No basta con reconocer la respuesta: se dice exacta, en voz alta y con tus palabras (conclusión) y al final se agrega de memoria un ejemplo que la respalde (evidencia). Si solo sale la definición sin ejemplo, la pregunta queda en amarillo.",
+    "pasos": [
+      "Lee la pregunta y tapa la respuesta.",
+      "Di la conclusión exacta con tus palabras, en voz alta.",
+      "Agrega un ejemplo o dato que la respalde, sin mirar.",
+      "Destapa, compara y califica: completa en verde; sin evidencia o incompleta en amarillo."
+    ],
+    "recuerda": "Conducta repetida hasta volverse automática · p. ej., lavarte los dientes después de desayunar.",
+    "imagen_prompt": "Un estudiante de pie frente a un espejo del baño habla en voz alta con gesto seguro, mientras sostiene con una mano una tarjeta boca abajo que no mira. Detrás de él, como un recuerdo flotante, aparece una escena luminosa de sí mismo lavándose los dientes con mucha espuma justo después de desayunar, con un plato vacío y una taza al lado. Una flecha de luz une su boca abierta con esa escena flotante, como si su explicación trajera el ejemplo. Sin texto, letras ni números en la imagen."
+  },
+  {
+    "id": "ra-fc-guia",
+    "metodo": "recuerdo-activo",
+    "tecnica": "Guía con directa, inversa y trampa",
+    "titulo": "Frecuencia cardiaca: cuatro preguntas que se cruzan",
+    "origen": "aplicacion",
+    "fuente": "#039, #007, #006",
+    "dato": "FC normal del adulto en reposo: 60-100 lpm; > 100 lpm = taquicardia; < 60 lpm = bradicardia.",
+    "como": "Un mismo dato se pregunta desde cuatro lados: directa (¿rango normal?), inversa (60-100 lpm es el normal de…), umbral (FC > 100 se llama…) y una trampa que mezcla la FC con la FR para no confundir taquicardia con taquipnea. Así no basta con reconocer la cifra: hay que recuperarla en cualquier dirección.",
+    "pasos": [
+      "Directa: ¿Rango normal de FC en el adulto en reposo? → 60-100 lpm.",
+      "Inversa: 60-100 lpm, ¿es el rango normal de qué signo vital? → frecuencia cardiaca.",
+      "Umbral: FC > 100 lpm se llama… ¿y < 60? → taquicardia · bradicardia.",
+      "Trampa: adulto con FC de 112 lpm y FR de 16 rpm, ¿qué está alterado? → solo la FC: taquicardia.",
+      "Repite en rondas solo las que salgan en rojo o amarillo."
+    ],
+    "recuerda": "60-100 lpm · más de 100 taquicardia · menos de 60 bradicardia.",
+    "imagen_prompt": "Un estudiante de medicina con bata blanca está sentado frente a cuatro puertas de colores dispuestas en semicírculo; de cada puerta sale una mano que le ofrece una tarjeta boca abajo. Él se toma el pulso en la muñeca con dos dedos mientras mira un corazón rojo que late fuerte sobre la mesa. Detrás de una de las puertas asoma un pulmón con cara pícara que intenta colarse entre las tarjetas, como una trampa. Sin texto, números ni letras en ninguna parte de la imagen."
+  },
+  {
+    "id": "ra-murphy-elaborativa",
+    "metodo": "recuerdo-activo",
+    "tecnica": "Interrogación elaborativa",
+    "titulo": "Signo de Murphy: qué, cómo, qué sugiere",
+    "origen": "aplicacion",
+    "fuente": "#134, #039",
+    "dato": "Signo de Murphy: al palpar el hipocondrio derecho bajo el reborde costal mientras el paciente inspira profundo, este detiene la inspiración por dolor; sugiere colecistitis aguda.",
+    "como": "Un signo se desarma con preguntas qué, cómo y para qué, cada una con respuesta corta, más una inversa que parte de la descripción y pide el nombre. Con un concepto bien comprendido, estas preguntas suelen bastar sin mnemotecnia.",
+    "pasos": [
+      "¿Cómo se busca? → palpando el hipocondrio derecho bajo el reborde costal durante una inspiración profunda.",
+      "¿Qué se considera positivo? → el paciente detiene la inspiración por dolor.",
+      "¿Qué sugiere? → colecistitis aguda.",
+      "Inversa: detención de la inspiración al palpar el hipocondrio derecho, ¿qué signo es? → Murphy.",
+      "Responde cada una sin ver y marca con el semáforo."
+    ],
+    "recuerda": "Palpo el hipocondrio derecho, inspira, se corta la inspiración por dolor: Murphy, colecistitis aguda.",
+    "imagen_prompt": "Un médico presiona con los dedos bajo las costillas del lado derecho de un paciente acostado en una camilla, mientras el paciente toma aire profundo y de golpe se queda congelado con las mejillas infladas y cara de dolor, como si una vesícula verde inflamada con cara enojada lo pinchara desde dentro. Al lado, una estudiante con la mano sobre una tarjeta tapada responde mirando al techo, y tres pequeños focos de colores verde, amarillo y rojo esperan encenderse sobre la mesa. Sin texto ni letras."
+  }
+]
